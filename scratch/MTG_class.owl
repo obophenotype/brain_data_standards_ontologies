@@ -8,9 +8,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://www.semanticweb.org/brain_data_standards/MTG_class.owl>
 
-Declaration(Class(<#http://brain_data_standards/scratch_da1d3e58-12c2-11eb-8055-acde48001122>))
 Declaration(Class(<http://brain_data_standards/scratch_da1d3bba-12c2-11eb-8055-acde48001122>))
 Declaration(Class(<http://brain_data_standards/scratch_da1d3d7c-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d3e58-12c2-11eb-8055-acde48001122>))
 Declaration(Class(<http://brain_data_standards/scratch_da1d3f16-12c2-11eb-8055-acde48001122>))
 Declaration(Class(<http://brain_data_standards/scratch_da1d3fb6-12c2-11eb-8055-acde48001122>))
 Declaration(Class(<http://brain_data_standards/scratch_da1d4060-12c2-11eb-8055-acde48001122>))
@@ -316,12 +316,6 @@ Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))
 #   Classes
 ############################
 
-# Class: <#http://brain_data_standards/scratch_da1d3e58-12c2-11eb-8055-acde48001122> (MTG 001-045)
-
-AnnotationAssertion(rdfs:label <#http://brain_data_standards/scratch_da1d3e58-12c2-11eb-8055-acde48001122> "MTG 001-045"^^xsd:string)
-AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <#http://brain_data_standards/scratch_da1d3e58-12c2-11eb-8055-acde48001122> "Inhibitory"^^xsd:string)
-EquivalentClasses(<#http://brain_data_standards/scratch_da1d3e58-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_78>)))
-
 # Class: <http://brain_data_standards/scratch_da1d3bba-12c2-11eb-8055-acde48001122> (All cells)
 
 AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d3bba-12c2-11eb-8055-acde48001122> "All cells"^^xsd:string)
@@ -332,6 +326,12 @@ EquivalentClasses(<http://brain_data_standards/scratch_da1d3bba-12c2-11eb-8055-a
 AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d3d7c-12c2-11eb-8055-acde48001122> "MTG 001-069"^^xsd:string)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d3d7c-12c2-11eb-8055-acde48001122> "Neuronal"^^xsd:string)
 EquivalentClasses(<http://brain_data_standards/scratch_da1d3d7c-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_77>)))
+
+# Class: <http://brain_data_standards/scratch_da1d3e58-12c2-11eb-8055-acde48001122> (MTG 001-045)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d3e58-12c2-11eb-8055-acde48001122> "MTG 001-045"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d3e58-12c2-11eb-8055-acde48001122> "Inhibitory"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d3e58-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_78>)))
 
 # Class: <http://brain_data_standards/scratch_da1d3f16-12c2-11eb-8055-acde48001122> (MTG 001-027)
 
