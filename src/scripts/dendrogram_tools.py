@@ -1,4 +1,11 @@
 import warnings
+import json
+
+def dend_json_2_nodes_n_edges(path_to_json):
+    f = open(path_to_json, 'r')
+    j = json.loads(f.read())
+    return tree_recurse(j)
+
 
 def tree_recurse(tree, out, parent_node_id=''):
     """Convert Allen Taxonomy JSON to a list of nodes and edges, where nodes are

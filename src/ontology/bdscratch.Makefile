@@ -3,15 +3,17 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
+all = merged.owl
+
 JOBS = CCN201908210
 
 OWL_FILES = $(patsubst %, ../templates/%.owl, $(JOBS))
 
 ../templates/%_ind.tsv: ../dendrograms/%.json
-    ../scripts/template_generation_tools.py $< $@
+    ../scripts/template_runner.py $< $@
 
 ../templates/%_class.tsv: ../dendrograms/%.json
-    ../scripts/template_generation_tools.py $< $@
+    ../scripts/template_generation_tools.py -c $< $@
 
 ../templates/%.owl: ../robot_templates/%.tsv
 	$(ROBOT) template -i ../robot_templates/support.owl --template $< -o $@;

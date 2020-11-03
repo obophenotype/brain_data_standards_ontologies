@@ -1,7 +1,9 @@
 import pandas as pd
 import uuid
+from dendrogram_tools import dend_json_2_nodes_n_edges
 
-def generate_ind_template(dend, output_filepath):
+def generate_ind_template(dend_json_path, output_filepath):
+    dend = dend_json_2_nodes_n_edges(dend_json_path)
     robot_template_seed = {'ID': 'ID',
                            'Label': 'LABEL',
                            'PrefLabel': 'A skos:prefLabel',
@@ -32,8 +34,8 @@ def generate_ind_template(dend, output_filepath):
     robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
-def generate_curated_class_template(dend, output_filepath):
-
+def generate_curated_class_template(dend_json_path, output_filepath):
+    dend = dend_json_2_nodes_n_edges(dend_json_path)
     robot_class_curation_seed = {'ID': 'ID',
                                  'Label': 'LABEL',
                                  'PrefLabel': 'A skos:prefLabel',
@@ -62,7 +64,7 @@ def generate_curated_class_template(dend, output_filepath):
 
     # not bothering with stable IDs for now:
 
-    for o in output_filepath['nodes']:
+    for o in dend['nodes']:
         ID = 'http://brain_data_standards/scratch_' + str(uuid.uuid1())
         d = dict()
         d['ID'] = ID
