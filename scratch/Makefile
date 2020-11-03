@@ -14,13 +14,32 @@ MTG_ind.owl: CCN201908210.tsv
     		--add-prefix "BDSHELP: http://www.semanticweb.org/brain_data_standards/helper.owl#" \
     		--add-prefix "AllenDend: http://www.semanticweb.org/brain_data_standards/AllenDend_" \
     		--add-prefix "skos: http://www.w3.org/2004/02/skos/core#" \
-    		annotate --ontology-iri "http://www.semanticweb.org/brain_data_standards/MTG_ind.owl" \
+    		annotate --ontology-iri "http://www.semanticweb.org/brain_data_standards/"$@ \
     		convert --format ofn --output $@
 
-MTG_class.owl: MTG.tsv MTG_ind.owl
-	$(ROBOT) template --input helper.owl --template $< --add-prefix "" annotate "" convert ofn --output $@
+#MTG_ec.owl: CCN201908210_EC.tsv MTG_ind.owl
+#	$(ROBOT) template --input helper.owl --template $< \
+#    		--add-prefix "BDSHELP: http://www.semanticweb.org/brain_data_standards/helper.owl#" \
+#    		--add-prefix "AllenDend: http://www.semanticweb.org/brain_data_standards/AllenDend_" \
+#    		--add-prefix "skos: http://www.w3.org/2004/02/skos/core#" \
+#    		annotate --ontology-iri "http://www.semanticweb.org/brain_data_standards/"$@ \
+#    		convert --format ofn --output $@
 
-MTG.owl: MTG_class.owl MTG_ind.owl
+
+MTG_class.owl: CCN201908210_class_curated.tsv
+	$(ROBOT) template --input helper.owl --template $< \
+    		--add-prefix "BDSHELP: http://www.semanticweb.org/brain_data_standards/helper.owl#" \
+    		--add-prefix "AllenDend: http://www.semanticweb.org/brain_data_standards/AllenDend_" \
+    		--add-prefix "skos: http://www.w3.org/2004/02/skos/core#" \
+    		annotate --ontology-iri "http://www.semanticweb.org/brain_data_standards/"$@ \
+    		convert --format ofn --output $@
+
+
+MTG.owl: helper.owl MTG_ind.owl MTG_class.owl
 	$(ROBOT) merge --input helper.owl --input MTG_class.owl --input MTG_ind.owl \
-  		  --add_prefix "" annotate "" convert ofn --output $@which
+  		    annotate --ontology-iri "http://www.semanticweb.org/brain_data_standards/"$@ \
+    		convert --format ofn --output $@
+
+
+
 

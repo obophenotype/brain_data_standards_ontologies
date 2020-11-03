@@ -1,0 +1,43 @@
+Prefix(:=<http://www.semanticweb.org/brain_data_standards/helper.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/brain_data_standards/helper.owl>
+
+Declaration(Class(:Cluster))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002215>))
+Declaration(ObjectProperty(:has_exemplar))
+Declaration(ObjectProperty(:has_subexemplar))
+Declaration(ObjectProperty(:subcluster_of))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002215> (capable of)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002215> "capable of")
+
+# Object Property: :has_exemplar (has_exemplar)
+
+AnnotationAssertion(rdfs:label :has_exemplar "has_exemplar")
+
+# Object Property: :has_subexemplar (:has_subexemplar)
+
+SubObjectPropertyOf(:has_subexemplar :has_exemplar)
+
+# Object Property: :subcluster_of (:subcluster_of)
+
+TransitiveObjectProperty(:subcluster_of)
+
+
+
+
+SubObjectPropertyOf(ObjectPropertyChain(:has_exemplar <http://purl.obolibrary.org/obo/RO_0002215>) <http://purl.obolibrary.org/obo/RO_0002215>)
+SubObjectPropertyOf(ObjectPropertyChain(:has_exemplar :subcluster_of) :has_exemplar)
+SubObjectPropertyOf(ObjectPropertyChain(:subcluster_of <http://purl.obolibrary.org/obo/RO_0002215>) <http://purl.obolibrary.org/obo/RO_0002215>)
+)

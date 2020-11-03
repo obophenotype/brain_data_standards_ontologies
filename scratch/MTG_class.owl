@@ -1,0 +1,1157 @@
+Prefix(:=<http://www.semanticweb.org/brain_data_standards/MTG_class.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/brain_data_standards/MTG_class.owl>
+
+Declaration(Class(<http://brain_data_standards/scratch_da1d3bba-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d3d7c-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d3e58-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d3f16-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d3fb6-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d4060-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d4100-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d41aa-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d424a-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d42ea-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d438a-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d442a-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d44ca-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d456a-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d4614-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d46b4-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d4754-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d47f4-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d4894-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d492a-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d49ca-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d4a6a-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d4b00-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d4ba0-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d4c40-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d4d44-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d4de4-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d4e7a-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d4f10-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d4f9c-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d5028-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d50f0-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d5262-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d5352-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d53f2-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d547e-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d5514-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d55a0-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d562c-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d56b8-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d5744-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d57d0-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d585c-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d58e8-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d5974-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d5a00-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d5a82-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d5b18-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d5b9a-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d5c26-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d5cb2-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d5d3e-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d5dc0-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d5e4c-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d5ed8-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d5f64-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d5fe6-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d6072-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d60f4-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d6180-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d620c-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d6298-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d631a-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d63a6-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d6432-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d64be-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d6554-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d65ea-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d6676-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d670c-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d6798-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d681a-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d68b0-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d693c-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d69d2-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d6a5e-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d6aea-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d6b80-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d6c0c-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d6c98-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d6d1a-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d6da6-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d6e32-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d6ebe-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d6f4a-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d6fd6-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d7062-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d70ee-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d717a-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d7206-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d729c-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d7328-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d73b4-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d7440-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d74cc-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d7558-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d75e4-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d7670-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d76fc-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d7788-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d7814-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d78a0-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d792c-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d79ae-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d7a44-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d7ad0-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d7b5c-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d7be8-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d7c88-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d7d14-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d7da0-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d7e2c-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d7ec2-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d7f4e-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d7fda-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d805c-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d80f2-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d817e-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d820a-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d82be-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d834a-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d83d6-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d8462-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d84ee-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d8584-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d8610-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d86a6-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d873c-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d87d2-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d8872-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d891c-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d89bc-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d8a52-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d8ade-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d8b6a-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d8c00-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d8c96-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d8d22-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d8dc2-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d8e58-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d8ee4-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d8f7a-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d9006-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d9092-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d9128-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d91b4-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d9240-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d92cc-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://brain_data_standards/scratch_da1d9358-12c2-11eb-8055-acde48001122>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000003>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_10>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_100>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_101>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_102>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_103>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_104>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_105>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_106>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_107>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_108>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_109>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_11>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_110>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_111>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_112>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_113>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_114>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_115>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_116>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_117>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_118>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_119>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_12>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_120>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_121>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_122>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_123>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_124>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_125>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_126>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_127>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_128>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_129>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_13>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_130>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_131>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_132>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_133>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_134>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_135>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_136>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_137>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_138>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_139>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_14>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_140>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_141>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_142>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_143>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_144>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_145>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_146>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_147>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_148>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_149>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_15>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_16>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_17>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_18>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_19>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_20>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_21>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_22>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_23>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_24>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_25>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_26>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_27>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_28>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_29>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_3>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_30>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_31>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_32>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_33>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_34>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_35>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_36>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_37>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_38>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_39>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_4>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_40>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_41>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_42>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_43>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_44>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_45>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_46>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_47>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_48>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_49>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_5>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_50>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_51>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_52>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_53>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_54>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_55>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_56>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_57>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_58>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_59>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_6>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_60>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_61>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_62>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_63>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_64>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_65>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_66>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_67>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_68>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_69>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_7>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_70>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_71>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_72>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_73>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_74>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_75>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_76>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_77>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_78>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_79>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_8>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_80>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_81>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_82>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_83>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_84>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_85>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_86>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_87>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_88>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_89>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_9>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_90>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_91>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_92>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_93>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_94>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_95>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_96>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_97>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_98>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_99>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://brain_data_standards/scratch_da1d3bba-12c2-11eb-8055-acde48001122> (All cells)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d3bba-12c2-11eb-8055-acde48001122> "All cells"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d3bba-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_76>)))
+
+# Class: <http://brain_data_standards/scratch_da1d3d7c-12c2-11eb-8055-acde48001122> (MTG 001-069)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d3d7c-12c2-11eb-8055-acde48001122> "MTG 001-069"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d3d7c-12c2-11eb-8055-acde48001122> "Neuronal"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d3d7c-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_77>)))
+
+# Class: <http://brain_data_standards/scratch_da1d3e58-12c2-11eb-8055-acde48001122> (MTG 001-045)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d3e58-12c2-11eb-8055-acde48001122> "MTG 001-045"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d3e58-12c2-11eb-8055-acde48001122> "Inhibitory"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d3e58-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_78>)))
+
+# Class: <http://brain_data_standards/scratch_da1d3f16-12c2-11eb-8055-acde48001122> (MTG 001-027)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d3f16-12c2-11eb-8055-acde48001122> "MTG 001-027"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d3f16-12c2-11eb-8055-acde48001122> "ADARB2 (CGE)"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d3f16-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_79>)))
+
+# Class: <http://brain_data_standards/scratch_da1d3fb6-12c2-11eb-8055-acde48001122> (MTG 001-006)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d3fb6-12c2-11eb-8055-acde48001122> "MTG 001-006"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d3fb6-12c2-11eb-8055-acde48001122> "LAMP5/PAX6"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d3fb6-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_80>)))
+
+# Class: <http://brain_data_standards/scratch_da1d4060-12c2-11eb-8055-acde48001122> (MTG 001-002)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d4060-12c2-11eb-8055-acde48001122> "MTG 001-002"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d4060-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_81>)))
+
+# Class: <http://brain_data_standards/scratch_da1d4100-12c2-11eb-8055-acde48001122> (MTG 001)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d4100-12c2-11eb-8055-acde48001122> "MTG 001"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d4100-12c2-11eb-8055-acde48001122> "Inh L1-2 PAX6 CDH12"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d4100-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_1>)))
+
+# Class: <http://brain_data_standards/scratch_da1d41aa-12c2-11eb-8055-acde48001122> (MTG 002)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d41aa-12c2-11eb-8055-acde48001122> "MTG 002"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d41aa-12c2-11eb-8055-acde48001122> "Inh L1-2 PAX6 TNFAIP8L3"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d41aa-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_2>)))
+
+# Class: <http://brain_data_standards/scratch_da1d424a-12c2-11eb-8055-acde48001122> (MTG 003-006)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d424a-12c2-11eb-8055-acde48001122> "MTG 003-006"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d424a-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_82>)))
+
+# Class: <http://brain_data_standards/scratch_da1d42ea-12c2-11eb-8055-acde48001122> (MTG 003)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d42ea-12c2-11eb-8055-acde48001122> "MTG 003"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d42ea-12c2-11eb-8055-acde48001122> "Inh L1 LAMP5 NMBR"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d42ea-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_3>)))
+
+# Class: <http://brain_data_standards/scratch_da1d438a-12c2-11eb-8055-acde48001122> (MTG 004-006)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d438a-12c2-11eb-8055-acde48001122> "MTG 004-006"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d438a-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_83>)))
+
+# Class: <http://brain_data_standards/scratch_da1d442a-12c2-11eb-8055-acde48001122> (MTG 004-005)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d442a-12c2-11eb-8055-acde48001122> "MTG 004-005"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d442a-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_84>)))
+
+# Class: <http://brain_data_standards/scratch_da1d44ca-12c2-11eb-8055-acde48001122> (MTG 004)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d44ca-12c2-11eb-8055-acde48001122> "MTG 004"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d44ca-12c2-11eb-8055-acde48001122> "Inh L1-4 LAMP5 LCP2"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d44ca-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_4>)))
+
+# Class: <http://brain_data_standards/scratch_da1d456a-12c2-11eb-8055-acde48001122> (MTG 005)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d456a-12c2-11eb-8055-acde48001122> "MTG 005"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d456a-12c2-11eb-8055-acde48001122> "Inh L1-2 LAMP5 DBP"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d456a-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_5>)))
+
+# Class: <http://brain_data_standards/scratch_da1d4614-12c2-11eb-8055-acde48001122> (MTG 006)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d4614-12c2-11eb-8055-acde48001122> "MTG 006"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d4614-12c2-11eb-8055-acde48001122> "Inh L2-6 LAMP5 CA1"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d4614-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_6>)))
+
+# Class: <http://brain_data_standards/scratch_da1d46b4-12c2-11eb-8055-acde48001122> (MTG 007-027)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d46b4-12c2-11eb-8055-acde48001122> "MTG 007-027"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d46b4-12c2-11eb-8055-acde48001122> "VIP"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d46b4-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_85>)))
+
+# Class: <http://brain_data_standards/scratch_da1d4754-12c2-11eb-8055-acde48001122> (MTG 007-014)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d4754-12c2-11eb-8055-acde48001122> "MTG 007-014"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d4754-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_86>)))
+
+# Class: <http://brain_data_standards/scratch_da1d47f4-12c2-11eb-8055-acde48001122> (MTG 007-012)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d47f4-12c2-11eb-8055-acde48001122> "MTG 007-012"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d47f4-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_87>)))
+
+# Class: <http://brain_data_standards/scratch_da1d4894-12c2-11eb-8055-acde48001122> (MTG 007-009)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d4894-12c2-11eb-8055-acde48001122> "MTG 007-009"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d4894-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_88>)))
+
+# Class: <http://brain_data_standards/scratch_da1d492a-12c2-11eb-8055-acde48001122> (MTG 007-008)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d492a-12c2-11eb-8055-acde48001122> "MTG 007-008"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d492a-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_89>)))
+
+# Class: <http://brain_data_standards/scratch_da1d49ca-12c2-11eb-8055-acde48001122> (MTG 007)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d49ca-12c2-11eb-8055-acde48001122> "MTG 007"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d49ca-12c2-11eb-8055-acde48001122> "Inh L1 SST CHRNA4"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d49ca-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_7>)))
+
+# Class: <http://brain_data_standards/scratch_da1d4a6a-12c2-11eb-8055-acde48001122> (MTG 008)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d4a6a-12c2-11eb-8055-acde48001122> "MTG 008"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d4a6a-12c2-11eb-8055-acde48001122> "Inh L1-2 ADARB2 MC4R"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d4a6a-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_8>)))
+
+# Class: <http://brain_data_standards/scratch_da1d4b00-12c2-11eb-8055-acde48001122> (MTG 009)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d4b00-12c2-11eb-8055-acde48001122> "MTG 009"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d4b00-12c2-11eb-8055-acde48001122> "Inh L1-2 SST BAGE2"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d4b00-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_9>)))
+
+# Class: <http://brain_data_standards/scratch_da1d4ba0-12c2-11eb-8055-acde48001122> (MTG 010-012)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d4ba0-12c2-11eb-8055-acde48001122> "MTG 010-012"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d4ba0-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_90>)))
+
+# Class: <http://brain_data_standards/scratch_da1d4c40-12c2-11eb-8055-acde48001122> (MTG 010)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d4c40-12c2-11eb-8055-acde48001122> "MTG 010"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d4c40-12c2-11eb-8055-acde48001122> "Inh L1-3 VIP SYT6"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d4c40-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_10>)))
+
+# Class: <http://brain_data_standards/scratch_da1d4d44-12c2-11eb-8055-acde48001122> (MTG 011-012)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d4d44-12c2-11eb-8055-acde48001122> "MTG 011-012"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d4d44-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_91>)))
+
+# Class: <http://brain_data_standards/scratch_da1d4de4-12c2-11eb-8055-acde48001122> (MTG 011)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d4de4-12c2-11eb-8055-acde48001122> "MTG 011"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d4de4-12c2-11eb-8055-acde48001122> "Inh L1-2 VIP TSPAN12"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d4de4-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_11>)))
+
+# Class: <http://brain_data_standards/scratch_da1d4e7a-12c2-11eb-8055-acde48001122> (MTG 012)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d4e7a-12c2-11eb-8055-acde48001122> "MTG 012"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d4e7a-12c2-11eb-8055-acde48001122> "Inh L1-4 VIP CHRNA6"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d4e7a-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_12>)))
+
+# Class: <http://brain_data_standards/scratch_da1d4f10-12c2-11eb-8055-acde48001122> (MTG 013-014)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d4f10-12c2-11eb-8055-acde48001122> "MTG 013-014"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d4f10-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_92>)))
+
+# Class: <http://brain_data_standards/scratch_da1d4f9c-12c2-11eb-8055-acde48001122> (MTG 013)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d4f9c-12c2-11eb-8055-acde48001122> "MTG 013"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d4f9c-12c2-11eb-8055-acde48001122> "Inh L1-3 VIP ADAMTSL1"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d4f9c-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_13>)))
+
+# Class: <http://brain_data_standards/scratch_da1d5028-12c2-11eb-8055-acde48001122> (MTG 014)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d5028-12c2-11eb-8055-acde48001122> "MTG 014"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d5028-12c2-11eb-8055-acde48001122> "Inh L1-4 VIP PENK"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d5028-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_14>)))
+
+# Class: <http://brain_data_standards/scratch_da1d50f0-12c2-11eb-8055-acde48001122> (MTG 015-027)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d50f0-12c2-11eb-8055-acde48001122> "MTG 015-027"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d50f0-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_93>)))
+
+# Class: <http://brain_data_standards/scratch_da1d5262-12c2-11eb-8055-acde48001122> (MTG 015-019)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d5262-12c2-11eb-8055-acde48001122> "MTG 015-019"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d5262-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_94>)))
+
+# Class: <http://brain_data_standards/scratch_da1d5352-12c2-11eb-8055-acde48001122> (MTG 015-017)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d5352-12c2-11eb-8055-acde48001122> "MTG 015-017"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d5352-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_95>)))
+
+# Class: <http://brain_data_standards/scratch_da1d53f2-12c2-11eb-8055-acde48001122> (MTG 015-016)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d53f2-12c2-11eb-8055-acde48001122> "MTG 015-016"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d53f2-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_96>)))
+
+# Class: <http://brain_data_standards/scratch_da1d547e-12c2-11eb-8055-acde48001122> (MTG 015)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d547e-12c2-11eb-8055-acde48001122> "MTG 015"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d547e-12c2-11eb-8055-acde48001122> "Inh L2-6 VIP QPCT"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d547e-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_15>)))
+
+# Class: <http://brain_data_standards/scratch_da1d5514-12c2-11eb-8055-acde48001122> (MTG 016)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d5514-12c2-11eb-8055-acde48001122> "MTG 016"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d5514-12c2-11eb-8055-acde48001122> "Inh L3-6 VIP HS3ST3A1"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d5514-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_16>)))
+
+# Class: <http://brain_data_standards/scratch_da1d55a0-12c2-11eb-8055-acde48001122> (MTG 017)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d55a0-12c2-11eb-8055-acde48001122> "MTG 017"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d55a0-12c2-11eb-8055-acde48001122> "Inh L1-2 VIP PCDH20"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d55a0-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_17>)))
+
+# Class: <http://brain_data_standards/scratch_da1d562c-12c2-11eb-8055-acde48001122> (MTG 018-019)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d562c-12c2-11eb-8055-acde48001122> "MTG 018-019"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d562c-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_97>)))
+
+# Class: <http://brain_data_standards/scratch_da1d56b8-12c2-11eb-8055-acde48001122> (MTG 018)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d56b8-12c2-11eb-8055-acde48001122> "MTG 018"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d56b8-12c2-11eb-8055-acde48001122> "Inh L2-5 VIP SERPINF1"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d56b8-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_18>)))
+
+# Class: <http://brain_data_standards/scratch_da1d5744-12c2-11eb-8055-acde48001122> (MTG 019)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d5744-12c2-11eb-8055-acde48001122> "MTG 019"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d5744-12c2-11eb-8055-acde48001122> "Inh L2-5 VIP TYR"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d5744-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_19>)))
+
+# Class: <http://brain_data_standards/scratch_da1d57d0-12c2-11eb-8055-acde48001122> (MTG 020-027)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d57d0-12c2-11eb-8055-acde48001122> "MTG 020-027"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d57d0-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_98>)))
+
+# Class: <http://brain_data_standards/scratch_da1d585c-12c2-11eb-8055-acde48001122> (MTG 020-023)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d585c-12c2-11eb-8055-acde48001122> "MTG 020-023"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d585c-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_99>)))
+
+# Class: <http://brain_data_standards/scratch_da1d58e8-12c2-11eb-8055-acde48001122> (MTG 020-022)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d58e8-12c2-11eb-8055-acde48001122> "MTG 020-022"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d58e8-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_100>)))
+
+# Class: <http://brain_data_standards/scratch_da1d5974-12c2-11eb-8055-acde48001122> (MTG 020-021)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d5974-12c2-11eb-8055-acde48001122> "MTG 020-021"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d5974-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_101>)))
+
+# Class: <http://brain_data_standards/scratch_da1d5a00-12c2-11eb-8055-acde48001122> (MTG 020)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d5a00-12c2-11eb-8055-acde48001122> "MTG 020"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d5a00-12c2-11eb-8055-acde48001122> "Inh L1-3 VIP CHRM2"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d5a00-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_20>)))
+
+# Class: <http://brain_data_standards/scratch_da1d5a82-12c2-11eb-8055-acde48001122> (MTG 021)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d5a82-12c2-11eb-8055-acde48001122> "MTG 021"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d5a82-12c2-11eb-8055-acde48001122> "Inh L2-4 VIP CBLN1"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d5a82-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_21>)))
+
+# Class: <http://brain_data_standards/scratch_da1d5b18-12c2-11eb-8055-acde48001122> (MTG 022)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d5b18-12c2-11eb-8055-acde48001122> "MTG 022"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d5b18-12c2-11eb-8055-acde48001122> "Inh L1-3 VIP CCDC184"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d5b18-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_22>)))
+
+# Class: <http://brain_data_standards/scratch_da1d5b9a-12c2-11eb-8055-acde48001122> (MTG 023)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d5b9a-12c2-11eb-8055-acde48001122> "MTG 023"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d5b9a-12c2-11eb-8055-acde48001122> "Inh L1-3 VIP GGH"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d5b9a-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_23>)))
+
+# Class: <http://brain_data_standards/scratch_da1d5c26-12c2-11eb-8055-acde48001122> (MTG 024-027)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d5c26-12c2-11eb-8055-acde48001122> "MTG 024-027"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d5c26-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_102>)))
+
+# Class: <http://brain_data_standards/scratch_da1d5cb2-12c2-11eb-8055-acde48001122> (MTG 024-025)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d5cb2-12c2-11eb-8055-acde48001122> "MTG 024-025"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d5cb2-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_103>)))
+
+# Class: <http://brain_data_standards/scratch_da1d5d3e-12c2-11eb-8055-acde48001122> (MTG 024)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d5d3e-12c2-11eb-8055-acde48001122> "MTG 024"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d5d3e-12c2-11eb-8055-acde48001122> "Inh L1-2 VIP LBH"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d5d3e-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_24>)))
+
+# Class: <http://brain_data_standards/scratch_da1d5dc0-12c2-11eb-8055-acde48001122> (MTG 025)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d5dc0-12c2-11eb-8055-acde48001122> "MTG 025"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d5dc0-12c2-11eb-8055-acde48001122> "Inh L2-3 VIP CASC6"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d5dc0-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_25>)))
+
+# Class: <http://brain_data_standards/scratch_da1d5e4c-12c2-11eb-8055-acde48001122> (MTG 026-027)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d5e4c-12c2-11eb-8055-acde48001122> "MTG 026-027"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d5e4c-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_104>)))
+
+# Class: <http://brain_data_standards/scratch_da1d5ed8-12c2-11eb-8055-acde48001122> (MTG 026)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d5ed8-12c2-11eb-8055-acde48001122> "MTG 026"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d5ed8-12c2-11eb-8055-acde48001122> "Inh L2-4 VIP SPAG17"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d5ed8-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_26>)))
+
+# Class: <http://brain_data_standards/scratch_da1d5f64-12c2-11eb-8055-acde48001122> (MTG 027)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d5f64-12c2-11eb-8055-acde48001122> "MTG 027"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d5f64-12c2-11eb-8055-acde48001122> "Inh L1-4 VIP OPRM1"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d5f64-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_27>)))
+
+# Class: <http://brain_data_standards/scratch_da1d5fe6-12c2-11eb-8055-acde48001122> (MTG 028-045)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d5fe6-12c2-11eb-8055-acde48001122> "MTG 028-045"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d5fe6-12c2-11eb-8055-acde48001122> "LHX6 (MGE)"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d5fe6-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_105>)))
+
+# Class: <http://brain_data_standards/scratch_da1d6072-12c2-11eb-8055-acde48001122> (MTG 028-044)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d6072-12c2-11eb-8055-acde48001122> "MTG 028-044"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d6072-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_106>)))
+
+# Class: <http://brain_data_standards/scratch_da1d60f4-12c2-11eb-8055-acde48001122> (MTG 028)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d60f4-12c2-11eb-8055-acde48001122> "MTG 028"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d60f4-12c2-11eb-8055-acde48001122> "Inh L3-6 SST NPY"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d60f4-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_28>)))
+
+# Class: <http://brain_data_standards/scratch_da1d6180-12c2-11eb-8055-acde48001122> (MTG 029-044)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d6180-12c2-11eb-8055-acde48001122> "MTG 029-044"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d6180-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_107>)))
+
+# Class: <http://brain_data_standards/scratch_da1d620c-12c2-11eb-8055-acde48001122> (MTG 029-038)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d620c-12c2-11eb-8055-acde48001122> "MTG 029-038"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d620c-12c2-11eb-8055-acde48001122> "SST"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d620c-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_108>)))
+
+# Class: <http://brain_data_standards/scratch_da1d6298-12c2-11eb-8055-acde48001122> (MTG 029-037)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d6298-12c2-11eb-8055-acde48001122> "MTG 029-037"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d6298-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_109>)))
+
+# Class: <http://brain_data_standards/scratch_da1d631a-12c2-11eb-8055-acde48001122> (MTG 029-034)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d631a-12c2-11eb-8055-acde48001122> "MTG 029-034"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d631a-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_110>)))
+
+# Class: <http://brain_data_standards/scratch_da1d63a6-12c2-11eb-8055-acde48001122> (MTG 029)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d63a6-12c2-11eb-8055-acde48001122> "MTG 029"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d63a6-12c2-11eb-8055-acde48001122> "Inh L3-6 SST HPGD"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d63a6-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_29>)))
+
+# Class: <http://brain_data_standards/scratch_da1d6432-12c2-11eb-8055-acde48001122> (MTG 030-034)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d6432-12c2-11eb-8055-acde48001122> "MTG 030-034"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d6432-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_111>)))
+
+# Class: <http://brain_data_standards/scratch_da1d64be-12c2-11eb-8055-acde48001122> (MTG 030-033)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d64be-12c2-11eb-8055-acde48001122> "MTG 030-033"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d64be-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_112>)))
+
+# Class: <http://brain_data_standards/scratch_da1d6554-12c2-11eb-8055-acde48001122> (MTG 030-031)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d6554-12c2-11eb-8055-acde48001122> "MTG 030-031"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d6554-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_113>)))
+
+# Class: <http://brain_data_standards/scratch_da1d65ea-12c2-11eb-8055-acde48001122> (MTG 030)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d65ea-12c2-11eb-8055-acde48001122> "MTG 030"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d65ea-12c2-11eb-8055-acde48001122> "Inh L4-6 SST B3GAT2"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d65ea-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_30>)))
+
+# Class: <http://brain_data_standards/scratch_da1d6676-12c2-11eb-8055-acde48001122> (MTG 031)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d6676-12c2-11eb-8055-acde48001122> "MTG 031"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d6676-12c2-11eb-8055-acde48001122> "Inh L5-6 SST KLHDC8A"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d6676-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_31>)))
+
+# Class: <http://brain_data_standards/scratch_da1d670c-12c2-11eb-8055-acde48001122> (MTG 032-033)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d670c-12c2-11eb-8055-acde48001122> "MTG 032-033"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d670c-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_114>)))
+
+# Class: <http://brain_data_standards/scratch_da1d6798-12c2-11eb-8055-acde48001122> (MTG 032)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d6798-12c2-11eb-8055-acde48001122> "MTG 032"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d6798-12c2-11eb-8055-acde48001122> "Inh L5-6 SST NPM1P10"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d6798-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_32>)))
+
+# Class: <http://brain_data_standards/scratch_da1d681a-12c2-11eb-8055-acde48001122> (MTG 033)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d681a-12c2-11eb-8055-acde48001122> "MTG 033"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d681a-12c2-11eb-8055-acde48001122> "Inh L4-6 SST GXYLT2"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d681a-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_33>)))
+
+# Class: <http://brain_data_standards/scratch_da1d68b0-12c2-11eb-8055-acde48001122> (MTG 034)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d68b0-12c2-11eb-8055-acde48001122> "MTG 034"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d68b0-12c2-11eb-8055-acde48001122> "Inh L4-5 SST STK32A"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d68b0-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_34>)))
+
+# Class: <http://brain_data_standards/scratch_da1d693c-12c2-11eb-8055-acde48001122> (MTG 035-037)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d693c-12c2-11eb-8055-acde48001122> "MTG 035-037"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d693c-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_115>)))
+
+# Class: <http://brain_data_standards/scratch_da1d69d2-12c2-11eb-8055-acde48001122> (MTG 035-036)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d69d2-12c2-11eb-8055-acde48001122> "MTG 035-036"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d69d2-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_116>)))
+
+# Class: <http://brain_data_standards/scratch_da1d6a5e-12c2-11eb-8055-acde48001122> (MTG 035)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d6a5e-12c2-11eb-8055-acde48001122> "MTG 035"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d6a5e-12c2-11eb-8055-acde48001122> "Inh L1-3 SST CALB1"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d6a5e-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_35>)))
+
+# Class: <http://brain_data_standards/scratch_da1d6aea-12c2-11eb-8055-acde48001122> (MTG 036)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d6aea-12c2-11eb-8055-acde48001122> "MTG 036"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d6aea-12c2-11eb-8055-acde48001122> "Inh L3-5 SST ADGRG6"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d6aea-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_36>)))
+
+# Class: <http://brain_data_standards/scratch_da1d6b80-12c2-11eb-8055-acde48001122> (MTG 037)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d6b80-12c2-11eb-8055-acde48001122> "MTG 037"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d6b80-12c2-11eb-8055-acde48001122> "Inh L2-4 SST FRZB"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d6b80-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_37>)))
+
+# Class: <http://brain_data_standards/scratch_da1d6c0c-12c2-11eb-8055-acde48001122> (MTG 038)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d6c0c-12c2-11eb-8055-acde48001122> "MTG 038"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d6c0c-12c2-11eb-8055-acde48001122> "Inh L5-6 SST TH"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d6c0c-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_38>)))
+
+# Class: <http://brain_data_standards/scratch_da1d6c98-12c2-11eb-8055-acde48001122> (MTG 039-044)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d6c98-12c2-11eb-8055-acde48001122> "MTG 039-044"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d6c98-12c2-11eb-8055-acde48001122> "PVALB"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d6c98-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_117>)))
+
+# Class: <http://brain_data_standards/scratch_da1d6d1a-12c2-11eb-8055-acde48001122> (MTG 039)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d6d1a-12c2-11eb-8055-acde48001122> "MTG 039"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d6d1a-12c2-11eb-8055-acde48001122> "Inh L5-6 LHX6 GLP1R"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d6d1a-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_39>)))
+
+# Class: <http://brain_data_standards/scratch_da1d6da6-12c2-11eb-8055-acde48001122> (MTG 040-044)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d6da6-12c2-11eb-8055-acde48001122> "MTG 040-044"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d6da6-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_118>)))
+
+# Class: <http://brain_data_standards/scratch_da1d6e32-12c2-11eb-8055-acde48001122> (MTG 040)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d6e32-12c2-11eb-8055-acde48001122> "MTG 040"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d6e32-12c2-11eb-8055-acde48001122> "Inh L5-6 PVALB LGR5"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d6e32-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_40>)))
+
+# Class: <http://brain_data_standards/scratch_da1d6ebe-12c2-11eb-8055-acde48001122> (MTG 041-044)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d6ebe-12c2-11eb-8055-acde48001122> "MTG 041-044"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d6ebe-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_119>)))
+
+# Class: <http://brain_data_standards/scratch_da1d6f4a-12c2-11eb-8055-acde48001122> (MTG 041-043)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d6f4a-12c2-11eb-8055-acde48001122> "MTG 041-043"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d6f4a-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_120>)))
+
+# Class: <http://brain_data_standards/scratch_da1d6fd6-12c2-11eb-8055-acde48001122> (MTG 041)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d6fd6-12c2-11eb-8055-acde48001122> "MTG 041"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d6fd6-12c2-11eb-8055-acde48001122> "Inh L4-5 PVALB MEPE"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d6fd6-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_41>)))
+
+# Class: <http://brain_data_standards/scratch_da1d7062-12c2-11eb-8055-acde48001122> (MTG 042-043)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d7062-12c2-11eb-8055-acde48001122> "MTG 042-043"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d7062-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_121>)))
+
+# Class: <http://brain_data_standards/scratch_da1d70ee-12c2-11eb-8055-acde48001122> (MTG 042)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d70ee-12c2-11eb-8055-acde48001122> "MTG 042"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d70ee-12c2-11eb-8055-acde48001122> "Inh L2-4 PVALB WFDC2"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d70ee-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_42>)))
+
+# Class: <http://brain_data_standards/scratch_da1d717a-12c2-11eb-8055-acde48001122> (MTG 043)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d717a-12c2-11eb-8055-acde48001122> "MTG 043"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d717a-12c2-11eb-8055-acde48001122> "Inh L4-6 PVALB SULF1"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d717a-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_43>)))
+
+# Class: <http://brain_data_standards/scratch_da1d7206-12c2-11eb-8055-acde48001122> (MTG 044)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d7206-12c2-11eb-8055-acde48001122> "MTG 044"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d7206-12c2-11eb-8055-acde48001122> "Inh L5-6 SST MIR548F2"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d7206-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_44>)))
+
+# Class: <http://brain_data_standards/scratch_da1d729c-12c2-11eb-8055-acde48001122> (MTG 045)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d729c-12c2-11eb-8055-acde48001122> "MTG 045"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d729c-12c2-11eb-8055-acde48001122> "Inh L2-5 PVALB SCUBE3"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d729c-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_45>)))
+
+# Class: <http://brain_data_standards/scratch_da1d7328-12c2-11eb-8055-acde48001122> (MTG 046-069)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d7328-12c2-11eb-8055-acde48001122> "MTG 046-069"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d7328-12c2-11eb-8055-acde48001122> "Excitatory"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d7328-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_122>)))
+
+# Class: <http://brain_data_standards/scratch_da1d73b4-12c2-11eb-8055-acde48001122> (MTG 046-063)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d73b4-12c2-11eb-8055-acde48001122> "MTG 046-063"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d73b4-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_123>)))
+
+# Class: <http://brain_data_standards/scratch_da1d7440-12c2-11eb-8055-acde48001122> (MTG 046-060)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d7440-12c2-11eb-8055-acde48001122> "MTG 046-060"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d7440-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_124>)))
+
+# Class: <http://brain_data_standards/scratch_da1d74cc-12c2-11eb-8055-acde48001122> (MTG 046-059)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d74cc-12c2-11eb-8055-acde48001122> "MTG 046-059"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d74cc-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_125>)))
+
+# Class: <http://brain_data_standards/scratch_da1d7558-12c2-11eb-8055-acde48001122> (MTG 046-049)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d7558-12c2-11eb-8055-acde48001122> "MTG 046-049"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d7558-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_126>)))
+
+# Class: <http://brain_data_standards/scratch_da1d75e4-12c2-11eb-8055-acde48001122> (MTG 046-048)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d75e4-12c2-11eb-8055-acde48001122> "MTG 046-048"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d75e4-12c2-11eb-8055-acde48001122> "L2/3"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d75e4-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_127>)))
+
+# Class: <http://brain_data_standards/scratch_da1d7670-12c2-11eb-8055-acde48001122> (MTG 046-047)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d7670-12c2-11eb-8055-acde48001122> "MTG 046-047"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d7670-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_128>)))
+
+# Class: <http://brain_data_standards/scratch_da1d76fc-12c2-11eb-8055-acde48001122> (MTG 046)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d76fc-12c2-11eb-8055-acde48001122> "MTG 046"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d76fc-12c2-11eb-8055-acde48001122> "Exc L2 LAMP5 LTK"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d76fc-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_46>)))
+
+# Class: <http://brain_data_standards/scratch_da1d7788-12c2-11eb-8055-acde48001122> (MTG 047)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d7788-12c2-11eb-8055-acde48001122> "MTG 047"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d7788-12c2-11eb-8055-acde48001122> "Exc L2-4 LINC00507 GLP2R"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d7788-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_47>)))
+
+# Class: <http://brain_data_standards/scratch_da1d7814-12c2-11eb-8055-acde48001122> (MTG 048)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d7814-12c2-11eb-8055-acde48001122> "MTG 048"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d7814-12c2-11eb-8055-acde48001122> "Exc L2-3 LINC00507 FREM3"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d7814-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_48>)))
+
+# Class: <http://brain_data_standards/scratch_da1d78a0-12c2-11eb-8055-acde48001122> (MTG 049)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d78a0-12c2-11eb-8055-acde48001122> "MTG 049"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d78a0-12c2-11eb-8055-acde48001122> "Exc L5-6 THEMIS C1QL3"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d78a0-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_49>)))
+
+# Class: <http://brain_data_standards/scratch_da1d792c-12c2-11eb-8055-acde48001122> (MTG 050-059)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d792c-12c2-11eb-8055-acde48001122> "MTG 050-059"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d792c-12c2-11eb-8055-acde48001122> "RORB"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d792c-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_129>)))
+
+# Class: <http://brain_data_standards/scratch_da1d79ae-12c2-11eb-8055-acde48001122> (MTG 050-054)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d79ae-12c2-11eb-8055-acde48001122> "MTG 050-054"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d79ae-12c2-11eb-8055-acde48001122> "L4"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d79ae-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_130>)))
+
+# Class: <http://brain_data_standards/scratch_da1d7a44-12c2-11eb-8055-acde48001122> (MTG 050)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d7a44-12c2-11eb-8055-acde48001122> "MTG 050"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d7a44-12c2-11eb-8055-acde48001122> "Exc L3-4 RORB CARM1P1"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d7a44-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_50>)))
+
+# Class: <http://brain_data_standards/scratch_da1d7ad0-12c2-11eb-8055-acde48001122> (MTG 051-054)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d7ad0-12c2-11eb-8055-acde48001122> "MTG 051-054"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d7ad0-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_131>)))
+
+# Class: <http://brain_data_standards/scratch_da1d7b5c-12c2-11eb-8055-acde48001122> (MTG 051)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d7b5c-12c2-11eb-8055-acde48001122> "MTG 051"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d7b5c-12c2-11eb-8055-acde48001122> "Exc L3-5 RORB ESR1"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d7b5c-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_51>)))
+
+# Class: <http://brain_data_standards/scratch_da1d7be8-12c2-11eb-8055-acde48001122> (MTG 052-054)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d7be8-12c2-11eb-8055-acde48001122> "MTG 052-054"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d7be8-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_132>)))
+
+# Class: <http://brain_data_standards/scratch_da1d7c88-12c2-11eb-8055-acde48001122> (MTG 052)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d7c88-12c2-11eb-8055-acde48001122> "MTG 052"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d7c88-12c2-11eb-8055-acde48001122> "Exc L3-5 RORB COL22A1"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d7c88-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_52>)))
+
+# Class: <http://brain_data_standards/scratch_da1d7d14-12c2-11eb-8055-acde48001122> (MTG 053-054)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d7d14-12c2-11eb-8055-acde48001122> "MTG 053-054"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d7d14-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_133>)))
+
+# Class: <http://brain_data_standards/scratch_da1d7da0-12c2-11eb-8055-acde48001122> (MTG 053)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d7da0-12c2-11eb-8055-acde48001122> "MTG 053"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d7da0-12c2-11eb-8055-acde48001122> "Exc L3-5 RORB FILIP1L"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d7da0-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_53>)))
+
+# Class: <http://brain_data_standards/scratch_da1d7e2c-12c2-11eb-8055-acde48001122> (MTG 054)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d7e2c-12c2-11eb-8055-acde48001122> "MTG 054"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d7e2c-12c2-11eb-8055-acde48001122> "Exc L3-5 RORB TWIST2"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d7e2c-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_54>)))
+
+# Class: <http://brain_data_standards/scratch_da1d7ec2-12c2-11eb-8055-acde48001122> (MTG 055-059)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d7ec2-12c2-11eb-8055-acde48001122> "MTG 055-059"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d7ec2-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_134>)))
+
+# Class: <http://brain_data_standards/scratch_da1d7f4e-12c2-11eb-8055-acde48001122> (MTG 055-057)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d7f4e-12c2-11eb-8055-acde48001122> "MTG 055-057"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d7f4e-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_135>)))
+
+# Class: <http://brain_data_standards/scratch_da1d7fda-12c2-11eb-8055-acde48001122> (MTG 055)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d7fda-12c2-11eb-8055-acde48001122> "MTG 055"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d7fda-12c2-11eb-8055-acde48001122> "Exc L4-5 RORB FOLH1B"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d7fda-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_55>)))
+
+# Class: <http://brain_data_standards/scratch_da1d805c-12c2-11eb-8055-acde48001122> (MTG 056-057)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d805c-12c2-11eb-8055-acde48001122> "MTG 056-057"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d805c-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_136>)))
+
+# Class: <http://brain_data_standards/scratch_da1d80f2-12c2-11eb-8055-acde48001122> (MTG 056)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d80f2-12c2-11eb-8055-acde48001122> "MTG 056"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d80f2-12c2-11eb-8055-acde48001122> "Exc L4-6 RORB SEMA3E"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d80f2-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_56>)))
+
+# Class: <http://brain_data_standards/scratch_da1d817e-12c2-11eb-8055-acde48001122> (MTG 057)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d817e-12c2-11eb-8055-acde48001122> "MTG 057"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d817e-12c2-11eb-8055-acde48001122> "Exc L4-5 RORB DAPK2"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d817e-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_57>)))
+
+# Class: <http://brain_data_standards/scratch_da1d820a-12c2-11eb-8055-acde48001122> (MTG 058-059)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d820a-12c2-11eb-8055-acde48001122> "MTG 058-059"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d820a-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_137>)))
+
+# Class: <http://brain_data_standards/scratch_da1d82be-12c2-11eb-8055-acde48001122> (MTG 058)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d82be-12c2-11eb-8055-acde48001122> "MTG 058"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d82be-12c2-11eb-8055-acde48001122> "Exc L5-6 RORB TTC12"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d82be-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_58>)))
+
+# Class: <http://brain_data_standards/scratch_da1d834a-12c2-11eb-8055-acde48001122> (MTG 059)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d834a-12c2-11eb-8055-acde48001122> "MTG 059"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d834a-12c2-11eb-8055-acde48001122> "Exc L4-6 RORB C1R"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d834a-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_59>)))
+
+# Class: <http://brain_data_standards/scratch_da1d83d6-12c2-11eb-8055-acde48001122> (MTG 060)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d83d6-12c2-11eb-8055-acde48001122> "MTG 060"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d83d6-12c2-11eb-8055-acde48001122> "Exc L4-5 FEZF2 SCN4B"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d83d6-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_60>)))
+
+# Class: <http://brain_data_standards/scratch_da1d8462-12c2-11eb-8055-acde48001122> (MTG 061-063)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d8462-12c2-11eb-8055-acde48001122> "MTG 061-063"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d8462-12c2-11eb-8055-acde48001122> "L6"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d8462-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_138>)))
+
+# Class: <http://brain_data_standards/scratch_da1d84ee-12c2-11eb-8055-acde48001122> (MTG 061)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d84ee-12c2-11eb-8055-acde48001122> "MTG 061"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d84ee-12c2-11eb-8055-acde48001122> "Exc L5-6 THEMIS DCSTAMP"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d84ee-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_61>)))
+
+# Class: <http://brain_data_standards/scratch_da1d8584-12c2-11eb-8055-acde48001122> (MTG 062-063)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d8584-12c2-11eb-8055-acde48001122> "MTG 062-063"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d8584-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_139>)))
+
+# Class: <http://brain_data_standards/scratch_da1d8610-12c2-11eb-8055-acde48001122> (MTG 062)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d8610-12c2-11eb-8055-acde48001122> "MTG 062"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d8610-12c2-11eb-8055-acde48001122> "Exc L5-6 THEMIS CRABP1"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d8610-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_62>)))
+
+# Class: <http://brain_data_standards/scratch_da1d86a6-12c2-11eb-8055-acde48001122> (MTG 063)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d86a6-12c2-11eb-8055-acde48001122> "MTG 063"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d86a6-12c2-11eb-8055-acde48001122> "Exc L5-6 THEMIS FGF10"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d86a6-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_63>)))
+
+# Class: <http://brain_data_standards/scratch_da1d873c-12c2-11eb-8055-acde48001122> (MTG 064-069)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d873c-12c2-11eb-8055-acde48001122> "MTG 064-069"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d873c-12c2-11eb-8055-acde48001122> "FEZF2"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d873c-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_140>)))
+
+# Class: <http://brain_data_standards/scratch_da1d87d2-12c2-11eb-8055-acde48001122> (MTG 064)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d87d2-12c2-11eb-8055-acde48001122> "MTG 064"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d87d2-12c2-11eb-8055-acde48001122> "Exc L4-6 FEZF2 IL26"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d87d2-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_64>)))
+
+# Class: <http://brain_data_standards/scratch_da1d8872-12c2-11eb-8055-acde48001122> (MTG 065-069)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d8872-12c2-11eb-8055-acde48001122> "MTG 065-069"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d8872-12c2-11eb-8055-acde48001122> "L6"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d8872-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_141>)))
+
+# Class: <http://brain_data_standards/scratch_da1d891c-12c2-11eb-8055-acde48001122> (MTG 065)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d891c-12c2-11eb-8055-acde48001122> "MTG 065"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d891c-12c2-11eb-8055-acde48001122> "Exc L5-6 FEZF2 ABO"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d891c-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_65>)))
+
+# Class: <http://brain_data_standards/scratch_da1d89bc-12c2-11eb-8055-acde48001122> (MTG 066-069)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d89bc-12c2-11eb-8055-acde48001122> "MTG 066-069"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d89bc-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_142>)))
+
+# Class: <http://brain_data_standards/scratch_da1d8a52-12c2-11eb-8055-acde48001122> (MTG 066-068)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d8a52-12c2-11eb-8055-acde48001122> "MTG 066-068"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d8a52-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_143>)))
+
+# Class: <http://brain_data_standards/scratch_da1d8ade-12c2-11eb-8055-acde48001122> (MTG 066-067)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d8ade-12c2-11eb-8055-acde48001122> "MTG 066-067"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d8ade-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_144>)))
+
+# Class: <http://brain_data_standards/scratch_da1d8b6a-12c2-11eb-8055-acde48001122> (MTG 066)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d8b6a-12c2-11eb-8055-acde48001122> "MTG 066"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d8b6a-12c2-11eb-8055-acde48001122> "Exc L6 FEZF2 SCUBE1"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d8b6a-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_66>)))
+
+# Class: <http://brain_data_standards/scratch_da1d8c00-12c2-11eb-8055-acde48001122> (MTG 067)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d8c00-12c2-11eb-8055-acde48001122> "MTG 067"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d8c00-12c2-11eb-8055-acde48001122> "Exc L5-6 FEZF2 IL15"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d8c00-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_67>)))
+
+# Class: <http://brain_data_standards/scratch_da1d8c96-12c2-11eb-8055-acde48001122> (MTG 068)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d8c96-12c2-11eb-8055-acde48001122> "MTG 068"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d8c96-12c2-11eb-8055-acde48001122> "Exc L6 FEZF2 OR2T8"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d8c96-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_68>)))
+
+# Class: <http://brain_data_standards/scratch_da1d8d22-12c2-11eb-8055-acde48001122> (MTG 069)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d8d22-12c2-11eb-8055-acde48001122> "MTG 069"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d8d22-12c2-11eb-8055-acde48001122> "Exc L5-6 FEZF2 EFTUD1P1"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d8d22-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_69>)))
+
+# Class: <http://brain_data_standards/scratch_da1d8dc2-12c2-11eb-8055-acde48001122> (MTG 070-075)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d8dc2-12c2-11eb-8055-acde48001122> "MTG 070-075"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d8dc2-12c2-11eb-8055-acde48001122> "Non-neuronal"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d8dc2-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_145>)))
+
+# Class: <http://brain_data_standards/scratch_da1d8e58-12c2-11eb-8055-acde48001122> (MTG 070-074)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d8e58-12c2-11eb-8055-acde48001122> "MTG 070-074"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d8e58-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_146>)))
+
+# Class: <http://brain_data_standards/scratch_da1d8ee4-12c2-11eb-8055-acde48001122> (MTG 070-073)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d8ee4-12c2-11eb-8055-acde48001122> "MTG 070-073"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d8ee4-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_147>)))
+
+# Class: <http://brain_data_standards/scratch_da1d8f7a-12c2-11eb-8055-acde48001122> (MTG 070-072)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d8f7a-12c2-11eb-8055-acde48001122> "MTG 070-072"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d8f7a-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_148>)))
+
+# Class: <http://brain_data_standards/scratch_da1d9006-12c2-11eb-8055-acde48001122> (MTG 070)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d9006-12c2-11eb-8055-acde48001122> "MTG 070"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d9006-12c2-11eb-8055-acde48001122> "OPC L1-6 PDGFRA"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d9006-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_70>)))
+
+# Class: <http://brain_data_standards/scratch_da1d9092-12c2-11eb-8055-acde48001122> (MTG 071-072)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d9092-12c2-11eb-8055-acde48001122> "MTG 071-072"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d9092-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_149>)))
+
+# Class: <http://brain_data_standards/scratch_da1d9128-12c2-11eb-8055-acde48001122> (MTG 071)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d9128-12c2-11eb-8055-acde48001122> "MTG 071"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d9128-12c2-11eb-8055-acde48001122> "Astro L1-6 FGFR3 SLC14A1"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d9128-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_71>)))
+
+# Class: <http://brain_data_standards/scratch_da1d91b4-12c2-11eb-8055-acde48001122> (MTG 072)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d91b4-12c2-11eb-8055-acde48001122> "MTG 072"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d91b4-12c2-11eb-8055-acde48001122> "Astro L1-2 FGFR3 GFAP"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d91b4-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_72>)))
+
+# Class: <http://brain_data_standards/scratch_da1d9240-12c2-11eb-8055-acde48001122> (MTG 073)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d9240-12c2-11eb-8055-acde48001122> "MTG 073"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d9240-12c2-11eb-8055-acde48001122> "Oligo L1-6 OPALIN"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d9240-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_73>)))
+
+# Class: <http://brain_data_standards/scratch_da1d92cc-12c2-11eb-8055-acde48001122> (MTG 074)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d92cc-12c2-11eb-8055-acde48001122> "MTG 074"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d92cc-12c2-11eb-8055-acde48001122> "Endo L2-6 NOSTRIN"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d92cc-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_74>)))
+
+# Class: <http://brain_data_standards/scratch_da1d9358-12c2-11eb-8055-acde48001122> (MTG 075)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_da1d9358-12c2-11eb-8055-acde48001122> "MTG 075"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_da1d9358-12c2-11eb-8055-acde48001122> "Micro L1-6 TYROBP"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_da1d9358-12c2-11eb-8055-acde48001122> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908210_75>)))
+
+
+
+)
