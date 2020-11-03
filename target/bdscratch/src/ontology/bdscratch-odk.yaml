@@ -1,0 +1,14 @@
+
+id: bdscratch
+title: Brain Data Standards Cell Ontology
+github_org: obophenotype
+repo: bdscratch
+export_formats:
+  - owl
+  - obo
+  - json
+import_group:
+  products:
+    - id: ro
+    - id: bfo
+    - id: pato
