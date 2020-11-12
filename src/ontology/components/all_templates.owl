@@ -1,24 +1,15 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/bdscratch/bdscratch-base.owl#"
-     xml:base="http://purl.obolibrary.org/obo/bdscratch/bdscratch-base.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
+<rdf:RDF xmlns="http://www.semanticweb.org/brain_data_standards/CCN201908210.owl#"
+     xml:base="http://www.semanticweb.org/brain_data_standards/CCN201908210.owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:helper="http://www.semanticweb.org/brain_data_standards/helper.owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bdscratch/bdscratch-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bdscratch/releases/2020-11-12/bdscratch-base.owl"/>
-        <dc:description>None</dc:description>
-        <dc:title>Brain Data Standards Cell Ontology</dc:title>
-        <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
-        <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-11-12</owl:versionInfo>
-    </owl:Ontology>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/brain_data_standards/CCN201908210.owl"/>
     
 
 
@@ -7562,14 +7553,6 @@
         </owl:equivalentClass>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 116</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PVM_3</skos:prefLabel>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BDSCRATCH_00000000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BDSCRATCH_00000000">
-        <rdfs:label xml:lang="en">root node</rdfs:label>
     </owl:Class>
     
 

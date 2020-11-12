@@ -25,7 +25,8 @@ def generate_ind_template(dend_json_path, output_filepath):
         d['Label'] = o['cell_set_label'] + ' - ' + o['cell_set_accession']
         d['PrefLabel'] = o['cell_set_preferred_alias'] + ' - ' + o['cell_set_accession']
         d['Entity Type'] = 'BDSHELP:Cluster'
-        d['Synonyms'] = '|'.join([o[prop] for prop in synonym_properties if o[prop]])
+        d['Synonyms'] = '|'.join([o[prop] for prop in synonym_properties if
+                                  prop in o.keys() and o[prop]])
         d['Property Assertions'] = '|'.join(
             ['AllenDend:' + e[1] for e in dend['edges'] if e[0] == o['cell_set_accession']])
         # There should only be one!
@@ -80,6 +81,6 @@ def generate_curated_class_template(dend_json_path, output_filepath):
         class_template.append(d)
 
     class_robot_template = pd.DataFrame.from_records(class_template)
-    class_robot_template.to_csv("CCN201908210_class_curated.tsv", sep="\t", index=False)
+    class_robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 

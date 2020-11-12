@@ -1,4 +1,4 @@
-These notes are for the EDITORS of bdscratch
+./These notes are for the EDITORS of bdscratch
 
 This project was created using the [ontology development kit](https://github.com/INCATools/ontology-development-kit). See the site for details.
 

@@ -1,27 +1,32 @@
 ## Customize Makefile settings for bdscratch
-## 
+##
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
-all = merged.owl
 
-JOBS = CCN201908210
+JOBS = CCN201908210 CCN202002013
 
-OWL_FILES = $(patsubst %, ../templates/%.owl, $(JOBS))
+OWL_FILES = $(patsubst %, %.owl, $(JOBS))
+OWL_CLASS_FILES = $(patsubst %, %_class.owl, $(JOBS))
 
-../templates/%_ind.tsv: ../dendrograms/%.json
-    ../scripts/template_runner.py $< $@
+#DEND_FILES = $(patsubst %, ../dendrograms/%.json, $(JOBS))
+#TEMPLATE_FILES = $(patsubst %, ../templates/%.tsv, $(JOBS))
+#TEMPLATE_CLASS_FILES = $(patsubst %, ../templates/_%class.tsv, $(JOBS))
+
+components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) helper.owl
+	$(ROBOT) merge $(patsubst %, -i %, $^) \
+	 --collapse-import-closure false -o $@
+
+../templates/%.tsv: ../dendrograms/%.json
+	python ../scripts/template_runner.py $< $@
 
 ../templates/%_class.tsv: ../dendrograms/%.json
-    ../scripts/template_generation_tools.py -c $< $@
-
-../templates/%.owl: ../robot_templates/%.tsv
-	$(ROBOT) template -i ../robot_templates/support.owl --template $< -o $@;
+	python ../scripts/template_runner.py -c $< $@
 
 #(SRC): $(OWL_FILES)
 #	$(ROBOT) merge -i pcl-template.owl $(patsubst %, -i %, $^) --collapse-import-closure false -o $@
 
-../templates/%_ind.owl: ../templates/%_ind.tsv
+%.owl: ../templates/%.tsv
 	$(ROBOT) template --input helper.owl --template $< \
     		--add-prefix "BDSHELP: http://www.semanticweb.org/brain_data_standards/helper.owl#" \
     		--add-prefix "AllenDend: http://www.semanticweb.org/brain_data_standards/AllenDend_" \
@@ -38,7 +43,7 @@ OWL_FILES = $(patsubst %, ../templates/%.owl, $(JOBS))
 #    		convert --format ofn --output $@
 
 
-../templates/%_class.owl: ../templates/%_class.tsv
+%_class.owl: ../templates/%_class.tsv
 	$(ROBOT) template --input helper.owl --template $< \
     		--add-prefix "BDSHELP: http://www.semanticweb.org/brain_data_standards/helper.owl#" \
     		--add-prefix "AllenDend: http://www.semanticweb.org/brain_data_standards/AllenDend_" \
@@ -47,7 +52,4 @@ OWL_FILES = $(patsubst %, ../templates/%.owl, $(JOBS))
     		convert --format ofn --output $@
 
 
-merged.owl: $(OWL_FILES)
-	$(ROBOT) merge -i pcl-template.owl $(patsubst %, -i %, $^) \
-	 --collapse-import-closure false -o $@
-     annotate --ontology-iri "http://www.semanticweb.org"
+

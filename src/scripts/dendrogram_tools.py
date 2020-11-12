@@ -4,7 +4,9 @@ import json
 def dend_json_2_nodes_n_edges(path_to_json):
     f = open(path_to_json, 'r')
     j = json.loads(f.read())
-    return tree_recurse(j)
+    out = {}
+    tree_recurse(j, out)
+    return out
 
 
 def tree_recurse(tree, out, parent_node_id=''):

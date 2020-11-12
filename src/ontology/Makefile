@@ -164,20 +164,12 @@ $(ONT).json: $(ONT)-full.owl
 # by default we use ELK to perform a reason-relax-reduce chain
 # after that we annotate the ontology with the release versionInfo
 
-OTHER_SRC =  
+OTHER_SRC =  components/all_templates.owl
 
 
 $(ONTOLOGYTERMS): $(SRC) $(OTHER_SRC)
 	touch $(ONTOLOGYTERMS) && \
 	$(ROBOT) query --use-graphs true -f csv -i $< --query ../sparql/bdscratch_terms.sparql $@
-
-
-
-
-
-
-
-
 
 
 # base: OTHER sources of interest, such as definitions owl
@@ -202,7 +194,7 @@ $(ONT)-full.owl: $(SRC) $(OTHER_SRC)
 # Most ontologies are modularly constructed using portions of other ontologies
 # These live in the imports/ folder
 
-$(SRCMERGED): $(SRC)
+$(SRCMERGED): $(SRC) $(OTHER_SRC)
 	$(ROBOT) remove --input $< --select imports --trim false \
 		merge  $(patsubst %, -i %, $(OTHER_SRC)) -o $@
 
