@@ -83,4 +83,9 @@ def generate_curated_class_template(dend_json_path, output_filepath):
     class_robot_template = pd.DataFrame.from_records(class_template)
     class_robot_template.to_csv(output_filepath, sep="\t", index=False)
 
+def generate_expression_template(dend_json_path, output_filepath):
+
+
+
+
 

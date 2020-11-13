@@ -15,7 +15,9 @@ OWL_CLASS_FILES = $(patsubst %, %_class.owl, $(JOBS))
 
 components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) helper.owl
 	$(ROBOT) merge $(patsubst %, -i %, $^) \
-	 --collapse-import-closure false -o $@
+	 --collapse-import-closure false \
+	 annotate --ontology-iri "http://www.semanticweb.org/brain_data_standards/"$@  \
+	 convert -f ofn	 -o $@
 
 ../templates/%.tsv: ../dendrograms/%.json
 	python ../scripts/template_runner.py $< $@
