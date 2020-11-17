@@ -72,7 +72,7 @@ all_main: $(MAIN_FILES)
 ## By default this is the cross-product of IMPORT_MODULES x FORMATS
 
 
-IMPORTS =  ro bfo pato
+IMPORTS =  ro uberon pato cl
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -164,12 +164,20 @@ $(ONT).json: $(ONT)-full.owl
 # by default we use ELK to perform a reason-relax-reduce chain
 # after that we annotate the ontology with the release versionInfo
 
-OTHER_SRC =  components/all_templates.owl
+OTHER_SRC = components/all_templates.owl
 
 
 $(ONTOLOGYTERMS): $(SRC) $(OTHER_SRC)
 	touch $(ONTOLOGYTERMS) && \
 	$(ROBOT) query --use-graphs true -f csv -i $< --query ../sparql/bdscratch_terms.sparql $@
+
+
+
+
+
+
+
+
 
 
 # base: OTHER sources of interest, such as definitions owl
@@ -194,7 +202,7 @@ $(ONT)-full.owl: $(SRC) $(OTHER_SRC)
 # Most ontologies are modularly constructed using portions of other ontologies
 # These live in the imports/ folder
 
-$(SRCMERGED): $(SRC) $(OTHER_SRC)
+$(SRCMERGED): $(SRC)
 	$(ROBOT) remove --input $< --select imports --trim false \
 		merge  $(patsubst %, -i %, $(OTHER_SRC)) -o $@
 
@@ -256,12 +264,12 @@ mirror/ro.owl: mirror/ro.trigger
 .PRECIOUS: mirror/%.owl
 
 
-## ONTOLOGY: bfo
-## Copy of bfo is re-downloaded whenever source changes
-mirror/bfo.trigger: $(SRC)
+## ONTOLOGY: uberon
+## Copy of uberon is re-downloaded whenever source changes
+mirror/uberon.trigger: $(SRC)
 
-mirror/bfo.owl: mirror/bfo.trigger
-	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/bfo.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+mirror/uberon.owl: mirror/uberon.trigger
+	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/uberon.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 .PRECIOUS: mirror/%.owl
 
@@ -272,6 +280,16 @@ mirror/pato.trigger: $(SRC)
 
 mirror/pato.owl: mirror/pato.trigger
 	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/pato.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: mirror/%.owl
+
+
+## ONTOLOGY: cl
+## Copy of cl is re-downloaded whenever source changes
+mirror/cl.trigger: $(SRC)
+
+mirror/cl.owl: mirror/cl.trigger
+	@if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/cl.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 .PRECIOUS: mirror/%.owl
 

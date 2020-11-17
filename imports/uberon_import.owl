@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/bdscratch/imports/uberon_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/bdscratch/imports/uberon_import.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="http://purl.obolibrary.org/obo/uberon/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bdscratch/imports/uberon_import.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bdscratch/releases/2020-11-17/imports/uberon_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2020-11-17</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/uberon/core#upper_level -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/uberon/core#upper_level">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
+        <oboInOwl:hasDbXref rdf:resource="http://purl.org/dc/elements/1.1/description"/>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dc-description</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dc-description</oboInOwl:shorthand>
+        <rdfs:label>description</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+        <oboInOwl:hasDbXref rdf:resource="http://purl.org/dc/elements/1.1/title"/>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dc-title</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dc-title</oboInOwl:shorthand>
+        <rdfs:label>title</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+        <oboInOwl:hasDbXref rdf:resource="http://purl.org/dc/terms/license"/>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dcterms-license</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dcterms-license</oboInOwl:shorthand>
+        <rdfs:label>license</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#SubsetProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SubsetProperty"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_metadata_tag -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_metadata_tag"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#source -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#source"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002215 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002215">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002328"/>
+        <oboInOwl:hasDbXref>RO:0002215</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>capable_of</oboInOwl:id>
+        <oboInOwl:shorthand>capable_of</oboInOwl:shorthand>
+        <rdfs:label>capable of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002328 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002328">
+        <oboInOwl:hasDbXref>RO:0002328</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>functionally_related_to</oboInOwl:id>
+        <oboInOwl:shorthand>functionally_related_to</oboInOwl:shorthand>
+        <rdfs:label>functionally related to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
+        <obo:IAO_0000115>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C1515976"/>
+        <oboInOwl:hasDbXref>AAO:0010841</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AEO:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BILA:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BIRNLEX:6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA2:0002229</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBbt:10000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FBbt_root:00000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:62955</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>HAO:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MA:0000001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C12219</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAO:0100000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGMA:0001822</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UMLS:C1515976</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>WBbt:0000100</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>XAO:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0100000</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>UBERON:0001062</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#upper_level"/>
+        <rdfs:label>anatomical entity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="http://orcid.org/0000-0001-9114-8737"/>
+        <oboInOwl:hasDbXref>FMA:62955</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+        <owl:annotatedTarget>UMLS:C1515976</owl:annotatedTarget>
+        <oboInOwl:source>ncithesaurus:Anatomic_Structure_System_or_Substance</oboInOwl:source>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+

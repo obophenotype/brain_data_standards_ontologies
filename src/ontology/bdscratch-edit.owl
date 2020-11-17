@@ -9,7 +9,6 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/bdscratch.owl>
-Import(<http://purl.obolibrary.org/obo/bdscratch/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/bdscratch/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/bdscratch/imports/ro_import.owl>)
 Import(<http://www.semanticweb.org/brain_data_standards/components/all_templates.owl>)
@@ -18,9 +17,40 @@ Annotation(dce:title "Brain Data Standards Cell Ontology")
 Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BDSCRATCH_00000000>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002100>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002215>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_subexemplar>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of>))
 Declaration(AnnotationProperty(dce:description))
 Declaration(AnnotationProperty(dce:title))
 Declaration(AnnotationProperty(dcterms:license))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002100> (has soma location)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002100> "has soma location")
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002215> (capable of)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002215> "capable of")
+
+# Object Property: <http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> (has_exemplar)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> "has_exemplar")
+
+# Object Property: <http://www.semanticweb.org/brain_data_standards/helper.owl#has_subexemplar> (<http://www.semanticweb.org/brain_data_standards/helper.owl#has_subexemplar>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_subexemplar> <http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar>)
+
+# Object Property: <http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> (<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of>)
+
+TransitiveObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of>)
+
 
 
 ############################
@@ -32,4 +62,7 @@ Declaration(AnnotationProperty(dcterms:license))
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BDSCRATCH_00000000> "root node"@en)
 
 
+SubObjectPropertyOf(ObjectPropertyChain(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://purl.obolibrary.org/obo/RO_0002215>) <http://purl.obolibrary.org/obo/RO_0002215>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of>) <http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://purl.obolibrary.org/obo/RO_0002215>) <http://purl.obolibrary.org/obo/RO_0002215>)
 )

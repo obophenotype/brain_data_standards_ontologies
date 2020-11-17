@@ -1,0 +1,255 @@
+ID	Label	PrefLabel	Synonyms	Exemplar	Classification	Comment	part of	part evidence comment	part evidence pub	part evidence dbxref	location	location evidence comment	location evidence pub	location evidence dbxref	has soma location	soma location evidence comment	soma location evidence pub	soma location evidence dbxref	cell morphology phenotype	cell morphology evidence comment	cell morphology evidence pub	cell morphology evidence dbxref	Class_type
+ID	LABEL	A skos:prefLabel	A oboInOwl:has_exact_synonym	EC CL:0000003 and 'has_exemplar' value %	SC %	A rdfs:comment	SC 'part of' some %	>A rdfs:comment	>A dc:reference SPLIT='|'	>A oio:hasDbXref SPLIT='|'	SC 'located in' some %	>A rdfs:comment	>A dc:reference SPLIT='|'	>A oio:hasDbXref SPLIT='|'	SC 'has soma location' some %	>A rdfs:comment	>A dc:reference SPLIT='|'	>A oio:dbxref SPLIT='|'	SC 'bearer of' some %	>A rdfs:comment	>A dc:reference SPLIT='|'	>A oio:hasDbXref SPLIT='|'	
+http://brain_data_standards/scratch_3ec98eb0-28da-11eb-9dce-0242ac110002	All cells			AllenDend:CS201810310_134																			subclass
+http://brain_data_standards/scratch_3ec9931a-28da-11eb-9dce-0242ac110002	VISp_ALM 001-123			AllenDend:CS201810310_135																			subclass
+http://brain_data_standards/scratch_3ec994a0-28da-11eb-9dce-0242ac110002	VISp_ALM 001-117	Neuronal		AllenDend:CS201810310_136																			subclass
+http://brain_data_standards/scratch_3ec996bc-28da-11eb-9dce-0242ac110002	VISp_ALM 001-115			AllenDend:CS201810310_137																			subclass
+http://brain_data_standards/scratch_3ec99810-28da-11eb-9dce-0242ac110002	VISp_ALM 001-055	Glutamatergic		AllenDend:CS201810310_138																			subclass
+http://brain_data_standards/scratch_3ec99900-28da-11eb-9dce-0242ac110002	VISp_ALM 001-036			AllenDend:CS201810310_139																			subclass
+http://brain_data_standards/scratch_3ec99e78-28da-11eb-9dce-0242ac110002	VISp_ALM 001-028			AllenDend:CS201810310_140																			subclass
+http://brain_data_standards/scratch_3ec99fcc-28da-11eb-9dce-0242ac110002	VISp_ALM 001-027			AllenDend:CS201810310_141																			subclass
+http://brain_data_standards/scratch_3ec9a10c-28da-11eb-9dce-0242ac110002	VISp_ALM 001-006	L2/3 IT		AllenDend:CS201810310_142																			subclass
+http://brain_data_standards/scratch_3ec9a260-28da-11eb-9dce-0242ac110002	VISp_ALM 001-003			AllenDend:CS201810310_143																			subclass
+http://brain_data_standards/scratch_3ec9a7e2-28da-11eb-9dce-0242ac110002	VISp_ALM 001	L2/3 IT VISp Rrad		AllenDend:CS201810310_1																			subclass
+http://brain_data_standards/scratch_3ec9a940-28da-11eb-9dce-0242ac110002	VISp_ALM 002-003			AllenDend:CS201810310_144																			subclass
+http://brain_data_standards/scratch_3ec9aa80-28da-11eb-9dce-0242ac110002	VISp_ALM 002	L2/3 IT VISp Adamts2		AllenDend:CS201810310_2																			subclass
+http://brain_data_standards/scratch_3ec9abac-28da-11eb-9dce-0242ac110002	VISp_ALM 003	L2/3 IT VISp Agmat		AllenDend:CS201810310_3																			subclass
+http://brain_data_standards/scratch_3ec9ac4c-28da-11eb-9dce-0242ac110002	VISp_ALM 004-006			AllenDend:CS201810310_145																			subclass
+http://brain_data_standards/scratch_3ec9ad00-28da-11eb-9dce-0242ac110002	VISp_ALM 004-005			AllenDend:CS201810310_146																			subclass
+http://brain_data_standards/scratch_3ec9ae36-28da-11eb-9dce-0242ac110002	VISp_ALM 004	L2/3 IT ALM Sla		AllenDend:CS201810310_4																			subclass
+http://brain_data_standards/scratch_3ec9af76-28da-11eb-9dce-0242ac110002	VISp_ALM 005	L2/3 IT ALM Ptrf		AllenDend:CS201810310_5																			subclass
+http://brain_data_standards/scratch_3ec9b0b6-28da-11eb-9dce-0242ac110002	VISp_ALM 006	L2/3 IT ALM Macc1 Lrg1		AllenDend:CS201810310_6																			subclass
+http://brain_data_standards/scratch_3ec9b1ec-28da-11eb-9dce-0242ac110002	VISp_ALM 007	L4 IT VISp Rspo1		AllenDend:CS201810310_7																			subclass
+http://brain_data_standards/scratch_3ec9b322-28da-11eb-9dce-0242ac110002	VISp_ALM 008-012	L5 IT (VISp)		AllenDend:CS201810310_147																			subclass
+http://brain_data_standards/scratch_3ec9b458-28da-11eb-9dce-0242ac110002	VISp_ALM 008-010			AllenDend:CS201810310_148																			subclass
+http://brain_data_standards/scratch_3ec9b746-28da-11eb-9dce-0242ac110002	VISp_ALM 008-009			AllenDend:CS201810310_149																			subclass
+http://brain_data_standards/scratch_3ec9b868-28da-11eb-9dce-0242ac110002	VISp_ALM 008	L5 IT VISp Hsd11b1 Endou		AllenDend:CS201810310_8																			subclass
+http://brain_data_standards/scratch_3ec9b9a8-28da-11eb-9dce-0242ac110002	VISp_ALM 009	L5 IT VISp Whrn Tox2		AllenDend:CS201810310_9																			subclass
+http://brain_data_standards/scratch_3ec9bade-28da-11eb-9dce-0242ac110002	VISp_ALM 010	L5 IT VISp Batf3		AllenDend:CS201810310_10																			subclass
+http://brain_data_standards/scratch_3ec9bc3c-28da-11eb-9dce-0242ac110002	VISp_ALM 011-012			AllenDend:CS201810310_150																			subclass
+http://brain_data_standards/scratch_3ec9bd72-28da-11eb-9dce-0242ac110002	VISp_ALM 011	L5 IT VISp Col6a1 Fezf2		AllenDend:CS201810310_11																			subclass
+http://brain_data_standards/scratch_3ec9be26-28da-11eb-9dce-0242ac110002	VISp_ALM 012	L5 IT VISp Col27a1		AllenDend:CS201810310_12																			subclass
+http://brain_data_standards/scratch_3ec9bec6-28da-11eb-9dce-0242ac110002	VISp_ALM 013-018	L5 IT (ALM)		AllenDend:CS201810310_151																			subclass
+http://brain_data_standards/scratch_3ec9bf48-28da-11eb-9dce-0242ac110002	VISp_ALM 013-014			AllenDend:CS201810310_152																			subclass
+http://brain_data_standards/scratch_3ec9bfde-28da-11eb-9dce-0242ac110002	VISp_ALM 013	L5 IT ALM Npw		AllenDend:CS201810310_13																			subclass
+http://brain_data_standards/scratch_3ec9c09c-28da-11eb-9dce-0242ac110002	VISp_ALM 014	L5 IT ALM Pld5		AllenDend:CS201810310_14																			subclass
+http://brain_data_standards/scratch_3ec9c1d2-28da-11eb-9dce-0242ac110002	VISp_ALM 015-018			AllenDend:CS201810310_153																			subclass
+http://brain_data_standards/scratch_3ec9c308-28da-11eb-9dce-0242ac110002	VISp_ALM 015-016			AllenDend:CS201810310_154																			subclass
+http://brain_data_standards/scratch_3ec9c43e-28da-11eb-9dce-0242ac110002	VISp_ALM 015	L5 IT ALM Cbln4 Fezf2		AllenDend:CS201810310_15																			subclass
+http://brain_data_standards/scratch_3ec9c560-28da-11eb-9dce-0242ac110002	VISp_ALM 016	L5 IT ALM Lypd1 Gpr88		AllenDend:CS201810310_16																			subclass
+http://brain_data_standards/scratch_3ec9c628-28da-11eb-9dce-0242ac110002	VISp_ALM 017-018			AllenDend:CS201810310_155																			subclass
+http://brain_data_standards/scratch_3ec9c754-28da-11eb-9dce-0242ac110002	VISp_ALM 017	L5 IT ALM Tnc		AllenDend:CS201810310_17																			subclass
+http://brain_data_standards/scratch_3ec9c88a-28da-11eb-9dce-0242ac110002	VISp_ALM 018	L5 IT ALM Tmem163 Dmrtb1		AllenDend:CS201810310_18																			subclass
+http://brain_data_standards/scratch_3ec9c9c0-28da-11eb-9dce-0242ac110002	VISp_ALM 019-023	L6 IT (ALM)		AllenDend:CS201810310_156																			subclass
+http://brain_data_standards/scratch_3ec9cb00-28da-11eb-9dce-0242ac110002	VISp_ALM 019-021			AllenDend:CS201810310_157																			subclass
+http://brain_data_standards/scratch_3ec9cc18-28da-11eb-9dce-0242ac110002	VISp_ALM 019	L5 IT ALM Tmem163 Arhgap25		AllenDend:CS201810310_19																			subclass
+http://brain_data_standards/scratch_3ec9ccc2-28da-11eb-9dce-0242ac110002	VISp_ALM 020-021			AllenDend:CS201810310_158																			subclass
+http://brain_data_standards/scratch_3ec9cd3a-28da-11eb-9dce-0242ac110002	VISp_ALM 020	L5 IT ALM Cpa6 Gpr88		AllenDend:CS201810310_20																			subclass
+http://brain_data_standards/scratch_3ec9cdda-28da-11eb-9dce-0242ac110002	VISp_ALM 021	L5 IT ALM Gkn1 Pcdh19		AllenDend:CS201810310_21																			subclass
+http://brain_data_standards/scratch_3ec9ce8e-28da-11eb-9dce-0242ac110002	VISp_ALM 022-023			AllenDend:CS201810310_159																			subclass
+http://brain_data_standards/scratch_3ec9cfc4-28da-11eb-9dce-0242ac110002	VISp_ALM 022	L6 IT ALM Tgfb1		AllenDend:CS201810310_22																			subclass
+http://brain_data_standards/scratch_3ec9d0fa-28da-11eb-9dce-0242ac110002	VISp_ALM 023	L6 IT ALM Oprk1		AllenDend:CS201810310_23																			subclass
+http://brain_data_standards/scratch_3ec9d23a-28da-11eb-9dce-0242ac110002	VISp_ALM 024-027	L6 IT (VISp)		AllenDend:CS201810310_160																			subclass
+http://brain_data_standards/scratch_3ec9d35c-28da-11eb-9dce-0242ac110002	VISp_ALM 024-026			AllenDend:CS201810310_161																			subclass
+http://brain_data_standards/scratch_3ec9d42e-28da-11eb-9dce-0242ac110002	VISp_ALM 024	L6 IT VISp Penk Col27a1		AllenDend:CS201810310_24																			subclass
+http://brain_data_standards/scratch_3ec9d56e-28da-11eb-9dce-0242ac110002	VISp_ALM 025-026			AllenDend:CS201810310_162																			subclass
+http://brain_data_standards/scratch_3ec9d69a-28da-11eb-9dce-0242ac110002	VISp_ALM 025	L6 IT VISp Penk Fst		AllenDend:CS201810310_25																			subclass
+http://brain_data_standards/scratch_3ec9d7a8-28da-11eb-9dce-0242ac110002	VISp_ALM 026	L6 IT VISp Col23a1 Adamts2		AllenDend:CS201810310_26																			subclass
+http://brain_data_standards/scratch_3ec9d852-28da-11eb-9dce-0242ac110002	VISp_ALM 027	L6 IT VISp Col18a1		AllenDend:CS201810310_27																			subclass
+http://brain_data_standards/scratch_3ec9d910-28da-11eb-9dce-0242ac110002	VISp_ALM 028	L6 IT VISp Car3		AllenDend:CS201810310_28																			subclass
+http://brain_data_standards/scratch_3ec9da3c-28da-11eb-9dce-0242ac110002	VISp_ALM 029-036			AllenDend:CS201810310_163																			subclass
+http://brain_data_standards/scratch_3ec9db72-28da-11eb-9dce-0242ac110002	VISp_ALM 029	L5 PT VISp Chrna6		AllenDend:CS201810310_29																			subclass
+http://brain_data_standards/scratch_3ec9de4c-28da-11eb-9dce-0242ac110002	VISp_ALM 030-036	L5 PT		AllenDend:CS201810310_164																			subclass
+http://brain_data_standards/scratch_3ec9df78-28da-11eb-9dce-0242ac110002	VISp_ALM 030-033			AllenDend:CS201810310_165																			subclass
+http://brain_data_standards/scratch_3ec9e0b8-28da-11eb-9dce-0242ac110002	VISp_ALM 030	L5 PT VISp Lgr5		AllenDend:CS201810310_30																			subclass
+http://brain_data_standards/scratch_3ec9e1ee-28da-11eb-9dce-0242ac110002	VISp_ALM 031-033			AllenDend:CS201810310_166																			subclass
+http://brain_data_standards/scratch_3ec9e324-28da-11eb-9dce-0242ac110002	VISp_ALM 031	L5 PT VISp C1ql2 Ptgfr		AllenDend:CS201810310_31																			subclass
+http://brain_data_standards/scratch_3ec9e4b4-28da-11eb-9dce-0242ac110002	VISp_ALM 032-033			AllenDend:CS201810310_167																			subclass
+http://brain_data_standards/scratch_3ec9e5ea-28da-11eb-9dce-0242ac110002	VISp_ALM 032	L5 PT VISp C1ql2 Cdh13		AllenDend:CS201810310_32																			subclass
+http://brain_data_standards/scratch_3ec9e70c-28da-11eb-9dce-0242ac110002	VISp_ALM 033	L5 PT VISp Krt80		AllenDend:CS201810310_33																			subclass
+http://brain_data_standards/scratch_3ec9e7de-28da-11eb-9dce-0242ac110002	VISp_ALM 034-036			AllenDend:CS201810310_168																			subclass
+http://brain_data_standards/scratch_3ec9e90a-28da-11eb-9dce-0242ac110002	VISp_ALM 034	L5 PT ALM Slco2a1		AllenDend:CS201810310_34																			subclass
+http://brain_data_standards/scratch_3ec9ea4a-28da-11eb-9dce-0242ac110002	VISp_ALM 035-036			AllenDend:CS201810310_169																			subclass
+http://brain_data_standards/scratch_3ec9eb94-28da-11eb-9dce-0242ac110002	VISp_ALM 035	L5 PT ALM Npsr1		AllenDend:CS201810310_35																			subclass
+http://brain_data_standards/scratch_3ec9ec52-28da-11eb-9dce-0242ac110002	VISp_ALM 036	L5 PT ALM Hpgd		AllenDend:CS201810310_36																			subclass
+http://brain_data_standards/scratch_3ec9ed10-28da-11eb-9dce-0242ac110002	VISp_ALM 037-055			AllenDend:CS201810310_170																			subclass
+http://brain_data_standards/scratch_3ec9ee32-28da-11eb-9dce-0242ac110002	VISp_ALM 037-040	L5/6 NP		AllenDend:CS201810310_171																			subclass
+http://brain_data_standards/scratch_3ec9ef0e-28da-11eb-9dce-0242ac110002	VISp_ALM 037-039			AllenDend:CS201810310_172																			subclass
+http://brain_data_standards/scratch_3ec9f04e-28da-11eb-9dce-0242ac110002	VISp_ALM 037	L5 NP VISp Trhr Cpne7		AllenDend:CS201810310_37																			subclass
+http://brain_data_standards/scratch_3ec9f184-28da-11eb-9dce-0242ac110002	VISp_ALM 038-039			AllenDend:CS201810310_173																			subclass
+http://brain_data_standards/scratch_3ec9f2ba-28da-11eb-9dce-0242ac110002	VISp_ALM 038	L5 NP ALM Trhr Nefl		AllenDend:CS201810310_38																			subclass
+http://brain_data_standards/scratch_3ec9f3fa-28da-11eb-9dce-0242ac110002	VISp_ALM 039	L5 NP VISp Trhr Met		AllenDend:CS201810310_39																			subclass
+http://brain_data_standards/scratch_3ec9f530-28da-11eb-9dce-0242ac110002	VISp_ALM 040	L6 NP ALM Trh		AllenDend:CS201810310_40																			subclass
+http://brain_data_standards/scratch_3ec9f666-28da-11eb-9dce-0242ac110002	VISp_ALM 041-055	L6		AllenDend:CS201810310_174																			subclass
+http://brain_data_standards/scratch_3ec9f774-28da-11eb-9dce-0242ac110002	VISp_ALM 041-047	L6 CT		AllenDend:CS201810310_175																			subclass
+http://brain_data_standards/scratch_3ec9f828-28da-11eb-9dce-0242ac110002	VISp_ALM 041-046			AllenDend:CS201810310_176																			subclass
+http://brain_data_standards/scratch_3ec9f8dc-28da-11eb-9dce-0242ac110002	VISp_ALM 041-043			AllenDend:CS201810310_177																			subclass
+http://brain_data_standards/scratch_3ec9f9fe-28da-11eb-9dce-0242ac110002	VISp_ALM 041	L6 CT Nxph2 Sla		AllenDend:CS201810310_41																			subclass
+http://brain_data_standards/scratch_3ec9fad0-28da-11eb-9dce-0242ac110002	VISp_ALM 042-043			AllenDend:CS201810310_178																			subclass
+http://brain_data_standards/scratch_3ec9fc06-28da-11eb-9dce-0242ac110002	VISp_ALM 042	L6 CT ALM Cpa6		AllenDend:CS201810310_42																			subclass
+http://brain_data_standards/scratch_3ec9fd46-28da-11eb-9dce-0242ac110002	VISp_ALM 043	L6 CT VISp Krt80 Sla		AllenDend:CS201810310_43																			subclass
+http://brain_data_standards/scratch_3ec9fe4a-28da-11eb-9dce-0242ac110002	VISp_ALM 044-046			AllenDend:CS201810310_179																			subclass
+http://brain_data_standards/scratch_3ec9ff08-28da-11eb-9dce-0242ac110002	VISp_ALM 044	L6 CT VISp Nxph2 Wls		AllenDend:CS201810310_44																			subclass
+http://brain_data_standards/scratch_3ec9ffbc-28da-11eb-9dce-0242ac110002	VISp_ALM 045-046			AllenDend:CS201810310_180																			subclass
+http://brain_data_standards/scratch_3eca005c-28da-11eb-9dce-0242ac110002	VISp_ALM 045	L6 CT VISp Ctxn3 Brinp3		AllenDend:CS201810310_45																			subclass
+http://brain_data_standards/scratch_3eca00f2-28da-11eb-9dce-0242ac110002	VISp_ALM 046	L6 CT VISp Ctxn3 Sla		AllenDend:CS201810310_46																			subclass
+http://brain_data_standards/scratch_3eca01a6-28da-11eb-9dce-0242ac110002	VISp_ALM 047	L6 CT VISp Gpr139		AllenDend:CS201810310_47																			subclass
+http://brain_data_standards/scratch_3eca02d2-28da-11eb-9dce-0242ac110002	VISp_ALM 048-055	L6b		AllenDend:CS201810310_181																			subclass
+http://brain_data_standards/scratch_3eca05e8-28da-11eb-9dce-0242ac110002	VISp_ALM 048-054			AllenDend:CS201810310_182																			subclass
+http://brain_data_standards/scratch_3eca070a-28da-11eb-9dce-0242ac110002	VISp_ALM 048-050			AllenDend:CS201810310_183																			subclass
+http://brain_data_standards/scratch_3eca07dc-28da-11eb-9dce-0242ac110002	VISp_ALM 048	L6b Col8a1 Rprm		AllenDend:CS201810310_48																			subclass
+http://brain_data_standards/scratch_3eca0912-28da-11eb-9dce-0242ac110002	VISp_ALM 049-050			AllenDend:CS201810310_184																			subclass
+http://brain_data_standards/scratch_3eca0a48-28da-11eb-9dce-0242ac110002	VISp_ALM 049	L6b VISp Mup5		AllenDend:CS201810310_49																			subclass
+http://brain_data_standards/scratch_3eca0af2-28da-11eb-9dce-0242ac110002	VISp_ALM 050	L6b VISp Col8a1 Rxfp1		AllenDend:CS201810310_50																			subclass
+http://brain_data_standards/scratch_3eca0bb0-28da-11eb-9dce-0242ac110002	VISp_ALM 051-054			AllenDend:CS201810310_185																			subclass
+http://brain_data_standards/scratch_3eca0cbe-28da-11eb-9dce-0242ac110002	VISp_ALM 051-052			AllenDend:CS201810310_186																			subclass
+http://brain_data_standards/scratch_3eca0d9a-28da-11eb-9dce-0242ac110002	VISp_ALM 051	L6b ALM Olfr111 Spon1		AllenDend:CS201810310_51																			subclass
+http://brain_data_standards/scratch_3eca0ed0-28da-11eb-9dce-0242ac110002	VISp_ALM 052	L6b ALM Olfr111 Nxph1		AllenDend:CS201810310_52																			subclass
+http://brain_data_standards/scratch_3eca1006-28da-11eb-9dce-0242ac110002	VISp_ALM 053	L6b P2ry12		AllenDend:CS201810310_53																			subclass
+http://brain_data_standards/scratch_3eca110a-28da-11eb-9dce-0242ac110002	VISp_ALM 054	L6b VISp Crh		AllenDend:CS201810310_54																			subclass
+http://brain_data_standards/scratch_3eca1222-28da-11eb-9dce-0242ac110002	VISp_ALM 055	L6b Hsd17b2		AllenDend:CS201810310_55																			subclass
+http://brain_data_standards/scratch_3eca133a-28da-11eb-9dce-0242ac110002	VISp_ALM 056-115	GABAergic		AllenDend:CS201810310_187																			subclass
+http://brain_data_standards/scratch_3eca140c-28da-11eb-9dce-0242ac110002	VISp_ALM 056-084			AllenDend:CS201810310_188																			subclass
+http://brain_data_standards/scratch_3eca1560-28da-11eb-9dce-0242ac110002	VISp_ALM 056-068			AllenDend:CS201810310_189																			subclass
+http://brain_data_standards/scratch_3eca1718-28da-11eb-9dce-0242ac110002	VISp_ALM 056-062	Lamp5		AllenDend:CS201810310_190																			subclass
+http://brain_data_standards/scratch_3eca1efc-28da-11eb-9dce-0242ac110002	VISp_ALM 056-060			AllenDend:CS201810310_191																			subclass
+http://brain_data_standards/scratch_3eca2078-28da-11eb-9dce-0242ac110002	VISp_ALM 056	Lamp5 Krt73		AllenDend:CS201810310_56																			subclass
+http://brain_data_standards/scratch_3eca2140-28da-11eb-9dce-0242ac110002	VISp_ALM 057-060			AllenDend:CS201810310_192																			subclass
+http://brain_data_standards/scratch_3eca21fe-28da-11eb-9dce-0242ac110002	VISp_ALM 057-058			AllenDend:CS201810310_193																			subclass
+http://brain_data_standards/scratch_3eca232a-28da-11eb-9dce-0242ac110002	VISp_ALM 057	Lamp5 Fam19a1 Pax6		AllenDend:CS201810310_57																			subclass
+http://brain_data_standards/scratch_3eca2424-28da-11eb-9dce-0242ac110002	VISp_ALM 058	Lamp5 Fam19a1 Tmem182		AllenDend:CS201810310_58																			subclass
+http://brain_data_standards/scratch_3eca255a-28da-11eb-9dce-0242ac110002	VISp_ALM 059-060			AllenDend:CS201810310_194																			subclass
+http://brain_data_standards/scratch_3eca2690-28da-11eb-9dce-0242ac110002	VISp_ALM 059	Lamp5 Ntn1 Npy2r		AllenDend:CS201810310_59																			subclass
+http://brain_data_standards/scratch_3eca27bc-28da-11eb-9dce-0242ac110002	VISp_ALM 060	Lamp5 Plch2 Dock5		AllenDend:CS201810310_60																			subclass
+http://brain_data_standards/scratch_3eca2898-28da-11eb-9dce-0242ac110002	VISp_ALM 061-062			AllenDend:CS201810310_195																			subclass
+http://brain_data_standards/scratch_3eca29d8-28da-11eb-9dce-0242ac110002	VISp_ALM 061	Lamp5 Lsp1		AllenDend:CS201810310_61																			subclass
+http://brain_data_standards/scratch_3eca2c9e-28da-11eb-9dce-0242ac110002	VISp_ALM 062	Lamp5 Lhx6		AllenDend:CS201810310_62																			subclass
+http://brain_data_standards/scratch_3eca2dca-28da-11eb-9dce-0242ac110002	VISp_ALM 063-068			AllenDend:CS201810310_196																			subclass
+http://brain_data_standards/scratch_3eca2e6a-28da-11eb-9dce-0242ac110002	VISp_ALM 063-066	Sncg		AllenDend:CS201810310_197																			subclass
+http://brain_data_standards/scratch_3eca2f28-28da-11eb-9dce-0242ac110002	VISp_ALM 063	Sncg Slc17a8		AllenDend:CS201810310_63																			subclass
+http://brain_data_standards/scratch_3eca3054-28da-11eb-9dce-0242ac110002	VISp_ALM 064-066			AllenDend:CS201810310_198																			subclass
+http://brain_data_standards/scratch_3eca31a8-28da-11eb-9dce-0242ac110002	VISp_ALM 064-065			AllenDend:CS201810310_199																			subclass
+http://brain_data_standards/scratch_3eca32e8-28da-11eb-9dce-0242ac110002	VISp_ALM 064	Sncg Vip Nptx2		AllenDend:CS201810310_64																			subclass
+http://brain_data_standards/scratch_3eca340a-28da-11eb-9dce-0242ac110002	VISp_ALM 065	Sncg Gpr50		AllenDend:CS201810310_65																			subclass
+http://brain_data_standards/scratch_3eca34e6-28da-11eb-9dce-0242ac110002	VISp_ALM 066	Sncg Vip Itih5		AllenDend:CS201810310_66																			subclass
+http://brain_data_standards/scratch_3eca35a4-28da-11eb-9dce-0242ac110002	VISp_ALM 067-068	Serpinf1		AllenDend:CS201810310_200																			subclass
+http://brain_data_standards/scratch_3eca36d0-28da-11eb-9dce-0242ac110002	VISp_ALM 067	Serpinf1 Clrn1		AllenDend:CS201810310_67																			subclass
+http://brain_data_standards/scratch_3eca381a-28da-11eb-9dce-0242ac110002	VISp_ALM 068	Serpinf1 Aqp5 Vip		AllenDend:CS201810310_68																			subclass
+http://brain_data_standards/scratch_3eca38c4-28da-11eb-9dce-0242ac110002	VISp_ALM 069-084	Vip		AllenDend:CS201810310_201																			subclass
+http://brain_data_standards/scratch_3eca3982-28da-11eb-9dce-0242ac110002	VISp_ALM 069-070			AllenDend:CS201810310_202																			subclass
+http://brain_data_standards/scratch_3eca3aa4-28da-11eb-9dce-0242ac110002	VISp_ALM 069	Vip Igfbp6 Car10		AllenDend:CS201810310_69																			subclass
+http://brain_data_standards/scratch_3eca3b80-28da-11eb-9dce-0242ac110002	VISp_ALM 070	Vip Igfbp6 Pltp		AllenDend:CS201810310_70																			subclass
+http://brain_data_standards/scratch_3eca3c3e-28da-11eb-9dce-0242ac110002	VISp_ALM 071-084			AllenDend:CS201810310_203																			subclass
+http://brain_data_standards/scratch_3eca3d6a-28da-11eb-9dce-0242ac110002	VISp_ALM 071-081			AllenDend:CS201810310_204																			subclass
+http://brain_data_standards/scratch_3eca3ea0-28da-11eb-9dce-0242ac110002	VISp_ALM 071-072			AllenDend:CS201810310_205																			subclass
+http://brain_data_standards/scratch_3eca4012-28da-11eb-9dce-0242ac110002	VISp_ALM 071	Vip Lmo1 Fam159b		AllenDend:CS201810310_71																			subclass
+http://brain_data_standards/scratch_3eca4134-28da-11eb-9dce-0242ac110002	VISp_ALM 072	Vip Lmo1 Myl1		AllenDend:CS201810310_72																			subclass
+http://brain_data_standards/scratch_3eca41f2-28da-11eb-9dce-0242ac110002	VISp_ALM 073-081			AllenDend:CS201810310_206																			subclass
+http://brain_data_standards/scratch_3eca4350-28da-11eb-9dce-0242ac110002	VISp_ALM 073-075			AllenDend:CS201810310_207																			subclass
+http://brain_data_standards/scratch_3eca4486-28da-11eb-9dce-0242ac110002	VISp_ALM 073	Vip Igfbp4 Mab21l1		AllenDend:CS201810310_73																			subclass
+http://brain_data_standards/scratch_3eca45bc-28da-11eb-9dce-0242ac110002	VISp_ALM 074-075			AllenDend:CS201810310_208																			subclass
+http://brain_data_standards/scratch_3eca46f2-28da-11eb-9dce-0242ac110002	VISp_ALM 074	Vip Arhgap36 Hmcn1		AllenDend:CS201810310_74																			subclass
+http://brain_data_standards/scratch_3eca4850-28da-11eb-9dce-0242ac110002	VISp_ALM 075	Vip Gpc3 Slc18a3		AllenDend:CS201810310_75																			subclass
+http://brain_data_standards/scratch_3eca4986-28da-11eb-9dce-0242ac110002	VISp_ALM 076-081			AllenDend:CS201810310_209																			subclass
+http://brain_data_standards/scratch_3eca4ae4-28da-11eb-9dce-0242ac110002	VISp_ALM 076-079			AllenDend:CS201810310_210																			subclass
+http://brain_data_standards/scratch_3eca4be8-28da-11eb-9dce-0242ac110002	VISp_ALM 076-077			AllenDend:CS201810310_211																			subclass
+http://brain_data_standards/scratch_3eca4ca6-28da-11eb-9dce-0242ac110002	VISp_ALM 076	Vip Ptprt Pkp2		AllenDend:CS201810310_76																			subclass
+http://brain_data_standards/scratch_3eca4d5a-28da-11eb-9dce-0242ac110002	VISp_ALM 077	Vip Rspo4 Rxfp1 Chat		AllenDend:CS201810310_77																			subclass
+http://brain_data_standards/scratch_3eca4dfa-28da-11eb-9dce-0242ac110002	VISp_ALM 078-079			AllenDend:CS201810310_212																			subclass
+http://brain_data_standards/scratch_3eca4e90-28da-11eb-9dce-0242ac110002	VISp_ALM 078	Vip Lect1 Oxtr		AllenDend:CS201810310_78																			subclass
+http://brain_data_standards/scratch_3eca4f44-28da-11eb-9dce-0242ac110002	VISp_ALM 079	Vip Rspo1 Itga4		AllenDend:CS201810310_79																			subclass
+http://brain_data_standards/scratch_3eca507a-28da-11eb-9dce-0242ac110002	VISp_ALM 080-081			AllenDend:CS201810310_213																			subclass
+http://brain_data_standards/scratch_3eca5386-28da-11eb-9dce-0242ac110002	VISp_ALM 080	Vip Chat Htr1f		AllenDend:CS201810310_80																			subclass
+http://brain_data_standards/scratch_3eca54ee-28da-11eb-9dce-0242ac110002	VISp_ALM 081	Vip Pygm C1ql1		AllenDend:CS201810310_81																			subclass
+http://brain_data_standards/scratch_3eca55fc-28da-11eb-9dce-0242ac110002	VISp_ALM 082-084			AllenDend:CS201810310_214																			subclass
+http://brain_data_standards/scratch_3eca573c-28da-11eb-9dce-0242ac110002	VISp_ALM 082-083			AllenDend:CS201810310_215																			subclass
+http://brain_data_standards/scratch_3eca5890-28da-11eb-9dce-0242ac110002	VISp_ALM 082	Vip Crispld2 Htr2c		AllenDend:CS201810310_82																			subclass
+http://brain_data_standards/scratch_3eca59c6-28da-11eb-9dce-0242ac110002	VISp_ALM 083	Vip Crispld2 Kcne4		AllenDend:CS201810310_83																			subclass
+http://brain_data_standards/scratch_3eca5a7a-28da-11eb-9dce-0242ac110002	VISp_ALM 084	Vip Col15a1 Pde1a		AllenDend:CS201810310_84																			subclass
+http://brain_data_standards/scratch_3eca5b24-28da-11eb-9dce-0242ac110002	VISp_ALM 085-115			AllenDend:CS201810310_216																			subclass
+http://brain_data_standards/scratch_3eca5bf6-28da-11eb-9dce-0242ac110002	VISp_ALM 085	Sst Chodl		AllenDend:CS201810310_85																			subclass
+http://brain_data_standards/scratch_3eca5d22-28da-11eb-9dce-0242ac110002	VISp_ALM 086-115			AllenDend:CS201810310_217																			subclass
+http://brain_data_standards/scratch_3eca5e58-28da-11eb-9dce-0242ac110002	VISp_ALM 086-105	Sst		AllenDend:CS201810310_218																			subclass
+http://brain_data_standards/scratch_3eca5f84-28da-11eb-9dce-0242ac110002	VISp_ALM 086-104			AllenDend:CS201810310_219																			subclass
+http://brain_data_standards/scratch_3eca607e-28da-11eb-9dce-0242ac110002	VISp_ALM 086-087			AllenDend:CS201810310_220																			subclass
+http://brain_data_standards/scratch_3eca61b4-28da-11eb-9dce-0242ac110002	VISp_ALM 086	Sst Mme Fam114a1		AllenDend:CS201810310_86																			subclass
+http://brain_data_standards/scratch_3eca62d6-28da-11eb-9dce-0242ac110002	VISp_ALM 087	Sst Tac1 Htr1d		AllenDend:CS201810310_87																			subclass
+http://brain_data_standards/scratch_3eca63bc-28da-11eb-9dce-0242ac110002	VISp_ALM 088	Sst Tac1 Tacr3		AllenDend:CS201810310_88																			subclass
+http://brain_data_standards/scratch_3eca64e8-28da-11eb-9dce-0242ac110002	VISp_ALM 089-090			AllenDend:CS201810310_221																			subclass
+http://brain_data_standards/scratch_3eca661e-28da-11eb-9dce-0242ac110002	VISp_ALM 089	Sst Calb2 Necab1		AllenDend:CS201810310_89																			subclass
+http://brain_data_standards/scratch_3eca6772-28da-11eb-9dce-0242ac110002	VISp_ALM 090	Sst Calb2 Pdlim5		AllenDend:CS201810310_90																			subclass
+http://brain_data_standards/scratch_3eca689e-28da-11eb-9dce-0242ac110002	VISp_ALM 091	Sst Nr2f2 Necab1		AllenDend:CS201810310_91																			subclass
+http://brain_data_standards/scratch_3eca6970-28da-11eb-9dce-0242ac110002	VISp_ALM 092-094			AllenDend:CS201810310_222																			subclass
+http://brain_data_standards/scratch_3eca6a24-28da-11eb-9dce-0242ac110002	VISp_ALM 092-093			AllenDend:CS201810310_223																			subclass
+http://brain_data_standards/scratch_3eca6b78-28da-11eb-9dce-0242ac110002	VISp_ALM 092	Sst Myh8 Etv1 		AllenDend:CS201810310_92																			subclass
+http://brain_data_standards/scratch_3eca6cb8-28da-11eb-9dce-0242ac110002	VISp_ALM 093	Sst Chrna2 Glra3		AllenDend:CS201810310_93																			subclass
+http://brain_data_standards/scratch_3eca6e02-28da-11eb-9dce-0242ac110002	VISp_ALM 094	Sst Myh8 Fibin		AllenDend:CS201810310_94																			subclass
+http://brain_data_standards/scratch_3eca6f24-28da-11eb-9dce-0242ac110002	VISp_ALM 095-096			AllenDend:CS201810310_224																			subclass
+http://brain_data_standards/scratch_3eca6ff6-28da-11eb-9dce-0242ac110002	VISp_ALM 095	Sst Chrna2 Ptgdr		AllenDend:CS201810310_95																			subclass
+http://brain_data_standards/scratch_3eca70b4-28da-11eb-9dce-0242ac110002	VISp_ALM 096	Sst Tac2 Myh4		AllenDend:CS201810310_96																			subclass
+http://brain_data_standards/scratch_3eca71e0-28da-11eb-9dce-0242ac110002	VISp_ALM 097-098			AllenDend:CS201810310_225																			subclass
+http://brain_data_standards/scratch_3eca7334-28da-11eb-9dce-0242ac110002	VISp_ALM 097	Sst Hpse Sema3c		AllenDend:CS201810310_97																			subclass
+http://brain_data_standards/scratch_3eca7474-28da-11eb-9dce-0242ac110002	VISp_ALM 098	Sst Hpse Cbln4		AllenDend:CS201810310_98																			subclass
+http://brain_data_standards/scratch_3eca7596-28da-11eb-9dce-0242ac110002	VISp_ALM 099-101			AllenDend:CS201810310_226																			subclass
+http://brain_data_standards/scratch_3eca762c-28da-11eb-9dce-0242ac110002	VISp_ALM 099-100			AllenDend:CS201810310_227																			subclass
+http://brain_data_standards/scratch_3eca76fe-28da-11eb-9dce-0242ac110002	VISp_ALM 099	Sst Crhr2 Efemp1		AllenDend:CS201810310_99																			subclass
+http://brain_data_standards/scratch_3eca783e-28da-11eb-9dce-0242ac110002	VISp_ALM 100	Sst Crh 4930553C11Rik 		AllenDend:CS201810310_100																			subclass
+http://brain_data_standards/scratch_3eca7b54-28da-11eb-9dce-0242ac110002	VISp_ALM 101	Sst Esm1		AllenDend:CS201810310_101																			subclass
+http://brain_data_standards/scratch_3eca7ca8-28da-11eb-9dce-0242ac110002	VISp_ALM 102-104			AllenDend:CS201810310_228																			subclass
+http://brain_data_standards/scratch_3eca7e10-28da-11eb-9dce-0242ac110002	VISp_ALM 102	Sst Tac2 Tacstd2		AllenDend:CS201810310_102																			subclass
+http://brain_data_standards/scratch_3eca7f5a-28da-11eb-9dce-0242ac110002	VISp_ALM 103-104			AllenDend:CS201810310_229																			subclass
+http://brain_data_standards/scratch_3eca8090-28da-11eb-9dce-0242ac110002	VISp_ALM 103	Sst Rxfp1 Eya1		AllenDend:CS201810310_103																			subclass
+http://brain_data_standards/scratch_3eca81ee-28da-11eb-9dce-0242ac110002	VISp_ALM 104	Sst Rxfp1 Prdm8		AllenDend:CS201810310_104																			subclass
+http://brain_data_standards/scratch_3eca832e-28da-11eb-9dce-0242ac110002	VISp_ALM 105	Sst Nts		AllenDend:CS201810310_105																			subclass
+http://brain_data_standards/scratch_3eca84b4-28da-11eb-9dce-0242ac110002	VISp_ALM 106-115	Pvalb		AllenDend:CS201810310_230																			subclass
+http://brain_data_standards/scratch_3eca85f4-28da-11eb-9dce-0242ac110002	VISp_ALM 106-114			AllenDend:CS201810310_231																			subclass
+http://brain_data_standards/scratch_3eca8752-28da-11eb-9dce-0242ac110002	VISp_ALM 106-107			AllenDend:CS201810310_232																			subclass
+http://brain_data_standards/scratch_3eca88d8-28da-11eb-9dce-0242ac110002	VISp_ALM 106	Pvalb Gabrg1		AllenDend:CS201810310_106																			subclass
+http://brain_data_standards/scratch_3eca89be-28da-11eb-9dce-0242ac110002	VISp_ALM 107	Pvalb Th Sst		AllenDend:CS201810310_107																			subclass
+http://brain_data_standards/scratch_3eca8aea-28da-11eb-9dce-0242ac110002	VISp_ALM 108-114			AllenDend:CS201810310_233																			subclass
+http://brain_data_standards/scratch_3eca8bc6-28da-11eb-9dce-0242ac110002	VISp_ALM 108-111			AllenDend:CS201810310_234																			subclass
+http://brain_data_standards/scratch_3eca8cf2-28da-11eb-9dce-0242ac110002	VISp_ALM 108	Pvalb Calb1 Sst		AllenDend:CS201810310_108																			subclass
+http://brain_data_standards/scratch_3eca8e28-28da-11eb-9dce-0242ac110002	VISp_ALM 109-111			AllenDend:CS201810310_235																			subclass
+http://brain_data_standards/scratch_3eca8f7c-28da-11eb-9dce-0242ac110002	VISp_ALM 109-110			AllenDend:CS201810310_236																			subclass
+http://brain_data_standards/scratch_3eca909e-28da-11eb-9dce-0242ac110002	VISp_ALM 109	Pvalb Akr1c18 Ntf3		AllenDend:CS201810310_109																			subclass
+http://brain_data_standards/scratch_3eca9170-28da-11eb-9dce-0242ac110002	VISp_ALM 110	Pvalb Sema3e Kank4		AllenDend:CS201810310_110																			subclass
+http://brain_data_standards/scratch_3eca92c4-28da-11eb-9dce-0242ac110002	VISp_ALM 111	Pvalb Gpr149 Islr		AllenDend:CS201810310_111																			subclass
+http://brain_data_standards/scratch_3eca93fa-28da-11eb-9dce-0242ac110002	VISp_ALM 112-114			AllenDend:CS201810310_237																			subclass
+http://brain_data_standards/scratch_3eca94fe-28da-11eb-9dce-0242ac110002	VISp_ALM 112	Pvalb Reln Itm2a		AllenDend:CS201810310_112																			subclass
+http://brain_data_standards/scratch_3eca95c6-28da-11eb-9dce-0242ac110002	VISp_ALM 113-114			AllenDend:CS201810310_238																			subclass
+http://brain_data_standards/scratch_3eca9706-28da-11eb-9dce-0242ac110002	VISp_ALM 113	Pvalb Reln Tac1		AllenDend:CS201810310_113																			subclass
+http://brain_data_standards/scratch_3eca981e-28da-11eb-9dce-0242ac110002	VISp_ALM 114	Pvalb Tpbg		AllenDend:CS201810310_114																			subclass
+http://brain_data_standards/scratch_3eca990e-28da-11eb-9dce-0242ac110002	VISp_ALM 115	Pvalb Vipr2		AllenDend:CS201810310_115																			subclass
+http://brain_data_standards/scratch_3eca9a4e-28da-11eb-9dce-0242ac110002	VISp_ALM 116-117			AllenDend:CS201810310_239																			subclass
+http://brain_data_standards/scratch_3eca9b7a-28da-11eb-9dce-0242ac110002	VISp_ALM 116	Meis2 Adamts19		AllenDend:CS201810310_116																			subclass
+http://brain_data_standards/scratch_3eca9c24-28da-11eb-9dce-0242ac110002	VISp_ALM 117	CR Lhx5		AllenDend:CS201810310_117																			subclass
+http://brain_data_standards/scratch_3eca9ca6-28da-11eb-9dce-0242ac110002	VISp_ALM 118-123			AllenDend:CS201810310_240																			subclass
+http://brain_data_standards/scratch_3eca9d5a-28da-11eb-9dce-0242ac110002	VISp_ALM 118-120			AllenDend:CS201810310_241																			subclass
+http://brain_data_standards/scratch_3eca9dfa-28da-11eb-9dce-0242ac110002	VISp_ALM 118	Astro Aqp4		AllenDend:CS201810310_118																			subclass
+http://brain_data_standards/scratch_3eca9e90-28da-11eb-9dce-0242ac110002	VISp_ALM 119-120	OPC		AllenDend:CS201810310_242																			subclass
+http://brain_data_standards/scratch_3ecaa12e-28da-11eb-9dce-0242ac110002	VISp_ALM 119	OPC Pdgfra Grm5		AllenDend:CS201810310_119																			subclass
+http://brain_data_standards/scratch_3ecaa28c-28da-11eb-9dce-0242ac110002	VISp_ALM 120	OPC Pdgfra Ccnb1		AllenDend:CS201810310_120																			subclass
+http://brain_data_standards/scratch_3ecaa322-28da-11eb-9dce-0242ac110002	VISp_ALM 121-123	Oligodendrocyte		AllenDend:CS201810310_243																			subclass
+http://brain_data_standards/scratch_3ecaa3e0-28da-11eb-9dce-0242ac110002	VISp_ALM 121	Oligo Rassf10		AllenDend:CS201810310_121																			subclass
+http://brain_data_standards/scratch_3ecaa516-28da-11eb-9dce-0242ac110002	VISp_ALM 122-123			AllenDend:CS201810310_244																			subclass
+http://brain_data_standards/scratch_3ecaa660-28da-11eb-9dce-0242ac110002	VISp_ALM 122	Oligo Serpinb1a		AllenDend:CS201810310_122																			subclass
+http://brain_data_standards/scratch_3ecaa728-28da-11eb-9dce-0242ac110002	VISp_ALM 123	Oligo Synpr		AllenDend:CS201810310_123																			subclass
+http://brain_data_standards/scratch_3ecaa82c-28da-11eb-9dce-0242ac110002	VISp_ALM 124-133			AllenDend:CS201810310_245																			subclass
+http://brain_data_standards/scratch_3ecaa908-28da-11eb-9dce-0242ac110002	VISp_ALM 124-131			AllenDend:CS201810310_246																			subclass
+http://brain_data_standards/scratch_3ecaa9c6-28da-11eb-9dce-0242ac110002	VISp_ALM 124-129			AllenDend:CS201810310_247																			subclass
+http://brain_data_standards/scratch_3ecaaaf2-28da-11eb-9dce-0242ac110002	VISp_ALM 124-127	VLMC		AllenDend:CS201810310_248																			subclass
+http://brain_data_standards/scratch_3ecaac46-28da-11eb-9dce-0242ac110002	VISp_ALM 124	VLMC Osr1 Cd74		AllenDend:CS201810310_124																			subclass
+http://brain_data_standards/scratch_3ecaae4e-28da-11eb-9dce-0242ac110002	VISp_ALM 125-127			AllenDend:CS201810310_249																			subclass
+http://brain_data_standards/scratch_3ecaaf20-28da-11eb-9dce-0242ac110002	VISp_ALM 125	VLMC Spp1 Hs3st6		AllenDend:CS201810310_125																			subclass
+http://brain_data_standards/scratch_3ecaafe8-28da-11eb-9dce-0242ac110002	VISp_ALM 126-127			AllenDend:CS201810310_250																			subclass
+http://brain_data_standards/scratch_3ecab132-28da-11eb-9dce-0242ac110002	VISp_ALM 126	VLMC Osr1 Mc5r		AllenDend:CS201810310_126																			subclass
+http://brain_data_standards/scratch_3ecab222-28da-11eb-9dce-0242ac110002	VISp_ALM 127	VLMC Spp1 Col15a1		AllenDend:CS201810310_127																			subclass
+http://brain_data_standards/scratch_3ecab362-28da-11eb-9dce-0242ac110002	VISp_ALM 128-129			AllenDend:CS201810310_251																			subclass
+http://brain_data_standards/scratch_3ecab4ca-28da-11eb-9dce-0242ac110002	VISp_ALM 128	Peri Kcnj8		AllenDend:CS201810310_128																			subclass
+http://brain_data_standards/scratch_3ecab92a-28da-11eb-9dce-0242ac110002	VISp_ALM 129	SMC Acta2		AllenDend:CS201810310_129																			subclass
+http://brain_data_standards/scratch_3ecabbdc-28da-11eb-9dce-0242ac110002	VISp_ALM 130-131	Endothelial		AllenDend:CS201810310_252																			subclass
+http://brain_data_standards/scratch_3ecabd58-28da-11eb-9dce-0242ac110002	VISp_ALM 130	Endo Ctla2a		AllenDend:CS201810310_130																			subclass
+http://brain_data_standards/scratch_3ecabeb6-28da-11eb-9dce-0242ac110002	VISp_ALM 131	Endo Cytl1		AllenDend:CS201810310_131																			subclass
+http://brain_data_standards/scratch_3ecac06e-28da-11eb-9dce-0242ac110002	VISp_ALM 132-133	Microglia-PVM		AllenDend:CS201810310_253																			subclass
+http://brain_data_standards/scratch_3ecac23a-28da-11eb-9dce-0242ac110002	VISp_ALM 132	PVM Mrc1		AllenDend:CS201810310_132																			subclass
+http://brain_data_standards/scratch_3ecac3de-28da-11eb-9dce-0242ac110002	VISp_ALM 133	Microglia Siglech		AllenDend:CS201810310_133																			subclass

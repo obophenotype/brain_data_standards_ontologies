@@ -2,6 +2,8 @@ import pandas as pd
 import uuid
 from dendrogram_tools import dend_json_2_nodes_n_edges
 
+# TODO - refactor with generic template generation function
+
 def generate_ind_template(dend_json_path, output_filepath):
     dend = dend_json_2_nodes_n_edges(dend_json_path)
     robot_template_seed = {'ID': 'ID',
@@ -18,6 +20,7 @@ def generate_ind_template(dend_json_path, output_filepath):
     synonym_properties = ['original_label',
                           'cell_set_aligned_alias',
                           'cell_set_additional_aliases']
+
     for o in dend['nodes']:
         d = dict()
         d['ID'] = 'AllenDend:' + o['cell_set_accession']
@@ -33,6 +36,24 @@ def generate_ind_template(dend_json_path, output_filepath):
         dl.append(d)
     robot_template = pd.DataFrame.from_records(dl)
     robot_template.to_csv(output_filepath, sep="\t", index=False)
+
+def generate_marker_template(dend_json_path, output_filepath):
+    dend = dend_json_2_nodes_n_edges(dend_json_path)
+    robot_marker_template_seed = {
+        'ID': 'ID',
+        'Expresses': "TI 'expresses' % SPLIT = '|' ",
+        'Evidence': "^A rdfs:comment"
+    }
+    template = [robot_marker_template_seed]
+    for o in dend['nodes']:
+        d = dict()
+        d['ID'] = 'AllenDend:' + o['cell_set_accession']
+        for k in robot_marker_template_seed.keys():
+            if not (k in d.keys()):
+                d[k] = ''
+        template.append(d)
+    class_robot_template = pd.DataFrame.from_records(template)
+    class_robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
 def generate_curated_class_template(dend_json_path, output_filepath):
