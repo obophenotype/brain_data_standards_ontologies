@@ -11,6 +11,7 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 Ontology(<http://purl.obolibrary.org/obo/bdscratch.owl>
 Import(<http://purl.obolibrary.org/obo/bdscratch/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/bdscratch/imports/ro_import.owl>)
+Import(<http://purl.obolibrary.org/obo/bdscratch/releases/2020-12-10/imports/ensmusg_import.owl>)
 Import(<http://www.semanticweb.org/brain_data_standards/components/all_templates.owl>)
 Annotation(dce:description "None")
 Annotation(dce:title "Brain Data Standards Cell Ontology")
@@ -20,6 +21,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BDSCRATCH_00000000>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002100>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002215>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002292>))
 Declaration(ObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar>))
 Declaration(ObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_subexemplar>))
 Declaration(ObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of>))
@@ -39,6 +41,10 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002100> "has 
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002215> "capable of")
 
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002292> (expresses)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002292> "expresses")
+
 # Object Property: <http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> (has_exemplar)
 
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> "has_exemplar")
@@ -52,14 +58,6 @@ SubObjectPropertyOf(<http://www.semanticweb.org/brain_data_standards/helper.owl#
 TransitiveObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of>)
 
 
-
-############################
-#   Classes
-############################
-
-# Class: <http://purl.obolibrary.org/obo/BDSCRATCH_00000000> (root node)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BDSCRATCH_00000000> "root node"@en)
 
 
 SubObjectPropertyOf(ObjectPropertyChain(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://purl.obolibrary.org/obo/RO_0002215>) <http://purl.obolibrary.org/obo/RO_0002215>)

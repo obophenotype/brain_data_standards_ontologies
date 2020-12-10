@@ -1,151 +1,151 @@
 ID	Label	PrefLabel	Synonyms	Exemplar	Classification	Comment	part of	part evidence comment	part evidence pub	part evidence dbxref	location	location evidence comment	location evidence pub	location evidence dbxref	has soma location	soma location evidence comment	soma location evidence pub	soma location evidence dbxref	cell morphology phenotype	cell morphology evidence comment	cell morphology evidence pub	cell morphology evidence dbxref	Class_type
 ID	LABEL	A skos:prefLabel	A oboInOwl:has_exact_synonym	EC CL:0000003 and 'has_exemplar' value %	SC %	A rdfs:comment	SC 'part of' some %	>A rdfs:comment	>A dc:reference SPLIT='|'	>A oio:hasDbXref SPLIT='|'	SC 'located in' some %	>A rdfs:comment	>A dc:reference SPLIT='|'	>A oio:hasDbXref SPLIT='|'	SC 'has soma location' some %	>A rdfs:comment	>A dc:reference SPLIT='|'	>A oio:dbxref SPLIT='|'	SC 'bearer of' some %	>A rdfs:comment	>A dc:reference SPLIT='|'	>A oio:hasDbXref SPLIT='|'	
-http://brain_data_standards/scratch_3e88913a-28da-11eb-b1ce-0242ac110002	All cells			AllenDend:CS201908210_76																			subclass
-http://brain_data_standards/scratch_3e8893ce-28da-11eb-b1ce-0242ac110002	MTG 001-069	Neuronal		AllenDend:CS201908210_77																			subclass
-http://brain_data_standards/scratch_3e889658-28da-11eb-b1ce-0242ac110002	MTG 001-045	Inhibitory		AllenDend:CS201908210_78																			subclass
-http://brain_data_standards/scratch_3e889770-28da-11eb-b1ce-0242ac110002	MTG 001-027	ADARB2 (CGE)		AllenDend:CS201908210_79																			subclass
-http://brain_data_standards/scratch_3e889842-28da-11eb-b1ce-0242ac110002	MTG 001-006	LAMP5/PAX6		AllenDend:CS201908210_80																			subclass
-http://brain_data_standards/scratch_3e88993c-28da-11eb-b1ce-0242ac110002	MTG 001-002			AllenDend:CS201908210_81																			subclass
-http://brain_data_standards/scratch_3e889a0e-28da-11eb-b1ce-0242ac110002	MTG 001	Inh L1-2 PAX6 CDH12		AllenDend:CS201908210_1																			subclass
-http://brain_data_standards/scratch_3e889ad6-28da-11eb-b1ce-0242ac110002	MTG 002	Inh L1-2 PAX6 TNFAIP8L3		AllenDend:CS201908210_2																			subclass
-http://brain_data_standards/scratch_3e889c7a-28da-11eb-b1ce-0242ac110002	MTG 003-006			AllenDend:CS201908210_82																			subclass
-http://brain_data_standards/scratch_3e889dc4-28da-11eb-b1ce-0242ac110002	MTG 003	Inh L1 LAMP5 NMBR		AllenDend:CS201908210_3																			subclass
-http://brain_data_standards/scratch_3e889f04-28da-11eb-b1ce-0242ac110002	MTG 004-006			AllenDend:CS201908210_83																			subclass
-http://brain_data_standards/scratch_3e88a0b2-28da-11eb-b1ce-0242ac110002	MTG 004-005			AllenDend:CS201908210_84																			subclass
-http://brain_data_standards/scratch_3e88a210-28da-11eb-b1ce-0242ac110002	MTG 004	Inh L1-4 LAMP5 LCP2		AllenDend:CS201908210_4																			subclass
-http://brain_data_standards/scratch_3e88a328-28da-11eb-b1ce-0242ac110002	MTG 005	Inh L1-2 LAMP5 DBP		AllenDend:CS201908210_5																			subclass
-http://brain_data_standards/scratch_3e88a3f0-28da-11eb-b1ce-0242ac110002	MTG 006	Inh L2-6 LAMP5 CA1		AllenDend:CS201908210_6																			subclass
-http://brain_data_standards/scratch_3e88a562-28da-11eb-b1ce-0242ac110002	MTG 007-027	VIP		AllenDend:CS201908210_85																			subclass
-http://brain_data_standards/scratch_3e88a6a2-28da-11eb-b1ce-0242ac110002	MTG 007-014			AllenDend:CS201908210_86																			subclass
-http://brain_data_standards/scratch_3e88a7ec-28da-11eb-b1ce-0242ac110002	MTG 007-012			AllenDend:CS201908210_87																			subclass
-http://brain_data_standards/scratch_3e88a92c-28da-11eb-b1ce-0242ac110002	MTG 007-009			AllenDend:CS201908210_88																			subclass
-http://brain_data_standards/scratch_3e88aa62-28da-11eb-b1ce-0242ac110002	MTG 007-008			AllenDend:CS201908210_89																			subclass
-http://brain_data_standards/scratch_3e88aba2-28da-11eb-b1ce-0242ac110002	MTG 007	Inh L1 SST CHRNA4		AllenDend:CS201908210_7																			subclass
-http://brain_data_standards/scratch_3e88ace2-28da-11eb-b1ce-0242ac110002	MTG 008	Inh L1-2 ADARB2 MC4R		AllenDend:CS201908210_8																			subclass
-http://brain_data_standards/scratch_3e88ae04-28da-11eb-b1ce-0242ac110002	MTG 009	Inh L1-2 SST BAGE2		AllenDend:CS201908210_9																			subclass
-http://brain_data_standards/scratch_3e88aecc-28da-11eb-b1ce-0242ac110002	MTG 010-012			AllenDend:CS201908210_90																			subclass
-http://brain_data_standards/scratch_3e88afda-28da-11eb-b1ce-0242ac110002	MTG 010	Inh L1-3 VIP SYT6		AllenDend:CS201908210_10																			subclass
-http://brain_data_standards/scratch_3e88b0a2-28da-11eb-b1ce-0242ac110002	MTG 011-012			AllenDend:CS201908210_91																			subclass
-http://brain_data_standards/scratch_3e88b1f6-28da-11eb-b1ce-0242ac110002	MTG 011	Inh L1-2 VIP TSPAN12		AllenDend:CS201908210_11																			subclass
-http://brain_data_standards/scratch_3e88b304-28da-11eb-b1ce-0242ac110002	MTG 012	Inh L1-4 VIP CHRNA6		AllenDend:CS201908210_12																			subclass
-http://brain_data_standards/scratch_3e88b3b8-28da-11eb-b1ce-0242ac110002	MTG 013-014			AllenDend:CS201908210_92																			subclass
-http://brain_data_standards/scratch_3e88b44e-28da-11eb-b1ce-0242ac110002	MTG 013	Inh L1-3 VIP ADAMTSL1		AllenDend:CS201908210_13																			subclass
-http://brain_data_standards/scratch_3e88b8ae-28da-11eb-b1ce-0242ac110002	MTG 014	Inh L1-4 VIP PENK		AllenDend:CS201908210_14																			subclass
-http://brain_data_standards/scratch_3e88bb06-28da-11eb-b1ce-0242ac110002	MTG 015-027			AllenDend:CS201908210_93																			subclass
-http://brain_data_standards/scratch_3e88bc46-28da-11eb-b1ce-0242ac110002	MTG 015-019			AllenDend:CS201908210_94																			subclass
-http://brain_data_standards/scratch_3e88bcfa-28da-11eb-b1ce-0242ac110002	MTG 015-017			AllenDend:CS201908210_95																			subclass
-http://brain_data_standards/scratch_3e88bdb8-28da-11eb-b1ce-0242ac110002	MTG 015-016			AllenDend:CS201908210_96																			subclass
-http://brain_data_standards/scratch_3e88beee-28da-11eb-b1ce-0242ac110002	MTG 015	Inh L2-6 VIP QPCT		AllenDend:CS201908210_15																			subclass
-http://brain_data_standards/scratch_3e88c024-28da-11eb-b1ce-0242ac110002	MTG 016	Inh L3-6 VIP HS3ST3A1		AllenDend:CS201908210_16																			subclass
-http://brain_data_standards/scratch_3e88c164-28da-11eb-b1ce-0242ac110002	MTG 017	Inh L1-2 VIP PCDH20		AllenDend:CS201908210_17																			subclass
-http://brain_data_standards/scratch_3e88c29a-28da-11eb-b1ce-0242ac110002	MTG 018-019			AllenDend:CS201908210_97																			subclass
-http://brain_data_standards/scratch_3e88c39e-28da-11eb-b1ce-0242ac110002	MTG 018	Inh L2-5 VIP SERPINF1		AllenDend:CS201908210_18																			subclass
-http://brain_data_standards/scratch_3e88c452-28da-11eb-b1ce-0242ac110002	MTG 019	Inh L2-5 VIP TYR		AllenDend:CS201908210_19																			subclass
-http://brain_data_standards/scratch_3e88c4d4-28da-11eb-b1ce-0242ac110002	MTG 020-027			AllenDend:CS201908210_98																			subclass
-http://brain_data_standards/scratch_3e88c556-28da-11eb-b1ce-0242ac110002	MTG 020-023			AllenDend:CS201908210_99																			subclass
-http://brain_data_standards/scratch_3e88c60a-28da-11eb-b1ce-0242ac110002	MTG 020-022			AllenDend:CS201908210_100																			subclass
-http://brain_data_standards/scratch_3e88c772-28da-11eb-b1ce-0242ac110002	MTG 020-021			AllenDend:CS201908210_101																			subclass
-http://brain_data_standards/scratch_3e88c90c-28da-11eb-b1ce-0242ac110002	MTG 020	Inh L1-3 VIP CHRM2		AllenDend:CS201908210_20																			subclass
-http://brain_data_standards/scratch_3e88ca74-28da-11eb-b1ce-0242ac110002	MTG 021	Inh L2-4 VIP CBLN1		AllenDend:CS201908210_21																			subclass
-http://brain_data_standards/scratch_3e88cbbe-28da-11eb-b1ce-0242ac110002	MTG 022	Inh L1-3 VIP CCDC184		AllenDend:CS201908210_22																			subclass
-http://brain_data_standards/scratch_3e88cce0-28da-11eb-b1ce-0242ac110002	MTG 023	Inh L1-3 VIP GGH		AllenDend:CS201908210_23																			subclass
-http://brain_data_standards/scratch_3e88cd9e-28da-11eb-b1ce-0242ac110002	MTG 024-027			AllenDend:CS201908210_102																			subclass
-http://brain_data_standards/scratch_3e88cede-28da-11eb-b1ce-0242ac110002	MTG 024-025			AllenDend:CS201908210_103																			subclass
-http://brain_data_standards/scratch_3e88d014-28da-11eb-b1ce-0242ac110002	MTG 024	Inh L1-2 VIP LBH		AllenDend:CS201908210_24																			subclass
-http://brain_data_standards/scratch_3e88d190-28da-11eb-b1ce-0242ac110002	MTG 025	Inh L2-3 VIP CASC6		AllenDend:CS201908210_25																			subclass
-http://brain_data_standards/scratch_3e88d2b2-28da-11eb-b1ce-0242ac110002	MTG 026-027			AllenDend:CS201908210_104																			subclass
-http://brain_data_standards/scratch_3e88d37a-28da-11eb-b1ce-0242ac110002	MTG 026	Inh L2-4 VIP SPAG17		AllenDend:CS201908210_26																			subclass
-http://brain_data_standards/scratch_3e88d4a6-28da-11eb-b1ce-0242ac110002	MTG 027	Inh L1-4 VIP OPRM1		AllenDend:CS201908210_27																			subclass
-http://brain_data_standards/scratch_3e88d5dc-28da-11eb-b1ce-0242ac110002	MTG 028-045	LHX6 (MGE)		AllenDend:CS201908210_105																			subclass
-http://brain_data_standards/scratch_3e88d712-28da-11eb-b1ce-0242ac110002	MTG 028-044			AllenDend:CS201908210_106																			subclass
-http://brain_data_standards/scratch_3e88d852-28da-11eb-b1ce-0242ac110002	MTG 028	Inh L3-6 SST NPY		AllenDend:CS201908210_28																			subclass
-http://brain_data_standards/scratch_3e88d988-28da-11eb-b1ce-0242ac110002	MTG 029-044			AllenDend:CS201908210_107																			subclass
-http://brain_data_standards/scratch_3e88dac8-28da-11eb-b1ce-0242ac110002	MTG 029-038	SST		AllenDend:CS201908210_108																			subclass
-http://brain_data_standards/scratch_3e88dd98-28da-11eb-b1ce-0242ac110002	MTG 029-037			AllenDend:CS201908210_109																			subclass
-http://brain_data_standards/scratch_3e88dec4-28da-11eb-b1ce-0242ac110002	MTG 029-034			AllenDend:CS201908210_110																			subclass
-http://brain_data_standards/scratch_3e88e004-28da-11eb-b1ce-0242ac110002	MTG 029	Inh L3-6 SST HPGD		AllenDend:CS201908210_29																			subclass
-http://brain_data_standards/scratch_3e88e144-28da-11eb-b1ce-0242ac110002	MTG 030-034			AllenDend:CS201908210_111																			subclass
-http://brain_data_standards/scratch_3e88e284-28da-11eb-b1ce-0242ac110002	MTG 030-033			AllenDend:CS201908210_112																			subclass
-http://brain_data_standards/scratch_3e88e3ba-28da-11eb-b1ce-0242ac110002	MTG 030-031			AllenDend:CS201908210_113																			subclass
-http://brain_data_standards/scratch_3e88e4fa-28da-11eb-b1ce-0242ac110002	MTG 030	Inh L4-6 SST B3GAT2		AllenDend:CS201908210_30																			subclass
-http://brain_data_standards/scratch_3e88e6b2-28da-11eb-b1ce-0242ac110002	MTG 031	Inh L5-6 SST KLHDC8A		AllenDend:CS201908210_31																			subclass
-http://brain_data_standards/scratch_3e88e7f2-28da-11eb-b1ce-0242ac110002	MTG 032-033			AllenDend:CS201908210_114																			subclass
-http://brain_data_standards/scratch_3e88e8f6-28da-11eb-b1ce-0242ac110002	MTG 032	Inh L5-6 SST NPM1P10		AllenDend:CS201908210_32																			subclass
-http://brain_data_standards/scratch_3e88e9a0-28da-11eb-b1ce-0242ac110002	MTG 033	Inh L4-6 SST GXYLT2		AllenDend:CS201908210_33																			subclass
-http://brain_data_standards/scratch_3e88ea22-28da-11eb-b1ce-0242ac110002	MTG 034	Inh L4-5 SST STK32A		AllenDend:CS201908210_34																			subclass
-http://brain_data_standards/scratch_3e88eac2-28da-11eb-b1ce-0242ac110002	MTG 035-037			AllenDend:CS201908210_115																			subclass
-http://brain_data_standards/scratch_3e88eb80-28da-11eb-b1ce-0242ac110002	MTG 035-036			AllenDend:CS201908210_116																			subclass
-http://brain_data_standards/scratch_3e88ecb6-28da-11eb-b1ce-0242ac110002	MTG 035	Inh L1-3 SST CALB1		AllenDend:CS201908210_35																			subclass
-http://brain_data_standards/scratch_3e88edec-28da-11eb-b1ce-0242ac110002	MTG 036	Inh L3-5 SST ADGRG6		AllenDend:CS201908210_36																			subclass
-http://brain_data_standards/scratch_3e88ef2c-28da-11eb-b1ce-0242ac110002	MTG 037	Inh L2-4 SST FRZB		AllenDend:CS201908210_37																			subclass
-http://brain_data_standards/scratch_3e88f06c-28da-11eb-b1ce-0242ac110002	MTG 038	Inh L5-6 SST TH		AllenDend:CS201908210_38																			subclass
-http://brain_data_standards/scratch_3e88f1a2-28da-11eb-b1ce-0242ac110002	MTG 039-044	PVALB		AllenDend:CS201908210_117																			subclass
-http://brain_data_standards/scratch_3e88f2e2-28da-11eb-b1ce-0242ac110002	MTG 039	Inh L5-6 LHX6 GLP1R		AllenDend:CS201908210_39																			subclass
-http://brain_data_standards/scratch_3e88f440-28da-11eb-b1ce-0242ac110002	MTG 040-044			AllenDend:CS201908210_118																			subclass
-http://brain_data_standards/scratch_3e88f54e-28da-11eb-b1ce-0242ac110002	MTG 040	Inh L5-6 PVALB LGR5		AllenDend:CS201908210_40																			subclass
-http://brain_data_standards/scratch_3e88f68e-28da-11eb-b1ce-0242ac110002	MTG 041-044			AllenDend:CS201908210_119																			subclass
-http://brain_data_standards/scratch_3e88f7c4-28da-11eb-b1ce-0242ac110002	MTG 041-043			AllenDend:CS201908210_120																			subclass
-http://brain_data_standards/scratch_3e88f904-28da-11eb-b1ce-0242ac110002	MTG 041	Inh L4-5 PVALB MEPE		AllenDend:CS201908210_41																			subclass
-http://brain_data_standards/scratch_3e88fa3a-28da-11eb-b1ce-0242ac110002	MTG 042-043			AllenDend:CS201908210_121																			subclass
-http://brain_data_standards/scratch_3e88faf8-28da-11eb-b1ce-0242ac110002	MTG 042	Inh L2-4 PVALB WFDC2		AllenDend:CS201908210_42																			subclass
-http://brain_data_standards/scratch_3e88fb98-28da-11eb-b1ce-0242ac110002	MTG 043	Inh L4-6 PVALB SULF1		AllenDend:CS201908210_43																			subclass
-http://brain_data_standards/scratch_3e88fc1a-28da-11eb-b1ce-0242ac110002	MTG 044	Inh L5-6 SST MIR548F2		AllenDend:CS201908210_44																			subclass
-http://brain_data_standards/scratch_3e88fcb0-28da-11eb-b1ce-0242ac110002	MTG 045	Inh L2-5 PVALB SCUBE3		AllenDend:CS201908210_45																			subclass
-http://brain_data_standards/scratch_3e88fd6e-28da-11eb-b1ce-0242ac110002	MTG 046-069	Excitatory		AllenDend:CS201908210_122																			subclass
-http://brain_data_standards/scratch_3e88fe9a-28da-11eb-b1ce-0242ac110002	MTG 046-063			AllenDend:CS201908210_123																			subclass
-http://brain_data_standards/scratch_3e88ffee-28da-11eb-b1ce-0242ac110002	MTG 046-060			AllenDend:CS201908210_124																			subclass
-http://brain_data_standards/scratch_3e89012e-28da-11eb-b1ce-0242ac110002	MTG 046-059			AllenDend:CS201908210_125																			subclass
-http://brain_data_standards/scratch_3e8904a8-28da-11eb-b1ce-0242ac110002	MTG 046-049			AllenDend:CS201908210_126																			subclass
-http://brain_data_standards/scratch_3e8906ce-28da-11eb-b1ce-0242ac110002	MTG 046-048	L2/3		AllenDend:CS201908210_127																			subclass
-http://brain_data_standards/scratch_3e890822-28da-11eb-b1ce-0242ac110002	MTG 046-047			AllenDend:CS201908210_128																			subclass
-http://brain_data_standards/scratch_3e890958-28da-11eb-b1ce-0242ac110002	MTG 046	Exc L2 LAMP5 LTK		AllenDend:CS201908210_46																			subclass
-http://brain_data_standards/scratch_3e890a02-28da-11eb-b1ce-0242ac110002	MTG 047	Exc L2-4 LINC00507 GLP2R		AllenDend:CS201908210_47																			subclass
-http://brain_data_standards/scratch_3e890ac0-28da-11eb-b1ce-0242ac110002	MTG 048	Exc L2-3 LINC00507 FREM3		AllenDend:CS201908210_48																			subclass
-http://brain_data_standards/scratch_3e890be2-28da-11eb-b1ce-0242ac110002	MTG 049	Exc L5-6 THEMIS C1QL3		AllenDend:CS201908210_49																			subclass
-http://brain_data_standards/scratch_3e890ca0-28da-11eb-b1ce-0242ac110002	MTG 050-059	RORB		AllenDend:CS201908210_129																			subclass
-http://brain_data_standards/scratch_3e890dcc-28da-11eb-b1ce-0242ac110002	MTG 050-054	L4		AllenDend:CS201908210_130																			subclass
-http://brain_data_standards/scratch_3e890f02-28da-11eb-b1ce-0242ac110002	MTG 050	Exc L3-4 RORB CARM1P1		AllenDend:CS201908210_50																			subclass
-http://brain_data_standards/scratch_3e891056-28da-11eb-b1ce-0242ac110002	MTG 051-054			AllenDend:CS201908210_131																			subclass
-http://brain_data_standards/scratch_3e891196-28da-11eb-b1ce-0242ac110002	MTG 051	Exc L3-5 RORB ESR1		AllenDend:CS201908210_51																			subclass
-http://brain_data_standards/scratch_3e8912cc-28da-11eb-b1ce-0242ac110002	MTG 052-054			AllenDend:CS201908210_132																			subclass
-http://brain_data_standards/scratch_3e89140c-28da-11eb-b1ce-0242ac110002	MTG 052	Exc L3-5 RORB COL22A1		AllenDend:CS201908210_52																			subclass
-http://brain_data_standards/scratch_3e891510-28da-11eb-b1ce-0242ac110002	MTG 053-054			AllenDend:CS201908210_133																			subclass
-http://brain_data_standards/scratch_3e8915c4-28da-11eb-b1ce-0242ac110002	MTG 053	Exc L3-5 RORB FILIP1L		AllenDend:CS201908210_53																			subclass
-http://brain_data_standards/scratch_3e891682-28da-11eb-b1ce-0242ac110002	MTG 054	Exc L3-5 RORB TWIST2		AllenDend:CS201908210_54																			subclass
-http://brain_data_standards/scratch_3e8917fe-28da-11eb-b1ce-0242ac110002	MTG 055-059			AllenDend:CS201908210_134																			subclass
-http://brain_data_standards/scratch_3e891934-28da-11eb-b1ce-0242ac110002	MTG 055-057			AllenDend:CS201908210_135																			subclass
-http://brain_data_standards/scratch_3e891a74-28da-11eb-b1ce-0242ac110002	MTG 055	Exc L4-5 RORB FOLH1B		AllenDend:CS201908210_55																			subclass
-http://brain_data_standards/scratch_3e891b8c-28da-11eb-b1ce-0242ac110002	MTG 056-057			AllenDend:CS201908210_136																			subclass
-http://brain_data_standards/scratch_3e891c54-28da-11eb-b1ce-0242ac110002	MTG 056	Exc L4-6 RORB SEMA3E		AllenDend:CS201908210_56																			subclass
-http://brain_data_standards/scratch_3e891d76-28da-11eb-b1ce-0242ac110002	MTG 057	Exc L4-5 RORB DAPK2		AllenDend:CS201908210_57																			subclass
-http://brain_data_standards/scratch_3e891e52-28da-11eb-b1ce-0242ac110002	MTG 058-059			AllenDend:CS201908210_137																			subclass
-http://brain_data_standards/scratch_3e891f88-28da-11eb-b1ce-0242ac110002	MTG 058	Exc L5-6 RORB TTC12		AllenDend:CS201908210_58																			subclass
-http://brain_data_standards/scratch_3e8920be-28da-11eb-b1ce-0242ac110002	MTG 059	Exc L4-6 RORB C1R		AllenDend:CS201908210_59																			subclass
-http://brain_data_standards/scratch_3e8921fe-28da-11eb-b1ce-0242ac110002	MTG 060	Exc L4-5 FEZF2 SCN4B		AllenDend:CS201908210_60																			subclass
-http://brain_data_standards/scratch_3e892334-28da-11eb-b1ce-0242ac110002	MTG 061-063	L6		AllenDend:CS201908210_138																			subclass
-http://brain_data_standards/scratch_3e89246a-28da-11eb-b1ce-0242ac110002	MTG 061	Exc L5-6 THEMIS DCSTAMP		AllenDend:CS201908210_61																			subclass
-http://brain_data_standards/scratch_3e8925aa-28da-11eb-b1ce-0242ac110002	MTG 062-063			AllenDend:CS201908210_139																			subclass
-http://brain_data_standards/scratch_3e8926b8-28da-11eb-b1ce-0242ac110002	MTG 062	Exc L5-6 THEMIS CRABP1		AllenDend:CS201908210_62																			subclass
-http://brain_data_standards/scratch_3e892848-28da-11eb-b1ce-0242ac110002	MTG 063	Exc L5-6 THEMIS FGF10		AllenDend:CS201908210_63																			subclass
-http://brain_data_standards/scratch_3e892c26-28da-11eb-b1ce-0242ac110002	MTG 064-069	FEZF2		AllenDend:CS201908210_140																			subclass
-http://brain_data_standards/scratch_3e892e56-28da-11eb-b1ce-0242ac110002	MTG 064	Exc L4-6 FEZF2 IL26		AllenDend:CS201908210_64																			subclass
-http://brain_data_standards/scratch_3e892fbe-28da-11eb-b1ce-0242ac110002	MTG 065-069	L6		AllenDend:CS201908210_141																			subclass
-http://brain_data_standards/scratch_3e8931ee-28da-11eb-b1ce-0242ac110002	MTG 065	Exc L5-6 FEZF2 ABO		AllenDend:CS201908210_65																			subclass
-http://brain_data_standards/scratch_3e89334c-28da-11eb-b1ce-0242ac110002	MTG 066-069			AllenDend:CS201908210_142																			subclass
-http://brain_data_standards/scratch_3e893496-28da-11eb-b1ce-0242ac110002	MTG 066-068			AllenDend:CS201908210_143																			subclass
-http://brain_data_standards/scratch_3e8935cc-28da-11eb-b1ce-0242ac110002	MTG 066-067			AllenDend:CS201908210_144																			subclass
-http://brain_data_standards/scratch_3e8936da-28da-11eb-b1ce-0242ac110002	MTG 066	Exc L6 FEZF2 SCUBE1		AllenDend:CS201908210_66																			subclass
-http://brain_data_standards/scratch_3e893798-28da-11eb-b1ce-0242ac110002	MTG 067	Exc L5-6 FEZF2 IL15		AllenDend:CS201908210_67																			subclass
-http://brain_data_standards/scratch_3e893838-28da-11eb-b1ce-0242ac110002	MTG 068	Exc L6 FEZF2 OR2T8		AllenDend:CS201908210_68																			subclass
-http://brain_data_standards/scratch_3e8938ba-28da-11eb-b1ce-0242ac110002	MTG 069	Exc L5-6 FEZF2 EFTUD1P1		AllenDend:CS201908210_69																			subclass
-http://brain_data_standards/scratch_3e89395a-28da-11eb-b1ce-0242ac110002	MTG 070-075	Non-neuronal		AllenDend:CS201908210_145																			subclass
-http://brain_data_standards/scratch_3e893a04-28da-11eb-b1ce-0242ac110002	MTG 070-074			AllenDend:CS201908210_146																			subclass
-http://brain_data_standards/scratch_3e893b30-28da-11eb-b1ce-0242ac110002	MTG 070-073			AllenDend:CS201908210_147																			subclass
-http://brain_data_standards/scratch_3e893c7a-28da-11eb-b1ce-0242ac110002	MTG 070-072			AllenDend:CS201908210_148																			subclass
-http://brain_data_standards/scratch_3e893dba-28da-11eb-b1ce-0242ac110002	MTG 070	OPC L1-6 PDGFRA		AllenDend:CS201908210_70																			subclass
-http://brain_data_standards/scratch_3e893efa-28da-11eb-b1ce-0242ac110002	MTG 071-072			AllenDend:CS201908210_149																			subclass
-http://brain_data_standards/scratch_3e894030-28da-11eb-b1ce-0242ac110002	MTG 071	Astro L1-6 FGFR3 SLC14A1		AllenDend:CS201908210_71																			subclass
-http://brain_data_standards/scratch_3e894170-28da-11eb-b1ce-0242ac110002	MTG 072	Astro L1-2 FGFR3 GFAP		AllenDend:CS201908210_72																			subclass
-http://brain_data_standards/scratch_3e894274-28da-11eb-b1ce-0242ac110002	MTG 073	Oligo L1-6 OPALIN		AllenDend:CS201908210_73																			subclass
-http://brain_data_standards/scratch_3e89431e-28da-11eb-b1ce-0242ac110002	MTG 074	Endo L2-6 NOSTRIN		AllenDend:CS201908210_74																			subclass
-http://brain_data_standards/scratch_3e8943dc-28da-11eb-b1ce-0242ac110002	MTG 075	Micro L1-6 TYROBP		AllenDend:CS201908210_75																			subclass
+http://brain_data_standards/scratch_ad0205c0-3a54-11eb-bd48-b29c4ac64a97	All cells			AllenDend:CS201908210_76																			subclass
+http://brain_data_standards/scratch_ad02078c-3a54-11eb-bd48-b29c4ac64a97	MTG 001-069	Neuronal		AllenDend:CS201908210_77																			subclass
+http://brain_data_standards/scratch_ad020804-3a54-11eb-bd48-b29c4ac64a97	MTG 001-045	Inhibitory		AllenDend:CS201908210_78																			subclass
+http://brain_data_standards/scratch_ad020854-3a54-11eb-bd48-b29c4ac64a97	MTG 001-027	ADARB2 (CGE)		AllenDend:CS201908210_79																			subclass
+http://brain_data_standards/scratch_ad0208c2-3a54-11eb-bd48-b29c4ac64a97	MTG 001-006	LAMP5/PAX6		AllenDend:CS201908210_80																			subclass
+http://brain_data_standards/scratch_ad020912-3a54-11eb-bd48-b29c4ac64a97	MTG 001-002			AllenDend:CS201908210_81																			subclass
+http://brain_data_standards/scratch_ad020976-3a54-11eb-bd48-b29c4ac64a97	MTG 001	Inh L1-2 PAX6 CDH12		AllenDend:CS201908210_1																			subclass
+http://brain_data_standards/scratch_ad0209bc-3a54-11eb-bd48-b29c4ac64a97	MTG 002	Inh L1-2 PAX6 TNFAIP8L3		AllenDend:CS201908210_2																			subclass
+http://brain_data_standards/scratch_ad020a0c-3a54-11eb-bd48-b29c4ac64a97	MTG 003-006			AllenDend:CS201908210_82																			subclass
+http://brain_data_standards/scratch_ad020a70-3a54-11eb-bd48-b29c4ac64a97	MTG 003	Inh L1 LAMP5 NMBR		AllenDend:CS201908210_3																			subclass
+http://brain_data_standards/scratch_ad020ac0-3a54-11eb-bd48-b29c4ac64a97	MTG 004-006			AllenDend:CS201908210_83																			subclass
+http://brain_data_standards/scratch_ad020b10-3a54-11eb-bd48-b29c4ac64a97	MTG 004-005			AllenDend:CS201908210_84																			subclass
+http://brain_data_standards/scratch_ad020b6a-3a54-11eb-bd48-b29c4ac64a97	MTG 004	Inh L1-4 LAMP5 LCP2		AllenDend:CS201908210_4																			subclass
+http://brain_data_standards/scratch_ad020bba-3a54-11eb-bd48-b29c4ac64a97	MTG 005	Inh L1-2 LAMP5 DBP		AllenDend:CS201908210_5																			subclass
+http://brain_data_standards/scratch_ad020c1e-3a54-11eb-bd48-b29c4ac64a97	MTG 006	Inh L2-6 LAMP5 CA1		AllenDend:CS201908210_6																			subclass
+http://brain_data_standards/scratch_ad020c64-3a54-11eb-bd48-b29c4ac64a97	MTG 007-027	VIP		AllenDend:CS201908210_85																			subclass
+http://brain_data_standards/scratch_ad020cb4-3a54-11eb-bd48-b29c4ac64a97	MTG 007-014			AllenDend:CS201908210_86																			subclass
+http://brain_data_standards/scratch_ad020d18-3a54-11eb-bd48-b29c4ac64a97	MTG 007-012			AllenDend:CS201908210_87																			subclass
+http://brain_data_standards/scratch_ad020d68-3a54-11eb-bd48-b29c4ac64a97	MTG 007-009			AllenDend:CS201908210_88																			subclass
+http://brain_data_standards/scratch_ad020db8-3a54-11eb-bd48-b29c4ac64a97	MTG 007-008			AllenDend:CS201908210_89																			subclass
+http://brain_data_standards/scratch_ad020e12-3a54-11eb-bd48-b29c4ac64a97	MTG 007	Inh L1 SST CHRNA4		AllenDend:CS201908210_7																			subclass
+http://brain_data_standards/scratch_ad020e62-3a54-11eb-bd48-b29c4ac64a97	MTG 008	Inh L1-2 ADARB2 MC4R		AllenDend:CS201908210_8																			subclass
+http://brain_data_standards/scratch_ad020ebc-3a54-11eb-bd48-b29c4ac64a97	MTG 009	Inh L1-2 SST BAGE2		AllenDend:CS201908210_9																			subclass
+http://brain_data_standards/scratch_ad020f0c-3a54-11eb-bd48-b29c4ac64a97	MTG 010-012			AllenDend:CS201908210_90																			subclass
+http://brain_data_standards/scratch_ad020f5c-3a54-11eb-bd48-b29c4ac64a97	MTG 010	Inh L1-3 VIP SYT6		AllenDend:CS201908210_10																			subclass
+http://brain_data_standards/scratch_ad020fb6-3a54-11eb-bd48-b29c4ac64a97	MTG 011-012			AllenDend:CS201908210_91																			subclass
+http://brain_data_standards/scratch_ad021006-3a54-11eb-bd48-b29c4ac64a97	MTG 011	Inh L1-2 VIP TSPAN12		AllenDend:CS201908210_11																			subclass
+http://brain_data_standards/scratch_ad021056-3a54-11eb-bd48-b29c4ac64a97	MTG 012	Inh L1-4 VIP CHRNA6		AllenDend:CS201908210_12																			subclass
+http://brain_data_standards/scratch_ad0210b0-3a54-11eb-bd48-b29c4ac64a97	MTG 013-014			AllenDend:CS201908210_92																			subclass
+http://brain_data_standards/scratch_ad021100-3a54-11eb-bd48-b29c4ac64a97	MTG 013	Inh L1-3 VIP ADAMTSL1		AllenDend:CS201908210_13																			subclass
+http://brain_data_standards/scratch_ad02115a-3a54-11eb-bd48-b29c4ac64a97	MTG 014	Inh L1-4 VIP PENK		AllenDend:CS201908210_14																			subclass
+http://brain_data_standards/scratch_ad0211b4-3a54-11eb-bd48-b29c4ac64a97	MTG 015-027			AllenDend:CS201908210_93																			subclass
+http://brain_data_standards/scratch_ad021204-3a54-11eb-bd48-b29c4ac64a97	MTG 015-019			AllenDend:CS201908210_94																			subclass
+http://brain_data_standards/scratch_ad02125e-3a54-11eb-bd48-b29c4ac64a97	MTG 015-017			AllenDend:CS201908210_95																			subclass
+http://brain_data_standards/scratch_ad0212ae-3a54-11eb-bd48-b29c4ac64a97	MTG 015-016			AllenDend:CS201908210_96																			subclass
+http://brain_data_standards/scratch_ad0212f4-3a54-11eb-bd48-b29c4ac64a97	MTG 015	Inh L2-6 VIP QPCT		AllenDend:CS201908210_15																			subclass
+http://brain_data_standards/scratch_ad021362-3a54-11eb-bd48-b29c4ac64a97	MTG 016	Inh L3-6 VIP HS3ST3A1		AllenDend:CS201908210_16																			subclass
+http://brain_data_standards/scratch_ad0213b2-3a54-11eb-bd48-b29c4ac64a97	MTG 017	Inh L1-2 VIP PCDH20		AllenDend:CS201908210_17																			subclass
+http://brain_data_standards/scratch_ad021420-3a54-11eb-bd48-b29c4ac64a97	MTG 018-019			AllenDend:CS201908210_97																			subclass
+http://brain_data_standards/scratch_ad021470-3a54-11eb-bd48-b29c4ac64a97	MTG 018	Inh L2-5 VIP SERPINF1		AllenDend:CS201908210_18																			subclass
+http://brain_data_standards/scratch_ad0214c0-3a54-11eb-bd48-b29c4ac64a97	MTG 019	Inh L2-5 VIP TYR		AllenDend:CS201908210_19																			subclass
+http://brain_data_standards/scratch_ad02151a-3a54-11eb-bd48-b29c4ac64a97	MTG 020-027			AllenDend:CS201908210_98																			subclass
+http://brain_data_standards/scratch_ad02156a-3a54-11eb-bd48-b29c4ac64a97	MTG 020-023			AllenDend:CS201908210_99																			subclass
+http://brain_data_standards/scratch_ad0215ba-3a54-11eb-bd48-b29c4ac64a97	MTG 020-022			AllenDend:CS201908210_100																			subclass
+http://brain_data_standards/scratch_ad021614-3a54-11eb-bd48-b29c4ac64a97	MTG 020-021			AllenDend:CS201908210_101																			subclass
+http://brain_data_standards/scratch_ad021664-3a54-11eb-bd48-b29c4ac64a97	MTG 020	Inh L1-3 VIP CHRM2		AllenDend:CS201908210_20																			subclass
+http://brain_data_standards/scratch_ad0216be-3a54-11eb-bd48-b29c4ac64a97	MTG 021	Inh L2-4 VIP CBLN1		AllenDend:CS201908210_21																			subclass
+http://brain_data_standards/scratch_ad02170e-3a54-11eb-bd48-b29c4ac64a97	MTG 022	Inh L1-3 VIP CCDC184		AllenDend:CS201908210_22																			subclass
+http://brain_data_standards/scratch_ad02175e-3a54-11eb-bd48-b29c4ac64a97	MTG 023	Inh L1-3 VIP GGH		AllenDend:CS201908210_23																			subclass
+http://brain_data_standards/scratch_ad0217b8-3a54-11eb-bd48-b29c4ac64a97	MTG 024-027			AllenDend:CS201908210_102																			subclass
+http://brain_data_standards/scratch_ad021808-3a54-11eb-bd48-b29c4ac64a97	MTG 024-025			AllenDend:CS201908210_103																			subclass
+http://brain_data_standards/scratch_ad021858-3a54-11eb-bd48-b29c4ac64a97	MTG 024	Inh L1-2 VIP LBH		AllenDend:CS201908210_24																			subclass
+http://brain_data_standards/scratch_ad0218b2-3a54-11eb-bd48-b29c4ac64a97	MTG 025	Inh L2-3 VIP CASC6		AllenDend:CS201908210_25																			subclass
+http://brain_data_standards/scratch_ad021902-3a54-11eb-bd48-b29c4ac64a97	MTG 026-027			AllenDend:CS201908210_104																			subclass
+http://brain_data_standards/scratch_ad02195c-3a54-11eb-bd48-b29c4ac64a97	MTG 026	Inh L2-4 VIP SPAG17		AllenDend:CS201908210_26																			subclass
+http://brain_data_standards/scratch_ad0219a2-3a54-11eb-bd48-b29c4ac64a97	MTG 027	Inh L1-4 VIP OPRM1		AllenDend:CS201908210_27																			subclass
+http://brain_data_standards/scratch_ad0219f2-3a54-11eb-bd48-b29c4ac64a97	MTG 028-045	LHX6 (MGE)		AllenDend:CS201908210_105																			subclass
+http://brain_data_standards/scratch_ad021a4c-3a54-11eb-bd48-b29c4ac64a97	MTG 028-044			AllenDend:CS201908210_106																			subclass
+http://brain_data_standards/scratch_ad021a9c-3a54-11eb-bd48-b29c4ac64a97	MTG 028	Inh L3-6 SST NPY		AllenDend:CS201908210_28																			subclass
+http://brain_data_standards/scratch_ad021aec-3a54-11eb-bd48-b29c4ac64a97	MTG 029-044			AllenDend:CS201908210_107																			subclass
+http://brain_data_standards/scratch_ad021b50-3a54-11eb-bd48-b29c4ac64a97	MTG 029-038	SST		AllenDend:CS201908210_108																			subclass
+http://brain_data_standards/scratch_ad021b96-3a54-11eb-bd48-b29c4ac64a97	MTG 029-037			AllenDend:CS201908210_109																			subclass
+http://brain_data_standards/scratch_ad021bfa-3a54-11eb-bd48-b29c4ac64a97	MTG 029-034			AllenDend:CS201908210_110																			subclass
+http://brain_data_standards/scratch_ad021c4a-3a54-11eb-bd48-b29c4ac64a97	MTG 029	Inh L3-6 SST HPGD		AllenDend:CS201908210_29																			subclass
+http://brain_data_standards/scratch_ad021c9a-3a54-11eb-bd48-b29c4ac64a97	MTG 030-034			AllenDend:CS201908210_111																			subclass
+http://brain_data_standards/scratch_ad021cf4-3a54-11eb-bd48-b29c4ac64a97	MTG 030-033			AllenDend:CS201908210_112																			subclass
+http://brain_data_standards/scratch_ad021d44-3a54-11eb-bd48-b29c4ac64a97	MTG 030-031			AllenDend:CS201908210_113																			subclass
+http://brain_data_standards/scratch_ad021d8a-3a54-11eb-bd48-b29c4ac64a97	MTG 030	Inh L4-6 SST B3GAT2		AllenDend:CS201908210_30																			subclass
+http://brain_data_standards/scratch_ad021de4-3a54-11eb-bd48-b29c4ac64a97	MTG 031	Inh L5-6 SST KLHDC8A		AllenDend:CS201908210_31																			subclass
+http://brain_data_standards/scratch_ad021e34-3a54-11eb-bd48-b29c4ac64a97	MTG 032-033			AllenDend:CS201908210_114																			subclass
+http://brain_data_standards/scratch_ad021e98-3a54-11eb-bd48-b29c4ac64a97	MTG 032	Inh L5-6 SST NPM1P10		AllenDend:CS201908210_32																			subclass
+http://brain_data_standards/scratch_ad021ee8-3a54-11eb-bd48-b29c4ac64a97	MTG 033	Inh L4-6 SST GXYLT2		AllenDend:CS201908210_33																			subclass
+http://brain_data_standards/scratch_ad021f38-3a54-11eb-bd48-b29c4ac64a97	MTG 034	Inh L4-5 SST STK32A		AllenDend:CS201908210_34																			subclass
+http://brain_data_standards/scratch_ad021f92-3a54-11eb-bd48-b29c4ac64a97	MTG 035-037			AllenDend:CS201908210_115																			subclass
+http://brain_data_standards/scratch_ad021fec-3a54-11eb-bd48-b29c4ac64a97	MTG 035-036			AllenDend:CS201908210_116																			subclass
+http://brain_data_standards/scratch_ad02203c-3a54-11eb-bd48-b29c4ac64a97	MTG 035	Inh L1-3 SST CALB1		AllenDend:CS201908210_35																			subclass
+http://brain_data_standards/scratch_ad022096-3a54-11eb-bd48-b29c4ac64a97	MTG 036	Inh L3-5 SST ADGRG6		AllenDend:CS201908210_36																			subclass
+http://brain_data_standards/scratch_ad0220e6-3a54-11eb-bd48-b29c4ac64a97	MTG 037	Inh L2-4 SST FRZB		AllenDend:CS201908210_37																			subclass
+http://brain_data_standards/scratch_ad022140-3a54-11eb-bd48-b29c4ac64a97	MTG 038	Inh L5-6 SST TH		AllenDend:CS201908210_38																			subclass
+http://brain_data_standards/scratch_ad022190-3a54-11eb-bd48-b29c4ac64a97	MTG 039-044	PVALB		AllenDend:CS201908210_117																			subclass
+http://brain_data_standards/scratch_ad0221e0-3a54-11eb-bd48-b29c4ac64a97	MTG 039	Inh L5-6 LHX6 GLP1R		AllenDend:CS201908210_39																			subclass
+http://brain_data_standards/scratch_ad02223a-3a54-11eb-bd48-b29c4ac64a97	MTG 040-044			AllenDend:CS201908210_118																			subclass
+http://brain_data_standards/scratch_ad02228a-3a54-11eb-bd48-b29c4ac64a97	MTG 040	Inh L5-6 PVALB LGR5		AllenDend:CS201908210_40																			subclass
+http://brain_data_standards/scratch_ad0222da-3a54-11eb-bd48-b29c4ac64a97	MTG 041-044			AllenDend:CS201908210_119																			subclass
+http://brain_data_standards/scratch_ad02232a-3a54-11eb-bd48-b29c4ac64a97	MTG 041-043			AllenDend:CS201908210_120																			subclass
+http://brain_data_standards/scratch_ad02237a-3a54-11eb-bd48-b29c4ac64a97	MTG 041	Inh L4-5 PVALB MEPE		AllenDend:CS201908210_41																			subclass
+http://brain_data_standards/scratch_ad0223de-3a54-11eb-bd48-b29c4ac64a97	MTG 042-043			AllenDend:CS201908210_121																			subclass
+http://brain_data_standards/scratch_ad02242e-3a54-11eb-bd48-b29c4ac64a97	MTG 042	Inh L2-4 PVALB WFDC2		AllenDend:CS201908210_42																			subclass
+http://brain_data_standards/scratch_ad022492-3a54-11eb-bd48-b29c4ac64a97	MTG 043	Inh L4-6 PVALB SULF1		AllenDend:CS201908210_43																			subclass
+http://brain_data_standards/scratch_ad0224ec-3a54-11eb-bd48-b29c4ac64a97	MTG 044	Inh L5-6 SST MIR548F2		AllenDend:CS201908210_44																			subclass
+http://brain_data_standards/scratch_ad022546-3a54-11eb-bd48-b29c4ac64a97	MTG 045	Inh L2-5 PVALB SCUBE3		AllenDend:CS201908210_45																			subclass
+http://brain_data_standards/scratch_ad02258c-3a54-11eb-bd48-b29c4ac64a97	MTG 046-069	Excitatory		AllenDend:CS201908210_122																			subclass
+http://brain_data_standards/scratch_ad0225f0-3a54-11eb-bd48-b29c4ac64a97	MTG 046-063			AllenDend:CS201908210_123																			subclass
+http://brain_data_standards/scratch_ad022636-3a54-11eb-bd48-b29c4ac64a97	MTG 046-060			AllenDend:CS201908210_124																			subclass
+http://brain_data_standards/scratch_ad022690-3a54-11eb-bd48-b29c4ac64a97	MTG 046-059			AllenDend:CS201908210_125																			subclass
+http://brain_data_standards/scratch_ad0226e0-3a54-11eb-bd48-b29c4ac64a97	MTG 046-049			AllenDend:CS201908210_126																			subclass
+http://brain_data_standards/scratch_ad022730-3a54-11eb-bd48-b29c4ac64a97	MTG 046-048	L2/3		AllenDend:CS201908210_127																			subclass
+http://brain_data_standards/scratch_ad02279e-3a54-11eb-bd48-b29c4ac64a97	MTG 046-047			AllenDend:CS201908210_128																			subclass
+http://brain_data_standards/scratch_ad0227ee-3a54-11eb-bd48-b29c4ac64a97	MTG 046	Exc L2 LAMP5 LTK		AllenDend:CS201908210_46																			subclass
+http://brain_data_standards/scratch_ad022834-3a54-11eb-bd48-b29c4ac64a97	MTG 047	Exc L2-4 LINC00507 GLP2R		AllenDend:CS201908210_47																			subclass
+http://brain_data_standards/scratch_ad02288e-3a54-11eb-bd48-b29c4ac64a97	MTG 048	Exc L2-3 LINC00507 FREM3		AllenDend:CS201908210_48																			subclass
+http://brain_data_standards/scratch_ad0228de-3a54-11eb-bd48-b29c4ac64a97	MTG 049	Exc L5-6 THEMIS C1QL3		AllenDend:CS201908210_49																			subclass
+http://brain_data_standards/scratch_ad022956-3a54-11eb-bd48-b29c4ac64a97	MTG 050-059	RORB		AllenDend:CS201908210_129																			subclass
+http://brain_data_standards/scratch_ad0229a6-3a54-11eb-bd48-b29c4ac64a97	MTG 050-054	L4		AllenDend:CS201908210_130																			subclass
+http://brain_data_standards/scratch_ad0229ec-3a54-11eb-bd48-b29c4ac64a97	MTG 050	Exc L3-4 RORB CARM1P1		AllenDend:CS201908210_50																			subclass
+http://brain_data_standards/scratch_ad022a50-3a54-11eb-bd48-b29c4ac64a97	MTG 051-054			AllenDend:CS201908210_131																			subclass
+http://brain_data_standards/scratch_ad022aa0-3a54-11eb-bd48-b29c4ac64a97	MTG 051	Exc L3-5 RORB ESR1		AllenDend:CS201908210_51																			subclass
+http://brain_data_standards/scratch_ad022af0-3a54-11eb-bd48-b29c4ac64a97	MTG 052-054			AllenDend:CS201908210_132																			subclass
+http://brain_data_standards/scratch_ad022b68-3a54-11eb-bd48-b29c4ac64a97	MTG 052	Exc L3-5 RORB COL22A1		AllenDend:CS201908210_52																			subclass
+http://brain_data_standards/scratch_ad022bb8-3a54-11eb-bd48-b29c4ac64a97	MTG 053-054			AllenDend:CS201908210_133																			subclass
+http://brain_data_standards/scratch_ad022c1c-3a54-11eb-bd48-b29c4ac64a97	MTG 053	Exc L3-5 RORB FILIP1L		AllenDend:CS201908210_53																			subclass
+http://brain_data_standards/scratch_ad022c6c-3a54-11eb-bd48-b29c4ac64a97	MTG 054	Exc L3-5 RORB TWIST2		AllenDend:CS201908210_54																			subclass
+http://brain_data_standards/scratch_ad022cbc-3a54-11eb-bd48-b29c4ac64a97	MTG 055-059			AllenDend:CS201908210_134																			subclass
+http://brain_data_standards/scratch_ad022d16-3a54-11eb-bd48-b29c4ac64a97	MTG 055-057			AllenDend:CS201908210_135																			subclass
+http://brain_data_standards/scratch_ad022d66-3a54-11eb-bd48-b29c4ac64a97	MTG 055	Exc L4-5 RORB FOLH1B		AllenDend:CS201908210_55																			subclass
+http://brain_data_standards/scratch_ad022de8-3a54-11eb-bd48-b29c4ac64a97	MTG 056-057			AllenDend:CS201908210_136																			subclass
+http://brain_data_standards/scratch_ad022e88-3a54-11eb-bd48-b29c4ac64a97	MTG 056	Exc L4-6 RORB SEMA3E		AllenDend:CS201908210_56																			subclass
+http://brain_data_standards/scratch_ad022f0a-3a54-11eb-bd48-b29c4ac64a97	MTG 057	Exc L4-5 RORB DAPK2		AllenDend:CS201908210_57																			subclass
+http://brain_data_standards/scratch_ad022f6e-3a54-11eb-bd48-b29c4ac64a97	MTG 058-059			AllenDend:CS201908210_137																			subclass
+http://brain_data_standards/scratch_ad022fbe-3a54-11eb-bd48-b29c4ac64a97	MTG 058	Exc L5-6 RORB TTC12		AllenDend:CS201908210_58																			subclass
+http://brain_data_standards/scratch_ad02300e-3a54-11eb-bd48-b29c4ac64a97	MTG 059	Exc L4-6 RORB C1R		AllenDend:CS201908210_59																			subclass
+http://brain_data_standards/scratch_ad023068-3a54-11eb-bd48-b29c4ac64a97	MTG 060	Exc L4-5 FEZF2 SCN4B		AllenDend:CS201908210_60																			subclass
+http://brain_data_standards/scratch_ad0230b8-3a54-11eb-bd48-b29c4ac64a97	MTG 061-063	L6		AllenDend:CS201908210_138																			subclass
+http://brain_data_standards/scratch_ad023108-3a54-11eb-bd48-b29c4ac64a97	MTG 061	Exc L5-6 THEMIS DCSTAMP		AllenDend:CS201908210_61																			subclass
+http://brain_data_standards/scratch_ad023162-3a54-11eb-bd48-b29c4ac64a97	MTG 062-063			AllenDend:CS201908210_139																			subclass
+http://brain_data_standards/scratch_ad0231b2-3a54-11eb-bd48-b29c4ac64a97	MTG 062	Exc L5-6 THEMIS CRABP1		AllenDend:CS201908210_62																			subclass
+http://brain_data_standards/scratch_ad02320c-3a54-11eb-bd48-b29c4ac64a97	MTG 063	Exc L5-6 THEMIS FGF10		AllenDend:CS201908210_63																			subclass
+http://brain_data_standards/scratch_ad02325c-3a54-11eb-bd48-b29c4ac64a97	MTG 064-069	FEZF2		AllenDend:CS201908210_140																			subclass
+http://brain_data_standards/scratch_ad0232d4-3a54-11eb-bd48-b29c4ac64a97	MTG 064	Exc L4-6 FEZF2 IL26		AllenDend:CS201908210_64																			subclass
+http://brain_data_standards/scratch_ad023324-3a54-11eb-bd48-b29c4ac64a97	MTG 065-069	L6		AllenDend:CS201908210_141																			subclass
+http://brain_data_standards/scratch_ad023374-3a54-11eb-bd48-b29c4ac64a97	MTG 065	Exc L5-6 FEZF2 ABO		AllenDend:CS201908210_65																			subclass
+http://brain_data_standards/scratch_ad0233ce-3a54-11eb-bd48-b29c4ac64a97	MTG 066-069			AllenDend:CS201908210_142																			subclass
+http://brain_data_standards/scratch_ad02341e-3a54-11eb-bd48-b29c4ac64a97	MTG 066-068			AllenDend:CS201908210_143																			subclass
+http://brain_data_standards/scratch_ad023478-3a54-11eb-bd48-b29c4ac64a97	MTG 066-067			AllenDend:CS201908210_144																			subclass
+http://brain_data_standards/scratch_ad0234c8-3a54-11eb-bd48-b29c4ac64a97	MTG 066	Exc L6 FEZF2 SCUBE1		AllenDend:CS201908210_66																			subclass
+http://brain_data_standards/scratch_ad023518-3a54-11eb-bd48-b29c4ac64a97	MTG 067	Exc L5-6 FEZF2 IL15		AllenDend:CS201908210_67																			subclass
+http://brain_data_standards/scratch_ad02357c-3a54-11eb-bd48-b29c4ac64a97	MTG 068	Exc L6 FEZF2 OR2T8		AllenDend:CS201908210_68																			subclass
+http://brain_data_standards/scratch_ad0235cc-3a54-11eb-bd48-b29c4ac64a97	MTG 069	Exc L5-6 FEZF2 EFTUD1P1		AllenDend:CS201908210_69																			subclass
+http://brain_data_standards/scratch_ad023626-3a54-11eb-bd48-b29c4ac64a97	MTG 070-075	Non-neuronal		AllenDend:CS201908210_145																			subclass
+http://brain_data_standards/scratch_ad023680-3a54-11eb-bd48-b29c4ac64a97	MTG 070-074			AllenDend:CS201908210_146																			subclass
+http://brain_data_standards/scratch_ad0236d0-3a54-11eb-bd48-b29c4ac64a97	MTG 070-073			AllenDend:CS201908210_147																			subclass
+http://brain_data_standards/scratch_ad023734-3a54-11eb-bd48-b29c4ac64a97	MTG 070-072			AllenDend:CS201908210_148																			subclass
+http://brain_data_standards/scratch_ad023784-3a54-11eb-bd48-b29c4ac64a97	MTG 070	OPC L1-6 PDGFRA		AllenDend:CS201908210_70																			subclass
+http://brain_data_standards/scratch_ad0237d4-3a54-11eb-bd48-b29c4ac64a97	MTG 071-072			AllenDend:CS201908210_149																			subclass
+http://brain_data_standards/scratch_ad02382e-3a54-11eb-bd48-b29c4ac64a97	MTG 071	Astro L1-6 FGFR3 SLC14A1		AllenDend:CS201908210_71																			subclass
+http://brain_data_standards/scratch_ad02387e-3a54-11eb-bd48-b29c4ac64a97	MTG 072	Astro L1-2 FGFR3 GFAP		AllenDend:CS201908210_72																			subclass
+http://brain_data_standards/scratch_ad0238ce-3a54-11eb-bd48-b29c4ac64a97	MTG 073	Oligo L1-6 OPALIN		AllenDend:CS201908210_73																			subclass
+http://brain_data_standards/scratch_ad023932-3a54-11eb-bd48-b29c4ac64a97	MTG 074	Endo L2-6 NOSTRIN		AllenDend:CS201908210_74																			subclass
+http://brain_data_standards/scratch_ad023982-3a54-11eb-bd48-b29c4ac64a97	MTG 075	Micro L1-6 TYROBP		AllenDend:CS201908210_75																			subclass
