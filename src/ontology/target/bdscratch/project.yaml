@@ -1,6 +1,12 @@
 allow_equivalents: all
 catalog_file: catalog-v001.xml
-components: null
+components:
+  directory: components
+  filename: null
+  products:
+  - filename: all_templates.owl
+    source: null
+  source: null
 contact: null
 contributors: null
 creators: null
@@ -41,6 +47,11 @@ import_group:
     mirror_from: null
     rebuild_if_source_changes: true
     robot_settings: null
+  - description: null
+    id: ensmusg
+    mirror_from: null
+    rebuild_if_source_changes: true
+    robot_settings: null
   rebuild_if_source_changes: true
 import_pattern_ontology: false
 license: https://creativecommons.org/licenses/unspecified
@@ -53,8 +64,10 @@ public_release: none
 public_release_assets: null
 reasoner: ELK
 release_artefacts:
-- full
 - base
+- simple-non-classified
+- full
+- simple
 release_date: false
 repo: bdscratch
 report_fail_on: null

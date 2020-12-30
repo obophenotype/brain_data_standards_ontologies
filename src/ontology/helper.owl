@@ -22,6 +22,11 @@ Declaration(ObjectProperty(:subcluster_of))
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002215> "capable of")
 
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002292> (expresses)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002292> "expresses")
+
+
 # Object Property: :has_exemplar (has_exemplar)
 
 AnnotationAssertion(rdfs:label :has_exemplar "has_exemplar")

@@ -1,0 +1,788 @@
+Prefix(:=<http://www.semanticweb.org/brain_data_standards/components/CCN201908211.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/brain_data_standards/components/CCN201908211.owl>
+
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_10>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_11>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_12>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_13>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_14>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_15>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_16>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_17>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_18>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_19>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_20>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_21>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_22>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_23>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_24>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_25>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_26>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_27>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_28>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_29>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_3>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_30>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_31>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_32>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_33>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_34>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_35>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_36>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_37>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_38>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_39>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_4>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_40>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_41>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_42>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_43>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_44>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_45>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_46>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_47>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_48>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_49>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_5>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_50>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_51>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_52>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_53>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_54>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_55>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_56>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_57>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_58>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_59>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_6>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_60>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_61>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_62>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_63>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_64>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_65>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_66>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_67>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_68>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_69>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_7>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_70>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_71>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_72>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_73>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_74>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_75>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_76>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_77>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_78>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_79>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_8>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_80>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_81>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_82>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_83>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_84>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_85>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_9>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))
+
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_1> (HM 001 - CS201908211_1)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_1> "Lamp5 1"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_1> "HM 001 - CS201908211_1"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_1> "Lamp5 1 - CS201908211_1"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_1>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_1> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_52>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_10> (HM 010 - CS201908211_10)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_10> "Vip 4"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_10> "HM 010 - CS201908211_10"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_10> "Vip 4 - CS201908211_10"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_10>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_10> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_59>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_11> (HM 011 - CS201908211_11)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_11> "Vip 5"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_11> "HM 011 - CS201908211_11"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_11> "Vip 5 - CS201908211_11"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_11>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_11> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_58>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_12> (HM 012 - CS201908211_12)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_12> "Sst Chodl|Sst Chodl"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_12> "HM 012 - CS201908211_12"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_12> "Sst Chodl - CS201908211_12"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_12>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_12> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_60>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_13> (HM 013 - CS201908211_13)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_13> "Sst 2"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_13> "HM 013 - CS201908211_13"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_13> "Sst 2 - CS201908211_13"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_13>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_13> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_64>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_14> (HM 014 - CS201908211_14)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_14> "Sst 3"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_14> "HM 014 - CS201908211_14"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_14> "Sst 3 - CS201908211_14"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_14>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_14> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_64>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_15> (HM 015 - CS201908211_15)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_15> "Sst 1"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_15> "HM 015 - CS201908211_15"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_15> "Sst 1 - CS201908211_15"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_15>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_15> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_65>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_16> (HM 016 - CS201908211_16)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_16> "Sst 4"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_16> "HM 016 - CS201908211_16"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_16> "Sst 4 - CS201908211_16"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_16>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_16> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_65>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_17> (HM 017 - CS201908211_17)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_17> "Sst 5"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_17> "HM 017 - CS201908211_17"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_17> "Sst 5 - CS201908211_17"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_17>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_17> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_62>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_18> (HM 018 - CS201908211_18)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_18> "Pvalb 1"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_18> "HM 018 - CS201908211_18"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_18> "Pvalb 1 - CS201908211_18"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_18>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_18> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_67>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_19> (HM 019 - CS201908211_19)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_19> "Pvalb 2"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_19> "HM 019 - CS201908211_19"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_19> "Pvalb 2 - CS201908211_19"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_19>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_19> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_67>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_2> (HM 002 - CS201908211_2)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_2> "Lamp5 Rosehip|Lamp5 Rosehip"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_2> "HM 002 - CS201908211_2"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_2> "Lamp5 Rosehip - CS201908211_2"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_2>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_2> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_52>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_20> (HM 020 - CS201908211_20)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_20> "Chandelier|Chandelier"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_20> "HM 020 - CS201908211_20"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_20> "Chandelier - CS201908211_20"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_20>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_20> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_66>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_21> (HM 021 - CS201908211_21)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_21> "Exc L5/6 IT 1"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_21> "HM 021 - CS201908211_21"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_21> "Exc L5/6 IT 1 - CS201908211_21"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_21>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_21> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_71>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_22> (HM 022 - CS201908211_22)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_22> "Exc L4/5 IT"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_22> "HM 022 - CS201908211_22"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_22> "Exc L4/5 IT - CS201908211_22"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_22>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_22> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_73>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_23> (HM 023 - CS201908211_23)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_23> "Exc L3/5 IT"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_23> "HM 023 - CS201908211_23"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_23> "Exc L3/5 IT - CS201908211_23"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_23>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_23> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_73>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_24> (HM 024 - CS201908211_24)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_24> "Exc L5/6 IT 2"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_24> "HM 024 - CS201908211_24"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_24> "Exc L5/6 IT 2 - CS201908211_24"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_24>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_24> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_74>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_25> (HM 025 - CS201908211_25)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_25> "Exc L5/6 IT 3"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_25> "HM 025 - CS201908211_25"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_25> "Exc L5/6 IT 3 - CS201908211_25"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_25>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_25> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_74>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_26> (HM 026 - CS201908211_26)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_26> "Exc L2/3 IT|L2/3 IT"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_26> "HM 026 - CS201908211_26"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_26> "Exc L2/3 IT - CS201908211_26"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_26>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_26> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_76>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_27> (HM 027 - CS201908211_27)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_27> "Exc L6 IT 1"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_27> "HM 027 - CS201908211_27"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_27> "Exc L6 IT 1 - CS201908211_27"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_27>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_27> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_76>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_28> (HM 028 - CS201908211_28)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_28> "Exc L6 IT 2"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_28> "HM 028 - CS201908211_28"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_28> "Exc L6 IT 2 - CS201908211_28"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_28>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_28> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_75>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_29> (HM 029 - CS201908211_29)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_29> "Exc L5 PT"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_29> "HM 029 - CS201908211_29"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_29> "Exc L5 PT - CS201908211_29"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_29>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_29> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_78>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_3> (HM 003 - CS201908211_3)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_3> "Lamp5 Lhx6|Lamp5 Lhx6"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_3> "HM 003 - CS201908211_3"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_3> "Lamp5 Lhx6 - CS201908211_3"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_3>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_3> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_51>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_30> (HM 030 - CS201908211_30)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_30> "Exc L5 PT (Mouse)"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_30> "HM 030 - CS201908211_30"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_30> "Exc L5 PT (Mouse) - CS201908211_30"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_30>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_30> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_78>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_31> (HM 031 - CS201908211_31)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_31> "Exc L6 CT|L6 CT"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_31> "HM 031 - CS201908211_31"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_31> "Exc L6 CT - CS201908211_31"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_31>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_31> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_79>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_32> (HM 032 - CS201908211_32)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_32> "Exc L6b|L6b"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_32> "HM 032 - CS201908211_32"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_32> "Exc L6b - CS201908211_32"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_32>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_32> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_79>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_33> (HM 033 - CS201908211_33)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_33> "Exc L5/6 NP|L5/6 NP"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_33> "HM 033 - CS201908211_33"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_33> "Exc L5/6 NP - CS201908211_33"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_33>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_33> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_68>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_34> (HM 034 - CS201908211_34)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_34> "Meis2|Meis2"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_34> "HM 034 - CS201908211_34"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_34> "Meis2 - CS201908211_34"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_34>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_34> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_47>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_35> (HM 035 - CS201908211_35)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_35> "Cajal Retzius|Cajal Retzius"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_35> "HM 035 - CS201908211_35"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_35> "Cajal Retzius - CS201908211_35"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_35>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_35> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_46>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_36> (HM 036 - CS201908211_36)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_36> "Astrocyte|Astrocyte"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_36> "HM 036 - CS201908211_36"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_36> "Astrocyte - CS201908211_36"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_36>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_36> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_81>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_37> (HM 037 - CS201908211_37)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_37> "OPC|OPC"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_37> "HM 037 - CS201908211_37"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_37> "OPC - CS201908211_37"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_37>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_37> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_81>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_38> (HM 038 - CS201908211_38)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_38> "Oligo|Oligodendrocyte"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_38> "HM 038 - CS201908211_38"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_38> "Oligodendrocyte - CS201908211_38"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_38>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_38> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_80>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_39> (HM 039 - CS201908211_39)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_39> "Microglia/PVM|Microglia-PVM"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_39> "HM 039 - CS201908211_39"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_39> "Microglia-PVM - CS201908211_39"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_39>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_39> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_82>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_4> (HM 004 - CS201908211_4)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_4> "Pax6|Pax6"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_4> "HM 004 - CS201908211_4"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_4> "Pax6 - CS201908211_4"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_4>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_4> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_54>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_40> (HM 040 - CS201908211_40)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_40> "Endothelial|Endothelial"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_40> "HM 040 - CS201908211_40"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_40> "Endothelial - CS201908211_40"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_40>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_40> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_83>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_41> (HM 041 - CS201908211_41)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_41> "Peri|Peri"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_41> "HM 041 - CS201908211_41"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_41> "Pericyte - CS201908211_41"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_41>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_41> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_85>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_42> (HM 042 - CS201908211_42)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_42> "SMC|SMC"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_42> "HM 042 - CS201908211_42"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_42> "SMC - CS201908211_42"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_42>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_42> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_85>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_43> (HM 043 - CS201908211_43)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_43> "VLMC|VLMC"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_43> "HM 043 - CS201908211_43"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_43> "VLMC - CS201908211_43"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_43>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_43> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_84>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_44> (All cells - CS201908211_44)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_44> "n1"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_44> "All cells - CS201908211_44"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_44> " - CS201908211_44"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_44>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_45> (HM 001-038 - CS201908211_45)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_45> "n2"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_45> "HM 001-038 - CS201908211_45"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_45> " - CS201908211_45"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_45>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_45> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_44>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_46> (HM 001-035 - CS201908211_46)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_46> "n3|Neuron"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_46> "HM 001-035 - CS201908211_46"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_46> "Neuron - CS201908211_46"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_46>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_46> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_45>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_47> (HM 001-034 - CS201908211_47)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_47> "n4"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_47> "HM 001-034 - CS201908211_47"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_47> " - CS201908211_47"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_47>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_47> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_46>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_48> (HM 001-033 - CS201908211_48)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_48> "n5"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_48> "HM 001-033 - CS201908211_48"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_48> " - CS201908211_48"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_48>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_48> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_47>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_49> (HM 001-020 - CS201908211_49)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_49> "n6|GABAergic"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_49> "HM 001-020 - CS201908211_49"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_49> "GABAergic - CS201908211_49"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_49>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_49> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_48>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_5> (HM 005 - CS201908211_5)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_5> "Lamp5 2"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_5> "HM 005 - CS201908211_5"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_5> "Lamp5 2 - CS201908211_5"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_5>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_5> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_56>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_50> (HM 001-011 - CS201908211_50)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_50> "n7|CGE"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_50> "HM 001-011 - CS201908211_50"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_50> "CGE - CS201908211_50"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_50>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_50> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_49>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_51> (HM 001-003 - CS201908211_51)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_51> "n8|Lamp5"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_51> "HM 001-003 - CS201908211_51"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_51> "Lamp5 - CS201908211_51"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_51>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_51> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_50>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_52> (HM 001-002 - CS201908211_52)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_52> "n9"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_52> "HM 001-002 - CS201908211_52"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_52> " - CS201908211_52"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_52>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_52> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_51>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_53> (HM 004-011 - CS201908211_53)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_53> "n10|Vip"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_53> "HM 004-011 - CS201908211_53"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_53> "Vip - CS201908211_53"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_53>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_53> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_50>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_54> (HM 004-007 - CS201908211_54)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_54> "n11"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_54> "HM 004-007 - CS201908211_54"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_54> " - CS201908211_54"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_54>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_54> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_53>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_55> (HM 005-007 - CS201908211_55)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_55> "n12"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_55> "HM 005-007 - CS201908211_55"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_55> " - CS201908211_55"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_55>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_55> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_54>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_56> (HM 005-006 - CS201908211_56)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_56> "n13"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_56> "HM 005-006 - CS201908211_56"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_56> " - CS201908211_56"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_56>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_56> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_55>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_57> (HM 008-011 - CS201908211_57)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_57> "n14"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_57> "HM 008-011 - CS201908211_57"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_57> " - CS201908211_57"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_57>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_57> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_53>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_58> (HM 009-011 - CS201908211_58)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_58> "n15"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_58> "HM 009-011 - CS201908211_58"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_58> " - CS201908211_58"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_58>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_58> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_57>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_59> (HM 009-010 - CS201908211_59)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_59> "n16"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_59> "HM 009-010 - CS201908211_59"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_59> " - CS201908211_59"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_59>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_59> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_58>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_6> (HM 006 - CS201908211_6)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_6> "Vip Sncg|Sncg"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_6> "HM 006 - CS201908211_6"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_6> "Vip Sncg - CS201908211_6"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_6>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_6> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_56>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_60> (HM 012-020 - CS201908211_60)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_60> "n17|MGE"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_60> "HM 012-020 - CS201908211_60"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_60> "MGE - CS201908211_60"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_60>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_60> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_49>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_61> (HM 013-020 - CS201908211_61)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_61> "n18"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_61> "HM 013-020 - CS201908211_61"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_61> " - CS201908211_61"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_61>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_61> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_60>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_62> (HM 013-017 - CS201908211_62)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_62> "n19|Sst"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_62> "HM 013-017 - CS201908211_62"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_62> "Sst - CS201908211_62"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_62>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_62> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_61>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_63> (HM 013-016 - CS201908211_63)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_63> "n20"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_63> "HM 013-016 - CS201908211_63"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_63> " - CS201908211_63"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_63>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_63> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_62>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_64> (HM 013-014 - CS201908211_64)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_64> "n21"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_64> "HM 013-014 - CS201908211_64"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_64> " - CS201908211_64"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_64>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_64> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_63>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_65> (HM 015-016 - CS201908211_65)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_65> "n22"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_65> "HM 015-016 - CS201908211_65"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_65> " - CS201908211_65"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_65>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_65> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_63>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_66> (HM 018-020 - CS201908211_66)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_66> "n23|Pvalb"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_66> "HM 018-020 - CS201908211_66"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_66> "Pvalb - CS201908211_66"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_66>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_66> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_61>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_67> (HM 018-019 - CS201908211_67)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_67> "n24"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_67> "HM 018-019 - CS201908211_67"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_67> " - CS201908211_67"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_67>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_67> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_66>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_68> (HM 021-033 - CS201908211_68)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_68> "n25|Glutamatergic"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_68> "HM 021-033 - CS201908211_68"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_68> "Glutamatergic - CS201908211_68"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_68>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_68> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_48>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_69> (HM 021-032 - CS201908211_69)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_69> "n26"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_69> "HM 021-032 - CS201908211_69"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_69> " - CS201908211_69"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_69>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_69> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_68>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_7> (HM 007 - CS201908211_7)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_7> "Vip 1"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_7> "HM 007 - CS201908211_7"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_7> "Vip 1 - CS201908211_7"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_7>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_7> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_55>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_70> (HM 021-028 - CS201908211_70)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_70> "n27|IT"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_70> "HM 021-028 - CS201908211_70"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_70> "IT - CS201908211_70"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_70>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_70> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_69>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_71> (HM 021-025 - CS201908211_71)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_71> "n28|L4-6 IT"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_71> "HM 021-025 - CS201908211_71"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_71> "L4-6 IT - CS201908211_71"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_71>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_71> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_70>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_72> (HM 022-025 - CS201908211_72)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_72> "n29"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_72> "HM 022-025 - CS201908211_72"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_72> " - CS201908211_72"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_72>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_72> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_71>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_73> (HM 022-023 - CS201908211_73)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_73> "n30"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_73> "HM 022-023 - CS201908211_73"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_73> " - CS201908211_73"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_73>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_73> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_72>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_74> (HM 024-025 - CS201908211_74)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_74> "n31"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_74> "HM 024-025 - CS201908211_74"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_74> " - CS201908211_74"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_74>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_74> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_72>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_75> (HM 026-028 - CS201908211_75)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_75> "n32"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_75> "HM 026-028 - CS201908211_75"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_75> " - CS201908211_75"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_75>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_75> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_70>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_76> (HM 026-027 - CS201908211_76)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_76> "n33"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_76> "HM 026-027 - CS201908211_76"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_76> " - CS201908211_76"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_76>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_76> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_75>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_77> (HM 029-032 - CS201908211_77)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_77> "n34"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_77> "HM 029-032 - CS201908211_77"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_77> " - CS201908211_77"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_77>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_77> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_69>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_78> (HM 029-030 - CS201908211_78)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_78> "n35|L5 ET|L5 PT"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_78> "HM 029-030 - CS201908211_78"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_78> "L5 ET - CS201908211_78"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_78>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_78> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_77>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_79> (HM 031-032 - CS201908211_79)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_79> "n36"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_79> "HM 031-032 - CS201908211_79"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_79> " - CS201908211_79"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_79>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_79> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_77>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_8> (HM 008 - CS201908211_8)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_8> "Vip 2"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_8> "HM 008 - CS201908211_8"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_8> "Vip 2 - CS201908211_8"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_8>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_8> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_57>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_80> (HM 036-038 - CS201908211_80)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_80> "n37"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_80> "HM 036-038 - CS201908211_80"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_80> " - CS201908211_80"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_80>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_80> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_45>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_81> (HM 036-037 - CS201908211_81)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_81> "n38"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_81> "HM 036-037 - CS201908211_81"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_81> " - CS201908211_81"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_81>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_81> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_80>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_82> (HM 039-043 - CS201908211_82)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_82> "n39"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_82> "HM 039-043 - CS201908211_82"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_82> " - CS201908211_82"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_82>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_82> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_44>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_83> (HM 040-043 - CS201908211_83)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_83> "n40"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_83> "HM 040-043 - CS201908211_83"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_83> " - CS201908211_83"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_83>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_83> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_82>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_84> (HM 041-043 - CS201908211_84)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_84> "n41"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_84> "HM 041-043 - CS201908211_84"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_84> " - CS201908211_84"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_84>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_84> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_83>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_85> (HM 041-042 - CS201908211_85)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_85> "n42"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_85> "HM 041-042 - CS201908211_85"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_85> " - CS201908211_85"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_85>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_85> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_84>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_9> (HM 009 - CS201908211_9)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#has_exact_synonym> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_9> "Vip 3"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_9> "HM 009 - CS201908211_9"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_9> "Vip 3 - CS201908211_9"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cluster> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_9>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_9> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_59>)
+
+
+)

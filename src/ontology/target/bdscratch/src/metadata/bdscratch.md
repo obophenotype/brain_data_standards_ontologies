@@ -34,6 +34,7 @@ dependencies:
 - id: uberon
 - id: pato
 - id: cl
+- id: ensmusg
 
 tracker: https://github.com/obophenotype/bdscratch/issues
 license:

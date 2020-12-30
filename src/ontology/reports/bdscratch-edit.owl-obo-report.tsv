@@ -1,8 +1,7 @@
 Level	Rule Name	Subject	Property	Value
 ERROR	missing_label	http://www.semanticweb.org/brain_data_standards/helper.owl#has_subexemplar	rdfs:label		
-WARN	missing_definition	BDSCRATCH:00000000	IAO:0000115		
 WARN	missing_definition	RO:0002100	IAO:0000115		
 WARN	missing_definition	RO:0002215	IAO:0000115		
+WARN	missing_definition	RO:0002292	IAO:0000115		
 WARN	missing_definition	http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar	IAO:0000115		
 WARN	missing_definition	http://www.semanticweb.org/brain_data_standards/helper.owl#has_subexemplar	IAO:0000115		
-INFO	missing_superclass	BDSCRATCH:00000000	rdfs:subClassOf		

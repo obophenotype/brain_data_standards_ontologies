@@ -1,0 +1,54 @@
+format-version: 1.2
+data-version: bdscratch/releases/2020-12-14/bdscratch-simple.owl
+subsetdef: ro-eco ""
+ontology: bdscratch/bdscratch-simple
+property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "Brain Data Standards Cell Ontology" xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
+property_value: owl:versionInfo "2020-12-14" xsd:string
+
+[Typedef]
+id: RO:0002100
+name: has soma location
+def: "Relation between a neuron and an anatomical structure that its soma is part of." []
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+property_value: RO:0001900 RO:0001901
+expand_expression_to: "BFO_0000051 some (\n   GO_0043025 and   BFO_0000050 some ?Y)" []
+
+[Typedef]
+id: RO:0002215
+name: capable of
+def: "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. " []
+subset: ro-eco
+property_value: IAO:0000112 "mechanosensory neuron capable of detection of mechanical stimulus involved in sensory perception (GO:0050974)" xsd:string
+property_value: IAO:0000112 "osteoclast SubClassOf 'capable of' some 'bone resorption'" xsd:string
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+property_value: IAO:0000118 "has function realized in" xsd:string
+property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/20123131
+property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/21208450
+property_value: IAO:0000232 "For compatibility with BFO, this relation has a shortcut definition in which the expression \"capable of some P\" expands to \"bearer_of (some realized_by only P)\"." xsd:string
+holds_over_chain: has_exemplar RO:0002215
+holds_over_chain: subcluster_of RO:0002215
+expand_expression_to: "RO_0000053 some (RO_0000054 only ?Y)" []
+
+[Typedef]
+id: RO:0002292
+name: expresses
+def: "Inverse of 'expressed in'" []
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "Chris Mungall" xsd:string
+
+[Typedef]
+id: has_exemplar
+name: has_exemplar
+transitive_over: subcluster_of
+
+[Typedef]
+id: has_subexemplar
+is_a: has_exemplar ! has_exemplar
+
+[Typedef]
+id: subcluster_of
+is_transitive: true
+

@@ -1,0 +1,673 @@
+Prefix(:=<http://www.semanticweb.org/brain_data_standards/components/CCN201908211_class.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/brain_data_standards/components/CCN201908211_class.owl>
+
+Declaration(Class(<http://brain_data_standards/scratch_3f06f5e8-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f06f886-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f06f9d0-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f06fade-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f06fbec-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f06fd18-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f06fe76-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f06ffc0-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f07013c-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f07027c-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f0703e4-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f0704c0-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f0705f6-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f0706f0-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f0707d6-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f0708ee-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f070a92-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f070eb6-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f071064-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f071168-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f07129e-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f0713de-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f07151e-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f071640-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f0716fe-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f07183e-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f07199c-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f071adc-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f071c12-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f071cd0-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f071dfc-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f071f32-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f07202c-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f0720e0-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f072194-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f0722ca-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f07240a-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f072540-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f07269e-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f072748-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f072806-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f07293c-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f072a5e-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f072b26-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f072c52-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f072d88-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f072ebe-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f072ffe-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f073134-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f073274-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f07356c-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f0736fc-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f073800-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f073990-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f073abc-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f073bfc-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f073d3c-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f073e5e-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f073f08-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f073f8a-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f074020-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f0740f2-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f07421e-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f07435e-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f074462-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f074516-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f0745ca-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f074700-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f074840-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f0749f8-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f074afc-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f074ba6-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f074c5a-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f074d86-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f074ea8-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f074f7a-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f0750b0-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f0751e6-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f0752ea-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f07539e-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f075452-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f07557e-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f0756b4-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f0757ea-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://brain_data_standards/scratch_3f075916-28da-11eb-a744-0242ac110002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000003>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_10>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_11>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_12>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_13>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_14>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_15>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_16>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_17>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_18>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_19>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_2>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_20>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_21>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_22>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_23>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_24>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_25>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_26>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_27>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_28>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_29>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_3>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_30>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_31>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_32>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_33>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_34>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_35>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_36>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_37>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_38>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_39>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_4>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_40>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_41>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_42>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_43>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_44>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_45>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_46>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_47>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_48>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_49>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_5>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_50>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_51>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_52>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_53>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_54>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_55>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_56>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_57>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_58>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_59>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_6>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_60>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_61>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_62>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_63>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_64>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_65>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_66>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_67>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_68>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_69>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_7>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_70>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_71>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_72>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_73>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_74>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_75>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_76>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_77>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_78>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_79>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_8>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_80>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_81>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_82>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_83>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_84>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_85>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_9>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://brain_data_standards/scratch_3f06f5e8-28da-11eb-a744-0242ac110002> (All cells)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f06f5e8-28da-11eb-a744-0242ac110002> "All cells"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f06f5e8-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_44>)))
+
+# Class: <http://brain_data_standards/scratch_3f06f886-28da-11eb-a744-0242ac110002> (HM 001-038)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f06f886-28da-11eb-a744-0242ac110002> "HM 001-038"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f06f886-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_45>)))
+
+# Class: <http://brain_data_standards/scratch_3f06f9d0-28da-11eb-a744-0242ac110002> (HM 001-035)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f06f9d0-28da-11eb-a744-0242ac110002> "HM 001-035"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f06f9d0-28da-11eb-a744-0242ac110002> "Neuron"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f06f9d0-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_46>)))
+
+# Class: <http://brain_data_standards/scratch_3f06fade-28da-11eb-a744-0242ac110002> (HM 001-034)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f06fade-28da-11eb-a744-0242ac110002> "HM 001-034"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f06fade-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_47>)))
+
+# Class: <http://brain_data_standards/scratch_3f06fbec-28da-11eb-a744-0242ac110002> (HM 001-033)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f06fbec-28da-11eb-a744-0242ac110002> "HM 001-033"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f06fbec-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_48>)))
+
+# Class: <http://brain_data_standards/scratch_3f06fd18-28da-11eb-a744-0242ac110002> (HM 001-020)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f06fd18-28da-11eb-a744-0242ac110002> "HM 001-020"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f06fd18-28da-11eb-a744-0242ac110002> "GABAergic"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f06fd18-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_49>)))
+
+# Class: <http://brain_data_standards/scratch_3f06fe76-28da-11eb-a744-0242ac110002> (HM 001-011)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f06fe76-28da-11eb-a744-0242ac110002> "HM 001-011"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f06fe76-28da-11eb-a744-0242ac110002> "CGE"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f06fe76-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_50>)))
+
+# Class: <http://brain_data_standards/scratch_3f06ffc0-28da-11eb-a744-0242ac110002> (HM 001-003)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f06ffc0-28da-11eb-a744-0242ac110002> "HM 001-003"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f06ffc0-28da-11eb-a744-0242ac110002> "Lamp5"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f06ffc0-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_51>)))
+
+# Class: <http://brain_data_standards/scratch_3f07013c-28da-11eb-a744-0242ac110002> (HM 001-002)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f07013c-28da-11eb-a744-0242ac110002> "HM 001-002"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f07013c-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_52>)))
+
+# Class: <http://brain_data_standards/scratch_3f07027c-28da-11eb-a744-0242ac110002> (HM 001)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f07027c-28da-11eb-a744-0242ac110002> "HM 001"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f07027c-28da-11eb-a744-0242ac110002> "Lamp5 1"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f07027c-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_1>)))
+
+# Class: <http://brain_data_standards/scratch_3f0703e4-28da-11eb-a744-0242ac110002> (HM 002)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f0703e4-28da-11eb-a744-0242ac110002> "HM 002"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f0703e4-28da-11eb-a744-0242ac110002> "Lamp5 Rosehip"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f0703e4-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_2>)))
+
+# Class: <http://brain_data_standards/scratch_3f0704c0-28da-11eb-a744-0242ac110002> (HM 003)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f0704c0-28da-11eb-a744-0242ac110002> "HM 003"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f0704c0-28da-11eb-a744-0242ac110002> "Lamp5 Lhx6"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f0704c0-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_3>)))
+
+# Class: <http://brain_data_standards/scratch_3f0705f6-28da-11eb-a744-0242ac110002> (HM 004-011)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f0705f6-28da-11eb-a744-0242ac110002> "HM 004-011"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f0705f6-28da-11eb-a744-0242ac110002> "Vip"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f0705f6-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_53>)))
+
+# Class: <http://brain_data_standards/scratch_3f0706f0-28da-11eb-a744-0242ac110002> (HM 004-007)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f0706f0-28da-11eb-a744-0242ac110002> "HM 004-007"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f0706f0-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_54>)))
+
+# Class: <http://brain_data_standards/scratch_3f0707d6-28da-11eb-a744-0242ac110002> (HM 004)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f0707d6-28da-11eb-a744-0242ac110002> "HM 004"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f0707d6-28da-11eb-a744-0242ac110002> "Pax6"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f0707d6-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_4>)))
+
+# Class: <http://brain_data_standards/scratch_3f0708ee-28da-11eb-a744-0242ac110002> (HM 005-007)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f0708ee-28da-11eb-a744-0242ac110002> "HM 005-007"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f0708ee-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_55>)))
+
+# Class: <http://brain_data_standards/scratch_3f070a92-28da-11eb-a744-0242ac110002> (HM 005-006)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f070a92-28da-11eb-a744-0242ac110002> "HM 005-006"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f070a92-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_56>)))
+
+# Class: <http://brain_data_standards/scratch_3f070eb6-28da-11eb-a744-0242ac110002> (HM 005)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f070eb6-28da-11eb-a744-0242ac110002> "HM 005"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f070eb6-28da-11eb-a744-0242ac110002> "Lamp5 2"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f070eb6-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_5>)))
+
+# Class: <http://brain_data_standards/scratch_3f071064-28da-11eb-a744-0242ac110002> (HM 006)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f071064-28da-11eb-a744-0242ac110002> "HM 006"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f071064-28da-11eb-a744-0242ac110002> "Vip Sncg"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f071064-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_6>)))
+
+# Class: <http://brain_data_standards/scratch_3f071168-28da-11eb-a744-0242ac110002> (HM 007)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f071168-28da-11eb-a744-0242ac110002> "HM 007"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f071168-28da-11eb-a744-0242ac110002> "Vip 1"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f071168-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_7>)))
+
+# Class: <http://brain_data_standards/scratch_3f07129e-28da-11eb-a744-0242ac110002> (HM 008-011)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f07129e-28da-11eb-a744-0242ac110002> "HM 008-011"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f07129e-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_57>)))
+
+# Class: <http://brain_data_standards/scratch_3f0713de-28da-11eb-a744-0242ac110002> (HM 008)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f0713de-28da-11eb-a744-0242ac110002> "HM 008"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f0713de-28da-11eb-a744-0242ac110002> "Vip 2"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f0713de-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_8>)))
+
+# Class: <http://brain_data_standards/scratch_3f07151e-28da-11eb-a744-0242ac110002> (HM 009-011)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f07151e-28da-11eb-a744-0242ac110002> "HM 009-011"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f07151e-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_58>)))
+
+# Class: <http://brain_data_standards/scratch_3f071640-28da-11eb-a744-0242ac110002> (HM 009-010)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f071640-28da-11eb-a744-0242ac110002> "HM 009-010"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f071640-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_59>)))
+
+# Class: <http://brain_data_standards/scratch_3f0716fe-28da-11eb-a744-0242ac110002> (HM 009)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f0716fe-28da-11eb-a744-0242ac110002> "HM 009"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f0716fe-28da-11eb-a744-0242ac110002> "Vip 3"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f0716fe-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_9>)))
+
+# Class: <http://brain_data_standards/scratch_3f07183e-28da-11eb-a744-0242ac110002> (HM 010)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f07183e-28da-11eb-a744-0242ac110002> "HM 010"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f07183e-28da-11eb-a744-0242ac110002> "Vip 4"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f07183e-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_10>)))
+
+# Class: <http://brain_data_standards/scratch_3f07199c-28da-11eb-a744-0242ac110002> (HM 011)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f07199c-28da-11eb-a744-0242ac110002> "HM 011"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f07199c-28da-11eb-a744-0242ac110002> "Vip 5"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f07199c-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_11>)))
+
+# Class: <http://brain_data_standards/scratch_3f071adc-28da-11eb-a744-0242ac110002> (HM 012-020)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f071adc-28da-11eb-a744-0242ac110002> "HM 012-020"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f071adc-28da-11eb-a744-0242ac110002> "MGE"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f071adc-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_60>)))
+
+# Class: <http://brain_data_standards/scratch_3f071c12-28da-11eb-a744-0242ac110002> (HM 012)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f071c12-28da-11eb-a744-0242ac110002> "HM 012"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f071c12-28da-11eb-a744-0242ac110002> "Sst Chodl"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f071c12-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_12>)))
+
+# Class: <http://brain_data_standards/scratch_3f071cd0-28da-11eb-a744-0242ac110002> (HM 013-020)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f071cd0-28da-11eb-a744-0242ac110002> "HM 013-020"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f071cd0-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_61>)))
+
+# Class: <http://brain_data_standards/scratch_3f071dfc-28da-11eb-a744-0242ac110002> (HM 013-017)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f071dfc-28da-11eb-a744-0242ac110002> "HM 013-017"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f071dfc-28da-11eb-a744-0242ac110002> "Sst"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f071dfc-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_62>)))
+
+# Class: <http://brain_data_standards/scratch_3f071f32-28da-11eb-a744-0242ac110002> (HM 013-016)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f071f32-28da-11eb-a744-0242ac110002> "HM 013-016"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f071f32-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_63>)))
+
+# Class: <http://brain_data_standards/scratch_3f07202c-28da-11eb-a744-0242ac110002> (HM 013-014)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f07202c-28da-11eb-a744-0242ac110002> "HM 013-014"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f07202c-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_64>)))
+
+# Class: <http://brain_data_standards/scratch_3f0720e0-28da-11eb-a744-0242ac110002> (HM 013)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f0720e0-28da-11eb-a744-0242ac110002> "HM 013"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f0720e0-28da-11eb-a744-0242ac110002> "Sst 2"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f0720e0-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_13>)))
+
+# Class: <http://brain_data_standards/scratch_3f072194-28da-11eb-a744-0242ac110002> (HM 014)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f072194-28da-11eb-a744-0242ac110002> "HM 014"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f072194-28da-11eb-a744-0242ac110002> "Sst 3"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f072194-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_14>)))
+
+# Class: <http://brain_data_standards/scratch_3f0722ca-28da-11eb-a744-0242ac110002> (HM 015-016)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f0722ca-28da-11eb-a744-0242ac110002> "HM 015-016"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f0722ca-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_65>)))
+
+# Class: <http://brain_data_standards/scratch_3f07240a-28da-11eb-a744-0242ac110002> (HM 015)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f07240a-28da-11eb-a744-0242ac110002> "HM 015"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f07240a-28da-11eb-a744-0242ac110002> "Sst 1"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f07240a-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_15>)))
+
+# Class: <http://brain_data_standards/scratch_3f072540-28da-11eb-a744-0242ac110002> (HM 016)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f072540-28da-11eb-a744-0242ac110002> "HM 016"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f072540-28da-11eb-a744-0242ac110002> "Sst 4"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f072540-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_16>)))
+
+# Class: <http://brain_data_standards/scratch_3f07269e-28da-11eb-a744-0242ac110002> (HM 017)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f07269e-28da-11eb-a744-0242ac110002> "HM 017"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f07269e-28da-11eb-a744-0242ac110002> "Sst 5"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f07269e-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_17>)))
+
+# Class: <http://brain_data_standards/scratch_3f072748-28da-11eb-a744-0242ac110002> (HM 018-020)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f072748-28da-11eb-a744-0242ac110002> "HM 018-020"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f072748-28da-11eb-a744-0242ac110002> "Pvalb"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f072748-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_66>)))
+
+# Class: <http://brain_data_standards/scratch_3f072806-28da-11eb-a744-0242ac110002> (HM 018-019)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f072806-28da-11eb-a744-0242ac110002> "HM 018-019"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f072806-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_67>)))
+
+# Class: <http://brain_data_standards/scratch_3f07293c-28da-11eb-a744-0242ac110002> (HM 018)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f07293c-28da-11eb-a744-0242ac110002> "HM 018"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f07293c-28da-11eb-a744-0242ac110002> "Pvalb 1"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f07293c-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_18>)))
+
+# Class: <http://brain_data_standards/scratch_3f072a5e-28da-11eb-a744-0242ac110002> (HM 019)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f072a5e-28da-11eb-a744-0242ac110002> "HM 019"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f072a5e-28da-11eb-a744-0242ac110002> "Pvalb 2"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f072a5e-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_19>)))
+
+# Class: <http://brain_data_standards/scratch_3f072b26-28da-11eb-a744-0242ac110002> (HM 020)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f072b26-28da-11eb-a744-0242ac110002> "HM 020"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f072b26-28da-11eb-a744-0242ac110002> "Chandelier"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f072b26-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_20>)))
+
+# Class: <http://brain_data_standards/scratch_3f072c52-28da-11eb-a744-0242ac110002> (HM 021-033)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f072c52-28da-11eb-a744-0242ac110002> "HM 021-033"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f072c52-28da-11eb-a744-0242ac110002> "Glutamatergic"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f072c52-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_68>)))
+
+# Class: <http://brain_data_standards/scratch_3f072d88-28da-11eb-a744-0242ac110002> (HM 021-032)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f072d88-28da-11eb-a744-0242ac110002> "HM 021-032"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f072d88-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_69>)))
+
+# Class: <http://brain_data_standards/scratch_3f072ebe-28da-11eb-a744-0242ac110002> (HM 021-028)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f072ebe-28da-11eb-a744-0242ac110002> "HM 021-028"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f072ebe-28da-11eb-a744-0242ac110002> "IT"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f072ebe-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_70>)))
+
+# Class: <http://brain_data_standards/scratch_3f072ffe-28da-11eb-a744-0242ac110002> (HM 021-025)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f072ffe-28da-11eb-a744-0242ac110002> "HM 021-025"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f072ffe-28da-11eb-a744-0242ac110002> "L4-6 IT"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f072ffe-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_71>)))
+
+# Class: <http://brain_data_standards/scratch_3f073134-28da-11eb-a744-0242ac110002> (HM 021)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f073134-28da-11eb-a744-0242ac110002> "HM 021"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f073134-28da-11eb-a744-0242ac110002> "Exc L5/6 IT 1"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f073134-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_21>)))
+
+# Class: <http://brain_data_standards/scratch_3f073274-28da-11eb-a744-0242ac110002> (HM 022-025)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f073274-28da-11eb-a744-0242ac110002> "HM 022-025"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f073274-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_72>)))
+
+# Class: <http://brain_data_standards/scratch_3f07356c-28da-11eb-a744-0242ac110002> (HM 022-023)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f07356c-28da-11eb-a744-0242ac110002> "HM 022-023"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f07356c-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_73>)))
+
+# Class: <http://brain_data_standards/scratch_3f0736fc-28da-11eb-a744-0242ac110002> (HM 022)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f0736fc-28da-11eb-a744-0242ac110002> "HM 022"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f0736fc-28da-11eb-a744-0242ac110002> "Exc L4/5 IT"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f0736fc-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_22>)))
+
+# Class: <http://brain_data_standards/scratch_3f073800-28da-11eb-a744-0242ac110002> (HM 023)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f073800-28da-11eb-a744-0242ac110002> "HM 023"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f073800-28da-11eb-a744-0242ac110002> "Exc L3/5 IT"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f073800-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_23>)))
+
+# Class: <http://brain_data_standards/scratch_3f073990-28da-11eb-a744-0242ac110002> (HM 024-025)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f073990-28da-11eb-a744-0242ac110002> "HM 024-025"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f073990-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_74>)))
+
+# Class: <http://brain_data_standards/scratch_3f073abc-28da-11eb-a744-0242ac110002> (HM 024)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f073abc-28da-11eb-a744-0242ac110002> "HM 024"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f073abc-28da-11eb-a744-0242ac110002> "Exc L5/6 IT 2"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f073abc-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_24>)))
+
+# Class: <http://brain_data_standards/scratch_3f073bfc-28da-11eb-a744-0242ac110002> (HM 025)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f073bfc-28da-11eb-a744-0242ac110002> "HM 025"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f073bfc-28da-11eb-a744-0242ac110002> "Exc L5/6 IT 3"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f073bfc-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_25>)))
+
+# Class: <http://brain_data_standards/scratch_3f073d3c-28da-11eb-a744-0242ac110002> (HM 026-028)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f073d3c-28da-11eb-a744-0242ac110002> "HM 026-028"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f073d3c-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_75>)))
+
+# Class: <http://brain_data_standards/scratch_3f073e5e-28da-11eb-a744-0242ac110002> (HM 026-027)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f073e5e-28da-11eb-a744-0242ac110002> "HM 026-027"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f073e5e-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_76>)))
+
+# Class: <http://brain_data_standards/scratch_3f073f08-28da-11eb-a744-0242ac110002> (HM 026)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f073f08-28da-11eb-a744-0242ac110002> "HM 026"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f073f08-28da-11eb-a744-0242ac110002> "Exc L2/3 IT"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f073f08-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_26>)))
+
+# Class: <http://brain_data_standards/scratch_3f073f8a-28da-11eb-a744-0242ac110002> (HM 027)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f073f8a-28da-11eb-a744-0242ac110002> "HM 027"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f073f8a-28da-11eb-a744-0242ac110002> "Exc L6 IT 1"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f073f8a-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_27>)))
+
+# Class: <http://brain_data_standards/scratch_3f074020-28da-11eb-a744-0242ac110002> (HM 028)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f074020-28da-11eb-a744-0242ac110002> "HM 028"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f074020-28da-11eb-a744-0242ac110002> "Exc L6 IT 2"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f074020-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_28>)))
+
+# Class: <http://brain_data_standards/scratch_3f0740f2-28da-11eb-a744-0242ac110002> (HM 029-032)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f0740f2-28da-11eb-a744-0242ac110002> "HM 029-032"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f0740f2-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_77>)))
+
+# Class: <http://brain_data_standards/scratch_3f07421e-28da-11eb-a744-0242ac110002> (HM 029-030)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f07421e-28da-11eb-a744-0242ac110002> "HM 029-030"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f07421e-28da-11eb-a744-0242ac110002> "L5 ET"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f07421e-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_78>)))
+
+# Class: <http://brain_data_standards/scratch_3f07435e-28da-11eb-a744-0242ac110002> (HM 029)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f07435e-28da-11eb-a744-0242ac110002> "HM 029"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f07435e-28da-11eb-a744-0242ac110002> "Exc L5 PT"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f07435e-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_29>)))
+
+# Class: <http://brain_data_standards/scratch_3f074462-28da-11eb-a744-0242ac110002> (HM 030)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f074462-28da-11eb-a744-0242ac110002> "HM 030"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f074462-28da-11eb-a744-0242ac110002> "Exc L5 PT (Mouse)"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f074462-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_30>)))
+
+# Class: <http://brain_data_standards/scratch_3f074516-28da-11eb-a744-0242ac110002> (HM 031-032)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f074516-28da-11eb-a744-0242ac110002> "HM 031-032"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f074516-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_79>)))
+
+# Class: <http://brain_data_standards/scratch_3f0745ca-28da-11eb-a744-0242ac110002> (HM 031)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f0745ca-28da-11eb-a744-0242ac110002> "HM 031"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f0745ca-28da-11eb-a744-0242ac110002> "Exc L6 CT"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f0745ca-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_31>)))
+
+# Class: <http://brain_data_standards/scratch_3f074700-28da-11eb-a744-0242ac110002> (HM 032)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f074700-28da-11eb-a744-0242ac110002> "HM 032"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f074700-28da-11eb-a744-0242ac110002> "Exc L6b"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f074700-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_32>)))
+
+# Class: <http://brain_data_standards/scratch_3f074840-28da-11eb-a744-0242ac110002> (HM 033)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f074840-28da-11eb-a744-0242ac110002> "HM 033"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f074840-28da-11eb-a744-0242ac110002> "Exc L5/6 NP"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f074840-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_33>)))
+
+# Class: <http://brain_data_standards/scratch_3f0749f8-28da-11eb-a744-0242ac110002> (HM 034)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f0749f8-28da-11eb-a744-0242ac110002> "HM 034"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f0749f8-28da-11eb-a744-0242ac110002> "Meis2"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f0749f8-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_34>)))
+
+# Class: <http://brain_data_standards/scratch_3f074afc-28da-11eb-a744-0242ac110002> (HM 035)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f074afc-28da-11eb-a744-0242ac110002> "HM 035"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f074afc-28da-11eb-a744-0242ac110002> "Cajal Retzius"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f074afc-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_35>)))
+
+# Class: <http://brain_data_standards/scratch_3f074ba6-28da-11eb-a744-0242ac110002> (HM 036-038)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f074ba6-28da-11eb-a744-0242ac110002> "HM 036-038"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f074ba6-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_80>)))
+
+# Class: <http://brain_data_standards/scratch_3f074c5a-28da-11eb-a744-0242ac110002> (HM 036-037)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f074c5a-28da-11eb-a744-0242ac110002> "HM 036-037"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f074c5a-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_81>)))
+
+# Class: <http://brain_data_standards/scratch_3f074d86-28da-11eb-a744-0242ac110002> (HM 036)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f074d86-28da-11eb-a744-0242ac110002> "HM 036"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f074d86-28da-11eb-a744-0242ac110002> "Astrocyte"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f074d86-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_36>)))
+
+# Class: <http://brain_data_standards/scratch_3f074ea8-28da-11eb-a744-0242ac110002> (HM 037)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f074ea8-28da-11eb-a744-0242ac110002> "HM 037"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f074ea8-28da-11eb-a744-0242ac110002> "OPC"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f074ea8-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_37>)))
+
+# Class: <http://brain_data_standards/scratch_3f074f7a-28da-11eb-a744-0242ac110002> (HM 038)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f074f7a-28da-11eb-a744-0242ac110002> "HM 038"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f074f7a-28da-11eb-a744-0242ac110002> "Oligodendrocyte"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f074f7a-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_38>)))
+
+# Class: <http://brain_data_standards/scratch_3f0750b0-28da-11eb-a744-0242ac110002> (HM 039-043)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f0750b0-28da-11eb-a744-0242ac110002> "HM 039-043"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f0750b0-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_82>)))
+
+# Class: <http://brain_data_standards/scratch_3f0751e6-28da-11eb-a744-0242ac110002> (HM 039)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f0751e6-28da-11eb-a744-0242ac110002> "HM 039"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f0751e6-28da-11eb-a744-0242ac110002> "Microglia-PVM"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f0751e6-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_39>)))
+
+# Class: <http://brain_data_standards/scratch_3f0752ea-28da-11eb-a744-0242ac110002> (HM 040-043)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f0752ea-28da-11eb-a744-0242ac110002> "HM 040-043"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f0752ea-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_83>)))
+
+# Class: <http://brain_data_standards/scratch_3f07539e-28da-11eb-a744-0242ac110002> (HM 040)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f07539e-28da-11eb-a744-0242ac110002> "HM 040"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f07539e-28da-11eb-a744-0242ac110002> "Endothelial"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f07539e-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_40>)))
+
+# Class: <http://brain_data_standards/scratch_3f075452-28da-11eb-a744-0242ac110002> (HM 041-043)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f075452-28da-11eb-a744-0242ac110002> "HM 041-043"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f075452-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_84>)))
+
+# Class: <http://brain_data_standards/scratch_3f07557e-28da-11eb-a744-0242ac110002> (HM 041-042)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f07557e-28da-11eb-a744-0242ac110002> "HM 041-042"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f07557e-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_85>)))
+
+# Class: <http://brain_data_standards/scratch_3f0756b4-28da-11eb-a744-0242ac110002> (HM 041)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f0756b4-28da-11eb-a744-0242ac110002> "HM 041"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f0756b4-28da-11eb-a744-0242ac110002> "Pericyte"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f0756b4-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_41>)))
+
+# Class: <http://brain_data_standards/scratch_3f0757ea-28da-11eb-a744-0242ac110002> (HM 042)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f0757ea-28da-11eb-a744-0242ac110002> "HM 042"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f0757ea-28da-11eb-a744-0242ac110002> "SMC"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f0757ea-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_42>)))
+
+# Class: <http://brain_data_standards/scratch_3f075916-28da-11eb-a744-0242ac110002> (HM 043)
+
+AnnotationAssertion(rdfs:label <http://brain_data_standards/scratch_3f075916-28da-11eb-a744-0242ac110002> "HM 043"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://brain_data_standards/scratch_3f075916-28da-11eb-a744-0242ac110002> "VLMC"^^xsd:string)
+EquivalentClasses(<http://brain_data_standards/scratch_3f075916-28da-11eb-a744-0242ac110002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS201908211_43>)))
+
+
+
+)
