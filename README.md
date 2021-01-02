@@ -15,6 +15,7 @@ The main purpose of this repo is to automate data driven cell-type ontology deve
 4. Automatically seeded, manually curated robot templates mapping nodes to classes in CL and to various properties (e.g. soma location)
 
 ***Figure 1: Build overview***
+
 ![image](https://user-images.githubusercontent.com/112839/103354330-2ffa7580-4aa3-11eb-8444-81b73e09adf4.png)
 
 The Build system is an extended version of the [Ontology Development Kit](https://github.com/INCATools/ontology-development-kit) - an automated ontology build system using [ROBOT](http://robot.obolibrary.org/) and MakeFiles. As well as managing the build from input files, this also automatically generated modules from referenced ontologies and integrates these into the build. 
