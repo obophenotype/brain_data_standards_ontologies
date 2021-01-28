@@ -16,7 +16,7 @@ ALLEN_ID_PREFIX = "AllenDend:"
 EXPRESSION_SEPARATOR = "|"
 
 
-def generate_nested_marker(dend_json_path, flat_marker_path, output_marker_path, root_terms=[]):
+def generate_nested_marker(dend_json_path, flat_marker_path, output_marker_path, root_terms=None):
     """Enriches existing marker file based on child relations extracted from dendrogram file.
        New maker table, following the same format as the input marker table, with each node associated with a
        non-redundant list of all markers associated with the term in the input + all markers associated with
@@ -28,6 +28,8 @@ def generate_nested_marker(dend_json_path, flat_marker_path, output_marker_path,
             - output_marker_path: Path of the new marker file
             - root_terms: 'cell_set_accession' of terms. So that algorithm could be applied to a subtree
     """
+    if root_terms is None:
+        root_terms = []
     tree = read_dendrogram_tree(dend_json_path)
     marker_expressions = read_marker_file(flat_marker_path)
     marker_extended_expressions = extend_expressions(tree, marker_expressions, root_terms)
@@ -72,7 +74,6 @@ def read_marker_file(flat_marker_path):
         # skip first row
         next(rd)
         for row in rd:
-            expressions = set()
             _id = row[0].replace(ALLEN_ID_PREFIX, "")
             if not (_id in marker_expressions.keys()):
                 marker_expressions[_id] = {EXPRESSIONS: row[2].split(EXPRESSION_SEPARATOR), CLUSTER: row[1]}
@@ -82,16 +83,19 @@ def read_marker_file(flat_marker_path):
     return marker_expressions
 
 
-def extend_expressions(tree, marker_expressions, root_terms=[]):
+def extend_expressions(tree, marker_expressions, root_terms=None):
     """
     Utilizes tree to extend expression definitions of the marker expressions
     Args:
         tree: networkx directed graph that represents the taxonomy
         marker_expressions: marker file content as dict
+        root_terms: 'cell_set_accession' of terms. So that algorithm could be applied to a subtree
 
     Returns: new marker file content with taxonomy based expression enrichment
 
     """
+    # if root_terms is None:
+    #     root_terms = []
     marker_extended_expressions = {}
 
     for term in marker_expressions.keys():
@@ -137,6 +141,13 @@ def is_in_subtree(tree, root_terms, term):
 
 
 def generate_marker_table(marker_data, output_filepath):
+    """
+    Generates marker table in the given location
+    Args:
+        marker_data: table data
+        output_filepath: output file location
+
+    """
     robot_marker_template_seed = {
         'Taxonomy_node_ID': 'ID',
         'clusterName': 'clusterName',
