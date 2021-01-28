@@ -1,6 +1,8 @@
 import unittest
 import networkx as nx
 import os
+import matplotlib.pyplot as plt
+from networkx.drawing.nx_agraph import graphviz_layout
 from scripts.marker_tools import generate_nested_marker, read_dendrogram_tree, read_marker_file, extend_expressions
 
 
@@ -16,6 +18,21 @@ EXPRESSIONS = "expressions"
 def delete_file(path_to_file):
     if os.path.exists(path_to_file):
         os.remove(path_to_file)
+
+
+def visualise_tree():
+    tree = read_dendrogram_tree(PATH_DEND_JSON)
+
+    labels = {}
+    for node in tree.nodes():
+        labels[node] = str(node).replace("CS202002013", "")
+
+    plt.title('CCN202002013')
+    pos = graphviz_layout(tree, prog='dot')
+    nx.draw(tree, pos, with_labels=False, arrows=False)
+    nx.draw_networkx_labels(tree, pos, labels, font_size=7)
+
+    plt.show()
 
 
 class NestedMarkerTest(unittest.TestCase):
@@ -144,6 +161,18 @@ class NestedMarkerTest(unittest.TestCase):
         self.assertTrue("ensembl:ENSMUSG00000027210" in expressions)
         self.assertTrue("ensembl:ENSMUSG00000062372" in expressions)
 
+        self.assertEqual(12, len(expressions))
+
+    def test_subtree_restrictions_sequential(self):
+        tree = read_dendrogram_tree(PATH_DEND_JSON)
+        marker_expressions = read_marker_file(PATH_MARKERS)
+
+        marker_extended_expressions = extend_expressions(tree, marker_expressions, ["CS202002013_184"])
+        expressions = marker_extended_expressions["CS202002013_183"][EXPRESSIONS]
+        self.assertEqual(2, len(expressions))
+
+        marker_extended_expressions = extend_expressions(tree, marker_expressions)
+        expressions = marker_extended_expressions["CS202002013_183"][EXPRESSIONS]
         self.assertEqual(12, len(expressions))
 
     def test_marker_generation(self):
