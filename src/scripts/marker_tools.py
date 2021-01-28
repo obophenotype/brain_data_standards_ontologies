@@ -5,6 +5,10 @@ import networkx as nx
 import pandas as pd
 import logging
 
+CLUSTER = "cluster"
+
+EXPRESSIONS = "expressions"
+
 log = logging.getLogger(__name__)
 
 ALLEN_ID_PREFIX = "AllenDend:"
@@ -65,14 +69,13 @@ def read_marker_file(flat_marker_path):
     marker_expressions = {}
     with open(flat_marker_path) as fd:
         rd = csv.reader(fd, delimiter="\t", quotechar='"')
-        # skip first two rows
-        next(rd)
+        # skip first row
         next(rd)
         for row in rd:
             expressions = set()
             _id = row[0].replace(ALLEN_ID_PREFIX, "")
             if not (_id in marker_expressions.keys()):
-                marker_expressions[_id] = row[2].split(EXPRESSION_SEPARATOR)
+                marker_expressions[_id] = {EXPRESSIONS: row[2].split(EXPRESSION_SEPARATOR), CLUSTER: row[1]}
             else:
                 log.warning("Redundant id [{0}] in markers file".format(_id))
 
@@ -92,7 +95,7 @@ def extend_expressions(tree, marker_expressions, root_terms=[]):
     marker_extended_expressions = {}
 
     for term in marker_expressions.keys():
-        extended_expressions = set(marker_expressions[term])
+        extended_expressions = set(marker_expressions[term][EXPRESSIONS])
 
         if tree.has_node(term):
             if is_in_subtree(tree, root_terms, term):
@@ -102,14 +105,15 @@ def extend_expressions(tree, marker_expressions, root_terms=[]):
         else:
             log.warning("{0} exists in markers but not in dendrogram.".format(term))
 
-        marker_extended_expressions[term] = extended_expressions
+        marker_extended_expressions[term] = {EXPRESSIONS: extended_expressions,
+                                             CLUSTER: marker_expressions[term][CLUSTER]}
 
     return marker_extended_expressions
 
 
 def add_child_expressions(child, marker_expressions, extended_expressions):
     if child in marker_expressions.keys():
-        for expression in marker_expressions[child]:
+        for expression in marker_expressions[child][EXPRESSIONS]:
             extended_expressions.add(expression)
 
 
@@ -134,16 +138,16 @@ def is_in_subtree(tree, root_terms, term):
 
 def generate_marker_table(marker_data, output_filepath):
     robot_marker_template_seed = {
-        'ID': 'ID',
-        'TYPE': 'TYPE',
-        'Expresses': "TI 'expresses' % SPLIT = '|' "
+        'Taxonomy_node_ID': 'ID',
+        'clusterName': 'clusterName',
+        'Markers Delimited': "TI 'expresses' % SPLIT = '|' "
     }
-    template = [robot_marker_template_seed]
+    template = []
     for o in marker_data.keys():
         d = dict()
-        d['ID'] = ALLEN_ID_PREFIX + o
-        d['TYPE'] = "owl:NamedIndividual"
-        d['Expresses'] = EXPRESSION_SEPARATOR.join(marker_data[o])
+        d['Taxonomy_node_ID'] = o
+        d['clusterName'] = marker_data[o][CLUSTER]
+        d['Markers Delimited'] = EXPRESSION_SEPARATOR.join(marker_data[o][EXPRESSIONS])
         for k in robot_marker_template_seed.keys():
             if not (k in d.keys()):
                 d[k] = ''

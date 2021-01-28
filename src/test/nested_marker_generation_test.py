@@ -6,9 +6,11 @@ from scripts.marker_tools import generate_nested_marker, read_dendrogram_tree, r
 
 PATH_DEND_JSON = "./test_data/CCN202002013.json"
 
-PATH_MARKERS = "./test_data/CCN202002013_markers.tsv"
+PATH_MARKERS = "./test_data/CS202002013_markers.tsv"
 
-PATH_OUTPUT_MARKER = "./test_data/CCN202002013_markers_nested.tsv"
+PATH_OUTPUT_MARKER = "./test_data/CS202002013_markers_nested.tsv"
+
+EXPRESSIONS = "expressions"
 
 
 def delete_file(path_to_file):
@@ -41,7 +43,7 @@ class NestedMarkerTest(unittest.TestCase):
         self.assertEqual(marker_expressions.keys(), marker_extended_expressions.keys())
 
         self.assertTrue("CS202002013_183" in marker_extended_expressions.keys())
-        expressions = marker_extended_expressions["CS202002013_183"]
+        expressions = marker_extended_expressions["CS202002013_183"][EXPRESSIONS]
 
         # self expressions
         self.assertTrue("ensembl:ENSMUSG00000028222" in expressions)
@@ -72,7 +74,7 @@ class NestedMarkerTest(unittest.TestCase):
         self.assertEqual(marker_expressions.keys(), marker_extended_expressions.keys())
 
         self.assertTrue("CS202002013_183" in marker_extended_expressions.keys())
-        expressions = marker_extended_expressions["CS202002013_183"]
+        expressions = marker_extended_expressions["CS202002013_183"][EXPRESSIONS]
 
         # self expressions
         self.assertTrue("ensembl:ENSMUSG00000028222" in expressions)
@@ -89,7 +91,7 @@ class NestedMarkerTest(unittest.TestCase):
         self.assertEqual(marker_expressions.keys(), marker_extended_expressions.keys())
 
         self.assertTrue("CS202002013_183" in marker_extended_expressions.keys())
-        expressions = marker_extended_expressions["CS202002013_183"]
+        expressions = marker_extended_expressions["CS202002013_183"][EXPRESSIONS]
 
         # self expressions
         self.assertTrue("ensembl:ENSMUSG00000028222" in expressions)
@@ -122,7 +124,7 @@ class NestedMarkerTest(unittest.TestCase):
 
         # 183 is child of 182
         self.assertTrue("CS202002013_183" in marker_extended_expressions.keys())
-        expressions = marker_extended_expressions["CS202002013_183"]
+        expressions = marker_extended_expressions["CS202002013_183"][EXPRESSIONS]
 
         # self expressions
         self.assertTrue("ensembl:ENSMUSG00000028222" in expressions)
