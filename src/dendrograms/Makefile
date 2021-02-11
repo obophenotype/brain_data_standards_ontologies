@@ -5,7 +5,7 @@ TEMPLATE_CLASS_FILES = $(patsubst %, ../templates/%_class.tsv, $(JOBS))
 MARKER_FILES = $(patsubst %, ../templates/%_markers.tsv, $(JOBS))
 
 
-all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_FILES) $(MARKER_FILES)
+all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_FILES) # $(MARKER_FILES)
 
 ../templates/%.tsv: %.json
 	python ../scripts/template_runner.py $< $@
