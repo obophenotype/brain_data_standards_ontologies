@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BDS_build_conf",
+  "type": "object",
+  "additionalProperties": false,
+  "definitions": {
+    "root_node":{
+      "type": "object",
+      "properties": {
+        "node": {
+          "type": "string",
+          "description": "cell_set_accession of a root node"
+        },
+        "cell_type": {
+          "type": "string",
+          "description": "Gross cell type corresponding to root node.  This should not include a location restriction to region specified in under brain_region."
+        }
+      }
+    }
+  },
+  "properties": {
+    "Taxonomy_id" :  {
+      "type": "string",
+      "description": "Accession for Allen Taxonomy"
+    },
+    "Description":  {
+      "type": "string",
+      "description": "Description of Allen Taxonomy"
+    },
+    "Reference": {
+      "type": "string",
+      "description": ""
+    },
+    "DOI":  {
+      "type": "string",
+      "description": "DOI of primary reference for "
+    },
+    "Species":  {
+      "type": "string",
+      "description": "NCBI ID of species "
+    },
+    "Brain_region": {
+      "type": "string",
+      "description": "Ontology ID (CURIE) of term for brain region."
+    },
+    "root_nodes": {
+      "type": "array",
+      "items": {
+        "$ref" : "#/definitions/root_node"  }
+    }
+  }
+}
