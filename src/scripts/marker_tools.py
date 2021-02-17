@@ -16,7 +16,7 @@ ALLEN_ID_PREFIX = "AllenDend:"
 EXPRESSION_SEPARATOR = "|"
 
 
-def generate_nested_marker(dend_json_path, flat_marker_path, output_marker_path, root_terms=None):
+def generate_denormalised_marker(dend_json_path, flat_marker_path, output_marker_path, root_terms=None):
     """Enriches existing marker file based on child relations extracted from dendrogram file.
        New maker table, following the same format as the input marker table, with each node associated with a
        non-redundant list of all markers associated with the term in the input + all markers associated with
@@ -94,8 +94,7 @@ def extend_expressions(tree, marker_expressions, root_terms=None):
     Returns: new marker file content with taxonomy based expression enrichment
 
     """
-    # if root_terms is None:
-    #     root_terms = []
+    check_root_terms(root_terms, marker_expressions)
     marker_extended_expressions = {}
 
     for term in marker_expressions.keys():
@@ -103,9 +102,7 @@ def extend_expressions(tree, marker_expressions, root_terms=None):
 
         if tree.has_node(term):
             if is_in_subtree(tree, root_terms, term):
-                # enrich parent expressions with child data
-                for child in nx.descendants(tree, term):
-                    add_child_expressions(child, marker_expressions, extended_expressions)
+                inherit_parent_expressions(tree, root_terms, term, marker_expressions, extended_expressions)
         else:
             log.warning("{0} exists in markers but not in dendrogram.".format(term))
 
@@ -115,10 +112,33 @@ def extend_expressions(tree, marker_expressions, root_terms=None):
     return marker_extended_expressions
 
 
-def add_child_expressions(child, marker_expressions, extended_expressions):
-    if child in marker_expressions.keys():
-        for expression in marker_expressions[child][EXPRESSIONS]:
-            extended_expressions.add(expression)
+def check_root_terms(root_terms, marker_expressions):
+    """
+    Root nodes get no markers; markers on the root node should not be inherited
+    Args:
+        root_terms: 'cell_set_accession' of terms. So that algorithm could be applied to a subtree
+        marker_expressions: marker file content as dict
+    """
+    if root_terms:
+        for root in root_terms:
+            if root in marker_expressions.keys():
+                marker_expressions[root][EXPRESSIONS] = set()
+
+
+def inherit_parent_expressions(tree, root_terms, term, marker_expressions, extended_expressions):
+    """
+    Enrich child node data with the parent data. Parent and child both must be in the subtree.
+    Args:
+        tree: networkx directed graph that represents the taxonomy tree
+        root_terms: list of root terms to define subtrees
+        term: child node to enrich
+        marker_expressions: marker data
+        extended_expressions: set of expressions to be enriched with the parent data
+
+    """
+    for parent in nx.ancestors(tree, term):
+        if is_in_subtree(tree, root_terms, parent) and parent in marker_expressions.keys():
+            extended_expressions.update(marker_expressions[parent][EXPRESSIONS])
 
 
 def is_in_subtree(tree, root_terms, term):
