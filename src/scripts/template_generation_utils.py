@@ -17,7 +17,7 @@ def get_synonyms_from_taxonomy(node):
 
     """
     synonym_properties = ['cell_set_preferred_alias', 'original_label', 'cell_set_label', 'cell_set_aligned_alias',
-                          'cell_set_additional_alias']
+                          'cell_set_additional_aliases']
 
     return OR_SEPARATOR.join({node[prop] for prop in synonym_properties if prop in node.keys() and node[prop]})
 
@@ -33,8 +33,14 @@ def get_synonym_pairs(node):
 
     """
     synonym_properties = ['cell_set_preferred_alias', 'original_label', 'cell_set_label', 'cell_set_aligned_alias',
-                          'cell_set_additional_alias']
-    return PAIR_SEPARATOR.join(["{"+prop+"}:{"+node[prop]+"}" for prop in synonym_properties if prop in node.keys()])
+                          'cell_set_additional_aliases']
+    values = []
+    for prop in synonym_properties:
+        if prop in node.keys():
+            pair_str = prop + ":"
+            pair_str += node[prop] if node[prop] else "''"
+            values.append(pair_str)
+    return PAIR_SEPARATOR.join(values)
 
 
 def read_taxonomy_details_yaml():

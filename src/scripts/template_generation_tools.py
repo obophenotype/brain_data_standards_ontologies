@@ -1,5 +1,6 @@
 import pandas as pd
 import networkx as nx
+import json
 
 from numpy.distutils.command.config import config
 
@@ -25,7 +26,7 @@ def generate_ind_template(dend_json_path, output_filepath):
                            'original_label': "A n2o:original_label",
                            'cell_set_label': "A n2o:cell_set_label",
                            'cell_set_aligned_alias': "A n2o:cell_set_aligned_alias",
-                           'cell_set_additional_alias': "A n2o:cell_set_additional_alias",
+                           'cell_set_additional_aliases': "A n2o:cell_set_additional_aliases",
                            'cell_set_alias_assignee': "A n2o:cell_set_alias_assignee",
                            'cell_set_alias_citation': "A n2o:cell_set_alias_citation",
                            'Metadata': "A n2o:node_metadata"
@@ -43,12 +44,12 @@ def generate_ind_template(dend_json_path, output_filepath):
         d['Label'] = o['cell_set_label'] + ' - ' + o['cell_set_accession']
         d['PrefLabel'] = o['cell_set_preferred_alias'] + ' - ' + o['cell_set_accession']
         d['Entity Type'] = 'BDSHELP:Cluster'
-        d['Metadata'] = str(o)
+        d['Metadata'] = json.dumps(o)
         d['Synonyms'] = '|'.join([o[prop] for prop in synonym_properties if prop in o.keys() and o[prop]])
         d['Property Assertions'] = '|'.join(
             ['AllenDend:' + e[1] for e in dend['edges'] if e[0] == o['cell_set_accession']])
         meta_properties = ['cell_set_preferred_alias', 'original_label', 'cell_set_label', 'cell_set_aligned_alias',
-                           'cell_set_additional_alias', 'cell_set_alias_assignee', 'cell_set_alias_citation']
+                           'cell_set_additional_aliases', 'cell_set_alias_assignee', 'cell_set_alias_citation']
         for prop in meta_properties:
             d[prop] = o[prop] if prop in o.keys() else ''
 
