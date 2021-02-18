@@ -1,20 +1,17 @@
-[
-    Taxonomy_id: CCN202002013
-    Description: Mouse MOp BICCN taxonomy using multiple RNA-Seq datasets
-    Reference: (Yao et al., 2020a)
-    DOI:
-      - doi:10.1101/2020.02.29.970558
-    Species:
-      - NCBITaxon:10090
-    Brain_region:
-      - UBERON:0001384
-    Root_nodes:
-      - Node: CS202002013_123
-        Cell_type: CL:0011005
-        Location_relation: RO:0002100
-      - Node: CS202002013_179
-        Cell_type: CL:0000679
-        Location_relation: RO:0002100
-]
-
-
+-
+  Taxonomy_id: CCN202002013
+  Description: Mouse MOp BICCN taxonomy using multiple RNA-Seq datasets
+  Reference: (Yao et al., 2020a)
+  DOI:
+    - doi:10.1101/2020.02.29.970558
+  Species:
+    - NCBITaxon:10090
+  Brain_region:
+    - UBERON:0001384
+  Root_nodes:
+    - Node: CS202002013_123
+      Cell_type: CL:0011005
+      Location_relation: RO:0002100
+    - Node: CS202002013_179
+      Cell_type: CL:0000679
+      Location_relation: RO:0002100
