@@ -4,23 +4,42 @@ import csv
 import networkx as nx
 import pandas as pd
 import logging
+import yaml
 
 CLUSTER = "cluster"
-
 EXPRESSIONS = "expressions"
+ALLEN_ID_PREFIX = "AllenDend:"
+EXPRESSION_SEPARATOR = "|"
 
 log = logging.getLogger(__name__)
 
-ALLEN_ID_PREFIX = "AllenDend:"
 
-EXPRESSION_SEPARATOR = "|"
+def generate_denormalised_marker_template(dend_json_path, flat_marker_path, config_path, output_marker_path):
+    """
+    Enriches existing marker file based on inheritance relations extracted from dendrogram file.
+    New maker table, following the same format as the input marker table, with each node associated with a
+    non-redundant list of all markers associated with the term in the input + all markers associated with parent terms.
+    Args:
+        dend_json_path: Path of the dendrogram file
+        flat_marker_path: Path of the marker file that is compatible with the dendrogram file
+        config_path: Taxonomy details config file to get root terms
+        output_marker_path: Path of the new marker file
+
+    """
+    root_nodes = []
+    with open(config_path) as file:
+        config_yaml = yaml.full_load(file)
+        for root_node in config_yaml['Root_nodes']:
+            root_nodes.append(root_node['Node'])
+
+    generate_denormalised_marker(dend_json_path, flat_marker_path, output_marker_path, root_nodes)
 
 
 def generate_denormalised_marker(dend_json_path, flat_marker_path, output_marker_path, root_terms=None):
-    """Enriches existing marker file based on child relations extracted from dendrogram file.
+    """Enriches existing marker file based on inheritance relations extracted from dendrogram file.
        New maker table, following the same format as the input marker table, with each node associated with a
        non-redundant list of all markers associated with the term in the input + all markers associated with
-       child terms.
+       parent terms.
 
         Args:
             - dend_json_path: Path of the dendrogram file
