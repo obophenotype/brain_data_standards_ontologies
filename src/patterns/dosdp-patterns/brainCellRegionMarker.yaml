@@ -1,0 +1,35 @@
+pattern_name: brainCellRegionMarker
+#pattern_iri: http://purl.obolibrary.org/obo/odk/brainCellRegionMarker.yaml
+description: "Brain cell types defined by gross cell type, brain region + marker list."
+
+classes:
+  "animal cell": "animal cell"
+  "Vertebrata <vertebrates>": "NCBITaxon:7742"
+  "regional part of brain": "UBERON:0002616"
+
+relations:
+  part_of: BFO:0000050
+
+vars:
+  gross_cell_type: "'cell'"
+  taxon: "'Vertebrata <vertebrates>'"
+  brain_region: "'regional part of brain'"
+  
+data_list_vars:
+  markers: 
+
+name:
+  text: ""
+  vars:
+   - gross_cell_type
+   - taxon
+   - brain_region
+   - markers
+   
+definition:
+  text: "A %s of the %s %s that expresses %s.'
+  vars:
+   - gross_cell_type
+   - taxon
+   - brain_region
+   - markers
