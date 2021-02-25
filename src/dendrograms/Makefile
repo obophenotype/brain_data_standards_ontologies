@@ -7,7 +7,7 @@ MARKER_DENORMALIZED_FILES = $(patsubst %, ../templates/%_markers_denormalized.ts
 EQUIVALENT_CLASS_REIFICATION_FILES = $(patsubst %, ../templates/%_equivalent_reification.tsv, $(JOBS))
 
 
-all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_FILES) $(MARKER_FILES) $(EQUIVALENT_CLASS_REIFICATION_FILES)
+all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_FILES) # $(MARKER_FILES) #$(EQUIVALENT_CLASS_REIFICATION_FILES)
 
 ../templates/%.tsv: %.json
 	python ../scripts/template_runner.py $< $@
