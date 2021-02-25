@@ -26,9 +26,9 @@ def generate_ind_template(dend_json_path, output_filepath):
                            'original_label': "A n2o:original_label",
                            'cell_set_label': "A n2o:cell_set_label",
                            'cell_set_aligned_alias': "A n2o:cell_set_aligned_alias",
-                           'cell_set_additional_aliases': "A n2o:cell_set_additional_aliases",
-                           'cell_set_alias_assignee': "A n2o:cell_set_alias_assignee",
-                           'cell_set_alias_citation': "A n2o:cell_set_alias_citation",
+                           'cell_set_additional_aliases': "A n2o:cell_set_additional_aliases SPLIT='|'",
+                           'cell_set_alias_assignee': "A n2o:cell_set_alias_assignee SPLIT='|'",
+                           'cell_set_alias_citation': "A n2o:cell_set_alias_citation SPLIT='|'",
                            'Metadata': "A n2o:node_metadata"
                            }
     dl = [robot_template_seed]
