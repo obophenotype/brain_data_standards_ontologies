@@ -127,7 +127,7 @@ def generate_equivalent_class_reification_template(dend_json_path, output_filepa
 
 def generate_equivalent_class_marker_template(dend_json_path, marker_path, output_filepath, root_terms=None):
     dend = dend_json_2_nodes_n_edges(dend_json_path)
-    config_yaml = read_taxonomy_details_yaml()
+    config_yaml = read_taxonomy_details_yaml()[0]
     dend_tree = read_dendrogram_tree(dend_json_path)
 
     root_nodes = []
@@ -143,8 +143,9 @@ def generate_equivalent_class_marker_template(dend_json_path, marker_path, outpu
                                    # 'Definition': 'A IAO:0000115',
                                    'Evidence': 'AI RO:0002558',
                                    'Gross_cell_type': 'C %',
-                                   'Brain_region': "C {} some %".format(config_yaml
-                                                                        ['Root_nodes'][0]['Location_relation'])
+                                   'Brain_region': "C 'has soma location' some %"
+                                   # 'Brain_region': "C {} some %".format(config_yaml
+                                   #                                      ['Root_nodes'][0]['Location_relation'])
                                    }
 
     for i in range(get_max_marker_count(denormalized_markers)):

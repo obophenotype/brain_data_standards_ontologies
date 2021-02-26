@@ -29,7 +29,7 @@ def generate_denormalised_marker_template(dend_json_path, flat_marker_path, conf
     root_nodes = []
     with open(config_path) as file:
         config_yaml = yaml.full_load(file)
-        for root_node in config_yaml['Root_nodes']:
+        for root_node in config_yaml[0]['Root_nodes']:
             root_nodes.append(root_node['Node'])
 
     generate_denormalised_marker(dend_json_path, flat_marker_path, output_marker_path, root_nodes)
