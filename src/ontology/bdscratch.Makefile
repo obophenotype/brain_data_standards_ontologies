@@ -10,6 +10,7 @@ BDS_BASE = http://www.semanticweb.org/brain_data_standards/
 
 OWL_FILES = $(patsubst %, components/%.owl, $(JOBS))
 OWL_CLASS_FILES = $(patsubst %, components/%_class.owl, $(JOBS))
+OWL_EQUIVALENT_CLASS_FILES = $(patsubst %, components/%_equivalent_class.owl, $(JOBS))
 GENE_FILES = $(patsubst %, mirror/%.owl, $(JOBS))
 OWL_MARKER_FILES = $(patsubst %, components/%_markers.owl, $(JOBS))
 
@@ -24,7 +25,7 @@ mirror/ensmusg.owl: ../templates/ensmusg.tsv
       annotate --ontology-iri ${BDS_BASE}$@ \
       convert --format ofn --output $@; fi
 
-components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MARKER_FILES)
+components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_EQUIVALENT_CLASS_FILES) $(OWL_MARKER_FILES)
 	$(ROBOT) merge $(patsubst %, -i %, $^) \
 	 --collapse-import-closure false \
 	 annotate --ontology-iri ${BDS_BASE}$@  \
@@ -46,6 +47,13 @@ components/%_class.owl: ../templates/%_class.tsv bdscratch-edit.owl
     		--add-prefix "BDSHELP: http://www.semanticweb.org/brain_data_standards/helper.owl#" \
     		--add-prefix "AllenDend: http://www.semanticweb.org/brain_data_standards/AllenDend_" \
     		--add-prefix "skos: http://www.w3.org/2004/02/skos/core#" \
+    		annotate --ontology-iri ${BDS_BASE}$@ \
+    		convert --format ofn --output $@
+
+components/%_equivalent_class.owl: ../templates/%_equivalent_reification.tsv bdscratch-edit.owl
+	$(ROBOT) template --input bdscratch-edit.owl --template $< \
+	        --add-prefix "BDSHELP: http://www.semanticweb.org/brain_data_standards/helper.owl#" \
+    		--add-prefix "AllenDend: http://www.semanticweb.org/brain_data_standards/AllenDend_" \
     		annotate --ontology-iri ${BDS_BASE}$@ \
     		convert --format ofn --output $@
 
