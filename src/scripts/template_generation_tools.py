@@ -81,7 +81,7 @@ def generate_marker_template(dend_json_path, output_filepath):
 def generate_curated_class_template(dend_json_path, output_filepath):
     dend = dend_json_2_nodes_n_edges(dend_json_path)
     robot_class_curation_seed = {'ID': 'ID',
-                                 'Label': 'rdfs:label',
+                                 'Label': 'A rdfs:label',
                                  'Synonyms_from_taxonomy': "A oboInOwl:has_exact_synonym SPLIT='|'",
                                  'Curated_synonyms': "A oboInOwl:has_exact_synonym SPLIT='|'",
                                  'Comment': 'A rdfs:comment',
