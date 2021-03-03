@@ -15,16 +15,17 @@ vars:
   taxon: "'Vertebrata <vertebrates>'"
   brain_region: "'regional part of brain'"
   
-data_list_vars:
-  markers: 
-
+data_vars:
+  denorm_marker_list: "xsd:string" # A list of maker names delimited by ', '
+  minimal_marker_list: "xsd:string" # A list of maker names delimited by ', '
+  
 name:
-  text: ""
+  text: "%s expressing % of %s (%s)"  # 
   vars:
-   - gross_cell_type
-   - taxon
-   - brain_region
    - markers
+   - gross_cell_type
+   - brain_region
+   - taxon
    
 definition:
   text: "A %s of the %s %s that expresses %s.'
@@ -32,4 +33,4 @@ definition:
    - gross_cell_type
    - taxon
    - brain_region
-   - markers
+   - marker_list
