@@ -20,17 +20,18 @@ data_vars:
   minimal_marker_list: "xsd:string" # A list of maker names delimited by ', '
   
 name:
-  text: "%s expressing % of %s (%s)"  # 
+  text: "%s expressing % of %s (%s)" 
   vars:
-   - markers
+   - minimal_marker_list
    - gross_cell_type
    - brain_region
    - taxon
    
 definition:
-  text: "A %s of the %s %s that expresses %s.'
+  text: "A %s of the %s %s that expresses: %s. The minimal set of markers required for its identification is: %S"
   vars:
    - gross_cell_type
    - taxon
    - brain_region
-   - marker_list
+   - denorm_marker_list
+   -
