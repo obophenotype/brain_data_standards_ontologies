@@ -28,10 +28,10 @@ name:
    - taxon
    
 definition:
-  text: "A %s of the %s %s that expresses: %s. The minimal set of markers required for its identification is: %S"
+  text: "A %s of the %s %s that expresses: %s. The minimal set of markers required for its identification is: %s"
   vars:
    - gross_cell_type
    - taxon
    - brain_region
    - denorm_marker_list
-   -
+   - minimal marker list
