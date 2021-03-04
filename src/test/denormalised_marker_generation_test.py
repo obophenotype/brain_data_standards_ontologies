@@ -3,15 +3,16 @@ import networkx as nx
 import os
 import matplotlib.pyplot as plt
 from networkx.drawing.nx_agraph import graphviz_layout
-from scripts.marker_tools import generate_denormalised_marker, read_dendrogram_tree, read_marker_file, \
+from marker_tools import generate_denormalised_marker, read_dendrogram_tree, read_marker_file, \
     extend_expressions
 
 
-PATH_DEND_JSON = "./test_data/CCN202002013.json"
+PATH_DEND_JSON = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/CCN202002013.json")
 
-PATH_MARKERS = "./test_data/CS202002013_markers.tsv"
+PATH_MARKERS = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/CS202002013_markers.tsv")
 
-PATH_OUTPUT_MARKER = "./test_data/CS202002013_markers_denormalised.tsv"
+PATH_OUTPUT_MARKER = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                                  "./test_data/CS202002013_markers_denormalised.tsv")
 
 EXPRESSIONS = "expressions"
 
@@ -259,11 +260,11 @@ class DenormalisedMarkerTest(unittest.TestCase):
         self.assertTrue("ensembl:ENSMUSG00000058897" in expressions)
         self.assertEqual(5, len(expressions))
 
-    def test_marker_generation(self):
-        delete_file(PATH_OUTPUT_MARKER)
-
-        generate_denormalised_marker(PATH_DEND_JSON, PATH_MARKERS, PATH_OUTPUT_MARKER)
-        self.assertEqual(True, True)
+    # def test_marker_generation(self):
+    #     delete_file(PATH_OUTPUT_MARKER)
+    #
+    #     generate_denormalised_marker(PATH_DEND_JSON, PATH_MARKERS, PATH_OUTPUT_MARKER)
+    #     self.assertEqual(True, True)
 
 
 if __name__ == '__main__':
