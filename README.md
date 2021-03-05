@@ -1,4 +1,4 @@
-# Brain Data Standards Ontologies [![Build Status](https://github.com/obophenotype/cell-brain_data_standards_ontologies/workflows/CI/badge.svg)
+# Brain Data Standards Ontologies ![Build Status](https://github.com/obophenotype/brain_data_standards_ontologies/workflows/CI/badge.svg)
 
 
 A repository for building ontologies for the Brain Data Standards Project.
