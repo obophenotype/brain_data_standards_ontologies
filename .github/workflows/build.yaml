@@ -30,6 +30,8 @@ jobs:
       - name: validate schemas
         run: |
             python ./src/config/config_schema_validator.py
+      - name: Run Test
+        run: PYTHONPATH=./src/scripts:$PYTHONPATH python -m unittest discover -s src -p '*_test.py'
       - name: verify and build
         env:
           DEFAULT_BRANCH: master
