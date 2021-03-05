@@ -20,7 +20,7 @@ OWL_MARKER_FILES = $(patsubst %, components/%_markers.owl, $(JOBS))
 # hard wiring for now.  Work on patsubst later
 mirror/ensmusg.owl: ../templates/ensmusg.tsv
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) template --input bdscratch-edit.owl --template $< \
-      --add-prefix "ensembl: https://identifiers.org/ensembl:" \
+      --add-prefixes template_prefixes.json \
       annotate --ontology-iri ${BDS_BASE}$@ \
       convert --format ofn --output $@; fi
 
@@ -35,29 +35,19 @@ components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MARKER_FILES
 
 components/%.owl: ../templates/%.tsv bdscratch-edit.owl
 	$(ROBOT) template --input bdscratch-edit.owl --template $< \
-    		--add-prefix "BDSHELP: http://www.semanticweb.org/brain_data_standards/helper.owl#" \
-    		--add-prefix "AllenDend: http://www.semanticweb.org/brain_data_standards/AllenDend_" \
-    		--add-prefix "skos: http://www.w3.org/2004/02/skos/core#" \
+    		--add-prefixes template_prefixes.json \
     		annotate --ontology-iri ${BDS_BASE}$@ \
     		convert --format ofn --output $@
 
 components/%_class.owl: ../templates/%_class.tsv bdscratch-edit.owl
 	$(ROBOT) template --input bdscratch-edit.owl --template $< \
-    		--add-prefix "BDSHELP: http://www.semanticweb.org/brain_data_standards/helper.owl#" \
-    		--add-prefix "AllenDend: http://www.semanticweb.org/brain_data_standards/AllenDend_" \
-    		--add-prefix "skos: http://www.w3.org/2004/02/skos/core#" \
+    		--add-prefixes template_prefixes.json \
     		annotate --ontology-iri ${BDS_BASE}$@ \
     		convert --format ofn --output $@
 
 components/%_markers.owl: ../templates/%_markers.tsv bdscratch-edit.owl
 	$(ROBOT) template --input bdscratch-edit.owl --template $< \
-    		--add-prefix "BDSHELP: http://www.semanticweb.org/brain_data_standards/helper.owl#" \
-    		--add-prefix "AllenDend: http://www.semanticweb.org/brain_data_standards/AllenDend_" \
-    		--add-prefix "skos: http://www.w3.org/2004/02/skos/core#" \
-    		--add-prefix "ensembl: https://identifiers.org/ensembl:" \
+    		--add-prefixes template_prefixes.json \
     		annotate --ontology-iri ${BDS_BASE}$@ \
     		convert --format ofn --output $@
-
-
-
 
