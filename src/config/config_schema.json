@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BDS_build_conf",
+  "type": "array",
+  "items": { "$ref": "#/definitions/base" },
+  "definitions": {
+    "base": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["Taxonomy_id", "Description", "Reference", "DOI", "Species", "Brain_region", "Root_nodes"],
+      "properties": {
+        "Taxonomy_id" :  {
+          "type": "string",
+          "description": "Accession for Allen Taxonomy"
+        },
+        "Description":  {
+          "type": "string",
+          "description": "Description of Allen Taxonomy"
+        },
+        "Reference":  {
+          "type": "string",
+          "description": "Reference to Allen Taxonomy"
+        },
+        "DOI": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "DOI of reference for analysis."
+          }
+        },
+        "Species": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "Ontology ID (NCBI curie) of species used in analysis."
+          }
+        },
+        "Brain_region": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "Ontology ID (curie) of brain region used in analysis."
+          }
+        },
+        "Root_nodes": {
+          "type": "array",
+          "items": {
+            "$ref" : "#/definitions/root_node"  }
+        }
+      }
+    },
+    "root_node":{
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["Node", "Cell_type", "Location_relation"],
+      "properties": {
+        "Node": {
+          "type": "string",
+          "description": "cell_set_accession of a root node"
+        },
+        "Cell_type": {
+          "type": "string",
+          "description": "Gross cell type corresponding to root node.  This should not be a term that is already defined as restricted to the location named in Brain_region."
+        },
+        "Location_relation": {
+          "type": "string",
+          "description": ""
+        }
+      }
+    }
+  }
+}
