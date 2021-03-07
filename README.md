@@ -1,4 +1,5 @@
-# Brain Data Standards Ontologies [![Build Status](https://travis-ci.org/obophenotype/brain_data_standards_ontologies.svg?branch=master)](https://travis-ci.org/obophenotype/brain_data_standards_ontologies)
+# Brain Data Standards Ontologies ![Build Status](https://github.com/obophenotype/brain_data_standards_ontologies/workflows/CI/badge.svg)
+
 
 A repository for building ontologies for the Brain Data Standards Project.
 
