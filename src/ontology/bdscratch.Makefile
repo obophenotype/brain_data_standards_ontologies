@@ -58,11 +58,7 @@ components/%_class.owl: ../templates/%_class.tsv bdscratch-edit.owl
 
 components/%_equivalent_class.owl: ../templates/%_equivalent_markers.tsv bdscratch-edit.owl
 	$(ROBOT) template --input bdscratch-edit.owl --template $< \
-	        --add-prefix "BDSHELP: http://www.semanticweb.org/brain_data_standards/helper.owl#" \
-    		--add-prefix "AllenDend: http://www.semanticweb.org/brain_data_standards/AllenDend_" \
-    		--add-prefix "ensembl: https://identifiers.org/ensembl:" \
-            --add-prefix "RO: http://purl.obolibrary.org/obo/RO_" \
-            --add-prefix "UBERON: http://purl.obolibrary.org/obo/UBERON_" \
+	        --add-prefixes template_prefixes.json \
     		annotate --ontology-iri ${BDS_BASE}$@ \
     		convert --format ofn --output $@
 

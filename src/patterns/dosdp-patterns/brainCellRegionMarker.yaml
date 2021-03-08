@@ -1,0 +1,37 @@
+pattern_name: brainCellRegionMarker
+pattern_iri: http://purl.obolibrary.org/obo/odk/brainCellRegionMarker.yaml
+description: "Brain cell types defined by gross cell type, brain region + marker list."
+
+classes:
+  "animal cell": "animal cell"
+  "Vertebrata <vertebrates>": "NCBITaxon:7742"
+  "regional part of brain": "UBERON:0002616"
+
+relations:
+  part_of: BFO:0000050
+
+vars:
+  gross_cell_type: "'cell'"
+  taxon: "'Vertebrata <vertebrates>'"
+  brain_region: "'regional part of brain'"
+
+data_vars:
+  denorm_marker_list: "xsd:string" # A list of maker names delimited by ', '
+  minimal_marker_list: "xsd:string" # A list of maker names delimited by ', '
+
+name:
+  text: "%s expressing %s of %s (%s)"
+  vars:
+   - minimal_marker_list
+   - gross_cell_type
+   - brain_region
+   - taxon
+
+def:
+  text: "A %s of the %s %s that expresses: %s. The minimal set of markers required for its identification is: %s"
+  vars:
+   - gross_cell_type
+   - taxon
+   - brain_region
+   - denorm_marker_list
+   - minimal_marker_list
