@@ -1,12 +1,11 @@
 import pandas as pd
 import networkx as nx
 import json
-
-from numpy.distutils.command.config import config
+import os
 
 from dendrogram_tools import dend_json_2_nodes_n_edges
 from template_generation_utils import get_synonyms_from_taxonomy, get_synonym_pairs, read_taxonomy_details_yaml, \
-    get_max_marker_count
+    get_max_marker_count, read_taxonomy_config, get_subtrees
 from marker_tools import read_dendrogram_tree, read_marker_file, extend_expressions, EXPRESSIONS
 
 # TODO - refactor with generic template generation function
@@ -80,31 +79,41 @@ def generate_marker_template(dend_json_path, output_filepath):
 
 def generate_curated_class_template(dend_json_path, output_filepath):
     dend = dend_json_2_nodes_n_edges(dend_json_path)
-    robot_class_curation_seed = {'ID': 'ID',
-                                 'Label': 'A rdfs:label',
-                                 'Synonyms_from_taxonomy': "A oboInOwl:has_exact_synonym SPLIT='|'",
-                                 'Curated_synonyms': "A oboInOwl:has_exact_synonym SPLIT='|'",
-                                 'Comment': 'A rdfs:comment',
-                                 'Classification': 'SC %',
-                                 'Classification_comment': ">A rdfs:comment",
-                                 'Classification_pub': ">A oio:hasDbXref SPLIT='|'"
-                                 }
-    class_template = [robot_class_curation_seed]
+    dend_tree = read_dendrogram_tree(dend_json_path)
 
-    for o in dend['nodes']:
-        d = dict()
-        d['ID'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
-        if o['cell_set_preferred_alias']:
-            d['Label'] = o['cell_set_preferred_alias']
-        d['Synonyms_from_taxonomy'] = get_synonyms_from_taxonomy(o)
-        d['Comment'] = get_synonym_pairs(o)
-        for k in robot_class_curation_seed.keys():
-            if not (k in d.keys()):
-                d[k] = ''
-        class_template.append(d)
+    path_parts = dend_json_path.split(os.path.sep)
+    taxon = path_parts[len(path_parts) - 1].split(".")[0]
 
-    class_robot_template = pd.DataFrame.from_records(class_template)
-    class_robot_template.to_csv(output_filepath, sep="\t", index=False)
+    taxonomy_config = read_taxonomy_config(taxon)
+
+    if taxonomy_config:
+        subtrees = get_subtrees(dend_tree, taxonomy_config)
+        robot_class_curation_seed = {'ID': 'ID',
+                                     'Label': 'A rdfs:label',
+                                     'Synonyms_from_taxonomy': "A oboInOwl:has_exact_synonym SPLIT='|'",
+                                     'Curated_synonyms': "A oboInOwl:has_exact_synonym SPLIT='|'",
+                                     'Comment': 'A rdfs:comment',
+                                     'Classification': 'SC %',
+                                     'Classification_comment': ">A rdfs:comment",
+                                     'Classification_pub': ">A oio:hasDbXref SPLIT='|'"
+                                     }
+        class_template = [robot_class_curation_seed]
+
+        for o in dend['nodes']:
+            if o['cell_set_accession'] in set.union(*subtrees):
+                d = dict()
+                d['ID'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
+                if o['cell_set_preferred_alias']:
+                    d['Label'] = o['cell_set_preferred_alias']
+                d['Synonyms_from_taxonomy'] = get_synonyms_from_taxonomy(o)
+                d['Comment'] = get_synonym_pairs(o)
+                for k in robot_class_curation_seed.keys():
+                    if not (k in d.keys()):
+                        d[k] = ''
+                class_template.append(d)
+
+        class_robot_template = pd.DataFrame.from_records(class_template)
+        class_robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
 def generate_equivalent_class_reification_template(dend_json_path, output_filepath):
@@ -134,7 +143,9 @@ def generate_equivalent_class_marker_template(dend_json_path, marker_path, outpu
     subtrees = []
     for root_node in config_yaml['Root_nodes']:
         root_nodes.append(root_node['Node'])
-        subtrees.append(nx.descendants(dend_tree, root_node['Node']))
+        subtree = nx.descendants(dend_tree, root_node['Node'])
+        subtree.add(root_node['Node'])
+        subtrees.append(subtree)
 
     denormalized_markers = extend_expressions(dend_tree, read_marker_file(marker_path), root_nodes)
 
