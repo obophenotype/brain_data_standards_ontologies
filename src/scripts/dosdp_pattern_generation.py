@@ -79,7 +79,7 @@ def read_markers(marker_path, ensmusg_names):
                         names.append(ensmusg_names[marker])
                     else:
                         print(marker + " couldn't find in ensmusg.tsv")
-                markers[_id] = ",".join(names)
+                markers[_id] = ",".join(sorted(names))
     return markers
 
 
