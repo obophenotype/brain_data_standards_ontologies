@@ -1,0 +1,791 @@
+Prefix(:=<http://www.semanticweb.org/brain_data_standards/components/CCN202002013_equivalent_class.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/brain_data_standards/components/CCN202002013_equivalent_class.owl>
+
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000000214>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000001260>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000001496>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000002900>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000003657>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000003746>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000004151>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000004366>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000004415>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000009376>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000010066>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000010461>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000010651>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000013766>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000015766>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000016918>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000017978>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000019772>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000019828>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000019889>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000019935>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000019997>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000020000>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000020042>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000020099>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000020902>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000021508>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000021541>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000021647>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000021765>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000021919>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000022112>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000022206>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000022231>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000022297>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000022306>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000022371>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000022419>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000022425>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000022656>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000024074>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000024211>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000024236>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000024376>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000024517>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000024598>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000024867>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000025370>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000025400>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000025813>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000025997>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000026141>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000026322>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000026344>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000026393>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000026452>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000026475>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000026676>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000026765>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000026826>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000027168>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000027210>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000027400>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000027849>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000027965>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000027971>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000027996>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000028004>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000028031>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000028222>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000028909>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000028971>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000029101>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000029154>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000029334>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000029361>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000029563>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000029705>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000029819>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000030074>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000030222>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000030525>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000030905>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000031216>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000031558>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000031772>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000031841>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000031963>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000031997>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000032017>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000032269>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000032564>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000032625>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000034009>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000034310>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000034324>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000035131>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000035258>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000035273>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000035357>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000036019>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000036192>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000036218>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000036545>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000036834>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000037362>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000038048>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000038156>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000038331>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000038718>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000039037>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000039137>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000039385>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000039519>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000039620>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000039714>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000040420>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000040452>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000040624>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000040710>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000040732>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000041741>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000042045>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000042453>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000042581>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000042589>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000042596>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000043556>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000043659>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000044288>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000044447>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000045613>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000045648>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000045731>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000046321>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000047907>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000048967>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000049001>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000049148>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000049630>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000049796>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000051611>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000051910>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000052062>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000052430>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000053368>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000053399>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000055214>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000055471>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000056427>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000058897>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000059187>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000059203>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000059857>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000060371>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000061762>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000062372>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000063531>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000063564>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000063661>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000066197>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000067028>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000069132>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000073154>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000073565>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000075270>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000078591>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000092094>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000095105>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000096972>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000097462>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000098097>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000098760>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000100650>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000105068>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000107384>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000110002>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000110281>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000110468>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000111061>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000111765>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000111950>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000112276>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000116610>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000028222ensembl:ENSMUSG00000021708>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000679>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0011005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001384>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_1>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_10>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_12>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_125>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_13>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_133>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_138>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_14>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_15>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_16>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_17>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_18>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_183>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_189>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_19>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_192>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_193>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_197>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_2>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_20>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_203>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_207>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_21>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_22>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_23>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_24>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_25>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_26>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_27>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_28>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_29>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_3>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_30>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_31>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_32>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_33>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_34>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_35>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_36>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_37>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_38>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_39>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_4>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_40>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_41>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_42>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_43>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_44>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_45>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_46>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_47>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_48>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_49>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_5>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_50>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_51>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_52>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_53>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_54>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_55>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_56>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_57>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_58>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_59>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_6>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_60>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_61>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_62>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_64>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_65>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_66>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_67>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_68>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_69>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_7>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_70>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_71>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_72>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_74>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_75>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_76>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_77>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_78>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_79>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_8>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_80>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_81>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_82>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_83>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_84>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_85>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_86>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_9>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002100>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002292>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/RO_0002558>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_1> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_1>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_1> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_1>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_1> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000024867>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000027168>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000029819>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000075270>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_10> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_10>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_10> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_10>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_10> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000019935>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000044288>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000048967>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000058897>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_11>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000027849>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000042045>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000044288>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000058897>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000063661>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_12> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_12>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_12> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_12>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_12> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000024376>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000027849>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000028222>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000044288>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000058897>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_125> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_125>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_125> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_125>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_125> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000029819>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000075270>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_13> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_13>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_13> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_13>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_13> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000028004>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000029101>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000044288>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000058897>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_133> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_133>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_133> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_133>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_133> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000044288>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000058897>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_138> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_138>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_138> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_138>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_138> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000019772>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_14> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_14>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_14> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_14>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_14> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000020099>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000022656>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000044288>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000049796>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000058897>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_15> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_15>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_15> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_15>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_15> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000019772>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000026475>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000027996>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_16> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_16>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_16> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_16>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_16> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000019772>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000022371>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000037362>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000038718>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_17> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_17>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_17> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_17>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_17> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000019772>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000022425>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000025813>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000037362>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000040624>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_18> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_18>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_18> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_18>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_18> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000019772>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000037362>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000045648>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_183> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_183>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_183> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_183>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_183> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000028222ensembl:ENSMUSG00000021708>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_189> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_189>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_189> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_189>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_189> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000035357>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000039037>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000040452>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_19> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_19>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_19> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_19>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_19> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000019772>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000038718>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000041741>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_192> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_192>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_192> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_192>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_192> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000016918>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000052430>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000059203>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_193> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_193>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_193> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_193>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_193> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000022206>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000098760>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_197> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_197>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_197> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_197>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_197> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000029563>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000078591>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_2> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_2>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_2> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_2>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_2> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000024598>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000029819>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000030525>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000059187>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000075270>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_20> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_20>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_20> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_20>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_20> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000019772>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000020042>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000031963>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000049796>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_203> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_203>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_203> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_203>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_203> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000019997>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000039714>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_207> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_207>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_207> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_207>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_207> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000004151>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000047907>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_21> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_21>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_21> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_21>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_21> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000019772>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000032269>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000112276>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_22> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_22>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_22> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_22>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_22> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000003657>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000019772>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000110281>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_23> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_23>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_23> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_23>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_23> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000019772>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000021919>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000028004>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_24> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_24>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_24> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_24>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_24> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000019772>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000024211>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000060371>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_25> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_25>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_25> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_25>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_25> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000019772>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000026322>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000032017>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_26> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_26>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_26> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_26>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_26> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000019772>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000032625>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000110468>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_27> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_27>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_27> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_27>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_27> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000019772>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000042581>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000049796>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_28> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_28>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_28> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_28>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_28> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000029361>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_29> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_29>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_29> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_29>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_29> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000021647>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000059203>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000097462>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_3> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_3>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_3> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_3>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_3> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000024074>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000029819>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000075270>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000092094>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_30> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_30>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_30> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_30>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_30> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000042453>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000059203>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_31> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_31>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_31> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_31>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_31> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000031841>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000051910>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000055214>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_32> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_32>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_32> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_32>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_32> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000019828>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000025370>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_33> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_33>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_33> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_33>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_33> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000027400>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000105068>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_34> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_34>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_34> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_34>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_34> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000024598>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000026141>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000031997>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_35> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_35>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_35> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_35>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_35> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000038156>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000039137>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000095105>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_36> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_36>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_36> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_36>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_36> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000010461>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000026393>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000031997>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_37> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_37>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_37> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_37>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_37> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000026765>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000031997>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_38> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_38>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_38> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_38>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_38> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000030222>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000035273>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_39> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_39>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_39> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_39>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_39> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000004366>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000027965>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_4> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_4>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_4> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_4>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_4> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000020902>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000021508>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000029819>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000042453>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000075270>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_40> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_40>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_40> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_40>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_40> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000031997>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000116610>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_41> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_41>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_41> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_41>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_41> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000020000>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000029334>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_42> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_42>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_42> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_42>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_42> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000052062>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000111950>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_43> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_43>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_43> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_43>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_43> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000030074>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000035131>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000049001>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_44> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_44>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_44> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_44>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_44> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000025400>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000031841>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000036019>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_45> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_45>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_45> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_45>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_45> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000022306>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000039037>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000040710>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_46> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_46>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_46> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_46>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_46> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000004366>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000045731>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000052062>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_47> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_47>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_47> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_47>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_47> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000000214>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000028971>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_48> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_48>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_48> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_48>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_48> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000000214>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000001260>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_49> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_49>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_49> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_49>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_49> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000036834>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000061762>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000073154>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_5> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_5>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_5> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_5>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_5> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000027971>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000029819>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000044447>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000049001>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000075270>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_50> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_50>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_50> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_50>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_50> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000022297>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000026452>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000031558>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_51> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_51>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_51> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_51>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_51> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000010066>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000026452>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000034310>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000063531>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_52> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_52>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_52> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_52>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_52> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000028971>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000069132>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000100650>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_53> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_53>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_53> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_53>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_53> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000034324>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000038048>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000061762>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_54> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_54>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_54> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_54>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_54> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000031772>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000111061>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_55> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_55>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_55> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_55>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_55> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000010461>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000059203>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_56> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_56>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_56> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_56>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_56> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000001496>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000002900>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_57> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_57>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_57> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_57>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_57> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000020099>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000067028>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_58> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_58>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_58> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_58>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_58> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000009376>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000036545>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000098097>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000028222ensembl:ENSMUSG00000021708>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_59> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_59>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_59> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_59>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_59> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000026676>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000027210>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000029705>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000062372>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000028222ensembl:ENSMUSG00000021708>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_6> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_6>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_6> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_6>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_6> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000029819>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000049001>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000075270>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_60> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_60>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_60> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_60>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_60> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000031216>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000042589>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000056427>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000028222ensembl:ENSMUSG00000021708>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_61> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_61>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_61> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_61>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_61> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000017978>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000036192>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000073565>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_62> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_62>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_62> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_62>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_62> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000004415>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000032564>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000059203>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_64> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_64>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_64> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_64>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_64> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000003746>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000022419>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000035357>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000039037>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000040452>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000053399>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000116610>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_65> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_65>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_65> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_65>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_65> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000017978>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000019889>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000022425>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000034009>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000035357>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000039037>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000040452>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000055214>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_66> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_66>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_66> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_66>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_66> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000029154>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000035357>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000039037>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000040452>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000045613>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000055214>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_67> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_67>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_67> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_67>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_67> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000016918>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000021765>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000052430>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000059203>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000059857>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_68> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_68>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_68> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_68>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_68> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000016918>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000028909>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000049630>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000052430>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000059203>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_69> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_69>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_69> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_69>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_69> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000026826>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000042596>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_7> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_7>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_7> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_7>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_7> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000022231>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000029819>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000055471>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000075270>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_70> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_70>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_70> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_70>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_70> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000022206>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000030905>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000098760>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_71> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_71>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_71> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_71>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_71> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000021541>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000022112>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000022206>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000040732>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000098760>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_72> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_72>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_72> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_72>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_72> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000021541>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000022112>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000022206>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000039620>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000042453>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000098760>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_73>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000022206>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000043659>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000098760>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_74> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_74>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_74> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_74>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_74> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000024517>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000029563>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000034009>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000047907>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000078591>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_75> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_75>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_75> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_75>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_75> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000010651>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000029563>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000063564>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000066197>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000078591>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_76> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_76>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_76> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_76>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_76> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000022306>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000029563>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000078591>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_77> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_77>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_77> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_77>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_77> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000024517>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000027210>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000029563>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000036218>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000049148>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000078591>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_78> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_78>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_78> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_78>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_78> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000029563>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000038331>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000040420>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000078591>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000111765>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_79> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_79>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_79> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_79>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_79> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000025997>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000029563>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000078591>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000111765>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_8> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_8>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_8> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_8>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_8> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000029361>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000029819>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000075270>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000110002>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_80> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_80>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_80> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_80>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_80> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000026826>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000029563>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000034009>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000047907>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000078591>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000096972>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_81> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_81>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_81> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_81>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_81> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000019997>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000039714>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000046321>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000052430>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_82> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_82>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_82> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_82>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_82> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000013766>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000019997>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000024236>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000039714>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_83> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_83>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_83> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_83>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_83> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000019997>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000020000>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000026826>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000039714>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_84> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_84>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_84> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_84>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_84> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000019997>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000039714>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000043556>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_85> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_85>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_85> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_85>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_85> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000019997>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000039714>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000051611>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000053368>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000107384>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_86> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_86>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_86> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_86>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_86> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000004151>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000028031>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000039519>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000045648>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000047907>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_87>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000004151>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000019935>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000035258>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000047907>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_88>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000004151>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000026344>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000047907>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_9> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_9>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/RO_0002558> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_9> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_9>)
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_9> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0011005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000015766>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000039385>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000044288>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000058897>)))
+
+
+)
