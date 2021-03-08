@@ -114,6 +114,22 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000424",
                 "val": "RO_0000053 some (RO_0000054 only ?Y)"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "protein"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "uberon"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#is_transitive",
+                "val": "false"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
+                "val": "capable_of"
               }
             ],
             "definition": {
@@ -122,6 +138,11 @@
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/ro/subsets#ro-eco"
+            ],
+            "xrefs": [
+              {
+                "val": "RO:0002215"
+              }
             ]
           },
           "type": "PROPERTY"
@@ -144,6 +165,69 @@
               "val": "Inverse of 'expressed in'",
               "xrefs": []
             }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/elements/1.1/description",
+          "lbl": "description",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "uberon"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+                "val": "true"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
+                "val": "dc-description"
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/elements/1.1/title",
+          "lbl": "title",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "uberon"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+                "val": "true"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
+                "val": "dc-title"
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/license",
+          "lbl": "license",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "uberon"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+                "val": "true"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
+                "val": "dcterms-license"
+              }
+            ]
           },
           "type": "PROPERTY"
         },

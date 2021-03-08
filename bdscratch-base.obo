@@ -10,8 +10,8 @@ property_value: owl:versionInfo "2021-03-08" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:1
 name: Lamp5 Pax6
-name: Pax6,Pip5k1b expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Pip5k1b,Pde11a,Npy,Pax6. The minimal set of markers required for its identification is: Pax6,Pip5k1b" []
+name: Pax6,Pip5k1b expressing GABAergic interneuron of primary motor cortex (Mus musculus)
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Npy,Pax6,Pde11a,Pip5k1b. The minimal set of markers required for its identification is: Pax6,Pip5k1b" []
 comment: cell_set_preferred_alias:Lamp5 Pax6 ; original_label:Lamp5 Pax6 ; cell_set_label:RNAseq 001 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -19,14 +19,14 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024867 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027168 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029819 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000075270 ! expresses
-property_value: has_exact_synonym "RNAseq 001|Lamp5 Pax6" xsd:string
+property_value: has_exact_synonym "Lamp5 Pax6|RNAseq 001" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:1
 
 [Term]
 id: AllenDendClass_CS202002013:10
-name: Slc17a8,Yjefn3 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Slc17a8,Yjefn3 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sncg Slc17a8
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Cnr1,Col25a1,Yjefn3,Slc17a8. The minimal set of markers required for its identification is: Slc17a8,Yjefn3" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cnr1,Col25a1,Slc17a8,Yjefn3. The minimal set of markers required for its identification is: Slc17a8,Yjefn3" []
 comment: cell_set_preferred_alias:Sncg Slc17a8 ; original_label:Sncg Slc17a8 ; cell_set_label:RNAseq 010 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -34,83 +34,67 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019935 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000044288 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000048967 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000058897 ! expresses
-property_value: has_exact_synonym "Sncg Slc17a8|RNAseq 010" xsd:string
+property_value: has_exact_synonym "RNAseq 010|Sncg Slc17a8" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:10
 
 [Term]
 id: AllenDendClass_CS202002013:100
-name: Il33,Prr5l expressing http://purl.obolibrary.org/obo/CL_0000128 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Il33,Prr5l expressing oligodendrocyte of primary motor cortex (Mus musculus)
 name: Oligo Opalin_2
-def: "A http://purl.obolibrary.org/obo/CL_0000128 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Il33,Prr5l. The minimal set of markers required for its identification is: Il33,Prr5l" []
+def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: Il33,Prr5l. The minimal set of markers required for its identification is: Il33,Prr5l" []
 comment: cell_set_preferred_alias:Oligo Opalin_2 ; original_label:Oligo Opalin_2 ; cell_set_label:RNAseq 100 ; cell_set_aligned_alias:''
+intersection_of: CL:0000128
+intersection_of: RO:0002100 UBERON:0001384 ! has soma location
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024810 ! expresses
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032841 ! expresses
 property_value: has_exact_synonym "RNAseq 100|Oligo Opalin_2" xsd:string
+property_value: RO:0002558 AllenDend_CS202002013:100
 
 [Term]
 id: AllenDendClass_CS202002013:101
-name: Cacna2d4,Mobp,Nckap5 expressing http://purl.obolibrary.org/obo/CL_0000128 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Cacna2d4,Mobp,Nckap5 expressing oligodendrocyte of primary motor cortex (Mus musculus)
 name: Oligo Opalin_3
-def: "A http://purl.obolibrary.org/obo/CL_0000128 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Nckap5,Cacna2d4,Mobp. The minimal set of markers required for its identification is: Cacna2d4,Mobp,Nckap5" []
+def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: Cacna2d4,Mobp,Nckap5. The minimal set of markers required for its identification is: Cacna2d4,Mobp,Nckap5" []
 comment: cell_set_preferred_alias:Oligo Opalin_3 ; original_label:Oligo Opalin_3 ; cell_set_label:RNAseq 101 ; cell_set_aligned_alias:''
+intersection_of: CL:0000128
+intersection_of: RO:0002100 UBERON:0001384 ! has soma location
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032517 ! expresses
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000041460 ! expresses
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049690 ! expresses
 property_value: has_exact_synonym "RNAseq 101|Oligo Opalin_3" xsd:string
+property_value: RO:0002558 AllenDend_CS202002013:101
 
 [Term]
 id: AllenDendClass_CS202002013:102
-name: Kank1,Prom1,Sytl2 expressing http://purl.obolibrary.org/obo/CL_0000128 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Kank1,Prom1,Sytl2 expressing oligodendrocyte of primary motor cortex (Mus musculus)
 name: Oligo Opalin_4
-def: "A http://purl.obolibrary.org/obo/CL_0000128 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Kank1,Prom1,Sytl2. The minimal set of markers required for its identification is: Kank1,Prom1,Sytl2" []
+def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: Kank1,Prom1,Sytl2. The minimal set of markers required for its identification is: Kank1,Prom1,Sytl2" []
 comment: cell_set_preferred_alias:Oligo Opalin_4 ; original_label:Oligo Opalin_4 ; cell_set_label:RNAseq 102 ; cell_set_aligned_alias:''
+intersection_of: CL:0000128
+intersection_of: RO:0002100 UBERON:0001384 ! has soma location
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029086 ! expresses
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030616 ! expresses
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032702 ! expresses
 property_value: has_exact_synonym "RNAseq 102|Oligo Opalin_4" xsd:string
+property_value: RO:0002558 AllenDend_CS202002013:102
 
 [Term]
 id: AllenDendClass_CS202002013:103
-name: Adgrl4,Slco1a4 expressing http://purl.obolibrary.org/obo/CL_1001602 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Adgrl4,Slco1a4 expressing cerebral cortex endothelial cell of primary motor cortex (Mus musculus)
 name: Endo
-def: "A http://purl.obolibrary.org/obo/CL_1001602 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Adgrl4,Slco1a4. The minimal set of markers required for its identification is: Adgrl4,Slco1a4" []
+def: "A cerebral cortex endothelial cell of the Mus musculus primary motor cortex that expresses: Adgrl4,Slco1a4. The minimal set of markers required for its identification is: Adgrl4,Slco1a4" []
 comment: cell_set_preferred_alias:Endo ; original_label:Endo ; cell_set_label:RNAseq 103 ; cell_set_aligned_alias:Endothelial
 is_a: CL:1001602 {oio:hasDbXref="doi:10.1101/2020.02.29.970558"}
-property_value: has_exact_synonym "RNAseq 103|Endothelial|Endo" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:104
-name: VLMC_1
-comment: cell_set_preferred_alias:VLMC_1 ; original_label:VLMC_1 ; cell_set_label:RNAseq 104 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 104|VLMC_1" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:105
-name: VLMC_2
-comment: cell_set_preferred_alias:VLMC_2 ; original_label:VLMC_2 ; cell_set_label:RNAseq 105 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "VLMC_2|RNAseq 105" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:106
-name: VLMC_3
-comment: cell_set_preferred_alias:VLMC_3 ; original_label:VLMC_3 ; cell_set_label:RNAseq 106 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 106|VLMC_3" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:107
-name: VLMC_4
-comment: cell_set_preferred_alias:VLMC_4 ; original_label:VLMC_4 ; cell_set_label:RNAseq 107 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "VLMC_4|RNAseq 107" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:108
-name: VLMC_5
-comment: cell_set_preferred_alias:VLMC_5 ; original_label:VLMC_5 ; cell_set_label:RNAseq 108 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 108|VLMC_5" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:109
-name: VLMC_6
-comment: cell_set_preferred_alias:VLMC_6 ; original_label:VLMC_6 ; cell_set_label:RNAseq 109 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "VLMC_6|RNAseq 109" xsd:string
+intersection_of: CL:1001602
+intersection_of: RO:0002100 UBERON:0001384 ! has soma location
+property_value: has_exact_synonym "Endo|RNAseq 103|Endothelial" xsd:string
+property_value: RO:0002558 AllenDend_CS202002013:103
 
 [Term]
 id: AllenDendClass_CS202002013:11
-name: Krt73,Sln,Syt6 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Krt73,Sln,Syt6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sncg Calb1_1
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Syt6,Krt73,Col25a1,Sln,Cnr1. The minimal set of markers required for its identification is: Krt73,Sln,Syt6" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cnr1,Col25a1,Krt73,Sln,Syt6. The minimal set of markers required for its identification is: Krt73,Sln,Syt6" []
 comment: cell_set_preferred_alias:Sncg Calb1_1 ; original_label:Sncg Calb1_1 ; cell_set_label:RNAseq 011 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -123,76 +107,46 @@ property_value: has_exact_synonym "RNAseq 011|Sncg Calb1_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:11
 
 [Term]
-id: AllenDendClass_CS202002013:110
-name: VLMC_7
-comment: cell_set_preferred_alias:VLMC_7 ; original_label:VLMC_7 ; cell_set_label:RNAseq 110 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "VLMC_7|RNAseq 110" xsd:string
-
-[Term]
 id: AllenDendClass_CS202002013:111
-name: Acta2 expressing http://purl.obolibrary.org/obo/CL_0000192 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Acta2 expressing smooth muscle cell of primary motor cortex (Mus musculus)
 name: SMC
-def: "A http://purl.obolibrary.org/obo/CL_0000192 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Acta2. The minimal set of markers required for its identification is: Acta2" []
+def: "A smooth muscle cell of the Mus musculus primary motor cortex that expresses: Acta2. The minimal set of markers required for its identification is: Acta2" []
 comment: cell_set_preferred_alias:SMC ; original_label:SMC ; cell_set_label:RNAseq 111 ; cell_set_aligned_alias:SMC
 is_a: CL:0000192 {oio:hasDbXref="doi:10.1101/2020.02.29.970558"}
-property_value: has_exact_synonym "SMC|RNAseq 111" xsd:string
+intersection_of: CL:0000192
+intersection_of: RO:0002100 UBERON:0001384 ! has soma location
+property_value: has_exact_synonym "RNAseq 111|SMC" xsd:string
+property_value: RO:0002558 AllenDend_CS202002013:111
 
 [Term]
 id: AllenDendClass_CS202002013:112
-name: Abcc9,Tbx3os1 expressing http://purl.obolibrary.org/obo/CL_2000043 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Abcc9,Tbx3os1 expressing brain pericyte of primary motor cortex (Mus musculus)
 name: Peri
-def: "A http://purl.obolibrary.org/obo/CL_2000043 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Abcc9,Tbx3os1. The minimal set of markers required for its identification is: Abcc9,Tbx3os1" []
+def: "A brain pericyte of the Mus musculus primary motor cortex that expresses: Abcc9,Tbx3os1. The minimal set of markers required for its identification is: Abcc9,Tbx3os1" []
 comment: cell_set_preferred_alias:Peri ; original_label:Peri ; cell_set_label:RNAseq 112 ; cell_set_aligned_alias:Pericyte
 is_a: CL:2000043 {oio:hasDbXref="doi:10.1101/2020.02.29.970558"}
-property_value: has_exact_synonym "RNAseq 112|Peri|Pericyte" xsd:string
+intersection_of: CL:2000043
+intersection_of: RO:0002100 UBERON:0001384 ! has soma location
+property_value: has_exact_synonym "Pericyte|RNAseq 112|Peri" xsd:string
+property_value: RO:0002558 AllenDend_CS202002013:112
 
 [Term]
 id: AllenDendClass_CS202002013:113
-name: Hexb expressing http://purl.obolibrary.org/obo/CL_0000129 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Hexb expressing microglial cell of primary motor cortex (Mus musculus)
 name: Micro
-def: "A http://purl.obolibrary.org/obo/CL_0000129 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Hexb. The minimal set of markers required for its identification is: Hexb" []
+def: "A microglial cell of the Mus musculus primary motor cortex that expresses: Hexb. The minimal set of markers required for its identification is: Hexb" []
 comment: cell_set_preferred_alias:Micro ; original_label:Micro ; cell_set_label:RNAseq 113 ; cell_set_aligned_alias:Microglia
 is_a: CL:0000129 {oio:hasDbXref="doi:10.1101/2020.02.29.970558"}
-property_value: has_exact_synonym "Micro|RNAseq 113|Microglia" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:114
-name: PVM_1
-comment: cell_set_preferred_alias:PVM_1 ; original_label:PVM_1 ; cell_set_label:RNAseq 114 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "PVM_1|RNAseq 114" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:115
-name: PVM_2
-comment: cell_set_preferred_alias:PVM_2 ; original_label:PVM_2 ; cell_set_label:RNAseq 115 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "PVM_2|RNAseq 115" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:116
-name: PVM_3
-comment: cell_set_preferred_alias:PVM_3 ; original_label:PVM_3 ; cell_set_label:RNAseq 116 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 116|PVM_3" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:117
-comment: cell_set_preferred_alias:'' ; original_label:n1 ; cell_set_label:All cells ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "All cells|n1" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:118
-comment: cell_set_preferred_alias:'' ; original_label:n2 ; cell_set_label:RNAseq 001-102 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n2|RNAseq 001-102" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:119
-comment: cell_set_preferred_alias:'' ; original_label:n3 ; cell_set_label:RNAseq 001-094 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 001-094|n3" xsd:string
+intersection_of: CL:0000129
+intersection_of: RO:0002100 UBERON:0001384 ! has soma location
+property_value: has_exact_synonym "RNAseq 113|Microglia|Micro" xsd:string
+property_value: RO:0002558 AllenDend_CS202002013:113
 
 [Term]
 id: AllenDendClass_CS202002013:12
-name: Calb1,Epb41l4a,Syt6 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Calb1,Epb41l4a,Syt6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sncg Calb1_2
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Epb41l4a,Syt6,Col25a1,Cnr1,Calb1. The minimal set of markers required for its identification is: Calb1,Epb41l4a,Syt6" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Calb1,Cnr1,Col25a1,Epb41l4a,Syt6. The minimal set of markers required for its identification is: Calb1,Epb41l4a,Syt6" []
 comment: cell_set_preferred_alias:Sncg Calb1_2 ; original_label:Sncg Calb1_2 ; cell_set_label:RNAseq 012 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -201,43 +155,30 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027849 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028222 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000044288 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000058897 ! expresses
-property_value: has_exact_synonym "Sncg Calb1_2|RNAseq 012" xsd:string
+property_value: has_exact_synonym "RNAseq 012|Sncg Calb1_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:12
-
-[Term]
-id: AllenDendClass_CS202002013:120
-comment: cell_set_preferred_alias:'' ; original_label:n4 ; cell_set_label:RNAseq 001-091 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n4|RNAseq 001-091" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:121
-comment: cell_set_preferred_alias:'' ; original_label:n5 ; cell_set_label:RNAseq 001-090 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 001-090|n5" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:122
-comment: cell_set_preferred_alias:'' ; original_label:n6 ; cell_set_label:RNAseq 001-088 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n6|RNAseq 001-088" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:123
 name: GABAergic
-name: Gad1,Dlx6os1 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
 comment: cell_set_preferred_alias:GABAergic ; original_label:n7 ; cell_set_label:RNAseq 001-057, 089-090 ; cell_set_aligned_alias:GABAergic
 is_a: CL:0011005 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
-property_value: has_exact_synonym "GABAergic|n7|RNAseq 001-057, 089-090" xsd:string
+intersection_of: CL:0011005
+intersection_of: RO:0002100 UBERON:0001384 ! has soma location
+property_value: has_exact_synonym "RNAseq 001-057, 089-090|n7|GABAergic" xsd:string
+property_value: RO:0002558 AllenDend_CS202002013:123
 
 [Term]
 id: AllenDendClass_CS202002013:124
 name: CGE/PoA
 comment: cell_set_preferred_alias:CGE/PoA ; original_label:n8 ; cell_set_label:RNAseq 001-027, 089-090 ; cell_set_aligned_alias:CGE/PoA
-property_value: has_exact_synonym "CGE/PoA|RNAseq 001-027, 089-090|n8" xsd:string
+property_value: has_exact_synonym "RNAseq 001-027, 089-090|n8|CGE/PoA" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:125
 name: Lamp5
-name: Npy,Pde11a expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Npy,Pde11a. The minimal set of markers required for its identification is: Npy,Pde11a" []
+name: Npy,Pde11a expressing GABAergic interneuron of primary motor cortex (Mus musculus)
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Npy,Pde11a. The minimal set of markers required for its identification is: Npy,Pde11a" []
 comment: cell_set_preferred_alias:Lamp5 ; original_label:n9 ; cell_set_label:RNAseq 001-008 ; cell_set_aligned_alias:Lamp5
 is_a: CL:4023011 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
 intersection_of: CL:0011005
@@ -250,7 +191,7 @@ property_value: RO:0002558 AllenDend_CS202002013:125
 [Term]
 id: AllenDendClass_CS202002013:126
 comment: cell_set_preferred_alias:'' ; original_label:n10 ; cell_set_label:RNAseq 001-004 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n10|RNAseq 001-004" xsd:string
+property_value: has_exact_synonym "RNAseq 001-004|n10" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:127
@@ -261,18 +202,18 @@ property_value: has_exact_synonym "RNAseq 002-004|n11" xsd:string
 id: AllenDendClass_CS202002013:128
 name: Lamp5_5
 comment: cell_set_preferred_alias:Lamp5_5 ; original_label:n12 ; cell_set_label:RNAseq 003-004 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 003-004|Lamp5_5|n12" xsd:string
+property_value: has_exact_synonym "n12|RNAseq 003-004|Lamp5_5" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:129
 comment: cell_set_preferred_alias:'' ; original_label:n13 ; cell_set_label:RNAseq 005-008 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 005-008|n13" xsd:string
+property_value: has_exact_synonym "n13|RNAseq 005-008" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:13
-name: Npy2r,Rgs12 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Npy2r,Rgs12 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sncg Npy2r
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Cnr1,Npy2r,Col25a1,Rgs12. The minimal set of markers required for its identification is: Npy2r,Rgs12" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cnr1,Col25a1,Npy2r,Rgs12. The minimal set of markers required for its identification is: Npy2r,Rgs12" []
 comment: cell_set_preferred_alias:Sncg Npy2r ; original_label:Sncg Npy2r ; cell_set_label:RNAseq 013 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -301,44 +242,44 @@ property_value: has_exact_synonym "n16|RNAseq 009-027" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:133
-name: Cnr1,Col25a1 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Cnr1,Col25a1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sncg
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Cnr1,Col25a1. The minimal set of markers required for its identification is: Cnr1,Col25a1" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cnr1,Col25a1. The minimal set of markers required for its identification is: Cnr1,Col25a1" []
 comment: cell_set_preferred_alias:Sncg ; original_label:n17 ; cell_set_label:RNAseq 009-014 ; cell_set_aligned_alias:Sncg
 is_a: CL:4023015 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000044288 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000058897 ! expresses
-property_value: has_exact_synonym "RNAseq 009-014|n17|Sncg" xsd:string
+property_value: has_exact_synonym "n17|RNAseq 009-014|Sncg" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:133
 
 [Term]
 id: AllenDendClass_CS202002013:134
 name: Sncg_2
 comment: cell_set_preferred_alias:Sncg_2 ; original_label:n18 ; cell_set_label:RNAseq 009-010 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "Sncg_2|RNAseq 009-010|n18" xsd:string
+property_value: has_exact_synonym "Sncg_2|n18|RNAseq 009-010" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:135
 comment: cell_set_preferred_alias:'' ; original_label:n19 ; cell_set_label:RNAseq 011-014 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n19|RNAseq 011-014" xsd:string
+property_value: has_exact_synonym "RNAseq 011-014|n19" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:136
 comment: cell_set_preferred_alias:'' ; original_label:n20 ; cell_set_label:RNAseq 011-012 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n20|RNAseq 011-012" xsd:string
+property_value: has_exact_synonym "RNAseq 011-012|n20" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:137
 comment: cell_set_preferred_alias:'' ; original_label:n21 ; cell_set_label:RNAseq 013-014 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 013-014|n21" xsd:string
+property_value: has_exact_synonym "n21|RNAseq 013-014" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:138
 name: Vip
-name: Vip expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Vip. The minimal set of markers required for its identification is: Vip" []
+name: Vip expressing GABAergic interneuron of primary motor cortex (Mus musculus)
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Vip. The minimal set of markers required for its identification is: Vip" []
 comment: cell_set_preferred_alias:Vip ; original_label:n22 ; cell_set_label:RNAseq 015-027 ; cell_set_aligned_alias:Vip
 is_a: CL:4023016 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
 intersection_of: CL:0011005
@@ -351,13 +292,13 @@ property_value: RO:0002558 AllenDend_CS202002013:138
 id: AllenDendClass_CS202002013:139
 comment: cell_set_preferred_alias:'' ; original_label:n23 ; cell_set_label:RNAseq 015-017 ; cell_set_aligned_alias:''
 is_a: CL:4023019 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
-property_value: has_exact_synonym "n23|RNAseq 015-017" xsd:string
+property_value: has_exact_synonym "RNAseq 015-017|n23" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:14
-name: Crh,Nectin3,Unc5b expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Crh,Nectin3,Unc5b expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Vip Sncg
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Col25a1,Nectin3,Cnr1,Crh,Unc5b. The minimal set of markers required for its identification is: Crh,Nectin3,Unc5b" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cnr1,Col25a1,Crh,Nectin3,Unc5b. The minimal set of markers required for its identification is: Crh,Nectin3,Unc5b" []
 comment: cell_set_preferred_alias:Vip Sncg ; original_label:Vip Sncg ; cell_set_label:RNAseq 014 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -382,7 +323,7 @@ property_value: has_exact_synonym "n25|RNAseq 018-027" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:142
 comment: cell_set_preferred_alias:'' ; original_label:n26 ; cell_set_label:RNAseq 018-025 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n26|RNAseq 018-025" xsd:string
+property_value: has_exact_synonym "RNAseq 018-025|n26" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:143
@@ -423,16 +364,16 @@ property_value: has_exact_synonym "n33|Vip_4|RNAseq 026-027" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:15
-name: Rgs16,Sfrp2 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Rgs16,Sfrp2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Vip Serpinf1_1
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Sfrp2,Vip,Rgs16. The minimal set of markers required for its identification is: Rgs16,Sfrp2" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Rgs16,Sfrp2,Vip. The minimal set of markers required for its identification is: Rgs16,Sfrp2" []
 comment: cell_set_preferred_alias:Vip Serpinf1_1 ; original_label:Vip Serpinf1_1 ; cell_set_label:RNAseq 015 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019772 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026475 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027996 ! expresses
-property_value: has_exact_synonym "Vip Serpinf1_1|RNAseq 015" xsd:string
+property_value: has_exact_synonym "RNAseq 015|Vip Serpinf1_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:15
 
 [Term]
@@ -444,12 +385,12 @@ property_value: has_exact_synonym "MGE|n34|RNAseq 028-057" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:151
 comment: cell_set_preferred_alias:'' ; original_label:n35 ; cell_set_label:RNAseq 029-057 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 029-057|n35" xsd:string
+property_value: has_exact_synonym "n35|RNAseq 029-057" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:152
 comment: cell_set_preferred_alias:'' ; original_label:n36 ; cell_set_label:RNAseq 029-045 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n36|RNAseq 029-045" xsd:string
+property_value: has_exact_synonym "RNAseq 029-045|n36" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:153
@@ -459,18 +400,18 @@ property_value: has_exact_synonym "RNAseq 029-041|n37" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:154
 comment: cell_set_preferred_alias:'' ; original_label:n38 ; cell_set_label:RNAseq 029-033 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n38|RNAseq 029-033" xsd:string
+property_value: has_exact_synonym "RNAseq 029-033|n38" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:155
 comment: cell_set_preferred_alias:'' ; original_label:n39 ; cell_set_label:RNAseq 029-030 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 029-030|n39" xsd:string
+property_value: has_exact_synonym "n39|RNAseq 029-030" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:156
 name: Sst_1
 comment: cell_set_preferred_alias:Sst_1 ; original_label:n40 ; cell_set_label:RNAseq 031-033 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "Sst_1|RNAseq 031-033|n40" xsd:string
+property_value: has_exact_synonym "RNAseq 031-033|n40|Sst_1" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:157
@@ -480,7 +421,7 @@ property_value: has_exact_synonym "RNAseq 031-032|n41" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:158
 comment: cell_set_preferred_alias:'' ; original_label:n42 ; cell_set_label:RNAseq 034-041 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n42|RNAseq 034-041" xsd:string
+property_value: has_exact_synonym "RNAseq 034-041|n42" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:159
@@ -490,9 +431,9 @@ property_value: has_exact_synonym "n43|RNAseq 034-035" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:16
-name: Col14a1,Ccn3,Pbx3 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Ccn3,Col14a1,Pbx3 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Vip Serpinf1_2
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Pbx3,Col14a1,Ccn3,Vip. The minimal set of markers required for its identification is: Col14a1,Ccn3,Pbx3" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Ccn3,Col14a1,Pbx3,Vip. The minimal set of markers required for its identification is: Ccn3,Col14a1,Pbx3" []
 comment: cell_set_preferred_alias:Vip Serpinf1_2 ; original_label:Vip Serpinf1_2 ; cell_set_label:RNAseq 016 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -506,13 +447,13 @@ property_value: RO:0002558 AllenDend_CS202002013:16
 [Term]
 id: AllenDendClass_CS202002013:160
 comment: cell_set_preferred_alias:'' ; original_label:n44 ; cell_set_label:RNAseq 036-041 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 036-041|n44" xsd:string
+property_value: has_exact_synonym "n44|RNAseq 036-041" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:161
 comment: cell_set_preferred_alias:'' ; original_label:n45 ; cell_set_label:RNAseq 036-037 ; cell_set_aligned_alias:''
 is_a: CL:4023028 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
-property_value: has_exact_synonym "RNAseq 036-037|n45" xsd:string
+property_value: has_exact_synonym "n45|RNAseq 036-037" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:162
@@ -522,7 +463,7 @@ property_value: has_exact_synonym "RNAseq 038-041|n46" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:163
 comment: cell_set_preferred_alias:'' ; original_label:n47 ; cell_set_label:RNAseq 038-040 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 038-040|n47" xsd:string
+property_value: has_exact_synonym "n47|RNAseq 038-040" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:164
@@ -538,7 +479,7 @@ property_value: has_exact_synonym "n49|RNAseq 042-045" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:166
 comment: cell_set_preferred_alias:'' ; original_label:n50 ; cell_set_label:RNAseq 042-043 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n50|RNAseq 042-043" xsd:string
+property_value: has_exact_synonym "RNAseq 042-043|n50" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:167
@@ -548,18 +489,18 @@ property_value: has_exact_synonym "n51|RNAseq 044-045" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:168
 comment: cell_set_preferred_alias:'' ; original_label:n52 ; cell_set_label:RNAseq 046-057 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n52|RNAseq 046-057" xsd:string
+property_value: has_exact_synonym "RNAseq 046-057|n52" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:169
 comment: cell_set_preferred_alias:'' ; original_label:n53 ; cell_set_label:RNAseq 046-048 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 046-048|n53" xsd:string
+property_value: has_exact_synonym "n53|RNAseq 046-048" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:17
-name: Enpp2,Homer2,Ccn3,Plekhg1 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Ccn3,Enpp2,Homer2,Plekhg1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Vip Serpinf1_3
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Vip,Plekhg1,Enpp2,Ccn3,Homer2. The minimal set of markers required for its identification is: Enpp2,Homer2,Ccn3,Plekhg1" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Ccn3,Enpp2,Homer2,Plekhg1,Vip. The minimal set of markers required for its identification is: Ccn3,Enpp2,Homer2,Plekhg1" []
 comment: cell_set_preferred_alias:Vip Serpinf1_3 ; original_label:Vip Serpinf1_3 ; cell_set_label:RNAseq 017 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -574,7 +515,7 @@ property_value: RO:0002558 AllenDend_CS202002013:17
 [Term]
 id: AllenDendClass_CS202002013:170
 comment: cell_set_preferred_alias:'' ; original_label:n54 ; cell_set_label:RNAseq 046-047 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n54|RNAseq 046-047" xsd:string
+property_value: has_exact_synonym "RNAseq 046-047|n54" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:171
@@ -589,7 +530,7 @@ property_value: has_exact_synonym "RNAseq 049-055|n56" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:173
 comment: cell_set_preferred_alias:'' ; original_label:n57 ; cell_set_label:RNAseq 050-055 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n57|RNAseq 050-055" xsd:string
+property_value: has_exact_synonym "RNAseq 050-055|n57" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:174
@@ -604,7 +545,7 @@ property_value: has_exact_synonym "n59|RNAseq 051-053" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:176
 comment: cell_set_preferred_alias:'' ; original_label:n60 ; cell_set_label:RNAseq 052-053 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 052-053|n60" xsd:string
+property_value: has_exact_synonym "n60|RNAseq 052-053" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:177
@@ -616,68 +557,71 @@ id: AllenDendClass_CS202002013:178
 name: Chandelier
 comment: cell_set_preferred_alias:Chandelier ; original_label:n62 ; cell_set_label:RNAseq 056-057 ; cell_set_aligned_alias:Chandelier
 is_a: CL:4023036 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
-property_value: has_exact_synonym "n62|RNAseq 056-057|Chandelier" xsd:string
+property_value: has_exact_synonym "RNAseq 056-057|n62|Chandelier" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:179
 name: Glutamatergic
-name: Sv2b,Arpp21 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
 comment: cell_set_preferred_alias:Glutamatergic ; original_label:n63 ; cell_set_label:RNAseq 058-088 ; cell_set_aligned_alias:Glutamatergic
 is_a: CL:0000679 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
-property_value: has_exact_synonym "n63|Glutamatergic|RNAseq 058-088" xsd:string
+intersection_of: CL:0000679
+intersection_of: RO:0002100 UBERON:0001384 ! has soma location
+property_value: has_exact_synonym "Glutamatergic|n63|RNAseq 058-088" xsd:string
+property_value: RO:0002558 AllenDend_CS202002013:179
 
 [Term]
 id: AllenDendClass_CS202002013:18
-name: Ccn3,Vip,Vwc2l expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Ccn3,Vip,Vwc2l expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Vip Htr1f
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Vwc2l,Ccn3,Vip. The minimal set of markers required for its identification is: Ccn3,Vip,Vwc2l" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Ccn3,Vip,Vwc2l. The minimal set of markers required for its identification is: Ccn3,Vip,Vwc2l" []
 comment: cell_set_preferred_alias:Vip Htr1f ; original_label:Vip Htr1f ; cell_set_label:RNAseq 018 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019772 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000037362 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000045648 ! expresses
-property_value: has_exact_synonym "RNAseq 018|Vip Htr1f" xsd:string
+property_value: has_exact_synonym "Vip Htr1f|RNAseq 018" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:18
 
 [Term]
 id: AllenDendClass_CS202002013:180
 comment: cell_set_preferred_alias:'' ; original_label:n64 ; cell_set_label:RNAseq 058-085 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 058-085|n64" xsd:string
+property_value: has_exact_synonym "n64|RNAseq 058-085" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:181
 comment: cell_set_preferred_alias:'' ; original_label:n65 ; cell_set_label:RNAseq 058-073 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n65|RNAseq 058-073" xsd:string
+property_value: has_exact_synonym "RNAseq 058-073|n65" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:182
 name: IT projecting
 comment: cell_set_preferred_alias:IT projecting ; original_label:n66 ; cell_set_label:RNAseq 058-069 ; cell_set_aligned_alias:IT projecting
 is_a: CL:4023008 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
-property_value: has_exact_synonym "RNAseq 058-069|IT projecting|n66" xsd:string
+property_value: has_exact_synonym "IT projecting|RNAseq 058-069|n66" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:183
-name: Calb1,Rasgrf2 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Calb1,Rasgrf2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L2/3 IT
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Calb1,Rasgrf2. The minimal set of markers required for its identification is: Calb1,Rasgrf2" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Calb1,Rasgrf2. The minimal set of markers required for its identification is: Calb1,Rasgrf2" []
 comment: cell_set_preferred_alias:L2/3 IT ; original_label:n67 ; cell_set_label:RNAseq 058-060 ; cell_set_aligned_alias:L2/3 IT
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
-intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028222ensembl:ENSMUSG00000021708 ! expresses
-property_value: has_exact_synonym "L2/3 IT|RNAseq 058-060|n67" xsd:string
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021708 ! expresses
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028222 ! expresses
+property_value: has_exact_synonym "n67|RNAseq 058-060|L2/3 IT" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:183
 
 [Term]
 id: AllenDendClass_CS202002013:184
 comment: cell_set_preferred_alias:'' ; original_label:n68 ; cell_set_label:RNAseq 058-059 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n68|RNAseq 058-059" xsd:string
+property_value: has_exact_synonym "RNAseq 058-059|n68" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:185
 comment: cell_set_preferred_alias:'' ; original_label:n69 ; cell_set_label:RNAseq 061-069 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n69|RNAseq 061-069" xsd:string
+property_value: has_exact_synonym "RNAseq 061-069|n69" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:186
@@ -693,34 +637,34 @@ property_value: has_exact_synonym "n71|RNAseq 061-066" xsd:string
 id: AllenDendClass_CS202002013:188
 name: L4
 comment: cell_set_preferred_alias:L4 ; original_label:n72 ; cell_set_label:RNAseq 061-062 ; cell_set_aligned_alias:L4
-property_value: has_exact_synonym "L4|RNAseq 061-062|n72" xsd:string
+property_value: has_exact_synonym "L4|n72|RNAseq 061-062" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:189
-name: Cdh12,Pdzrn3,St6galnac5 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Cdh12,Pdzrn3,St6galnac5 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L5 IT
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Pdzrn3,St6galnac5,Cdh12. The minimal set of markers required for its identification is: Cdh12,Pdzrn3,St6galnac5" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Cdh12,Pdzrn3,St6galnac5. The minimal set of markers required for its identification is: Cdh12,Pdzrn3,St6galnac5" []
 comment: cell_set_preferred_alias:L5 IT ; original_label:n73 ; cell_set_label:RNAseq 063-066 ; cell_set_aligned_alias:L5 IT
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035357 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039037 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040452 ! expresses
-property_value: has_exact_synonym "RNAseq 063-066|n73|L5 IT" xsd:string
+property_value: has_exact_synonym "RNAseq 063-066|L5 IT|n73" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:189
 
 [Term]
 id: AllenDendClass_CS202002013:19
-name: Pbx3,Pde3a,Vip expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Pbx3,Pde3a,Vip expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Vip Gpc3
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Pbx3,Pde3a,Vip. The minimal set of markers required for its identification is: Pbx3,Pde3a,Vip" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Pbx3,Pde3a,Vip. The minimal set of markers required for its identification is: Pbx3,Pde3a,Vip" []
 comment: cell_set_preferred_alias:Vip Gpc3 ; original_label:Vip Gpc3 ; cell_set_label:RNAseq 019 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019772 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038718 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000041741 ! expresses
-property_value: has_exact_synonym "Vip Gpc3|RNAseq 019" xsd:string
+property_value: has_exact_synonym "RNAseq 019|Vip Gpc3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:19
 
 [Term]
@@ -736,23 +680,23 @@ property_value: has_exact_synonym "n75|RNAseq 065-066" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:192
-name: Bmpr1b,Il1rapl2,Sulf1 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Bmpr1b,Il1rapl2,Sulf1 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L6 IT
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Bmpr1b,Il1rapl2,Sulf1. The minimal set of markers required for its identification is: Bmpr1b,Il1rapl2,Sulf1" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Bmpr1b,Il1rapl2,Sulf1. The minimal set of markers required for its identification is: Bmpr1b,Il1rapl2,Sulf1" []
 comment: cell_set_preferred_alias:L6 IT ; original_label:n76 ; cell_set_label:RNAseq 067-068 ; cell_set_aligned_alias:L6 IT
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000016918 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052430 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses
-property_value: has_exact_synonym "n76|L6 IT|RNAseq 067-068" xsd:string
+property_value: has_exact_synonym "n76|RNAseq 067-068|L6 IT" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:192
 
 [Term]
 id: AllenDendClass_CS202002013:193
-name: Gm2164,Npr3 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Gm2164,Npr3 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L5 ET
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Gm2164,Npr3. The minimal set of markers required for its identification is: Gm2164,Npr3" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Gm2164,Npr3. The minimal set of markers required for its identification is: Gm2164,Npr3" []
 comment: cell_set_preferred_alias:L5 ET ; original_label:n77 ; cell_set_label:RNAseq 070-073 ; cell_set_aligned_alias:L5 ET
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -764,35 +708,35 @@ property_value: RO:0002558 AllenDend_CS202002013:193
 [Term]
 id: AllenDendClass_CS202002013:194
 comment: cell_set_preferred_alias:'' ; original_label:n78 ; cell_set_label:RNAseq 071-073 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 071-073|n78" xsd:string
+property_value: has_exact_synonym "n78|RNAseq 071-073" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:195
 comment: cell_set_preferred_alias:'' ; original_label:n79 ; cell_set_label:RNAseq 071-072 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n79|RNAseq 071-072" xsd:string
+property_value: has_exact_synonym "RNAseq 071-072|n79" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:196
 comment: cell_set_preferred_alias:'' ; original_label:n80 ; cell_set_label:RNAseq 074-085 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n80|RNAseq 074-085" xsd:string
+property_value: has_exact_synonym "RNAseq 074-085|n80" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:197
-name: Foxp2,Hs3st4 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Foxp2,Hs3st4 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L6 CT
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Foxp2,Hs3st4. The minimal set of markers required for its identification is: Foxp2,Hs3st4" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Foxp2,Hs3st4. The minimal set of markers required for its identification is: Foxp2,Hs3st4" []
 comment: cell_set_preferred_alias:L6 CT ; original_label:n81 ; cell_set_label:RNAseq 074-080 ; cell_set_aligned_alias:L6 CT
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029563 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000078591 ! expresses
-property_value: has_exact_synonym "L6 CT|RNAseq 074-080|n81" xsd:string
+property_value: has_exact_synonym "RNAseq 074-080|L6 CT|n81" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:197
 
 [Term]
 id: AllenDendClass_CS202002013:198
 comment: cell_set_preferred_alias:'' ; original_label:n82 ; cell_set_label:RNAseq 075-080 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 075-080|n82" xsd:string
+property_value: has_exact_synonym "n82|RNAseq 075-080" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:199
@@ -801,9 +745,9 @@ property_value: has_exact_synonym "RNAseq 075-078|n83" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:2
-name: Chrna7,Tafa1,Fbn2 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Chrna7,Fbn2,Tafa1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Lamp5 Egln3_1
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Tafa1,Chrna7,Pde11a,Npy,Fbn2. The minimal set of markers required for its identification is: Chrna7,Tafa1,Fbn2" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Chrna7,Fbn2,Npy,Pde11a,Tafa1. The minimal set of markers required for its identification is: Chrna7,Fbn2,Tafa1" []
 comment: cell_set_preferred_alias:Lamp5 Egln3_1 ; original_label:Lamp5 Egln3_1 ; cell_set_label:RNAseq 002 ; cell_set_aligned_alias:''
 is_a: CL:4023010 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
 intersection_of: CL:0011005
@@ -818,9 +762,9 @@ property_value: RO:0002558 AllenDend_CS202002013:2
 
 [Term]
 id: AllenDendClass_CS202002013:20
-name: Bmper,Btbd11,Crh,Vip expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Bmper,Btbd11,Crh,Vip expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Vip C1ql1
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Bmper,Vip,Btbd11,Crh. The minimal set of markers required for its identification is: Bmper,Btbd11,Crh,Vip" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Bmper,Btbd11,Crh,Vip. The minimal set of markers required for its identification is: Bmper,Btbd11,Crh,Vip" []
 comment: cell_set_preferred_alias:Vip C1ql1 ; original_label:Vip C1ql1 ; cell_set_label:RNAseq 020 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -828,18 +772,18 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019772 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020042 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031963 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049796 ! expresses
-property_value: has_exact_synonym "Vip C1ql1|RNAseq 020" xsd:string
+property_value: has_exact_synonym "RNAseq 020|Vip C1ql1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:20
 
 [Term]
 id: AllenDendClass_CS202002013:200
 comment: cell_set_preferred_alias:'' ; original_label:n84 ; cell_set_label:RNAseq 076-078 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 076-078|n84" xsd:string
+property_value: has_exact_synonym "n84|RNAseq 076-078" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:201
 comment: cell_set_preferred_alias:'' ; original_label:n85 ; cell_set_label:RNAseq 077-078 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 077-078|n85" xsd:string
+property_value: has_exact_synonym "n85|RNAseq 077-078" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:202
@@ -848,9 +792,9 @@ property_value: has_exact_synonym "n86|RNAseq 079-080" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:203
-name: Cplx3,Ccn2 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Ccn2,Cplx3 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L6b
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Cplx3,Ccn2. The minimal set of markers required for its identification is: Cplx3,Ccn2" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Ccn2,Cplx3. The minimal set of markers required for its identification is: Ccn2,Cplx3" []
 comment: cell_set_preferred_alias:L6b ; original_label:n87 ; cell_set_label:RNAseq 081-085 ; cell_set_aligned_alias:L6b
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -876,70 +820,70 @@ property_value: has_exact_synonym "n90|RNAseq 082-083" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:207
-name: Etv1,Tshz2 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Etv1,Tshz2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L5/6 NP
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Tshz2,Etv1. The minimal set of markers required for its identification is: Etv1,Tshz2" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Etv1,Tshz2. The minimal set of markers required for its identification is: Etv1,Tshz2" []
 comment: cell_set_preferred_alias:L5/6 NP ; original_label:n91 ; cell_set_label:RNAseq 086-088 ; cell_set_aligned_alias:L5/6 NP
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004151 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047907 ! expresses
-property_value: has_exact_synonym "RNAseq 086-088|L5/6 NP|n91" xsd:string
+property_value: has_exact_synonym "L5/6 NP|n91|RNAseq 086-088" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:207
 
 [Term]
 id: AllenDendClass_CS202002013:208
 comment: cell_set_preferred_alias:'' ; original_label:n92 ; cell_set_label:RNAseq 086-087 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n92|RNAseq 086-087" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:209
-name: Meis2
-comment: cell_set_preferred_alias:Meis2 ; original_label:n93 ; cell_set_label:RNAseq 089-090 ; cell_set_aligned_alias:Meis2
-property_value: has_exact_synonym "RNAseq 089-090|n93|Meis2" xsd:string
+property_value: has_exact_synonym "RNAseq 086-087|n92" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:21
-name: 5033421B08Rik,Htr3a expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: 5033421B08Rik,Htr3a expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Vip Mybpc1_2
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Htr3a,5033421B08Rik,Vip. The minimal set of markers required for its identification is: 5033421B08Rik,Htr3a" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: 5033421B08Rik,Htr3a,Vip. The minimal set of markers required for its identification is: 5033421B08Rik,Htr3a" []
 comment: cell_set_preferred_alias:Vip Mybpc1_2 ; original_label:Vip Mybpc1_2 ; cell_set_label:RNAseq 021 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019772 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032269 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000112276 ! expresses
-property_value: has_exact_synonym "RNAseq 021|Vip Mybpc1_2" xsd:string
+property_value: has_exact_synonym "Vip Mybpc1_2|RNAseq 021" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:21
 
 [Term]
 id: AllenDendClass_CS202002013:210
 name: Astro
-name: Gli3,Slc39a12 expressing http://purl.obolibrary.org/obo/CL_0002605 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
-def: "A http://purl.obolibrary.org/obo/CL_0002605 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Gli3,Slc39a12. The minimal set of markers required for its identification is: Gli3,Slc39a12" []
+name: Gli3,Slc39a12 expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)
+def: "A astrocyte of the cerebral cortex of the Mus musculus primary motor cortex that expresses: Gli3,Slc39a12. The minimal set of markers required for its identification is: Gli3,Slc39a12" []
 comment: cell_set_preferred_alias:Astro ; original_label:n94 ; cell_set_label:RNAseq 092-094 ; cell_set_aligned_alias:Astrocyte
 is_a: CL:0002605 {oio:hasDbXref="doi:10.1101/2020.02.29.970558"}
-property_value: has_exact_synonym "RNAseq 092-094|n94|Astrocyte|Astro" xsd:string
+intersection_of: CL:0002605
+intersection_of: RO:0002100 UBERON:0001384 ! has soma location
+property_value: has_exact_synonym "Astrocyte|Astro|n94|RNAseq 092-094" xsd:string
+property_value: RO:0002558 AllenDend_CS202002013:210
 
 [Term]
 id: AllenDendClass_CS202002013:211
 name: Astro_1
 comment: cell_set_preferred_alias:Astro_1 ; original_label:n95 ; cell_set_label:RNAseq 093-094 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 093-094|n95|Astro_1" xsd:string
+property_value: has_exact_synonym "Astro_1|RNAseq 093-094|n95" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:212
-name: Gjc3 expressing http://purl.obolibrary.org/obo/CL_0000128 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Gjc3 expressing oligodendrocyte of primary motor cortex (Mus musculus)
 name: Oligo
-def: "A http://purl.obolibrary.org/obo/CL_0000128 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Gjc3. The minimal set of markers required for its identification is: Gjc3" []
+def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: Gjc3. The minimal set of markers required for its identification is: Gjc3" []
 comment: cell_set_preferred_alias:Oligo ; original_label:n96 ; cell_set_label:RNAseq 095-102 ; cell_set_aligned_alias:Oligodendrocyte
 is_a: CL:0000128 {oio:hasDbXref="doi:10.1101/2020.02.29.970558"}
-property_value: has_exact_synonym "Oligodendrocyte|Oligo|n96|RNAseq 095-102" xsd:string
+intersection_of: CL:0000128
+intersection_of: RO:0002100 UBERON:0001384 ! has soma location
+property_value: has_exact_synonym "Oligo|n96|Oligodendrocyte|RNAseq 095-102" xsd:string
+property_value: RO:0002558 AllenDend_CS202002013:212
 
 [Term]
 id: AllenDendClass_CS202002013:213
 comment: cell_set_preferred_alias:'' ; original_label:n97 ; cell_set_label:RNAseq 095-098 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 095-098|n97" xsd:string
+property_value: has_exact_synonym "n97|RNAseq 095-098" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:214
@@ -949,7 +893,7 @@ property_value: has_exact_synonym "n98|RNAseq 095-096" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:215
 comment: cell_set_preferred_alias:'' ; original_label:n99 ; cell_set_label:RNAseq 097-098 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 097-098|n99" xsd:string
+property_value: has_exact_synonym "n99|RNAseq 097-098" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:216
@@ -964,122 +908,55 @@ property_value: has_exact_synonym "n101|RNAseq 099-100" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:218
 comment: cell_set_preferred_alias:'' ; original_label:n102 ; cell_set_label:RNAseq 101-102 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n102|RNAseq 101-102" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:219
-comment: cell_set_preferred_alias:'' ; original_label:n103 ; cell_set_label:RNAseq 103-116 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n103|RNAseq 103-116" xsd:string
+property_value: has_exact_synonym "RNAseq 101-102|n102" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:22
-name: Calb2,Gm2516 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Calb2,Gm2516 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Vip Mybpc1_1
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Gm2516,Vip,Calb2. The minimal set of markers required for its identification is: Calb2,Gm2516" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Calb2,Gm2516,Vip. The minimal set of markers required for its identification is: Calb2,Gm2516" []
 comment: cell_set_preferred_alias:Vip Mybpc1_1 ; original_label:Vip Mybpc1_1 ; cell_set_label:RNAseq 022 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000003657 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019772 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000110281 ! expresses
-property_value: has_exact_synonym "RNAseq 022|Vip Mybpc1_1" xsd:string
+property_value: has_exact_synonym "Vip Mybpc1_1|RNAseq 022" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:22
 
 [Term]
-id: AllenDendClass_CS202002013:220
-comment: cell_set_preferred_alias:'' ; original_label:n104 ; cell_set_label:RNAseq 103-112 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 103-112|n104" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:221
-comment: cell_set_preferred_alias:'' ; original_label:n105 ; cell_set_label:RNAseq 104-112 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 104-112|n105" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:222
-name: VLMC
-comment: cell_set_preferred_alias:VLMC ; original_label:n106 ; cell_set_label:RNAseq 104-110 ; cell_set_aligned_alias:VLMC
-property_value: has_exact_synonym "n106|RNAseq 104-110|VLMC" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:223
-comment: cell_set_preferred_alias:'' ; original_label:n107 ; cell_set_label:RNAseq 104-107 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n107|RNAseq 104-107" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:224
-comment: cell_set_preferred_alias:'' ; original_label:n108 ; cell_set_label:RNAseq 104-105 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 104-105|n108" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:225
-comment: cell_set_preferred_alias:'' ; original_label:n109 ; cell_set_label:RNAseq 106-107 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 106-107|n109" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:226
-comment: cell_set_preferred_alias:'' ; original_label:n110 ; cell_set_label:RNAseq 108-110 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 108-110|n110" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:227
-comment: cell_set_preferred_alias:'' ; original_label:n111 ; cell_set_label:RNAseq 108-109 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n111|RNAseq 108-109" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:228
-comment: cell_set_preferred_alias:'' ; original_label:n112 ; cell_set_label:RNAseq 111-112 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n112|RNAseq 111-112" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:229
-name: Micro-PVM
-comment: cell_set_preferred_alias:Micro-PVM ; original_label:n113 ; cell_set_label:RNAseq 113-116 ; cell_set_aligned_alias:Microglia-PVM
-property_value: has_exact_synonym "Microglia-PVM|Micro-PVM|RNAseq 113-116|n113" xsd:string
-
-[Term]
 id: AllenDendClass_CS202002013:23
-name: Chat,Npy2r expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Chat,Npy2r expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Vip Chat_1
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Npy2r,Vip,Chat. The minimal set of markers required for its identification is: Chat,Npy2r" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Chat,Npy2r,Vip. The minimal set of markers required for its identification is: Chat,Npy2r" []
 comment: cell_set_preferred_alias:Vip Chat_1 ; original_label:Vip Chat_1 ; cell_set_label:RNAseq 023 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019772 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021919 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028004 ! expresses
-property_value: has_exact_synonym "RNAseq 023|Vip Chat_1" xsd:string
+property_value: has_exact_synonym "Vip Chat_1|RNAseq 023" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:23
 
 [Term]
-id: AllenDendClass_CS202002013:230
-comment: cell_set_preferred_alias:'' ; original_label:n114 ; cell_set_label:RNAseq 113-115 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n114|RNAseq 113-115" xsd:string
-
-[Term]
-id: AllenDendClass_CS202002013:231
-comment: cell_set_preferred_alias:'' ; original_label:n115 ; cell_set_label:RNAseq 114-115 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n115|RNAseq 114-115" xsd:string
-
-[Term]
 id: AllenDendClass_CS202002013:24
-name: Caln1,Grm8 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Caln1,Grm8 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Vip Mybpc1_3
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Vip,Grm8,Caln1. The minimal set of markers required for its identification is: Caln1,Grm8" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Caln1,Grm8,Vip. The minimal set of markers required for its identification is: Caln1,Grm8" []
 comment: cell_set_preferred_alias:Vip Mybpc1_3 ; original_label:Vip Mybpc1_3 ; cell_set_label:RNAseq 024 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019772 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024211 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000060371 ! expresses
-property_value: has_exact_synonym "RNAseq 024|Vip Mybpc1_3" xsd:string
+property_value: has_exact_synonym "Vip Mybpc1_3|RNAseq 024" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:24
 
 [Term]
 id: AllenDendClass_CS202002013:25
-name: Grik4,Htr4 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Grik4,Htr4 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Vip Chat_2
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Grik4,Htr4,Vip. The minimal set of markers required for its identification is: Grik4,Htr4" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Grik4,Htr4,Vip. The minimal set of markers required for its identification is: Grik4,Htr4" []
 comment: cell_set_preferred_alias:Vip Chat_2 ; original_label:Vip Chat_2 ; cell_set_label:RNAseq 025 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1091,23 +968,23 @@ property_value: RO:0002558 AllenDend_CS202002013:25
 
 [Term]
 id: AllenDendClass_CS202002013:26
-name: Gm39185,Thsd7a expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Gm39185,Thsd7a expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Vip Igfbp6_1
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Thsd7a,Vip,Gm39185. The minimal set of markers required for its identification is: Gm39185,Thsd7a" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Gm39185,Thsd7a,Vip. The minimal set of markers required for its identification is: Gm39185,Thsd7a" []
 comment: cell_set_preferred_alias:Vip Igfbp6_1 ; original_label:Vip Igfbp6_1 ; cell_set_label:RNAseq 026 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019772 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032625 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000110468 ! expresses
-property_value: has_exact_synonym "Vip Igfbp6_1|RNAseq 026" xsd:string
+property_value: has_exact_synonym "RNAseq 026|Vip Igfbp6_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:26
 
 [Term]
 id: AllenDendClass_CS202002013:27
-name: Crh,Thsd7b expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Crh,Thsd7b expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Vip Igfbp6_2
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Crh,Thsd7b,Vip. The minimal set of markers required for its identification is: Crh,Thsd7b" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Crh,Thsd7b,Vip. The minimal set of markers required for its identification is: Crh,Thsd7b" []
 comment: cell_set_preferred_alias:Vip Igfbp6_2 ; original_label:Vip Igfbp6_2 ; cell_set_label:RNAseq 027 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1119,36 +996,36 @@ property_value: RO:0002558 AllenDend_CS202002013:27
 
 [Term]
 id: AllenDendClass_CS202002013:28
-name: Nos1 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Nos1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sst Chodl
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Nos1. The minimal set of markers required for its identification is: Nos1" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Nos1. The minimal set of markers required for its identification is: Nos1" []
 comment: cell_set_preferred_alias:Sst Chodl ; original_label:Sst Chodl ; cell_set_label:RNAseq 028 ; cell_set_aligned_alias:Sst Chodl
 is_a: CL:4023025 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029361 ! expresses
-property_value: has_exact_synonym "Sst Chodl|RNAseq 028" xsd:string
+property_value: has_exact_synonym "RNAseq 028|Sst Chodl" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:28
 
 [Term]
 id: AllenDendClass_CS202002013:29
-name: 9530026P05Rik,Cartpt,Il1rapl2 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: 9530026P05Rik,Cartpt,Il1rapl2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sst Penk
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: 9530026P05Rik,Il1rapl2,Cartpt. The minimal set of markers required for its identification is: 9530026P05Rik,Cartpt,Il1rapl2" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: 9530026P05Rik,Cartpt,Il1rapl2. The minimal set of markers required for its identification is: 9530026P05Rik,Cartpt,Il1rapl2" []
 comment: cell_set_preferred_alias:Sst Penk ; original_label:Sst Penk ; cell_set_label:RNAseq 029 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021647 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000097462 ! expresses
-property_value: has_exact_synonym "RNAseq 029|Sst Penk" xsd:string
+property_value: has_exact_synonym "Sst Penk|RNAseq 029" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:29
 
 [Term]
 id: AllenDendClass_CS202002013:3
-name: Crim1,Zfp804b expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Crim1,Zfp804b expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Lamp5 Egln3_2
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Crim1,Zfp804b,Npy,Pde11a. The minimal set of markers required for its identification is: Crim1,Zfp804b" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Crim1,Npy,Pde11a,Zfp804b. The minimal set of markers required for its identification is: Crim1,Zfp804b" []
 comment: cell_set_preferred_alias:Lamp5 Egln3_2 ; original_label:Lamp5 Egln3_2 ; cell_set_label:RNAseq 003 ; cell_set_aligned_alias:''
 is_a: CL:4023022 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
 intersection_of: CL:0011005
@@ -1162,9 +1039,9 @@ property_value: RO:0002558 AllenDend_CS202002013:3
 
 [Term]
 id: AllenDendClass_CS202002013:30
-name: Il1rapl2,Reln expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Il1rapl2,Reln expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sst Myh8_1
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Il1rapl2,Reln. The minimal set of markers required for its identification is: Il1rapl2,Reln" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Il1rapl2,Reln. The minimal set of markers required for its identification is: Il1rapl2,Reln" []
 comment: cell_set_preferred_alias:Sst Myh8_1 ; original_label:Sst Myh8_1 ; cell_set_label:RNAseq 030 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1175,9 +1052,9 @@ property_value: RO:0002558 AllenDend_CS202002013:30
 
 [Term]
 id: AllenDendClass_CS202002013:31
-name: Cdh13,Pld5,Sox6 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Cdh13,Pld5,Sox6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sst Myh8_2
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Cdh13,Sox6,Pld5. The minimal set of markers required for its identification is: Cdh13,Pld5,Sox6" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cdh13,Pld5,Sox6. The minimal set of markers required for its identification is: Cdh13,Pld5,Sox6" []
 comment: cell_set_preferred_alias:Sst Myh8_2 ; original_label:Sst Myh8_2 ; cell_set_label:RNAseq 031 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1189,9 +1066,9 @@ property_value: RO:0002558 AllenDend_CS202002013:31
 
 [Term]
 id: AllenDendClass_CS202002013:32
-name: Cdh9,Grm1 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Cdh9,Grm1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sst Myh8_3
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Grm1,Cdh9. The minimal set of markers required for its identification is: Cdh9,Grm1" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cdh9,Grm1. The minimal set of markers required for its identification is: Cdh9,Grm1" []
 comment: cell_set_preferred_alias:Sst Myh8_3 ; original_label:Sst Myh8_3 ; cell_set_label:RNAseq 032 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1202,36 +1079,36 @@ property_value: RO:0002558 AllenDend_CS202002013:32
 
 [Term]
 id: AllenDendClass_CS202002013:33
-name: Gm30835,Pdyn expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Gm30835,Pdyn expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sst Htr1a
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Gm30835,Pdyn. The minimal set of markers required for its identification is: Gm30835,Pdyn" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Gm30835,Pdyn. The minimal set of markers required for its identification is: Gm30835,Pdyn" []
 comment: cell_set_preferred_alias:Sst Htr1a ; original_label:Sst Htr1a ; cell_set_label:RNAseq 033 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027400 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000105068 ! expresses
-property_value: has_exact_synonym "RNAseq 033|Sst Htr1a" xsd:string
+property_value: has_exact_synonym "Sst Htr1a|RNAseq 033" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:33
 
 [Term]
 id: AllenDendClass_CS202002013:34
-name: Col19a1,Fbn2,Trpc6 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Col19a1,Fbn2,Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sst Etv1
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Trpc6,Col19a1,Fbn2. The minimal set of markers required for its identification is: Col19a1,Fbn2,Trpc6" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Col19a1,Fbn2,Trpc6. The minimal set of markers required for its identification is: Col19a1,Fbn2,Trpc6" []
 comment: cell_set_preferred_alias:Sst Etv1 ; original_label:Sst Etv1 ; cell_set_label:RNAseq 034 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024598 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026141 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! expresses
-property_value: has_exact_synonym "Sst Etv1|RNAseq 034" xsd:string
+property_value: has_exact_synonym "RNAseq 034|Sst Etv1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:34
 
 [Term]
 id: AllenDendClass_CS202002013:35
-name: Edaradd,Spon1,Whrn expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Edaradd,Spon1,Whrn expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sst Pvalb Etv1
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Edaradd,Whrn,Spon1. The minimal set of markers required for its identification is: Edaradd,Spon1,Whrn" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Edaradd,Spon1,Whrn. The minimal set of markers required for its identification is: Edaradd,Spon1,Whrn" []
 comment: cell_set_preferred_alias:Sst Pvalb Etv1 ; original_label:Sst Pvalb Etv1 ; cell_set_label:RNAseq 035 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1243,23 +1120,23 @@ property_value: RO:0002558 AllenDend_CS202002013:35
 
 [Term]
 id: AllenDendClass_CS202002013:36
-name: Eya4,Nek7,Trpc6 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Eya4,Nek7,Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sst Crhr2_1
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Trpc6,Nek7,Eya4. The minimal set of markers required for its identification is: Eya4,Nek7,Trpc6" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Eya4,Nek7,Trpc6. The minimal set of markers required for its identification is: Eya4,Nek7,Trpc6" []
 comment: cell_set_preferred_alias:Sst Crhr2_1 ; original_label:Sst Crhr2_1 ; cell_set_label:RNAseq 036 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000010461 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026393 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! expresses
-property_value: has_exact_synonym "Sst Crhr2_1|RNAseq 036" xsd:string
+property_value: has_exact_synonym "RNAseq 036|Sst Crhr2_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:36
 
 [Term]
 id: AllenDendClass_CS202002013:37
-name: Lypd6b,Trpc6 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Lypd6b,Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sst Crhr2_2
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Lypd6b,Trpc6. The minimal set of markers required for its identification is: Lypd6b,Trpc6" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Lypd6b,Trpc6. The minimal set of markers required for its identification is: Lypd6b,Trpc6" []
 comment: cell_set_preferred_alias:Sst Crhr2_2 ; original_label:Sst Crhr2_2 ; cell_set_label:RNAseq 037 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1270,9 +1147,9 @@ property_value: RO:0002558 AllenDend_CS202002013:37
 
 [Term]
 id: AllenDendClass_CS202002013:38
-name: Hpse,Rerg expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Hpse,Rerg expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sst Hpse
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Rerg,Hpse. The minimal set of markers required for its identification is: Hpse,Rerg" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Hpse,Rerg. The minimal set of markers required for its identification is: Hpse,Rerg" []
 comment: cell_set_preferred_alias:Sst Hpse ; original_label:Sst Hpse ; cell_set_label:RNAseq 038 ; cell_set_aligned_alias:''
 is_a: CL:4023031 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
 intersection_of: CL:0011005
@@ -1284,9 +1161,9 @@ property_value: RO:0002558 AllenDend_CS202002013:38
 
 [Term]
 id: AllenDendClass_CS202002013:39
-name: Olfm3,Sst expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Olfm3,Sst expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sst Calb2
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Sst,Olfm3. The minimal set of markers required for its identification is: Olfm3,Sst" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Olfm3,Sst. The minimal set of markers required for its identification is: Olfm3,Sst" []
 comment: cell_set_preferred_alias:Sst Calb2 ; original_label:Sst Calb2 ; cell_set_label:RNAseq 039 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1297,9 +1174,9 @@ property_value: RO:0002558 AllenDend_CS202002013:39
 
 [Term]
 id: AllenDendClass_CS202002013:4
-name: Cxcl14,Ntn1,Reln expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Cxcl14,Ntn1,Reln expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Lamp5 Egln3_3
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Reln,Ntn1,Pde11a,Npy,Cxcl14. The minimal set of markers required for its identification is: Cxcl14,Ntn1,Reln" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cxcl14,Npy,Ntn1,Pde11a,Reln. The minimal set of markers required for its identification is: Cxcl14,Ntn1,Reln" []
 comment: cell_set_preferred_alias:Lamp5 Egln3_3 ; original_label:Lamp5 Egln3_3 ; cell_set_label:RNAseq 004 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1308,14 +1185,14 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021508 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029819 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042453 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000075270 ! expresses
-property_value: has_exact_synonym "Lamp5 Egln3_3|RNAseq 004" xsd:string
+property_value: has_exact_synonym "RNAseq 004|Lamp5 Egln3_3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:4
 
 [Term]
 id: AllenDendClass_CS202002013:40
-name: Gm49678,Trpc6 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Gm49678,Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sst Pappa
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Gm49678,Trpc6. The minimal set of markers required for its identification is: Gm49678,Trpc6" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Gm49678,Trpc6. The minimal set of markers required for its identification is: Gm49678,Trpc6" []
 comment: cell_set_preferred_alias:Sst Pappa ; original_label:Sst Pappa ; cell_set_label:RNAseq 040 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1326,36 +1203,36 @@ property_value: RO:0002558 AllenDend_CS202002013:40
 
 [Term]
 id: AllenDendClass_CS202002013:41
-name: Moxd1,Prkg2 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Moxd1,Prkg2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sst Pvalb Calb2
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Moxd1,Prkg2. The minimal set of markers required for its identification is: Moxd1,Prkg2" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Moxd1,Prkg2. The minimal set of markers required for its identification is: Moxd1,Prkg2" []
 comment: cell_set_preferred_alias:Sst Pvalb Calb2 ; original_label:Sst Pvalb Calb2 ; cell_set_label:RNAseq 041 ; cell_set_aligned_alias:''
 is_a: CL:4023034 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020000 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029334 ! expresses
-property_value: has_exact_synonym "RNAseq 041|Sst Pvalb Calb2" xsd:string
+property_value: has_exact_synonym "Sst Pvalb Calb2|RNAseq 041" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:41
 
 [Term]
 id: AllenDendClass_CS202002013:42
-name: Gm48893,Pard3b expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Gm48893,Pard3b expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sst C1ql3_1
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Pard3b,Gm48893. The minimal set of markers required for its identification is: Gm48893,Pard3b" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Gm48893,Pard3b. The minimal set of markers required for its identification is: Gm48893,Pard3b" []
 comment: cell_set_preferred_alias:Sst C1ql3_1 ; original_label:Sst C1ql3_1 ; cell_set_label:RNAseq 042 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052062 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111950 ! expresses
-property_value: has_exact_synonym "Sst C1ql3_1|RNAseq 042" xsd:string
+property_value: has_exact_synonym "RNAseq 042|Sst C1ql3_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:42
 
 [Term]
 id: AllenDendClass_CS202002013:43
-name: Brinp3,Gxylt2,Ndnf expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Brinp3,Gxylt2,Ndnf expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sst C1ql3_2
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Brinp3,Ndnf,Gxylt2. The minimal set of markers required for its identification is: Brinp3,Gxylt2,Ndnf" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Brinp3,Gxylt2,Ndnf. The minimal set of markers required for its identification is: Brinp3,Gxylt2,Ndnf" []
 comment: cell_set_preferred_alias:Sst C1ql3_2 ; original_label:Sst C1ql3_2 ; cell_set_label:RNAseq 043 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1367,23 +1244,23 @@ property_value: RO:0002558 AllenDend_CS202002013:43
 
 [Term]
 id: AllenDendClass_CS202002013:44
-name: Cdh13,Tac2,Tmtc2 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Cdh13,Tac2,Tmtc2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sst Tac2
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Tac2,Cdh13,Tmtc2. The minimal set of markers required for its identification is: Cdh13,Tac2,Tmtc2" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cdh13,Tac2,Tmtc2. The minimal set of markers required for its identification is: Cdh13,Tac2,Tmtc2" []
 comment: cell_set_preferred_alias:Sst Tac2 ; original_label:Sst Tac2 ; cell_set_label:RNAseq 044 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000025400 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031841 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036019 ! expresses
-property_value: has_exact_synonym "RNAseq 044|Sst Tac2" xsd:string
+property_value: has_exact_synonym "Sst Tac2|RNAseq 044" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:44
 
 [Term]
 id: AllenDendClass_CS202002013:45
 name: Sst Th_1
-name: St6galnac5,St8sia4,Zfpm2 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Zfpm2,St8sia4,St6galnac5. The minimal set of markers required for its identification is: St6galnac5,St8sia4,Zfpm2" []
+name: St6galnac5,St8sia4,Zfpm2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: St6galnac5,St8sia4,Zfpm2. The minimal set of markers required for its identification is: St6galnac5,St8sia4,Zfpm2" []
 comment: cell_set_preferred_alias:Sst Th_1 ; original_label:Sst Th_1 ; cell_set_label:RNAseq 045 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1395,9 +1272,9 @@ property_value: RO:0002558 AllenDend_CS202002013:45
 
 [Term]
 id: AllenDendClass_CS202002013:46
-name: Pard3b,Pnoc,Sst expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Pard3b,Pnoc,Sst expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sst Th_2
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Pard3b,Pnoc,Sst. The minimal set of markers required for its identification is: Pard3b,Pnoc,Sst" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Pard3b,Pnoc,Sst. The minimal set of markers required for its identification is: Pard3b,Pnoc,Sst" []
 comment: cell_set_preferred_alias:Sst Th_2 ; original_label:Sst Th_2 ; cell_set_label:RNAseq 046 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1409,35 +1286,35 @@ property_value: RO:0002558 AllenDend_CS202002013:46
 
 [Term]
 id: AllenDendClass_CS202002013:47
-name: Cort,Th expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Cort,Th expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sst Th_3
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Th,Cort. The minimal set of markers required for its identification is: Cort,Th" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cort,Th. The minimal set of markers required for its identification is: Cort,Th" []
 comment: cell_set_preferred_alias:Sst Th_3 ; original_label:Sst Th_3 ; cell_set_label:RNAseq 047 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000000214 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028971 ! expresses
-property_value: has_exact_synonym "Sst Th_3|RNAseq 047" xsd:string
+property_value: has_exact_synonym "RNAseq 047|Sst Th_3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:47
 
 [Term]
 id: AllenDendClass_CS202002013:48
-name: Gabrg1,Th expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Gabrg1,Th expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Pvalb Gabrg1
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Th,Gabrg1. The minimal set of markers required for its identification is: Gabrg1,Th" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Gabrg1,Th. The minimal set of markers required for its identification is: Gabrg1,Th" []
 comment: cell_set_preferred_alias:Pvalb Gabrg1 ; original_label:Pvalb Gabrg1 ; cell_set_label:RNAseq 048 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000000214 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000001260 ! expresses
-property_value: has_exact_synonym "Pvalb Gabrg1|RNAseq 048" xsd:string
+property_value: has_exact_synonym "RNAseq 048|Pvalb Gabrg1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:48
 
 [Term]
 id: AllenDendClass_CS202002013:49
-name: 9330158H04Rik,Plch1,Tac1 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: 9330158H04Rik,Plch1,Tac1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Pvalb Egfem1
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Tac1,9330158H04Rik,Plch1. The minimal set of markers required for its identification is: 9330158H04Rik,Plch1,Tac1" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: 9330158H04Rik,Plch1,Tac1. The minimal set of markers required for its identification is: 9330158H04Rik,Plch1,Tac1" []
 comment: cell_set_preferred_alias:Pvalb Egfem1 ; original_label:Pvalb Egfem1 ; cell_set_label:RNAseq 049 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1449,9 +1326,9 @@ property_value: RO:0002558 AllenDend_CS202002013:49
 
 [Term]
 id: AllenDendClass_CS202002013:5
-name: Dock5,Ndnf,Ndst4 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Dock5,Ndnf,Ndst4 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Lamp5 Pdlim5_1
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Ndst4,Ndnf,Dock5,Pde11a,Npy. The minimal set of markers required for its identification is: Dock5,Ndnf,Ndst4" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Dock5,Ndnf,Ndst4,Npy,Pde11a. The minimal set of markers required for its identification is: Dock5,Ndnf,Ndst4" []
 comment: cell_set_preferred_alias:Lamp5 Pdlim5_1 ; original_label:Lamp5 Pdlim5_1 ; cell_set_label:RNAseq 005 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1465,9 +1342,9 @@ property_value: RO:0002558 AllenDend_CS202002013:5
 
 [Term]
 id: AllenDendClass_CS202002013:50
-name: Fzd6,Slit2,Syt2 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Fzd6,Slit2,Syt2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Pvalb Gpr149
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Syt2,Slit2,Fzd6. The minimal set of markers required for its identification is: Fzd6,Slit2,Syt2" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Fzd6,Slit2,Syt2. The minimal set of markers required for its identification is: Fzd6,Slit2,Syt2" []
 comment: cell_set_preferred_alias:Pvalb Gpr149 ; original_label:Pvalb Gpr149 ; cell_set_label:RNAseq 050 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1479,9 +1356,9 @@ property_value: RO:0002558 AllenDend_CS202002013:50
 
 [Term]
 id: AllenDendClass_CS202002013:51
-name: Cacna2d2,Sema3e,Syt2,Tmem132d expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Cacna2d2,Sema3e,Syt2,Tmem132d expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Pvalb Kank4
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Cacna2d2,Tmem132d,Sema3e,Syt2. The minimal set of markers required for its identification is: Cacna2d2,Sema3e,Syt2,Tmem132d" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cacna2d2,Sema3e,Syt2,Tmem132d. The minimal set of markers required for its identification is: Cacna2d2,Sema3e,Syt2,Tmem132d" []
 comment: cell_set_preferred_alias:Pvalb Kank4 ; original_label:Pvalb Kank4 ; cell_set_label:RNAseq 051 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1489,14 +1366,14 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000010066 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026452 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000034310 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000063531 ! expresses
-property_value: has_exact_synonym "Pvalb Kank4|RNAseq 051" xsd:string
+property_value: has_exact_synonym "RNAseq 051|Pvalb Kank4" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:51
 
 [Term]
 id: AllenDendClass_CS202002013:52
-name: Cort,Gm28807,Nxph2 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Cort,Gm28807,Nxph2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Pvalb Calb1_1
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Cort,Nxph2,Gm28807. The minimal set of markers required for its identification is: Cort,Gm28807,Nxph2" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cort,Gm28807,Nxph2. The minimal set of markers required for its identification is: Cort,Gm28807,Nxph2" []
 comment: cell_set_preferred_alias:Pvalb Calb1_1 ; original_label:Pvalb Calb1_1 ; cell_set_label:RNAseq 052 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1508,9 +1385,9 @@ property_value: RO:0002558 AllenDend_CS202002013:52
 
 [Term]
 id: AllenDendClass_CS202002013:53
-name: Cntnap5c,Tac1,Tmem132c expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Cntnap5c,Tac1,Tmem132c expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Pvalb Calb1_2
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Cntnap5c,Tac1,Tmem132c. The minimal set of markers required for its identification is: Cntnap5c,Tac1,Tmem132c" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cntnap5c,Tac1,Tmem132c. The minimal set of markers required for its identification is: Cntnap5c,Tac1,Tmem132c" []
 comment: cell_set_preferred_alias:Pvalb Calb1_2 ; original_label:Pvalb Calb1_2 ; cell_set_label:RNAseq 053 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1522,9 +1399,9 @@ property_value: RO:0002558 AllenDend_CS202002013:53
 
 [Term]
 id: AllenDendClass_CS202002013:54
-name: Cntnap4,Gm46102 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Cntnap4,Gm46102 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Pvalb Reln
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Cntnap4,Gm46102. The minimal set of markers required for its identification is: Cntnap4,Gm46102" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cntnap4,Gm46102. The minimal set of markers required for its identification is: Cntnap4,Gm46102" []
 comment: cell_set_preferred_alias:Pvalb Reln ; original_label:Pvalb Reln ; cell_set_label:RNAseq 054 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1535,9 +1412,9 @@ property_value: RO:0002558 AllenDend_CS202002013:54
 
 [Term]
 id: AllenDendClass_CS202002013:55
-name: Eya4,Il1rapl2 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Eya4,Il1rapl2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Pvalb Il1rapl2
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Il1rapl2,Eya4. The minimal set of markers required for its identification is: Eya4,Il1rapl2" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Eya4,Il1rapl2. The minimal set of markers required for its identification is: Eya4,Il1rapl2" []
 comment: cell_set_preferred_alias:Pvalb Il1rapl2 ; original_label:Pvalb Il1rapl2 ; cell_set_label:RNAseq 055 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1548,9 +1425,9 @@ property_value: RO:0002558 AllenDend_CS202002013:55
 
 [Term]
 id: AllenDendClass_CS202002013:56
-name: Lamb1,Nkx2-1 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Lamb1,Nkx2-1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Pvalb Vipr2_1
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Nkx2-1,Lamb1. The minimal set of markers required for its identification is: Lamb1,Nkx2-1" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Lamb1,Nkx2-1. The minimal set of markers required for its identification is: Lamb1,Nkx2-1" []
 comment: cell_set_preferred_alias:Pvalb Vipr2_1 ; original_label:Pvalb Vipr2_1 ; cell_set_label:RNAseq 056 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1561,9 +1438,9 @@ property_value: RO:0002558 AllenDend_CS202002013:56
 
 [Term]
 id: AllenDendClass_CS202002013:57
-name: Cntnap5b,Unc5b expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Cntnap5b,Unc5b expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Pvalb Vipr2_2
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Cntnap5b,Unc5b. The minimal set of markers required for its identification is: Cntnap5b,Unc5b" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cntnap5b,Unc5b. The minimal set of markers required for its identification is: Cntnap5b,Unc5b" []
 comment: cell_set_preferred_alias:Pvalb Vipr2_2 ; original_label:Pvalb Vipr2_2 ; cell_set_label:RNAseq 057 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1574,40 +1451,42 @@ property_value: RO:0002558 AllenDend_CS202002013:57
 
 [Term]
 id: AllenDendClass_CS202002013:58
-name: 6530403H02Rik,Adamts2,Met expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: 6530403H02Rik,Adamts2,Met expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L2/3 IT_1
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Met,Adamts2,6530403H02Rik. The minimal set of markers required for its identification is: 6530403H02Rik,Adamts2,Met" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: 6530403H02Rik,Adamts2,Met. The minimal set of markers required for its identification is: 6530403H02Rik,Adamts2,Met" []
 comment: cell_set_preferred_alias:L2/3 IT_1 ; original_label:L2/3 IT_1 ; cell_set_label:RNAseq 058 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000009376 ! expresses
-intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028222ensembl:ENSMUSG00000021708 ! expresses
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021708 ! expresses
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028222 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036545 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098097 ! expresses
-property_value: has_exact_synonym "L2/3 IT_1|RNAseq 058" xsd:string
+property_value: has_exact_synonym "RNAseq 058|L2/3 IT_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:58
 
 [Term]
 id: AllenDendClass_CS202002013:59
-name: Ccdc3,Cux1,Meis2,Otof expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Ccdc3,Cux1,Meis2,Otof expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L2/3 IT_2
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Otof,Ccdc3,Meis2,Cux1. The minimal set of markers required for its identification is: Ccdc3,Cux1,Meis2,Otof" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Ccdc3,Cux1,Meis2,Otof. The minimal set of markers required for its identification is: Ccdc3,Cux1,Meis2,Otof" []
 comment: cell_set_preferred_alias:L2/3 IT_2 ; original_label:L2/3 IT_2 ; cell_set_label:RNAseq 059 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021708 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026676 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027210 ! expresses
-intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028222ensembl:ENSMUSG00000021708 ! expresses
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028222 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029705 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000062372 ! expresses
-property_value: has_exact_synonym "RNAseq 059|L2/3 IT_2" xsd:string
+property_value: has_exact_synonym "L2/3 IT_2|RNAseq 059" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:59
 
 [Term]
 id: AllenDendClass_CS202002013:6
 name: Lamp5 Pdlim5_2
-name: Ndnf,Pde11a expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Npy,Ndnf,Pde11a. The minimal set of markers required for its identification is: Ndnf,Pde11a" []
+name: Ndnf,Pde11a expressing GABAergic interneuron of primary motor cortex (Mus musculus)
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Ndnf,Npy,Pde11a. The minimal set of markers required for its identification is: Ndnf,Pde11a" []
 comment: cell_set_preferred_alias:Lamp5 Pdlim5_2 ; original_label:Lamp5 Pdlim5_2 ; cell_set_label:RNAseq 006 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1619,13 +1498,14 @@ property_value: RO:0002558 AllenDend_CS202002013:6
 
 [Term]
 id: AllenDendClass_CS202002013:60
-name: Cux2,Slit3,Stard8 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Cux2,Slit3,Stard8 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L2/3 IT_3
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Cux2,Stard8,Slit3. The minimal set of markers required for its identification is: Cux2,Slit3,Stard8" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Cux2,Slit3,Stard8. The minimal set of markers required for its identification is: Cux2,Slit3,Stard8" []
 comment: cell_set_preferred_alias:L2/3 IT_3 ; original_label:L2/3 IT_3 ; cell_set_label:RNAseq 060 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
-intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028222ensembl:ENSMUSG00000021708 ! expresses
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021708 ! expresses
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028222 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031216 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042589 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000056427 ! expresses
@@ -1634,9 +1514,9 @@ property_value: RO:0002558 AllenDend_CS202002013:60
 
 [Term]
 id: AllenDendClass_CS202002013:61
-name: Cadps2,Prr16,Rorb expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Cadps2,Prr16,Rorb expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L4/5 IT_1
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Prr16,Rorb,Cadps2. The minimal set of markers required for its identification is: Cadps2,Prr16,Rorb" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Cadps2,Prr16,Rorb. The minimal set of markers required for its identification is: Cadps2,Prr16,Rorb" []
 comment: cell_set_preferred_alias:L4/5 IT_1 ; original_label:L4/5 IT_1 ; cell_set_label:RNAseq 061 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1648,9 +1528,9 @@ property_value: RO:0002558 AllenDend_CS202002013:61
 
 [Term]
 id: AllenDendClass_CS202002013:62
-name: Col26a1,Cpne4,Il1rapl2 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Col26a1,Cpne4,Il1rapl2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L4/5 IT_2
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Col26a1,Il1rapl2,Cpne4. The minimal set of markers required for its identification is: Col26a1,Cpne4,Il1rapl2" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Col26a1,Cpne4,Il1rapl2. The minimal set of markers required for its identification is: Col26a1,Cpne4,Il1rapl2" []
 comment: cell_set_preferred_alias:L4/5 IT_2 ; original_label:L4/5 IT_2 ; cell_set_label:RNAseq 062 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1664,13 +1544,13 @@ property_value: RO:0002558 AllenDend_CS202002013:62
 id: AllenDendClass_CS202002013:63
 name: L5 IT_1
 comment: cell_set_preferred_alias:L5 IT_1 ; original_label:L5 IT_1 ; cell_set_label:RNAseq 063 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 063|L5 IT_1" xsd:string
+property_value: has_exact_synonym "L5 IT_1|RNAseq 063" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:64
-name: Gm49678,Adamts18,Deptor,Man1a expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Adamts18,Deptor,Gm49678,Man1a expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L5 IT_2
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: St6galnac5,Cdh12,Adamts18,Pdzrn3,Gm49678,Man1a,Deptor. The minimal set of markers required for its identification is: Gm49678,Adamts18,Deptor,Man1a" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Adamts18,Cdh12,Deptor,Gm49678,Man1a,Pdzrn3,St6galnac5. The minimal set of markers required for its identification is: Adamts18,Deptor,Gm49678,Man1a" []
 comment: cell_set_preferred_alias:L5 IT_2 ; original_label:L5 IT_2 ; cell_set_label:RNAseq 064 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1681,14 +1561,14 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039037 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040452 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000053399 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000116610 ! expresses
-property_value: has_exact_synonym "L5 IT_2|RNAseq 064" xsd:string
+property_value: has_exact_synonym "RNAseq 064|L5 IT_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:64
 
 [Term]
 id: AllenDendClass_CS202002013:65
-name: Cadps2,Enpp2,Pld5,Ptprk,Rxfp1 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Cadps2,Enpp2,Pld5,Ptprk,Rxfp1 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L5 IT_3
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: St6galnac5,Cadps2,Cdh12,Pdzrn3,Pld5,Ptprk,Enpp2,Rxfp1. The minimal set of markers required for its identification is: Cadps2,Enpp2,Pld5,Ptprk,Rxfp1" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Cadps2,Cdh12,Enpp2,Pdzrn3,Pld5,Ptprk,Rxfp1,St6galnac5. The minimal set of markers required for its identification is: Cadps2,Enpp2,Pld5,Ptprk,Rxfp1" []
 comment: cell_set_preferred_alias:L5 IT_3 ; original_label:L5 IT_3 ; cell_set_label:RNAseq 065 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1700,14 +1580,14 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035357 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039037 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040452 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000055214 ! expresses
-property_value: has_exact_synonym "RNAseq 065|L5 IT_3" xsd:string
+property_value: has_exact_synonym "L5 IT_3|RNAseq 065" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:65
 
 [Term]
 id: AllenDendClass_CS202002013:66
-name: Chrm2,Cwh43,Pld5 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Chrm2,Cwh43,Pld5 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L5 IT_4
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Cwh43,St6galnac5,Cdh12,Chrm2,Pdzrn3,Pld5. The minimal set of markers required for its identification is: Chrm2,Cwh43,Pld5" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Cdh12,Chrm2,Cwh43,Pdzrn3,Pld5,St6galnac5. The minimal set of markers required for its identification is: Chrm2,Cwh43,Pld5" []
 comment: cell_set_preferred_alias:L5 IT_4 ; original_label:L5 IT_4 ; cell_set_label:RNAseq 066 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1717,14 +1597,14 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039037 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040452 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000045613 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000055214 ! expresses
-property_value: has_exact_synonym "L5 IT_4|RNAseq 066" xsd:string
+property_value: has_exact_synonym "RNAseq 066|L5 IT_4" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:66
 
 [Term]
 id: AllenDendClass_CS202002013:67
-name: Bmpr1b,Fst,Ntng1 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Bmpr1b,Fst,Ntng1 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L6 IT_1
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Bmpr1b,Fst,Ntng1,Sulf1,Il1rapl2. The minimal set of markers required for its identification is: Bmpr1b,Fst,Ntng1" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Bmpr1b,Fst,Il1rapl2,Ntng1,Sulf1. The minimal set of markers required for its identification is: Bmpr1b,Fst,Ntng1" []
 comment: cell_set_preferred_alias:L6 IT_1 ; original_label:L6 IT_1 ; cell_set_label:RNAseq 067 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1738,9 +1618,9 @@ property_value: RO:0002558 AllenDend_CS202002013:67
 
 [Term]
 id: AllenDendClass_CS202002013:68
-name: Bmpr1b,C1ql3,Ptpru expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Bmpr1b,C1ql3,Ptpru expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L6 IT_2
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Bmpr1b,Ptpru,C1ql3,Sulf1,Il1rapl2. The minimal set of markers required for its identification is: Bmpr1b,C1ql3,Ptpru" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Bmpr1b,C1ql3,Il1rapl2,Ptpru,Sulf1. The minimal set of markers required for its identification is: Bmpr1b,C1ql3,Ptpru" []
 comment: cell_set_preferred_alias:L6 IT_2 ; original_label:L6 IT_2 ; cell_set_label:RNAseq 068 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1755,21 +1635,21 @@ property_value: RO:0002558 AllenDend_CS202002013:68
 [Term]
 id: AllenDendClass_CS202002013:69
 name: L6 IT Car3
-name: Nr4a2,Tfap2d expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Tfap2d,Nr4a2. The minimal set of markers required for its identification is: Nr4a2,Tfap2d" []
+name: Nr4a2,Tfap2d expressing glutamatergic neuron of primary motor cortex (Mus musculus)
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Nr4a2,Tfap2d. The minimal set of markers required for its identification is: Nr4a2,Tfap2d" []
 comment: cell_set_preferred_alias:L6 IT Car3 ; original_label:L6 IT Car3 ; cell_set_label:RNAseq 069 ; cell_set_aligned_alias:L6 IT Car3
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026826 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042596 ! expresses
-property_value: has_exact_synonym "L6 IT Car3|RNAseq 069" xsd:string
+property_value: has_exact_synonym "RNAseq 069|L6 IT Car3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:69
 
 [Term]
 id: AllenDendClass_CS202002013:7
-name: Alk,Sema5a expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Alk,Sema5a expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Lamp5 Slc35d3
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Sema5a,Alk,Npy,Pde11a. The minimal set of markers required for its identification is: Alk,Sema5a" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Alk,Npy,Pde11a,Sema5a. The minimal set of markers required for its identification is: Alk,Sema5a" []
 comment: cell_set_preferred_alias:Lamp5 Slc35d3 ; original_label:Lamp5 Slc35d3 ; cell_set_label:RNAseq 007 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1777,28 +1657,28 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022231 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029819 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000055471 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000075270 ! expresses
-property_value: has_exact_synonym "Lamp5 Slc35d3|RNAseq 007" xsd:string
+property_value: has_exact_synonym "RNAseq 007|Lamp5 Slc35d3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:7
 
 [Term]
 id: AllenDendClass_CS202002013:70
-name: Crym,Gm2164,Npr3 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Crym,Gm2164,Npr3 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L5 PT_1
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Crym,Gm2164,Npr3. The minimal set of markers required for its identification is: Crym,Gm2164,Npr3" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Crym,Gm2164,Npr3. The minimal set of markers required for its identification is: Crym,Gm2164,Npr3" []
 comment: cell_set_preferred_alias:L5 PT_1 ; original_label:L5 ET_1 ; cell_set_label:RNAseq 070 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022206 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030905 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098760 ! expresses
-property_value: has_exact_synonym "L5 ET_1|L5 PT_1|RNAseq 070" xsd:string
+property_value: has_exact_synonym "L5 PT_1|RNAseq 070|L5 ET_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:70
 
 [Term]
 id: AllenDendClass_CS202002013:71
-name: Erg,Gpc5,Trpc7 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Erg,Gpc5,Trpc7 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L5 PT_2
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Gm2164,Gpc5,Trpc7,Erg,Npr3. The minimal set of markers required for its identification is: Erg,Gpc5,Trpc7" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Erg,Gm2164,Gpc5,Npr3,Trpc7. The minimal set of markers required for its identification is: Erg,Gpc5,Trpc7" []
 comment: cell_set_preferred_alias:L5 PT_2 ; original_label:L5 ET_2 ; cell_set_label:RNAseq 071 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1807,14 +1687,14 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022112 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022206 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040732 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098760 ! expresses
-property_value: has_exact_synonym "RNAseq 071|L5 ET_2|L5 PT_2" xsd:string
+property_value: has_exact_synonym "RNAseq 071|L5 PT_2|L5 ET_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:71
 
 [Term]
 id: AllenDendClass_CS202002013:72
+name: Gpc5,Reln,Trmt9b,Trpc7 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L5 PT_3
-name: Trmt9b,Gpc5,Reln,Trpc7 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Gm2164,Gpc5,Trmt9b,Reln,Trpc7,Npr3. The minimal set of markers required for its identification is: Trmt9b,Gpc5,Reln,Trpc7" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Gm2164,Gpc5,Npr3,Reln,Trmt9b,Trpc7. The minimal set of markers required for its identification is: Gpc5,Reln,Trmt9b,Trpc7" []
 comment: cell_set_preferred_alias:L5 PT_3 ; original_label:L5 ET_3 ; cell_set_label:RNAseq 072 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1824,28 +1704,28 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022206 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039620 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042453 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098760 ! expresses
-property_value: has_exact_synonym "L5 ET_3|L5 PT_3|RNAseq 072" xsd:string
+property_value: has_exact_synonym "L5 PT_3|RNAseq 072|L5 ET_3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:72
 
 [Term]
 id: AllenDendClass_CS202002013:73
-name: Gm2164,Npsr1 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Gm2164,Npsr1 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L5 PT_4
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Gm2164,Npr3,Npsr1. The minimal set of markers required for its identification is: Gm2164,Npsr1" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Gm2164,Npr3,Npsr1. The minimal set of markers required for its identification is: Gm2164,Npsr1" []
 comment: cell_set_preferred_alias:L5 PT_4 ; original_label:L5 ET_4 ; cell_set_label:RNAseq 073 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022206 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000043659 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098760 ! expresses
-property_value: has_exact_synonym "L5 ET_4|RNAseq 073|L5 PT_4" xsd:string
+property_value: has_exact_synonym "RNAseq 073|L5 ET_4|L5 PT_4" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:73
 
 [Term]
 id: AllenDendClass_CS202002013:74
-name: Grp,Rxfp1,Tshz2 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Grp,Rxfp1,Tshz2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L5/6 NP CT
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Grp,Foxp2,Tshz2,Rxfp1,Hs3st4. The minimal set of markers required for its identification is: Grp,Rxfp1,Tshz2" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Foxp2,Grp,Hs3st4,Rxfp1,Tshz2. The minimal set of markers required for its identification is: Grp,Rxfp1,Tshz2" []
 comment: cell_set_preferred_alias:L5/6 NP CT ; original_label:L5/6 NP CT ; cell_set_label:RNAseq 074 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1859,9 +1739,9 @@ property_value: RO:0002558 AllenDend_CS202002013:74
 
 [Term]
 id: AllenDendClass_CS202002013:75
-name: Acaa1b,Col23a1,Gpr139 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Acaa1b,Col23a1,Gpr139 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L6 CT Gpr139
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Acaa1b,Foxp2,Gpr139,Col23a1,Hs3st4. The minimal set of markers required for its identification is: Acaa1b,Col23a1,Gpr139" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Acaa1b,Col23a1,Foxp2,Gpr139,Hs3st4. The minimal set of markers required for its identification is: Acaa1b,Col23a1,Gpr139" []
 comment: cell_set_preferred_alias:L6 CT Gpr139 ; original_label:L6 CT Gpr139 ; cell_set_label:RNAseq 075 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1870,14 +1750,14 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029563 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000063564 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000066197 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000078591 ! expresses
-property_value: has_exact_synonym "L6 CT Gpr139|RNAseq 075" xsd:string
+property_value: has_exact_synonym "RNAseq 075|L6 CT Gpr139" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:75
 
 [Term]
 id: AllenDendClass_CS202002013:76
-name: Foxp2,Hs3st4,Zfpm2 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Foxp2,Hs3st4,Zfpm2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L6 CT Cpa6
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Zfpm2,Foxp2,Hs3st4. The minimal set of markers required for its identification is: Foxp2,Hs3st4,Zfpm2" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Foxp2,Hs3st4,Zfpm2. The minimal set of markers required for its identification is: Foxp2,Hs3st4,Zfpm2" []
 comment: cell_set_preferred_alias:L6 CT Cpa6 ; original_label:L6 CT Cpa6 ; cell_set_label:RNAseq 076 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1889,9 +1769,9 @@ property_value: RO:0002558 AllenDend_CS202002013:76
 
 [Term]
 id: AllenDendClass_CS202002013:77
-name: Grp,Meis2,Pdzrn4,Plcxd3 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Grp,Meis2,Pdzrn4,Plcxd3 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L6 CT Grp
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Pdzrn4,Grp,Foxp2,Meis2,Plcxd3,Hs3st4. The minimal set of markers required for its identification is: Grp,Meis2,Pdzrn4,Plcxd3" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Foxp2,Grp,Hs3st4,Meis2,Pdzrn4,Plcxd3. The minimal set of markers required for its identification is: Grp,Meis2,Pdzrn4,Plcxd3" []
 comment: cell_set_preferred_alias:L6 CT Grp ; original_label:L6 CT Grp ; cell_set_label:RNAseq 077 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1901,14 +1781,14 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029563 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036218 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049148 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000078591 ! expresses
-property_value: has_exact_synonym "L6 CT Grp|RNAseq 077" xsd:string
+property_value: has_exact_synonym "RNAseq 077|L6 CT Grp" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:77
 
 [Term]
 id: AllenDendClass_CS202002013:78
-name: Cdh18,Gm10635,Satb2 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Cdh18,Gm10635,Satb2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L6 CT Pou3f2
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Gm10635,Cdh18,Foxp2,Satb2,Hs3st4. The minimal set of markers required for its identification is: Cdh18,Gm10635,Satb2" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Cdh18,Foxp2,Gm10635,Hs3st4,Satb2. The minimal set of markers required for its identification is: Cdh18,Gm10635,Satb2" []
 comment: cell_set_preferred_alias:L6 CT Pou3f2 ; original_label:L6 CT Pou3f2 ; cell_set_label:RNAseq 078 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1917,14 +1797,14 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038331 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040420 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000078591 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111765 ! expresses
-property_value: has_exact_synonym "L6 CT Pou3f2|RNAseq 078" xsd:string
+property_value: has_exact_synonym "RNAseq 078|L6 CT Pou3f2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:78
 
 [Term]
 id: AllenDendClass_CS202002013:79
-name: Gm10635,Ikzf2 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Gm10635,Ikzf2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L6 CT Kit_1
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Ikzf2,Foxp2,Hs3st4,Gm10635. The minimal set of markers required for its identification is: Gm10635,Ikzf2" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Foxp2,Gm10635,Hs3st4,Ikzf2. The minimal set of markers required for its identification is: Gm10635,Ikzf2" []
 comment: cell_set_preferred_alias:L6 CT Kit_1 ; original_label:L6 CT Kit_1 ; cell_set_label:RNAseq 079 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1937,9 +1817,9 @@ property_value: RO:0002558 AllenDend_CS202002013:79
 
 [Term]
 id: AllenDendClass_CS202002013:8
-name: Gm45680,Nos1 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Gm45680,Nos1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Lamp5 Lhx6
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Nos1,Gm45680,Npy,Pde11a. The minimal set of markers required for its identification is: Gm45680,Nos1" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Gm45680,Nos1,Npy,Pde11a. The minimal set of markers required for its identification is: Gm45680,Nos1" []
 comment: cell_set_preferred_alias:Lamp5 Lhx6 ; original_label:Lamp5 Lhx6 ; cell_set_label:RNAseq 008 ; cell_set_aligned_alias:Lamp5 Lhx6
 is_a: CL:4023023 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
 intersection_of: CL:0011005
@@ -1954,8 +1834,8 @@ property_value: RO:0002558 AllenDend_CS202002013:8
 [Term]
 id: AllenDendClass_CS202002013:80
 name: L6 CT Kit_2
-name: Nr4a2,Rxfp1,Tshz2 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Nr4a2,Foxp2,Tshz2,Rxfp1,Hs3st4. The minimal set of markers required for its identification is: Nr4a2,Rxfp1,Tshz2" []
+name: Nr4a2,Rxfp1,Tshz2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Foxp2,Hs3st4,Nr4a2,Rxfp1,Tshz2. The minimal set of markers required for its identification is: Nr4a2,Rxfp1,Tshz2" []
 comment: cell_set_preferred_alias:L6 CT Kit_2 ; original_label:L6 CT Kit_2 ; cell_set_label:RNAseq 080 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1965,14 +1845,14 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000034009 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047907 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000078591 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000096972 ! expresses
-property_value: has_exact_synonym "L6 CT Kit_2|RNAseq 080" xsd:string
+property_value: has_exact_synonym "RNAseq 080|L6 CT Kit_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:80
 
 [Term]
 id: AllenDendClass_CS202002013:81
-name: Bmpr1b,Ccn2,Hs3st2 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Bmpr1b,Ccn2,Hs3st2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L6b Col6a1
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Bmpr1b,Cplx3,Ccn2,Hs3st2. The minimal set of markers required for its identification is: Bmpr1b,Ccn2,Hs3st2" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Bmpr1b,Ccn2,Cplx3,Hs3st2. The minimal set of markers required for its identification is: Bmpr1b,Ccn2,Hs3st2" []
 comment: cell_set_preferred_alias:L6b Col6a1 ; original_label:L6b Col6a1 ; cell_set_label:RNAseq 081 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1980,14 +1860,14 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019997 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039714 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000046321 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052430 ! expresses
-property_value: has_exact_synonym "RNAseq 081|L6b Col6a1" xsd:string
+property_value: has_exact_synonym "L6b Col6a1|RNAseq 081" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:81
 
 [Term]
 id: AllenDendClass_CS202002013:82
-name: Cplx3,Ly6g6e,Svil expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Cplx3,Ly6g6e,Svil expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L6b Shisa6_1
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Ly6g6e,Svil,Cplx3,Ccn2. The minimal set of markers required for its identification is: Cplx3,Ly6g6e,Svil" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Ccn2,Cplx3,Ly6g6e,Svil. The minimal set of markers required for its identification is: Cplx3,Ly6g6e,Svil" []
 comment: cell_set_preferred_alias:L6b Shisa6_1 ; original_label:L6b Shisa6_1 ; cell_set_label:RNAseq 082 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -2001,8 +1881,8 @@ property_value: RO:0002558 AllenDend_CS202002013:82
 [Term]
 id: AllenDendClass_CS202002013:83
 name: L6b Shisa6_2
-name: Moxd1,Nr4a2 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Moxd1,Nr4a2,Cplx3,Ccn2. The minimal set of markers required for its identification is: Moxd1,Nr4a2" []
+name: Moxd1,Nr4a2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Ccn2,Cplx3,Moxd1,Nr4a2. The minimal set of markers required for its identification is: Moxd1,Nr4a2" []
 comment: cell_set_preferred_alias:L6b Shisa6_2 ; original_label:L6b Shisa6_2 ; cell_set_label:RNAseq 083 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -2010,28 +1890,28 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019997 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020000 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026826 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039714 ! expresses
-property_value: has_exact_synonym "RNAseq 083|L6b Shisa6_2" xsd:string
+property_value: has_exact_synonym "L6b Shisa6_2|RNAseq 083" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:83
 
 [Term]
 id: AllenDendClass_CS202002013:84
-name: Cplx3,Ccn2,Fbxl7 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Ccn2,Cplx3,Fbxl7 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L6b Ror1
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Cplx3,Ccn2,Fbxl7. The minimal set of markers required for its identification is: Cplx3,Ccn2,Fbxl7" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Ccn2,Cplx3,Fbxl7. The minimal set of markers required for its identification is: Ccn2,Cplx3,Fbxl7" []
 comment: cell_set_preferred_alias:L6b Ror1 ; original_label:L6b Ror1 ; cell_set_label:RNAseq 084 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019997 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039714 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000043556 ! expresses
-property_value: has_exact_synonym "L6b Ror1|RNAseq 084" xsd:string
+property_value: has_exact_synonym "RNAseq 084|L6b Ror1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:84
 
 [Term]
 id: AllenDendClass_CS202002013:85
-name: Gm42557,Olfr112,Rxfp2 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Gm42557,Olfr112,Rxfp2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L6b Kcnip1
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Olfr112,Cplx3,Gm42557,Rxfp2,Ccn2. The minimal set of markers required for its identification is: Gm42557,Olfr112,Rxfp2" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Ccn2,Cplx3,Gm42557,Olfr112,Rxfp2. The minimal set of markers required for its identification is: Gm42557,Olfr112,Rxfp2" []
 comment: cell_set_preferred_alias:L6b Kcnip1 ; original_label:L6b Kcnip1 ; cell_set_label:RNAseq 085 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -2045,9 +1925,9 @@ property_value: RO:0002558 AllenDend_CS202002013:85
 
 [Term]
 id: AllenDendClass_CS202002013:86
-name: Cyp7b1,Dkk2,Vwc2l expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Cyp7b1,Dkk2,Vwc2l expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L5/6 NP_1
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Dkk2,Cyp7b1,Vwc2l,Tshz2,Etv1. The minimal set of markers required for its identification is: Cyp7b1,Dkk2,Vwc2l" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Cyp7b1,Dkk2,Etv1,Tshz2,Vwc2l. The minimal set of markers required for its identification is: Cyp7b1,Dkk2,Vwc2l" []
 comment: cell_set_preferred_alias:L5/6 NP_1 ; original_label:L5/6 NP_1 ; cell_set_label:RNAseq 086 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -2056,14 +1936,14 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028031 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039519 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000045648 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047907 ! expresses
-property_value: has_exact_synonym "L5/6 NP_1|RNAseq 086" xsd:string
+property_value: has_exact_synonym "RNAseq 086|L5/6 NP_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:86
 
 [Term]
 id: AllenDendClass_CS202002013:87
-name: Abi3bp,Slc17a8 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Abi3bp,Slc17a8 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 name: L5/6 NP_2
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Tshz2,Abi3bp,Etv1,Slc17a8. The minimal set of markers required for its identification is: Abi3bp,Slc17a8" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Abi3bp,Etv1,Slc17a8,Tshz2. The minimal set of markers required for its identification is: Abi3bp,Slc17a8" []
 comment: cell_set_preferred_alias:L5/6 NP_2 ; original_label:L5/6 NP_2 ; cell_set_label:RNAseq 087 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -2077,28 +1957,22 @@ property_value: RO:0002558 AllenDend_CS202002013:87
 [Term]
 id: AllenDendClass_CS202002013:88
 name: L5/6 NP_3
-name: Lypd1,Tshz2 expressing http://purl.obolibrary.org/obo/CL_0000679 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
-def: "A http://purl.obolibrary.org/obo/CL_0000679 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Lypd1,Tshz2,Etv1. The minimal set of markers required for its identification is: Lypd1,Tshz2" []
+name: Lypd1,Tshz2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Etv1,Lypd1,Tshz2. The minimal set of markers required for its identification is: Lypd1,Tshz2" []
 comment: cell_set_preferred_alias:L5/6 NP_3 ; original_label:L5/6 NP_3 ; cell_set_label:RNAseq 088 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004151 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026344 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047907 ! expresses
-property_value: has_exact_synonym "L5/6 NP_3|RNAseq 088" xsd:string
+property_value: has_exact_synonym "RNAseq 088|L5/6 NP_3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:88
 
 [Term]
-id: AllenDendClass_CS202002013:89
-name: Meis2
-comment: cell_set_preferred_alias:Meis2 ; original_label:Meis2 ; cell_set_label:RNAseq 089 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "Meis2|RNAseq 089" xsd:string
-
-[Term]
 id: AllenDendClass_CS202002013:9
-name: Cdh6,Col25a1,Eps8 expressing http://purl.obolibrary.org/obo/CL_0011005 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Cdh6,Col25a1,Eps8 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 name: Sncg Col14a1
-def: "A http://purl.obolibrary.org/obo/CL_0011005 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Cnr1,Col25a1,Eps8,Cdh6. The minimal set of markers required for its identification is: Cdh6,Col25a1,Eps8" []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cdh6,Cnr1,Col25a1,Eps8. The minimal set of markers required for its identification is: Cdh6,Col25a1,Eps8" []
 comment: cell_set_preferred_alias:Sncg Col14a1 ; original_label:Sncg Col14a1 ; cell_set_label:RNAseq 009 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -2106,87 +1980,126 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000015766 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039385 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000044288 ! expresses
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000058897 ! expresses
-property_value: has_exact_synonym "RNAseq 009|Sncg Col14a1" xsd:string
+property_value: has_exact_synonym "Sncg Col14a1|RNAseq 009" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:9
-
-[Term]
-id: AllenDendClass_CS202002013:90
-name: Meis2_Top2a
-comment: cell_set_preferred_alias:Meis2_Top2a ; original_label:Meis2_Top2a ; cell_set_label:RNAseq 090 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 090|Meis2_Top2a" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:91
 name: OPC Pdgfra
-name: Pdgfra,Stk32a expressing CL_0002453 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
-def: "A CL_0002453 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Stk32a,Pdgfra. The minimal set of markers required for its identification is: Pdgfra,Stk32a" []
+name: Pdgfra,Stk32a expressing oligodendrocyte precursor cell of primary motor cortex (Mus musculus)
+def: "A oligodendrocyte precursor cell of the Mus musculus primary motor cortex that expresses: Pdgfra,Stk32a. The minimal set of markers required for its identification is: Pdgfra,Stk32a" []
 comment: cell_set_preferred_alias:OPC Pdgfra ; original_label:OPC Pdgfra ; cell_set_label:RNAseq 091 ; cell_set_aligned_alias:OPC
 is_a: CL:0002453 {oio:hasDbXref="doi:10.1101/2020.02.29.970558"}
-property_value: has_exact_synonym "RNAseq 091|OPC Pdgfra|OPC" xsd:string
+intersection_of: CL:0002453
+intersection_of: RO:0002100 UBERON:0001384 ! has soma location
+property_value: has_exact_synonym "OPC|OPC Pdgfra|RNAseq 091" xsd:string
+property_value: RO:0002558 AllenDend_CS202002013:91
 
 [Term]
 id: AllenDendClass_CS202002013:92
 name: Astro_Top2a
-name: Clspn,Lockd expressing http://purl.obolibrary.org/obo/CL_0002605 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
-def: "A http://purl.obolibrary.org/obo/CL_0002605 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Lockd,Clspn. The minimal set of markers required for its identification is: Clspn,Lockd" []
+name: Clspn,Lockd expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)
+def: "A astrocyte of the cerebral cortex of the Mus musculus primary motor cortex that expresses: Clspn,Lockd. The minimal set of markers required for its identification is: Clspn,Lockd" []
 comment: cell_set_preferred_alias:Astro_Top2a ; original_label:Astro_Top2a ; cell_set_label:RNAseq 092 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 092|Astro_Top2a" xsd:string
+intersection_of: CL:0002605
+intersection_of: RO:0002100 UBERON:0001384 ! has soma location
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042489 ! expresses
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098318 ! expresses
+property_value: has_exact_synonym "Astro_Top2a|RNAseq 092" xsd:string
+property_value: RO:0002558 AllenDend_CS202002013:92
 
 [Term]
 id: AllenDendClass_CS202002013:93
 name: Astro Aqp4_Gfap
-name: Myoc expressing http://purl.obolibrary.org/obo/CL_0002605 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
-def: "A http://purl.obolibrary.org/obo/CL_0002605 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Myoc. The minimal set of markers required for its identification is: Myoc" []
+name: Myoc expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)
+def: "A astrocyte of the cerebral cortex of the Mus musculus primary motor cortex that expresses: Myoc. The minimal set of markers required for its identification is: Myoc" []
 comment: cell_set_preferred_alias:Astro Aqp4_Gfap ; original_label:Astro Aqp4_Gfap ; cell_set_label:RNAseq 093 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "Astro Aqp4_Gfap|RNAseq 093" xsd:string
+intersection_of: CL:0002605
+intersection_of: RO:0002100 UBERON:0001384 ! has soma location
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026697 ! expresses
+property_value: has_exact_synonym "RNAseq 093|Astro Aqp4_Gfap" xsd:string
+property_value: RO:0002558 AllenDend_CS202002013:93
 
 [Term]
 id: AllenDendClass_CS202002013:94
 name: Astro Aqp4_Slc7a10
-name: Phkg1,Slco1c1 expressing http://purl.obolibrary.org/obo/CL_0002605 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
-def: "A http://purl.obolibrary.org/obo/CL_0002605 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Phkg1,Slco1c1. The minimal set of markers required for its identification is: Phkg1,Slco1c1" []
+name: Phkg1,Slco1c1 expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)
+def: "A astrocyte of the cerebral cortex of the Mus musculus primary motor cortex that expresses: Phkg1,Slco1c1. The minimal set of markers required for its identification is: Phkg1,Slco1c1" []
 comment: cell_set_preferred_alias:Astro Aqp4_Slc7a10 ; original_label:Astro Aqp4_Slc7a10 ; cell_set_label:RNAseq 094 ; cell_set_aligned_alias:''
+intersection_of: CL:0002605
+intersection_of: RO:0002100 UBERON:0001384 ! has soma location
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000025537 ! expresses
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030235 ! expresses
 property_value: has_exact_synonym "Astro Aqp4_Slc7a10|RNAseq 094" xsd:string
+property_value: RO:0002558 AllenDend_CS202002013:94
 
 [Term]
 id: AllenDendClass_CS202002013:95
-name: Bcas1,Tcf7l2 expressing http://purl.obolibrary.org/obo/CL_0000128 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Bcas1,Tcf7l2 expressing oligodendrocyte of primary motor cortex (Mus musculus)
 name: Oligo Enpp6_1
-def: "A http://purl.obolibrary.org/obo/CL_0000128 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Tcf7l2,Bcas1. The minimal set of markers required for its identification is: Bcas1,Tcf7l2" []
+def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: Bcas1,Tcf7l2. The minimal set of markers required for its identification is: Bcas1,Tcf7l2" []
 comment: cell_set_preferred_alias:Oligo Enpp6_1 ; original_label:Oligo Enpp6_1 ; cell_set_label:RNAseq 095 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 095|Oligo Enpp6_1" xsd:string
+intersection_of: CL:0000128
+intersection_of: RO:0002100 UBERON:0001384 ! has soma location
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000013523 ! expresses
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024985 ! expresses
+property_value: has_exact_synonym "Oligo Enpp6_1|RNAseq 095" xsd:string
+property_value: RO:0002558 AllenDend_CS202002013:95
 
 [Term]
 id: AllenDendClass_CS202002013:96
-name: 9630013A20Rik,Bmp4 expressing http://purl.obolibrary.org/obo/CL_0000128 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: 9630013A20Rik,Bmp4 expressing oligodendrocyte of primary motor cortex (Mus musculus)
 name: Oligo Enpp6_2
-def: "A http://purl.obolibrary.org/obo/CL_0000128 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: 9630013A20Rik,Bmp4. The minimal set of markers required for its identification is: 9630013A20Rik,Bmp4" []
+def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: 9630013A20Rik,Bmp4. The minimal set of markers required for its identification is: 9630013A20Rik,Bmp4" []
 comment: cell_set_preferred_alias:Oligo Enpp6_2 ; original_label:Oligo Enpp6_2 ; cell_set_label:RNAseq 096 ; cell_set_aligned_alias:''
+intersection_of: CL:0000128
+intersection_of: RO:0002100 UBERON:0001384 ! has soma location
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021835 ! expresses
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000115529 ! expresses
 property_value: has_exact_synonym "RNAseq 096|Oligo Enpp6_2" xsd:string
+property_value: RO:0002558 AllenDend_CS202002013:96
 
 [Term]
 id: AllenDendClass_CS202002013:97
-name: Cnksr3,Mpzl1,Nckap5,Tmem163 expressing http://purl.obolibrary.org/obo/CL_0000128 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: Cnksr3,Mpzl1,Nckap5,Tmem163 expressing oligodendrocyte of primary motor cortex (Mus musculus)
 name: Oligo Enpp6_3
-def: "A http://purl.obolibrary.org/obo/CL_0000128 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Nckap5,Cnksr3,Tmem163,Mpzl1. The minimal set of markers required for its identification is: Cnksr3,Mpzl1,Nckap5,Tmem163" []
+def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: Cnksr3,Mpzl1,Nckap5,Tmem163. The minimal set of markers required for its identification is: Cnksr3,Mpzl1,Nckap5,Tmem163" []
 comment: cell_set_preferred_alias:Oligo Enpp6_3 ; original_label:Oligo Enpp6_3 ; cell_set_label:RNAseq 097 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 097|Oligo Enpp6_3" xsd:string
+intersection_of: CL:0000128
+intersection_of: RO:0002100 UBERON:0001384 ! has soma location
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000015202 ! expresses
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026347 ! expresses
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026566 ! expresses
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049690 ! expresses
+property_value: has_exact_synonym "Oligo Enpp6_3|RNAseq 097" xsd:string
+property_value: RO:0002558 AllenDend_CS202002013:97
 
 [Term]
 id: AllenDendClass_CS202002013:98
-name: 9630013A20Rik,Cnksr3 expressing http://purl.obolibrary.org/obo/CL_0000128 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: 9630013A20Rik,Cnksr3 expressing oligodendrocyte of primary motor cortex (Mus musculus)
 name: Oligo Enpp6_4
-def: "A http://purl.obolibrary.org/obo/CL_0000128 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: 9630013A20Rik,Cnksr3. The minimal set of markers required for its identification is: 9630013A20Rik,Cnksr3" []
+def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: 9630013A20Rik,Cnksr3. The minimal set of markers required for its identification is: 9630013A20Rik,Cnksr3" []
 comment: cell_set_preferred_alias:Oligo Enpp6_4 ; original_label:Oligo Enpp6_4 ; cell_set_label:RNAseq 098 ; cell_set_aligned_alias:''
+intersection_of: CL:0000128
+intersection_of: RO:0002100 UBERON:0001384 ! has soma location
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000015202 ! expresses
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000115529 ! expresses
 property_value: has_exact_synonym "Oligo Enpp6_4|RNAseq 098" xsd:string
+property_value: RO:0002558 AllenDend_CS202002013:98
 
 [Term]
 id: AllenDendClass_CS202002013:99
-name: A330049N07Rik,Anln,Rftn1 expressing http://purl.obolibrary.org/obo/CL_0000128 of http://purl.obolibrary.org/obo/UBERON_0001384 (CCN202002013)
+name: A330049N07Rik,Anln,Rftn1 expressing oligodendrocyte of primary motor cortex (Mus musculus)
 name: Oligo Opalin_1
-def: "A http://purl.obolibrary.org/obo/CL_0000128 of the CCN202002013 http://purl.obolibrary.org/obo/UBERON_0001384 that expresses: Rftn1,A330049N07Rik,Anln. The minimal set of markers required for its identification is: A330049N07Rik,Anln,Rftn1" []
+def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: A330049N07Rik,Anln,Rftn1. The minimal set of markers required for its identification is: A330049N07Rik,Anln,Rftn1" []
 comment: cell_set_preferred_alias:Oligo Opalin_1 ; original_label:Oligo Opalin_1 ; cell_set_label:RNAseq 099 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "Oligo Opalin_1|RNAseq 099" xsd:string
+intersection_of: CL:0000128
+intersection_of: RO:0002100 UBERON:0001384 ! has soma location
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036777 ! expresses
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039316 ! expresses
+intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111994 ! expresses
+property_value: has_exact_synonym "RNAseq 099|Oligo Opalin_1" xsd:string
+property_value: RO:0002558 AllenDend_CS202002013:99
 
 [Typedef]
 id: RO:0002100
