@@ -1,8 +1,9 @@
 format-version: 1.2
-data-version: releases/2021-03-08
+data-version: releases/2021-03-09
 subsetdef: 3_STAR ""
 subsetdef: added_for_HCA ""
 subsetdef: attribute_slim ""
+subsetdef: BDS_subset ""
 subsetdef: cell_quality ""
 subsetdef: cumbo ""
 subsetdef: developmental_classification ""
@@ -52,7 +53,7 @@ ontology: bdscratch
 property_value: dc-description "None" xsd:string
 property_value: dc-title "Brain Data Standards Cell Ontology" xsd:string
 property_value: dcterms-license https://creativecommons.org/licenses/unspecified
-property_value: owl:versionInfo "2021-03-08" xsd:string
+property_value: owl:versionInfo "2021-03-09" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:1
@@ -69,7 +70,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029819 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000075270 ! expresses Pde11a
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024867 ! expresses Pip5k1b
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027168 ! expresses Pax6
-property_value: has_exact_synonym "Lamp5 Pax6|RNAseq 001" xsd:string
+property_value: has_exact_synonym "Lamp5 Pax6" xsd:string
+property_value: has_exact_synonym "RNAseq 001" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:1
 
 [Term]
@@ -87,7 +89,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000048967 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000058897 ! expresses Col25a1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019935 ! expresses Slc17a8
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000048967 ! expresses Yjefn3
-property_value: has_exact_synonym "RNAseq 010|Sncg Slc17a8" xsd:string
+property_value: has_exact_synonym "RNAseq 010" xsd:string
+property_value: has_exact_synonym "Sncg Slc17a8" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:10
 
 [Term]
@@ -103,7 +106,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024810 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032841 ! expresses Prr5l
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024810 ! expresses Il33
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032841 ! expresses Prr5l
-property_value: has_exact_synonym "RNAseq 100|Oligo Opalin_2" xsd:string
+property_value: has_exact_synonym "Oligo Opalin_2" xsd:string
+property_value: has_exact_synonym "RNAseq 100" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:100
 
 [Term]
@@ -121,7 +125,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049690 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032517 ! expresses Mobp
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000041460 ! expresses Cacna2d4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049690 ! expresses Nckap5
-property_value: has_exact_synonym "RNAseq 101|Oligo Opalin_3" xsd:string
+property_value: has_exact_synonym "Oligo Opalin_3" xsd:string
+property_value: has_exact_synonym "RNAseq 101" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:101
 
 [Term]
@@ -139,7 +144,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032702 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029086 ! expresses Prom1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030616 ! expresses Sytl2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032702 ! expresses Kank1
-property_value: has_exact_synonym "RNAseq 102|Oligo Opalin_4" xsd:string
+property_value: has_exact_synonym "Oligo Opalin_4" xsd:string
+property_value: has_exact_synonym "RNAseq 102" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:102
 
 [Term]
@@ -149,11 +155,13 @@ name: Endo
 def: "A cerebral cortex endothelial cell of the Mus musculus primary motor cortex that expresses: Adgrl4,Slco1a4. The minimal set of markers required for its identification is: Adgrl4,Slco1a4" []
 comment: cell_set_preferred_alias:Endo ; original_label:Endo ; cell_set_label:RNAseq 103 ; cell_set_aligned_alias:Endothelial
 is_a: CL:0010012 ! cerebral cortex neuron
-is_a: CL:1001602 {oio:hasDbXref="doi:10.1101/2020.02.29.970558"} ! cerebral cortex endothelial cell
+is_a: CL:1001602 {xref="doi:10.1101/2020.02.29.970558"} ! cerebral cortex endothelial cell
 intersection_of: CL:1001602 ! cerebral cortex endothelial cell
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
-property_value: has_exact_synonym "Endo|RNAseq 103|Endothelial" xsd:string
+property_value: has_exact_synonym "Endo" xsd:string
+property_value: has_exact_synonym "Endothelial" xsd:string
+property_value: has_exact_synonym "RNAseq 103" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:103
 
 [Term]
@@ -173,7 +181,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000063661 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027849 ! expresses Syt6
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042045 ! expresses Sln
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000063661 ! expresses Krt73
-property_value: has_exact_synonym "RNAseq 011|Sncg Calb1_1" xsd:string
+property_value: has_exact_synonym "RNAseq 011" xsd:string
+property_value: has_exact_synonym "Sncg Calb1_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:11
 
 [Term]
@@ -182,12 +191,13 @@ name: Acta2 expressing smooth muscle cell of primary motor cortex (Mus musculus)
 name: SMC
 def: "A smooth muscle cell of the Mus musculus primary motor cortex that expresses: Acta2. The minimal set of markers required for its identification is: Acta2" []
 comment: cell_set_preferred_alias:SMC ; original_label:SMC ; cell_set_label:RNAseq 111 ; cell_set_aligned_alias:SMC
-is_a: CL:0000192 {oio:hasDbXref="doi:10.1101/2020.02.29.970558"} ! smooth muscle cell
+is_a: CL:0000192 {xref="doi:10.1101/2020.02.29.970558"} ! smooth muscle cell
 is_a: CL:0000540 ! neuron
 intersection_of: CL:0000192 ! smooth muscle cell
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
-property_value: has_exact_synonym "RNAseq 111|SMC" xsd:string
+property_value: has_exact_synonym "RNAseq 111" xsd:string
+property_value: has_exact_synonym "SMC" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:111
 
 [Term]
@@ -197,11 +207,13 @@ name: Peri
 def: "A brain pericyte of the Mus musculus primary motor cortex that expresses: Abcc9,Tbx3os1. The minimal set of markers required for its identification is: Abcc9,Tbx3os1" []
 comment: cell_set_preferred_alias:Peri ; original_label:Peri ; cell_set_label:RNAseq 112 ; cell_set_aligned_alias:Pericyte
 is_a: CL:2000029 ! central nervous system neuron
-is_a: CL:2000043 {oio:hasDbXref="doi:10.1101/2020.02.29.970558"} ! brain pericyte
+is_a: CL:2000043 {xref="doi:10.1101/2020.02.29.970558"} ! brain pericyte
 intersection_of: CL:2000043 ! brain pericyte
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
-property_value: has_exact_synonym "Pericyte|RNAseq 112|Peri" xsd:string
+property_value: has_exact_synonym "Peri" xsd:string
+property_value: has_exact_synonym "Pericyte" xsd:string
+property_value: has_exact_synonym "RNAseq 112" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:112
 
 [Term]
@@ -211,12 +223,14 @@ name: Micro
 def: "A microglial cell of the Mus musculus primary motor cortex that expresses: Hexb. The minimal set of markers required for its identification is: Hexb" []
 comment: cell_set_preferred_alias:Micro ; original_label:Micro ; cell_set_label:RNAseq 113 ; cell_set_aligned_alias:Microglia
 is_a: CL:0000029 ! neuron neural crest derived
-is_a: CL:0000129 {oio:hasDbXref="doi:10.1101/2020.02.29.970558"} ! microglial cell
+is_a: CL:0000129 {xref="doi:10.1101/2020.02.29.970558"} ! microglial cell
 is_a: CL:2000029 ! central nervous system neuron
 intersection_of: CL:0000129 ! microglial cell
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
-property_value: has_exact_synonym "RNAseq 113|Microglia|Micro" xsd:string
+property_value: has_exact_synonym "Micro" xsd:string
+property_value: has_exact_synonym "Microglia" xsd:string
+property_value: has_exact_synonym "RNAseq 113" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:113
 
 [Term]
@@ -236,7 +250,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000058897 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024376 ! expresses Epb41l4a
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027849 ! expresses Syt6
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028222 ! expresses Calb1
-property_value: has_exact_synonym "RNAseq 012|Sncg Calb1_2" xsd:string
+property_value: has_exact_synonym "RNAseq 012" xsd:string
+property_value: has_exact_synonym "Sncg Calb1_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:12
 
 [Term]
@@ -247,14 +262,18 @@ is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
 intersection_of: CL:0011005 ! GABAergic interneuron
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
-property_value: has_exact_synonym "RNAseq 001-057, 089-090|n7|GABAergic" xsd:string
+property_value: has_exact_synonym "GABAergic" xsd:string
+property_value: has_exact_synonym "n7" xsd:string
+property_value: has_exact_synonym "RNAseq 001-057, 089-090" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:123
 
 [Term]
 id: AllenDendClass_CS202002013:124
 name: CGE/PoA
 comment: cell_set_preferred_alias:CGE/PoA ; original_label:n8 ; cell_set_label:RNAseq 001-027, 089-090 ; cell_set_aligned_alias:CGE/PoA
-property_value: has_exact_synonym "RNAseq 001-027, 089-090|n8|CGE/PoA" xsd:string
+property_value: has_exact_synonym "CGE/PoA" xsd:string
+property_value: has_exact_synonym "n8" xsd:string
+property_value: has_exact_synonym "RNAseq 001-027, 089-090" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:125
@@ -263,36 +282,43 @@ name: Npy,Pde11a expressing GABAergic interneuron of primary motor cortex (Mus m
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Npy,Pde11a. The minimal set of markers required for its identification is: Npy,Pde11a" []
 comment: cell_set_preferred_alias:Lamp5 ; original_label:n9 ; cell_set_label:RNAseq 001-008 ; cell_set_aligned_alias:Lamp5
 is_a: AllenDendClass_CS202002013:123 ! GABAergic
-is_a: CL:4023011 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
+is_a: CL:4023011 {xref="DOI:10.1101/2020.02.29.970558"} ! Lamp5 GABAergic cortical interneuron
 intersection_of: CL:0011005 ! GABAergic interneuron
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029819 ! expresses Npy
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000075270 ! expresses Pde11a
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029819 ! expresses Npy
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000075270 ! expresses Pde11a
-property_value: has_exact_synonym "n9|Lamp5|RNAseq 001-008" xsd:string
+property_value: has_exact_synonym "Lamp5" xsd:string
+property_value: has_exact_synonym "n9" xsd:string
+property_value: has_exact_synonym "RNAseq 001-008" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:125
 
 [Term]
 id: AllenDendClass_CS202002013:126
 comment: cell_set_preferred_alias:'' ; original_label:n10 ; cell_set_label:RNAseq 001-004 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 001-004|n10" xsd:string
+property_value: has_exact_synonym "n10" xsd:string
+property_value: has_exact_synonym "RNAseq 001-004" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:127
 comment: cell_set_preferred_alias:'' ; original_label:n11 ; cell_set_label:RNAseq 002-004 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 002-004|n11" xsd:string
+property_value: has_exact_synonym "n11" xsd:string
+property_value: has_exact_synonym "RNAseq 002-004" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:128
 name: Lamp5_5
 comment: cell_set_preferred_alias:Lamp5_5 ; original_label:n12 ; cell_set_label:RNAseq 003-004 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n12|RNAseq 003-004|Lamp5_5" xsd:string
+property_value: has_exact_synonym "Lamp5_5" xsd:string
+property_value: has_exact_synonym "n12" xsd:string
+property_value: has_exact_synonym "RNAseq 003-004" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:129
 comment: cell_set_preferred_alias:'' ; original_label:n13 ; cell_set_label:RNAseq 005-008 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n13|RNAseq 005-008" xsd:string
+property_value: has_exact_synonym "n13" xsd:string
+property_value: has_exact_synonym "RNAseq 005-008" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:13
@@ -309,24 +335,28 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000044288 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000058897 ! expresses Col25a1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028004 ! expresses Npy2r
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029101 ! expresses Rgs12
-property_value: has_exact_synonym "Sncg Npy2r|RNAseq 013" xsd:string
+property_value: has_exact_synonym "RNAseq 013" xsd:string
+property_value: has_exact_synonym "Sncg Npy2r" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:13
 
 [Term]
 id: AllenDendClass_CS202002013:130
 comment: cell_set_preferred_alias:'' ; original_label:n14 ; cell_set_label:RNAseq 005-007 ; cell_set_aligned_alias:''
-is_a: CL:4023024 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
-property_value: has_exact_synonym "n14|RNAseq 005-007" xsd:string
+is_a: CL:4023024 {xref="DOI:10.1101/2020.02.29.970558"} ! Neurogliaform Lamp5 GABAergic cortical interneuron (Mus musculus)
+property_value: has_exact_synonym "n14" xsd:string
+property_value: has_exact_synonym "RNAseq 005-007" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:131
 comment: cell_set_preferred_alias:'' ; original_label:n15 ; cell_set_label:RNAseq 005-006 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n15|RNAseq 005-006" xsd:string
+property_value: has_exact_synonym "n15" xsd:string
+property_value: has_exact_synonym "RNAseq 005-006" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:132
 comment: cell_set_preferred_alias:'' ; original_label:n16 ; cell_set_label:RNAseq 009-027 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n16|RNAseq 009-027" xsd:string
+property_value: has_exact_synonym "n16" xsd:string
+property_value: has_exact_synonym "RNAseq 009-027" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:133
@@ -335,36 +365,43 @@ name: Sncg
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cnr1,Col25a1. The minimal set of markers required for its identification is: Cnr1,Col25a1" []
 comment: cell_set_preferred_alias:Sncg ; original_label:n17 ; cell_set_label:RNAseq 009-014 ; cell_set_aligned_alias:Sncg
 is_a: AllenDendClass_CS202002013:123 ! GABAergic
-is_a: CL:4023015 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
+is_a: CL:4023015 {xref="DOI:10.1101/2020.02.29.970558"} ! sncg GABAergic cortical interneuron
 intersection_of: CL:0011005 ! GABAergic interneuron
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000044288 ! expresses Cnr1
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000058897 ! expresses Col25a1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000044288 ! expresses Cnr1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000058897 ! expresses Col25a1
-property_value: has_exact_synonym "n17|RNAseq 009-014|Sncg" xsd:string
+property_value: has_exact_synonym "n17" xsd:string
+property_value: has_exact_synonym "RNAseq 009-014" xsd:string
+property_value: has_exact_synonym "Sncg" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:133
 
 [Term]
 id: AllenDendClass_CS202002013:134
 name: Sncg_2
 comment: cell_set_preferred_alias:Sncg_2 ; original_label:n18 ; cell_set_label:RNAseq 009-010 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "Sncg_2|n18|RNAseq 009-010" xsd:string
+property_value: has_exact_synonym "n18" xsd:string
+property_value: has_exact_synonym "RNAseq 009-010" xsd:string
+property_value: has_exact_synonym "Sncg_2" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:135
 comment: cell_set_preferred_alias:'' ; original_label:n19 ; cell_set_label:RNAseq 011-014 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 011-014|n19" xsd:string
+property_value: has_exact_synonym "n19" xsd:string
+property_value: has_exact_synonym "RNAseq 011-014" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:136
 comment: cell_set_preferred_alias:'' ; original_label:n20 ; cell_set_label:RNAseq 011-012 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 011-012|n20" xsd:string
+property_value: has_exact_synonym "n20" xsd:string
+property_value: has_exact_synonym "RNAseq 011-012" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:137
 comment: cell_set_preferred_alias:'' ; original_label:n21 ; cell_set_label:RNAseq 013-014 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n21|RNAseq 013-014" xsd:string
+property_value: has_exact_synonym "n21" xsd:string
+property_value: has_exact_synonym "RNAseq 013-014" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:138
@@ -373,19 +410,22 @@ name: Vip expressing GABAergic interneuron of primary motor cortex (Mus musculus
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Vip. The minimal set of markers required for its identification is: Vip" []
 comment: cell_set_preferred_alias:Vip ; original_label:n22 ; cell_set_label:RNAseq 015-027 ; cell_set_aligned_alias:Vip
 is_a: AllenDendClass_CS202002013:123 ! GABAergic
-is_a: CL:4023016 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
+is_a: CL:4023016 {xref="DOI:10.1101/2020.02.29.970558"} ! Vip GABAergic cortical interneuron
 intersection_of: CL:0011005 ! GABAergic interneuron
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019772 ! expresses Vip
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019772 ! expresses Vip
-property_value: has_exact_synonym "n22|RNAseq 015-027|Vip" xsd:string
+property_value: has_exact_synonym "n22" xsd:string
+property_value: has_exact_synonym "RNAseq 015-027" xsd:string
+property_value: has_exact_synonym "Vip" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:138
 
 [Term]
 id: AllenDendClass_CS202002013:139
 comment: cell_set_preferred_alias:'' ; original_label:n23 ; cell_set_label:RNAseq 015-017 ; cell_set_aligned_alias:''
-is_a: CL:4023019 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
-property_value: has_exact_synonym "RNAseq 015-017|n23" xsd:string
+is_a: CL:4023019 {xref="DOI:10.1101/2020.02.29.970558"} ! L5/6 CCK and Vip expressing cortical GABAergic interneuron (Mus musculus)
+property_value: has_exact_synonym "n23" xsd:string
+property_value: has_exact_synonym "RNAseq 015-017" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:14
@@ -404,60 +444,72 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000058897 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020099 ! expresses Unc5b
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022656 ! expresses Nectin3
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049796 ! expresses Crh
-property_value: has_exact_synonym "Vip Sncg|RNAseq 014" xsd:string
+property_value: has_exact_synonym "RNAseq 014" xsd:string
+property_value: has_exact_synonym "Vip Sncg" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:14
 
 [Term]
 id: AllenDendClass_CS202002013:140
 comment: cell_set_preferred_alias:'' ; original_label:n24 ; cell_set_label:RNAseq 015-016 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 015-016|n24" xsd:string
+property_value: has_exact_synonym "n24" xsd:string
+property_value: has_exact_synonym "RNAseq 015-016" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:141
 comment: cell_set_preferred_alias:'' ; original_label:n25 ; cell_set_label:RNAseq 018-027 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n25|RNAseq 018-027" xsd:string
+property_value: has_exact_synonym "n25" xsd:string
+property_value: has_exact_synonym "RNAseq 018-027" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:142
 comment: cell_set_preferred_alias:'' ; original_label:n26 ; cell_set_label:RNAseq 018-025 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 018-025|n26" xsd:string
+property_value: has_exact_synonym "n26" xsd:string
+property_value: has_exact_synonym "RNAseq 018-025" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:143
 comment: cell_set_preferred_alias:'' ; original_label:n27 ; cell_set_label:RNAseq 018-020 ; cell_set_aligned_alias:''
-is_a: CL:4023014 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
-property_value: has_exact_synonym "n27|RNAseq 018-020" xsd:string
+is_a: CL:4023014 {xref="DOI:10.1101/2020.02.29.970558"} ! L5 Vip expressing cortical GABAergic interneuron (Mus musculus)
+property_value: has_exact_synonym "n27" xsd:string
+property_value: has_exact_synonym "RNAseq 018-020" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:144
 comment: cell_set_preferred_alias:'' ; original_label:n28 ; cell_set_label:RNAseq 019-020 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 019-020|n28" xsd:string
+property_value: has_exact_synonym "n28" xsd:string
+property_value: has_exact_synonym "RNAseq 019-020" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:145
 comment: cell_set_preferred_alias:'' ; original_label:n29 ; cell_set_label:RNAseq 021-025 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 021-025|n29" xsd:string
+property_value: has_exact_synonym "n29" xsd:string
+property_value: has_exact_synonym "RNAseq 021-025" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:146
 comment: cell_set_preferred_alias:'' ; original_label:n30 ; cell_set_label:RNAseq 022-025 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 022-025|n30" xsd:string
+property_value: has_exact_synonym "n30" xsd:string
+property_value: has_exact_synonym "RNAseq 022-025" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:147
 comment: cell_set_preferred_alias:'' ; original_label:n31 ; cell_set_label:RNAseq 022-023 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 022-023|n31" xsd:string
+property_value: has_exact_synonym "n31" xsd:string
+property_value: has_exact_synonym "RNAseq 022-023" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:148
 comment: cell_set_preferred_alias:'' ; original_label:n32 ; cell_set_label:RNAseq 024-025 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 024-025|n32" xsd:string
+property_value: has_exact_synonym "n32" xsd:string
+property_value: has_exact_synonym "RNAseq 024-025" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:149
 name: Vip_4
 comment: cell_set_preferred_alias:Vip_4 ; original_label:n33 ; cell_set_label:RNAseq 026-027 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n33|Vip_4|RNAseq 026-027" xsd:string
+property_value: has_exact_synonym "n33" xsd:string
+property_value: has_exact_synonym "RNAseq 026-027" xsd:string
+property_value: has_exact_synonym "Vip_4" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:15
@@ -473,61 +525,74 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026475 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027996 ! expresses Sfrp2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026475 ! expresses Rgs16
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027996 ! expresses Sfrp2
-property_value: has_exact_synonym "RNAseq 015|Vip Serpinf1_1" xsd:string
+property_value: has_exact_synonym "RNAseq 015" xsd:string
+property_value: has_exact_synonym "Vip Serpinf1_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:15
 
 [Term]
 id: AllenDendClass_CS202002013:150
 name: MGE
 comment: cell_set_preferred_alias:MGE ; original_label:n34 ; cell_set_label:RNAseq 028-057 ; cell_set_aligned_alias:MGE
-property_value: has_exact_synonym "MGE|n34|RNAseq 028-057" xsd:string
+property_value: has_exact_synonym "MGE" xsd:string
+property_value: has_exact_synonym "n34" xsd:string
+property_value: has_exact_synonym "RNAseq 028-057" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:151
 comment: cell_set_preferred_alias:'' ; original_label:n35 ; cell_set_label:RNAseq 029-057 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n35|RNAseq 029-057" xsd:string
+property_value: has_exact_synonym "n35" xsd:string
+property_value: has_exact_synonym "RNAseq 029-057" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:152
 comment: cell_set_preferred_alias:'' ; original_label:n36 ; cell_set_label:RNAseq 029-045 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 029-045|n36" xsd:string
+property_value: has_exact_synonym "n36" xsd:string
+property_value: has_exact_synonym "RNAseq 029-045" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:153
 comment: cell_set_preferred_alias:'' ; original_label:n37 ; cell_set_label:RNAseq 029-041 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 029-041|n37" xsd:string
+property_value: has_exact_synonym "n37" xsd:string
+property_value: has_exact_synonym "RNAseq 029-041" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:154
 comment: cell_set_preferred_alias:'' ; original_label:n38 ; cell_set_label:RNAseq 029-033 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 029-033|n38" xsd:string
+property_value: has_exact_synonym "n38" xsd:string
+property_value: has_exact_synonym "RNAseq 029-033" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:155
 comment: cell_set_preferred_alias:'' ; original_label:n39 ; cell_set_label:RNAseq 029-030 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n39|RNAseq 029-030" xsd:string
+property_value: has_exact_synonym "n39" xsd:string
+property_value: has_exact_synonym "RNAseq 029-030" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:156
 name: Sst_1
 comment: cell_set_preferred_alias:Sst_1 ; original_label:n40 ; cell_set_label:RNAseq 031-033 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 031-033|n40|Sst_1" xsd:string
+property_value: has_exact_synonym "n40" xsd:string
+property_value: has_exact_synonym "RNAseq 031-033" xsd:string
+property_value: has_exact_synonym "Sst_1" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:157
 comment: cell_set_preferred_alias:'' ; original_label:n41 ; cell_set_label:RNAseq 031-032 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 031-032|n41" xsd:string
+property_value: has_exact_synonym "n41" xsd:string
+property_value: has_exact_synonym "RNAseq 031-032" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:158
 comment: cell_set_preferred_alias:'' ; original_label:n42 ; cell_set_label:RNAseq 034-041 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 034-041|n42" xsd:string
+property_value: has_exact_synonym "n42" xsd:string
+property_value: has_exact_synonym "RNAseq 034-041" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:159
 comment: cell_set_preferred_alias:'' ; original_label:n43 ; cell_set_label:RNAseq 034-035 ; cell_set_aligned_alias:''
-is_a: CL:4023027 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
-property_value: has_exact_synonym "n43|RNAseq 034-035" xsd:string
+is_a: CL:4023027 {xref="DOI:10.1101/2020.02.29.970558"} ! L5 ‘T-shaped’ Martinotti Sst GABAergic cortical interneuron (Mus musculus)
+property_value: has_exact_synonym "n43" xsd:string
+property_value: has_exact_synonym "RNAseq 034-035" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:16
@@ -545,60 +610,71 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038718 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022371 ! expresses Col14a1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000037362 ! expresses Ccn3
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038718 ! expresses Pbx3
-property_value: has_exact_synonym "RNAseq 016|Vip Serpinf1_2" xsd:string
+property_value: has_exact_synonym "RNAseq 016" xsd:string
+property_value: has_exact_synonym "Vip Serpinf1_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:16
 
 [Term]
 id: AllenDendClass_CS202002013:160
 comment: cell_set_preferred_alias:'' ; original_label:n44 ; cell_set_label:RNAseq 036-041 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n44|RNAseq 036-041" xsd:string
+property_value: has_exact_synonym "n44" xsd:string
+property_value: has_exact_synonym "RNAseq 036-041" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:161
 comment: cell_set_preferred_alias:'' ; original_label:n45 ; cell_set_label:RNAseq 036-037 ; cell_set_aligned_alias:''
-is_a: CL:4023028 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
-property_value: has_exact_synonym "n45|RNAseq 036-037" xsd:string
+is_a: CL:4023028 {xref="DOI:10.1101/2020.02.29.970558"} ! L5 Non-martinotti Sst GABAergic cortical interneuron (Mus musculus)
+property_value: has_exact_synonym "n45" xsd:string
+property_value: has_exact_synonym "RNAseq 036-037" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:162
 comment: cell_set_preferred_alias:'' ; original_label:n46 ; cell_set_label:RNAseq 038-041 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 038-041|n46" xsd:string
+property_value: has_exact_synonym "n46" xsd:string
+property_value: has_exact_synonym "RNAseq 038-041" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:163
 comment: cell_set_preferred_alias:'' ; original_label:n47 ; cell_set_label:RNAseq 038-040 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n47|RNAseq 038-040" xsd:string
+property_value: has_exact_synonym "n47" xsd:string
+property_value: has_exact_synonym "RNAseq 038-040" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:164
 comment: cell_set_preferred_alias:'' ; original_label:n48 ; cell_set_label:RNAseq 039-040 ; cell_set_aligned_alias:''
-is_a: CL:4023030 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
-property_value: has_exact_synonym "n48|RNAseq 039-040" xsd:string
+is_a: CL:4023030 {xref="DOI:10.1101/2020.02.29.970558"} ! L2/3/4 Fan martinotti Sst GABAergic cortical interneuron (Mus musculus)
+property_value: has_exact_synonym "n48" xsd:string
+property_value: has_exact_synonym "RNAseq 039-040" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:165
 comment: cell_set_preferred_alias:'' ; original_label:n49 ; cell_set_label:RNAseq 042-045 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n49|RNAseq 042-045" xsd:string
+property_value: has_exact_synonym "n49" xsd:string
+property_value: has_exact_synonym "RNAseq 042-045" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:166
 comment: cell_set_preferred_alias:'' ; original_label:n50 ; cell_set_label:RNAseq 042-043 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 042-043|n50" xsd:string
+property_value: has_exact_synonym "n50" xsd:string
+property_value: has_exact_synonym "RNAseq 042-043" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:167
 comment: cell_set_preferred_alias:'' ; original_label:n51 ; cell_set_label:RNAseq 044-045 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n51|RNAseq 044-045" xsd:string
+property_value: has_exact_synonym "n51" xsd:string
+property_value: has_exact_synonym "RNAseq 044-045" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:168
 comment: cell_set_preferred_alias:'' ; original_label:n52 ; cell_set_label:RNAseq 046-057 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 046-057|n52" xsd:string
+property_value: has_exact_synonym "n52" xsd:string
+property_value: has_exact_synonym "RNAseq 046-057" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:169
 comment: cell_set_preferred_alias:'' ; original_label:n53 ; cell_set_label:RNAseq 046-048 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n53|RNAseq 046-048" xsd:string
+property_value: has_exact_synonym "n53" xsd:string
+property_value: has_exact_synonym "RNAseq 046-048" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:17
@@ -618,65 +694,78 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022425 ! exp
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000025813 ! expresses Homer2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000037362 ! expresses Ccn3
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040624 ! expresses Plekhg1
-property_value: has_exact_synonym "RNAseq 017|Vip Serpinf1_3" xsd:string
+property_value: has_exact_synonym "RNAseq 017" xsd:string
+property_value: has_exact_synonym "Vip Serpinf1_3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:17
 
 [Term]
 id: AllenDendClass_CS202002013:170
 comment: cell_set_preferred_alias:'' ; original_label:n54 ; cell_set_label:RNAseq 046-047 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 046-047|n54" xsd:string
+property_value: has_exact_synonym "n54" xsd:string
+property_value: has_exact_synonym "RNAseq 046-047" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:171
 comment: cell_set_preferred_alias:'' ; original_label:n55 ; cell_set_label:RNAseq 049-057 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n55|RNAseq 049-057" xsd:string
+property_value: has_exact_synonym "n55" xsd:string
+property_value: has_exact_synonym "RNAseq 049-057" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:172
 comment: cell_set_preferred_alias:'' ; original_label:n56 ; cell_set_label:RNAseq 049-055 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 049-055|n56" xsd:string
+property_value: has_exact_synonym "n56" xsd:string
+property_value: has_exact_synonym "RNAseq 049-055" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:173
 comment: cell_set_preferred_alias:'' ; original_label:n57 ; cell_set_label:RNAseq 050-055 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 050-055|n57" xsd:string
+property_value: has_exact_synonym "n57" xsd:string
+property_value: has_exact_synonym "RNAseq 050-055" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:174
 comment: cell_set_preferred_alias:'' ; original_label:n58 ; cell_set_label:RNAseq 051-055 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n58|RNAseq 051-055" xsd:string
+property_value: has_exact_synonym "n58" xsd:string
+property_value: has_exact_synonym "RNAseq 051-055" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:175
 comment: cell_set_preferred_alias:'' ; original_label:n59 ; cell_set_label:RNAseq 051-053 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n59|RNAseq 051-053" xsd:string
+property_value: has_exact_synonym "n59" xsd:string
+property_value: has_exact_synonym "RNAseq 051-053" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:176
 comment: cell_set_preferred_alias:'' ; original_label:n60 ; cell_set_label:RNAseq 052-053 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n60|RNAseq 052-053" xsd:string
+property_value: has_exact_synonym "n60" xsd:string
+property_value: has_exact_synonym "RNAseq 052-053" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:177
 comment: cell_set_preferred_alias:'' ; original_label:n61 ; cell_set_label:RNAseq 054-055 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n61|RNAseq 054-055" xsd:string
+property_value: has_exact_synonym "n61" xsd:string
+property_value: has_exact_synonym "RNAseq 054-055" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:178
 name: Chandelier
 comment: cell_set_preferred_alias:Chandelier ; original_label:n62 ; cell_set_label:RNAseq 056-057 ; cell_set_aligned_alias:Chandelier
-is_a: CL:4023036 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
-property_value: has_exact_synonym "RNAseq 056-057|n62|Chandelier" xsd:string
+is_a: CL:4023036 {xref="DOI:10.1101/2020.02.29.970558"} ! Chandelier Pvalb GABAergic cortical interneuron (Mus musculus)
+property_value: has_exact_synonym "Chandelier" xsd:string
+property_value: has_exact_synonym "n62" xsd:string
+property_value: has_exact_synonym "RNAseq 056-057" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:179
 name: Glutamatergic
 comment: cell_set_preferred_alias:Glutamatergic ; original_label:n63 ; cell_set_label:RNAseq 058-088 ; cell_set_aligned_alias:Glutamatergic
-is_a: CL:0000679 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"} ! glutamatergic neuron
+is_a: CL:0000679 {xref="DOI:10.1101/2020.02.29.970558"} ! glutamatergic neuron
 intersection_of: CL:0000679 ! glutamatergic neuron
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
-property_value: has_exact_synonym "Glutamatergic|n63|RNAseq 058-088" xsd:string
+property_value: has_exact_synonym "Glutamatergic" xsd:string
+property_value: has_exact_synonym "n63" xsd:string
+property_value: has_exact_synonym "RNAseq 058-088" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:179
 
 [Term]
@@ -693,25 +782,30 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000037362 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000045648 ! expresses Vwc2l
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000037362 ! expresses Ccn3
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000045648 ! expresses Vwc2l
-property_value: has_exact_synonym "Vip Htr1f|RNAseq 018" xsd:string
+property_value: has_exact_synonym "RNAseq 018" xsd:string
+property_value: has_exact_synonym "Vip Htr1f" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:18
 
 [Term]
 id: AllenDendClass_CS202002013:180
 comment: cell_set_preferred_alias:'' ; original_label:n64 ; cell_set_label:RNAseq 058-085 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n64|RNAseq 058-085" xsd:string
+property_value: has_exact_synonym "n64" xsd:string
+property_value: has_exact_synonym "RNAseq 058-085" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:181
 comment: cell_set_preferred_alias:'' ; original_label:n65 ; cell_set_label:RNAseq 058-073 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 058-073|n65" xsd:string
+property_value: has_exact_synonym "n65" xsd:string
+property_value: has_exact_synonym "RNAseq 058-073" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:182
 name: IT projecting
 comment: cell_set_preferred_alias:IT projecting ; original_label:n66 ; cell_set_label:RNAseq 058-069 ; cell_set_aligned_alias:IT projecting
-is_a: CL:4023008 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
-property_value: has_exact_synonym "IT projecting|RNAseq 058-069|n66" xsd:string
+is_a: CL:4023008 {xref="DOI:10.1101/2020.02.29.970558"} ! intratelencephalic-projecting glutamatergic cortical neuron
+property_value: has_exact_synonym "IT projecting" xsd:string
+property_value: has_exact_synonym "n66" xsd:string
+property_value: has_exact_synonym "RNAseq 058-069" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:183
@@ -726,34 +820,42 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021708 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028222 ! expresses Calb1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021708 ! expresses Rasgrf2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028222 ! expresses Calb1
-property_value: has_exact_synonym "n67|RNAseq 058-060|L2/3 IT" xsd:string
+property_value: has_exact_synonym "L2/3 IT" xsd:string
+property_value: has_exact_synonym "n67" xsd:string
+property_value: has_exact_synonym "RNAseq 058-060" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:183
 
 [Term]
 id: AllenDendClass_CS202002013:184
 comment: cell_set_preferred_alias:'' ; original_label:n68 ; cell_set_label:RNAseq 058-059 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 058-059|n68" xsd:string
+property_value: has_exact_synonym "n68" xsd:string
+property_value: has_exact_synonym "RNAseq 058-059" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:185
 comment: cell_set_preferred_alias:'' ; original_label:n69 ; cell_set_label:RNAseq 061-069 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 061-069|n69" xsd:string
+property_value: has_exact_synonym "n69" xsd:string
+property_value: has_exact_synonym "RNAseq 061-069" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:186
 comment: cell_set_preferred_alias:'' ; original_label:n70 ; cell_set_label:RNAseq 061-068 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n70|RNAseq 061-068" xsd:string
+property_value: has_exact_synonym "n70" xsd:string
+property_value: has_exact_synonym "RNAseq 061-068" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:187
 comment: cell_set_preferred_alias:'' ; original_label:n71 ; cell_set_label:RNAseq 061-066 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n71|RNAseq 061-066" xsd:string
+property_value: has_exact_synonym "n71" xsd:string
+property_value: has_exact_synonym "RNAseq 061-066" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:188
 name: L4
 comment: cell_set_preferred_alias:L4 ; original_label:n72 ; cell_set_label:RNAseq 061-062 ; cell_set_aligned_alias:L4
-property_value: has_exact_synonym "L4|n72|RNAseq 061-062" xsd:string
+property_value: has_exact_synonym "L4" xsd:string
+property_value: has_exact_synonym "n72" xsd:string
+property_value: has_exact_synonym "RNAseq 061-062" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:189
@@ -770,7 +872,9 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040452 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035357 ! expresses Pdzrn3
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039037 ! expresses St6galnac5
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040452 ! expresses Cdh12
-property_value: has_exact_synonym "RNAseq 063-066|L5 IT|n73" xsd:string
+property_value: has_exact_synonym "L5 IT" xsd:string
+property_value: has_exact_synonym "n73" xsd:string
+property_value: has_exact_synonym "RNAseq 063-066" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:189
 
 [Term]
@@ -787,19 +891,23 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038718 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000041741 ! expresses Pde3a
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038718 ! expresses Pbx3
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000041741 ! expresses Pde3a
-property_value: has_exact_synonym "RNAseq 019|Vip Gpc3" xsd:string
+property_value: has_exact_synonym "RNAseq 019" xsd:string
+property_value: has_exact_synonym "Vip Gpc3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:19
 
 [Term]
 id: AllenDendClass_CS202002013:190
 name: L5 IT_2
 comment: cell_set_preferred_alias:L5 IT_2 ; original_label:n74 ; cell_set_label:RNAseq 063-064 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 063-064|L5 IT_2|n74" xsd:string
+property_value: has_exact_synonym "L5 IT_2" xsd:string
+property_value: has_exact_synonym "n74" xsd:string
+property_value: has_exact_synonym "RNAseq 063-064" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:191
 comment: cell_set_preferred_alias:'' ; original_label:n75 ; cell_set_label:RNAseq 065-066 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n75|RNAseq 065-066" xsd:string
+property_value: has_exact_synonym "n75" xsd:string
+property_value: has_exact_synonym "RNAseq 065-066" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:192
@@ -816,7 +924,9 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000016918 ! expresses Sulf1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052430 ! expresses Bmpr1b
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses Il1rapl2
-property_value: has_exact_synonym "n76|RNAseq 067-068|L6 IT" xsd:string
+property_value: has_exact_synonym "L6 IT" xsd:string
+property_value: has_exact_synonym "n76" xsd:string
+property_value: has_exact_synonym "RNAseq 067-068" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:192
 
 [Term]
@@ -832,23 +942,28 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022206 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098760 ! expresses Gm2164
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022206 ! expresses Npr3
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098760 ! expresses Gm2164
-property_value: has_exact_synonym "n77|L5 ET|RNAseq 070-073" xsd:string
+property_value: has_exact_synonym "L5 ET" xsd:string
+property_value: has_exact_synonym "n77" xsd:string
+property_value: has_exact_synonym "RNAseq 070-073" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:193
 
 [Term]
 id: AllenDendClass_CS202002013:194
 comment: cell_set_preferred_alias:'' ; original_label:n78 ; cell_set_label:RNAseq 071-073 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n78|RNAseq 071-073" xsd:string
+property_value: has_exact_synonym "n78" xsd:string
+property_value: has_exact_synonym "RNAseq 071-073" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:195
 comment: cell_set_preferred_alias:'' ; original_label:n79 ; cell_set_label:RNAseq 071-072 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 071-072|n79" xsd:string
+property_value: has_exact_synonym "n79" xsd:string
+property_value: has_exact_synonym "RNAseq 071-072" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:196
 comment: cell_set_preferred_alias:'' ; original_label:n80 ; cell_set_label:RNAseq 074-085 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 074-085|n80" xsd:string
+property_value: has_exact_synonym "n80" xsd:string
+property_value: has_exact_synonym "RNAseq 074-085" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:197
@@ -863,18 +978,22 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029563 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000078591 ! expresses Hs3st4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029563 ! expresses Foxp2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000078591 ! expresses Hs3st4
-property_value: has_exact_synonym "RNAseq 074-080|L6 CT|n81" xsd:string
+property_value: has_exact_synonym "L6 CT" xsd:string
+property_value: has_exact_synonym "n81" xsd:string
+property_value: has_exact_synonym "RNAseq 074-080" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:197
 
 [Term]
 id: AllenDendClass_CS202002013:198
 comment: cell_set_preferred_alias:'' ; original_label:n82 ; cell_set_label:RNAseq 075-080 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n82|RNAseq 075-080" xsd:string
+property_value: has_exact_synonym "n82" xsd:string
+property_value: has_exact_synonym "RNAseq 075-080" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:199
 comment: cell_set_preferred_alias:'' ; original_label:n83 ; cell_set_label:RNAseq 075-078 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 075-078|n83" xsd:string
+property_value: has_exact_synonym "n83" xsd:string
+property_value: has_exact_synonym "RNAseq 075-078" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:2
@@ -883,7 +1002,7 @@ name: Lamp5 Egln3_1
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Chrna7,Fbn2,Npy,Pde11a,Tafa1. The minimal set of markers required for its identification is: Chrna7,Fbn2,Tafa1" []
 comment: cell_set_preferred_alias:Lamp5 Egln3_1 ; original_label:Lamp5 Egln3_1 ; cell_set_label:RNAseq 002 ; cell_set_aligned_alias:''
 is_a: AllenDendClass_CS202002013:125 ! Lamp5
-is_a: CL:4023010 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
+is_a: CL:4023010 {xref="DOI:10.1101/2020.02.29.970558"} ! alpha7 Lamp5 GABAergic cortical interneuron (Mus musculus)
 intersection_of: CL:0011005 ! GABAergic interneuron
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024598 ! expresses Fbn2
@@ -894,7 +1013,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000075270 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024598 ! expresses Fbn2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030525 ! expresses Chrna7
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059187 ! expresses Tafa1
-property_value: has_exact_synonym "Lamp5 Egln3_1|RNAseq 002" xsd:string
+property_value: has_exact_synonym "Lamp5 Egln3_1" xsd:string
+property_value: has_exact_synonym "RNAseq 002" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:2
 
 [Term]
@@ -913,23 +1033,27 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049796 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020042 ! expresses Btbd11
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031963 ! expresses Bmper
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049796 ! expresses Crh
-property_value: has_exact_synonym "RNAseq 020|Vip C1ql1" xsd:string
+property_value: has_exact_synonym "RNAseq 020" xsd:string
+property_value: has_exact_synonym "Vip C1ql1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:20
 
 [Term]
 id: AllenDendClass_CS202002013:200
 comment: cell_set_preferred_alias:'' ; original_label:n84 ; cell_set_label:RNAseq 076-078 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n84|RNAseq 076-078" xsd:string
+property_value: has_exact_synonym "n84" xsd:string
+property_value: has_exact_synonym "RNAseq 076-078" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:201
 comment: cell_set_preferred_alias:'' ; original_label:n85 ; cell_set_label:RNAseq 077-078 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n85|RNAseq 077-078" xsd:string
+property_value: has_exact_synonym "n85" xsd:string
+property_value: has_exact_synonym "RNAseq 077-078" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:202
 comment: cell_set_preferred_alias:'' ; original_label:n86 ; cell_set_label:RNAseq 079-080 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n86|RNAseq 079-080" xsd:string
+property_value: has_exact_synonym "n86" xsd:string
+property_value: has_exact_synonym "RNAseq 079-080" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:203
@@ -944,23 +1068,28 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019997 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039714 ! expresses Cplx3
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019997 ! expresses Ccn2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039714 ! expresses Cplx3
-property_value: has_exact_synonym "RNAseq 081-085|L6b|n87" xsd:string
+property_value: has_exact_synonym "L6b" xsd:string
+property_value: has_exact_synonym "n87" xsd:string
+property_value: has_exact_synonym "RNAseq 081-085" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:203
 
 [Term]
 id: AllenDendClass_CS202002013:204
 comment: cell_set_preferred_alias:'' ; original_label:n88 ; cell_set_label:RNAseq 081-084 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 081-084|n88" xsd:string
+property_value: has_exact_synonym "n88" xsd:string
+property_value: has_exact_synonym "RNAseq 081-084" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:205
 comment: cell_set_preferred_alias:'' ; original_label:n89 ; cell_set_label:RNAseq 082-084 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n89|RNAseq 082-084" xsd:string
+property_value: has_exact_synonym "n89" xsd:string
+property_value: has_exact_synonym "RNAseq 082-084" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:206
 comment: cell_set_preferred_alias:'' ; original_label:n90 ; cell_set_label:RNAseq 082-083 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n90|RNAseq 082-083" xsd:string
+property_value: has_exact_synonym "n90" xsd:string
+property_value: has_exact_synonym "RNAseq 082-083" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:207
@@ -975,13 +1104,16 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004151 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047907 ! expresses Tshz2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004151 ! expresses Etv1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047907 ! expresses Tshz2
-property_value: has_exact_synonym "L5/6 NP|n91|RNAseq 086-088" xsd:string
+property_value: has_exact_synonym "L5/6 NP" xsd:string
+property_value: has_exact_synonym "n91" xsd:string
+property_value: has_exact_synonym "RNAseq 086-088" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:207
 
 [Term]
 id: AllenDendClass_CS202002013:208
 comment: cell_set_preferred_alias:'' ; original_label:n92 ; cell_set_label:RNAseq 086-087 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 086-087|n92" xsd:string
+property_value: has_exact_synonym "n92" xsd:string
+property_value: has_exact_synonym "RNAseq 086-087" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:21
@@ -997,7 +1129,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032269 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000112276 ! expresses 5033421B08Rik
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032269 ! expresses Htr3a
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000112276 ! expresses 5033421B08Rik
-property_value: has_exact_synonym "Vip Mybpc1_2|RNAseq 021" xsd:string
+property_value: has_exact_synonym "RNAseq 021" xsd:string
+property_value: has_exact_synonym "Vip Mybpc1_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:21
 
 [Term]
@@ -1007,19 +1140,24 @@ name: Gli3,Slc39a12 expressing astrocyte of the cerebral cortex of primary motor
 def: "A astrocyte of the cerebral cortex of the Mus musculus primary motor cortex that expresses: Gli3,Slc39a12. The minimal set of markers required for its identification is: Gli3,Slc39a12" []
 comment: cell_set_preferred_alias:Astro ; original_label:n94 ; cell_set_label:RNAseq 092-094 ; cell_set_aligned_alias:Astrocyte
 is_a: CL:0000029 ! neuron neural crest derived
-is_a: CL:0002605 {oio:hasDbXref="doi:10.1101/2020.02.29.970558"} ! astrocyte of the cerebral cortex
+is_a: CL:0002605 {xref="doi:10.1101/2020.02.29.970558"} ! astrocyte of the cerebral cortex
 is_a: CL:0010012 ! cerebral cortex neuron
 intersection_of: CL:0002605 ! astrocyte of the cerebral cortex
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
-property_value: has_exact_synonym "Astrocyte|Astro|n94|RNAseq 092-094" xsd:string
+property_value: has_exact_synonym "Astro" xsd:string
+property_value: has_exact_synonym "Astrocyte" xsd:string
+property_value: has_exact_synonym "n94" xsd:string
+property_value: has_exact_synonym "RNAseq 092-094" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:210
 
 [Term]
 id: AllenDendClass_CS202002013:211
 name: Astro_1
 comment: cell_set_preferred_alias:Astro_1 ; original_label:n95 ; cell_set_label:RNAseq 093-094 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "Astro_1|RNAseq 093-094|n95" xsd:string
+property_value: has_exact_synonym "Astro_1" xsd:string
+property_value: has_exact_synonym "n95" xsd:string
+property_value: has_exact_synonym "RNAseq 093-094" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:212
@@ -1028,43 +1166,52 @@ name: Oligo
 def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: Gjc3. The minimal set of markers required for its identification is: Gjc3" []
 comment: cell_set_preferred_alias:Oligo ; original_label:n96 ; cell_set_label:RNAseq 095-102 ; cell_set_aligned_alias:Oligodendrocyte
 is_a: CL:0000029 ! neuron neural crest derived
-is_a: CL:0000128 {oio:hasDbXref="doi:10.1101/2020.02.29.970558"} ! oligodendrocyte
+is_a: CL:0000128 {xref="doi:10.1101/2020.02.29.970558"} ! oligodendrocyte
 is_a: CL:2000029 ! central nervous system neuron
 intersection_of: CL:0000128 ! oligodendrocyte
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
-property_value: has_exact_synonym "Oligo|n96|Oligodendrocyte|RNAseq 095-102" xsd:string
+property_value: has_exact_synonym "n96" xsd:string
+property_value: has_exact_synonym "Oligo" xsd:string
+property_value: has_exact_synonym "Oligodendrocyte" xsd:string
+property_value: has_exact_synonym "RNAseq 095-102" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:212
 
 [Term]
 id: AllenDendClass_CS202002013:213
 comment: cell_set_preferred_alias:'' ; original_label:n97 ; cell_set_label:RNAseq 095-098 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n97|RNAseq 095-098" xsd:string
+property_value: has_exact_synonym "n97" xsd:string
+property_value: has_exact_synonym "RNAseq 095-098" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:214
 comment: cell_set_preferred_alias:'' ; original_label:n98 ; cell_set_label:RNAseq 095-096 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n98|RNAseq 095-096" xsd:string
+property_value: has_exact_synonym "n98" xsd:string
+property_value: has_exact_synonym "RNAseq 095-096" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:215
 comment: cell_set_preferred_alias:'' ; original_label:n99 ; cell_set_label:RNAseq 097-098 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n99|RNAseq 097-098" xsd:string
+property_value: has_exact_synonym "n99" xsd:string
+property_value: has_exact_synonym "RNAseq 097-098" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:216
 comment: cell_set_preferred_alias:'' ; original_label:n100 ; cell_set_label:RNAseq 099-102 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n100|RNAseq 099-102" xsd:string
+property_value: has_exact_synonym "n100" xsd:string
+property_value: has_exact_synonym "RNAseq 099-102" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:217
 comment: cell_set_preferred_alias:'' ; original_label:n101 ; cell_set_label:RNAseq 099-100 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "n101|RNAseq 099-100" xsd:string
+property_value: has_exact_synonym "n101" xsd:string
+property_value: has_exact_synonym "RNAseq 099-100" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:218
 comment: cell_set_preferred_alias:'' ; original_label:n102 ; cell_set_label:RNAseq 101-102 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "RNAseq 101-102|n102" xsd:string
+property_value: has_exact_synonym "n102" xsd:string
+property_value: has_exact_synonym "RNAseq 101-102" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:22
@@ -1080,7 +1227,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019772 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000110281 ! expresses Gm2516
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000003657 ! expresses Calb2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000110281 ! expresses Gm2516
-property_value: has_exact_synonym "Vip Mybpc1_1|RNAseq 022" xsd:string
+property_value: has_exact_synonym "RNAseq 022" xsd:string
+property_value: has_exact_synonym "Vip Mybpc1_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:22
 
 [Term]
@@ -1097,7 +1245,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021919 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028004 ! expresses Npy2r
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021919 ! expresses Chat
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028004 ! expresses Npy2r
-property_value: has_exact_synonym "Vip Chat_1|RNAseq 023" xsd:string
+property_value: has_exact_synonym "RNAseq 023" xsd:string
+property_value: has_exact_synonym "Vip Chat_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:23
 
 [Term]
@@ -1114,7 +1263,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024211 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000060371 ! expresses Caln1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024211 ! expresses Grm8
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000060371 ! expresses Caln1
-property_value: has_exact_synonym "Vip Mybpc1_3|RNAseq 024" xsd:string
+property_value: has_exact_synonym "RNAseq 024" xsd:string
+property_value: has_exact_synonym "Vip Mybpc1_3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:24
 
 [Term]
@@ -1131,7 +1281,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026322 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032017 ! expresses Grik4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026322 ! expresses Htr4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032017 ! expresses Grik4
-property_value: has_exact_synonym "Vip Chat_2|RNAseq 025" xsd:string
+property_value: has_exact_synonym "RNAseq 025" xsd:string
+property_value: has_exact_synonym "Vip Chat_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:25
 
 [Term]
@@ -1148,7 +1299,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032625 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000110468 ! expresses Gm39185
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032625 ! expresses Thsd7a
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000110468 ! expresses Gm39185
-property_value: has_exact_synonym "RNAseq 026|Vip Igfbp6_1" xsd:string
+property_value: has_exact_synonym "RNAseq 026" xsd:string
+property_value: has_exact_synonym "Vip Igfbp6_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:26
 
 [Term]
@@ -1165,7 +1317,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042581 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049796 ! expresses Crh
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042581 ! expresses Thsd7b
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049796 ! expresses Crh
-property_value: has_exact_synonym "Vip Igfbp6_2|RNAseq 027" xsd:string
+property_value: has_exact_synonym "RNAseq 027" xsd:string
+property_value: has_exact_synonym "Vip Igfbp6_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:27
 
 [Term]
@@ -1175,12 +1328,13 @@ name: Sst Chodl
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Nos1. The minimal set of markers required for its identification is: Nos1" []
 comment: cell_set_preferred_alias:Sst Chodl ; original_label:Sst Chodl ; cell_set_label:RNAseq 028 ; cell_set_aligned_alias:Sst Chodl
 is_a: AllenDendClass_CS202002013:123 ! GABAergic
-is_a: CL:4023025 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
+is_a: CL:4023025 {xref="DOI:10.1101/2020.02.29.970558"} ! Long-range projecting Sst GABAergic cortical interneuron (Mus musculus)
 intersection_of: CL:0011005 ! GABAergic interneuron
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029361 ! expresses Nos1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029361 ! expresses Nos1
-property_value: has_exact_synonym "RNAseq 028|Sst Chodl" xsd:string
+property_value: has_exact_synonym "RNAseq 028" xsd:string
+property_value: has_exact_synonym "Sst Chodl" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:28
 
 [Term]
@@ -1198,7 +1352,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000097462 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021647 ! expresses Cartpt
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses Il1rapl2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000097462 ! expresses 9530026P05Rik
-property_value: has_exact_synonym "Sst Penk|RNAseq 029" xsd:string
+property_value: has_exact_synonym "RNAseq 029" xsd:string
+property_value: has_exact_synonym "Sst Penk" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:29
 
 [Term]
@@ -1208,7 +1363,7 @@ name: Lamp5 Egln3_2
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Crim1,Npy,Pde11a,Zfp804b. The minimal set of markers required for its identification is: Crim1,Zfp804b" []
 comment: cell_set_preferred_alias:Lamp5 Egln3_2 ; original_label:Lamp5 Egln3_2 ; cell_set_label:RNAseq 003 ; cell_set_aligned_alias:''
 is_a: AllenDendClass_CS202002013:125 ! Lamp5
-is_a: CL:4023022 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
+is_a: CL:4023022 {xref="DOI:10.1101/2020.02.29.970558"} ! canopy Lamp5 GABAergic cortical interneuron (Mus musculus)
 intersection_of: CL:0011005 ! GABAergic interneuron
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024074 ! expresses Crim1
@@ -1217,7 +1372,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000075270 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000092094 ! expresses Zfp804b
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024074 ! expresses Crim1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000092094 ! expresses Zfp804b
-property_value: has_exact_synonym "Lamp5 Egln3_2|RNAseq 003" xsd:string
+property_value: has_exact_synonym "Lamp5 Egln3_2" xsd:string
+property_value: has_exact_synonym "RNAseq 003" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:3
 
 [Term]
@@ -1233,7 +1389,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042453 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses Il1rapl2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042453 ! expresses Reln
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses Il1rapl2
-property_value: has_exact_synonym "RNAseq 030|Sst Myh8_1" xsd:string
+property_value: has_exact_synonym "RNAseq 030" xsd:string
+property_value: has_exact_synonym "Sst Myh8_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:30
 
 [Term]
@@ -1251,7 +1408,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000055214 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031841 ! expresses Cdh13
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000051910 ! expresses Sox6
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000055214 ! expresses Pld5
-property_value: has_exact_synonym "RNAseq 031|Sst Myh8_2" xsd:string
+property_value: has_exact_synonym "RNAseq 031" xsd:string
+property_value: has_exact_synonym "Sst Myh8_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:31
 
 [Term]
@@ -1267,7 +1425,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019828 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000025370 ! expresses Cdh9
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019828 ! expresses Grm1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000025370 ! expresses Cdh9
-property_value: has_exact_synonym "RNAseq 032|Sst Myh8_3" xsd:string
+property_value: has_exact_synonym "RNAseq 032" xsd:string
+property_value: has_exact_synonym "Sst Myh8_3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:32
 
 [Term]
@@ -1283,7 +1442,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027400 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000105068 ! expresses Gm30835
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027400 ! expresses Pdyn
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000105068 ! expresses Gm30835
-property_value: has_exact_synonym "Sst Htr1a|RNAseq 033" xsd:string
+property_value: has_exact_synonym "RNAseq 033" xsd:string
+property_value: has_exact_synonym "Sst Htr1a" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:33
 
 [Term]
@@ -1301,7 +1461,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024598 ! expresses Fbn2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026141 ! expresses Col19a1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! expresses Trpc6
-property_value: has_exact_synonym "RNAseq 034|Sst Etv1" xsd:string
+property_value: has_exact_synonym "RNAseq 034" xsd:string
+property_value: has_exact_synonym "Sst Etv1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:34
 
 [Term]
@@ -1319,7 +1480,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000095105 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038156 ! expresses Spon1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039137 ! expresses Whrn
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000095105 ! expresses Edaradd
-property_value: has_exact_synonym "Sst Pvalb Etv1|RNAseq 035" xsd:string
+property_value: has_exact_synonym "RNAseq 035" xsd:string
+property_value: has_exact_synonym "Sst Pvalb Etv1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:35
 
 [Term]
@@ -1337,7 +1499,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000010461 ! expresses Eya4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026393 ! expresses Nek7
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! expresses Trpc6
-property_value: has_exact_synonym "RNAseq 036|Sst Crhr2_1" xsd:string
+property_value: has_exact_synonym "RNAseq 036" xsd:string
+property_value: has_exact_synonym "Sst Crhr2_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:36
 
 [Term]
@@ -1353,7 +1516,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026765 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! expresses Trpc6
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026765 ! expresses Lypd6b
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! expresses Trpc6
-property_value: has_exact_synonym "Sst Crhr2_2|RNAseq 037" xsd:string
+property_value: has_exact_synonym "RNAseq 037" xsd:string
+property_value: has_exact_synonym "Sst Crhr2_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:37
 
 [Term]
@@ -1363,14 +1527,15 @@ name: Sst Hpse
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Hpse,Rerg. The minimal set of markers required for its identification is: Hpse,Rerg" []
 comment: cell_set_preferred_alias:Sst Hpse ; original_label:Sst Hpse ; cell_set_label:RNAseq 038 ; cell_set_aligned_alias:''
 is_a: AllenDendClass_CS202002013:123 ! GABAergic
-is_a: CL:4023031 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
+is_a: CL:4023031 {xref="DOI:10.1101/2020.02.29.970558"} ! L4 Sst GABAergic cortical interneuron (Mus musculus)
 intersection_of: CL:0011005 ! GABAergic interneuron
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030222 ! expresses Rerg
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035273 ! expresses Hpse
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030222 ! expresses Rerg
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035273 ! expresses Hpse
-property_value: has_exact_synonym "RNAseq 038|Sst Hpse" xsd:string
+property_value: has_exact_synonym "RNAseq 038" xsd:string
+property_value: has_exact_synonym "Sst Hpse" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:38
 
 [Term]
@@ -1386,7 +1551,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004366 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027965 ! expresses Olfm3
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004366 ! expresses Sst
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027965 ! expresses Olfm3
-property_value: has_exact_synonym "RNAseq 039|Sst Calb2" xsd:string
+property_value: has_exact_synonym "RNAseq 039" xsd:string
+property_value: has_exact_synonym "Sst Calb2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:39
 
 [Term]
@@ -1406,7 +1572,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000075270 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020902 ! expresses Ntn1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021508 ! expresses Cxcl14
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042453 ! expresses Reln
-property_value: has_exact_synonym "RNAseq 004|Lamp5 Egln3_3" xsd:string
+property_value: has_exact_synonym "Lamp5 Egln3_3" xsd:string
+property_value: has_exact_synonym "RNAseq 004" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:4
 
 [Term]
@@ -1422,7 +1589,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000116610 ! expresses Gm49678
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! expresses Trpc6
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000116610 ! expresses Gm49678
-property_value: has_exact_synonym "RNAseq 040|Sst Pappa" xsd:string
+property_value: has_exact_synonym "RNAseq 040" xsd:string
+property_value: has_exact_synonym "Sst Pappa" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:40
 
 [Term]
@@ -1432,14 +1600,15 @@ name: Sst Pvalb Calb2
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Moxd1,Prkg2. The minimal set of markers required for its identification is: Moxd1,Prkg2" []
 comment: cell_set_preferred_alias:Sst Pvalb Calb2 ; original_label:Sst Pvalb Calb2 ; cell_set_label:RNAseq 041 ; cell_set_aligned_alias:''
 is_a: AllenDendClass_CS202002013:123 ! GABAergic
-is_a: CL:4023034 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
+is_a: CL:4023034 {xref="DOI:10.1101/2020.02.29.970558"} ! L2/3 Pvalb like Sst GABAergic cortical interneuron (Mus musculus)
 intersection_of: CL:0011005 ! GABAergic interneuron
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020000 ! expresses Moxd1
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029334 ! expresses Prkg2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020000 ! expresses Moxd1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029334 ! expresses Prkg2
-property_value: has_exact_synonym "Sst Pvalb Calb2|RNAseq 041" xsd:string
+property_value: has_exact_synonym "RNAseq 041" xsd:string
+property_value: has_exact_synonym "Sst Pvalb Calb2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:41
 
 [Term]
@@ -1455,7 +1624,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052062 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111950 ! expresses Gm48893
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052062 ! expresses Pard3b
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111950 ! expresses Gm48893
-property_value: has_exact_synonym "RNAseq 042|Sst C1ql3_1" xsd:string
+property_value: has_exact_synonym "RNAseq 042" xsd:string
+property_value: has_exact_synonym "Sst C1ql3_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:42
 
 [Term]
@@ -1473,7 +1643,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049001 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030074 ! expresses Gxylt2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035131 ! expresses Brinp3
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049001 ! expresses Ndnf
-property_value: has_exact_synonym "RNAseq 043|Sst C1ql3_2" xsd:string
+property_value: has_exact_synonym "RNAseq 043" xsd:string
+property_value: has_exact_synonym "Sst C1ql3_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:43
 
 [Term]
@@ -1491,7 +1662,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036019 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000025400 ! expresses Tac2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031841 ! expresses Cdh13
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036019 ! expresses Tmtc2
-property_value: has_exact_synonym "Sst Tac2|RNAseq 044" xsd:string
+property_value: has_exact_synonym "RNAseq 044" xsd:string
+property_value: has_exact_synonym "Sst Tac2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:44
 
 [Term]
@@ -1509,7 +1681,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040710 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022306 ! expresses Zfpm2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039037 ! expresses St6galnac5
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040710 ! expresses St8sia4
-property_value: has_exact_synonym "RNAseq 045|Sst Th_1" xsd:string
+property_value: has_exact_synonym "RNAseq 045" xsd:string
+property_value: has_exact_synonym "Sst Th_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:45
 
 [Term]
@@ -1527,7 +1700,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052062 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004366 ! expresses Sst
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000045731 ! expresses Pnoc
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052062 ! expresses Pard3b
-property_value: has_exact_synonym "Sst Th_2|RNAseq 046" xsd:string
+property_value: has_exact_synonym "RNAseq 046" xsd:string
+property_value: has_exact_synonym "Sst Th_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:46
 
 [Term]
@@ -1543,7 +1717,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000000214 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028971 ! expresses Cort
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000000214 ! expresses Th
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028971 ! expresses Cort
-property_value: has_exact_synonym "RNAseq 047|Sst Th_3" xsd:string
+property_value: has_exact_synonym "RNAseq 047" xsd:string
+property_value: has_exact_synonym "Sst Th_3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:47
 
 [Term]
@@ -1559,7 +1734,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000000214 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000001260 ! expresses Gabrg1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000000214 ! expresses Th
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000001260 ! expresses Gabrg1
-property_value: has_exact_synonym "RNAseq 048|Pvalb Gabrg1" xsd:string
+property_value: has_exact_synonym "Pvalb Gabrg1" xsd:string
+property_value: has_exact_synonym "RNAseq 048" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:48
 
 [Term]
@@ -1577,7 +1753,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000073154 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036834 ! expresses Plch1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000061762 ! expresses Tac1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000073154 ! expresses 9330158H04Rik
-property_value: has_exact_synonym "RNAseq 049|Pvalb Egfem1" xsd:string
+property_value: has_exact_synonym "Pvalb Egfem1" xsd:string
+property_value: has_exact_synonym "RNAseq 049" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:49
 
 [Term]
@@ -1596,7 +1773,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049001 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000075270 ! expresses Pde11a
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027971 ! expresses Ndst4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000044447 ! expresses Dock5
-property_value: has_exact_synonym "Lamp5 Pdlim5_1|RNAseq 005" xsd:string
+property_value: has_exact_synonym "Lamp5 Pdlim5_1" xsd:string
+property_value: has_exact_synonym "RNAseq 005" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:5
 
 [Term]
@@ -1614,7 +1792,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031558 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022297 ! expresses Fzd6
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026452 ! expresses Syt2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031558 ! expresses Slit2
-property_value: has_exact_synonym "RNAseq 050|Pvalb Gpr149" xsd:string
+property_value: has_exact_synonym "Pvalb Gpr149" xsd:string
+property_value: has_exact_synonym "RNAseq 050" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:50
 
 [Term]
@@ -1634,7 +1813,8 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000010066 ! exp
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026452 ! expresses Syt2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000034310 ! expresses Tmem132d
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000063531 ! expresses Sema3e
-property_value: has_exact_synonym "RNAseq 051|Pvalb Kank4" xsd:string
+property_value: has_exact_synonym "Pvalb Kank4" xsd:string
+property_value: has_exact_synonym "RNAseq 051" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:51
 
 [Term]
@@ -1652,7 +1832,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000100650 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028971 ! expresses Cort
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000069132 ! expresses Nxph2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000100650 ! expresses Gm28807
-property_value: has_exact_synonym "RNAseq 052|Pvalb Calb1_1" xsd:string
+property_value: has_exact_synonym "Pvalb Calb1_1" xsd:string
+property_value: has_exact_synonym "RNAseq 052" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:52
 
 [Term]
@@ -1670,7 +1851,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000061762 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000034324 ! expresses Tmem132c
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038048 ! expresses Cntnap5c
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000061762 ! expresses Tac1
-property_value: has_exact_synonym "Pvalb Calb1_2|RNAseq 053" xsd:string
+property_value: has_exact_synonym "Pvalb Calb1_2" xsd:string
+property_value: has_exact_synonym "RNAseq 053" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:53
 
 [Term]
@@ -1686,7 +1868,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031772 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111061 ! expresses Gm46102
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031772 ! expresses Cntnap4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111061 ! expresses Gm46102
-property_value: has_exact_synonym "RNAseq 054|Pvalb Reln" xsd:string
+property_value: has_exact_synonym "Pvalb Reln" xsd:string
+property_value: has_exact_synonym "RNAseq 054" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:54
 
 [Term]
@@ -1702,7 +1885,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000010461 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses Il1rapl2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000010461 ! expresses Eya4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses Il1rapl2
-property_value: has_exact_synonym "RNAseq 055|Pvalb Il1rapl2" xsd:string
+property_value: has_exact_synonym "Pvalb Il1rapl2" xsd:string
+property_value: has_exact_synonym "RNAseq 055" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:55
 
 [Term]
@@ -1718,7 +1902,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000001496 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000002900 ! expresses Lamb1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000001496 ! expresses Nkx2-1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000002900 ! expresses Lamb1
-property_value: has_exact_synonym "RNAseq 056|Pvalb Vipr2_1" xsd:string
+property_value: has_exact_synonym "Pvalb Vipr2_1" xsd:string
+property_value: has_exact_synonym "RNAseq 056" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:56
 
 [Term]
@@ -1734,7 +1919,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020099 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000067028 ! expresses Cntnap5b
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020099 ! expresses Unc5b
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000067028 ! expresses Cntnap5b
-property_value: has_exact_synonym "Pvalb Vipr2_2|RNAseq 057" xsd:string
+property_value: has_exact_synonym "Pvalb Vipr2_2" xsd:string
+property_value: has_exact_synonym "RNAseq 057" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:57
 
 [Term]
@@ -1754,7 +1940,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098097 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000009376 ! expresses Met
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036545 ! expresses Adamts2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098097 ! expresses 6530403H02Rik
-property_value: has_exact_synonym "RNAseq 058|L2/3 IT_1" xsd:string
+property_value: has_exact_synonym "L2/3 IT_1" xsd:string
+property_value: has_exact_synonym "RNAseq 058" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:58
 
 [Term]
@@ -1776,7 +1963,8 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026676 ! exp
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027210 ! expresses Meis2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029705 ! expresses Cux1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000062372 ! expresses Otof
-property_value: has_exact_synonym "L2/3 IT_2|RNAseq 059" xsd:string
+property_value: has_exact_synonym "L2/3 IT_2" xsd:string
+property_value: has_exact_synonym "RNAseq 059" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:59
 
 [Term]
@@ -1792,7 +1980,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029819 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049001 ! expresses Ndnf
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000075270 ! expresses Pde11a
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049001 ! expresses Ndnf
-property_value: has_exact_synonym "Lamp5 Pdlim5_2|RNAseq 006" xsd:string
+property_value: has_exact_synonym "Lamp5 Pdlim5_2" xsd:string
+property_value: has_exact_synonym "RNAseq 006" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:6
 
 [Term]
@@ -1812,7 +2001,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000056427 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031216 ! expresses Stard8
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042589 ! expresses Cux2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000056427 ! expresses Slit3
-property_value: has_exact_synonym "RNAseq 060|L2/3 IT_3" xsd:string
+property_value: has_exact_synonym "L2/3 IT_3" xsd:string
+property_value: has_exact_synonym "RNAseq 060" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:60
 
 [Term]
@@ -1830,7 +2020,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000073565 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000017978 ! expresses Cadps2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036192 ! expresses Rorb
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000073565 ! expresses Prr16
-property_value: has_exact_synonym "L4/5 IT_1|RNAseq 061" xsd:string
+property_value: has_exact_synonym "L4/5 IT_1" xsd:string
+property_value: has_exact_synonym "RNAseq 061" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:61
 
 [Term]
@@ -1848,14 +2039,16 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004415 ! expresses Col26a1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032564 ! expresses Cpne4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses Il1rapl2
-property_value: has_exact_synonym "L4/5 IT_2|RNAseq 062" xsd:string
+property_value: has_exact_synonym "L4/5 IT_2" xsd:string
+property_value: has_exact_synonym "RNAseq 062" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:62
 
 [Term]
 id: AllenDendClass_CS202002013:63
 name: L5 IT_1
 comment: cell_set_preferred_alias:L5 IT_1 ; original_label:L5 IT_1 ; cell_set_label:RNAseq 063 ; cell_set_aligned_alias:''
-property_value: has_exact_synonym "L5 IT_1|RNAseq 063" xsd:string
+property_value: has_exact_synonym "L5 IT_1" xsd:string
+property_value: has_exact_synonym "RNAseq 063" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:64
@@ -1877,7 +2070,8 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000003746 ! exp
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022419 ! expresses Deptor
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000053399 ! expresses Adamts18
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000116610 ! expresses Gm49678
-property_value: has_exact_synonym "RNAseq 064|L5 IT_2" xsd:string
+property_value: has_exact_synonym "L5 IT_2" xsd:string
+property_value: has_exact_synonym "RNAseq 064" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:64
 
 [Term]
@@ -1902,7 +2096,8 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019889 ! exp
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022425 ! expresses Enpp2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000034009 ! expresses Rxfp1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000055214 ! expresses Pld5
-property_value: has_exact_synonym "L5 IT_3|RNAseq 065" xsd:string
+property_value: has_exact_synonym "L5 IT_3" xsd:string
+property_value: has_exact_synonym "RNAseq 065" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:65
 
 [Term]
@@ -1923,7 +2118,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000055214 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029154 ! expresses Cwh43
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000045613 ! expresses Chrm2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000055214 ! expresses Pld5
-property_value: has_exact_synonym "RNAseq 066|L5 IT_4" xsd:string
+property_value: has_exact_synonym "L5 IT_4" xsd:string
+property_value: has_exact_synonym "RNAseq 066" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:66
 
 [Term]
@@ -1942,7 +2138,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059857 ! expresses Ntng1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021765 ! expresses Fst
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059857 ! expresses Ntng1
-property_value: has_exact_synonym "RNAseq 067|L6 IT_1" xsd:string
+property_value: has_exact_synonym "L6 IT_1" xsd:string
+property_value: has_exact_synonym "RNAseq 067" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:67
 
 [Term]
@@ -1961,7 +2158,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052430 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses Il1rapl2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028909 ! expresses Ptpru
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049630 ! expresses C1ql3
-property_value: has_exact_synonym "L6 IT_2|RNAseq 068" xsd:string
+property_value: has_exact_synonym "L6 IT_2" xsd:string
+property_value: has_exact_synonym "RNAseq 068" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:68
 
 [Term]
@@ -1977,7 +2175,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026826 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042596 ! expresses Tfap2d
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026826 ! expresses Nr4a2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042596 ! expresses Tfap2d
-property_value: has_exact_synonym "RNAseq 069|L6 IT Car3" xsd:string
+property_value: has_exact_synonym "L6 IT Car3" xsd:string
+property_value: has_exact_synonym "RNAseq 069" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:69
 
 [Term]
@@ -1995,7 +2194,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000055471 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000075270 ! expresses Pde11a
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022231 ! expresses Sema5a
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000055471 ! expresses Alk
-property_value: has_exact_synonym "RNAseq 007|Lamp5 Slc35d3" xsd:string
+property_value: has_exact_synonym "Lamp5 Slc35d3" xsd:string
+property_value: has_exact_synonym "RNAseq 007" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:7
 
 [Term]
@@ -2011,7 +2211,9 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022206 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030905 ! expresses Crym
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098760 ! expresses Gm2164
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030905 ! expresses Crym
-property_value: has_exact_synonym "L5 PT_1|RNAseq 070|L5 ET_1" xsd:string
+property_value: has_exact_synonym "L5 ET_1" xsd:string
+property_value: has_exact_synonym "L5 PT_1" xsd:string
+property_value: has_exact_synonym "RNAseq 070" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:70
 
 [Term]
@@ -2031,7 +2233,9 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098760 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021541 ! expresses Trpc7
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022112 ! expresses Gpc5
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040732 ! expresses Erg
-property_value: has_exact_synonym "RNAseq 071|L5 PT_2|L5 ET_2" xsd:string
+property_value: has_exact_synonym "L5 ET_2" xsd:string
+property_value: has_exact_synonym "L5 PT_2" xsd:string
+property_value: has_exact_synonym "RNAseq 071" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:71
 
 [Term]
@@ -2053,7 +2257,9 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021541 ! exp
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022112 ! expresses Gpc5
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039620 ! expresses Trmt9b
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042453 ! expresses Reln
-property_value: has_exact_synonym "L5 PT_3|RNAseq 072|L5 ET_3" xsd:string
+property_value: has_exact_synonym "L5 ET_3" xsd:string
+property_value: has_exact_synonym "L5 PT_3" xsd:string
+property_value: has_exact_synonym "RNAseq 072" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:72
 
 [Term]
@@ -2069,7 +2275,9 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022206 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000043659 ! expresses Npsr1
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098760 ! expresses Gm2164
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000043659 ! expresses Npsr1
-property_value: has_exact_synonym "RNAseq 073|L5 ET_4|L5 PT_4" xsd:string
+property_value: has_exact_synonym "L5 ET_4" xsd:string
+property_value: has_exact_synonym "L5 PT_4" xsd:string
+property_value: has_exact_synonym "RNAseq 073" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:73
 
 [Term]
@@ -2089,7 +2297,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000078591 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024517 ! expresses Grp
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000034009 ! expresses Rxfp1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047907 ! expresses Tshz2
-property_value: has_exact_synonym "RNAseq 074|L5/6 NP CT" xsd:string
+property_value: has_exact_synonym "L5/6 NP CT" xsd:string
+property_value: has_exact_synonym "RNAseq 074" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:74
 
 [Term]
@@ -2109,7 +2318,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000078591 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000010651 ! expresses Acaa1b
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000063564 ! expresses Col23a1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000066197 ! expresses Gpr139
-property_value: has_exact_synonym "RNAseq 075|L6 CT Gpr139" xsd:string
+property_value: has_exact_synonym "L6 CT Gpr139" xsd:string
+property_value: has_exact_synonym "RNAseq 075" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:75
 
 [Term]
@@ -2125,7 +2335,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022306 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029563 ! expresses Foxp2
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000078591 ! expresses Hs3st4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022306 ! expresses Zfpm2
-property_value: has_exact_synonym "L6 CT Cpa6|RNAseq 076" xsd:string
+property_value: has_exact_synonym "L6 CT Cpa6" xsd:string
+property_value: has_exact_synonym "RNAseq 076" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:76
 
 [Term]
@@ -2147,7 +2358,8 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024517 ! exp
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027210 ! expresses Meis2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036218 ! expresses Pdzrn4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049148 ! expresses Plcxd3
-property_value: has_exact_synonym "RNAseq 077|L6 CT Grp" xsd:string
+property_value: has_exact_synonym "L6 CT Grp" xsd:string
+property_value: has_exact_synonym "RNAseq 077" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:77
 
 [Term]
@@ -2167,7 +2379,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111765 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038331 ! expresses Satb2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040420 ! expresses Cdh18
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111765 ! expresses Gm10635
-property_value: has_exact_synonym "RNAseq 078|L6 CT Pou3f2" xsd:string
+property_value: has_exact_synonym "L6 CT Pou3f2" xsd:string
+property_value: has_exact_synonym "RNAseq 078" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:78
 
 [Term]
@@ -2185,7 +2398,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000078591 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111765 ! expresses Gm10635
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000025997 ! expresses Ikzf2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111765 ! expresses Gm10635
-property_value: has_exact_synonym "L6 CT Kit_1|RNAseq 079" xsd:string
+property_value: has_exact_synonym "L6 CT Kit_1" xsd:string
+property_value: has_exact_synonym "RNAseq 079" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:79
 
 [Term]
@@ -2196,7 +2410,7 @@ def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expr
 comment: cell_set_preferred_alias:Lamp5 Lhx6 ; original_label:Lamp5 Lhx6 ; cell_set_label:RNAseq 008 ; cell_set_aligned_alias:Lamp5 Lhx6
 is_a: AllenDendClass_CS202002013:125 ! Lamp5
 is_a: AllenDendClass_CS202002013:28 ! Nos1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-is_a: CL:4023023 {oio:hasDbXref="DOI:10.1101/2020.02.29.970558"}
+is_a: CL:4023023 {xref="DOI:10.1101/2020.02.29.970558"} ! L5,6 Neurogliaform Lamp5 GABAergic cortical interneuron (Mus musculus)
 intersection_of: CL:0011005 ! GABAergic interneuron
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029361 ! expresses Nos1
@@ -2204,7 +2418,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029819 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000075270 ! expresses Pde11a
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000110002 ! expresses Gm45680
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000110002 ! expresses Gm45680
-property_value: has_exact_synonym "RNAseq 008|Lamp5 Lhx6" xsd:string
+property_value: has_exact_synonym "Lamp5 Lhx6" xsd:string
+property_value: has_exact_synonym "RNAseq 008" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:8
 
 [Term]
@@ -2226,7 +2441,8 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026826 ! exp
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000034009 ! expresses Rxfp1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047907 ! expresses Tshz2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000096972 ! expresses
-property_value: has_exact_synonym "RNAseq 080|L6 CT Kit_2" xsd:string
+property_value: has_exact_synonym "L6 CT Kit_2" xsd:string
+property_value: has_exact_synonym "RNAseq 080" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:80
 
 [Term]
@@ -2244,7 +2460,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000046321 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052430 ! expresses Bmpr1b
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000046321 ! expresses Hs3st2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052430 ! expresses Bmpr1b
-property_value: has_exact_synonym "L6b Col6a1|RNAseq 081" xsd:string
+property_value: has_exact_synonym "L6b Col6a1" xsd:string
+property_value: has_exact_synonym "RNAseq 081" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:81
 
 [Term]
@@ -2262,7 +2479,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024236 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039714 ! expresses Cplx3
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000013766 ! expresses Ly6g6e
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024236 ! expresses Svil
-property_value: has_exact_synonym "RNAseq 082|L6b Shisa6_1" xsd:string
+property_value: has_exact_synonym "L6b Shisa6_1" xsd:string
+property_value: has_exact_synonym "RNAseq 082" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:82
 
 [Term]
@@ -2280,7 +2498,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026826 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039714 ! expresses Cplx3
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020000 ! expresses Moxd1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026826 ! expresses Nr4a2
-property_value: has_exact_synonym "L6b Shisa6_2|RNAseq 083" xsd:string
+property_value: has_exact_synonym "L6b Shisa6_2" xsd:string
+property_value: has_exact_synonym "RNAseq 083" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:83
 
 [Term]
@@ -2296,7 +2515,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019997 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039714 ! expresses Cplx3
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000043556 ! expresses Fbxl7
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000043556 ! expresses Fbxl7
-property_value: has_exact_synonym "RNAseq 084|L6b Ror1" xsd:string
+property_value: has_exact_synonym "L6b Ror1" xsd:string
+property_value: has_exact_synonym "RNAseq 084" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:84
 
 [Term]
@@ -2316,7 +2536,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000107384 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000051611 ! expresses Olfr112
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000053368 ! expresses Rxfp2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000107384 ! expresses Gm42557
-property_value: has_exact_synonym "RNAseq 085|L6b Kcnip1" xsd:string
+property_value: has_exact_synonym "L6b Kcnip1" xsd:string
+property_value: has_exact_synonym "RNAseq 085" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:85
 
 [Term]
@@ -2336,7 +2557,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047907 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028031 ! expresses Dkk2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039519 ! expresses Cyp7b1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000045648 ! expresses Vwc2l
-property_value: has_exact_synonym "RNAseq 086|L5/6 NP_1" xsd:string
+property_value: has_exact_synonym "L5/6 NP_1" xsd:string
+property_value: has_exact_synonym "RNAseq 086" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:86
 
 [Term]
@@ -2354,7 +2576,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035258 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047907 ! expresses Tshz2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019935 ! expresses Slc17a8
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035258 ! expresses Abi3bp
-property_value: has_exact_synonym "RNAseq 087|L5/6 NP_2" xsd:string
+property_value: has_exact_synonym "L5/6 NP_2" xsd:string
+property_value: has_exact_synonym "RNAseq 087" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:87
 
 [Term]
@@ -2370,7 +2593,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004151 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026344 ! expresses Lypd1
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047907 ! expresses Tshz2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026344 ! expresses Lypd1
-property_value: has_exact_synonym "RNAseq 088|L5/6 NP_3" xsd:string
+property_value: has_exact_synonym "L5/6 NP_3" xsd:string
+property_value: has_exact_synonym "RNAseq 088" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:88
 
 [Term]
@@ -2388,7 +2612,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000044288 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000058897 ! expresses Col25a1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000015766 ! expresses Eps8
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039385 ! expresses Cdh6
-property_value: has_exact_synonym "Sncg Col14a1|RNAseq 009" xsd:string
+property_value: has_exact_synonym "RNAseq 009" xsd:string
+property_value: has_exact_synonym "Sncg Col14a1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:9
 
 [Term]
@@ -2398,12 +2623,14 @@ name: Pdgfra,Stk32a expressing oligodendrocyte precursor cell of primary motor c
 def: "A oligodendrocyte precursor cell of the Mus musculus primary motor cortex that expresses: Pdgfra,Stk32a. The minimal set of markers required for its identification is: Pdgfra,Stk32a" []
 comment: cell_set_preferred_alias:OPC Pdgfra ; original_label:OPC Pdgfra ; cell_set_label:RNAseq 091 ; cell_set_aligned_alias:OPC
 is_a: CL:0000029 ! neuron neural crest derived
-is_a: CL:0002453 {oio:hasDbXref="doi:10.1101/2020.02.29.970558"} ! oligodendrocyte precursor cell
+is_a: CL:0002453 {xref="doi:10.1101/2020.02.29.970558"} ! oligodendrocyte precursor cell
 is_a: CL:2000029 ! central nervous system neuron
 intersection_of: CL:0002453 ! oligodendrocyte precursor cell
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
-property_value: has_exact_synonym "OPC|OPC Pdgfra|RNAseq 091" xsd:string
+property_value: has_exact_synonym "OPC" xsd:string
+property_value: has_exact_synonym "OPC Pdgfra" xsd:string
+property_value: has_exact_synonym "RNAseq 091" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:91
 
 [Term]
@@ -2419,7 +2646,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042489 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098318 ! expresses Lockd
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042489 ! expresses Clspn
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098318 ! expresses Lockd
-property_value: has_exact_synonym "Astro_Top2a|RNAseq 092" xsd:string
+property_value: has_exact_synonym "Astro_Top2a" xsd:string
+property_value: has_exact_synonym "RNAseq 092" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:92
 
 [Term]
@@ -2433,7 +2661,8 @@ intersection_of: CL:0002605 ! astrocyte of the cerebral cortex
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026697 ! expresses Myoc
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026697 ! expresses Myoc
-property_value: has_exact_synonym "RNAseq 093|Astro Aqp4_Gfap" xsd:string
+property_value: has_exact_synonym "Astro Aqp4_Gfap" xsd:string
+property_value: has_exact_synonym "RNAseq 093" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:93
 
 [Term]
@@ -2449,7 +2678,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000025537 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030235 ! expresses Slco1c1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000025537 ! expresses Phkg1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030235 ! expresses Slco1c1
-property_value: has_exact_synonym "Astro Aqp4_Slc7a10|RNAseq 094" xsd:string
+property_value: has_exact_synonym "Astro Aqp4_Slc7a10" xsd:string
+property_value: has_exact_synonym "RNAseq 094" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:94
 
 [Term]
@@ -2465,7 +2695,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000013523 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024985 ! expresses Tcf7l2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000013523 ! expresses Bcas1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024985 ! expresses Tcf7l2
-property_value: has_exact_synonym "Oligo Enpp6_1|RNAseq 095" xsd:string
+property_value: has_exact_synonym "Oligo Enpp6_1" xsd:string
+property_value: has_exact_synonym "RNAseq 095" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:95
 
 [Term]
@@ -2481,7 +2712,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021835 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000115529 ! expresses 9630013A20Rik
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021835 ! expresses Bmp4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000115529 ! expresses 9630013A20Rik
-property_value: has_exact_synonym "RNAseq 096|Oligo Enpp6_2" xsd:string
+property_value: has_exact_synonym "Oligo Enpp6_2" xsd:string
+property_value: has_exact_synonym "RNAseq 096" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:96
 
 [Term]
@@ -2501,7 +2733,8 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000015202 ! exp
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026347 ! expresses Tmem163
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026566 ! expresses Mpzl1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049690 ! expresses Nckap5
-property_value: has_exact_synonym "Oligo Enpp6_3|RNAseq 097" xsd:string
+property_value: has_exact_synonym "Oligo Enpp6_3" xsd:string
+property_value: has_exact_synonym "RNAseq 097" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:97
 
 [Term]
@@ -2517,7 +2750,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000015202 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000115529 ! expresses 9630013A20Rik
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000015202 ! expresses Cnksr3
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000115529 ! expresses 9630013A20Rik
-property_value: has_exact_synonym "Oligo Enpp6_4|RNAseq 098" xsd:string
+property_value: has_exact_synonym "Oligo Enpp6_4" xsd:string
+property_value: has_exact_synonym "RNAseq 098" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:98
 
 [Term]
@@ -2535,7 +2769,8 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111994 ! 
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036777 ! expresses Anln
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039316 ! expresses Rftn1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111994 ! expresses A330049N07Rik
-property_value: has_exact_synonym "RNAseq 099|Oligo Opalin_1" xsd:string
+property_value: has_exact_synonym "Oligo Opalin_1" xsd:string
+property_value: has_exact_synonym "RNAseq 099" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:99
 
 [Term]
@@ -5223,6 +5458,231 @@ intersection_of: part_of UBERON:0000955 ! brain
 relationship: part_of UBERON:0000955 ! brain
 created_by: TermGenie
 creation_date: 2014-07-09T00:18:22Z
+
+[Term]
+id: CL:4023008
+name: intratelencephalic-projecting glutamatergic cortical neuron
+def: "A glutamatergic neuron located in the cerebral cortex that projects to structures of telencephalic origins." [DOI:10.1101/2020.10.19.343129]
+subset: BDS_subset
+synonym: "IT projecting neuron" EXACT []
+xref: ILX:0770100
+is_a: CL:0000679 ! glutamatergic neuron
+relationship: RO:0002100 UBERON:0000956 ! has soma location cerebral cortex
+relationship: RO:0013001 UBERON:0001893 ! has synaptic IO in telencephalon
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023010
+name: alpha7 Lamp5 GABAergic cortical interneuron (Mus musculus)
+def: "A Lamp5 GABAergic cortical interneuron that is strongly labelled for α7 nAChRs. These cells are located in L1 and have multipolar dendrites with vertically descending axonal collaterals that project deep into the column, usually branching and terminating in L5A. Unlike typical Lamp5 electrophysiology, they have Vip- and Sst-like firing properties, with active depolarizing hump at near-threshold membrane potentials, and  larger hyperpolarization sag, stronger burst, and rebound firing." [PMID:30413647, PMID:33184512]
+subset: BDS_subset
+synonym: "A7 Lamp5 (Mus)" EXACT []
+is_a: CL:4023011 ! Lamp5 GABAergic cortical interneuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 PR:Q9D387 ! expresses lysosome-associated membrane glycoprotein 5 (mouse)
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023011
+name: Lamp5 GABAergic cortical interneuron
+def: "A GABAergic neuron located in the cerebral cortex that expresses Lamp5" [PMID:30382198]
+subset: BDS_subset
+xref: ILX:0770149
+is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
+intersection_of: CL:0000099 ! interneuron
+intersection_of: capable_of GO:0061534 ! gamma-aminobutyric acid secretion, neurotransmission
+intersection_of: RO:0002100 UBERON:0000956 ! has soma location cerebral cortex
+intersection_of: RO:0002292 PR:000032148 ! expresses Lamp5
+relationship: RO:0002292 PR:000032148 ! expresses Lamp5
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023014
+name: L5 Vip expressing cortical GABAergic interneuron (Mus musculus)
+def: "A Vip GABAergic cortical interneuron found in L5. L5 Vip cells have mostly local morphology with some deep-projecting axons. They show only moderate resistance, comparable to that of Sst subclass and unlike typical Vip subclass cells that tend to show high input resistance. L5 Vip cells show particularly low resting membrane potential." [PMID:26420784, PMID:26612957]
+subset: BDS_subset
+synonym: "L5 VIP (Mus)" EXACT []
+is_a: CL:4023016 ! Vip GABAergic cortical interneuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 PR:P32648 ! expresses VIP peptides (mouse)
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023015
+name: sncg GABAergic cortical interneuron
+def: "A GABAergic neuron located in the cerebral cortex that expresses Gamma-synuclein" [PMID:33186530]
+subset: BDS_subset
+xref: ILX:0770150
+is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
+intersection_of: CL:0000099 ! interneuron
+intersection_of: capable_of GO:0061534 ! gamma-aminobutyric acid secretion, neurotransmission
+intersection_of: RO:0002100 UBERON:0000956 ! has soma location cerebral cortex
+intersection_of: RO:0002292 PR:000015325 ! expresses gamma-synuclein
+relationship: RO:0002292 PR:000015325 ! expresses gamma-synuclein
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023016
+name: Vip GABAergic cortical interneuron
+def: "A GABAergic neuron located in the cerebral cortex that expresses vasoactive intestinal polypeptide" [PMID:33186530]
+subset: BDS_subset
+xref: ILX:0770151
+is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
+intersection_of: CL:0000099 ! interneuron
+intersection_of: capable_of GO:0061534 ! gamma-aminobutyric acid secretion, neurotransmission
+intersection_of: RO:0002100 UBERON:0000956 ! has soma location cerebral cortex
+intersection_of: RO:0002292 PR:000017299 ! expresses vip
+relationship: RO:0002292 PR:000017299 ! expresses vip
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023017
+name: sst GABAergic cortical interneuron
+def: "A GABAergic neuron located in the cerebral cortex that expresses somatostatin (sst)" [PMID:27477017]
+subset: BDS_subset
+xref: ILX:0770152
+is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
+intersection_of: CL:0000099 ! interneuron
+intersection_of: capable_of GO:0061534 ! gamma-aminobutyric acid secretion, neurotransmission
+intersection_of: RO:0002100 UBERON:0000956 ! has soma location cerebral cortex
+intersection_of: RO:0002292 PR:000015665 ! expresses somatostatin
+relationship: RO:0002292 PR:000015665 ! expresses somatostatin
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023018
+name: pvalb GABAergic cortical interneuron
+def: "A GABAergic interneuron located in the cerebral cortex that expresses Parvalbumin." [] {def="PMID:27477017"}
+subset: BDS_subset
+xref: ILX:0770154
+is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
+intersection_of: CL:0000099 ! interneuron
+intersection_of: capable_of GO:0061534 ! gamma-aminobutyric acid secretion, neurotransmission
+intersection_of: RO:0002100 UBERON:0000956 ! has soma location cerebral cortex
+intersection_of: RO:0002292 PR:000013502 ! expresses pvalb
+relationship: RO:0002292 PR:000013502 ! expresses pvalb
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023019
+name: L5/6 CCK and Vip expressing cortical GABAergic interneuron (Mus musculus)
+def: "A Vip GABAergic cortical interneuron that expresses CCK. L5/6 CCK cells are found mainly in L5 and L6 and have large axonal arborization." [PMID:33184512]
+subset: BDS_subset
+synonym: "L5/6 CCK Vip (Mus)" EXACT []
+is_a: CL:4023016 ! Vip GABAergic cortical interneuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 PR:P32648 ! expresses VIP peptides (mouse)
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023022
+name: canopy Lamp5 GABAergic cortical interneuron (Mus musculus)
+def: "A Lamp5 GABAergic cortical interneuron that has extended axons in the surface of L1. Canopy Lamp5 cells resemble neurogliaform cells in having elongated horizontal axonal arbors largely confined to L1; but the dendritic arbors are wider and have fewer branches, while the axon is less tortuous and extends further from the soma" [PMID:30413647]
+subset: BDS_subset
+is_a: CL:4023011 ! Lamp5 GABAergic cortical interneuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 PR:Q9D387 ! expresses lysosome-associated membrane glycoprotein 5 (mouse)
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023023
+name: L5,6 Neurogliaform Lamp5 GABAergic cortical interneuron (Mus musculus)
+def: "A Lamp 5 GABAergic cortical interneuron with neurogliaform morphology located in L5,6. L5,6 NGC Lamp5 have deep afterhyperpolarization (AHP) but narrow action potentials (APs). Unlike other deep neurogliaform cells (which are caudal ganglionic eminence (CGE) derived), L5,6 NGC Lamp5 cells are medial ganglionic eminence (MGE)-derived" [PMID:26727548]
+subset: BDS_subset
+synonym: "L5,6 NGC Lamp5 (mus)" EXACT []
+is_a: CL:4023011 ! Lamp5 GABAergic cortical interneuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 PR:Q9D387 ! expresses lysosome-associated membrane glycoprotein 5 (mouse)
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023024
+name: Neurogliaform Lamp5 GABAergic cortical interneuron (Mus musculus)
+def: "A Lamp5 GABAergic cortical interneuron with layer-adapting morphology. NGC Lamp5 cells have a small round soma, short dendrites, and a wide dense axonal arbor that tends to establish a dense axonal mesh with high connection probability both to themselves and L2 pyramidal cells. NGC Lamp5 cells have unique synaptic properties that distinguish them from other GABAergic interneurons, including the release of GABA to the extracellular space via volume transmission, and the ability to produce GABA-B responses in connected postsynaptic targets." [PMID:27477017]
+subset: BDS_subset
+synonym: "NGC Lamp5 (mus)" EXACT []
+is_a: CL:4023011 ! Lamp5 GABAergic cortical interneuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 PR:Q9D387 ! expresses lysosome-associated membrane glycoprotein 5 (mouse)
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023025
+name: Long-range projecting Sst GABAergic cortical interneuron (Mus musculus)
+def: "A Sst GABAergic cortical interneuron that is both an interneuron and a projecting neuron. They are found in all layers from upper L2/3 down to the bottom of L6. They have long-range projections, some with axons fading into white matter. These cells have low rebound potential, low hyperpolarization sag, and high variability in membrane time constant." [PMID:26727548]
+subset: BDS_subset
+synonym: "LP SST (Mus)" EXACT []
+is_a: CL:4023017 ! sst GABAergic cortical interneuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 PR:P60041 ! expresses somatostatin (mouse)
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023027
+name: L5 ‘T-shaped’ Martinotti Sst GABAergic cortical interneuron (Mus musculus)
+def: "A Sst GABAergic cortical interneuron that is found in L5 and possesses 'T-shaped' martinotti morphologies with local axonal plexus in L5a and translaminar axons restricted to the uppermost part of L1. They show low-threshold spiking patterns with strong rebound firing, and inhibit the L1 apical tuft of nearby pyramidal cells." [PMID:28254942, PMID:29326172]
+subset: BDS_subset
+synonym: "L5 T Martinotti SST (Mus)" EXACT []
+is_a: CL:4023017 ! sst GABAergic cortical interneuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 PR:P60041 ! expresses somatostatin (mouse)
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023028
+name: L5 Non-martinotti Sst GABAergic cortical interneuron (Mus musculus)
+def: "A Sst GABAergic cortical interneuron that is found in lower L5 with mostly local axonal arborization but with some sparse ascending axons. L5 Non-martinotti Sst cells show somatic localization and local axon plexus in L5b and L5b/6 and substantial innervation of L3 and L4, and receive thalamic input from the ventral posteromedial nucleus and specifically target L4 neurons, avoiding L5 pyramidal cells. L5 Non-martinotti Sst cells tend to show a higher input resistance and seem to be less stuttering." [PMID:28254942, PMID:29326172]
+subset: BDS_subset
+synonym: "L5 Non-martinotti SST (Mus)" EXACT []
+is_a: CL:4023017 ! sst GABAergic cortical interneuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 PR:P60041 ! expresses somatostatin (mouse)
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023030
+name: L2/3/4 Fan martinotti Sst GABAergic cortical interneuron (Mus musculus)
+def: "A Sst GABAergic cortical interneuron that has \"Fanning-out' Martinotti morphology with local axon arbor and long ascending axons that spreads horizontally and arborizes significantly in L1. They have an adapting firing pattern and non-zero afterdepolarization (ADP)." [PMID:27225074, PMID:27477017, PMID:28254942, PMID:29326172]
+subset: BDS_subset
+synonym: "L2/3/5 Fan Martinotti SST (Mus)" EXACT []
+is_a: CL:4023017 ! sst GABAergic cortical interneuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 PR:P60041 ! expresses somatostatin (mouse)
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023031
+name: L4 Sst GABAergic cortical interneuron (Mus musculus)
+def: "A Sst GABAergic cortical interneuron that is found in lower L2/3 and upper 5, L4 Sst cells have martinotti morphology with ascending axons but denser local axons and sparser ‘fanning-out’ projections to L1. L4 Sst cells have smaller membrane time constant to calb2 (L2/3/5 Fan Martinotti Cell) and non-zero afterdepolarization (ADP)." [PMID:33184512]
+subset: BDS_subset
+synonym: "L4 SST (Mus)" EXACT []
+is_a: CL:4023017 ! sst GABAergic cortical interneuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 PR:P60041 ! expresses somatostatin (mouse)
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023034
+name: L2/3 Pvalb like Sst GABAergic cortical interneuron (Mus musculus)
+def: "A Sst GABAergic cortical interneuron transcriptomically between the Sst and the Pvalb families and found in L2/3. Some L2/3 PV-like SST cells have Martinotti morphology while some have basket cell morphology. L2/3 PV-like SST cells have lower AP width and higher firing rate than typical Sst subclass cells. L2/3 PV-like SST cells have high maximum firing rate variability, with many classified as belonging to the Pvalb subclass on the basis of electrophysiology." [PMID:33184512]
+subset: BDS_subset
+synonym: "L2/3 PV-like SST Mus)" EXACT []
+is_a: CL:4023017 ! sst GABAergic cortical interneuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 PR:P60041 ! expresses somatostatin (mouse)
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023036
+name: Chandelier Pvalb GABAergic cortical interneuron (Mus musculus)
+def: "A Pvalb GABAergic cortical interneuron that is recognizable by the straight terminal axonal 'cartridges' of vertically oriented strings of synaptic boutons. Chandelier PV cells are mostly found in upper L2/3, with some in deep L5. Chandelier PV cells exhibit fast-spiking but lower firing rate compared to basket cells, and have practically absent hyperpolarization sag. Chandelier PV cells' boutons target exclusively the axon initial segment (AIS) of pyramidal cells, with a single cell innervating hundreds of pyramidal cells in a clustered manner." [PMID:27477017]
+subset: BDS_subset
+synonym: "Chandelier PV (Mus)" EXACT []
+xref: ILX:0107356
+is_a: CL:4023018 ! pvalb GABAergic cortical interneuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 PR:P32848 ! expresses parvalbumin alpha (mouse)
+created_by: http://orcid.org/0000-0001-7258-9596
 
 [Term]
 id: CP:0000028
@@ -11618,6 +12078,46 @@ synonym: "GATA2" EXACT PRO-short-label [PRO:DNx]
 is_a: PR:000000001 ! protein
 
 [Term]
+id: PR:000013502
+name: parvalbumin alpha
+name: pvalb
+namespace: protein
+def: "A protein that is a translation product of the human PVALB gene or a 1:1 ortholog thereof." [PRO:DNx]
+comment: Category=gene.
+synonym: "Pva" RELATED Gene-based []
+synonym: "PVALB" EXACT PRO-short-label [PRO:DNx]
+is_a: PR:000000001 ! protein
+
+[Term]
+id: PR:000015325
+name: gamma-synuclein
+name: sncg
+namespace: protein
+def: "A protein that is a translation product of the human SNCG gene or a 1:1 ortholog thereof." [PRO:DNx]
+comment: Category=gene.
+synonym: "BCSG1" RELATED Gene-based []
+synonym: "breast cancer-specific gene 1 protein" EXACT []
+synonym: "PERSYN" RELATED Gene-based []
+synonym: "persyn" EXACT []
+synonym: "PRSN" RELATED Gene-based []
+synonym: "SNCG" EXACT PRO-short-label [PRO:DNx]
+synonym: "SR" EXACT []
+synonym: "synoretin" EXACT []
+is_a: PR:000000001 ! protein
+
+[Term]
+id: PR:000015665
+name: somatostatin
+name: sst
+namespace: protein
+def: "A protein that is a translation product of the human SST gene or a 1:1 ortholog thereof." [PRO:DNx]
+comment: Category=gene.
+synonym: "growth hormone release-inhibiting factor" EXACT []
+synonym: "Smst" RELATED Gene-based []
+synonym: "SST" EXACT PRO-short-label [PRO:DNx]
+is_a: PR:000000001 ! protein
+
+[Term]
 id: PR:000016043
 name: T-cell acute lymphocytic leukemia protein 1
 namespace: protein
@@ -11632,6 +12132,19 @@ synonym: "T-cell leukemia/lymphoma protein 5" EXACT []
 synonym: "TAL-1" EXACT []
 synonym: "TAL1" EXACT PRO-short-label [PRO:DNx]
 synonym: "TCL5" RELATED Gene-based []
+is_a: PR:000000001 ! protein
+
+[Term]
+id: PR:000017299
+name: vip
+name: VIP peptides
+namespace: protein
+def: "A protein that is a translation product of the human VIP gene or a 1:1 ortholog thereof." [PRO:DNx]
+comment: Category=gene.
+synonym: "vasoactive intestinal peptides" EXACT [PRO:DNx]
+synonym: "vasoactive intestinal polypeptides" EXACT [PRO:DNx]
+synonym: "vasoactive intestinal polypeptides precursor" EXACT []
+synonym: "VIP" EXACT PRO-short-label [PRO:DNx]
 is_a: PR:000000001 ! protein
 
 [Term]
@@ -11678,6 +12191,22 @@ is_a: PR:000000001 ! protein
 intersection_of: PR:000000001 ! protein
 intersection_of: capable_of GO:0004930 ! G protein-coupled receptor activity
 relationship: capable_of GO:0004930 ! G protein-coupled receptor activity
+
+[Term]
+id: PR:000032148
+name: Lamp5
+name: lysosome-associated membrane glycoprotein 5
+namespace: protein
+def: "A protein that is a translation product of the human LAMP5 gene or a 1:1 ortholog thereof." [PRO:DNx]
+comment: Category=gene.
+synonym: "BAD-LAMP" EXACT []
+synonym: "brain and dendritic cell-associated LAMP" EXACT []
+synonym: "brain-associated LAMP-like protein" EXACT []
+synonym: "C20orf103" RELATED Gene-based []
+synonym: "LAMP-5" EXACT []
+synonym: "LAMP5" EXACT PRO-short-label [PRO:DNx]
+synonym: "lysosome-associated membrane protein 5" EXACT []
+is_a: PR:000000001 ! protein
 
 [Term]
 id: PR:000036194
@@ -12101,6 +12630,37 @@ intersection_of: only_in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: has_gene_template http://www.informatics.jax.org/marker/MGI:88342 ! Cd68 (mouse)
 
 [Term]
+id: PR:P32648
+name: VIP peptides (mouse)
+namespace: protein
+def: "A VIP peptides that is encoded in the genome of mouse." [OMA:P32648, PRO:DNx]
+comment: Category=organism-gene.
+synonym: "mVIP" EXACT PRO-short-label [PRO:DNx]
+synonym: "Vip" RELATED Gene-based [UniProtKB:P32648]
+xref: UniProtKB:P32648
+is_a: PR:000017299 ! vip
+is_a: PR:000029032 ! Mus musculus protein
+intersection_of: PR:000017299 ! vip
+intersection_of: only_in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: has_gene_template http://www.informatics.jax.org/marker/MGI:98933 ! Vip (mouse)
+
+[Term]
+id: PR:P32848
+name: parvalbumin alpha (mouse)
+namespace: protein
+def: "A parvalbumin alpha that is encoded in the genome of mouse." [OMA:P32848, PRO:DNx]
+comment: Category=organism-gene.
+synonym: "mPVALB" EXACT PRO-short-label [PRO:DNx]
+synonym: "Pva" RELATED Gene-based [UniProtKB:P32848]
+synonym: "Pvalb" RELATED Gene-based [UniProtKB:P32848]
+xref: UniProtKB:P32848
+is_a: PR:000013502 ! pvalb
+is_a: PR:000029032 ! Mus musculus protein
+intersection_of: PR:000013502 ! pvalb
+intersection_of: only_in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: has_gene_template http://www.informatics.jax.org/marker/MGI:97821 ! Pvalb (mouse)
+
+[Term]
 id: PR:P35461
 name: lymphocyte antigen 6G (mouse)
 namespace: protein
@@ -12217,6 +12777,22 @@ intersection_of: only_in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: has_gene_template http://www.informatics.jax.org/marker/MGI:107474 ! Cd38 (mouse)
 
 [Term]
+id: PR:P60041
+name: somatostatin (mouse)
+namespace: protein
+def: "A somatostatin that is encoded in the genome of mouse." [OMA:P60041, PRO:DNx]
+comment: Category=organism-gene.
+synonym: "mSST" EXACT PRO-short-label [PRO:DNx]
+synonym: "Smst" RELATED Gene-based [UniProtKB:P60041]
+synonym: "Sst" RELATED Gene-based [UniProtKB:P60041]
+xref: UniProtKB:P60041
+is_a: PR:000015665 ! somatostatin
+is_a: PR:000029032 ! Mus musculus protein
+intersection_of: PR:000015665 ! somatostatin
+intersection_of: only_in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: has_gene_template http://www.informatics.jax.org/marker/MGI:98326 ! Sst (mouse)
+
+[Term]
 id: PR:Q61391
 name: neprilysin (mouse)
 namespace: protein
@@ -12314,6 +12890,43 @@ is_a: PR:000029032 ! Mus musculus protein
 intersection_of: PR:000001003 ! CD34 molecule
 intersection_of: only_in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: has_gene_template http://www.informatics.jax.org/marker/MGI:88329 ! Cd34 (mouse)
+
+[Term]
+id: PR:Q9D387
+name: lysosome-associated membrane glycoprotein 5 (mouse)
+namespace: protein
+def: "A lysosome-associated membrane glycoprotein 5 that is encoded in the genome of mouse." [OMA:Q9D387, PRO:DNx]
+comment: Category=organism-gene.
+synonym: "BAD-LAMP (mouse)" EXACT [UniProtKB:Q9D387]
+synonym: "brain and dendritic cell-associated LAMP (mouse)" EXACT [UniProtKB:Q9D387]
+synonym: "brain-associated LAMP-like protein (mouse)" EXACT [UniProtKB:Q9D387]
+synonym: "LAMP-5 (mouse)" EXACT [UniProtKB:Q9D387]
+synonym: "Lamp5" RELATED Gene-based [UniProtKB:Q9D387]
+synonym: "lysosome-associated membrane protein 5 (mouse)" EXACT [UniProtKB:Q9D387]
+synonym: "mLAMP5" EXACT PRO-short-label [PRO:DNx]
+xref: UniProtKB:Q9D387
+is_a: PR:000029032 ! Mus musculus protein
+is_a: PR:000032148 ! Lamp5
+intersection_of: PR:000032148 ! Lamp5
+intersection_of: only_in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: has_gene_template http://www.informatics.jax.org/marker/MGI:1923411 ! Lamp5 (mouse)
+
+[Term]
+id: PR:Q9Z0F7
+name: gamma-synuclein (mouse)
+namespace: protein
+def: "A gamma-synuclein that is encoded in the genome of mouse." [OMA:Q9Z0F7, PRO:DNx]
+comment: Category=organism-gene.
+synonym: "mSNCG" EXACT PRO-short-label [PRO:DNx]
+synonym: "Persyn" RELATED Gene-based [UniProtKB:Q9Z0F7]
+synonym: "persyn (mouse)" EXACT [UniProtKB:Q9Z0F7]
+synonym: "Sncg" RELATED Gene-based [UniProtKB:Q9Z0F7]
+xref: UniProtKB:Q9Z0F7
+is_a: PR:000015325 ! gamma-synuclein
+is_a: PR:000029032 ! Mus musculus protein
+intersection_of: PR:000015325 ! gamma-synuclein
+intersection_of: only_in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: has_gene_template http://www.informatics.jax.org/marker/MGI:1298397 ! Sncg (mouse)
 
 [Term]
 id: RO:0002577
@@ -32595,6 +33208,24 @@ is_a: SO:0001217 ! protein_coding_gene
 relationship: only_in_taxon NCBITaxon:10090 ! Mus musculus
 
 [Term]
+id: http://www.informatics.jax.org/marker/MGI:1298397
+name: Sncg (mouse)
+namespace: gene
+def: "A protein coding gene Sncg in mouse." [PRO:DNx]
+comment: Category=external.
+is_a: SO:0001217 ! protein_coding_gene
+relationship: only_in_taxon NCBITaxon:10090 ! Mus musculus
+
+[Term]
+id: http://www.informatics.jax.org/marker/MGI:1923411
+name: Lamp5 (mouse)
+namespace: gene
+def: "A protein coding gene Lamp5 in mouse." [PRO:DNx]
+comment: Category=external.
+is_a: SO:0001217 ! protein_coding_gene
+relationship: only_in_taxon NCBITaxon:10090 ! Mus musculus
+
+[Term]
 id: http://www.informatics.jax.org/marker/MGI:88318
 name: Cd14 (mouse)
 namespace: gene
@@ -32784,10 +33415,28 @@ is_a: SO:0001217 ! protein_coding_gene
 relationship: only_in_taxon NCBITaxon:10090 ! Mus musculus
 
 [Term]
+id: http://www.informatics.jax.org/marker/MGI:97821
+name: Pvalb (mouse)
+namespace: gene
+def: "A protein coding gene Pvalb in mouse." [PRO:DNx]
+comment: Category=external.
+is_a: SO:0001217 ! protein_coding_gene
+relationship: only_in_taxon NCBITaxon:10090 ! Mus musculus
+
+[Term]
 id: http://www.informatics.jax.org/marker/MGI:98282
 name: Spi1 (mouse)
 namespace: gene
 def: "A protein coding gene Spi1 in mouse." [PRO:DNx]
+comment: Category=external.
+is_a: SO:0001217 ! protein_coding_gene
+relationship: only_in_taxon NCBITaxon:10090 ! Mus musculus
+
+[Term]
+id: http://www.informatics.jax.org/marker/MGI:98326
+name: Sst (mouse)
+namespace: gene
+def: "A protein coding gene Sst in mouse." [PRO:DNx]
 comment: Category=external.
 is_a: SO:0001217 ! protein_coding_gene
 relationship: only_in_taxon NCBITaxon:10090 ! Mus musculus
@@ -32815,6 +33464,15 @@ id: http://www.informatics.jax.org/marker/MGI:98822
 name: Tfrc (mouse)
 namespace: gene
 def: "A protein coding gene Tfrc in mouse." [PRO:DNx]
+comment: Category=external.
+is_a: SO:0001217 ! protein_coding_gene
+relationship: only_in_taxon NCBITaxon:10090 ! Mus musculus
+
+[Term]
+id: http://www.informatics.jax.org/marker/MGI:98933
+name: Vip (mouse)
+namespace: gene
+def: "A protein coding gene Vip in mouse." [PRO:DNx]
 comment: Category=external.
 is_a: SO:0001217 ! protein_coding_gene
 relationship: only_in_taxon NCBITaxon:10090 ! Mus musculus
@@ -32887,6 +33545,13 @@ domain: BFO:0000040 ! material entity
 range: BFO:0000004 ! independent continuant
 holds_over_chain: located_in part_of
 inverse_of: contains ! contains
+
+[Typedef]
+id: RO:0002006
+name: has synaptic terminal of
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+is_a: RO:0002131 ! overlaps
+inverse_of: RO:0002130 ! has synaptic terminal in
 
 [Typedef]
 id: RO:0002013
@@ -33021,6 +33686,20 @@ domain: CARO:0000006 ! material anatomical entity
 range: CARO:0000006 ! material anatomical entity
 is_a: has_part ! has_part
 expand_expression_to: "BFO_0000051 some (GO_0005886 and BFO_0000051 some ?Y)" []
+
+[Typedef]
+id: RO:0002130
+name: has synaptic terminal in
+def: "A general relation between a neuron and some structure in which it either chemically synapses to some target or in which it receives (chemical) synaptic input." []
+property_value: http://purl.org/spar/cito/citesAsAuthority http://www.ncbi.nlm.nih.gov/pubmed/22402613
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
+property_value: IAO:0000118 "has synapse in" xsd:string
+property_value: RO:0001900 RO:0001901
+domain: CL:0000540 ! neuron
+is_a: RO:0002131 ! overlaps
+transitive_over: part_of ! part_of
+expand_expression_to: "RO_0002131 some (GO_0045202 that BFO_0000050 some Y?)" []
 
 [Typedef]
 id: RO:0002131
@@ -33804,6 +34483,16 @@ property_value: IAO:0000117 "Vasundra Touré" xsd:string
 domain: BFO:0000040 ! material entity
 range: BFO:0000040 ! material entity
 is_a: RO:0002566 ! causally influences
+
+[Typedef]
+id: RO:0013001
+name: has synaptic IO in
+def: "A relationship between a neuron and a region, where the neuron has a functionally relevant number of input and/or output synapses in that region." []
+synonym: "has synaptic input or output in" EXACT []
+is_a: RO:0002130 ! has synaptic terminal in
+transitive_over: part_of ! part_of
+created_by: http://orcid.org/0000-0002-1373-1705
+creation_date: 2020-07-17T09:26:52Z
 
 [Typedef]
 id: adjacent_to

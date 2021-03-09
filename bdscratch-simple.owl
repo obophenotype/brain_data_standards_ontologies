@@ -2,7 +2,6 @@
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/bdscratch/bdscratch-simple.owl#"
      xml:base="http://purl.obolibrary.org/obo/bdscratch/bdscratch-simple.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:n2o="n2o:"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -11,14 +10,15 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:custom="http://n2o.neo/custom/"
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bdscratch/bdscratch-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-08/bdscratch-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-09/bdscratch-simple.owl"/>
         <dc:description>None</dc:description>
         <dc:title>Brain Data Standards Cell Ontology</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-08</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-09</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -31,6 +31,48 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://n2o.neo/custom/cell_set_alias_assignee -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/cell_set_alias_assignee"/>
+    
+
+
+    <!-- http://n2o.neo/custom/cell_set_alias_citation -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/cell_set_alias_citation"/>
+    
+
+
+    <!-- http://n2o.neo/custom/cell_set_aligned_alias -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/cell_set_aligned_alias"/>
+    
+
+
+    <!-- http://n2o.neo/custom/cell_set_label -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/cell_set_label"/>
+    
+
+
+    <!-- http://n2o.neo/custom/cell_set_preferred_alias -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/cell_set_preferred_alias"/>
+    
+
+
+    <!-- http://n2o.neo/custom/node_metadata -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/node_metadata"/>
+    
+
+
+    <!-- http://n2o.neo/custom/original_label -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/original_label"/>
     
 
 
@@ -195,54 +237,6 @@
     <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-    
-
-
-    <!-- n2o:cell_set_additional_aliases -->
-
-    <owl:AnnotationProperty rdf:about="n2o:cell_set_additional_aliases"/>
-    
-
-
-    <!-- n2o:cell_set_alias_assignee -->
-
-    <owl:AnnotationProperty rdf:about="n2o:cell_set_alias_assignee"/>
-    
-
-
-    <!-- n2o:cell_set_alias_citation -->
-
-    <owl:AnnotationProperty rdf:about="n2o:cell_set_alias_citation"/>
-    
-
-
-    <!-- n2o:cell_set_aligned_alias -->
-
-    <owl:AnnotationProperty rdf:about="n2o:cell_set_aligned_alias"/>
-    
-
-
-    <!-- n2o:cell_set_label -->
-
-    <owl:AnnotationProperty rdf:about="n2o:cell_set_label"/>
-    
-
-
-    <!-- n2o:cell_set_preferred_alias -->
-
-    <owl:AnnotationProperty rdf:about="n2o:cell_set_preferred_alias"/>
-    
-
-
-    <!-- n2o:node_metadata -->
-
-    <owl:AnnotationProperty rdf:about="n2o:node_metadata"/>
-    
-
-
-    <!-- n2o:original_label -->
-
-    <owl:AnnotationProperty rdf:about="n2o:original_label"/>
     
 
 
