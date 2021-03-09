@@ -18,16 +18,16 @@ def generate_ind_template(dend_json_path, output_filepath):
                            'PrefLabel': 'A skos:prefLabel',
                            'Entity Type': 'TI %',
                            'TYPE': 'TYPE',
-                           'Property Assertions': "I BDSHELP:subcluster_of SPLIT='|'",
+                           'Property Assertions': "I BDSHELP:subcluster_of SPLIT=|",
                            'Synonyms': 'A oboInOwl:has_exact_synonym',
                            'Function': 'TI capable_of some %',
                            'cell_set_preferred_alias': "A n2o:cell_set_preferred_alias",
                            'original_label': "A n2o:original_label",
                            'cell_set_label': "A n2o:cell_set_label",
                            'cell_set_aligned_alias': "A n2o:cell_set_aligned_alias",
-                           'cell_set_additional_aliases': "A n2o:cell_set_additional_aliases SPLIT='|'",
-                           'cell_set_alias_assignee': "A n2o:cell_set_alias_assignee SPLIT='|'",
-                           'cell_set_alias_citation': "A n2o:cell_set_alias_citation SPLIT='|'",
+                           'cell_set_additional_aliases': "A n2o:cell_set_additional_aliases SPLIT=|",
+                           'cell_set_alias_assignee': "A n2o:cell_set_alias_assignee SPLIT=|",
+                           'cell_set_alias_citation': "A n2o:cell_set_alias_citation SPLIT=|",
                            'Metadata': "A n2o:node_metadata"
                            }
     dl = [robot_template_seed]
@@ -62,7 +62,7 @@ def generate_marker_template(dend_json_path, output_filepath):
     dend = dend_json_2_nodes_n_edges(dend_json_path)
     robot_marker_template_seed = {
         'ID': 'ID',
-        'Expresses': "TI 'expresses' % SPLIT = '|' ",
+        'Expresses': "TI 'expresses' % SPLIT=|",
         'Evidence': "^A rdfs:comment"
     }
     template = [robot_marker_template_seed]
@@ -90,12 +90,12 @@ def generate_curated_class_template(dend_json_path, output_filepath):
         subtrees = get_subtrees(dend_tree, taxonomy_config)
         robot_class_curation_seed = {'ID': 'ID',
                                      'Label': 'A rdfs:label',
-                                     'Synonyms_from_taxonomy': "A oboInOwl:has_exact_synonym SPLIT='|'",
-                                     'Curated_synonyms': "A oboInOwl:has_exact_synonym SPLIT='|'",
+                                     'Synonyms_from_taxonomy': "A oboInOwl:has_exact_synonym SPLIT=|",
+                                     'Curated_synonyms': "A oboInOwl:has_exact_synonym SPLIT=|",
                                      'Comment': 'A rdfs:comment',
                                      'Classification': 'SC %',
                                      'Classification_comment': ">A rdfs:comment",
-                                     'Classification_pub': ">A oio:hasDbXref SPLIT='|'"
+                                     'Classification_pub': ">A oboInOwl:hasDbXref SPLIT=|"
                                      }
         class_template = [robot_class_curation_seed]
 

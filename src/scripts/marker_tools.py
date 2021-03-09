@@ -190,7 +190,7 @@ def generate_marker_table(marker_data, output_filepath):
     robot_marker_template_seed = {
         'Taxonomy_node_ID': 'ID',
         'clusterName': 'clusterName',
-        'Markers Delimited': "TI 'expresses' % SPLIT = '|' "
+        'Markers Delimited': "TI 'expresses' % SPLIT=|"
     }
     template = []
     for o in marker_data.keys():
