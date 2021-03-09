@@ -9,6 +9,7 @@ PATH_OUTPUT_CLASS_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__))
 
 ALLEN_CLASS = "http://www.semanticweb.org/brain_data_standards/AllenDendClass_"
 
+
 def delete_file(path_to_file):
     if os.path.exists(path_to_file):
         os.remove(path_to_file)
