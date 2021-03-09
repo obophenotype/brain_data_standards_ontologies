@@ -14,7 +14,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bdscratch/imports/uberon_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-08/imports/uberon_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-09/imports/uberon_import.owl"/>
         <dc:source rdf:resource="http://dbpedia.org"/>
         <dc:source rdf:resource="http://palaeos.com"/>
         <dc:source rdf:resource="http://www.brain-map.org"/>
@@ -72,7 +72,7 @@
         <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.google.com/document/d/1cPWBqrl_Qy7XHEWFqtR_PgQX61yRkgGuLaiDpnEXxkE/edit</dc:source>
         <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.google.com/document/d/1r9kNPpFYGdu0SpJDLyFAVQczBlG0wAZCBMd18gG3Ot8/edit#</dc:source>
         <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://docs.google.com/spreadsheet/ccc?key=0Aj8NJdyb-leqdDM0R3hTVTRHRExDVjRCSkZEbDc5N1E#gid=0</dc:source>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-08</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-09</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -9507,7 +9507,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Anatomical system that has as its parts the organs devoted to the ingestion, digestion, and assimilation of food and the discharge of residual wastes.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Digestive_system"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FB:gg</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FB:gg</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NLM:alimentary+system</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -9930,7 +9930,7 @@
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Nervous_system"/>
         <oboInOwl:hasDbXref>BIRNLEX:844</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>ISBN:0-14-051288-8</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:3110148986</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:3110148986</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>NLM:nervous+system</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>WB:rynl</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFIN:curator</oboInOwl:hasDbXref>
@@ -10234,7 +10234,7 @@
         <oboInOwl:external_class>VHOG:0001674</oboInOwl:external_class>
         <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
         <oboInOwl:source rdf:resource="http://bgee.unil.ch/"/>
-        <oboInOwl:source>DOI:10.1073/pnas.97.9.4449 Shimeld SM and Holland PW. Vertebrate innovations. PNAS (2000)</oboInOwl:source>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1073/pnas.97.9.4449 Shimeld SM and Holland PW. Vertebrate innovations. PNAS (2000)</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001032"/>
@@ -12468,7 +12468,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001434"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
         <owl:annotatedTarget>GO defines skeletal system very generically: The skeleton is the bony framework of the body in vertebrates (endoskeleton) or the hard outer envelope of insects (exoskeleton or dermoskeleton) GO:0001501; however, all annotations are to vertebrates</owl:annotatedTarget>
-        <oboInOwl:external_ontology>GO</oboInOwl:external_ontology>
+        <oboInOwl:external_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO</oboInOwl:external_ontology>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001434"/>
@@ -17380,7 +17380,7 @@
         <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-06-20</oboInOwl:date_retrieved>
         <oboInOwl:external_class>AAO:0011013</oboInOwl:external_class>
         <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO</oboInOwl:ontology>
-        <oboInOwl:source>XAO:curator</oboInOwl:source>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:curator</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001917"/>
@@ -18856,7 +18856,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Muscle tissue that contains fibers that are divided by transverse bands into striations.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>CL:0000737</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:mtg_muscle</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -19316,7 +19316,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011825"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <oboInOwl:source>FMA-modified</oboInOwl:source>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA-modified</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002072"/>
@@ -20025,7 +20025,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002099"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
         <owl:annotatedTarget>in GO, septum morphogenesis is part of cardiac chamber morphogenesis; need to add axioms to infer this</owl:annotatedTarget>
-        <oboInOwl:external_ontology>GO</oboInOwl:external_ontology>
+        <oboInOwl:external_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO</oboInOwl:external_ontology>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002099"/>
@@ -21734,34 +21734,34 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002298"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>accessory medullary lamina of pallidum</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeuroNames:236</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NeuroNames:236</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002298"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>lamella pallidi incompleta</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeuroNames:236</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NeuroNames:236</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002298"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>lamina medullaris accessoria</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeuroNames:236</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NeuroNames:236</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002298"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>lamina medullaris incompleta pallidi</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeuroNames:236</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NeuroNames:236</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002298"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>lamina pallidi incompleta</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeuroNames:236</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NeuroNames:236</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -22299,7 +22299,7 @@
         <oboInOwl:hasDbXref rdf:resource="http://tolweb.org/Chordata/2499"/>
         <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/uberon/issues/25"/>
         <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/uberon/issues/271"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0815318960</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0815318960</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002328"/>
@@ -25863,7 +25863,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003055"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A temporary epithelium that derives from the outer layer of the ectdoerm and is shed once the inner layer differentiates to form a true epidermis.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ISBN:9780878932504</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:9780878932504</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003055"/>
@@ -26506,7 +26506,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003071"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
         <owl:annotatedTarget>TODO - check that GO&apos;s optic placode is the same as ZFA&apos;s eye primordium; we may want to have separate term for ocular primordium precursor. XAO has both optic field and eye primordium.</owl:annotatedTarget>
-        <oboInOwl:external_ontology>GO</oboInOwl:external_ontology>
+        <oboInOwl:external_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO</oboInOwl:external_ontology>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003071"/>
@@ -26626,7 +26626,7 @@
         <oboInOwl:external_class>VHOG:0000167</oboInOwl:external_class>
         <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
         <oboInOwl:source rdf:resource="http://bgee.unil.ch/"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.429</oboInOwl:source>
+        <oboInOwl:source>ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.429</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003072"/>
@@ -26744,7 +26744,7 @@
         <oboInOwl:external_class>VHOG:0000166</oboInOwl:external_class>
         <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
         <oboInOwl:source rdf:resource="http://bgee.unil.ch/"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.429</oboInOwl:source>
+        <oboInOwl:source>ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.429</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003073"/>
@@ -26857,7 +26857,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A region of embryonic ectodermal cells that lie directly above the notochord. During neurulation, they change shape and produce an infolding of the neural plate (the neural fold) that then seals to form the neural tube[XAO]. The earliest recognizable dorsal ectodermal primordium of the central nervous system present near the end of gastrulation before infolding to form the neural keel; consists of a thickened pseudostratified epithelium[ZFA]</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Neural_plate"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0815318960</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0815318960</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>OMD:neural+plate</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFIN:curator</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -27068,7 +27068,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003077"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>somitic mesoderm</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ISBN:9780878932504</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:9780878932504</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003077"/>
@@ -27228,7 +27228,7 @@
         <oboInOwl:external_class>VHOG:0000118</oboInOwl:external_class>
         <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
         <oboInOwl:source rdf:resource="http://bgee.unil.ch/"/>
-        <oboInOwl:source>DOI:10.1073/pnas.97.9.4449 Shimeld SM and Holland PW. Vertebrate innovations. PNAS (2000)</oboInOwl:source>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1073/pnas.97.9.4449 Shimeld SM and Holland PW. Vertebrate innovations. PNAS (2000)</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003081"/>
@@ -27380,7 +27380,7 @@
         <oboInOwl:date_retrieved rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-06-20</oboInOwl:date_retrieved>
         <oboInOwl:external_class>AAO:0011044</oboInOwl:external_class>
         <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AAO</oboInOwl:ontology>
-        <oboInOwl:source>XAO:curator</oboInOwl:source>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">XAO:curator</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003084"/>
@@ -27491,7 +27491,7 @@
         <oboInOwl:external_class>VHOG:0000680</oboInOwl:external_class>
         <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
         <oboInOwl:source rdf:resource="http://bgee.unil.ch/"/>
-        <oboInOwl:source>DOI:10.1073/pnas.97.9.4449 Shimeld SM and Holland PW. Vertebrate innovations. PNAS (2000)</oboInOwl:source>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1073/pnas.97.9.4449 Shimeld SM and Holland PW. Vertebrate innovations. PNAS (2000)</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003089"/>
@@ -27593,7 +27593,7 @@
         <oboInOwl:external_class>VHOG:0000063</oboInOwl:external_class>
         <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
         <oboInOwl:source rdf:resource="http://bgee.unil.ch/"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.43</oboInOwl:source>
+        <oboInOwl:source>ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.43</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003099"/>
@@ -32999,7 +32999,7 @@
         <oboInOwl:external_class>VHOG:0000796</oboInOwl:external_class>
         <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
         <oboInOwl:source rdf:resource="http://bgee.unil.ch/"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.43</oboInOwl:source>
+        <oboInOwl:source>ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.43</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003849"/>
@@ -33075,7 +33075,7 @@
         <oboInOwl:external_class>VHOG:0000799</oboInOwl:external_class>
         <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
         <oboInOwl:source rdf:resource="http://bgee.unil.ch/"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.43</oboInOwl:source>
+        <oboInOwl:source>ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.43</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003850"/>
@@ -33154,7 +33154,7 @@
         <oboInOwl:external_class>VHOG:0001210</oboInOwl:external_class>
         <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
         <oboInOwl:source rdf:resource="http://bgee.unil.ch/"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.43</oboInOwl:source>
+        <oboInOwl:source>ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.43</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003852"/>
@@ -33224,7 +33224,7 @@
         <oboInOwl:external_class>VHOG:0001006</oboInOwl:external_class>
         <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
         <oboInOwl:source rdf:resource="http://bgee.unil.ch/"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.43</oboInOwl:source>
+        <oboInOwl:source>ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.43</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003853"/>
@@ -33538,7 +33538,7 @@
         <oboInOwl:external_class>VHOG:0000535</oboInOwl:external_class>
         <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
         <oboInOwl:source rdf:resource="http://bgee.unil.ch/"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.429</oboInOwl:source>
+        <oboInOwl:source>ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.429</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003902"/>
@@ -34981,7 +34981,7 @@
         <oboInOwl:external_class>VHOG:0000165</oboInOwl:external_class>
         <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
         <oboInOwl:source rdf:resource="http://bgee.unil.ch/"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.429</oboInOwl:source>
+        <oboInOwl:source>ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.429</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004128"/>
@@ -35138,7 +35138,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004140"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
         <owl:annotatedTarget>this term denotes the primary heart field; GO:0003128 denotes the superclass of primary and secondary: specific region of the lateral mesoderm into the area which will form the primary beating heart tube[GO:0003138]</owl:annotatedTarget>
-        <oboInOwl:external_ontology>GO</oboInOwl:external_ontology>
+        <oboInOwl:external_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO</oboInOwl:external_ontology>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004140"/>
@@ -37635,7 +37635,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004490"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
         <owl:annotatedTarget>in GO, this is equivalent to the atrial myocardium, but FMA distinguishes these two. Consider merging.</owl:annotatedTarget>
-        <oboInOwl:external_ontology>GO</oboInOwl:external_ontology>
+        <oboInOwl:external_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO</oboInOwl:external_ontology>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004490"/>
@@ -38114,7 +38114,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004581"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000001"/>
         <owl:annotatedTarget>Subdivision of cardiovascular system which has as its parts the right side of heart, the superior vena cava and the inferior vena cava[FMA]</owl:annotatedTarget>
-        <oboInOwl:ontology>FMA</oboInOwl:ontology>
+        <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA</oboInOwl:ontology>
         <oboInOwl:source>FMA:45626</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
@@ -38856,7 +38856,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004734"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
         <owl:annotatedTarget>We explicitly merge the NCITA terms here</owl:annotatedTarget>
-        <oboInOwl:external_ontology>NCIT</oboInOwl:external_ontology>
+        <oboInOwl:external_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT</oboInOwl:external_ontology>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004734"/>
@@ -40215,7 +40215,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004872"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>splanchnic mesoderm</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ISBN:9780878932504</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:9780878932504</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -40460,7 +40460,7 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115>The tissue underlying the tunica mucosa of the pharynx.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/19594009"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0002113</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0002113</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>FMA:75144</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym>pharyngeal submucosa</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym>pharynx submucosa</oboInOwl:hasExactSynonym>
@@ -40477,7 +40477,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004924"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>The tissue underlying the tunica mucosa of the pharynx.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0002113</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0002113</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004924"/>
@@ -40503,20 +40503,20 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004924"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>tela submucosa pharyngis</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0002113</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0002113</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004924"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>submucous coat of pharynx</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0002113</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0002113</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004924"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>submucous layer of pharynx</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0002113</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BTO:0002113</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -41078,7 +41078,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005085"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
         <owl:annotatedTarget>in GO, covers optic, otic, olfactory, mammary, hair, tooth, sebaceous - and also insect structures</owl:annotatedTarget>
-        <oboInOwl:external_ontology>GO</oboInOwl:external_ontology>
+        <oboInOwl:external_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO</oboInOwl:external_ontology>
         <oboInOwl:source rdf:resource="https://github.com/geneontology/go-ontology/issues/12223#issuecomment-215692347"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -41651,7 +41651,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005253"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Portion of primordial embryonic connective tissue of the developing head, consisting of mesenchymal cells supported in interlaminar jelly, that derive mostly from the mesoderm and contribute to head connective tissue, bone and musculature in conjunction with cranial neural crest cells.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0683400088</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0683400088</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>MP:0011260</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -42312,7 +42312,7 @@
         <oboInOwl:external_class>VHOG:0000490</oboInOwl:external_class>
         <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
         <oboInOwl:source rdf:resource="http://bgee.unil.ch/"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.429</oboInOwl:source>
+        <oboInOwl:source>ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.429</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005425"/>
@@ -42412,7 +42412,7 @@
         <oboInOwl:external_class>VHOG:0001163</oboInOwl:external_class>
         <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
         <oboInOwl:source rdf:resource="http://bgee.unil.ch/"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.429</oboInOwl:source>
+        <oboInOwl:source>ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.429</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005426"/>
@@ -42915,7 +42915,7 @@
         <oboInOwl:external_class>VHOG:0000531</oboInOwl:external_class>
         <oboInOwl:ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG</oboInOwl:ontology>
         <oboInOwl:source rdf:resource="http://bgee.unil.ch/"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.429</oboInOwl:source>
+        <oboInOwl:source>ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.429</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005688"/>
@@ -48204,7 +48204,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A transient embryonic complex that comprises the pharyngeal arches, bulges of tissues of mesoderm and neural crest derivation through which pass nerves and pharyngeal arch arteries. The arches are separated internally by pharyngeal pouches, evaginations of foregut endoderm, and externally by pharyngeal clefts, invaginations of surface ectoderm. The development of the system ends when the stucture it contributes to are forming, which may include (depending on species) the thymus, thyroid, parathyroids, maxilla, mandible, aortic arch, cardiac outflow tract, external and middle ear[GO,modified].</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GO:0060037</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008814"/>
@@ -50034,7 +50034,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010077"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
         <owl:annotatedTarget>in NCIT this is glandular</owl:annotatedTarget>
-        <oboInOwl:external_ontology>NCIT</oboInOwl:external_ontology>
+        <oboInOwl:external_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT</oboInOwl:external_ontology>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0010077"/>
@@ -52412,7 +52412,7 @@
             </owl:Restriction>
         </owl:annotatedTarget>
         <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EMAPA</oboInOwl:source>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA-abduced</oboInOwl:source>
+        <oboInOwl:source>FMA-abduced</oboInOwl:source>
         <oboInOwl:source>ZFA-abduced</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
@@ -56546,7 +56546,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0018260"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/UBPROP_0000012"/>
         <owl:annotatedTarget>NCITA class may refer to smooth muscle only</owl:annotatedTarget>
-        <oboInOwl:external_ontology>NCIT</oboInOwl:external_ontology>
+        <oboInOwl:external_ontology rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIT</oboInOwl:external_ontology>
     </owl:Axiom>
     
 
