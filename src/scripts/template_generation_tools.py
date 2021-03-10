@@ -85,7 +85,7 @@ def generate_curated_class_template(dend_json_path, output_filepath):
                 d = dict()
                 d['ID'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
                 if o['cell_set_preferred_alias']:
-                    d['Label'] = o['cell_set_preferred_alias']
+                    d['prefLabel'] = o['cell_set_preferred_alias']
                 d['Synonyms_from_taxonomy'] = get_synonyms_from_taxonomy(o)
                 d['Comment'] = get_synonym_pairs(o)
                 for k in robot_class_curation_seed.keys():
