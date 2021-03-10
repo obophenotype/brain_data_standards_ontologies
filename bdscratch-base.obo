@@ -1,15 +1,14 @@
 format-version: 1.2
-data-version: bdscratch/releases/2021-03-09/bdscratch-base.owl
+data-version: bdscratch/releases/2021-03-10/bdscratch-base.owl
 ontology: bdscratch/bdscratch-base
 property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Brain Data Standards Cell Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
-property_value: owl:versionInfo "2021-03-09" xsd:string
+property_value: owl:versionInfo "2021-03-10" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:1
-name: Lamp5 Pax6
 name: Pax6,Pip5k1b expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Npy,Pax6,Pde11a,Pip5k1b. The minimal set of markers required for its identification is: Pax6,Pip5k1b" []
 comment: cell_set_preferred_alias:Lamp5 Pax6 ; original_label:Lamp5 Pax6 ; cell_set_label:RNAseq 001 ; cell_set_aligned_alias:''
@@ -21,12 +20,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029819 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000075270 ! expresses
 property_value: has_exact_synonym "Lamp5 Pax6" xsd:string
 property_value: has_exact_synonym "RNAseq 001" xsd:string
+property_value: prefLabel "Lamp5 Pax6" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:1
 
 [Term]
 id: AllenDendClass_CS202002013:10
 name: Slc17a8,Yjefn3 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sncg Slc17a8
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cnr1,Col25a1,Slc17a8,Yjefn3. The minimal set of markers required for its identification is: Slc17a8,Yjefn3" []
 comment: cell_set_preferred_alias:Sncg Slc17a8 ; original_label:Sncg Slc17a8 ; cell_set_label:RNAseq 010 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -37,12 +36,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000048967 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000058897 ! expresses
 property_value: has_exact_synonym "RNAseq 010" xsd:string
 property_value: has_exact_synonym "Sncg Slc17a8" xsd:string
+property_value: prefLabel "Sncg Slc17a8" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:10
 
 [Term]
 id: AllenDendClass_CS202002013:100
 name: Il33,Prr5l expressing oligodendrocyte of primary motor cortex (Mus musculus)
-name: Oligo Opalin_2
 def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: Il33,Prr5l. The minimal set of markers required for its identification is: Il33,Prr5l" []
 comment: cell_set_preferred_alias:Oligo Opalin_2 ; original_label:Oligo Opalin_2 ; cell_set_label:RNAseq 100 ; cell_set_aligned_alias:''
 intersection_of: CL:0000128
@@ -51,12 +50,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024810 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032841 ! expresses
 property_value: has_exact_synonym "Oligo Opalin_2" xsd:string
 property_value: has_exact_synonym "RNAseq 100" xsd:string
+property_value: prefLabel "Oligo Opalin_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:100
 
 [Term]
 id: AllenDendClass_CS202002013:101
 name: Cacna2d4,Mobp,Nckap5 expressing oligodendrocyte of primary motor cortex (Mus musculus)
-name: Oligo Opalin_3
 def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: Cacna2d4,Mobp,Nckap5. The minimal set of markers required for its identification is: Cacna2d4,Mobp,Nckap5" []
 comment: cell_set_preferred_alias:Oligo Opalin_3 ; original_label:Oligo Opalin_3 ; cell_set_label:RNAseq 101 ; cell_set_aligned_alias:''
 intersection_of: CL:0000128
@@ -66,12 +65,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000041460 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049690 ! expresses
 property_value: has_exact_synonym "Oligo Opalin_3" xsd:string
 property_value: has_exact_synonym "RNAseq 101" xsd:string
+property_value: prefLabel "Oligo Opalin_3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:101
 
 [Term]
 id: AllenDendClass_CS202002013:102
 name: Kank1,Prom1,Sytl2 expressing oligodendrocyte of primary motor cortex (Mus musculus)
-name: Oligo Opalin_4
 def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: Kank1,Prom1,Sytl2. The minimal set of markers required for its identification is: Kank1,Prom1,Sytl2" []
 comment: cell_set_preferred_alias:Oligo Opalin_4 ; original_label:Oligo Opalin_4 ; cell_set_label:RNAseq 102 ; cell_set_aligned_alias:''
 intersection_of: CL:0000128
@@ -81,12 +80,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030616 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032702 ! expresses
 property_value: has_exact_synonym "Oligo Opalin_4" xsd:string
 property_value: has_exact_synonym "RNAseq 102" xsd:string
+property_value: prefLabel "Oligo Opalin_4" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:102
 
 [Term]
 id: AllenDendClass_CS202002013:103
 name: Adgrl4,Slco1a4 expressing cerebral cortex endothelial cell of primary motor cortex (Mus musculus)
-name: Endo
 def: "A cerebral cortex endothelial cell of the Mus musculus primary motor cortex that expresses: Adgrl4,Slco1a4. The minimal set of markers required for its identification is: Adgrl4,Slco1a4" []
 comment: cell_set_preferred_alias:Endo ; original_label:Endo ; cell_set_label:RNAseq 103 ; cell_set_aligned_alias:Endothelial
 is_a: CL:1001602 {xref="doi:10.1101/2020.02.29.970558"}
@@ -95,12 +94,12 @@ intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 property_value: has_exact_synonym "Endo" xsd:string
 property_value: has_exact_synonym "Endothelial" xsd:string
 property_value: has_exact_synonym "RNAseq 103" xsd:string
+property_value: prefLabel "Endo" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:103
 
 [Term]
 id: AllenDendClass_CS202002013:11
 name: Krt73,Sln,Syt6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sncg Calb1_1
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cnr1,Col25a1,Krt73,Sln,Syt6. The minimal set of markers required for its identification is: Krt73,Sln,Syt6" []
 comment: cell_set_preferred_alias:Sncg Calb1_1 ; original_label:Sncg Calb1_1 ; cell_set_label:RNAseq 011 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -112,12 +111,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000058897 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000063661 ! expresses
 property_value: has_exact_synonym "RNAseq 011" xsd:string
 property_value: has_exact_synonym "Sncg Calb1_1" xsd:string
+property_value: prefLabel "Sncg Calb1_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:11
 
 [Term]
 id: AllenDendClass_CS202002013:111
 name: Acta2 expressing smooth muscle cell of primary motor cortex (Mus musculus)
-name: SMC
 def: "A smooth muscle cell of the Mus musculus primary motor cortex that expresses: Acta2. The minimal set of markers required for its identification is: Acta2" []
 comment: cell_set_preferred_alias:SMC ; original_label:SMC ; cell_set_label:RNAseq 111 ; cell_set_aligned_alias:SMC
 is_a: CL:0000192 {xref="doi:10.1101/2020.02.29.970558"}
@@ -125,12 +124,12 @@ intersection_of: CL:0000192
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 property_value: has_exact_synonym "RNAseq 111" xsd:string
 property_value: has_exact_synonym "SMC" xsd:string
+property_value: prefLabel "SMC" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:111
 
 [Term]
 id: AllenDendClass_CS202002013:112
 name: Abcc9,Tbx3os1 expressing brain pericyte of primary motor cortex (Mus musculus)
-name: Peri
 def: "A brain pericyte of the Mus musculus primary motor cortex that expresses: Abcc9,Tbx3os1. The minimal set of markers required for its identification is: Abcc9,Tbx3os1" []
 comment: cell_set_preferred_alias:Peri ; original_label:Peri ; cell_set_label:RNAseq 112 ; cell_set_aligned_alias:Pericyte
 is_a: CL:2000043 {xref="doi:10.1101/2020.02.29.970558"}
@@ -139,12 +138,12 @@ intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 property_value: has_exact_synonym "Peri" xsd:string
 property_value: has_exact_synonym "Pericyte" xsd:string
 property_value: has_exact_synonym "RNAseq 112" xsd:string
+property_value: prefLabel "Peri" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:112
 
 [Term]
 id: AllenDendClass_CS202002013:113
 name: Hexb expressing microglial cell of primary motor cortex (Mus musculus)
-name: Micro
 def: "A microglial cell of the Mus musculus primary motor cortex that expresses: Hexb. The minimal set of markers required for its identification is: Hexb" []
 comment: cell_set_preferred_alias:Micro ; original_label:Micro ; cell_set_label:RNAseq 113 ; cell_set_aligned_alias:Microglia
 is_a: CL:0000129 {xref="doi:10.1101/2020.02.29.970558"}
@@ -153,12 +152,12 @@ intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 property_value: has_exact_synonym "Micro" xsd:string
 property_value: has_exact_synonym "Microglia" xsd:string
 property_value: has_exact_synonym "RNAseq 113" xsd:string
+property_value: prefLabel "Micro" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:113
 
 [Term]
 id: AllenDendClass_CS202002013:12
 name: Calb1,Epb41l4a,Syt6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sncg Calb1_2
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Calb1,Cnr1,Col25a1,Epb41l4a,Syt6. The minimal set of markers required for its identification is: Calb1,Epb41l4a,Syt6" []
 comment: cell_set_preferred_alias:Sncg Calb1_2 ; original_label:Sncg Calb1_2 ; cell_set_label:RNAseq 012 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -170,11 +169,11 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000044288 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000058897 ! expresses
 property_value: has_exact_synonym "RNAseq 012" xsd:string
 property_value: has_exact_synonym "Sncg Calb1_2" xsd:string
+property_value: prefLabel "Sncg Calb1_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:12
 
 [Term]
 id: AllenDendClass_CS202002013:123
-name: GABAergic
 comment: cell_set_preferred_alias:GABAergic ; original_label:n7 ; cell_set_label:RNAseq 001-057, 089-090 ; cell_set_aligned_alias:GABAergic
 is_a: CL:0011005 {xref="DOI:10.1101/2020.02.29.970558"}
 intersection_of: CL:0011005
@@ -182,19 +181,19 @@ intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 property_value: has_exact_synonym "GABAergic" xsd:string
 property_value: has_exact_synonym "n7" xsd:string
 property_value: has_exact_synonym "RNAseq 001-057, 089-090" xsd:string
+property_value: prefLabel "GABAergic" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:123
 
 [Term]
 id: AllenDendClass_CS202002013:124
-name: CGE/PoA
 comment: cell_set_preferred_alias:CGE/PoA ; original_label:n8 ; cell_set_label:RNAseq 001-027, 089-090 ; cell_set_aligned_alias:CGE/PoA
 property_value: has_exact_synonym "CGE/PoA" xsd:string
 property_value: has_exact_synonym "n8" xsd:string
 property_value: has_exact_synonym "RNAseq 001-027, 089-090" xsd:string
+property_value: prefLabel "CGE/PoA" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:125
-name: Lamp5
 name: Npy,Pde11a expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Npy,Pde11a. The minimal set of markers required for its identification is: Npy,Pde11a" []
 comment: cell_set_preferred_alias:Lamp5 ; original_label:n9 ; cell_set_label:RNAseq 001-008 ; cell_set_aligned_alias:Lamp5
@@ -206,6 +205,7 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000075270 ! 
 property_value: has_exact_synonym "Lamp5" xsd:string
 property_value: has_exact_synonym "n9" xsd:string
 property_value: has_exact_synonym "RNAseq 001-008" xsd:string
+property_value: prefLabel "Lamp5" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:125
 
 [Term]
@@ -222,11 +222,11 @@ property_value: has_exact_synonym "RNAseq 002-004" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:128
-name: Lamp5_5
 comment: cell_set_preferred_alias:Lamp5_5 ; original_label:n12 ; cell_set_label:RNAseq 003-004 ; cell_set_aligned_alias:''
 property_value: has_exact_synonym "Lamp5_5" xsd:string
 property_value: has_exact_synonym "n12" xsd:string
 property_value: has_exact_synonym "RNAseq 003-004" xsd:string
+property_value: prefLabel "Lamp5_5" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:129
@@ -237,7 +237,6 @@ property_value: has_exact_synonym "RNAseq 005-008" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:13
 name: Npy2r,Rgs12 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sncg Npy2r
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cnr1,Col25a1,Npy2r,Rgs12. The minimal set of markers required for its identification is: Npy2r,Rgs12" []
 comment: cell_set_preferred_alias:Sncg Npy2r ; original_label:Sncg Npy2r ; cell_set_label:RNAseq 013 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -248,6 +247,7 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000044288 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000058897 ! expresses
 property_value: has_exact_synonym "RNAseq 013" xsd:string
 property_value: has_exact_synonym "Sncg Npy2r" xsd:string
+property_value: prefLabel "Sncg Npy2r" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:13
 
 [Term]
@@ -272,7 +272,6 @@ property_value: has_exact_synonym "RNAseq 009-027" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:133
 name: Cnr1,Col25a1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sncg
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cnr1,Col25a1. The minimal set of markers required for its identification is: Cnr1,Col25a1" []
 comment: cell_set_preferred_alias:Sncg ; original_label:n17 ; cell_set_label:RNAseq 009-014 ; cell_set_aligned_alias:Sncg
 is_a: CL:4023015 {xref="DOI:10.1101/2020.02.29.970558"}
@@ -283,15 +282,16 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000058897 ! 
 property_value: has_exact_synonym "n17" xsd:string
 property_value: has_exact_synonym "RNAseq 009-014" xsd:string
 property_value: has_exact_synonym "Sncg" xsd:string
+property_value: prefLabel "Sncg" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:133
 
 [Term]
 id: AllenDendClass_CS202002013:134
-name: Sncg_2
 comment: cell_set_preferred_alias:Sncg_2 ; original_label:n18 ; cell_set_label:RNAseq 009-010 ; cell_set_aligned_alias:''
 property_value: has_exact_synonym "n18" xsd:string
 property_value: has_exact_synonym "RNAseq 009-010" xsd:string
 property_value: has_exact_synonym "Sncg_2" xsd:string
+property_value: prefLabel "Sncg_2" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:135
@@ -313,7 +313,6 @@ property_value: has_exact_synonym "RNAseq 013-014" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:138
-name: Vip
 name: Vip expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Vip. The minimal set of markers required for its identification is: Vip" []
 comment: cell_set_preferred_alias:Vip ; original_label:n22 ; cell_set_label:RNAseq 015-027 ; cell_set_aligned_alias:Vip
@@ -324,6 +323,7 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019772 ! 
 property_value: has_exact_synonym "n22" xsd:string
 property_value: has_exact_synonym "RNAseq 015-027" xsd:string
 property_value: has_exact_synonym "Vip" xsd:string
+property_value: prefLabel "Vip" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:138
 
 [Term]
@@ -336,7 +336,6 @@ property_value: has_exact_synonym "RNAseq 015-017" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:14
 name: Crh,Nectin3,Unc5b expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Vip Sncg
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cnr1,Col25a1,Crh,Nectin3,Unc5b. The minimal set of markers required for its identification is: Crh,Nectin3,Unc5b" []
 comment: cell_set_preferred_alias:Vip Sncg ; original_label:Vip Sncg ; cell_set_label:RNAseq 014 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -348,6 +347,7 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049796 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000058897 ! expresses
 property_value: has_exact_synonym "RNAseq 014" xsd:string
 property_value: has_exact_synonym "Vip Sncg" xsd:string
+property_value: prefLabel "Vip Sncg" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:14
 
 [Term]
@@ -407,16 +407,15 @@ property_value: has_exact_synonym "RNAseq 024-025" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:149
-name: Vip_4
 comment: cell_set_preferred_alias:Vip_4 ; original_label:n33 ; cell_set_label:RNAseq 026-027 ; cell_set_aligned_alias:''
 property_value: has_exact_synonym "n33" xsd:string
 property_value: has_exact_synonym "RNAseq 026-027" xsd:string
 property_value: has_exact_synonym "Vip_4" xsd:string
+property_value: prefLabel "Vip_4" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:15
 name: Rgs16,Sfrp2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Vip Serpinf1_1
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Rgs16,Sfrp2,Vip. The minimal set of markers required for its identification is: Rgs16,Sfrp2" []
 comment: cell_set_preferred_alias:Vip Serpinf1_1 ; original_label:Vip Serpinf1_1 ; cell_set_label:RNAseq 015 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -426,15 +425,16 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026475 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027996 ! expresses
 property_value: has_exact_synonym "RNAseq 015" xsd:string
 property_value: has_exact_synonym "Vip Serpinf1_1" xsd:string
+property_value: prefLabel "Vip Serpinf1_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:15
 
 [Term]
 id: AllenDendClass_CS202002013:150
-name: MGE
 comment: cell_set_preferred_alias:MGE ; original_label:n34 ; cell_set_label:RNAseq 028-057 ; cell_set_aligned_alias:MGE
 property_value: has_exact_synonym "MGE" xsd:string
 property_value: has_exact_synonym "n34" xsd:string
 property_value: has_exact_synonym "RNAseq 028-057" xsd:string
+property_value: prefLabel "MGE" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:151
@@ -468,11 +468,11 @@ property_value: has_exact_synonym "RNAseq 029-030" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:156
-name: Sst_1
 comment: cell_set_preferred_alias:Sst_1 ; original_label:n40 ; cell_set_label:RNAseq 031-033 ; cell_set_aligned_alias:''
 property_value: has_exact_synonym "n40" xsd:string
 property_value: has_exact_synonym "RNAseq 031-033" xsd:string
 property_value: has_exact_synonym "Sst_1" xsd:string
+property_value: prefLabel "Sst_1" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:157
@@ -496,7 +496,6 @@ property_value: has_exact_synonym "RNAseq 034-035" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:16
 name: Ccn3,Col14a1,Pbx3 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Vip Serpinf1_2
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Ccn3,Col14a1,Pbx3,Vip. The minimal set of markers required for its identification is: Ccn3,Col14a1,Pbx3" []
 comment: cell_set_preferred_alias:Vip Serpinf1_2 ; original_label:Vip Serpinf1_2 ; cell_set_label:RNAseq 016 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -507,6 +506,7 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000037362 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038718 ! expresses
 property_value: has_exact_synonym "RNAseq 016" xsd:string
 property_value: has_exact_synonym "Vip Serpinf1_2" xsd:string
+property_value: prefLabel "Vip Serpinf1_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:16
 
 [Term]
@@ -574,7 +574,6 @@ property_value: has_exact_synonym "RNAseq 046-048" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:17
 name: Ccn3,Enpp2,Homer2,Plekhg1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Vip Serpinf1_3
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Ccn3,Enpp2,Homer2,Plekhg1,Vip. The minimal set of markers required for its identification is: Ccn3,Enpp2,Homer2,Plekhg1" []
 comment: cell_set_preferred_alias:Vip Serpinf1_3 ; original_label:Vip Serpinf1_3 ; cell_set_label:RNAseq 017 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -586,6 +585,7 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000037362 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040624 ! expresses
 property_value: has_exact_synonym "RNAseq 017" xsd:string
 property_value: has_exact_synonym "Vip Serpinf1_3" xsd:string
+property_value: prefLabel "Vip Serpinf1_3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:17
 
 [Term]
@@ -638,16 +638,15 @@ property_value: has_exact_synonym "RNAseq 054-055" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:178
-name: Chandelier
 comment: cell_set_preferred_alias:Chandelier ; original_label:n62 ; cell_set_label:RNAseq 056-057 ; cell_set_aligned_alias:Chandelier
 is_a: CL:4023036 {xref="DOI:10.1101/2020.02.29.970558"}
 property_value: has_exact_synonym "Chandelier" xsd:string
 property_value: has_exact_synonym "n62" xsd:string
 property_value: has_exact_synonym "RNAseq 056-057" xsd:string
+property_value: prefLabel "Chandelier" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:179
-name: Glutamatergic
 comment: cell_set_preferred_alias:Glutamatergic ; original_label:n63 ; cell_set_label:RNAseq 058-088 ; cell_set_aligned_alias:Glutamatergic
 is_a: CL:0000679 {xref="DOI:10.1101/2020.02.29.970558"}
 intersection_of: CL:0000679
@@ -655,12 +654,12 @@ intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 property_value: has_exact_synonym "Glutamatergic" xsd:string
 property_value: has_exact_synonym "n63" xsd:string
 property_value: has_exact_synonym "RNAseq 058-088" xsd:string
+property_value: prefLabel "Glutamatergic" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:179
 
 [Term]
 id: AllenDendClass_CS202002013:18
 name: Ccn3,Vip,Vwc2l expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Vip Htr1f
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Ccn3,Vip,Vwc2l. The minimal set of markers required for its identification is: Ccn3,Vip,Vwc2l" []
 comment: cell_set_preferred_alias:Vip Htr1f ; original_label:Vip Htr1f ; cell_set_label:RNAseq 018 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -670,6 +669,7 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000037362 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000045648 ! expresses
 property_value: has_exact_synonym "RNAseq 018" xsd:string
 property_value: has_exact_synonym "Vip Htr1f" xsd:string
+property_value: prefLabel "Vip Htr1f" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:18
 
 [Term]
@@ -686,17 +686,16 @@ property_value: has_exact_synonym "RNAseq 058-073" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:182
-name: IT projecting
 comment: cell_set_preferred_alias:IT projecting ; original_label:n66 ; cell_set_label:RNAseq 058-069 ; cell_set_aligned_alias:IT projecting
 is_a: CL:4023008 {xref="DOI:10.1101/2020.02.29.970558"}
 property_value: has_exact_synonym "IT projecting" xsd:string
 property_value: has_exact_synonym "n66" xsd:string
 property_value: has_exact_synonym "RNAseq 058-069" xsd:string
+property_value: prefLabel "IT projecting" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:183
 name: Calb1,Rasgrf2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L2/3 IT
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Calb1,Rasgrf2. The minimal set of markers required for its identification is: Calb1,Rasgrf2" []
 comment: cell_set_preferred_alias:L2/3 IT ; original_label:n67 ; cell_set_label:RNAseq 058-060 ; cell_set_aligned_alias:L2/3 IT
 intersection_of: CL:0000679
@@ -706,6 +705,7 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028222 ! 
 property_value: has_exact_synonym "L2/3 IT" xsd:string
 property_value: has_exact_synonym "n67" xsd:string
 property_value: has_exact_synonym "RNAseq 058-060" xsd:string
+property_value: prefLabel "L2/3 IT" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:183
 
 [Term]
@@ -734,16 +734,15 @@ property_value: has_exact_synonym "RNAseq 061-066" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:188
-name: L4
 comment: cell_set_preferred_alias:L4 ; original_label:n72 ; cell_set_label:RNAseq 061-062 ; cell_set_aligned_alias:L4
 property_value: has_exact_synonym "L4" xsd:string
 property_value: has_exact_synonym "n72" xsd:string
 property_value: has_exact_synonym "RNAseq 061-062" xsd:string
+property_value: prefLabel "L4" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:189
 name: Cdh12,Pdzrn3,St6galnac5 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L5 IT
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Cdh12,Pdzrn3,St6galnac5. The minimal set of markers required for its identification is: Cdh12,Pdzrn3,St6galnac5" []
 comment: cell_set_preferred_alias:L5 IT ; original_label:n73 ; cell_set_label:RNAseq 063-066 ; cell_set_aligned_alias:L5 IT
 intersection_of: CL:0000679
@@ -754,12 +753,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040452 ! 
 property_value: has_exact_synonym "L5 IT" xsd:string
 property_value: has_exact_synonym "n73" xsd:string
 property_value: has_exact_synonym "RNAseq 063-066" xsd:string
+property_value: prefLabel "L5 IT" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:189
 
 [Term]
 id: AllenDendClass_CS202002013:19
 name: Pbx3,Pde3a,Vip expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Vip Gpc3
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Pbx3,Pde3a,Vip. The minimal set of markers required for its identification is: Pbx3,Pde3a,Vip" []
 comment: cell_set_preferred_alias:Vip Gpc3 ; original_label:Vip Gpc3 ; cell_set_label:RNAseq 019 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -769,15 +768,16 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038718 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000041741 ! expresses
 property_value: has_exact_synonym "RNAseq 019" xsd:string
 property_value: has_exact_synonym "Vip Gpc3" xsd:string
+property_value: prefLabel "Vip Gpc3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:19
 
 [Term]
 id: AllenDendClass_CS202002013:190
-name: L5 IT_2
 comment: cell_set_preferred_alias:L5 IT_2 ; original_label:n74 ; cell_set_label:RNAseq 063-064 ; cell_set_aligned_alias:''
 property_value: has_exact_synonym "L5 IT_2" xsd:string
 property_value: has_exact_synonym "n74" xsd:string
 property_value: has_exact_synonym "RNAseq 063-064" xsd:string
+property_value: prefLabel "L5 IT_2" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:191
@@ -788,7 +788,6 @@ property_value: has_exact_synonym "RNAseq 065-066" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:192
 name: Bmpr1b,Il1rapl2,Sulf1 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L6 IT
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Bmpr1b,Il1rapl2,Sulf1. The minimal set of markers required for its identification is: Bmpr1b,Il1rapl2,Sulf1" []
 comment: cell_set_preferred_alias:L6 IT ; original_label:n76 ; cell_set_label:RNAseq 067-068 ; cell_set_aligned_alias:L6 IT
 intersection_of: CL:0000679
@@ -799,12 +798,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! 
 property_value: has_exact_synonym "L6 IT" xsd:string
 property_value: has_exact_synonym "n76" xsd:string
 property_value: has_exact_synonym "RNAseq 067-068" xsd:string
+property_value: prefLabel "L6 IT" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:192
 
 [Term]
 id: AllenDendClass_CS202002013:193
 name: Gm2164,Npr3 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L5 ET
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Gm2164,Npr3. The minimal set of markers required for its identification is: Gm2164,Npr3" []
 comment: cell_set_preferred_alias:L5 ET ; original_label:n77 ; cell_set_label:RNAseq 070-073 ; cell_set_aligned_alias:L5 ET
 intersection_of: CL:0000679
@@ -814,6 +813,7 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098760 ! 
 property_value: has_exact_synonym "L5 ET" xsd:string
 property_value: has_exact_synonym "n77" xsd:string
 property_value: has_exact_synonym "RNAseq 070-073" xsd:string
+property_value: prefLabel "L5 ET" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:193
 
 [Term]
@@ -837,7 +837,6 @@ property_value: has_exact_synonym "RNAseq 074-085" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:197
 name: Foxp2,Hs3st4 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L6 CT
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Foxp2,Hs3st4. The minimal set of markers required for its identification is: Foxp2,Hs3st4" []
 comment: cell_set_preferred_alias:L6 CT ; original_label:n81 ; cell_set_label:RNAseq 074-080 ; cell_set_aligned_alias:L6 CT
 intersection_of: CL:0000679
@@ -847,6 +846,7 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000078591 ! 
 property_value: has_exact_synonym "L6 CT" xsd:string
 property_value: has_exact_synonym "n81" xsd:string
 property_value: has_exact_synonym "RNAseq 074-080" xsd:string
+property_value: prefLabel "L6 CT" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:197
 
 [Term]
@@ -864,7 +864,6 @@ property_value: has_exact_synonym "RNAseq 075-078" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:2
 name: Chrna7,Fbn2,Tafa1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Lamp5 Egln3_1
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Chrna7,Fbn2,Npy,Pde11a,Tafa1. The minimal set of markers required for its identification is: Chrna7,Fbn2,Tafa1" []
 comment: cell_set_preferred_alias:Lamp5 Egln3_1 ; original_label:Lamp5 Egln3_1 ; cell_set_label:RNAseq 002 ; cell_set_aligned_alias:''
 is_a: CL:4023010 {xref="DOI:10.1101/2020.02.29.970558"}
@@ -877,12 +876,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059187 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000075270 ! expresses
 property_value: has_exact_synonym "Lamp5 Egln3_1" xsd:string
 property_value: has_exact_synonym "RNAseq 002" xsd:string
+property_value: prefLabel "Lamp5 Egln3_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:2
 
 [Term]
 id: AllenDendClass_CS202002013:20
 name: Bmper,Btbd11,Crh,Vip expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Vip C1ql1
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Bmper,Btbd11,Crh,Vip. The minimal set of markers required for its identification is: Bmper,Btbd11,Crh,Vip" []
 comment: cell_set_preferred_alias:Vip C1ql1 ; original_label:Vip C1ql1 ; cell_set_label:RNAseq 020 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -893,6 +892,7 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031963 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049796 ! expresses
 property_value: has_exact_synonym "RNAseq 020" xsd:string
 property_value: has_exact_synonym "Vip C1ql1" xsd:string
+property_value: prefLabel "Vip C1ql1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:20
 
 [Term]
@@ -916,7 +916,6 @@ property_value: has_exact_synonym "RNAseq 079-080" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:203
 name: Ccn2,Cplx3 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L6b
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Ccn2,Cplx3. The minimal set of markers required for its identification is: Ccn2,Cplx3" []
 comment: cell_set_preferred_alias:L6b ; original_label:n87 ; cell_set_label:RNAseq 081-085 ; cell_set_aligned_alias:L6b
 intersection_of: CL:0000679
@@ -926,6 +925,7 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039714 ! 
 property_value: has_exact_synonym "L6b" xsd:string
 property_value: has_exact_synonym "n87" xsd:string
 property_value: has_exact_synonym "RNAseq 081-085" xsd:string
+property_value: prefLabel "L6b" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:203
 
 [Term]
@@ -949,7 +949,6 @@ property_value: has_exact_synonym "RNAseq 082-083" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:207
 name: Etv1,Tshz2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L5/6 NP
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Etv1,Tshz2. The minimal set of markers required for its identification is: Etv1,Tshz2" []
 comment: cell_set_preferred_alias:L5/6 NP ; original_label:n91 ; cell_set_label:RNAseq 086-088 ; cell_set_aligned_alias:L5/6 NP
 intersection_of: CL:0000679
@@ -959,6 +958,7 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047907 ! 
 property_value: has_exact_synonym "L5/6 NP" xsd:string
 property_value: has_exact_synonym "n91" xsd:string
 property_value: has_exact_synonym "RNAseq 086-088" xsd:string
+property_value: prefLabel "L5/6 NP" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:207
 
 [Term]
@@ -970,7 +970,6 @@ property_value: has_exact_synonym "RNAseq 086-087" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:21
 name: 5033421B08Rik,Htr3a expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Vip Mybpc1_2
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: 5033421B08Rik,Htr3a,Vip. The minimal set of markers required for its identification is: 5033421B08Rik,Htr3a" []
 comment: cell_set_preferred_alias:Vip Mybpc1_2 ; original_label:Vip Mybpc1_2 ; cell_set_label:RNAseq 021 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -980,11 +979,11 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032269 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000112276 ! expresses
 property_value: has_exact_synonym "RNAseq 021" xsd:string
 property_value: has_exact_synonym "Vip Mybpc1_2" xsd:string
+property_value: prefLabel "Vip Mybpc1_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:21
 
 [Term]
 id: AllenDendClass_CS202002013:210
-name: Astro
 name: Gli3,Slc39a12 expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)
 def: "A astrocyte of the cerebral cortex of the Mus musculus primary motor cortex that expresses: Gli3,Slc39a12. The minimal set of markers required for its identification is: Gli3,Slc39a12" []
 comment: cell_set_preferred_alias:Astro ; original_label:n94 ; cell_set_label:RNAseq 092-094 ; cell_set_aligned_alias:Astrocyte
@@ -995,20 +994,20 @@ property_value: has_exact_synonym "Astro" xsd:string
 property_value: has_exact_synonym "Astrocyte" xsd:string
 property_value: has_exact_synonym "n94" xsd:string
 property_value: has_exact_synonym "RNAseq 092-094" xsd:string
+property_value: prefLabel "Astro" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:210
 
 [Term]
 id: AllenDendClass_CS202002013:211
-name: Astro_1
 comment: cell_set_preferred_alias:Astro_1 ; original_label:n95 ; cell_set_label:RNAseq 093-094 ; cell_set_aligned_alias:''
 property_value: has_exact_synonym "Astro_1" xsd:string
 property_value: has_exact_synonym "n95" xsd:string
 property_value: has_exact_synonym "RNAseq 093-094" xsd:string
+property_value: prefLabel "Astro_1" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:212
 name: Gjc3 expressing oligodendrocyte of primary motor cortex (Mus musculus)
-name: Oligo
 def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: Gjc3. The minimal set of markers required for its identification is: Gjc3" []
 comment: cell_set_preferred_alias:Oligo ; original_label:n96 ; cell_set_label:RNAseq 095-102 ; cell_set_aligned_alias:Oligodendrocyte
 is_a: CL:0000128 {xref="doi:10.1101/2020.02.29.970558"}
@@ -1018,6 +1017,7 @@ property_value: has_exact_synonym "n96" xsd:string
 property_value: has_exact_synonym "Oligo" xsd:string
 property_value: has_exact_synonym "Oligodendrocyte" xsd:string
 property_value: has_exact_synonym "RNAseq 095-102" xsd:string
+property_value: prefLabel "Oligo" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:212
 
 [Term]
@@ -1059,7 +1059,6 @@ property_value: has_exact_synonym "RNAseq 101-102" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:22
 name: Calb2,Gm2516 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Vip Mybpc1_1
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Calb2,Gm2516,Vip. The minimal set of markers required for its identification is: Calb2,Gm2516" []
 comment: cell_set_preferred_alias:Vip Mybpc1_1 ; original_label:Vip Mybpc1_1 ; cell_set_label:RNAseq 022 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1069,12 +1068,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019772 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000110281 ! expresses
 property_value: has_exact_synonym "RNAseq 022" xsd:string
 property_value: has_exact_synonym "Vip Mybpc1_1" xsd:string
+property_value: prefLabel "Vip Mybpc1_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:22
 
 [Term]
 id: AllenDendClass_CS202002013:23
 name: Chat,Npy2r expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Vip Chat_1
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Chat,Npy2r,Vip. The minimal set of markers required for its identification is: Chat,Npy2r" []
 comment: cell_set_preferred_alias:Vip Chat_1 ; original_label:Vip Chat_1 ; cell_set_label:RNAseq 023 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1084,12 +1083,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021919 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028004 ! expresses
 property_value: has_exact_synonym "RNAseq 023" xsd:string
 property_value: has_exact_synonym "Vip Chat_1" xsd:string
+property_value: prefLabel "Vip Chat_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:23
 
 [Term]
 id: AllenDendClass_CS202002013:24
 name: Caln1,Grm8 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Vip Mybpc1_3
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Caln1,Grm8,Vip. The minimal set of markers required for its identification is: Caln1,Grm8" []
 comment: cell_set_preferred_alias:Vip Mybpc1_3 ; original_label:Vip Mybpc1_3 ; cell_set_label:RNAseq 024 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1099,12 +1098,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024211 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000060371 ! expresses
 property_value: has_exact_synonym "RNAseq 024" xsd:string
 property_value: has_exact_synonym "Vip Mybpc1_3" xsd:string
+property_value: prefLabel "Vip Mybpc1_3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:24
 
 [Term]
 id: AllenDendClass_CS202002013:25
 name: Grik4,Htr4 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Vip Chat_2
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Grik4,Htr4,Vip. The minimal set of markers required for its identification is: Grik4,Htr4" []
 comment: cell_set_preferred_alias:Vip Chat_2 ; original_label:Vip Chat_2 ; cell_set_label:RNAseq 025 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1114,12 +1113,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026322 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032017 ! expresses
 property_value: has_exact_synonym "RNAseq 025" xsd:string
 property_value: has_exact_synonym "Vip Chat_2" xsd:string
+property_value: prefLabel "Vip Chat_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:25
 
 [Term]
 id: AllenDendClass_CS202002013:26
 name: Gm39185,Thsd7a expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Vip Igfbp6_1
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Gm39185,Thsd7a,Vip. The minimal set of markers required for its identification is: Gm39185,Thsd7a" []
 comment: cell_set_preferred_alias:Vip Igfbp6_1 ; original_label:Vip Igfbp6_1 ; cell_set_label:RNAseq 026 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1129,12 +1128,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032625 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000110468 ! expresses
 property_value: has_exact_synonym "RNAseq 026" xsd:string
 property_value: has_exact_synonym "Vip Igfbp6_1" xsd:string
+property_value: prefLabel "Vip Igfbp6_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:26
 
 [Term]
 id: AllenDendClass_CS202002013:27
 name: Crh,Thsd7b expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Vip Igfbp6_2
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Crh,Thsd7b,Vip. The minimal set of markers required for its identification is: Crh,Thsd7b" []
 comment: cell_set_preferred_alias:Vip Igfbp6_2 ; original_label:Vip Igfbp6_2 ; cell_set_label:RNAseq 027 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1144,12 +1143,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042581 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049796 ! expresses
 property_value: has_exact_synonym "RNAseq 027" xsd:string
 property_value: has_exact_synonym "Vip Igfbp6_2" xsd:string
+property_value: prefLabel "Vip Igfbp6_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:27
 
 [Term]
 id: AllenDendClass_CS202002013:28
 name: Nos1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sst Chodl
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Nos1. The minimal set of markers required for its identification is: Nos1" []
 comment: cell_set_preferred_alias:Sst Chodl ; original_label:Sst Chodl ; cell_set_label:RNAseq 028 ; cell_set_aligned_alias:Sst Chodl
 is_a: CL:4023025 {xref="DOI:10.1101/2020.02.29.970558"}
@@ -1158,12 +1157,12 @@ intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029361 ! expresses
 property_value: has_exact_synonym "RNAseq 028" xsd:string
 property_value: has_exact_synonym "Sst Chodl" xsd:string
+property_value: prefLabel "Sst Chodl" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:28
 
 [Term]
 id: AllenDendClass_CS202002013:29
 name: 9530026P05Rik,Cartpt,Il1rapl2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sst Penk
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: 9530026P05Rik,Cartpt,Il1rapl2. The minimal set of markers required for its identification is: 9530026P05Rik,Cartpt,Il1rapl2" []
 comment: cell_set_preferred_alias:Sst Penk ; original_label:Sst Penk ; cell_set_label:RNAseq 029 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1173,12 +1172,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000097462 ! expresses
 property_value: has_exact_synonym "RNAseq 029" xsd:string
 property_value: has_exact_synonym "Sst Penk" xsd:string
+property_value: prefLabel "Sst Penk" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:29
 
 [Term]
 id: AllenDendClass_CS202002013:3
 name: Crim1,Zfp804b expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Lamp5 Egln3_2
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Crim1,Npy,Pde11a,Zfp804b. The minimal set of markers required for its identification is: Crim1,Zfp804b" []
 comment: cell_set_preferred_alias:Lamp5 Egln3_2 ; original_label:Lamp5 Egln3_2 ; cell_set_label:RNAseq 003 ; cell_set_aligned_alias:''
 is_a: CL:4023022 {xref="DOI:10.1101/2020.02.29.970558"}
@@ -1190,12 +1189,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000075270 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000092094 ! expresses
 property_value: has_exact_synonym "Lamp5 Egln3_2" xsd:string
 property_value: has_exact_synonym "RNAseq 003" xsd:string
+property_value: prefLabel "Lamp5 Egln3_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:3
 
 [Term]
 id: AllenDendClass_CS202002013:30
 name: Il1rapl2,Reln expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sst Myh8_1
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Il1rapl2,Reln. The minimal set of markers required for its identification is: Il1rapl2,Reln" []
 comment: cell_set_preferred_alias:Sst Myh8_1 ; original_label:Sst Myh8_1 ; cell_set_label:RNAseq 030 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1204,12 +1203,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042453 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses
 property_value: has_exact_synonym "RNAseq 030" xsd:string
 property_value: has_exact_synonym "Sst Myh8_1" xsd:string
+property_value: prefLabel "Sst Myh8_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:30
 
 [Term]
 id: AllenDendClass_CS202002013:31
 name: Cdh13,Pld5,Sox6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sst Myh8_2
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cdh13,Pld5,Sox6. The minimal set of markers required for its identification is: Cdh13,Pld5,Sox6" []
 comment: cell_set_preferred_alias:Sst Myh8_2 ; original_label:Sst Myh8_2 ; cell_set_label:RNAseq 031 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1219,12 +1218,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000051910 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000055214 ! expresses
 property_value: has_exact_synonym "RNAseq 031" xsd:string
 property_value: has_exact_synonym "Sst Myh8_2" xsd:string
+property_value: prefLabel "Sst Myh8_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:31
 
 [Term]
 id: AllenDendClass_CS202002013:32
 name: Cdh9,Grm1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sst Myh8_3
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cdh9,Grm1. The minimal set of markers required for its identification is: Cdh9,Grm1" []
 comment: cell_set_preferred_alias:Sst Myh8_3 ; original_label:Sst Myh8_3 ; cell_set_label:RNAseq 032 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1233,12 +1232,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019828 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000025370 ! expresses
 property_value: has_exact_synonym "RNAseq 032" xsd:string
 property_value: has_exact_synonym "Sst Myh8_3" xsd:string
+property_value: prefLabel "Sst Myh8_3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:32
 
 [Term]
 id: AllenDendClass_CS202002013:33
 name: Gm30835,Pdyn expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sst Htr1a
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Gm30835,Pdyn. The minimal set of markers required for its identification is: Gm30835,Pdyn" []
 comment: cell_set_preferred_alias:Sst Htr1a ; original_label:Sst Htr1a ; cell_set_label:RNAseq 033 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1247,12 +1246,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027400 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000105068 ! expresses
 property_value: has_exact_synonym "RNAseq 033" xsd:string
 property_value: has_exact_synonym "Sst Htr1a" xsd:string
+property_value: prefLabel "Sst Htr1a" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:33
 
 [Term]
 id: AllenDendClass_CS202002013:34
 name: Col19a1,Fbn2,Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sst Etv1
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Col19a1,Fbn2,Trpc6. The minimal set of markers required for its identification is: Col19a1,Fbn2,Trpc6" []
 comment: cell_set_preferred_alias:Sst Etv1 ; original_label:Sst Etv1 ; cell_set_label:RNAseq 034 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1262,12 +1261,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026141 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! expresses
 property_value: has_exact_synonym "RNAseq 034" xsd:string
 property_value: has_exact_synonym "Sst Etv1" xsd:string
+property_value: prefLabel "Sst Etv1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:34
 
 [Term]
 id: AllenDendClass_CS202002013:35
 name: Edaradd,Spon1,Whrn expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sst Pvalb Etv1
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Edaradd,Spon1,Whrn. The minimal set of markers required for its identification is: Edaradd,Spon1,Whrn" []
 comment: cell_set_preferred_alias:Sst Pvalb Etv1 ; original_label:Sst Pvalb Etv1 ; cell_set_label:RNAseq 035 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1277,12 +1276,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039137 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000095105 ! expresses
 property_value: has_exact_synonym "RNAseq 035" xsd:string
 property_value: has_exact_synonym "Sst Pvalb Etv1" xsd:string
+property_value: prefLabel "Sst Pvalb Etv1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:35
 
 [Term]
 id: AllenDendClass_CS202002013:36
 name: Eya4,Nek7,Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sst Crhr2_1
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Eya4,Nek7,Trpc6. The minimal set of markers required for its identification is: Eya4,Nek7,Trpc6" []
 comment: cell_set_preferred_alias:Sst Crhr2_1 ; original_label:Sst Crhr2_1 ; cell_set_label:RNAseq 036 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1292,12 +1291,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026393 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! expresses
 property_value: has_exact_synonym "RNAseq 036" xsd:string
 property_value: has_exact_synonym "Sst Crhr2_1" xsd:string
+property_value: prefLabel "Sst Crhr2_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:36
 
 [Term]
 id: AllenDendClass_CS202002013:37
 name: Lypd6b,Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sst Crhr2_2
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Lypd6b,Trpc6. The minimal set of markers required for its identification is: Lypd6b,Trpc6" []
 comment: cell_set_preferred_alias:Sst Crhr2_2 ; original_label:Sst Crhr2_2 ; cell_set_label:RNAseq 037 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1306,12 +1305,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026765 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! expresses
 property_value: has_exact_synonym "RNAseq 037" xsd:string
 property_value: has_exact_synonym "Sst Crhr2_2" xsd:string
+property_value: prefLabel "Sst Crhr2_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:37
 
 [Term]
 id: AllenDendClass_CS202002013:38
 name: Hpse,Rerg expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sst Hpse
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Hpse,Rerg. The minimal set of markers required for its identification is: Hpse,Rerg" []
 comment: cell_set_preferred_alias:Sst Hpse ; original_label:Sst Hpse ; cell_set_label:RNAseq 038 ; cell_set_aligned_alias:''
 is_a: CL:4023031 {xref="DOI:10.1101/2020.02.29.970558"}
@@ -1321,12 +1320,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030222 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035273 ! expresses
 property_value: has_exact_synonym "RNAseq 038" xsd:string
 property_value: has_exact_synonym "Sst Hpse" xsd:string
+property_value: prefLabel "Sst Hpse" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:38
 
 [Term]
 id: AllenDendClass_CS202002013:39
 name: Olfm3,Sst expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sst Calb2
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Olfm3,Sst. The minimal set of markers required for its identification is: Olfm3,Sst" []
 comment: cell_set_preferred_alias:Sst Calb2 ; original_label:Sst Calb2 ; cell_set_label:RNAseq 039 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1335,12 +1334,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004366 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027965 ! expresses
 property_value: has_exact_synonym "RNAseq 039" xsd:string
 property_value: has_exact_synonym "Sst Calb2" xsd:string
+property_value: prefLabel "Sst Calb2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:39
 
 [Term]
 id: AllenDendClass_CS202002013:4
 name: Cxcl14,Ntn1,Reln expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Lamp5 Egln3_3
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cxcl14,Npy,Ntn1,Pde11a,Reln. The minimal set of markers required for its identification is: Cxcl14,Ntn1,Reln" []
 comment: cell_set_preferred_alias:Lamp5 Egln3_3 ; original_label:Lamp5 Egln3_3 ; cell_set_label:RNAseq 004 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1352,12 +1351,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042453 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000075270 ! expresses
 property_value: has_exact_synonym "Lamp5 Egln3_3" xsd:string
 property_value: has_exact_synonym "RNAseq 004" xsd:string
+property_value: prefLabel "Lamp5 Egln3_3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:4
 
 [Term]
 id: AllenDendClass_CS202002013:40
 name: Gm49678,Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sst Pappa
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Gm49678,Trpc6. The minimal set of markers required for its identification is: Gm49678,Trpc6" []
 comment: cell_set_preferred_alias:Sst Pappa ; original_label:Sst Pappa ; cell_set_label:RNAseq 040 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1366,12 +1365,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000116610 ! expresses
 property_value: has_exact_synonym "RNAseq 040" xsd:string
 property_value: has_exact_synonym "Sst Pappa" xsd:string
+property_value: prefLabel "Sst Pappa" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:40
 
 [Term]
 id: AllenDendClass_CS202002013:41
 name: Moxd1,Prkg2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sst Pvalb Calb2
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Moxd1,Prkg2. The minimal set of markers required for its identification is: Moxd1,Prkg2" []
 comment: cell_set_preferred_alias:Sst Pvalb Calb2 ; original_label:Sst Pvalb Calb2 ; cell_set_label:RNAseq 041 ; cell_set_aligned_alias:''
 is_a: CL:4023034 {xref="DOI:10.1101/2020.02.29.970558"}
@@ -1381,12 +1380,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020000 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029334 ! expresses
 property_value: has_exact_synonym "RNAseq 041" xsd:string
 property_value: has_exact_synonym "Sst Pvalb Calb2" xsd:string
+property_value: prefLabel "Sst Pvalb Calb2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:41
 
 [Term]
 id: AllenDendClass_CS202002013:42
 name: Gm48893,Pard3b expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sst C1ql3_1
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Gm48893,Pard3b. The minimal set of markers required for its identification is: Gm48893,Pard3b" []
 comment: cell_set_preferred_alias:Sst C1ql3_1 ; original_label:Sst C1ql3_1 ; cell_set_label:RNAseq 042 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1395,12 +1394,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052062 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111950 ! expresses
 property_value: has_exact_synonym "RNAseq 042" xsd:string
 property_value: has_exact_synonym "Sst C1ql3_1" xsd:string
+property_value: prefLabel "Sst C1ql3_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:42
 
 [Term]
 id: AllenDendClass_CS202002013:43
 name: Brinp3,Gxylt2,Ndnf expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sst C1ql3_2
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Brinp3,Gxylt2,Ndnf. The minimal set of markers required for its identification is: Brinp3,Gxylt2,Ndnf" []
 comment: cell_set_preferred_alias:Sst C1ql3_2 ; original_label:Sst C1ql3_2 ; cell_set_label:RNAseq 043 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1410,12 +1409,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035131 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049001 ! expresses
 property_value: has_exact_synonym "RNAseq 043" xsd:string
 property_value: has_exact_synonym "Sst C1ql3_2" xsd:string
+property_value: prefLabel "Sst C1ql3_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:43
 
 [Term]
 id: AllenDendClass_CS202002013:44
 name: Cdh13,Tac2,Tmtc2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sst Tac2
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cdh13,Tac2,Tmtc2. The minimal set of markers required for its identification is: Cdh13,Tac2,Tmtc2" []
 comment: cell_set_preferred_alias:Sst Tac2 ; original_label:Sst Tac2 ; cell_set_label:RNAseq 044 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1425,11 +1424,11 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031841 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036019 ! expresses
 property_value: has_exact_synonym "RNAseq 044" xsd:string
 property_value: has_exact_synonym "Sst Tac2" xsd:string
+property_value: prefLabel "Sst Tac2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:44
 
 [Term]
 id: AllenDendClass_CS202002013:45
-name: Sst Th_1
 name: St6galnac5,St8sia4,Zfpm2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: St6galnac5,St8sia4,Zfpm2. The minimal set of markers required for its identification is: St6galnac5,St8sia4,Zfpm2" []
 comment: cell_set_preferred_alias:Sst Th_1 ; original_label:Sst Th_1 ; cell_set_label:RNAseq 045 ; cell_set_aligned_alias:''
@@ -1440,12 +1439,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039037 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040710 ! expresses
 property_value: has_exact_synonym "RNAseq 045" xsd:string
 property_value: has_exact_synonym "Sst Th_1" xsd:string
+property_value: prefLabel "Sst Th_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:45
 
 [Term]
 id: AllenDendClass_CS202002013:46
 name: Pard3b,Pnoc,Sst expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sst Th_2
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Pard3b,Pnoc,Sst. The minimal set of markers required for its identification is: Pard3b,Pnoc,Sst" []
 comment: cell_set_preferred_alias:Sst Th_2 ; original_label:Sst Th_2 ; cell_set_label:RNAseq 046 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1455,12 +1454,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000045731 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052062 ! expresses
 property_value: has_exact_synonym "RNAseq 046" xsd:string
 property_value: has_exact_synonym "Sst Th_2" xsd:string
+property_value: prefLabel "Sst Th_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:46
 
 [Term]
 id: AllenDendClass_CS202002013:47
 name: Cort,Th expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sst Th_3
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cort,Th. The minimal set of markers required for its identification is: Cort,Th" []
 comment: cell_set_preferred_alias:Sst Th_3 ; original_label:Sst Th_3 ; cell_set_label:RNAseq 047 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1469,12 +1468,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000000214 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028971 ! expresses
 property_value: has_exact_synonym "RNAseq 047" xsd:string
 property_value: has_exact_synonym "Sst Th_3" xsd:string
+property_value: prefLabel "Sst Th_3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:47
 
 [Term]
 id: AllenDendClass_CS202002013:48
 name: Gabrg1,Th expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Pvalb Gabrg1
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Gabrg1,Th. The minimal set of markers required for its identification is: Gabrg1,Th" []
 comment: cell_set_preferred_alias:Pvalb Gabrg1 ; original_label:Pvalb Gabrg1 ; cell_set_label:RNAseq 048 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1483,12 +1482,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000000214 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000001260 ! expresses
 property_value: has_exact_synonym "Pvalb Gabrg1" xsd:string
 property_value: has_exact_synonym "RNAseq 048" xsd:string
+property_value: prefLabel "Pvalb Gabrg1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:48
 
 [Term]
 id: AllenDendClass_CS202002013:49
 name: 9330158H04Rik,Plch1,Tac1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Pvalb Egfem1
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: 9330158H04Rik,Plch1,Tac1. The minimal set of markers required for its identification is: 9330158H04Rik,Plch1,Tac1" []
 comment: cell_set_preferred_alias:Pvalb Egfem1 ; original_label:Pvalb Egfem1 ; cell_set_label:RNAseq 049 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1498,12 +1497,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000061762 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000073154 ! expresses
 property_value: has_exact_synonym "Pvalb Egfem1" xsd:string
 property_value: has_exact_synonym "RNAseq 049" xsd:string
+property_value: prefLabel "Pvalb Egfem1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:49
 
 [Term]
 id: AllenDendClass_CS202002013:5
 name: Dock5,Ndnf,Ndst4 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Lamp5 Pdlim5_1
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Dock5,Ndnf,Ndst4,Npy,Pde11a. The minimal set of markers required for its identification is: Dock5,Ndnf,Ndst4" []
 comment: cell_set_preferred_alias:Lamp5 Pdlim5_1 ; original_label:Lamp5 Pdlim5_1 ; cell_set_label:RNAseq 005 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1515,12 +1514,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049001 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000075270 ! expresses
 property_value: has_exact_synonym "Lamp5 Pdlim5_1" xsd:string
 property_value: has_exact_synonym "RNAseq 005" xsd:string
+property_value: prefLabel "Lamp5 Pdlim5_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:5
 
 [Term]
 id: AllenDendClass_CS202002013:50
 name: Fzd6,Slit2,Syt2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Pvalb Gpr149
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Fzd6,Slit2,Syt2. The minimal set of markers required for its identification is: Fzd6,Slit2,Syt2" []
 comment: cell_set_preferred_alias:Pvalb Gpr149 ; original_label:Pvalb Gpr149 ; cell_set_label:RNAseq 050 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1530,12 +1529,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026452 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031558 ! expresses
 property_value: has_exact_synonym "Pvalb Gpr149" xsd:string
 property_value: has_exact_synonym "RNAseq 050" xsd:string
+property_value: prefLabel "Pvalb Gpr149" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:50
 
 [Term]
 id: AllenDendClass_CS202002013:51
 name: Cacna2d2,Sema3e,Syt2,Tmem132d expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Pvalb Kank4
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cacna2d2,Sema3e,Syt2,Tmem132d. The minimal set of markers required for its identification is: Cacna2d2,Sema3e,Syt2,Tmem132d" []
 comment: cell_set_preferred_alias:Pvalb Kank4 ; original_label:Pvalb Kank4 ; cell_set_label:RNAseq 051 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1546,12 +1545,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000034310 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000063531 ! expresses
 property_value: has_exact_synonym "Pvalb Kank4" xsd:string
 property_value: has_exact_synonym "RNAseq 051" xsd:string
+property_value: prefLabel "Pvalb Kank4" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:51
 
 [Term]
 id: AllenDendClass_CS202002013:52
 name: Cort,Gm28807,Nxph2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Pvalb Calb1_1
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cort,Gm28807,Nxph2. The minimal set of markers required for its identification is: Cort,Gm28807,Nxph2" []
 comment: cell_set_preferred_alias:Pvalb Calb1_1 ; original_label:Pvalb Calb1_1 ; cell_set_label:RNAseq 052 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1561,12 +1560,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000069132 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000100650 ! expresses
 property_value: has_exact_synonym "Pvalb Calb1_1" xsd:string
 property_value: has_exact_synonym "RNAseq 052" xsd:string
+property_value: prefLabel "Pvalb Calb1_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:52
 
 [Term]
 id: AllenDendClass_CS202002013:53
 name: Cntnap5c,Tac1,Tmem132c expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Pvalb Calb1_2
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cntnap5c,Tac1,Tmem132c. The minimal set of markers required for its identification is: Cntnap5c,Tac1,Tmem132c" []
 comment: cell_set_preferred_alias:Pvalb Calb1_2 ; original_label:Pvalb Calb1_2 ; cell_set_label:RNAseq 053 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1576,12 +1575,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038048 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000061762 ! expresses
 property_value: has_exact_synonym "Pvalb Calb1_2" xsd:string
 property_value: has_exact_synonym "RNAseq 053" xsd:string
+property_value: prefLabel "Pvalb Calb1_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:53
 
 [Term]
 id: AllenDendClass_CS202002013:54
 name: Cntnap4,Gm46102 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Pvalb Reln
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cntnap4,Gm46102. The minimal set of markers required for its identification is: Cntnap4,Gm46102" []
 comment: cell_set_preferred_alias:Pvalb Reln ; original_label:Pvalb Reln ; cell_set_label:RNAseq 054 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1590,12 +1589,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031772 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111061 ! expresses
 property_value: has_exact_synonym "Pvalb Reln" xsd:string
 property_value: has_exact_synonym "RNAseq 054" xsd:string
+property_value: prefLabel "Pvalb Reln" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:54
 
 [Term]
 id: AllenDendClass_CS202002013:55
 name: Eya4,Il1rapl2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Pvalb Il1rapl2
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Eya4,Il1rapl2. The minimal set of markers required for its identification is: Eya4,Il1rapl2" []
 comment: cell_set_preferred_alias:Pvalb Il1rapl2 ; original_label:Pvalb Il1rapl2 ; cell_set_label:RNAseq 055 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1604,12 +1603,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000010461 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses
 property_value: has_exact_synonym "Pvalb Il1rapl2" xsd:string
 property_value: has_exact_synonym "RNAseq 055" xsd:string
+property_value: prefLabel "Pvalb Il1rapl2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:55
 
 [Term]
 id: AllenDendClass_CS202002013:56
 name: Lamb1,Nkx2-1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Pvalb Vipr2_1
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Lamb1,Nkx2-1. The minimal set of markers required for its identification is: Lamb1,Nkx2-1" []
 comment: cell_set_preferred_alias:Pvalb Vipr2_1 ; original_label:Pvalb Vipr2_1 ; cell_set_label:RNAseq 056 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1618,12 +1617,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000001496 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000002900 ! expresses
 property_value: has_exact_synonym "Pvalb Vipr2_1" xsd:string
 property_value: has_exact_synonym "RNAseq 056" xsd:string
+property_value: prefLabel "Pvalb Vipr2_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:56
 
 [Term]
 id: AllenDendClass_CS202002013:57
 name: Cntnap5b,Unc5b expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Pvalb Vipr2_2
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cntnap5b,Unc5b. The minimal set of markers required for its identification is: Cntnap5b,Unc5b" []
 comment: cell_set_preferred_alias:Pvalb Vipr2_2 ; original_label:Pvalb Vipr2_2 ; cell_set_label:RNAseq 057 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1632,12 +1631,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020099 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000067028 ! expresses
 property_value: has_exact_synonym "Pvalb Vipr2_2" xsd:string
 property_value: has_exact_synonym "RNAseq 057" xsd:string
+property_value: prefLabel "Pvalb Vipr2_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:57
 
 [Term]
 id: AllenDendClass_CS202002013:58
 name: 6530403H02Rik,Adamts2,Met expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L2/3 IT_1
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: 6530403H02Rik,Adamts2,Met. The minimal set of markers required for its identification is: 6530403H02Rik,Adamts2,Met" []
 comment: cell_set_preferred_alias:L2/3 IT_1 ; original_label:L2/3 IT_1 ; cell_set_label:RNAseq 058 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -1649,12 +1648,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036545 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098097 ! expresses
 property_value: has_exact_synonym "L2/3 IT_1" xsd:string
 property_value: has_exact_synonym "RNAseq 058" xsd:string
+property_value: prefLabel "L2/3 IT_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:58
 
 [Term]
 id: AllenDendClass_CS202002013:59
 name: Ccdc3,Cux1,Meis2,Otof expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L2/3 IT_2
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Ccdc3,Cux1,Meis2,Otof. The minimal set of markers required for its identification is: Ccdc3,Cux1,Meis2,Otof" []
 comment: cell_set_preferred_alias:L2/3 IT_2 ; original_label:L2/3 IT_2 ; cell_set_label:RNAseq 059 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -1667,11 +1666,11 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029705 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000062372 ! expresses
 property_value: has_exact_synonym "L2/3 IT_2" xsd:string
 property_value: has_exact_synonym "RNAseq 059" xsd:string
+property_value: prefLabel "L2/3 IT_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:59
 
 [Term]
 id: AllenDendClass_CS202002013:6
-name: Lamp5 Pdlim5_2
 name: Ndnf,Pde11a expressing GABAergic interneuron of primary motor cortex (Mus musculus)
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Ndnf,Npy,Pde11a. The minimal set of markers required for its identification is: Ndnf,Pde11a" []
 comment: cell_set_preferred_alias:Lamp5 Pdlim5_2 ; original_label:Lamp5 Pdlim5_2 ; cell_set_label:RNAseq 006 ; cell_set_aligned_alias:''
@@ -1682,12 +1681,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049001 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000075270 ! expresses
 property_value: has_exact_synonym "Lamp5 Pdlim5_2" xsd:string
 property_value: has_exact_synonym "RNAseq 006" xsd:string
+property_value: prefLabel "Lamp5 Pdlim5_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:6
 
 [Term]
 id: AllenDendClass_CS202002013:60
 name: Cux2,Slit3,Stard8 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L2/3 IT_3
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Cux2,Slit3,Stard8. The minimal set of markers required for its identification is: Cux2,Slit3,Stard8" []
 comment: cell_set_preferred_alias:L2/3 IT_3 ; original_label:L2/3 IT_3 ; cell_set_label:RNAseq 060 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -1699,12 +1698,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042589 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000056427 ! expresses
 property_value: has_exact_synonym "L2/3 IT_3" xsd:string
 property_value: has_exact_synonym "RNAseq 060" xsd:string
+property_value: prefLabel "L2/3 IT_3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:60
 
 [Term]
 id: AllenDendClass_CS202002013:61
 name: Cadps2,Prr16,Rorb expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L4/5 IT_1
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Cadps2,Prr16,Rorb. The minimal set of markers required for its identification is: Cadps2,Prr16,Rorb" []
 comment: cell_set_preferred_alias:L4/5 IT_1 ; original_label:L4/5 IT_1 ; cell_set_label:RNAseq 061 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -1714,12 +1713,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036192 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000073565 ! expresses
 property_value: has_exact_synonym "L4/5 IT_1" xsd:string
 property_value: has_exact_synonym "RNAseq 061" xsd:string
+property_value: prefLabel "L4/5 IT_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:61
 
 [Term]
 id: AllenDendClass_CS202002013:62
 name: Col26a1,Cpne4,Il1rapl2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L4/5 IT_2
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Col26a1,Cpne4,Il1rapl2. The minimal set of markers required for its identification is: Col26a1,Cpne4,Il1rapl2" []
 comment: cell_set_preferred_alias:L4/5 IT_2 ; original_label:L4/5 IT_2 ; cell_set_label:RNAseq 062 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -1729,19 +1728,19 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032564 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses
 property_value: has_exact_synonym "L4/5 IT_2" xsd:string
 property_value: has_exact_synonym "RNAseq 062" xsd:string
+property_value: prefLabel "L4/5 IT_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:62
 
 [Term]
 id: AllenDendClass_CS202002013:63
-name: L5 IT_1
 comment: cell_set_preferred_alias:L5 IT_1 ; original_label:L5 IT_1 ; cell_set_label:RNAseq 063 ; cell_set_aligned_alias:''
 property_value: has_exact_synonym "L5 IT_1" xsd:string
 property_value: has_exact_synonym "RNAseq 063" xsd:string
+property_value: prefLabel "L5 IT_1" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:64
 name: Adamts18,Deptor,Gm49678,Man1a expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L5 IT_2
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Adamts18,Cdh12,Deptor,Gm49678,Man1a,Pdzrn3,St6galnac5. The minimal set of markers required for its identification is: Adamts18,Deptor,Gm49678,Man1a" []
 comment: cell_set_preferred_alias:L5 IT_2 ; original_label:L5 IT_2 ; cell_set_label:RNAseq 064 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -1755,12 +1754,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000053399 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000116610 ! expresses
 property_value: has_exact_synonym "L5 IT_2" xsd:string
 property_value: has_exact_synonym "RNAseq 064" xsd:string
+property_value: prefLabel "L5 IT_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:64
 
 [Term]
 id: AllenDendClass_CS202002013:65
 name: Cadps2,Enpp2,Pld5,Ptprk,Rxfp1 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L5 IT_3
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Cadps2,Cdh12,Enpp2,Pdzrn3,Pld5,Ptprk,Rxfp1,St6galnac5. The minimal set of markers required for its identification is: Cadps2,Enpp2,Pld5,Ptprk,Rxfp1" []
 comment: cell_set_preferred_alias:L5 IT_3 ; original_label:L5 IT_3 ; cell_set_label:RNAseq 065 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -1775,12 +1774,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040452 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000055214 ! expresses
 property_value: has_exact_synonym "L5 IT_3" xsd:string
 property_value: has_exact_synonym "RNAseq 065" xsd:string
+property_value: prefLabel "L5 IT_3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:65
 
 [Term]
 id: AllenDendClass_CS202002013:66
 name: Chrm2,Cwh43,Pld5 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L5 IT_4
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Cdh12,Chrm2,Cwh43,Pdzrn3,Pld5,St6galnac5. The minimal set of markers required for its identification is: Chrm2,Cwh43,Pld5" []
 comment: cell_set_preferred_alias:L5 IT_4 ; original_label:L5 IT_4 ; cell_set_label:RNAseq 066 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -1793,12 +1792,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000045613 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000055214 ! expresses
 property_value: has_exact_synonym "L5 IT_4" xsd:string
 property_value: has_exact_synonym "RNAseq 066" xsd:string
+property_value: prefLabel "L5 IT_4" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:66
 
 [Term]
 id: AllenDendClass_CS202002013:67
 name: Bmpr1b,Fst,Ntng1 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L6 IT_1
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Bmpr1b,Fst,Il1rapl2,Ntng1,Sulf1. The minimal set of markers required for its identification is: Bmpr1b,Fst,Ntng1" []
 comment: cell_set_preferred_alias:L6 IT_1 ; original_label:L6 IT_1 ; cell_set_label:RNAseq 067 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -1810,12 +1809,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059857 ! expresses
 property_value: has_exact_synonym "L6 IT_1" xsd:string
 property_value: has_exact_synonym "RNAseq 067" xsd:string
+property_value: prefLabel "L6 IT_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:67
 
 [Term]
 id: AllenDendClass_CS202002013:68
 name: Bmpr1b,C1ql3,Ptpru expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L6 IT_2
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Bmpr1b,C1ql3,Il1rapl2,Ptpru,Sulf1. The minimal set of markers required for its identification is: Bmpr1b,C1ql3,Ptpru" []
 comment: cell_set_preferred_alias:L6 IT_2 ; original_label:L6 IT_2 ; cell_set_label:RNAseq 068 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -1827,11 +1826,11 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052430 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses
 property_value: has_exact_synonym "L6 IT_2" xsd:string
 property_value: has_exact_synonym "RNAseq 068" xsd:string
+property_value: prefLabel "L6 IT_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:68
 
 [Term]
 id: AllenDendClass_CS202002013:69
-name: L6 IT Car3
 name: Nr4a2,Tfap2d expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Nr4a2,Tfap2d. The minimal set of markers required for its identification is: Nr4a2,Tfap2d" []
 comment: cell_set_preferred_alias:L6 IT Car3 ; original_label:L6 IT Car3 ; cell_set_label:RNAseq 069 ; cell_set_aligned_alias:L6 IT Car3
@@ -1841,12 +1840,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026826 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042596 ! expresses
 property_value: has_exact_synonym "L6 IT Car3" xsd:string
 property_value: has_exact_synonym "RNAseq 069" xsd:string
+property_value: prefLabel "L6 IT Car3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:69
 
 [Term]
 id: AllenDendClass_CS202002013:7
 name: Alk,Sema5a expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Lamp5 Slc35d3
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Alk,Npy,Pde11a,Sema5a. The minimal set of markers required for its identification is: Alk,Sema5a" []
 comment: cell_set_preferred_alias:Lamp5 Slc35d3 ; original_label:Lamp5 Slc35d3 ; cell_set_label:RNAseq 007 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -1857,12 +1856,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000055471 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000075270 ! expresses
 property_value: has_exact_synonym "Lamp5 Slc35d3" xsd:string
 property_value: has_exact_synonym "RNAseq 007" xsd:string
+property_value: prefLabel "Lamp5 Slc35d3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:7
 
 [Term]
 id: AllenDendClass_CS202002013:70
 name: Crym,Gm2164,Npr3 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L5 PT_1
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Crym,Gm2164,Npr3. The minimal set of markers required for its identification is: Crym,Gm2164,Npr3" []
 comment: cell_set_preferred_alias:L5 PT_1 ; original_label:L5 ET_1 ; cell_set_label:RNAseq 070 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -1873,12 +1872,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098760 ! 
 property_value: has_exact_synonym "L5 ET_1" xsd:string
 property_value: has_exact_synonym "L5 PT_1" xsd:string
 property_value: has_exact_synonym "RNAseq 070" xsd:string
+property_value: prefLabel "L5 PT_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:70
 
 [Term]
 id: AllenDendClass_CS202002013:71
 name: Erg,Gpc5,Trpc7 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L5 PT_2
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Erg,Gm2164,Gpc5,Npr3,Trpc7. The minimal set of markers required for its identification is: Erg,Gpc5,Trpc7" []
 comment: cell_set_preferred_alias:L5 PT_2 ; original_label:L5 ET_2 ; cell_set_label:RNAseq 071 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -1891,12 +1890,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098760 ! 
 property_value: has_exact_synonym "L5 ET_2" xsd:string
 property_value: has_exact_synonym "L5 PT_2" xsd:string
 property_value: has_exact_synonym "RNAseq 071" xsd:string
+property_value: prefLabel "L5 PT_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:71
 
 [Term]
 id: AllenDendClass_CS202002013:72
 name: Gpc5,Reln,Trmt9b,Trpc7 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L5 PT_3
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Gm2164,Gpc5,Npr3,Reln,Trmt9b,Trpc7. The minimal set of markers required for its identification is: Gpc5,Reln,Trmt9b,Trpc7" []
 comment: cell_set_preferred_alias:L5 PT_3 ; original_label:L5 ET_3 ; cell_set_label:RNAseq 072 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -1910,12 +1909,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098760 ! 
 property_value: has_exact_synonym "L5 ET_3" xsd:string
 property_value: has_exact_synonym "L5 PT_3" xsd:string
 property_value: has_exact_synonym "RNAseq 072" xsd:string
+property_value: prefLabel "L5 PT_3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:72
 
 [Term]
 id: AllenDendClass_CS202002013:73
 name: Gm2164,Npsr1 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L5 PT_4
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Gm2164,Npr3,Npsr1. The minimal set of markers required for its identification is: Gm2164,Npsr1" []
 comment: cell_set_preferred_alias:L5 PT_4 ; original_label:L5 ET_4 ; cell_set_label:RNAseq 073 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -1926,12 +1925,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098760 ! 
 property_value: has_exact_synonym "L5 ET_4" xsd:string
 property_value: has_exact_synonym "L5 PT_4" xsd:string
 property_value: has_exact_synonym "RNAseq 073" xsd:string
+property_value: prefLabel "L5 PT_4" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:73
 
 [Term]
 id: AllenDendClass_CS202002013:74
 name: Grp,Rxfp1,Tshz2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L5/6 NP CT
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Foxp2,Grp,Hs3st4,Rxfp1,Tshz2. The minimal set of markers required for its identification is: Grp,Rxfp1,Tshz2" []
 comment: cell_set_preferred_alias:L5/6 NP CT ; original_label:L5/6 NP CT ; cell_set_label:RNAseq 074 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -1943,12 +1942,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047907 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000078591 ! expresses
 property_value: has_exact_synonym "L5/6 NP CT" xsd:string
 property_value: has_exact_synonym "RNAseq 074" xsd:string
+property_value: prefLabel "L5/6 NP CT" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:74
 
 [Term]
 id: AllenDendClass_CS202002013:75
 name: Acaa1b,Col23a1,Gpr139 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L6 CT Gpr139
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Acaa1b,Col23a1,Foxp2,Gpr139,Hs3st4. The minimal set of markers required for its identification is: Acaa1b,Col23a1,Gpr139" []
 comment: cell_set_preferred_alias:L6 CT Gpr139 ; original_label:L6 CT Gpr139 ; cell_set_label:RNAseq 075 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -1960,12 +1959,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000066197 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000078591 ! expresses
 property_value: has_exact_synonym "L6 CT Gpr139" xsd:string
 property_value: has_exact_synonym "RNAseq 075" xsd:string
+property_value: prefLabel "L6 CT Gpr139" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:75
 
 [Term]
 id: AllenDendClass_CS202002013:76
 name: Foxp2,Hs3st4,Zfpm2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L6 CT Cpa6
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Foxp2,Hs3st4,Zfpm2. The minimal set of markers required for its identification is: Foxp2,Hs3st4,Zfpm2" []
 comment: cell_set_preferred_alias:L6 CT Cpa6 ; original_label:L6 CT Cpa6 ; cell_set_label:RNAseq 076 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -1975,12 +1974,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029563 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000078591 ! expresses
 property_value: has_exact_synonym "L6 CT Cpa6" xsd:string
 property_value: has_exact_synonym "RNAseq 076" xsd:string
+property_value: prefLabel "L6 CT Cpa6" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:76
 
 [Term]
 id: AllenDendClass_CS202002013:77
 name: Grp,Meis2,Pdzrn4,Plcxd3 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L6 CT Grp
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Foxp2,Grp,Hs3st4,Meis2,Pdzrn4,Plcxd3. The minimal set of markers required for its identification is: Grp,Meis2,Pdzrn4,Plcxd3" []
 comment: cell_set_preferred_alias:L6 CT Grp ; original_label:L6 CT Grp ; cell_set_label:RNAseq 077 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -1993,12 +1992,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049148 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000078591 ! expresses
 property_value: has_exact_synonym "L6 CT Grp" xsd:string
 property_value: has_exact_synonym "RNAseq 077" xsd:string
+property_value: prefLabel "L6 CT Grp" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:77
 
 [Term]
 id: AllenDendClass_CS202002013:78
 name: Cdh18,Gm10635,Satb2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L6 CT Pou3f2
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Cdh18,Foxp2,Gm10635,Hs3st4,Satb2. The minimal set of markers required for its identification is: Cdh18,Gm10635,Satb2" []
 comment: cell_set_preferred_alias:L6 CT Pou3f2 ; original_label:L6 CT Pou3f2 ; cell_set_label:RNAseq 078 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -2010,12 +2009,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000078591 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111765 ! expresses
 property_value: has_exact_synonym "L6 CT Pou3f2" xsd:string
 property_value: has_exact_synonym "RNAseq 078" xsd:string
+property_value: prefLabel "L6 CT Pou3f2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:78
 
 [Term]
 id: AllenDendClass_CS202002013:79
 name: Gm10635,Ikzf2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L6 CT Kit_1
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Foxp2,Gm10635,Hs3st4,Ikzf2. The minimal set of markers required for its identification is: Gm10635,Ikzf2" []
 comment: cell_set_preferred_alias:L6 CT Kit_1 ; original_label:L6 CT Kit_1 ; cell_set_label:RNAseq 079 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -2026,12 +2025,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000078591 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111765 ! expresses
 property_value: has_exact_synonym "L6 CT Kit_1" xsd:string
 property_value: has_exact_synonym "RNAseq 079" xsd:string
+property_value: prefLabel "L6 CT Kit_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:79
 
 [Term]
 id: AllenDendClass_CS202002013:8
 name: Gm45680,Nos1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Lamp5 Lhx6
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Gm45680,Nos1,Npy,Pde11a. The minimal set of markers required for its identification is: Gm45680,Nos1" []
 comment: cell_set_preferred_alias:Lamp5 Lhx6 ; original_label:Lamp5 Lhx6 ; cell_set_label:RNAseq 008 ; cell_set_aligned_alias:Lamp5 Lhx6
 is_a: CL:4023023 {xref="DOI:10.1101/2020.02.29.970558"}
@@ -2043,11 +2042,11 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000075270 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000110002 ! expresses
 property_value: has_exact_synonym "Lamp5 Lhx6" xsd:string
 property_value: has_exact_synonym "RNAseq 008" xsd:string
+property_value: prefLabel "Lamp5 Lhx6" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:8
 
 [Term]
 id: AllenDendClass_CS202002013:80
-name: L6 CT Kit_2
 name: Nr4a2,Rxfp1,Tshz2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Foxp2,Hs3st4,Nr4a2,Rxfp1,Tshz2. The minimal set of markers required for its identification is: Nr4a2,Rxfp1,Tshz2" []
 comment: cell_set_preferred_alias:L6 CT Kit_2 ; original_label:L6 CT Kit_2 ; cell_set_label:RNAseq 080 ; cell_set_aligned_alias:''
@@ -2061,12 +2060,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000078591 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000096972 ! expresses
 property_value: has_exact_synonym "L6 CT Kit_2" xsd:string
 property_value: has_exact_synonym "RNAseq 080" xsd:string
+property_value: prefLabel "L6 CT Kit_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:80
 
 [Term]
 id: AllenDendClass_CS202002013:81
 name: Bmpr1b,Ccn2,Hs3st2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L6b Col6a1
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Bmpr1b,Ccn2,Cplx3,Hs3st2. The minimal set of markers required for its identification is: Bmpr1b,Ccn2,Hs3st2" []
 comment: cell_set_preferred_alias:L6b Col6a1 ; original_label:L6b Col6a1 ; cell_set_label:RNAseq 081 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -2077,12 +2076,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000046321 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052430 ! expresses
 property_value: has_exact_synonym "L6b Col6a1" xsd:string
 property_value: has_exact_synonym "RNAseq 081" xsd:string
+property_value: prefLabel "L6b Col6a1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:81
 
 [Term]
 id: AllenDendClass_CS202002013:82
 name: Cplx3,Ly6g6e,Svil expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L6b Shisa6_1
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Ccn2,Cplx3,Ly6g6e,Svil. The minimal set of markers required for its identification is: Cplx3,Ly6g6e,Svil" []
 comment: cell_set_preferred_alias:L6b Shisa6_1 ; original_label:L6b Shisa6_1 ; cell_set_label:RNAseq 082 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -2093,11 +2092,11 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024236 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039714 ! expresses
 property_value: has_exact_synonym "L6b Shisa6_1" xsd:string
 property_value: has_exact_synonym "RNAseq 082" xsd:string
+property_value: prefLabel "L6b Shisa6_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:82
 
 [Term]
 id: AllenDendClass_CS202002013:83
-name: L6b Shisa6_2
 name: Moxd1,Nr4a2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Ccn2,Cplx3,Moxd1,Nr4a2. The minimal set of markers required for its identification is: Moxd1,Nr4a2" []
 comment: cell_set_preferred_alias:L6b Shisa6_2 ; original_label:L6b Shisa6_2 ; cell_set_label:RNAseq 083 ; cell_set_aligned_alias:''
@@ -2109,12 +2108,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026826 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039714 ! expresses
 property_value: has_exact_synonym "L6b Shisa6_2" xsd:string
 property_value: has_exact_synonym "RNAseq 083" xsd:string
+property_value: prefLabel "L6b Shisa6_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:83
 
 [Term]
 id: AllenDendClass_CS202002013:84
 name: Ccn2,Cplx3,Fbxl7 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L6b Ror1
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Ccn2,Cplx3,Fbxl7. The minimal set of markers required for its identification is: Ccn2,Cplx3,Fbxl7" []
 comment: cell_set_preferred_alias:L6b Ror1 ; original_label:L6b Ror1 ; cell_set_label:RNAseq 084 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -2124,12 +2123,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039714 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000043556 ! expresses
 property_value: has_exact_synonym "L6b Ror1" xsd:string
 property_value: has_exact_synonym "RNAseq 084" xsd:string
+property_value: prefLabel "L6b Ror1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:84
 
 [Term]
 id: AllenDendClass_CS202002013:85
 name: Gm42557,Olfr112,Rxfp2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L6b Kcnip1
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Ccn2,Cplx3,Gm42557,Olfr112,Rxfp2. The minimal set of markers required for its identification is: Gm42557,Olfr112,Rxfp2" []
 comment: cell_set_preferred_alias:L6b Kcnip1 ; original_label:L6b Kcnip1 ; cell_set_label:RNAseq 085 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -2141,12 +2140,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000053368 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000107384 ! expresses
 property_value: has_exact_synonym "L6b Kcnip1" xsd:string
 property_value: has_exact_synonym "RNAseq 085" xsd:string
+property_value: prefLabel "L6b Kcnip1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:85
 
 [Term]
 id: AllenDendClass_CS202002013:86
 name: Cyp7b1,Dkk2,Vwc2l expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L5/6 NP_1
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Cyp7b1,Dkk2,Etv1,Tshz2,Vwc2l. The minimal set of markers required for its identification is: Cyp7b1,Dkk2,Vwc2l" []
 comment: cell_set_preferred_alias:L5/6 NP_1 ; original_label:L5/6 NP_1 ; cell_set_label:RNAseq 086 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -2158,12 +2157,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000045648 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047907 ! expresses
 property_value: has_exact_synonym "L5/6 NP_1" xsd:string
 property_value: has_exact_synonym "RNAseq 086" xsd:string
+property_value: prefLabel "L5/6 NP_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:86
 
 [Term]
 id: AllenDendClass_CS202002013:87
 name: Abi3bp,Slc17a8 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-name: L5/6 NP_2
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Abi3bp,Etv1,Slc17a8,Tshz2. The minimal set of markers required for its identification is: Abi3bp,Slc17a8" []
 comment: cell_set_preferred_alias:L5/6 NP_2 ; original_label:L5/6 NP_2 ; cell_set_label:RNAseq 087 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
@@ -2174,11 +2173,11 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035258 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047907 ! expresses
 property_value: has_exact_synonym "L5/6 NP_2" xsd:string
 property_value: has_exact_synonym "RNAseq 087" xsd:string
+property_value: prefLabel "L5/6 NP_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:87
 
 [Term]
 id: AllenDendClass_CS202002013:88
-name: L5/6 NP_3
 name: Lypd1,Tshz2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Etv1,Lypd1,Tshz2. The minimal set of markers required for its identification is: Lypd1,Tshz2" []
 comment: cell_set_preferred_alias:L5/6 NP_3 ; original_label:L5/6 NP_3 ; cell_set_label:RNAseq 088 ; cell_set_aligned_alias:''
@@ -2189,12 +2188,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026344 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047907 ! expresses
 property_value: has_exact_synonym "L5/6 NP_3" xsd:string
 property_value: has_exact_synonym "RNAseq 088" xsd:string
+property_value: prefLabel "L5/6 NP_3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:88
 
 [Term]
 id: AllenDendClass_CS202002013:9
 name: Cdh6,Col25a1,Eps8 expressing GABAergic interneuron of primary motor cortex (Mus musculus)
-name: Sncg Col14a1
 def: "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cdh6,Cnr1,Col25a1,Eps8. The minimal set of markers required for its identification is: Cdh6,Col25a1,Eps8" []
 comment: cell_set_preferred_alias:Sncg Col14a1 ; original_label:Sncg Col14a1 ; cell_set_label:RNAseq 009 ; cell_set_aligned_alias:''
 intersection_of: CL:0011005
@@ -2205,11 +2204,11 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000044288 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000058897 ! expresses
 property_value: has_exact_synonym "RNAseq 009" xsd:string
 property_value: has_exact_synonym "Sncg Col14a1" xsd:string
+property_value: prefLabel "Sncg Col14a1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:9
 
 [Term]
 id: AllenDendClass_CS202002013:91
-name: OPC Pdgfra
 name: Pdgfra,Stk32a expressing oligodendrocyte precursor cell of primary motor cortex (Mus musculus)
 def: "A oligodendrocyte precursor cell of the Mus musculus primary motor cortex that expresses: Pdgfra,Stk32a. The minimal set of markers required for its identification is: Pdgfra,Stk32a" []
 comment: cell_set_preferred_alias:OPC Pdgfra ; original_label:OPC Pdgfra ; cell_set_label:RNAseq 091 ; cell_set_aligned_alias:OPC
@@ -2219,11 +2218,11 @@ intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 property_value: has_exact_synonym "OPC" xsd:string
 property_value: has_exact_synonym "OPC Pdgfra" xsd:string
 property_value: has_exact_synonym "RNAseq 091" xsd:string
+property_value: prefLabel "OPC Pdgfra" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:91
 
 [Term]
 id: AllenDendClass_CS202002013:92
-name: Astro_Top2a
 name: Clspn,Lockd expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)
 def: "A astrocyte of the cerebral cortex of the Mus musculus primary motor cortex that expresses: Clspn,Lockd. The minimal set of markers required for its identification is: Clspn,Lockd" []
 comment: cell_set_preferred_alias:Astro_Top2a ; original_label:Astro_Top2a ; cell_set_label:RNAseq 092 ; cell_set_aligned_alias:''
@@ -2233,11 +2232,11 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042489 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098318 ! expresses
 property_value: has_exact_synonym "Astro_Top2a" xsd:string
 property_value: has_exact_synonym "RNAseq 092" xsd:string
+property_value: prefLabel "Astro_Top2a" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:92
 
 [Term]
 id: AllenDendClass_CS202002013:93
-name: Astro Aqp4_Gfap
 name: Myoc expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)
 def: "A astrocyte of the cerebral cortex of the Mus musculus primary motor cortex that expresses: Myoc. The minimal set of markers required for its identification is: Myoc" []
 comment: cell_set_preferred_alias:Astro Aqp4_Gfap ; original_label:Astro Aqp4_Gfap ; cell_set_label:RNAseq 093 ; cell_set_aligned_alias:''
@@ -2246,11 +2245,11 @@ intersection_of: RO:0002100 UBERON:0001384 ! has soma location
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026697 ! expresses
 property_value: has_exact_synonym "Astro Aqp4_Gfap" xsd:string
 property_value: has_exact_synonym "RNAseq 093" xsd:string
+property_value: prefLabel "Astro Aqp4_Gfap" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:93
 
 [Term]
 id: AllenDendClass_CS202002013:94
-name: Astro Aqp4_Slc7a10
 name: Phkg1,Slco1c1 expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)
 def: "A astrocyte of the cerebral cortex of the Mus musculus primary motor cortex that expresses: Phkg1,Slco1c1. The minimal set of markers required for its identification is: Phkg1,Slco1c1" []
 comment: cell_set_preferred_alias:Astro Aqp4_Slc7a10 ; original_label:Astro Aqp4_Slc7a10 ; cell_set_label:RNAseq 094 ; cell_set_aligned_alias:''
@@ -2260,12 +2259,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000025537 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030235 ! expresses
 property_value: has_exact_synonym "Astro Aqp4_Slc7a10" xsd:string
 property_value: has_exact_synonym "RNAseq 094" xsd:string
+property_value: prefLabel "Astro Aqp4_Slc7a10" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:94
 
 [Term]
 id: AllenDendClass_CS202002013:95
 name: Bcas1,Tcf7l2 expressing oligodendrocyte of primary motor cortex (Mus musculus)
-name: Oligo Enpp6_1
 def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: Bcas1,Tcf7l2. The minimal set of markers required for its identification is: Bcas1,Tcf7l2" []
 comment: cell_set_preferred_alias:Oligo Enpp6_1 ; original_label:Oligo Enpp6_1 ; cell_set_label:RNAseq 095 ; cell_set_aligned_alias:''
 intersection_of: CL:0000128
@@ -2274,12 +2273,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000013523 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024985 ! expresses
 property_value: has_exact_synonym "Oligo Enpp6_1" xsd:string
 property_value: has_exact_synonym "RNAseq 095" xsd:string
+property_value: prefLabel "Oligo Enpp6_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:95
 
 [Term]
 id: AllenDendClass_CS202002013:96
 name: 9630013A20Rik,Bmp4 expressing oligodendrocyte of primary motor cortex (Mus musculus)
-name: Oligo Enpp6_2
 def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: 9630013A20Rik,Bmp4. The minimal set of markers required for its identification is: 9630013A20Rik,Bmp4" []
 comment: cell_set_preferred_alias:Oligo Enpp6_2 ; original_label:Oligo Enpp6_2 ; cell_set_label:RNAseq 096 ; cell_set_aligned_alias:''
 intersection_of: CL:0000128
@@ -2288,12 +2287,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021835 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000115529 ! expresses
 property_value: has_exact_synonym "Oligo Enpp6_2" xsd:string
 property_value: has_exact_synonym "RNAseq 096" xsd:string
+property_value: prefLabel "Oligo Enpp6_2" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:96
 
 [Term]
 id: AllenDendClass_CS202002013:97
 name: Cnksr3,Mpzl1,Nckap5,Tmem163 expressing oligodendrocyte of primary motor cortex (Mus musculus)
-name: Oligo Enpp6_3
 def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: Cnksr3,Mpzl1,Nckap5,Tmem163. The minimal set of markers required for its identification is: Cnksr3,Mpzl1,Nckap5,Tmem163" []
 comment: cell_set_preferred_alias:Oligo Enpp6_3 ; original_label:Oligo Enpp6_3 ; cell_set_label:RNAseq 097 ; cell_set_aligned_alias:''
 intersection_of: CL:0000128
@@ -2304,12 +2303,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026566 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049690 ! expresses
 property_value: has_exact_synonym "Oligo Enpp6_3" xsd:string
 property_value: has_exact_synonym "RNAseq 097" xsd:string
+property_value: prefLabel "Oligo Enpp6_3" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:97
 
 [Term]
 id: AllenDendClass_CS202002013:98
 name: 9630013A20Rik,Cnksr3 expressing oligodendrocyte of primary motor cortex (Mus musculus)
-name: Oligo Enpp6_4
 def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: 9630013A20Rik,Cnksr3. The minimal set of markers required for its identification is: 9630013A20Rik,Cnksr3" []
 comment: cell_set_preferred_alias:Oligo Enpp6_4 ; original_label:Oligo Enpp6_4 ; cell_set_label:RNAseq 098 ; cell_set_aligned_alias:''
 intersection_of: CL:0000128
@@ -2318,12 +2317,12 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000015202 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000115529 ! expresses
 property_value: has_exact_synonym "Oligo Enpp6_4" xsd:string
 property_value: has_exact_synonym "RNAseq 098" xsd:string
+property_value: prefLabel "Oligo Enpp6_4" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:98
 
 [Term]
 id: AllenDendClass_CS202002013:99
 name: A330049N07Rik,Anln,Rftn1 expressing oligodendrocyte of primary motor cortex (Mus musculus)
-name: Oligo Opalin_1
 def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: A330049N07Rik,Anln,Rftn1. The minimal set of markers required for its identification is: A330049N07Rik,Anln,Rftn1" []
 comment: cell_set_preferred_alias:Oligo Opalin_1 ; original_label:Oligo Opalin_1 ; cell_set_label:RNAseq 099 ; cell_set_aligned_alias:''
 intersection_of: CL:0000128
@@ -2333,6 +2332,7 @@ intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039316 ! 
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111994 ! expresses
 property_value: has_exact_synonym "Oligo Opalin_1" xsd:string
 property_value: has_exact_synonym "RNAseq 099" xsd:string
+property_value: prefLabel "Oligo Opalin_1" xsd:string
 property_value: RO:0002558 AllenDend_CS202002013:99
 
 [Typedef]

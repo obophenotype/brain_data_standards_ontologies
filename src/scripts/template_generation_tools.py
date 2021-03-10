@@ -70,7 +70,7 @@ def generate_curated_class_template(dend_json_path, output_filepath):
     if taxonomy_config:
         subtrees = get_subtrees(dend_tree, taxonomy_config)
         robot_class_curation_seed = {'ID': 'ID',
-                                     'Label': 'A rdfs:label',
+                                     'prefLabel': 'A skos:prefLabel',
                                      'Synonyms_from_taxonomy': "A oboInOwl:has_exact_synonym SPLIT=|",
                                      'Curated_synonyms': "A oboInOwl:has_exact_synonym SPLIT=|",
                                      'Comment': 'A rdfs:comment',

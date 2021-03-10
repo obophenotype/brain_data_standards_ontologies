@@ -1,5 +1,5 @@
-ID	Label	Synonyms_from_taxonomy	Curated_synonyms	Comment	Classification	Classification_comment	Classification_pub
-ID	A rdfs:label	A oboInOwl:has_exact_synonym SPLIT='|'	A oboInOwl:has_exact_synonym SPLIT='|'	A rdfs:comment	SC %	>A rdfs:comment	>A oio:hasDbXref SPLIT='|'
+ID	prefLabel	Synonyms_from_taxonomy	Curated_synonyms	Comment	Classification	Classification_comment	Classification_pub
+ID	A skos:prefLabel	A oboInOwl:has_exact_synonym SPLIT='|'	A oboInOwl:has_exact_synonym SPLIT='|'	A rdfs:comment	SC %	>A rdfs:comment	>A oio:hasDbXref SPLIT='|'
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201908211_44		n1|All cells		cell_set_preferred_alias:'' ; original_label:n1 ; cell_set_label:All cells ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''			
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201908211_45		n2|HM 001-038		cell_set_preferred_alias:'' ; original_label:n2 ; cell_set_label:HM 001-038 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''			
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201908211_46	Neuron	Neuron|HM 001-035|n3		cell_set_preferred_alias:Neuron ; original_label:n3 ; cell_set_label:HM 001-035 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:Neuron			

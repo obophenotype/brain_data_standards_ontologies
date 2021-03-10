@@ -5324,17 +5324,17 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-03-09"
+            "val": "2021-03-10"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-09/bdscratch-base.json",
+        "version": "http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-10/bdscratch-base.json",
         "xrefs": []
       },
       "nodes": [
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_1",
-          "lbl": "Lamp5 Pax6",
+          "lbl": "Pax6,Pip5k1b expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -5348,6 +5348,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 001"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Lamp5 Pax6"
               }
             ],
             "comments": [
@@ -5376,6 +5380,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "Sncg Slc17a8"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Sncg Slc17a8"
               }
             ],
             "comments": [
@@ -5390,7 +5398,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_100",
-          "lbl": "Oligo Opalin_2",
+          "lbl": "Il33,Prr5l expressing oligodendrocyte of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -5404,6 +5412,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 100"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Oligo Opalin_2"
               }
             ],
             "comments": [
@@ -5432,6 +5444,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 101"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Oligo Opalin_3"
               }
             ],
             "comments": [
@@ -5460,6 +5476,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 102"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Oligo Opalin_4"
               }
             ],
             "comments": [
@@ -5474,7 +5494,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_103",
-          "lbl": "Endo",
+          "lbl": "Adgrl4,Slco1a4 expressing cerebral cortex endothelial cell of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -5492,6 +5512,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 103"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Endo"
               }
             ],
             "comments": [
@@ -5520,6 +5544,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "Sncg Calb1_1"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Sncg Calb1_1"
               }
             ],
             "comments": [
@@ -5547,6 +5575,10 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "SMC"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "SMC"
               }
             ],
@@ -5580,6 +5612,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 112"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Peri"
               }
             ],
             "comments": [
@@ -5594,7 +5630,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_113",
-          "lbl": "Micro",
+          "lbl": "Hexb expressing microglial cell of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -5612,6 +5648,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 113"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Micro"
               }
             ],
             "comments": [
@@ -5626,7 +5666,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_12",
-          "lbl": "Sncg Calb1_2",
+          "lbl": "Calb1,Epb41l4a,Syt6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -5640,6 +5680,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "Sncg Calb1_2"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Sncg Calb1_2"
               }
             ],
             "comments": [
@@ -5649,58 +5693,6 @@
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Calb1,Cnr1,Col25a1,Epb41l4a,Syt6. The minimal set of markers required for its identification is: Calb1,Epb41l4a,Syt6",
               "xrefs": []
             }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_123",
-          "lbl": "GABAergic",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/RO_0002558",
-                "val": "http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_123"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "GABAergic"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "RNAseq 001-057, 089-090"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "n7"
-              }
-            ],
-            "comments": [
-              "cell_set_preferred_alias:GABAergic ; original_label:n7 ; cell_set_label:RNAseq 001-057, 089-090 ; cell_set_aligned_alias:GABAergic"
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_124",
-          "lbl": "CGE/PoA",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "CGE/PoA"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "RNAseq 001-027, 089-090"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "n8"
-              }
-            ],
-            "comments": [
-              "cell_set_preferred_alias:CGE/PoA ; original_label:n8 ; cell_set_label:RNAseq 001-027, 089-090 ; cell_set_aligned_alias:CGE/PoA"
-            ]
           },
           "type": "CLASS"
         },
@@ -5724,6 +5716,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "n9"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Lamp5"
               }
             ],
             "comments": [
@@ -5737,32 +5733,8 @@
           "type": "CLASS"
         },
         {
-          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_128",
-          "lbl": "Lamp5_5",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "Lamp5_5"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "RNAseq 003-004"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "n12"
-              }
-            ],
-            "comments": [
-              "cell_set_preferred_alias:Lamp5_5 ; original_label:n12 ; cell_set_label:RNAseq 003-004 ; cell_set_aligned_alias:''"
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_13",
-          "lbl": "Sncg Npy2r",
+          "lbl": "Npy2r,Rgs12 expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -5775,6 +5747,10 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Sncg Npy2r"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sncg Npy2r"
               }
             ],
@@ -5790,7 +5766,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_133",
-          "lbl": "Sncg",
+          "lbl": "Cnr1,Col25a1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -5808,6 +5784,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "n17"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Sncg"
               }
             ],
             "comments": [
@@ -5817,30 +5797,6 @@
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cnr1,Col25a1. The minimal set of markers required for its identification is: Cnr1,Col25a1",
               "xrefs": []
             }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_134",
-          "lbl": "Sncg_2",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "RNAseq 009-010"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "Sncg_2"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "n18"
-              }
-            ],
-            "comments": [
-              "cell_set_preferred_alias:Sncg_2 ; original_label:n18 ; cell_set_label:RNAseq 009-010 ; cell_set_aligned_alias:''"
-            ]
           },
           "type": "CLASS"
         },
@@ -5864,6 +5820,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "n22"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Vip"
               }
             ],
             "comments": [
@@ -5892,6 +5852,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "Vip Sncg"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Vip Sncg"
               }
             ],
             "comments": [
@@ -5901,30 +5865,6 @@
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cnr1,Col25a1,Crh,Nectin3,Unc5b. The minimal set of markers required for its identification is: Crh,Nectin3,Unc5b",
               "xrefs": []
             }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_149",
-          "lbl": "Vip_4",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "RNAseq 026-027"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "Vip_4"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "n33"
-              }
-            ],
-            "comments": [
-              "cell_set_preferred_alias:Vip_4 ; original_label:n33 ; cell_set_label:RNAseq 026-027 ; cell_set_aligned_alias:''"
-            ]
           },
           "type": "CLASS"
         },
@@ -5944,6 +5884,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "Vip Serpinf1_1"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Vip Serpinf1_1"
               }
             ],
             "comments": [
@@ -5953,54 +5897,6 @@
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Rgs16,Sfrp2,Vip. The minimal set of markers required for its identification is: Rgs16,Sfrp2",
               "xrefs": []
             }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_150",
-          "lbl": "MGE",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "MGE"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "RNAseq 028-057"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "n34"
-              }
-            ],
-            "comments": [
-              "cell_set_preferred_alias:MGE ; original_label:n34 ; cell_set_label:RNAseq 028-057 ; cell_set_aligned_alias:MGE"
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_156",
-          "lbl": "Sst_1",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "RNAseq 031-033"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "Sst_1"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "n40"
-              }
-            ],
-            "comments": [
-              "cell_set_preferred_alias:Sst_1 ; original_label:n40 ; cell_set_label:RNAseq 031-033 ; cell_set_aligned_alias:''"
-            ]
           },
           "type": "CLASS"
         },
@@ -6020,6 +5916,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "Vip Serpinf1_2"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Vip Serpinf1_2"
               }
             ],
             "comments": [
@@ -6034,7 +5934,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_17",
-          "lbl": "Vip Serpinf1_3",
+          "lbl": "Ccn3,Enpp2,Homer2,Plekhg1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -6047,6 +5947,10 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Vip Serpinf1_3"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Vip Serpinf1_3"
               }
             ],
@@ -6061,60 +5965,8 @@
           "type": "CLASS"
         },
         {
-          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_178",
-          "lbl": "Chandelier",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "Chandelier"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "RNAseq 056-057"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "n62"
-              }
-            ],
-            "comments": [
-              "cell_set_preferred_alias:Chandelier ; original_label:n62 ; cell_set_label:RNAseq 056-057 ; cell_set_aligned_alias:Chandelier"
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_179",
-          "lbl": "Glutamatergic",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/RO_0002558",
-                "val": "http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_179"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "Glutamatergic"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "RNAseq 058-088"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "n63"
-              }
-            ],
-            "comments": [
-              "cell_set_preferred_alias:Glutamatergic ; original_label:n63 ; cell_set_label:RNAseq 058-088 ; cell_set_aligned_alias:Glutamatergic"
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_18",
-          "lbl": "Vip Htr1f",
+          "lbl": "Ccn3,Vip,Vwc2l expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -6128,6 +5980,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "Vip Htr1f"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Vip Htr1f"
               }
             ],
             "comments": [
@@ -6137,30 +5993,6 @@
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Ccn3,Vip,Vwc2l. The minimal set of markers required for its identification is: Ccn3,Vip,Vwc2l",
               "xrefs": []
             }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_182",
-          "lbl": "IT projecting",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "IT projecting"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "RNAseq 058-069"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "n66"
-              }
-            ],
-            "comments": [
-              "cell_set_preferred_alias:IT projecting ; original_label:n66 ; cell_set_label:RNAseq 058-069 ; cell_set_aligned_alias:IT projecting"
-            ]
           },
           "type": "CLASS"
         },
@@ -6184,6 +6016,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "n67"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L2/3 IT"
               }
             ],
             "comments": [
@@ -6197,32 +6033,8 @@
           "type": "CLASS"
         },
         {
-          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_188",
-          "lbl": "L4",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "L4"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "RNAseq 061-062"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "n72"
-              }
-            ],
-            "comments": [
-              "cell_set_preferred_alias:L4 ; original_label:n72 ; cell_set_label:RNAseq 061-062 ; cell_set_aligned_alias:L4"
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_189",
-          "lbl": "L5 IT",
+          "lbl": "Cdh12,Pdzrn3,St6galnac5 expressing glutamatergic neuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -6240,6 +6052,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "n73"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L5 IT"
               }
             ],
             "comments": [
@@ -6268,6 +6084,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "Vip Gpc3"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Vip Gpc3"
               }
             ],
             "comments": [
@@ -6281,32 +6101,8 @@
           "type": "CLASS"
         },
         {
-          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_190",
-          "lbl": "L5 IT_2",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "L5 IT_2"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "RNAseq 063-064"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "n74"
-              }
-            ],
-            "comments": [
-              "cell_set_preferred_alias:L5 IT_2 ; original_label:n74 ; cell_set_label:RNAseq 063-064 ; cell_set_aligned_alias:''"
-            ]
-          },
-          "type": "CLASS"
-        },
-        {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_192",
-          "lbl": "L6 IT",
+          "lbl": "Bmpr1b,Il1rapl2,Sulf1 expressing glutamatergic neuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -6324,6 +6120,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "n76"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L6 IT"
               }
             ],
             "comments": [
@@ -6356,6 +6156,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "n77"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L5 ET"
               }
             ],
             "comments": [
@@ -6388,6 +6192,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "n81"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L6 CT"
               }
             ],
             "comments": [
@@ -6416,6 +6224,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 002"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Lamp5 Egln3_1"
               }
             ],
             "comments": [
@@ -6444,6 +6256,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "Vip C1ql1"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Vip C1ql1"
               }
             ],
             "comments": [
@@ -6458,7 +6274,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_203",
-          "lbl": "L6b",
+          "lbl": "Ccn2,Cplx3 expressing glutamatergic neuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -6476,6 +6292,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "n87"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L6b"
               }
             ],
             "comments": [
@@ -6508,6 +6328,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "n91"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L5/6 NP"
               }
             ],
             "comments": [
@@ -6536,6 +6360,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "Vip Mybpc1_2"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Vip Mybpc1_2"
               }
             ],
             "comments": [
@@ -6550,7 +6378,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_210",
-          "lbl": "Astro",
+          "lbl": "Gli3,Slc39a12 expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -6572,6 +6400,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "n94"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Astro"
               }
             ],
             "comments": [
@@ -6581,30 +6413,6 @@
               "val": "A astrocyte of the cerebral cortex of the Mus musculus primary motor cortex that expresses: Gli3,Slc39a12. The minimal set of markers required for its identification is: Gli3,Slc39a12",
               "xrefs": []
             }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_211",
-          "lbl": "Astro_1",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "Astro_1"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "RNAseq 093-094"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "n95"
-              }
-            ],
-            "comments": [
-              "cell_set_preferred_alias:Astro_1 ; original_label:n95 ; cell_set_label:RNAseq 093-094 ; cell_set_aligned_alias:''"
-            ]
           },
           "type": "CLASS"
         },
@@ -6632,6 +6440,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "n96"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Oligo"
               }
             ],
             "comments": [
@@ -6646,7 +6458,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_22",
-          "lbl": "Vip Mybpc1_1",
+          "lbl": "Calb2,Gm2516 expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -6659,6 +6471,10 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Vip Mybpc1_1"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Vip Mybpc1_1"
               }
             ],
@@ -6688,6 +6504,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "Vip Chat_1"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Vip Chat_1"
               }
             ],
             "comments": [
@@ -6702,7 +6522,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_24",
-          "lbl": "Vip Mybpc1_3",
+          "lbl": "Caln1,Grm8 expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -6715,6 +6535,10 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Vip Mybpc1_3"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Vip Mybpc1_3"
               }
             ],
@@ -6730,7 +6554,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_25",
-          "lbl": "Vip Chat_2",
+          "lbl": "Grik4,Htr4 expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -6743,6 +6567,10 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Vip Chat_2"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Vip Chat_2"
               }
             ],
@@ -6758,7 +6586,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_26",
-          "lbl": "Vip Igfbp6_1",
+          "lbl": "Gm39185,Thsd7a expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -6771,6 +6599,10 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Vip Igfbp6_1"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Vip Igfbp6_1"
               }
             ],
@@ -6786,7 +6618,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_27",
-          "lbl": "Vip Igfbp6_2",
+          "lbl": "Crh,Thsd7b expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -6799,6 +6631,10 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Vip Igfbp6_2"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Vip Igfbp6_2"
               }
             ],
@@ -6828,6 +6664,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "Sst Chodl"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Sst Chodl"
               }
             ],
             "comments": [
@@ -6856,6 +6696,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "Sst Penk"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Sst Penk"
               }
             ],
             "comments": [
@@ -6870,7 +6714,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_3",
-          "lbl": "Lamp5 Egln3_2",
+          "lbl": "Crim1,Zfp804b expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -6884,6 +6728,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 003"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Lamp5 Egln3_2"
               }
             ],
             "comments": [
@@ -6912,6 +6760,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "Sst Myh8_1"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Sst Myh8_1"
               }
             ],
             "comments": [
@@ -6926,7 +6778,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_31",
-          "lbl": "Sst Myh8_2",
+          "lbl": "Cdh13,Pld5,Sox6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -6939,6 +6791,10 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Sst Myh8_2"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Myh8_2"
               }
             ],
@@ -6954,7 +6810,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_32",
-          "lbl": "Sst Myh8_3",
+          "lbl": "Cdh9,Grm1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -6967,6 +6823,10 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Sst Myh8_3"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Myh8_3"
               }
             ],
@@ -6982,7 +6842,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_33",
-          "lbl": "Sst Htr1a",
+          "lbl": "Gm30835,Pdyn expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -6995,6 +6855,10 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Sst Htr1a"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Htr1a"
               }
             ],
@@ -7024,6 +6888,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "Sst Etv1"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Sst Etv1"
               }
             ],
             "comments": [
@@ -7038,7 +6906,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_35",
-          "lbl": "Sst Pvalb Etv1",
+          "lbl": "Edaradd,Spon1,Whrn expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -7051,6 +6919,10 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Sst Pvalb Etv1"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Pvalb Etv1"
               }
             ],
@@ -7080,6 +6952,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "Sst Crhr2_1"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Sst Crhr2_1"
               }
             ],
             "comments": [
@@ -7094,7 +6970,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_37",
-          "lbl": "Sst Crhr2_2",
+          "lbl": "Lypd6b,Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -7107,6 +6983,10 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Sst Crhr2_2"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Crhr2_2"
               }
             ],
@@ -7136,6 +7016,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "Sst Hpse"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Sst Hpse"
               }
             ],
             "comments": [
@@ -7163,6 +7047,10 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Sst Calb2"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Calb2"
               }
             ],
@@ -7192,6 +7080,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 004"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Lamp5 Egln3_3"
               }
             ],
             "comments": [
@@ -7206,7 +7098,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_40",
-          "lbl": "Sst Pappa",
+          "lbl": "Gm49678,Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -7219,6 +7111,10 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Sst Pappa"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Pappa"
               }
             ],
@@ -7248,6 +7144,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "Sst Pvalb Calb2"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Sst Pvalb Calb2"
               }
             ],
             "comments": [
@@ -7275,6 +7175,10 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Sst C1ql3_1"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst C1ql3_1"
               }
             ],
@@ -7304,6 +7208,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "Sst C1ql3_2"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Sst C1ql3_2"
               }
             ],
             "comments": [
@@ -7332,6 +7240,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "Sst Tac2"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Sst Tac2"
               }
             ],
             "comments": [
@@ -7346,7 +7258,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_45",
-          "lbl": "Sst Th_1",
+          "lbl": "St6galnac5,St8sia4,Zfpm2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -7359,6 +7271,10 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Sst Th_1"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Th_1"
               }
             ],
@@ -7374,7 +7290,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_46",
-          "lbl": "Sst Th_2",
+          "lbl": "Pard3b,Pnoc,Sst expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -7387,6 +7303,10 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Sst Th_2"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Th_2"
               }
             ],
@@ -7416,6 +7336,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "Sst Th_3"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Sst Th_3"
               }
             ],
             "comments": [
@@ -7430,7 +7354,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_48",
-          "lbl": "Pvalb Gabrg1",
+          "lbl": "Gabrg1,Th expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -7444,6 +7368,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 048"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Pvalb Gabrg1"
               }
             ],
             "comments": [
@@ -7472,6 +7400,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 049"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Pvalb Egfem1"
               }
             ],
             "comments": [
@@ -7486,7 +7418,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_5",
-          "lbl": "Lamp5 Pdlim5_1",
+          "lbl": "Dock5,Ndnf,Ndst4 expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -7500,6 +7432,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 005"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Lamp5 Pdlim5_1"
               }
             ],
             "comments": [
@@ -7528,6 +7464,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 050"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Pvalb Gpr149"
               }
             ],
             "comments": [
@@ -7556,6 +7496,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 051"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Pvalb Kank4"
               }
             ],
             "comments": [
@@ -7584,6 +7528,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 052"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Pvalb Calb1_1"
               }
             ],
             "comments": [
@@ -7612,6 +7560,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 053"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Pvalb Calb1_2"
               }
             ],
             "comments": [
@@ -7640,6 +7592,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 054"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Pvalb Reln"
               }
             ],
             "comments": [
@@ -7668,6 +7624,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 055"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Pvalb Il1rapl2"
               }
             ],
             "comments": [
@@ -7696,6 +7656,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 056"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Pvalb Vipr2_1"
               }
             ],
             "comments": [
@@ -7724,6 +7688,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 057"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Pvalb Vipr2_2"
               }
             ],
             "comments": [
@@ -7738,7 +7706,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_58",
-          "lbl": "L2/3 IT_1",
+          "lbl": "6530403H02Rik,Adamts2,Met expressing glutamatergic neuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -7752,6 +7720,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 058"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L2/3 IT_1"
               }
             ],
             "comments": [
@@ -7766,7 +7738,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_59",
-          "lbl": "L2/3 IT_2",
+          "lbl": "Ccdc3,Cux1,Meis2,Otof expressing glutamatergic neuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -7780,6 +7752,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 059"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L2/3 IT_2"
               }
             ],
             "comments": [
@@ -7794,7 +7770,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_6",
-          "lbl": "Lamp5 Pdlim5_2",
+          "lbl": "Ndnf,Pde11a expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -7808,6 +7784,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 006"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Lamp5 Pdlim5_2"
               }
             ],
             "comments": [
@@ -7836,6 +7816,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 060"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L2/3 IT_3"
               }
             ],
             "comments": [
@@ -7850,7 +7834,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_61",
-          "lbl": "L4/5 IT_1",
+          "lbl": "Cadps2,Prr16,Rorb expressing glutamatergic neuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -7864,6 +7848,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 061"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L4/5 IT_1"
               }
             ],
             "comments": [
@@ -7878,7 +7866,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_62",
-          "lbl": "L4/5 IT_2",
+          "lbl": "Col26a1,Cpne4,Il1rapl2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -7892,6 +7880,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 062"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L4/5 IT_2"
               }
             ],
             "comments": [
@@ -7901,26 +7893,6 @@
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Col26a1,Cpne4,Il1rapl2. The minimal set of markers required for its identification is: Col26a1,Cpne4,Il1rapl2",
               "xrefs": []
             }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_63",
-          "lbl": "L5 IT_1",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "L5 IT_1"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "RNAseq 063"
-              }
-            ],
-            "comments": [
-              "cell_set_preferred_alias:L5 IT_1 ; original_label:L5 IT_1 ; cell_set_label:RNAseq 063 ; cell_set_aligned_alias:''"
-            ]
           },
           "type": "CLASS"
         },
@@ -7940,6 +7912,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 064"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L5 IT_2"
               }
             ],
             "comments": [
@@ -7968,6 +7944,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 065"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L5 IT_3"
               }
             ],
             "comments": [
@@ -7982,7 +7962,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_66",
-          "lbl": "L5 IT_4",
+          "lbl": "Chrm2,Cwh43,Pld5 expressing glutamatergic neuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -7996,6 +7976,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 066"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L5 IT_4"
               }
             ],
             "comments": [
@@ -8010,7 +7994,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_67",
-          "lbl": "L6 IT_1",
+          "lbl": "Bmpr1b,Fst,Ntng1 expressing glutamatergic neuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -8024,6 +8008,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 067"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L6 IT_1"
               }
             ],
             "comments": [
@@ -8038,7 +8026,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_68",
-          "lbl": "L6 IT_2",
+          "lbl": "Bmpr1b,C1ql3,Ptpru expressing glutamatergic neuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -8052,6 +8040,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 068"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L6 IT_2"
               }
             ],
             "comments": [
@@ -8080,6 +8072,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 069"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L6 IT Car3"
               }
             ],
             "comments": [
@@ -8094,7 +8090,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_7",
-          "lbl": "Lamp5 Slc35d3",
+          "lbl": "Alk,Sema5a expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -8108,6 +8104,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 007"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Lamp5 Slc35d3"
               }
             ],
             "comments": [
@@ -8122,7 +8122,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_70",
-          "lbl": "L5 PT_1",
+          "lbl": "Crym,Gm2164,Npr3 expressing glutamatergic neuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -8140,6 +8140,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 070"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L5 PT_1"
               }
             ],
             "comments": [
@@ -8172,6 +8176,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 071"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L5 PT_2"
               }
             ],
             "comments": [
@@ -8204,6 +8212,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 072"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L5 PT_3"
               }
             ],
             "comments": [
@@ -8218,7 +8230,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73",
-          "lbl": "L5 PT_4",
+          "lbl": "Gm2164,Npsr1 expressing glutamatergic neuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -8236,6 +8248,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 073"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L5 PT_4"
               }
             ],
             "comments": [
@@ -8250,7 +8266,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_74",
-          "lbl": "L5/6 NP CT",
+          "lbl": "Grp,Rxfp1,Tshz2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -8264,6 +8280,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 074"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L5/6 NP CT"
               }
             ],
             "comments": [
@@ -8278,7 +8298,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_75",
-          "lbl": "L6 CT Gpr139",
+          "lbl": "Acaa1b,Col23a1,Gpr139 expressing glutamatergic neuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -8292,6 +8312,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 075"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L6 CT Gpr139"
               }
             ],
             "comments": [
@@ -8306,7 +8330,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_76",
-          "lbl": "L6 CT Cpa6",
+          "lbl": "Foxp2,Hs3st4,Zfpm2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -8320,6 +8344,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 076"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L6 CT Cpa6"
               }
             ],
             "comments": [
@@ -8348,6 +8376,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 077"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L6 CT Grp"
               }
             ],
             "comments": [
@@ -8376,6 +8408,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 078"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L6 CT Pou3f2"
               }
             ],
             "comments": [
@@ -8404,6 +8440,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 079"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L6 CT Kit_1"
               }
             ],
             "comments": [
@@ -8432,6 +8472,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 008"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Lamp5 Lhx6"
               }
             ],
             "comments": [
@@ -8460,6 +8504,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 080"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L6 CT Kit_2"
               }
             ],
             "comments": [
@@ -8488,6 +8536,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 081"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L6b Col6a1"
               }
             ],
             "comments": [
@@ -8502,7 +8554,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_82",
-          "lbl": "L6b Shisa6_1",
+          "lbl": "Cplx3,Ly6g6e,Svil expressing glutamatergic neuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -8516,6 +8568,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 082"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L6b Shisa6_1"
               }
             ],
             "comments": [
@@ -8544,6 +8600,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 083"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L6b Shisa6_2"
               }
             ],
             "comments": [
@@ -8572,6 +8632,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 084"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L6b Ror1"
               }
             ],
             "comments": [
@@ -8600,6 +8664,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 085"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L6b Kcnip1"
               }
             ],
             "comments": [
@@ -8628,6 +8696,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 086"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L5/6 NP_1"
               }
             ],
             "comments": [
@@ -8656,6 +8728,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 087"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L5/6 NP_2"
               }
             ],
             "comments": [
@@ -8670,7 +8746,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88",
-          "lbl": "L5/6 NP_3",
+          "lbl": "Lypd1,Tshz2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -8684,6 +8760,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 088"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L5/6 NP_3"
               }
             ],
             "comments": [
@@ -8698,7 +8778,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_9",
-          "lbl": "Sncg Col14a1",
+          "lbl": "Cdh6,Col25a1,Eps8 expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -8711,6 +8791,10 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Sncg Col14a1"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sncg Col14a1"
               }
             ],
@@ -8726,7 +8810,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_91",
-          "lbl": "OPC Pdgfra",
+          "lbl": "Pdgfra,Stk32a expressing oligodendrocyte precursor cell of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -8744,6 +8828,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 091"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "OPC Pdgfra"
               }
             ],
             "comments": [
@@ -8772,6 +8860,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 092"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Astro_Top2a"
               }
             ],
             "comments": [
@@ -8786,7 +8878,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_93",
-          "lbl": "Astro Aqp4_Gfap",
+          "lbl": "Myoc expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -8800,6 +8892,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 093"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Astro Aqp4_Gfap"
               }
             ],
             "comments": [
@@ -8814,7 +8910,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_94",
-          "lbl": "Astro Aqp4_Slc7a10",
+          "lbl": "Phkg1,Slco1c1 expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -8828,6 +8924,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 094"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Astro Aqp4_Slc7a10"
               }
             ],
             "comments": [
@@ -8842,7 +8942,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_95",
-          "lbl": "Oligo Enpp6_1",
+          "lbl": "Bcas1,Tcf7l2 expressing oligodendrocyte of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -8856,6 +8956,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 095"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Oligo Enpp6_1"
               }
             ],
             "comments": [
@@ -8884,6 +8988,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 096"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Oligo Enpp6_2"
               }
             ],
             "comments": [
@@ -8898,7 +9006,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_97",
-          "lbl": "Oligo Enpp6_3",
+          "lbl": "Cnksr3,Mpzl1,Nckap5,Tmem163 expressing oligodendrocyte of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -8912,6 +9020,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 097"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Oligo Enpp6_3"
               }
             ],
             "comments": [
@@ -8926,7 +9038,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_98",
-          "lbl": "Oligo Enpp6_4",
+          "lbl": "9630013A20Rik,Cnksr3 expressing oligodendrocyte of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -8940,6 +9052,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 098"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Oligo Enpp6_4"
               }
             ],
             "comments": [
@@ -8954,7 +9070,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_99",
-          "lbl": "Oligo Opalin_1",
+          "lbl": "A330049N07Rik,Anln,Rftn1 expressing oligodendrocyte of primary motor cortex (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -8968,6 +9084,10 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
                 "val": "RNAseq 099"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Oligo Opalin_1"
               }
             ],
             "comments": [
@@ -18244,6 +18364,64 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_123",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/RO_0002558",
+                "val": "http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_123"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "GABAergic"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "RNAseq 001-057, 089-090"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "n7"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "GABAergic"
+              }
+            ],
+            "comments": [
+              "cell_set_preferred_alias:GABAergic ; original_label:n7 ; cell_set_label:RNAseq 001-057, 089-090 ; cell_set_aligned_alias:GABAergic"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_124",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "CGE/PoA"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "RNAseq 001-027, 089-090"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "n8"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "CGE/PoA"
+              }
+            ],
+            "comments": [
+              "cell_set_preferred_alias:CGE/PoA ; original_label:n8 ; cell_set_label:RNAseq 001-027, 089-090 ; cell_set_aligned_alias:CGE/PoA"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_126",
           "meta": {
             "basicPropertyValues": [
@@ -18277,6 +18455,33 @@
             ],
             "comments": [
               "cell_set_preferred_alias:'' ; original_label:n11 ; cell_set_label:RNAseq 002-004 ; cell_set_aligned_alias:''"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_128",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Lamp5_5"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "RNAseq 003-004"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "n12"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Lamp5_5"
+              }
+            ],
+            "comments": [
+              "cell_set_preferred_alias:Lamp5_5 ; original_label:n12 ; cell_set_label:RNAseq 003-004 ; cell_set_aligned_alias:''"
             ]
           },
           "type": "CLASS"
@@ -18353,6 +18558,33 @@
             ],
             "comments": [
               "cell_set_preferred_alias:'' ; original_label:n16 ; cell_set_label:RNAseq 009-027 ; cell_set_aligned_alias:''"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_134",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "RNAseq 009-010"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Sncg_2"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "n18"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Sncg_2"
+              }
+            ],
+            "comments": [
+              "cell_set_preferred_alias:Sncg_2 ; original_label:n18 ; cell_set_label:RNAseq 009-010 ; cell_set_aligned_alias:''"
             ]
           },
           "type": "CLASS"
@@ -18605,6 +18837,60 @@
           "type": "CLASS"
         },
         {
+          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_149",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "RNAseq 026-027"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Vip_4"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "n33"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Vip_4"
+              }
+            ],
+            "comments": [
+              "cell_set_preferred_alias:Vip_4 ; original_label:n33 ; cell_set_label:RNAseq 026-027 ; cell_set_aligned_alias:''"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_150",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "MGE"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "RNAseq 028-057"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "n34"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "MGE"
+              }
+            ],
+            "comments": [
+              "cell_set_preferred_alias:MGE ; original_label:n34 ; cell_set_label:RNAseq 028-057 ; cell_set_aligned_alias:MGE"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_151",
           "meta": {
             "basicPropertyValues": [
@@ -18695,6 +18981,33 @@
             ],
             "comments": [
               "cell_set_preferred_alias:'' ; original_label:n39 ; cell_set_label:RNAseq 029-030 ; cell_set_aligned_alias:''"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_156",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "RNAseq 031-033"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Sst_1"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "n40"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Sst_1"
+              }
+            ],
+            "comments": [
+              "cell_set_preferred_alias:Sst_1 ; original_label:n40 ; cell_set_label:RNAseq 031-033 ; cell_set_aligned_alias:''"
             ]
           },
           "type": "CLASS"
@@ -19099,6 +19412,64 @@
           "type": "CLASS"
         },
         {
+          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_178",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Chandelier"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "RNAseq 056-057"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "n62"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Chandelier"
+              }
+            ],
+            "comments": [
+              "cell_set_preferred_alias:Chandelier ; original_label:n62 ; cell_set_label:RNAseq 056-057 ; cell_set_aligned_alias:Chandelier"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_179",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/RO_0002558",
+                "val": "http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_179"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Glutamatergic"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "RNAseq 058-088"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "n63"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Glutamatergic"
+              }
+            ],
+            "comments": [
+              "cell_set_preferred_alias:Glutamatergic ; original_label:n63 ; cell_set_label:RNAseq 058-088 ; cell_set_aligned_alias:Glutamatergic"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_180",
           "meta": {
             "basicPropertyValues": [
@@ -19132,6 +19503,33 @@
             ],
             "comments": [
               "cell_set_preferred_alias:'' ; original_label:n65 ; cell_set_label:RNAseq 058-073 ; cell_set_aligned_alias:''"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_182",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "IT projecting"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "RNAseq 058-069"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "n66"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "IT projecting"
+              }
+            ],
+            "comments": [
+              "cell_set_preferred_alias:IT projecting ; original_label:n66 ; cell_set_label:RNAseq 058-069 ; cell_set_aligned_alias:IT projecting"
             ]
           },
           "type": "CLASS"
@@ -19208,6 +19606,60 @@
             ],
             "comments": [
               "cell_set_preferred_alias:'' ; original_label:n71 ; cell_set_label:RNAseq 061-066 ; cell_set_aligned_alias:''"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_188",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "L4"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "RNAseq 061-062"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "n72"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L4"
+              }
+            ],
+            "comments": [
+              "cell_set_preferred_alias:L4 ; original_label:n72 ; cell_set_label:RNAseq 061-062 ; cell_set_aligned_alias:L4"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_190",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "L5 IT_2"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "RNAseq 063-064"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "n74"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L5 IT_2"
+              }
+            ],
+            "comments": [
+              "cell_set_preferred_alias:L5 IT_2 ; original_label:n74 ; cell_set_label:RNAseq 063-064 ; cell_set_aligned_alias:''"
             ]
           },
           "type": "CLASS"
@@ -19460,6 +19912,33 @@
           "type": "CLASS"
         },
         {
+          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_211",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Astro_1"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "RNAseq 093-094"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "n95"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Astro_1"
+              }
+            ],
+            "comments": [
+              "cell_set_preferred_alias:Astro_1 ; original_label:n95 ; cell_set_label:RNAseq 093-094 ; cell_set_aligned_alias:''"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_213",
           "meta": {
             "basicPropertyValues": [
@@ -19569,6 +20048,29 @@
             ],
             "comments": [
               "cell_set_preferred_alias:'' ; original_label:n102 ; cell_set_label:RNAseq 101-102 ; cell_set_aligned_alias:''"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_63",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "L5 IT_1"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "RNAseq 063"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "L5 IT_1"
+              }
+            ],
+            "comments": [
+              "cell_set_preferred_alias:L5 IT_1 ; original_label:L5 IT_1 ; cell_set_label:RNAseq 063 ; cell_set_aligned_alias:''"
             ]
           },
           "type": "CLASS"
