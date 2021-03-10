@@ -5,7 +5,7 @@ import csv
 from template_generation_tools import generate_curated_class_template
 
 PATH_DENDROGRAM_JSON = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/CCN202002013.json")
-PATH_OUTPUT_CLASS_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/CCN202002013_class.tsv")
+PATH_OUTPUT_CLASS_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)), "test_data/output_class.tsv")
 
 ALLEN_CLASS = "http://www.semanticweb.org/brain_data_standards/AllenDendClass_"
 
@@ -55,11 +55,31 @@ def read_class_file(class_template):
     records = {}
     with open(class_template) as fd:
         rd = csv.reader(fd, delimiter="\t", quotechar='"')
-        # skip first two rows
-        next(rd)
-        next(rd)
         for row in rd:
             _id = row[0]
-            records[_id] = {"label": row[1]}
+            records[_id] = row
 
     return records
+
+
+def curated_class_migrate():
+    migrate_columns = [5, 6, 7]
+    curation_table_migrate_manual_edits("./test_data/source_class.tsv", "./test_data/target_class.tsv", migrate_columns)
+
+
+def curation_table_migrate_manual_edits(source_path, target_path, migrate_columns):
+    source = read_class_file(source_path)
+    target = read_class_file(target_path)
+
+    new_target_path = target_path.replace(".tsv", "_migrate.tsv")
+
+    with open(new_target_path, mode='w') as out:
+        writer = csv.writer(out, delimiter="\t", quotechar='"')
+
+        for key, row in target.items():
+            if key in source:
+                # copy migrate columns
+                for migrate_column in migrate_columns:
+                    row[migrate_column] = source.get(key)[migrate_column]
+
+            writer.writerow(row)
