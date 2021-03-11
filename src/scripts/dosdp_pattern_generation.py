@@ -6,6 +6,9 @@ from dendrogram_tools import dend_json_2_nodes_n_edges
 from template_generation_utils import read_taxonomy_config, get_subtrees
 from marker_tools import read_dendrogram_tree
 
+MARKERS_PATH = "../markers/{}_markers.tsv"
+MARKERS_DENORMALIZED_PATH = "../markers/{}_markers_denormalized.tsv"
+
 ALLEN_DEND_ = 'AllenDendClass:'
 
 
@@ -26,20 +29,21 @@ def generate_pattern_table(dend_json_path, output_filepath):
 
         dl = []
         for o in dend['nodes']:
-            d = dict()
-            d['defined_class'] = ALLEN_DEND_ + o['cell_set_accession']
-            d['gross_cell_type'] = get_gross_cell_type(o['cell_set_accession'], subtrees, taxonomy_config)
-            d['taxon'] = taxonomy_config['Species'][0]
-            d['brain_region'] = taxonomy_config['Brain_region'][0]
+            if o['cell_set_accession'] in set.union(*subtrees):
+                d = dict()
+                d['defined_class'] = ALLEN_DEND_ + o['cell_set_accession']
+                d['gross_cell_type'] = get_gross_cell_type(o['cell_set_accession'], subtrees, taxonomy_config)
+                d['taxon'] = taxonomy_config['Species'][0]
+                d['brain_region'] = taxonomy_config['Brain_region'][0]
 
-            if o['cell_set_accession'] in denorm_markers:
-                d['denorm_marker_list'] = denorm_markers[o['cell_set_accession']]
-                d['minimal_marker_list'] = minimal_markers[o['cell_set_accession']]
-            else:
-                d['denorm_marker_list'] = ''
-                d['minimal_marker_list'] = ''
+                if o['cell_set_accession'] in denorm_markers:
+                    d['denorm_marker_list'] = denorm_markers[o['cell_set_accession']]
+                    d['minimal_marker_list'] = minimal_markers[o['cell_set_accession']]
+                else:
+                    d['denorm_marker_list'] = ''
+                    d['minimal_marker_list'] = ''
 
-            dl.append(d)
+                dl.append(d)
 
     robot_template = pd.DataFrame.from_records(dl)
     robot_template.to_csv(output_filepath, sep="\t", index=False)
@@ -54,12 +58,12 @@ def get_gross_cell_type(_id, subtrees, taxonomy_config):
 
 
 def get_denorm_markers(taxon, ensmusg_names):
-    denom_marker_path = "../templates/{}_markers_denormalized.tsv".format(taxon).replace("CCN", "CS")
+    denom_marker_path = MARKERS_DENORMALIZED_PATH.format(taxon).replace("CCN", "CS")
     return read_markers(denom_marker_path, ensmusg_names)
 
 
 def get_minimal_markers(taxon, ensmusg_names):
-    marker_path = "../markers/{}_markers.tsv".format(taxon).replace("CCN", "CS")
+    marker_path = MARKERS_PATH.format(taxon).replace("CCN", "CS")
     return read_markers(marker_path, ensmusg_names)
 
 
@@ -94,3 +98,6 @@ def read_ensmusg():
             _id = row[0]
             ensmusg[_id] = row[2]
     return ensmusg
+
+
+generate_pattern_table("../dendrograms/CCN202002013.json", "../patterns/data/default/brainCellRegionMarker.tsv")

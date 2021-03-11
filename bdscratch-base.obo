@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: bdscratch/releases/2021-03-10/bdscratch-base.owl
+data-version: bdscratch/releases/2021-03-11/bdscratch-base.owl
 ontology: bdscratch/bdscratch-base
 property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Brain Data Standards Cell Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
-property_value: owl:versionInfo "2021-03-10" xsd:string
+property_value: owl:versionInfo "2021-03-11" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:1
@@ -85,8 +85,6 @@ property_value: RO:0002558 AllenDend_CS202002013:102
 
 [Term]
 id: AllenDendClass_CS202002013:103
-name: Adgrl4,Slco1a4 expressing cerebral cortex endothelial cell of primary motor cortex (Mus musculus)
-def: "A cerebral cortex endothelial cell of the Mus musculus primary motor cortex that expresses: Adgrl4,Slco1a4. The minimal set of markers required for its identification is: Adgrl4,Slco1a4" []
 comment: cell_set_preferred_alias:Endo ; original_label:Endo ; cell_set_label:RNAseq 103 ; cell_set_aligned_alias:Endothelial
 is_a: CL:1001602 {xref="doi:10.1101/2020.02.29.970558"}
 intersection_of: CL:1001602
@@ -116,8 +114,6 @@ property_value: RO:0002558 AllenDend_CS202002013:11
 
 [Term]
 id: AllenDendClass_CS202002013:111
-name: Acta2 expressing smooth muscle cell of primary motor cortex (Mus musculus)
-def: "A smooth muscle cell of the Mus musculus primary motor cortex that expresses: Acta2. The minimal set of markers required for its identification is: Acta2" []
 comment: cell_set_preferred_alias:SMC ; original_label:SMC ; cell_set_label:RNAseq 111 ; cell_set_aligned_alias:SMC
 is_a: CL:0000192 {xref="doi:10.1101/2020.02.29.970558"}
 intersection_of: CL:0000192
@@ -129,8 +125,6 @@ property_value: RO:0002558 AllenDend_CS202002013:111
 
 [Term]
 id: AllenDendClass_CS202002013:112
-name: Abcc9,Tbx3os1 expressing brain pericyte of primary motor cortex (Mus musculus)
-def: "A brain pericyte of the Mus musculus primary motor cortex that expresses: Abcc9,Tbx3os1. The minimal set of markers required for its identification is: Abcc9,Tbx3os1" []
 comment: cell_set_preferred_alias:Peri ; original_label:Peri ; cell_set_label:RNAseq 112 ; cell_set_aligned_alias:Pericyte
 is_a: CL:2000043 {xref="doi:10.1101/2020.02.29.970558"}
 intersection_of: CL:2000043
@@ -143,8 +137,6 @@ property_value: RO:0002558 AllenDend_CS202002013:112
 
 [Term]
 id: AllenDendClass_CS202002013:113
-name: Hexb expressing microglial cell of primary motor cortex (Mus musculus)
-def: "A microglial cell of the Mus musculus primary motor cortex that expresses: Hexb. The minimal set of markers required for its identification is: Hexb" []
 comment: cell_set_preferred_alias:Micro ; original_label:Micro ; cell_set_label:RNAseq 113 ; cell_set_aligned_alias:Microglia
 is_a: CL:0000129 {xref="doi:10.1101/2020.02.29.970558"}
 intersection_of: CL:0000129
@@ -984,8 +976,6 @@ property_value: RO:0002558 AllenDend_CS202002013:21
 
 [Term]
 id: AllenDendClass_CS202002013:210
-name: Gli3,Slc39a12 expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)
-def: "A astrocyte of the cerebral cortex of the Mus musculus primary motor cortex that expresses: Gli3,Slc39a12. The minimal set of markers required for its identification is: Gli3,Slc39a12" []
 comment: cell_set_preferred_alias:Astro ; original_label:n94 ; cell_set_label:RNAseq 092-094 ; cell_set_aligned_alias:Astrocyte
 is_a: CL:0002605 {xref="doi:10.1101/2020.02.29.970558"}
 intersection_of: CL:0002605
@@ -1007,8 +997,6 @@ property_value: prefLabel "Astro_1" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:212
-name: Gjc3 expressing oligodendrocyte of primary motor cortex (Mus musculus)
-def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: Gjc3. The minimal set of markers required for its identification is: Gjc3" []
 comment: cell_set_preferred_alias:Oligo ; original_label:n96 ; cell_set_label:RNAseq 095-102 ; cell_set_aligned_alias:Oligodendrocyte
 is_a: CL:0000128 {xref="doi:10.1101/2020.02.29.970558"}
 intersection_of: CL:0000128
@@ -1637,7 +1625,7 @@ property_value: RO:0002558 AllenDend_CS202002013:57
 [Term]
 id: AllenDendClass_CS202002013:58
 name: 6530403H02Rik,Adamts2,Met expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: 6530403H02Rik,Adamts2,Met. The minimal set of markers required for its identification is: 6530403H02Rik,Adamts2,Met" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: 6530403H02Rik,Adamts2,Calb1,Met,Rasgrf2. The minimal set of markers required for its identification is: 6530403H02Rik,Adamts2,Met" []
 comment: cell_set_preferred_alias:L2/3 IT_1 ; original_label:L2/3 IT_1 ; cell_set_label:RNAseq 058 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1654,7 +1642,7 @@ property_value: RO:0002558 AllenDend_CS202002013:58
 [Term]
 id: AllenDendClass_CS202002013:59
 name: Ccdc3,Cux1,Meis2,Otof expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Ccdc3,Cux1,Meis2,Otof. The minimal set of markers required for its identification is: Ccdc3,Cux1,Meis2,Otof" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Calb1,Ccdc3,Cux1,Meis2,Otof,Rasgrf2. The minimal set of markers required for its identification is: Ccdc3,Cux1,Meis2,Otof" []
 comment: cell_set_preferred_alias:L2/3 IT_2 ; original_label:L2/3 IT_2 ; cell_set_label:RNAseq 059 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -1687,7 +1675,7 @@ property_value: RO:0002558 AllenDend_CS202002013:6
 [Term]
 id: AllenDendClass_CS202002013:60
 name: Cux2,Slit3,Stard8 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Cux2,Slit3,Stard8. The minimal set of markers required for its identification is: Cux2,Slit3,Stard8" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Calb1,Cux2,Rasgrf2,Slit3,Stard8. The minimal set of markers required for its identification is: Cux2,Slit3,Stard8" []
 comment: cell_set_preferred_alias:L2/3 IT_3 ; original_label:L2/3 IT_3 ; cell_set_label:RNAseq 060 ; cell_set_aligned_alias:''
 intersection_of: CL:0000679
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location
@@ -2209,8 +2197,6 @@ property_value: RO:0002558 AllenDend_CS202002013:9
 
 [Term]
 id: AllenDendClass_CS202002013:91
-name: Pdgfra,Stk32a expressing oligodendrocyte precursor cell of primary motor cortex (Mus musculus)
-def: "A oligodendrocyte precursor cell of the Mus musculus primary motor cortex that expresses: Pdgfra,Stk32a. The minimal set of markers required for its identification is: Pdgfra,Stk32a" []
 comment: cell_set_preferred_alias:OPC Pdgfra ; original_label:OPC Pdgfra ; cell_set_label:RNAseq 091 ; cell_set_aligned_alias:OPC
 is_a: CL:0002453 {xref="doi:10.1101/2020.02.29.970558"}
 intersection_of: CL:0002453

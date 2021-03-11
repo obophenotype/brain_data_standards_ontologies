@@ -61,6 +61,7 @@ def get_taxonomy_configuration(config, taxonomy):
     Lists all taxonomies that has a configuration in the config
     Args:
         config: configuration file
+        taxonomy: taxonomy to get its configuration
 
     Returns: List of taxonomy names that has a configuration
 
@@ -102,6 +103,14 @@ def get_subtrees(dend_tree, taxonomy_config):
     subtrees = []
     for root_node in taxonomy_config['Root_nodes']:
         descendants = nx.descendants(dend_tree, root_node['Node'])
-        descendants.add(root_node['Node'])
+        # subtrees exclude root node itself
+        # descendants.add(root_node['Node'])
         subtrees.append(descendants)
     return subtrees
+
+
+def get_root_nodes(config_yaml):
+    root_nodes = []
+    for root_node in config_yaml['Root_nodes']:
+        root_nodes.append(root_node['Node'])
+    return root_nodes

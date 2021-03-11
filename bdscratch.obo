@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2021-03-10
+data-version: releases/2021-03-11
 subsetdef: 3_STAR ""
 subsetdef: added_for_HCA ""
 subsetdef: attribute_slim ""
@@ -53,7 +53,7 @@ ontology: bdscratch
 property_value: dc-description "None" xsd:string
 property_value: dc-title "Brain Data Standards Cell Ontology" xsd:string
 property_value: dcterms-license https://creativecommons.org/licenses/unspecified
-property_value: owl:versionInfo "2021-03-10" xsd:string
+property_value: owl:versionInfo "2021-03-11" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:1
@@ -98,7 +98,7 @@ id: AllenDendClass_CS202002013:100
 name: Il33,Prr5l expressing oligodendrocyte of primary motor cortex (Mus musculus)
 def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: Il33,Prr5l. The minimal set of markers required for its identification is: Il33,Prr5l" []
 comment: cell_set_preferred_alias:Oligo Opalin_2 ; original_label:Oligo Opalin_2 ; cell_set_label:RNAseq 100 ; cell_set_aligned_alias:''
-is_a: AllenDendClass_CS202002013:212 ! Gjc3 expressing oligodendrocyte of primary motor cortex (Mus musculus)
+is_a: AllenDendClass_CS202002013:212
 intersection_of: CL:0000128 ! oligodendrocyte
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024810 ! expresses Il33
@@ -115,7 +115,7 @@ id: AllenDendClass_CS202002013:101
 name: Cacna2d4,Mobp,Nckap5 expressing oligodendrocyte of primary motor cortex (Mus musculus)
 def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: Cacna2d4,Mobp,Nckap5. The minimal set of markers required for its identification is: Cacna2d4,Mobp,Nckap5" []
 comment: cell_set_preferred_alias:Oligo Opalin_3 ; original_label:Oligo Opalin_3 ; cell_set_label:RNAseq 101 ; cell_set_aligned_alias:''
-is_a: AllenDendClass_CS202002013:212 ! Gjc3 expressing oligodendrocyte of primary motor cortex (Mus musculus)
+is_a: AllenDendClass_CS202002013:212
 intersection_of: CL:0000128 ! oligodendrocyte
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032517 ! expresses Mobp
@@ -134,7 +134,7 @@ id: AllenDendClass_CS202002013:102
 name: Kank1,Prom1,Sytl2 expressing oligodendrocyte of primary motor cortex (Mus musculus)
 def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: Kank1,Prom1,Sytl2. The minimal set of markers required for its identification is: Kank1,Prom1,Sytl2" []
 comment: cell_set_preferred_alias:Oligo Opalin_4 ; original_label:Oligo Opalin_4 ; cell_set_label:RNAseq 102 ; cell_set_aligned_alias:''
-is_a: AllenDendClass_CS202002013:212 ! Gjc3 expressing oligodendrocyte of primary motor cortex (Mus musculus)
+is_a: AllenDendClass_CS202002013:212
 intersection_of: CL:0000128 ! oligodendrocyte
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029086 ! expresses Prom1
@@ -150,8 +150,6 @@ property_value: RO:0002558 AllenDend_CS202002013:102
 
 [Term]
 id: AllenDendClass_CS202002013:103
-name: Adgrl4,Slco1a4 expressing cerebral cortex endothelial cell of primary motor cortex (Mus musculus)
-def: "A cerebral cortex endothelial cell of the Mus musculus primary motor cortex that expresses: Adgrl4,Slco1a4. The minimal set of markers required for its identification is: Adgrl4,Slco1a4" []
 comment: cell_set_preferred_alias:Endo ; original_label:Endo ; cell_set_label:RNAseq 103 ; cell_set_aligned_alias:Endothelial
 is_a: CL:0010012 ! cerebral cortex neuron
 is_a: CL:1001602 {xref="doi:10.1101/2020.02.29.970558"} ! cerebral cortex endothelial cell
@@ -187,8 +185,6 @@ property_value: RO:0002558 AllenDend_CS202002013:11
 
 [Term]
 id: AllenDendClass_CS202002013:111
-name: Acta2 expressing smooth muscle cell of primary motor cortex (Mus musculus)
-def: "A smooth muscle cell of the Mus musculus primary motor cortex that expresses: Acta2. The minimal set of markers required for its identification is: Acta2" []
 comment: cell_set_preferred_alias:SMC ; original_label:SMC ; cell_set_label:RNAseq 111 ; cell_set_aligned_alias:SMC
 is_a: CL:0000192 {xref="doi:10.1101/2020.02.29.970558"} ! smooth muscle cell
 is_a: CL:0000540 ! neuron
@@ -202,8 +198,6 @@ property_value: RO:0002558 AllenDend_CS202002013:111
 
 [Term]
 id: AllenDendClass_CS202002013:112
-name: Abcc9,Tbx3os1 expressing brain pericyte of primary motor cortex (Mus musculus)
-def: "A brain pericyte of the Mus musculus primary motor cortex that expresses: Abcc9,Tbx3os1. The minimal set of markers required for its identification is: Abcc9,Tbx3os1" []
 comment: cell_set_preferred_alias:Peri ; original_label:Peri ; cell_set_label:RNAseq 112 ; cell_set_aligned_alias:Pericyte
 is_a: CL:2000029 ! central nervous system neuron
 is_a: CL:2000043 {xref="doi:10.1101/2020.02.29.970558"} ! brain pericyte
@@ -218,8 +212,6 @@ property_value: RO:0002558 AllenDend_CS202002013:112
 
 [Term]
 id: AllenDendClass_CS202002013:113
-name: Hexb expressing microglial cell of primary motor cortex (Mus musculus)
-def: "A microglial cell of the Mus musculus primary motor cortex that expresses: Hexb. The minimal set of markers required for its identification is: Hexb" []
 comment: cell_set_preferred_alias:Micro ; original_label:Micro ; cell_set_label:RNAseq 113 ; cell_set_aligned_alias:Microglia
 is_a: CL:0000029 ! neuron neural crest derived
 is_a: CL:0000129 {xref="doi:10.1101/2020.02.29.970558"} ! microglial cell
@@ -1135,8 +1127,6 @@ property_value: RO:0002558 AllenDend_CS202002013:21
 
 [Term]
 id: AllenDendClass_CS202002013:210
-name: Gli3,Slc39a12 expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)
-def: "A astrocyte of the cerebral cortex of the Mus musculus primary motor cortex that expresses: Gli3,Slc39a12. The minimal set of markers required for its identification is: Gli3,Slc39a12" []
 comment: cell_set_preferred_alias:Astro ; original_label:n94 ; cell_set_label:RNAseq 092-094 ; cell_set_aligned_alias:Astrocyte
 is_a: CL:0000029 ! neuron neural crest derived
 is_a: CL:0002605 {xref="doi:10.1101/2020.02.29.970558"} ! astrocyte of the cerebral cortex
@@ -1161,8 +1151,6 @@ property_value: prefLabel "Astro_1" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:212
-name: Gjc3 expressing oligodendrocyte of primary motor cortex (Mus musculus)
-def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: Gjc3. The minimal set of markers required for its identification is: Gjc3" []
 comment: cell_set_preferred_alias:Oligo ; original_label:n96 ; cell_set_label:RNAseq 095-102 ; cell_set_aligned_alias:Oligodendrocyte
 is_a: CL:0000029 ! neuron neural crest derived
 is_a: CL:0000128 {xref="doi:10.1101/2020.02.29.970558"} ! oligodendrocyte
@@ -1926,7 +1914,7 @@ property_value: RO:0002558 AllenDend_CS202002013:57
 [Term]
 id: AllenDendClass_CS202002013:58
 name: 6530403H02Rik,Adamts2,Met expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: 6530403H02Rik,Adamts2,Met. The minimal set of markers required for its identification is: 6530403H02Rik,Adamts2,Met" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: 6530403H02Rik,Adamts2,Calb1,Met,Rasgrf2. The minimal set of markers required for its identification is: 6530403H02Rik,Adamts2,Met" []
 comment: cell_set_preferred_alias:L2/3 IT_1 ; original_label:L2/3 IT_1 ; cell_set_label:RNAseq 058 ; cell_set_aligned_alias:''
 is_a: AllenDendClass_CS202002013:183 ! Calb1,Rasgrf2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 intersection_of: CL:0000679 ! glutamatergic neuron
@@ -1947,7 +1935,7 @@ property_value: RO:0002558 AllenDend_CS202002013:58
 [Term]
 id: AllenDendClass_CS202002013:59
 name: Ccdc3,Cux1,Meis2,Otof expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Ccdc3,Cux1,Meis2,Otof. The minimal set of markers required for its identification is: Ccdc3,Cux1,Meis2,Otof" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Calb1,Ccdc3,Cux1,Meis2,Otof,Rasgrf2. The minimal set of markers required for its identification is: Ccdc3,Cux1,Meis2,Otof" []
 comment: cell_set_preferred_alias:L2/3 IT_2 ; original_label:L2/3 IT_2 ; cell_set_label:RNAseq 059 ; cell_set_aligned_alias:''
 is_a: AllenDendClass_CS202002013:183 ! Calb1,Rasgrf2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 intersection_of: CL:0000679 ! glutamatergic neuron
@@ -1987,7 +1975,7 @@ property_value: RO:0002558 AllenDend_CS202002013:6
 [Term]
 id: AllenDendClass_CS202002013:60
 name: Cux2,Slit3,Stard8 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Cux2,Slit3,Stard8. The minimal set of markers required for its identification is: Cux2,Slit3,Stard8" []
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Calb1,Cux2,Rasgrf2,Slit3,Stard8. The minimal set of markers required for its identification is: Cux2,Slit3,Stard8" []
 comment: cell_set_preferred_alias:L2/3 IT_3 ; original_label:L2/3 IT_3 ; cell_set_label:RNAseq 060 ; cell_set_aligned_alias:''
 is_a: AllenDendClass_CS202002013:183 ! Calb1,Rasgrf2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)
 intersection_of: CL:0000679 ! glutamatergic neuron
@@ -2618,8 +2606,6 @@ property_value: RO:0002558 AllenDend_CS202002013:9
 
 [Term]
 id: AllenDendClass_CS202002013:91
-name: Pdgfra,Stk32a expressing oligodendrocyte precursor cell of primary motor cortex (Mus musculus)
-def: "A oligodendrocyte precursor cell of the Mus musculus primary motor cortex that expresses: Pdgfra,Stk32a. The minimal set of markers required for its identification is: Pdgfra,Stk32a" []
 comment: cell_set_preferred_alias:OPC Pdgfra ; original_label:OPC Pdgfra ; cell_set_label:RNAseq 091 ; cell_set_aligned_alias:OPC
 is_a: CL:0000029 ! neuron neural crest derived
 is_a: CL:0002453 {xref="doi:10.1101/2020.02.29.970558"} ! oligodendrocyte precursor cell
@@ -2638,7 +2624,7 @@ id: AllenDendClass_CS202002013:92
 name: Clspn,Lockd expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)
 def: "A astrocyte of the cerebral cortex of the Mus musculus primary motor cortex that expresses: Clspn,Lockd. The minimal set of markers required for its identification is: Clspn,Lockd" []
 comment: cell_set_preferred_alias:Astro_Top2a ; original_label:Astro_Top2a ; cell_set_label:RNAseq 092 ; cell_set_aligned_alias:''
-is_a: AllenDendClass_CS202002013:210 ! Gli3,Slc39a12 expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)
+is_a: AllenDendClass_CS202002013:210
 intersection_of: CL:0002605 ! astrocyte of the cerebral cortex
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042489 ! expresses Clspn
@@ -2655,7 +2641,7 @@ id: AllenDendClass_CS202002013:93
 name: Myoc expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)
 def: "A astrocyte of the cerebral cortex of the Mus musculus primary motor cortex that expresses: Myoc. The minimal set of markers required for its identification is: Myoc" []
 comment: cell_set_preferred_alias:Astro Aqp4_Gfap ; original_label:Astro Aqp4_Gfap ; cell_set_label:RNAseq 093 ; cell_set_aligned_alias:''
-is_a: AllenDendClass_CS202002013:210 ! Gli3,Slc39a12 expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)
+is_a: AllenDendClass_CS202002013:210
 intersection_of: CL:0002605 ! astrocyte of the cerebral cortex
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026697 ! expresses Myoc
@@ -2670,7 +2656,7 @@ id: AllenDendClass_CS202002013:94
 name: Phkg1,Slco1c1 expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)
 def: "A astrocyte of the cerebral cortex of the Mus musculus primary motor cortex that expresses: Phkg1,Slco1c1. The minimal set of markers required for its identification is: Phkg1,Slco1c1" []
 comment: cell_set_preferred_alias:Astro Aqp4_Slc7a10 ; original_label:Astro Aqp4_Slc7a10 ; cell_set_label:RNAseq 094 ; cell_set_aligned_alias:''
-is_a: AllenDendClass_CS202002013:210 ! Gli3,Slc39a12 expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)
+is_a: AllenDendClass_CS202002013:210
 intersection_of: CL:0002605 ! astrocyte of the cerebral cortex
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000025537 ! expresses Phkg1
@@ -2687,7 +2673,7 @@ id: AllenDendClass_CS202002013:95
 name: Bcas1,Tcf7l2 expressing oligodendrocyte of primary motor cortex (Mus musculus)
 def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: Bcas1,Tcf7l2. The minimal set of markers required for its identification is: Bcas1,Tcf7l2" []
 comment: cell_set_preferred_alias:Oligo Enpp6_1 ; original_label:Oligo Enpp6_1 ; cell_set_label:RNAseq 095 ; cell_set_aligned_alias:''
-is_a: AllenDendClass_CS202002013:212 ! Gjc3 expressing oligodendrocyte of primary motor cortex (Mus musculus)
+is_a: AllenDendClass_CS202002013:212
 intersection_of: CL:0000128 ! oligodendrocyte
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000013523 ! expresses Bcas1
@@ -2704,7 +2690,7 @@ id: AllenDendClass_CS202002013:96
 name: 9630013A20Rik,Bmp4 expressing oligodendrocyte of primary motor cortex (Mus musculus)
 def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: 9630013A20Rik,Bmp4. The minimal set of markers required for its identification is: 9630013A20Rik,Bmp4" []
 comment: cell_set_preferred_alias:Oligo Enpp6_2 ; original_label:Oligo Enpp6_2 ; cell_set_label:RNAseq 096 ; cell_set_aligned_alias:''
-is_a: AllenDendClass_CS202002013:212 ! Gjc3 expressing oligodendrocyte of primary motor cortex (Mus musculus)
+is_a: AllenDendClass_CS202002013:212
 intersection_of: CL:0000128 ! oligodendrocyte
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021835 ! expresses Bmp4
@@ -2721,7 +2707,7 @@ id: AllenDendClass_CS202002013:97
 name: Cnksr3,Mpzl1,Nckap5,Tmem163 expressing oligodendrocyte of primary motor cortex (Mus musculus)
 def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: Cnksr3,Mpzl1,Nckap5,Tmem163. The minimal set of markers required for its identification is: Cnksr3,Mpzl1,Nckap5,Tmem163" []
 comment: cell_set_preferred_alias:Oligo Enpp6_3 ; original_label:Oligo Enpp6_3 ; cell_set_label:RNAseq 097 ; cell_set_aligned_alias:''
-is_a: AllenDendClass_CS202002013:212 ! Gjc3 expressing oligodendrocyte of primary motor cortex (Mus musculus)
+is_a: AllenDendClass_CS202002013:212
 intersection_of: CL:0000128 ! oligodendrocyte
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000015202 ! expresses Cnksr3
@@ -2742,7 +2728,7 @@ id: AllenDendClass_CS202002013:98
 name: 9630013A20Rik,Cnksr3 expressing oligodendrocyte of primary motor cortex (Mus musculus)
 def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: 9630013A20Rik,Cnksr3. The minimal set of markers required for its identification is: 9630013A20Rik,Cnksr3" []
 comment: cell_set_preferred_alias:Oligo Enpp6_4 ; original_label:Oligo Enpp6_4 ; cell_set_label:RNAseq 098 ; cell_set_aligned_alias:''
-is_a: AllenDendClass_CS202002013:212 ! Gjc3 expressing oligodendrocyte of primary motor cortex (Mus musculus)
+is_a: AllenDendClass_CS202002013:212
 intersection_of: CL:0000128 ! oligodendrocyte
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000015202 ! expresses Cnksr3
@@ -2759,7 +2745,7 @@ id: AllenDendClass_CS202002013:99
 name: A330049N07Rik,Anln,Rftn1 expressing oligodendrocyte of primary motor cortex (Mus musculus)
 def: "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: A330049N07Rik,Anln,Rftn1. The minimal set of markers required for its identification is: A330049N07Rik,Anln,Rftn1" []
 comment: cell_set_preferred_alias:Oligo Opalin_1 ; original_label:Oligo Opalin_1 ; cell_set_label:RNAseq 099 ; cell_set_aligned_alias:''
-is_a: AllenDendClass_CS202002013:212 ! Gjc3 expressing oligodendrocyte of primary motor cortex (Mus musculus)
+is_a: AllenDendClass_CS202002013:212
 intersection_of: CL:0000128 ! oligodendrocyte
 intersection_of: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 intersection_of: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036777 ! expresses Anln
@@ -5545,8 +5531,8 @@ is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
 intersection_of: CL:0000099 ! interneuron
 intersection_of: capable_of GO:0061534 ! gamma-aminobutyric acid secretion, neurotransmission
 intersection_of: RO:0002100 UBERON:0000956 ! has soma location cerebral cortex
-intersection_of: RO:0002292 PR:000015665 ! expresses somatostatin
-relationship: RO:0002292 PR:000015665 ! expresses somatostatin
+intersection_of: RO:0002292 PR:000015665 ! expresses sst
+relationship: RO:0002292 PR:000015665 ! expresses sst
 created_by: http://orcid.org/0000-0001-7258-9596
 
 [Term]
@@ -12786,9 +12772,9 @@ synonym: "mSST" EXACT PRO-short-label [PRO:DNx]
 synonym: "Smst" RELATED Gene-based [UniProtKB:P60041]
 synonym: "Sst" RELATED Gene-based [UniProtKB:P60041]
 xref: UniProtKB:P60041
-is_a: PR:000015665 ! somatostatin
+is_a: PR:000015665 ! sst
 is_a: PR:000029032 ! Mus musculus protein
-intersection_of: PR:000015665 ! somatostatin
+intersection_of: PR:000015665 ! sst
 intersection_of: only_in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: has_gene_template http://www.informatics.jax.org/marker/MGI:98326 ! Sst (mouse)
 
@@ -31954,16 +31940,6 @@ name: Col26a1
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000005716
-name: Pvalb
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000006014
-name: Prg4
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000009376
 name: Met
 is_a: SO:0000704 ! gene
@@ -31971,11 +31947,6 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000010066
 name: Cacna2d2
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000010122
-name: Slc47a1
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -32011,11 +31982,6 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000016918
 name: Sulf1
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000017897
-name: Eya2
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -32069,11 +32035,6 @@ name: Ntn1
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000021318
-name: Gli3
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000021508
 name: Cxcl14
 is_a: SO:0000704 ! gene
@@ -32086,11 +32047,6 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000021647
 name: Cartpt
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000021665
-name: Hexb
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -32159,11 +32115,6 @@ name: Nectin3
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000023800
-name: Tiam2
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000024074
 name: Crim1
 is_a: SO:0000704 ! gene
@@ -32191,11 +32142,6 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000024598
 name: Fbn2
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000024610
-name: Cd74
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -32229,11 +32175,6 @@ name: Phkg1
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000025780
-name: Itih5
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000025813
 name: Homer2
 is_a: SO:0000704 ! gene
@@ -32246,11 +32187,6 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000026141
 name: Col19a1
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000026288
-name: Inpp5d
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -32306,11 +32242,6 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000026826
 name: Nr4a2
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000026989
-name: Dapl1
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -32389,11 +32320,6 @@ name: Cwh43
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000029231
-name: Pdgfra
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000029334
 name: Prkg2
 is_a: SO:0000704 ! gene
@@ -32424,11 +32350,6 @@ name: Gxylt2
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000030187
-name: Klra2
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000030222
 name: Rerg
 is_a: SO:0000704 ! gene
@@ -32436,16 +32357,6 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000030235
 name: Slco1c1
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000030237
-name: Slco1a4
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000030249
-name: Abcc9
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -32466,16 +32377,6 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000031216
 name: Stard8
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000031273
-name: Col4a6
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000031494
-name: Cd209a
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -32514,11 +32415,6 @@ name: Htr3a
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000032503
-name: Arpp21
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000032517
 name: Mobp
 is_a: SO:0000704 ! gene
@@ -32539,11 +32435,6 @@ name: Kank1
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000032796
-name: Lama1
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000032841
 name: Prr5l
 is_a: SO:0000704 ! gene
@@ -32551,11 +32442,6 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000034009
 name: Rxfp1
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000034127
-name: Tspan8
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -32589,16 +32475,6 @@ name: Pdzrn3
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000035551
-name: Igfbpl1
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000035783
-name: Acta2
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000036019
 name: Tmtc2
 is_a: SO:0000704 ! gene
@@ -32624,18 +32500,8 @@ name: Anln
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000036814
-name: Slc6a20a
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000036834
 name: Plch1
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000036949
-name: Slc39a12
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -32674,11 +32540,6 @@ name: Whrn
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000039167
-name: Adgrl4
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000039316
 name: Rftn1
 is_a: SO:0000704 ! gene
@@ -32704,11 +32565,6 @@ name: Cplx3
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000039954
-name: Stk32a
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000040420
 name: Cdh18
 is_a: SO:0000704 ! gene
@@ -32716,11 +32572,6 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000040452
 name: Cdh12
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000040569
-name: Slc26a7
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -32789,11 +32640,6 @@ name: Npsr1
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000043760
-name: Pkhd1
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000044288
 name: Cnr1
 is_a: SO:0000704 ! gene
@@ -32826,11 +32672,6 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000047907
 name: Tshz2
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000048939
-name: Atp13a5
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -32884,11 +32725,6 @@ name: Bmpr1b
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000053025
-name: Sv2b
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000053368
 name: Rxfp2
 is_a: SO:0000704 ! gene
@@ -32911,11 +32747,6 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000056427
 name: Slit3
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000056966
-name: Gjc3
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -32949,11 +32780,6 @@ name: Tac1
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000062078
-name: Qk
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000062372
 name: Otof
 is_a: SO:0000704 ! gene
@@ -32974,11 +32800,6 @@ name: Krt73
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000064294
-name: Aox3
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000066197
 name: Gpr139
 is_a: SO:0000704 ! gene
@@ -32991,16 +32812,6 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000069132
 name: Nxph2
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000069378
-name: Prdm6
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000070880
-name: Gad1
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -33019,18 +32830,8 @@ name: Pde11a
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000078302
-name: Foxd1
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000078591
 name: Hs3st4
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000087516
-name: Tbx3os1
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -33049,11 +32850,6 @@ name: 9530026P05Rik
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000098087
-name: Gm17750
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000098097
 name: 6530403H02Rik
 is_a: SO:0000704 ! gene
@@ -33064,11 +32860,6 @@ name: Lockd
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000098326
-name: Dlx6os1
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000098760
 name: Gm2164
 is_a: SO:0000704 ! gene
@@ -33076,16 +32867,6 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000100650
 name: Gm28807
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000100832
-name: Gm29260
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000101389
-name: Ms4a4a
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -33136,11 +32917,6 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000112276
 name: 5033421B08Rik
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000112430
-name: Gm30624
 is_a: SO:0000704 ! gene
 
 [Term]

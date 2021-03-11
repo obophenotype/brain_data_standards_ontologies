@@ -5324,11 +5324,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-03-10"
+            "val": "2021-03-11"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-10/bdscratch-base.json",
+        "version": "http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-11/bdscratch-base.json",
         "xrefs": []
       },
       "nodes": [
@@ -5493,42 +5493,6 @@
           "type": "CLASS"
         },
         {
-          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_103",
-          "lbl": "Adgrl4,Slco1a4 expressing cerebral cortex endothelial cell of primary motor cortex (Mus musculus)",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/RO_0002558",
-                "val": "http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_103"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "Endo"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "Endothelial"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "RNAseq 103"
-              },
-              {
-                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
-                "val": "Endo"
-              }
-            ],
-            "comments": [
-              "cell_set_preferred_alias:Endo ; original_label:Endo ; cell_set_label:RNAseq 103 ; cell_set_aligned_alias:Endothelial"
-            ],
-            "definition": {
-              "val": "A cerebral cortex endothelial cell of the Mus musculus primary motor cortex that expresses: Adgrl4,Slco1a4. The minimal set of markers required for its identification is: Adgrl4,Slco1a4",
-              "xrefs": []
-            }
-          },
-          "type": "CLASS"
-        },
-        {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11",
           "lbl": "Krt73,Sln,Syt6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)",
           "meta": {
@@ -5555,110 +5519,6 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cnr1,Col25a1,Krt73,Sln,Syt6. The minimal set of markers required for its identification is: Krt73,Sln,Syt6",
-              "xrefs": []
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111",
-          "lbl": "Acta2 expressing smooth muscle cell of primary motor cortex (Mus musculus)",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/RO_0002558",
-                "val": "http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_111"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "RNAseq 111"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "SMC"
-              },
-              {
-                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
-                "val": "SMC"
-              }
-            ],
-            "comments": [
-              "cell_set_preferred_alias:SMC ; original_label:SMC ; cell_set_label:RNAseq 111 ; cell_set_aligned_alias:SMC"
-            ],
-            "definition": {
-              "val": "A smooth muscle cell of the Mus musculus primary motor cortex that expresses: Acta2. The minimal set of markers required for its identification is: Acta2",
-              "xrefs": []
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_112",
-          "lbl": "Abcc9,Tbx3os1 expressing brain pericyte of primary motor cortex (Mus musculus)",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/RO_0002558",
-                "val": "http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_112"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "Peri"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "Pericyte"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "RNAseq 112"
-              },
-              {
-                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
-                "val": "Peri"
-              }
-            ],
-            "comments": [
-              "cell_set_preferred_alias:Peri ; original_label:Peri ; cell_set_label:RNAseq 112 ; cell_set_aligned_alias:Pericyte"
-            ],
-            "definition": {
-              "val": "A brain pericyte of the Mus musculus primary motor cortex that expresses: Abcc9,Tbx3os1. The minimal set of markers required for its identification is: Abcc9,Tbx3os1",
-              "xrefs": []
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_113",
-          "lbl": "Hexb expressing microglial cell of primary motor cortex (Mus musculus)",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/RO_0002558",
-                "val": "http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_113"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "Micro"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "Microglia"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "RNAseq 113"
-              },
-              {
-                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
-                "val": "Micro"
-              }
-            ],
-            "comments": [
-              "cell_set_preferred_alias:Micro ; original_label:Micro ; cell_set_label:RNAseq 113 ; cell_set_aligned_alias:Microglia"
-            ],
-            "definition": {
-              "val": "A microglial cell of the Mus musculus primary motor cortex that expresses: Hexb. The minimal set of markers required for its identification is: Hexb",
               "xrefs": []
             }
           },
@@ -6371,86 +6231,6 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: 5033421B08Rik,Htr3a,Vip. The minimal set of markers required for its identification is: 5033421B08Rik,Htr3a",
-              "xrefs": []
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_210",
-          "lbl": "Gli3,Slc39a12 expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/RO_0002558",
-                "val": "http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_210"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "Astro"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "Astrocyte"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "RNAseq 092-094"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "n94"
-              },
-              {
-                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
-                "val": "Astro"
-              }
-            ],
-            "comments": [
-              "cell_set_preferred_alias:Astro ; original_label:n94 ; cell_set_label:RNAseq 092-094 ; cell_set_aligned_alias:Astrocyte"
-            ],
-            "definition": {
-              "val": "A astrocyte of the cerebral cortex of the Mus musculus primary motor cortex that expresses: Gli3,Slc39a12. The minimal set of markers required for its identification is: Gli3,Slc39a12",
-              "xrefs": []
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_212",
-          "lbl": "Gjc3 expressing oligodendrocyte of primary motor cortex (Mus musculus)",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/RO_0002558",
-                "val": "http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_212"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "Oligo"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "Oligodendrocyte"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "RNAseq 095-102"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "n96"
-              },
-              {
-                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
-                "val": "Oligo"
-              }
-            ],
-            "comments": [
-              "cell_set_preferred_alias:Oligo ; original_label:n96 ; cell_set_label:RNAseq 095-102 ; cell_set_aligned_alias:Oligodendrocyte"
-            ],
-            "definition": {
-              "val": "A oligodendrocyte of the Mus musculus primary motor cortex that expresses: Gjc3. The minimal set of markers required for its identification is: Gjc3",
               "xrefs": []
             }
           },
@@ -7730,7 +7510,7 @@
               "cell_set_preferred_alias:L2/3 IT_1 ; original_label:L2/3 IT_1 ; cell_set_label:RNAseq 058 ; cell_set_aligned_alias:''"
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: 6530403H02Rik,Adamts2,Met. The minimal set of markers required for its identification is: 6530403H02Rik,Adamts2,Met",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: 6530403H02Rik,Adamts2,Calb1,Met,Rasgrf2. The minimal set of markers required for its identification is: 6530403H02Rik,Adamts2,Met",
               "xrefs": []
             }
           },
@@ -7762,7 +7542,7 @@
               "cell_set_preferred_alias:L2/3 IT_2 ; original_label:L2/3 IT_2 ; cell_set_label:RNAseq 059 ; cell_set_aligned_alias:''"
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Ccdc3,Cux1,Meis2,Otof. The minimal set of markers required for its identification is: Ccdc3,Cux1,Meis2,Otof",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Calb1,Ccdc3,Cux1,Meis2,Otof,Rasgrf2. The minimal set of markers required for its identification is: Ccdc3,Cux1,Meis2,Otof",
               "xrefs": []
             }
           },
@@ -7826,7 +7606,7 @@
               "cell_set_preferred_alias:L2/3 IT_3 ; original_label:L2/3 IT_3 ; cell_set_label:RNAseq 060 ; cell_set_aligned_alias:''"
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Cux2,Slit3,Stard8. The minimal set of markers required for its identification is: Cux2,Slit3,Stard8",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex that expresses: Calb1,Cux2,Rasgrf2,Slit3,Stard8. The minimal set of markers required for its identification is: Cux2,Slit3,Stard8",
               "xrefs": []
             }
           },
@@ -8803,42 +8583,6 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex that expresses: Cdh6,Cnr1,Col25a1,Eps8. The minimal set of markers required for its identification is: Cdh6,Col25a1,Eps8",
-              "xrefs": []
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_91",
-          "lbl": "Pdgfra,Stk32a expressing oligodendrocyte precursor cell of primary motor cortex (Mus musculus)",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/RO_0002558",
-                "val": "http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_91"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "OPC"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "OPC Pdgfra"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
-                "val": "RNAseq 091"
-              },
-              {
-                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
-                "val": "OPC Pdgfra"
-              }
-            ],
-            "comments": [
-              "cell_set_preferred_alias:OPC Pdgfra ; original_label:OPC Pdgfra ; cell_set_label:RNAseq 091 ; cell_set_aligned_alias:OPC"
-            ],
-            "definition": {
-              "val": "A oligodendrocyte precursor cell of the Mus musculus primary motor cortex that expresses: Pdgfra,Stk32a. The minimal set of markers required for its identification is: Pdgfra,Stk32a",
               "xrefs": []
             }
           },
@@ -18364,6 +18108,126 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_103",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/RO_0002558",
+                "val": "http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_103"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Endo"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Endothelial"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "RNAseq 103"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Endo"
+              }
+            ],
+            "comments": [
+              "cell_set_preferred_alias:Endo ; original_label:Endo ; cell_set_label:RNAseq 103 ; cell_set_aligned_alias:Endothelial"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/RO_0002558",
+                "val": "http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_111"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "RNAseq 111"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "SMC"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "SMC"
+              }
+            ],
+            "comments": [
+              "cell_set_preferred_alias:SMC ; original_label:SMC ; cell_set_label:RNAseq 111 ; cell_set_aligned_alias:SMC"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_112",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/RO_0002558",
+                "val": "http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_112"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Peri"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Pericyte"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "RNAseq 112"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Peri"
+              }
+            ],
+            "comments": [
+              "cell_set_preferred_alias:Peri ; original_label:Peri ; cell_set_label:RNAseq 112 ; cell_set_aligned_alias:Pericyte"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_113",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/RO_0002558",
+                "val": "http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_113"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Micro"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Microglia"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "RNAseq 113"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Micro"
+              }
+            ],
+            "comments": [
+              "cell_set_preferred_alias:Micro ; original_label:Micro ; cell_set_label:RNAseq 113 ; cell_set_aligned_alias:Microglia"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_123",
           "meta": {
             "basicPropertyValues": [
@@ -19912,6 +19776,41 @@
           "type": "CLASS"
         },
         {
+          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_210",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/RO_0002558",
+                "val": "http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_210"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Astro"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Astrocyte"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "RNAseq 092-094"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "n94"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Astro"
+              }
+            ],
+            "comments": [
+              "cell_set_preferred_alias:Astro ; original_label:n94 ; cell_set_label:RNAseq 092-094 ; cell_set_aligned_alias:Astrocyte"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_211",
           "meta": {
             "basicPropertyValues": [
@@ -19934,6 +19833,41 @@
             ],
             "comments": [
               "cell_set_preferred_alias:Astro_1 ; original_label:n95 ; cell_set_label:RNAseq 093-094 ; cell_set_aligned_alias:''"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_212",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/RO_0002558",
+                "val": "http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_212"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Oligo"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "Oligodendrocyte"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "RNAseq 095-102"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "n96"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "Oligo"
+              }
+            ],
+            "comments": [
+              "cell_set_preferred_alias:Oligo ; original_label:n96 ; cell_set_label:RNAseq 095-102 ; cell_set_aligned_alias:Oligodendrocyte"
             ]
           },
           "type": "CLASS"
@@ -20071,6 +20005,37 @@
             ],
             "comments": [
               "cell_set_preferred_alias:L5 IT_1 ; original_label:L5 IT_1 ; cell_set_label:RNAseq 063 ; cell_set_aligned_alias:''"
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_91",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/RO_0002558",
+                "val": "http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_91"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "OPC"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "OPC Pdgfra"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#has_exact_synonym",
+                "val": "RNAseq 091"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
+                "val": "OPC Pdgfra"
+              }
+            ],
+            "comments": [
+              "cell_set_preferred_alias:OPC Pdgfra ; original_label:OPC Pdgfra ; cell_set_label:RNAseq 091 ; cell_set_aligned_alias:OPC"
             ]
           },
           "type": "CLASS"

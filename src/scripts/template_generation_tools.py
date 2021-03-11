@@ -4,7 +4,7 @@ import json
 import os
 
 from dendrogram_tools import dend_json_2_nodes_n_edges
-from template_generation_utils import get_synonyms_from_taxonomy, get_synonym_pairs, read_taxonomy_details_yaml, \
+from template_generation_utils import get_synonyms_from_taxonomy, get_synonym_pairs, get_root_nodes, \
     get_max_marker_count, read_taxonomy_config, get_subtrees
 from marker_tools import read_dendrogram_tree, read_marker_file, extend_expressions, EXPRESSIONS
 
@@ -115,18 +115,16 @@ def generate_equivalent_class_reification_template(dend_json_path, output_filepa
     equivalent_robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
-def generate_equivalent_class_marker_template(dend_json_path, marker_path, output_filepath, root_terms=None):
+def generate_equivalent_class_marker_template(dend_json_path, marker_path, output_filepath):
     dend = dend_json_2_nodes_n_edges(dend_json_path)
-    config_yaml = read_taxonomy_details_yaml()[0]
     dend_tree = read_dendrogram_tree(dend_json_path)
 
-    root_nodes = []
-    subtrees = []
-    for root_node in config_yaml['Root_nodes']:
-        root_nodes.append(root_node['Node'])
-        subtree = nx.descendants(dend_tree, root_node['Node'])
-        subtree.add(root_node['Node'])
-        subtrees.append(subtree)
+    path_parts = dend_json_path.split(os.path.sep)
+    taxon = path_parts[len(path_parts) - 1].split(".")[0]
+    config_yaml = read_taxonomy_config(taxon)
+
+    subtrees = get_subtrees(dend_tree, config_yaml)
+    root_nodes = get_root_nodes(config_yaml)
 
     denormalized_markers = extend_expressions(dend_tree, read_marker_file(marker_path), root_nodes)
 
@@ -168,5 +166,3 @@ def generate_equivalent_class_marker_template(dend_json_path, marker_path, outpu
 
     equivalent_robot_template = pd.DataFrame.from_records(equivalent_template)
     equivalent_robot_template.to_csv(output_filepath, sep="\t", index=False)
-
-
