@@ -1,7 +1,11 @@
 import yaml
+import os
 import networkx as nx
 
 from marker_tools import EXPRESSIONS
+
+TAXONOMY_DETAILS_YAML = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                                     '../dendrograms/taxonomy_details.yaml')
 
 OR_SEPARATOR = '|'
 PAIR_SEPARATOR = ' ; '
@@ -51,7 +55,7 @@ def read_taxonomy_config(taxon):
 
 
 def read_taxonomy_details_yaml():
-    with open(r'../dendrograms/taxonomy_details.yaml') as file:
+    with open(r'%s' % TAXONOMY_DETAILS_YAML) as file:
         documents = yaml.full_load(file)
     return documents
 
