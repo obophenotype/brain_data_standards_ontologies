@@ -84,8 +84,8 @@ class TemplateGenerationTest(unittest.TestCase):
         self.assertFalse(ALLEN_CLASS + "CS202002013_219" in output)  # parent
         self.assertFalse(ALLEN_CLASS + "CS202002013_220" in output)  # grand parent
 
-    def test_migrate(self):
-        curated_class_migrate()
+    # def test_migrate(self):
+    #     curated_class_migrate()
 
 
 def read_class_file(class_template):
