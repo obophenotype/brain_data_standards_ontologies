@@ -6,6 +6,8 @@ from dendrogram_tools import dend_json_2_nodes_n_edges
 from template_generation_utils import read_taxonomy_config, get_subtrees
 from marker_tools import read_dendrogram_tree
 
+ENSMUSG_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../templates/ensmusg.tsv")
+
 MARKERS_PATH = "../markers/{}_markers.tsv"
 MARKERS_DENORMALIZED_PATH = "../markers/{}_markers_denormalized.tsv"
 
@@ -68,8 +70,10 @@ def get_minimal_markers(taxon, ensmusg_names):
 
 
 def read_markers(marker_path, ensmusg_names):
+    path = os.path.join(os.path.dirname(os.path.realpath(__file__)), marker_path)
     markers = {}
-    with open(marker_path) as fd:
+
+    with open(path) as fd:
         rd = csv.reader(fd, delimiter="\t", quotechar='"')
         # skip first row
         next(rd)
@@ -89,7 +93,7 @@ def read_markers(marker_path, ensmusg_names):
 
 def read_ensmusg():
     ensmusg = {}
-    with open("../templates/ensmusg.tsv") as fd:
+    with open(ENSMUSG_TSV) as fd:
         rd = csv.reader(fd, delimiter="\t", quotechar='"')
         # skip first 2 rows
         next(rd)
@@ -100,4 +104,4 @@ def read_ensmusg():
     return ensmusg
 
 
-generate_pattern_table("../dendrograms/CCN202002013.json", "../patterns/data/default/brainCellRegionMarker.tsv")
+# generate_pattern_table("../dendrograms/CCN202002013.json", "../patterns/data/default/brainCellRegionMarker.tsv")

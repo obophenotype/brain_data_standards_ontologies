@@ -1,6 +1,7 @@
 import warnings
 import json
 
+
 def dend_json_2_nodes_n_edges(path_to_json):
     f = open(path_to_json, 'r')
     j = json.loads(f.read())
