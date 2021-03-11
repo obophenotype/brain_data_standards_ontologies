@@ -4,18 +4,28 @@
 ## changes here rather than in the main Makefile
 
 
-JOBS = CCN201908210 CCN202002013 CCN201810310 CCN201908211
+JOBS = CCN202002013 # CCN201810310 CCN201908211 CCN201908210
 GENE_FILES = ensmusg
 BDS_BASE = http://www.semanticweb.org/brain_data_standards/
 
 OWL_FILES = $(patsubst %, components/%.owl, $(JOBS))
 OWL_CLASS_FILES = $(patsubst %, components/%_class.owl, $(JOBS))
+OWL_EQUIVALENT_CLASS_FILES = $(patsubst %, components/%_equivalent_class.owl, $(JOBS))
 GENE_FILES = $(patsubst %, mirror/%.owl, $(JOBS))
-OWL_MARKER_FILES = $(patsubst %, components/%_markers.owl, $(JOBS))
 
 #DEND_FILES = $(patsubst %, ../dendrograms/%.json, $(JOBS))
 #TEMPLATE_FILES = $(patsubst %, ../templates/%.tsv, $(JOBS))
 #TEMPLATE_CLASS_FILES = $(patsubst %, ../templates/_%class.tsv, $(JOBS))
+
+$(PATTERNDIR)/pattern.owl: pattern_schema_checks update_patterns
+	if [ $(PAT) = true ]; then $(DOSDPT) prototype --prefixes=template_prefixes.yaml --obo-prefixes true --template=$(PATTERNDIR)/dosdp-patterns --outfile=$@; fi
+
+individual_patterns_names_default := $(strip $(patsubst %.tsv,%, $(notdir $(wildcard $(PATTERNDIR)/data/default/*.tsv))))
+dosdp_patterns_default: $(SRC) all_imports .FORCE
+	if [ $(PAT) = true ] && [ "${individual_patterns_names_default}" ]; then $(DOSDPT) generate --prefixes=template_prefixes.yaml --catalog=catalog-v001.xml --infile=$(PATTERNDIR)/data/default/ --template=$(PATTERNDIR)/dosdp-patterns --batch-patterns="$(individual_patterns_names_default)" --ontology=$< --obo-prefixes=true --outfile=$(PATTERNDIR)/data/default; fi
+
+$(PATTERNDIR)/data/default/%.txt: $(PATTERNDIR)/dosdp-patterns/%.yaml $(PATTERNDIR)/data/default/%.tsv .FORCE
+	if [ $(PAT) = true ]; then $(DOSDPT) terms --prefixes=template_prefixes.yaml --infile=$(word 2, $^) --template=$< --obo-prefixes=true --outfile=$@; fi
 
 # hard wiring for now.  Work on patsubst later
 mirror/ensmusg.owl: ../templates/ensmusg.tsv
@@ -24,7 +34,7 @@ mirror/ensmusg.owl: ../templates/ensmusg.tsv
       annotate --ontology-iri ${BDS_BASE}$@ \
       convert --format ofn --output $@; fi
 
-components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MARKER_FILES)
+components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_EQUIVALENT_CLASS_FILES)
 	$(ROBOT) merge $(patsubst %, -i %, $^) \
 	 --collapse-import-closure false \
 	 annotate --ontology-iri ${BDS_BASE}$@  \
@@ -45,9 +55,9 @@ components/%_class.owl: ../templates/%_class.tsv bdscratch-edit.owl
     		annotate --ontology-iri ${BDS_BASE}$@ \
     		convert --format ofn --output $@
 
-components/%_markers.owl: ../templates/%_markers.tsv bdscratch-edit.owl
+components/%_equivalent_class.owl: ../templates/%_equivalent_markers.tsv bdscratch-edit.owl
 	$(ROBOT) template --input bdscratch-edit.owl --template $< \
-    		--add-prefixes template_prefixes.json \
+	        --add-prefixes template_prefixes.json \
     		annotate --ontology-iri ${BDS_BASE}$@ \
     		convert --format ofn --output $@
 

@@ -1,122 +1,270 @@
 {
-  "graphs" : [ {
-    "nodes" : [ {
-      "id" : "http://purl.obolibrary.org/obo/RO_0002292",
-      "meta" : {
-        "definition" : {
-          "val" : "Inverse of 'expressed in'",
-          "xrefs" : [ ]
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Chris Mungall"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
-        } ]
+  "graphs": [
+    {
+      "domainRangeAxioms": [],
+      "edges": [
+        {
+          "obj": "http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar",
+          "pred": "subPropertyOf",
+          "sub": "http://www.semanticweb.org/brain_data_standards/helper.owl#has_subexemplar"
+        }
+      ],
+      "equivalentNodesSets": [],
+      "id": "http://purl.obolibrary.org/obo/bdscratch/bdscratch-simple.json",
+      "logicalDefinitionAxioms": [],
+      "meta": {
+        "basicPropertyValues": [
+          {
+            "pred": "http://purl.org/dc/elements/1.1/description",
+            "val": "None"
+          },
+          {
+            "pred": "http://purl.org/dc/elements/1.1/title",
+            "val": "Brain Data Standards Cell Ontology"
+          },
+          {
+            "pred": "http://purl.org/dc/terms/license",
+            "val": "https://creativecommons.org/licenses/unspecified"
+          },
+          {
+            "pred": "http://www.w3.org/2002/07/owl#versionInfo",
+            "val": "2021-03-11"
+          }
+        ],
+        "subsets": [],
+        "version": "http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-11/bdscratch-simple.json",
+        "xrefs": []
       },
-      "type" : "PROPERTY",
-      "lbl" : "expresses"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/RO_0002215",
-      "meta" : {
-        "definition" : {
-          "val" : "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. ",
-          "xrefs" : [ ]
+      "nodes": [
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000115",
+          "lbl": "definition",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
+                "val": "http://purl.obolibrary.org/obo/IAO_0000122"
+              }
+            ]
+          },
+          "type": "PROPERTY"
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Chris Mungall"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "has function realized in"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "http://www.ncbi.nlm.nih.gov/pubmed/21208450"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "osteoclast SubClassOf 'capable of' some 'bone resorption'"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "http://www.ncbi.nlm.nih.gov/pubmed/20123131"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
-          "val" : "For compatibility with BFO, this relation has a shortcut definition in which the expression \"capable of some P\" expands to \"bearer_of (some realized_by only P)\"."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "mechanosensory neuron capable of detection of mechanical stimulus involved in sensory perception (GO:0050974)"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000424",
-          "val" : "RO_0000053 some (RO_0000054 only ?Y)"
-        } ]
-      },
-      "type" : "PROPERTY",
-      "lbl" : "capable of"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/RO_0002100",
-      "meta" : {
-        "definition" : {
-          "val" : "Relation between a neuron and an anatomical structure that its soma is part of.",
-          "xrefs" : [ ]
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0002100",
+          "lbl": "has soma location",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
+                "val": "http://purl.obolibrary.org/obo/IAO_0000125"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "David Osumi-Sutherland"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000424",
+                "val": "<http://purl.obolibrary.org/obo/BFO_0000051> some (\n   <http://purl.obolibrary.org/obo/GO_0043025> and   <http://purl.obolibrary.org/obo/BFO_0000050> some ?Y)"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/RO_0001900",
+                "val": "http://purl.obolibrary.org/obo/RO_0001901"
+              }
+            ],
+            "definition": {
+              "val": "Relation between a neuron and an anatomical structure that its soma is part of.",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
         },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000424",
-          "val" : "<http://purl.obolibrary.org/obo/BFO_0000051> some (\n   <http://purl.obolibrary.org/obo/GO_0043025> and   <http://purl.obolibrary.org/obo/BFO_0000050> some ?Y)"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "David Osumi-Sutherland"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/RO_0001900",
-          "val" : "http://purl.obolibrary.org/obo/RO_0001901"
-        } ]
-      },
-      "type" : "PROPERTY",
-      "lbl" : "has soma location"
-    }, {
-      "id" : "http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar",
-      "type" : "PROPERTY",
-      "lbl" : "has_exemplar"
-    } ],
-    "edges" : [ {
-      "sub" : "http://www.semanticweb.org/brain_data_standards/helper.owl#has_subexemplar",
-      "pred" : "subPropertyOf",
-      "obj" : "http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"
-    } ],
-    "id" : "http://purl.obolibrary.org/obo/bdscratch/bdscratch-simple.json",
-    "meta" : {
-      "subsets" : [ ],
-      "xrefs" : [ ],
-      "basicPropertyValues" : [ {
-        "pred" : "http://purl.org/dc/elements/1.1/description",
-        "val" : "None"
-      }, {
-        "pred" : "http://purl.org/dc/elements/1.1/title",
-        "val" : "Brain Data Standards Cell Ontology"
-      }, {
-        "pred" : "http://purl.org/dc/terms/license",
-        "val" : "https://creativecommons.org/licenses/unspecified"
-      }, {
-        "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2020-12-14"
-      } ],
-      "version" : "http://purl.obolibrary.org/obo/bdscratch/releases/2020-12-14/bdscratch-simple.json"
-    },
-    "equivalentNodesSets" : [ ],
-    "logicalDefinitionAxioms" : [ ],
-    "domainRangeAxioms" : [ ],
-    "propertyChainAxioms" : [ {
-      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002215",
-      "chainPredicateIds" : [ "http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar", "http://purl.obolibrary.org/obo/RO_0002215" ]
-    }, {
-      "predicateId" : "http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar",
-      "chainPredicateIds" : [ "http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar", "http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of" ]
-    }, {
-      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002215",
-      "chainPredicateIds" : [ "http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of", "http://purl.obolibrary.org/obo/RO_0002215" ]
-    } ]
-  } ]
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0002215",
+          "lbl": "capable of",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "mechanosensory neuron capable of detection of mechanical stimulus involved in sensory perception (GO:0050974)"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "osteoclast SubClassOf 'capable of' some 'bone resorption'"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Chris Mungall"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "has function realized in"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://www.ncbi.nlm.nih.gov/pubmed/20123131"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://www.ncbi.nlm.nih.gov/pubmed/21208450"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "For compatibility with BFO, this relation has a shortcut definition in which the expression \"capable of some P\" expands to \"bearer_of (some realized_by only P)\"."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000424",
+                "val": "RO_0000053 some (RO_0000054 only ?Y)"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "protein"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "uberon"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#is_transitive",
+                "val": "false"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
+                "val": "capable_of"
+              }
+            ],
+            "definition": {
+              "val": "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. ",
+              "xrefs": []
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/ro/subsets#ro-eco"
+            ],
+            "xrefs": [
+              {
+                "val": "RO:0002215"
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0002292",
+          "lbl": "expresses",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
+                "val": "http://purl.obolibrary.org/obo/IAO_0000125"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Chris Mungall"
+              }
+            ],
+            "definition": {
+              "val": "Inverse of 'expressed in'",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/elements/1.1/description",
+          "lbl": "description",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "uberon"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+                "val": "true"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
+                "val": "dc-description"
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/elements/1.1/title",
+          "lbl": "title",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "uberon"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+                "val": "true"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
+                "val": "dc-title"
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/dc/terms/license",
+          "lbl": "license",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "uberon"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+                "val": "true"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
+                "val": "dcterms-license"
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+          "lbl": "database_cross_reference",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar",
+          "lbl": "has_exemplar",
+          "type": "PROPERTY"
+        }
+      ],
+      "propertyChainAxioms": [
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002215",
+            "http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0002215"
+        },
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002215",
+            "http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0002215"
+        },
+        {
+          "chainPredicateIds": [
+            "http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar",
+            "http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of"
+          ],
+          "predicateId": "http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"
+        }
+      ]
+    }
+  ]
 }
