@@ -22,5 +22,7 @@ jobs:
       - id: marker-validator
         run: |
             output=$(python ./src/scripts/marker_validator.py 2>&1)
+            echo "::set-output name=validation-report::$output"
+        shell: bash
       - run: echo validation-report ${{ steps.marker-validator.outputs.validation-report }}
         shell: bash
