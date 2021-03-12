@@ -1,0 +1,26 @@
+name: Validate
+
+# Controls when the action will run.
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    paths:
+      - 'src/markers/**.tsv'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "ontology_qc"
+  validate-inputs:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    steps:
+      - id: marker-validator
+        run: |
+            output=$(python ./src/scripts/marker_validator.py 2>&1)
+            echo "::set-output name=validation-report::$output"
+      - run: echo validation-report ${{ steps.marker-validator.outputs.validation-report }}
+          shell: bash
