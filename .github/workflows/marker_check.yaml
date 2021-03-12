@@ -6,6 +6,7 @@ on:
   push:
     paths:
       - 'src/markers/**.tsv'
+      - '.github/workflows/**.yaml'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
