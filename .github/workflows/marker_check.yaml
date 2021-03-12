@@ -26,8 +26,8 @@ jobs:
           pip install -r requirements.txt
       - id: marker-validator
         run: |
-            python ./src/scripts/marker_validator.py
-#            output=$(python ./src/scripts/marker_validator.py 2>&1)
-#            echo "::set-output name=validation-report::$output"
+#            python ./src/scripts/marker_validator.py
+            output=$(python ./src/scripts/marker_validator.py)
+            echo "::set-output name=validation-report::$output"
       - run: echo validation-report ${{ steps.marker-validator.outputs.validation-report }}
         shell: bash

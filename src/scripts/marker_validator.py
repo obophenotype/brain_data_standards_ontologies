@@ -64,7 +64,7 @@ class FileNameChecker(BaseChecker):
                 message = "Invalid marker file name: {}. Name should be one of {}"\
                     .format(file, expected_names)
                 self.reports.append(message)
-                log.error(message)
+                # log.error(message)
             elif file in expected_names:
                 expected_names.remove(file)
 
@@ -90,7 +90,7 @@ class TableStructureChecker(BaseChecker):
                     message = "Invalid column names: {} in file {}. Expected columns are: {}" \
                         .format(header_row, file, self.expected_headers)
                     self.reports.append(message)
-                    log.error(message)
+                    # log.error(message)
 
     def get_header(self):
         return "=== Table Structure Checks :"
@@ -129,7 +129,7 @@ class MarkerContentChecker(BaseChecker):
             message = "All dendrogram nodes must be present in the marker file {}. Top 5 missing nodes: {}" \
                 .format(marker_file, missing_nodes)
             self.reports.append(message)
-            log.error(message)
+            # log.error(message)
 
     def check_all_node_ids_valid(self, dend_dict, marker_records, marker_file):
         marker_ids = list(marker_records.keys())
@@ -139,7 +139,7 @@ class MarkerContentChecker(BaseChecker):
                 message = "Invalid Taxonomy_node_ID '{}' in the marker file {}. Id not exist in the dendrogram." \
                     .format(_id, marker_file)
                 self.reports.append(message)
-                log.error(message)
+                # log.error(message)
 
     def check_cluster_name(self, dend_dict, marker_records, marker_file):
         marker_ids = list(marker_records.keys())
@@ -150,7 +150,7 @@ class MarkerContentChecker(BaseChecker):
                     message = "clusterName '{}' of {} in {} does not match label ({}) in the dendrogram." \
                         .format(marker_records[_id][1], _id, marker_file, dend_dict[_id]["label"])
                     self.reports.append(message)
-                    log.error(message)
+                    # log.error(message)
 
     def check_marker_names(self, marker_records, marker_file):
         marker_ids = list(marker_records.keys())
@@ -162,7 +162,7 @@ class MarkerContentChecker(BaseChecker):
                     message = "Invalid marker '{}' in file '{}' with key '{}'." \
                         .format(marker, marker_file, _id)
                     self.reports.append(message)
-                    log.error(message)
+                    # log.error(message)
 
     def get_header(self):
         return "=== Marker Content Checks :"
@@ -196,5 +196,7 @@ if __name__ == '__main__':
     if not validator.reports:
         log.info("Marker validation successful.")
     else:
+        for rep in validator.reports:
+            print(rep)
         log.error("Marker validation completed with errors.")
         raise ValidationError("Marker validation completed with errors.", validator.reports)
