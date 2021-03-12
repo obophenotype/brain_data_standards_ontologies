@@ -21,6 +21,14 @@ def get_taxonomy_files():
     return [f for f in os.listdir(DENDROGRAMS_FOLDER) if re.search("^CCN\\d+\\.json$", f)]
 
 
+def get_taxonomy_file_name(marker_file_name):
+    return marker_file_name.replace("_markers.tsv", ".json") .replace("CS", "CCN")
+
+
+def get_marker_file_name(taxonomy_file_name):
+    return taxonomy_file_name.replace(".json", "_markers.tsv") .replace("CCN", "CS")
+
+
 def index_dendrogram(dend):
     dend_dict = dict()
     for o in dend['nodes']:
@@ -44,12 +52,12 @@ class BaseChecker(ABC):
 class FileNameChecker(BaseChecker):
     """
     - Marker files are submitted under src/markers/.
-    - Files must be named {taxonomy_id}_markers.tsv.
-    - Marker files must have a corresponding dendrogram ({taxonomy_id}.json) under src/dendrograms.
+    - Files must be named CS{taxonomy_id}_markers.tsv.
+    - Marker files must have a corresponding dendrogram (CCN{taxonomy_id}.json) under src/dendrograms.
     """
 
     def check(self):
-        expected_names = [f.replace(".json", "_markers.tsv") for f in get_taxonomy_files()]
+        expected_names = [get_marker_file_name(f) for f in get_taxonomy_files()]
         files = [f for f in os.listdir(MARKERS_FOLDER) if isfile(join(MARKERS_FOLDER, f))]
         for file in files:
             if not is_denormalized_file(file) and file not in expected_names:
@@ -100,10 +108,10 @@ class MarkerContentChecker(BaseChecker):
         files = [f for f in os.listdir(MARKERS_FOLDER) if isfile(join(MARKERS_FOLDER, f))]
         for marker_file in files:
             if not is_denormalized_file(marker_file):
-                denrogram_path = join(DENDROGRAMS_FOLDER, marker_file.replace("_markers.tsv", ".json"))
-                if os.path.exists(denrogram_path):
+                dendrogram_path = join(DENDROGRAMS_FOLDER, get_taxonomy_file_name(marker_file))
+                if os.path.exists(dendrogram_path):
                     marker_records = read_tsv(join(MARKERS_FOLDER, marker_file))
-                    dend = dend_json_2_nodes_n_edges(join(DENDROGRAMS_FOLDER, denrogram_path))
+                    dend = dend_json_2_nodes_n_edges(join(DENDROGRAMS_FOLDER, dendrogram_path))
                     dend_dict = index_dendrogram(dend)
                     self.check_all_nodes_exist(dend, marker_records, marker_file)
                     self.check_all_node_ids_valid(dend_dict, marker_records, marker_file)
@@ -189,4 +197,4 @@ if __name__ == '__main__':
         log.info("Marker validation successful.")
     else:
         log.error("Marker validation completed with errors.")
-        raise ValidationError("Marker validation completed with errors.")
+        raise ValidationError("Marker validation completed with errors.", validator.reports)
