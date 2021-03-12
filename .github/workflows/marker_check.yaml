@@ -25,11 +25,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - id: marker-validator
+        name: validate markers
         run: |
             output=$(python ./src/scripts/marker_validator.py)
             echo "::set-output name=validation-report::$output"
-      - name: Mail failure report
-        if: ${{ failure() }}
+      - name: mail failure report
+#        if: ${{ failure() }}
         run: |
             echo validation-report ${{ steps.marker-validator.outputs.validation-report }}
         shell: bash
