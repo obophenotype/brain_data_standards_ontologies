@@ -48,8 +48,6 @@ def save_report(report):
 
 class BaseChecker(ABC):
 
-    reports = []
-
     @abstractmethod
     def check(self):
         pass
@@ -65,6 +63,9 @@ class FileNameChecker(BaseChecker):
     - Files must be named CS{taxonomy_id}_markers.tsv.
     - Marker files must have a corresponding dendrogram (CCN{taxonomy_id}.json) under src/dendrograms.
     """
+
+    def __init__(self):
+        self.reports = []
 
     def check(self):
         expected_names = [get_marker_file_name(f) for f in get_taxonomy_files()]
@@ -88,7 +89,9 @@ class TableStructureChecker(BaseChecker):
     - Expected headers are in order : 'Taxonomy_node_ID', 'clusterName', 'Markers'.
     """
 
-    expected_headers = ['Taxonomy_node_ID', 'clusterName', 'Markers']
+    def __init__(self):
+        self.reports = []
+        self.expected_headers = ['Taxonomy_node_ID', 'clusterName', 'Markers']
 
     def check(self):
         files = [f for f in os.listdir(MARKERS_FOLDER) if isfile(join(MARKERS_FOLDER, f))]
@@ -113,6 +116,9 @@ class MarkerContentChecker(BaseChecker):
     - clusterName must(?) match clusterName in dendrogram
     - Markers must match regex ^\\\w+:\\\w+$ with multiple entries delimited by |
     """
+
+    def __init__(self):
+        self.reports = []
 
     def check(self):
         files = [f for f in os.listdir(MARKERS_FOLDER) if isfile(join(MARKERS_FOLDER, f))]
