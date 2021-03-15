@@ -34,6 +34,19 @@ jobs:
           echo "::set-output name=validation-report::$output"
       - name: mail failure report
         if: ${{ failure() }}
-        run: |
-            echo validation-report ${{ steps.marker-report.outputs.validation-report }}
-        shell: bash
+        uses: dawidd6/action-send-mail@v2
+        with:
+          # mail server settings
+          server_address: smtp.gmail.com
+          server_port: 465
+          # user credentials
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          # email subject
+          subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
+          # email body as text
+          body: ${{ github.job }} job in workflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}. Report is ${{ steps.marker-report.outputs.validation-report }}
+          # comma-separated string, send email to
+          to: huseyinkir@gmail.com
+          # from email name
+          from: BDS Build Robot
