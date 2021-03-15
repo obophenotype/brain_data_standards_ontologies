@@ -200,7 +200,6 @@ class ValidationError(Exception):
 
 
 def main(silent):
-    print(silent)
     log.info("Marker validation started.")
     validator = MarkerValidator()
     validator.validate()
