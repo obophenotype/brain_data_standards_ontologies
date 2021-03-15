@@ -48,7 +48,7 @@ jobs:
           # email subject
           subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
           # email body as text
-          body: ${{ steps.marker-report.outputs.validation-report }}
+          body: ${{steps.marker-report.outputs.validation-report}}
           # comma-separated string, send email to
           to: huseyinkir@gmail.com
           # from email name
