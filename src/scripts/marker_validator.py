@@ -152,7 +152,7 @@ class MarkerContentChecker(BaseChecker):
         marker_ids.pop(0)  # pop header row
         for _id in marker_ids:
             if _id not in dend_dict:
-                message = "Invalid Taxonomy_node_ID '{}' in the marker file {}. Id not exist in the dendrogram." \
+                message = "Invalid Taxonomy_node_ID '{}' in the marker file ({}). Id not exist in the dendrogram." \
                     .format(_id, marker_file)
                 self.reports.append(message)
                 # log.error(message)
@@ -163,7 +163,7 @@ class MarkerContentChecker(BaseChecker):
         for _id in marker_ids:
             if _id in dend_dict:
                 if marker_records[_id][1] != dend_dict[_id]["label"]:
-                    message = "clusterName '{}' of {} in {} does not match label ({}) in the dendrogram." \
+                    message = "clusterName '{}' of {} in {} does not match label '{}' in the dendrogram." \
                         .format(marker_records[_id][1], _id, marker_file, dend_dict[_id]["label"])
                     self.reports.append(message)
                     # log.error(message)
