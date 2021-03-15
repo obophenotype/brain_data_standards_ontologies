@@ -1,6 +1,7 @@
 import os
 import re
 import logging
+import argparse
 
 from dendrogram_tools import dend_json_2_nodes_n_edges
 from template_generation_utils import read_tsv
@@ -11,6 +12,8 @@ log = logging.getLogger(__name__)
 
 MARKERS_FOLDER = join(os.path.dirname(os.path.realpath(__file__)), "../markers")
 DENDROGRAMS_FOLDER = join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms")
+
+PATH_REPORT = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../../target/report.txt")
 
 
 def is_denormalized_file(file_name):
@@ -34,6 +37,13 @@ def index_dendrogram(dend):
     for o in dend['nodes']:
         dend_dict[o['cell_set_accession']] = o
     return dend_dict
+
+
+def save_report(report):
+    f = open(PATH_REPORT, "w")
+    for rep in report:
+        f.write(rep+"\n")
+    f.close()
 
 
 class BaseChecker(ABC):
@@ -189,7 +199,8 @@ class ValidationError(Exception):
         self.report = report
 
 
-if __name__ == '__main__':
+def main(silent):
+    print(silent)
     log.info("Marker validation started.")
     validator = MarkerValidator()
     validator.validate()
@@ -198,5 +209,14 @@ if __name__ == '__main__':
     else:
         for rep in validator.reports:
             print(rep)
+        # save_report()
         log.error("Marker validation completed with errors.")
-        # raise ValidationError("Marker validation completed with errors.", validator.reports)
+        if not silent:
+            raise ValidationError("Marker validation completed with errors.", validator.reports)
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--silent', action='store_true')
+    args = parser.parse_args()
+    main(args.silent)
