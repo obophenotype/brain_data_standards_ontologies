@@ -36,13 +36,15 @@ comment:
       - minimal_markers
   
 logical_axioms:
-   subClassOf: 
-       - text: "%s"
-          vars: 
-              - gross_cell_type
-       - text: "'has soma location' some %s"
-          vars: 
-              - brain_region
-        - text: "'in taxon' some %s"
-           vars: 
-              - species
+   - axiom_type: subClassOf 
+     text: "%s"
+     vars: 
+       - gross_cell_type
+   - axiom_type: subClassOf 
+     text: "'has soma location' some %s"
+     vars: 
+        - brain_region
+   - axiom_type: subClassOf 
+     text: "'in taxon' some %s"
+     vars: 
+        - species
