@@ -37,22 +37,18 @@ comment:
       - minimal_markers
       
 exact_synonym:
-  text: "%s expressing %s of %s (%s)"
-  vars:
-   - minimal_markers
-   - gross_cell_type
-   - brain_region
-   - taxon
+   text: "%s expressing %s of %s (%s)"
+   vars:
+      - minimal_markers
+      - gross_cell_type
+      - brain_region
+      - taxon
   
 logical_axioms:
    - axiom_type: subClassOf 
      text: "%s"
      vars: 
        - gross_cell_type
-   - axiom_type: subClassOf 
-     text: "'has_soma_location' some %s"
-     vars: 
-        - brain_region
    - axiom_type: subClassOf 
      text: "'in_taxon' some %s"
      vars: 
