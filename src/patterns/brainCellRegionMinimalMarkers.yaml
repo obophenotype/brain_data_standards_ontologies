@@ -1,6 +1,10 @@
 
+pattern_name: brainCellRegionMinimalMarkers
+pattern_iri: http://purl.obolibrary.org/obo/odk/brainCellRegionMinimalMarkers.yaml
+description: "Naming scheme and axiomatisation for brain cells from BDS."
+
 classes:
-  "animal cell": "animal cell"
+  "animal cell": "CL:0000548"
   "Vertebrata <vertebrates>": "NCBITaxon:7742"
   "regional part of brain": "UBERON:0002616"
 
@@ -17,7 +21,7 @@ data_vars:
   - cell_set_preferred_alias: "xsd:string"
   - minimal_markers: "xsd:string" # A list of maker names delimited by ', '
 
-label:
+name:
    text: "%s %s %s (%s)"
    vars:
       - cell_set_preferred_alias 
