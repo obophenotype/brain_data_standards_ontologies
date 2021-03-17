@@ -1,0 +1,44 @@
+
+classes:
+  "animal cell": "animal cell"
+  "Vertebrata <vertebrates>": "NCBITaxon:7742"
+  "regional part of brain": "UBERON:0002616"
+
+relations:
+  part_of: BFO:0000050
+  in taxon: RO:0002162
+
+vars:
+  gross_cell_type: "'cell'"
+  taxon: "'Vertebrata <vertebrates>'"
+  brain_region: "'regional part of brain'"
+
+data_vars: 
+  - cell_set_preferred_alias: "xsd:string"
+  - minimal_markers: "xsd:string" # A list of maker names delimited by ', '
+
+label:
+   text: "%s %s %s (%s)"
+   vars:
+      - cell_set_preferred_alias 
+      - brain_region
+      - gross_cell_type
+      - species
+
+comment: 
+    text: "The minimal set of markers required to distinguish this cell type from other cell types in the %s is: %s."
+    vars: 
+      - brain_region
+      - minimal_markers
+  
+logical_axioms:
+   subClassOf: 
+       - text: "%s"
+          vars: 
+              - gross_cell_type
+       - text: "'has soma location' some %s"
+          vars: 
+              - brain_region
+        - text: "'in taxon' some %s"
+           vars: 
+              - species
