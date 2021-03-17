@@ -1,6 +1,11 @@
 import yaml
+import os
+import networkx as nx
 
 from marker_tools import EXPRESSIONS
+
+TAXONOMY_DETAILS_YAML = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                                     '../dendrograms/taxonomy_details.yaml')
 
 OR_SEPARATOR = '|'
 PAIR_SEPARATOR = ' ; '
@@ -43,10 +48,32 @@ def get_synonym_pairs(node):
     return PAIR_SEPARATOR.join(values)
 
 
+def read_taxonomy_config(taxon):
+    config = read_taxonomy_details_yaml()
+    taxonomy_config = get_taxonomy_configuration(config, taxon)
+    return taxonomy_config
+
+
 def read_taxonomy_details_yaml():
-    with open(r'../dendrograms/taxonomy_details.yaml') as file:
+    with open(r'%s' % TAXONOMY_DETAILS_YAML) as file:
         documents = yaml.full_load(file)
     return documents
+
+
+def get_taxonomy_configuration(config, taxonomy):
+    """
+    Lists all taxonomies that has a configuration in the config
+    Args:
+        config: configuration file
+        taxonomy: taxonomy to get its configuration
+
+    Returns: List of taxonomy names that has a configuration
+
+    """
+    for taxonomy_config in config:
+        if taxonomy_config["Taxonomy_id"] == taxonomy:
+            return taxonomy_config
+    return
 
 
 def get_max_marker_count(marker_expressions):
@@ -65,3 +92,29 @@ def get_max_marker_count(marker_expressions):
             max_count = expression_count
 
     return max_count
+
+
+def get_subtrees(dend_tree, taxonomy_config):
+    """
+    For each root node in the taxonomy creates the list of subtree nodes
+    Args:
+        dend_tree: dendrogram networkx representation
+        taxonomy_config: taxonomy configuration
+
+    Returns: list of subtree nodes
+
+    """
+    subtrees = []
+    for root_node in taxonomy_config['Root_nodes']:
+        descendants = nx.descendants(dend_tree, root_node['Node'])
+        # subtrees exclude root node itself
+        # descendants.add(root_node['Node'])
+        subtrees.append(descendants)
+    return subtrees
+
+
+def get_root_nodes(config_yaml):
+    root_nodes = []
+    for root_node in config_yaml['Root_nodes']:
+        root_nodes.append(root_node['Node'])
+    return root_nodes

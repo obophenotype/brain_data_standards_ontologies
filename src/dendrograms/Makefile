@@ -14,8 +14,5 @@ all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_FILES) $(MARKER_FILES) $(EQUIVALENT_CLAS
 ../templates/%_class.tsv: %.json
 	python ../scripts/template_runner.py -c $< $@
 
-../templates/%_markers.tsv: %.json
-	python ../scripts/template_runner.py -m $< $@
-
 ../templates/%_equivalent_reification.tsv: %.json
 	python ../scripts/template_runner.py -er $< $@

@@ -2,6 +2,7 @@ id: bdscratch
 title: Brain Data Standards Cell Ontology
 github_org: obophenotype
 repo: bdscratch
+use_dosdps: TRUE
 export_formats:
   - owl
   - obo
@@ -20,6 +21,7 @@ import_group:
     - id: cl
     - id: ensmusg
     - id: ncbitaxon
+      mirror_from: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
 components:
   products:
     - filename: all_templates.owl

@@ -29,7 +29,7 @@ def generate_denormalised_marker_template(dend_json_path, flat_marker_path, conf
     root_nodes = []
     with open(config_path) as file:
         config_yaml = yaml.full_load(file)
-        for root_node in config_yaml['Root_nodes']:
+        for root_node in config_yaml[0]['Root_nodes']:
             root_nodes.append(root_node['Node'])
 
     generate_denormalised_marker(dend_json_path, flat_marker_path, output_marker_path, root_nodes)
@@ -190,7 +190,7 @@ def generate_marker_table(marker_data, output_filepath):
     robot_marker_template_seed = {
         'Taxonomy_node_ID': 'ID',
         'clusterName': 'clusterName',
-        'Markers Delimited': "TI 'expresses' % SPLIT = '|' "
+        'Markers Delimited': "TI 'expresses' % SPLIT=|"
     }
     template = []
     for o in marker_data.keys():

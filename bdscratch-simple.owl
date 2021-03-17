@@ -2,7 +2,6 @@
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/bdscratch/bdscratch-simple.owl#"
      xml:base="http://purl.obolibrary.org/obo/bdscratch/bdscratch-simple.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:n2o="n2o:"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -11,14 +10,15 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:custom="http://n2o.neo/custom/"
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bdscratch/bdscratch-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-07/bdscratch-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-11/bdscratch-simple.owl"/>
         <dc:description>None</dc:description>
         <dc:title>Brain Data Standards Cell Ontology</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-07</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-11</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -31,6 +31,48 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://n2o.neo/custom/cell_set_alias_assignee -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/cell_set_alias_assignee"/>
+    
+
+
+    <!-- http://n2o.neo/custom/cell_set_alias_citation -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/cell_set_alias_citation"/>
+    
+
+
+    <!-- http://n2o.neo/custom/cell_set_aligned_alias -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/cell_set_aligned_alias"/>
+    
+
+
+    <!-- http://n2o.neo/custom/cell_set_label -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/cell_set_label"/>
+    
+
+
+    <!-- http://n2o.neo/custom/cell_set_preferred_alias -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/cell_set_preferred_alias"/>
+    
+
+
+    <!-- http://n2o.neo/custom/node_metadata -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/node_metadata"/>
+    
+
+
+    <!-- http://n2o.neo/custom/original_label -->
+
+    <owl:AnnotationProperty rdf:about="http://n2o.neo/custom/original_label"/>
     
 
 
@@ -48,7 +90,10 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:label>definition</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -98,19 +143,40 @@
 
     <!-- http://purl.org/dc/elements/1.1/description -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
+        <oboInOwl:hasDbXref rdf:resource="http://purl.org/dc/elements/1.1/description"/>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dc-description</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dc-description</oboInOwl:shorthand>
+        <rdfs:label>description</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+        <oboInOwl:hasDbXref rdf:resource="http://purl.org/dc/elements/1.1/title"/>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dc-title</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dc-title</oboInOwl:shorthand>
+        <rdfs:label>title</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- http://purl.org/dc/terms/license -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+        <oboInOwl:hasDbXref rdf:resource="http://purl.org/dc/terms/license"/>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>dcterms-license</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand>dcterms-license</oboInOwl:shorthand>
+        <rdfs:label>license</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -120,9 +186,29 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label>database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#has_exact_synonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#has_exact_synonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
     
 
 
@@ -132,57 +218,27 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_metadata_tag -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_metadata_tag"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_transitive -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_transitive"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
-    
-
-
-    <!-- n2o:cell_set_additional_aliases -->
-
-    <owl:AnnotationProperty rdf:about="n2o:cell_set_additional_aliases"/>
-    
-
-
-    <!-- n2o:cell_set_alias_assignee -->
-
-    <owl:AnnotationProperty rdf:about="n2o:cell_set_alias_assignee"/>
-    
-
-
-    <!-- n2o:cell_set_alias_citation -->
-
-    <owl:AnnotationProperty rdf:about="n2o:cell_set_alias_citation"/>
-    
-
-
-    <!-- n2o:cell_set_aligned_alias -->
-
-    <owl:AnnotationProperty rdf:about="n2o:cell_set_aligned_alias"/>
-    
-
-
-    <!-- n2o:cell_set_label -->
-
-    <owl:AnnotationProperty rdf:about="n2o:cell_set_label"/>
-    
-
-
-    <!-- n2o:cell_set_preferred_alias -->
-
-    <owl:AnnotationProperty rdf:about="n2o:cell_set_preferred_alias"/>
-    
-
-
-    <!-- n2o:node_metadata -->
-
-    <owl:AnnotationProperty rdf:about="n2o:node_metadata"/>
-    
-
-
-    <!-- n2o:original_label -->
-
-    <owl:AnnotationProperty rdf:about="n2o:original_label"/>
     
 
 
@@ -232,9 +288,16 @@
         <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/21208450"/>
         <obo:IAO_0000232>For compatibility with BFO, this relation has a shortcut definition in which the expression &quot;capable of some P&quot; expands to &quot;bearer_of (some realized_by only P)&quot;.</obo:IAO_0000232>
         <obo:IAO_0000424>RO_0000053 some (RO_0000054 only ?Y)</obo:IAO_0000424>
+        <oboInOwl:hasDbXref>RO:0002215</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>protein</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>capable_of</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+        <oboInOwl:is_transitive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</oboInOwl:is_transitive>
+        <oboInOwl:shorthand>capable_of</oboInOwl:shorthand>
         <rdfs:label>capable of</rdfs:label>
         <rdfs:label xml:lang="en">capable of</rdfs:label>
+        <rdfs:label>capable_of</rdfs:label>
     </owl:ObjectProperty>
     
 
