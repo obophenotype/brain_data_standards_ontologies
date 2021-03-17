@@ -18,8 +18,8 @@ vars:
   brain_region: "'regional part of brain'"
 
 data_vars: 
-  - cell_set_preferred_alias: "xsd:string"
-  - minimal_markers: "xsd:string" # A list of maker names delimited by ', '
+  cell_set_preferred_alias: "xsd:string"
+  minimal_markers: "xsd:string" # A list of maker names delimited by ', '
 
 name:
    text: "%s %s %s (%s)"
