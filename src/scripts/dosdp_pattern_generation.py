@@ -14,7 +14,7 @@ MARKERS_DENORMALIZED_PATH = "../markers/{}_markers_denormalized.tsv"
 ALLEN_DEND_ = 'AllenDendClass:'
 
 
-def generate_pattern_table(dend_json_path, output_filepath):
+def generate_pattern_table_denormalised_markers(dend_json_path, output_filepath):
     path_parts = dend_json_path.split(os.path.sep)
     taxon = path_parts[len(path_parts) - 1].split(".")[0]
 
@@ -44,6 +44,40 @@ def generate_pattern_table(dend_json_path, output_filepath):
                 else:
                     d['denorm_marker_list'] = ''
                     d['minimal_marker_list'] = ''
+
+                dl.append(d)
+
+    robot_template = pd.DataFrame.from_records(dl)
+    robot_template.to_csv(output_filepath, sep="\t", index=False)
+
+
+def generate_pattern_table_reification(dend_json_path, output_filepath):
+    path_parts = dend_json_path.split(os.path.sep)
+    taxon = path_parts[len(path_parts) - 1].split(".")[0]
+
+    taxonomy_config = read_taxonomy_config(taxon)
+
+    dend = dend_json_2_nodes_n_edges(dend_json_path)
+    dend_tree = read_dendrogram_tree(dend_json_path)
+
+    if taxonomy_config:
+        subtrees = get_subtrees(dend_tree, taxonomy_config)
+        minimal_markers = get_minimal_markers(taxon, read_ensmusg())
+
+        dl = []
+        for o in dend['nodes']:
+            if o['cell_set_accession'] in set.union(*subtrees) and o['cell_set_preferred_alias']:
+                d = dict()
+                d['defined_class'] = ALLEN_DEND_ + o['cell_set_accession']
+                d['gross_cell_type'] = get_gross_cell_type(o['cell_set_accession'], subtrees, taxonomy_config)
+                d['taxon'] = taxonomy_config['Species'][0]
+                d['brain_region'] = taxonomy_config['Brain_region'][0]
+                d['cell_set_preferred_alias'] = o['cell_set_preferred_alias']
+
+                if o['cell_set_accession'] in minimal_markers:
+                    d['minimal_markers'] = minimal_markers[o['cell_set_accession']]
+                else:
+                    d['minimal_markers'] = ''
 
                 dl.append(d)
 
@@ -104,4 +138,5 @@ def read_ensmusg():
     return ensmusg
 
 
-# generate_pattern_table("../dendrograms/CCN202002013.json", "../patterns/data/default/brainCellRegionMarker.tsv")
+# generate_pattern_table_denormalised_markers("../dendrograms/CCN202002013.json", "../patterns/data/default/brainCellRegionMarker.tsv")
+generate_pattern_table_reification("../dendrograms/CCN202002013.json", "../patterns/data/default/brainCellRegionMinimalMarkers.tsv")

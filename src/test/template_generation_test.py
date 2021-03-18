@@ -38,7 +38,7 @@ class TemplateGenerationTest(unittest.TestCase):
         self.assertFalse(ALLEN_CLASS+"CS202002013_123" in output) # root
         self.assertTrue(ALLEN_CLASS + "CS202002013_150" in output)  # child
         self.assertTrue(ALLEN_CLASS + "CS202002013_124" in output)  # child
-        self.assertTrue(ALLEN_CLASS + "CS202002013_158" in output)  # grand child
+        self.assertFalse(ALLEN_CLASS + "CS202002013_158" in output)  # grand child, empty cell_set_preferred_alias
         self.assertTrue(ALLEN_CLASS + "CS202002013_3" in output)  # grand child
         self.assertFalse(ALLEN_CLASS + "CS202002013_122" in output)  # parent
         self.assertFalse(ALLEN_CLASS + "CS202002013_120" in output)  # grand parent
@@ -47,9 +47,9 @@ class TemplateGenerationTest(unittest.TestCase):
         self.assertFalse(ALLEN_CLASS + "CS202002013_220" in output)  # parent
 
         self.assertFalse(ALLEN_CLASS + "CS202002013_179" in output)  # root
-        self.assertTrue(ALLEN_CLASS + "CS202002013_180" in output)  # child
+        self.assertFalse(ALLEN_CLASS + "CS202002013_180" in output)  # child, empty cell_set_preferred_alias
         self.assertTrue(ALLEN_CLASS + "CS202002013_207" in output)  # child
-        self.assertTrue(ALLEN_CLASS + "CS202002013_208" in output)  # grand child
+        self.assertFalse(ALLEN_CLASS + "CS202002013_208" in output)  # grand child, empty cell_set_preferred_alias
         self.assertTrue(ALLEN_CLASS + "CS202002013_83" in output)  # grand child
 
         self.assertFalse(ALLEN_CLASS + "CS202002013_219" in output)  # parent
@@ -102,7 +102,7 @@ def read_class_file(class_template):
 def curated_class_migrate():
     migrate_columns = [5, 6, 7]
     # curation_table_migrate_manual_edits("./test_data/source_class.tsv", "./test_data/target_class.tsv", migrate_columns)
-    curation_table_migrate_manual_edits("./test_data/CCN202002013_class.tsv",
+    curation_table_migrate_manual_edits("../templates/CCN202002013_class_old.tsv",
                                         "../templates/CCN202002013_class.tsv", migrate_columns)
 
 

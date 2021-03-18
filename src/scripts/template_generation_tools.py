@@ -1,12 +1,11 @@
 import pandas as pd
-import networkx as nx
 import json
 import os
 
 from dendrogram_tools import dend_json_2_nodes_n_edges
 from template_generation_utils import get_synonyms_from_taxonomy, get_synonym_pairs, get_root_nodes, \
     get_max_marker_count, read_taxonomy_config, get_subtrees
-from marker_tools import read_dendrogram_tree, read_marker_file, extend_expressions, EXPRESSIONS
+from marker_tools import read_dendrogram_tree, read_marker_file, extend_expressions, EXPRESSIONS, EXPRESSION_SEPARATOR
 
 # TODO - refactor with generic template generation function
 
@@ -81,7 +80,7 @@ def generate_curated_class_template(dend_json_path, output_filepath):
         class_template = [robot_class_curation_seed]
 
         for o in dend['nodes']:
-            if o['cell_set_accession'] in set.union(*subtrees):
+            if o['cell_set_accession'] in set.union(*subtrees) and o['cell_set_preferred_alias']:
                 d = dict()
                 d['ID'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
                 if o['cell_set_preferred_alias']:
@@ -99,6 +98,14 @@ def generate_curated_class_template(dend_json_path, output_filepath):
 
 def generate_equivalent_class_reification_template(dend_json_path, output_filepath):
     dend = dend_json_2_nodes_n_edges(dend_json_path)
+    dend_tree = read_dendrogram_tree(dend_json_path)
+
+    path_parts = dend_json_path.split(os.path.sep)
+    taxon = path_parts[len(path_parts) - 1].split(".")[0]
+    config_yaml = read_taxonomy_config(taxon)
+
+    subtrees = get_subtrees(dend_tree, config_yaml)
+
     robot_class_equivalent_seed = {'ID': 'ID',
                                    'Exemplar': "EC CL:0000003 and 'has_exemplar' value %"
                                    }
@@ -106,10 +113,11 @@ def generate_equivalent_class_reification_template(dend_json_path, output_filepa
     equivalent_template = [robot_class_equivalent_seed]
 
     for o in dend['nodes']:
-        d = dict()
-        d['ID'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
-        d['Exemplar'] = 'AllenDend:' + o['cell_set_accession']
-        equivalent_template.append(d)
+        if o['cell_set_accession'] in set().union(*subtrees) and o['cell_set_preferred_alias']:
+            d = dict()
+            d['ID'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
+            d['Exemplar'] = 'AllenDend:' + o['cell_set_accession']
+            equivalent_template.append(d)
 
     equivalent_robot_template = pd.DataFrame.from_records(equivalent_template)
     equivalent_robot_template.to_csv(output_filepath, sep="\t", index=False)
@@ -166,3 +174,43 @@ def generate_equivalent_class_marker_template(dend_json_path, marker_path, outpu
 
     equivalent_robot_template = pd.DataFrame.from_records(equivalent_template)
     equivalent_robot_template.to_csv(output_filepath, sep="\t", index=False)
+
+
+def generate_minimal_marker_template(dend_json_path, flat_marker_path, output_marker_path):
+    marker_expressions = read_marker_file(flat_marker_path)
+
+    dend = dend_json_2_nodes_n_edges(dend_json_path)
+    dend_tree = read_dendrogram_tree(dend_json_path)
+
+    path_parts = dend_json_path.split(os.path.sep)
+    taxon = path_parts[len(path_parts) - 1].split(".")[0]
+
+    taxonomy_config = read_taxonomy_config(taxon)
+
+    if taxonomy_config:
+        subtrees = get_subtrees(dend_tree, taxonomy_config)
+        robot_class_curation_seed = {'ID': "ID",
+                                     'Markers': "SC 'expresses' some % SPLIT=|",
+                                     'part_of': "SC 'part of' some %",
+                                     'has_soma_location': "SC 'has soma location' some %",
+                                     'gross_cell_type': "SC %"
+                                     }
+        class_template = [robot_class_curation_seed]
+
+        for o in dend['nodes']:
+            if o['cell_set_accession'] in set.union(*subtrees) and o['cell_set_preferred_alias'] and \
+                    o['cell_set_accession'] in marker_expressions:
+                d = dict()
+                d['ID'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
+                d['Markers'] = EXPRESSION_SEPARATOR.join(marker_expressions[o['cell_set_accession']][EXPRESSIONS])
+                class_template.append(d)
+                d['part_of'] = taxonomy_config['Brain_region'][0]
+                d['has_soma_location'] = taxonomy_config['Brain_region'][0]
+
+                for index, subtree in enumerate(subtrees):
+                    if o['cell_set_accession'] in subtree:
+                        d['gross_cell_type'] = taxonomy_config['Root_nodes'][index]['Cell_type']
+
+        class_robot_template = pd.DataFrame.from_records(class_template)
+        class_robot_template.to_csv(output_marker_path, sep="\t", index=False)
+

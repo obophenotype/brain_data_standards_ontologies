@@ -2,11 +2,11 @@ import yaml
 import os
 import networkx as nx
 
-from marker_tools import EXPRESSIONS
 
 TAXONOMY_DETAILS_YAML = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                      '../dendrograms/taxonomy_details.yaml')
 
+EXPRESSIONS = "expressions"
 OR_SEPARATOR = '|'
 PAIR_SEPARATOR = ' ; '
 

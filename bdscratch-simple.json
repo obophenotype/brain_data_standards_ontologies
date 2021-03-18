@@ -28,27 +28,14 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-03-11"
+            "val": "2021-03-18"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-11/bdscratch-simple.json",
+        "version": "http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-18/bdscratch-simple.json",
         "xrefs": []
       },
       "nodes": [
-        {
-          "id": "http://purl.obolibrary.org/obo/IAO_0000115",
-          "lbl": "definition",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000122"
-              }
-            ]
-          },
-          "type": "PROPERTY"
-        },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0002100",
           "lbl": "has soma location",
@@ -75,6 +62,62 @@
               "val": "Relation between a neuron and an anatomical structure that its soma is part of.",
               "xrefs": []
             }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0002162",
+          "lbl": "in taxon",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
+                "val": "http://purl.obolibrary.org/obo/IAO_0000125"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Chris Mungall"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Jennifer Deegan"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://www.ncbi.nlm.nih.gov/pubmed/17921072"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://www.ncbi.nlm.nih.gov/pubmed/20973947"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "uberon"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
+                "val": "in_taxon"
+              },
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "https://github.com/obophenotype/uberon/wiki/Taxon-constraints"
+              }
+            ],
+            "comments": [
+              "Connects a biological entity to its taxon of origin."
+            ],
+            "definition": {
+              "val": "x is in taxon y if an only if y is an organism, and the relationship between x and y is one of: part of (reflexive), developmentally preceded by, derives from, secreted by, expressed.",
+              "xrefs": []
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/ro/subsets#ro-eco"
+            ],
+            "xrefs": [
+              {
+                "val": "RO:0002162"
+              }
+            ]
           },
           "type": "PROPERTY"
         },
@@ -243,6 +286,13 @@
         }
       ],
       "propertyChainAxioms": [
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002162",
+            "http://purl.obolibrary.org/obo/RO_0002215"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0002162"
+        },
         {
           "chainPredicateIds": [
             "http://purl.obolibrary.org/obo/RO_0002215",

@@ -12,6 +12,7 @@ OWL_FILES = $(patsubst %, components/%.owl, $(JOBS))
 OWL_CLASS_FILES = $(patsubst %, components/%_class.owl, $(JOBS))
 OWL_EQUIVALENT_CLASS_FILES = $(patsubst %, components/%_equivalent_class.owl, $(JOBS))
 GENE_FILES = $(patsubst %, mirror/%.owl, $(JOBS))
+OWL_MIN_MARKER_FILES = $(patsubst %, components/%_minimal_markers.owl, $(JOBS))
 
 #DEND_FILES = $(patsubst %, ../dendrograms/%.json, $(JOBS))
 #TEMPLATE_FILES = $(patsubst %, ../templates/%.tsv, $(JOBS))
@@ -34,7 +35,7 @@ mirror/ensmusg.owl: ../templates/ensmusg.tsv
       annotate --ontology-iri ${BDS_BASE}$@ \
       convert --format ofn --output $@; fi
 
-components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_EQUIVALENT_CLASS_FILES)
+components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_EQUIVALENT_CLASS_FILES) $(OWL_MIN_MARKER_FILES)
 	$(ROBOT) merge $(patsubst %, -i %, $^) \
 	 --collapse-import-closure false \
 	 annotate --ontology-iri ${BDS_BASE}$@  \
@@ -58,6 +59,12 @@ components/%_class.owl: ../templates/%_class.tsv bdscratch-edit.owl
 components/%_equivalent_class.owl: ../templates/%_equivalent_reification.tsv bdscratch-edit.owl
 	$(ROBOT) template --input bdscratch-edit.owl --template $< \
 	        --add-prefixes template_prefixes.json \
+    		annotate --ontology-iri ${BDS_BASE}$@ \
+    		convert --format ofn --output $@
+
+components/%_minimal_markers.owl: ../templates/%_minimal_markers.tsv bdscratch-edit.owl
+	$(ROBOT) template --input bdscratch-edit.owl --template $< \
+    		--add-prefixes template_prefixes.json \
     		annotate --ontology-iri ${BDS_BASE}$@ \
     		convert --format ofn --output $@
 

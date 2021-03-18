@@ -2,7 +2,7 @@ import unittest
 import os
 import csv
 
-from dosdp_pattern_generation import generate_pattern_table
+from dosdp_pattern_generation import generate_pattern_table_denormalised_markers
 
 PATH_DENDROGRAM_JSON = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/CCN202002013.json")
 PATH_OUTPUT_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)), "test_data/dosdp_output.tsv")
@@ -24,7 +24,7 @@ class DosdpPatternGenerationTest(unittest.TestCase):
         delete_file(PATH_OUTPUT_TSV)
 
     def test_curated_class_template_generation(self):
-        generate_pattern_table(PATH_DENDROGRAM_JSON, PATH_OUTPUT_TSV)
+        generate_pattern_table_denormalised_markers(PATH_DENDROGRAM_JSON, PATH_OUTPUT_TSV)
         output = read_tsv(PATH_OUTPUT_TSV)
 
         # assert only descendants of the root nodes (except root nodes itself) exist
