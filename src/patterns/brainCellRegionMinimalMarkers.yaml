@@ -28,7 +28,7 @@ name:
       - cell_set_preferred_alias 
       - brain_region
       - gross_cell_type
-      - species
+      - taxon
 
 comment: 
     text: "The minimal set of markers required to distinguish this cell type from other cell types in the %s is: %s."
@@ -36,13 +36,13 @@ comment:
       - brain_region
       - minimal_markers
       
-exact_synonym:
-   text: "%s expressing %s of %s (%s)"
-   vars:
-      - minimal_markers
-      - gross_cell_type
-      - brain_region
-      - taxon
+generated_synonyms:
+   - text: "%s expressing %s of %s (%s)"
+     vars:
+        - minimal_markers
+        - gross_cell_type
+        - brain_region
+        - taxon
   
 logical_axioms:
    - axiom_type: subClassOf 
@@ -52,4 +52,4 @@ logical_axioms:
    - axiom_type: subClassOf 
      text: "'in_taxon' some %s"
      vars: 
-        - species
+        - taxon
