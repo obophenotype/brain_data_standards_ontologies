@@ -1,5 +1,5 @@
 ID	prefLabel	Synonyms_from_taxonomy	Curated_synonyms	Comment	Classification	Classification_comment	Classification_pub
-ID	A skos:prefLabel	A oboInOwl:has_exact_synonym SPLIT='|'	A oboInOwl:has_exact_synonym SPLIT='|'	A rdfs:comment	SC %	>A rdfs:comment	>A oio:hasDbXref SPLIT='|'
+ID	A skos:prefLabel	A oboInOwl:hasExactSynonym SPLIT='|'	A oboInOwl:hasExactSynonym SPLIT='|'	A rdfs:comment	SC %	>A rdfs:comment	>A oio:hasDbXref SPLIT='|'
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201810310_134		n1|All cells		cell_set_preferred_alias:'' ; original_label:n1 ; cell_set_label:All cells ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''			
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201810310_135		VISp_ALM 001-123|n2		cell_set_preferred_alias:'' ; original_label:n2 ; cell_set_label:VISp_ALM 001-123 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''			
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201810310_136	Neuronal	n3|Neuronal|VISp_ALM 001-117		cell_set_preferred_alias:Neuronal ; original_label:n3 ; cell_set_label:VISp_ALM 001-117 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:Neuronal			
