@@ -5,6 +5,7 @@ import networkx as nx
 import pandas as pd
 import logging
 import os
+
 from template_generation_utils import get_root_nodes, read_taxonomy_config
 
 CLUSTER = "cluster"
