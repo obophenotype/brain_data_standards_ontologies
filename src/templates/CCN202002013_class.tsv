@@ -1,5 +1,5 @@
 ID	prefLabel	Synonyms_from_taxonomy	Curated_synonyms	Comment	Classification	Classification_comment	Classification_pub
-ID	A skos:prefLabel	A oboInOwl:has_exact_synonym SPLIT=|	A oboInOwl:has_exact_synonym SPLIT=|	A rdfs:comment	SC %	>A rdfs:comment	>A oboInOwl:hasDbXref SPLIT=|
+ID	A skos:prefLabel	A oboInOwl:hasExactSynonym SPLIT=|	A oboInOwl:hasExactSynonym SPLIT=|	A rdfs:comment	SC %	>A rdfs:comment	>A oboInOwl:hasDbXref SPLIT=|
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_124	CGE/PoA	CGE/PoA|n8|RNAseq 001-027, 089-090		cell_set_preferred_alias:CGE/PoA ; original_label:n8 ; cell_set_label:RNAseq 001-027, 089-090 ; cell_set_aligned_alias:CGE/PoA			
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_125	Lamp5	Lamp5|n9|RNAseq 001-008		cell_set_preferred_alias:Lamp5 ; original_label:n9 ; cell_set_label:RNAseq 001-008 ; cell_set_aligned_alias:Lamp5	CL:4023011		DOI:10.1101/2020.02.29.970558
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_1	Lamp5 Pax6	Lamp5 Pax6|RNAseq 001		cell_set_preferred_alias:Lamp5 Pax6 ; original_label:Lamp5 Pax6 ; cell_set_label:RNAseq 001 ; cell_set_aligned_alias:''			

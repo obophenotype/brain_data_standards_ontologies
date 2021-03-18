@@ -1,5 +1,5 @@
 ID	prefLabel	Synonyms_from_taxonomy	Curated_synonyms	Comment	Classification	Classification_comment	Classification_pub
-ID	A skos:prefLabel	A oboInOwl:has_exact_synonym SPLIT='|'	A oboInOwl:has_exact_synonym SPLIT='|'	A rdfs:comment	SC %	>A rdfs:comment	>A oio:hasDbXref SPLIT='|'
+ID	A skos:prefLabel	A oboInOwl:hasExactSynonym SPLIT='|'	A oboInOwl:hasExactSynonym SPLIT='|'	A rdfs:comment	SC %	>A rdfs:comment	>A oio:hasDbXref SPLIT='|'
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201908210_76		n1|All cells		cell_set_preferred_alias:'' ; original_label:n1 ; cell_set_label:All cells ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''			
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201908210_77	Neuronal	MTG 001-069|n2|Neuronal		cell_set_preferred_alias:Neuronal ; original_label:n2 ; cell_set_label:MTG 001-069 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''			
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201908210_78	Inhibitory	n3|GABAergic|MTG 001-045|Inhibitory		cell_set_preferred_alias:Inhibitory ; original_label:n3 ; cell_set_label:MTG 001-045 ; cell_set_aligned_alias:GABAergic ; cell_set_additional_aliases:''			
