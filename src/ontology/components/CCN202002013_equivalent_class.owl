@@ -14,7 +14,11 @@ Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClas
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_100>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_101>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_102>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_103>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_112>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_113>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_12>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_124>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_125>))
@@ -121,6 +125,7 @@ Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClas
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_9>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_91>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_92>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_93>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_94>))
@@ -135,7 +140,11 @@ Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/All
 Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_100>))
 Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_101>))
 Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_102>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_103>))
 Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_11>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_111>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_112>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_113>))
 Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_12>))
 Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_124>))
 Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_125>))
@@ -242,6 +251,7 @@ Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/All
 Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_87>))
 Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_88>))
 Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_9>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_91>))
 Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_92>))
 Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_93>))
 Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_94>))
@@ -275,9 +285,25 @@ EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClas
 
 EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_102> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_102>)))
 
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_103> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_103>)
+
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_103> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_103>)))
+
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11>)
 
 EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_11>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111>)
+
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_111>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_112> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_112>)
+
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_112> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_112>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_113> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_113>)
+
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_113> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_113>)))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_12> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_12>)
 
@@ -702,6 +728,10 @@ EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClas
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_9> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_9>)
 
 EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_9> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_9>)))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_91> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_91>)
+
+EquivalentClasses(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_91> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_91>)))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_92> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_92>)
 

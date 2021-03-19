@@ -190,10 +190,10 @@ def generate_minimal_marker_template(dend_json_path, flat_marker_path, output_ma
     if taxonomy_config:
         subtrees = get_subtrees(dend_tree, taxonomy_config)
         robot_min_marker_seed = {'ID': "ID",
-                                     'Markers': "SC 'expresses' some % SPLIT=|",
-                                     'part_of': "SC 'part of' some %",
-                                     'has_soma_location': "SC 'has soma location' some %"
-                                     }
+                                 'Markers': "SC 'expresses' some % SPLIT=|",
+                                 'part_of': "SC 'part of' some %",
+                                 'has_soma_location': "SC 'has soma location' some %"
+                                 }
         min_marker_template = [robot_min_marker_seed]
 
         for o in dend['nodes']:
