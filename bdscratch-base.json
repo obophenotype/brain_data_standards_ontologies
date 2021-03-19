@@ -1406,6 +1406,11 @@
         {
           "obj": "http://purl.obolibrary.org/obo/CL_0000127",
           "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_211"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_0000127",
+          "pred": "is_a",
           "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_92"
         },
         {
@@ -1461,12 +1466,27 @@
         {
           "obj": "http://purl.obolibrary.org/obo/CL_0000679",
           "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_182"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_0000679",
+          "pred": "is_a",
           "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_183"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CL_0000679",
           "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_188"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_0000679",
+          "pred": "is_a",
           "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_189"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_0000679",
+          "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_190"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CL_0000679",
@@ -1517,6 +1537,11 @@
           "obj": "http://purl.obolibrary.org/obo/CL_0000679",
           "pred": "is_a",
           "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_62"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_0000679",
+          "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_63"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CL_0000679",
@@ -1666,7 +1691,17 @@
         {
           "obj": "http://purl.obolibrary.org/obo/CL_0011005",
           "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_124"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_0011005",
+          "pred": "is_a",
           "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_125"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_0011005",
+          "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_128"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CL_0011005",
@@ -1681,6 +1716,11 @@
         {
           "obj": "http://purl.obolibrary.org/obo/CL_0011005",
           "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_134"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_0011005",
+          "pred": "is_a",
           "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_138"
         },
         {
@@ -1691,7 +1731,22 @@
         {
           "obj": "http://purl.obolibrary.org/obo/CL_0011005",
           "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_149"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_0011005",
+          "pred": "is_a",
           "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_15"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_0011005",
+          "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_150"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_0011005",
+          "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_156"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CL_0011005",
@@ -1702,6 +1757,11 @@
           "obj": "http://purl.obolibrary.org/obo/CL_0011005",
           "pred": "is_a",
           "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_17"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_0011005",
+          "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_178"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CL_0011005",
@@ -6780,7 +6840,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_211",
-          "lbl": "Astro_1 primary motor cortex astrocyte of the cerebral cortex (Mus musculus)",
+          "lbl": "Astro_1 primary motor cortex astrocyte (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -9343,7 +9403,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_92",
-          "lbl": "Astro_Top2a primary motor cortex astrocyte of the cerebral cortex (Mus musculus)",
+          "lbl": "Astro_Top2a primary motor cortex astrocyte (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -9363,7 +9423,7 @@
               },
               {
                 "pred": "hasExactSynonym",
-                "val": "Clspn,Lockd expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)",
+                "val": "Clspn,Lockd expressing astrocyte of primary motor cortex (Mus musculus)",
                 "xrefs": []
               },
               {
@@ -9377,7 +9437,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_93",
-          "lbl": "Astro Aqp4_Gfap primary motor cortex astrocyte of the cerebral cortex (Mus musculus)",
+          "lbl": "Astro Aqp4_Gfap primary motor cortex astrocyte (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -9397,7 +9457,7 @@
               },
               {
                 "pred": "hasExactSynonym",
-                "val": "Myoc expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)",
+                "val": "Myoc expressing astrocyte of primary motor cortex (Mus musculus)",
                 "xrefs": []
               },
               {
@@ -9411,7 +9471,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_94",
-          "lbl": "Astro Aqp4_Slc7a10 primary motor cortex astrocyte of the cerebral cortex (Mus musculus)",
+          "lbl": "Astro Aqp4_Slc7a10 primary motor cortex astrocyte (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -9431,7 +9491,7 @@
               },
               {
                 "pred": "hasExactSynonym",
-                "val": "Phkg1,Slco1c1 expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)",
+                "val": "Phkg1,Slco1c1 expressing astrocyte of primary motor cortex (Mus musculus)",
                 "xrefs": []
               },
               {

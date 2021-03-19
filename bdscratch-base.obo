@@ -123,6 +123,7 @@ comment: cell_set_preferred_alias:CGE/PoA ; original_label:n8 ; cell_set_label:R
 synonym: "CGE/PoA" EXACT []
 synonym: "n8" EXACT []
 synonym: "RNAseq 001-027, 089-090" EXACT []
+is_a: CL:0011005
 relationship: RO:0002162 NCBITaxon:10090
 property_value: prefLabel "CGE/PoA" xsd:string
 
@@ -150,6 +151,7 @@ comment: cell_set_preferred_alias:Lamp5_5 ; original_label:n12 ; cell_set_label:
 synonym: "Lamp5_5" EXACT []
 synonym: "n12" EXACT []
 synonym: "RNAseq 003-004" EXACT []
+is_a: CL:0011005
 relationship: RO:0002162 NCBITaxon:10090
 property_value: prefLabel "Lamp5_5" xsd:string
 
@@ -192,6 +194,7 @@ comment: cell_set_preferred_alias:Sncg_2 ; original_label:n18 ; cell_set_label:R
 synonym: "n18" EXACT []
 synonym: "RNAseq 009-010" EXACT []
 synonym: "Sncg_2" EXACT []
+is_a: CL:0011005
 relationship: RO:0002162 NCBITaxon:10090
 property_value: prefLabel "Sncg_2" xsd:string
 
@@ -234,6 +237,7 @@ comment: cell_set_preferred_alias:Vip_4 ; original_label:n33 ; cell_set_label:RN
 synonym: "n33" EXACT []
 synonym: "RNAseq 026-027" EXACT []
 synonym: "Vip_4" EXACT []
+is_a: CL:0011005
 relationship: RO:0002162 NCBITaxon:10090
 property_value: prefLabel "Vip_4" xsd:string
 
@@ -259,6 +263,7 @@ comment: cell_set_preferred_alias:MGE ; original_label:n34 ; cell_set_label:RNAs
 synonym: "MGE" EXACT []
 synonym: "n34" EXACT []
 synonym: "RNAseq 028-057" EXACT []
+is_a: CL:0011005
 relationship: RO:0002162 NCBITaxon:10090
 property_value: prefLabel "MGE" xsd:string
 
@@ -269,6 +274,7 @@ comment: cell_set_preferred_alias:Sst_1 ; original_label:n40 ; cell_set_label:RN
 synonym: "n40" EXACT []
 synonym: "RNAseq 031-033" EXACT []
 synonym: "Sst_1" EXACT []
+is_a: CL:0011005
 relationship: RO:0002162 NCBITaxon:10090
 property_value: prefLabel "Sst_1" xsd:string
 
@@ -312,6 +318,7 @@ comment: cell_set_preferred_alias:Chandelier ; original_label:n62 ; cell_set_lab
 synonym: "Chandelier" EXACT []
 synonym: "n62" EXACT []
 synonym: "RNAseq 056-057" EXACT []
+is_a: CL:0011005
 is_a: CL:4023036 {xref="DOI:10.1101/2020.02.29.970558"}
 relationship: RO:0002162 NCBITaxon:10090
 property_value: prefLabel "Chandelier" xsd:string
@@ -339,6 +346,7 @@ comment: cell_set_preferred_alias:IT projecting ; original_label:n66 ; cell_set_
 synonym: "IT projecting" EXACT []
 synonym: "n66" EXACT []
 synonym: "RNAseq 058-069" EXACT []
+is_a: CL:0000679
 is_a: CL:4023008 {xref="DOI:10.1101/2020.02.29.970558"}
 relationship: RO:0002162 NCBITaxon:10090
 property_value: prefLabel "IT projecting" xsd:string
@@ -366,6 +374,7 @@ comment: cell_set_preferred_alias:L4 ; original_label:n72 ; cell_set_label:RNAse
 synonym: "L4" EXACT []
 synonym: "n72" EXACT []
 synonym: "RNAseq 061-062" EXACT []
+is_a: CL:0000679
 relationship: RO:0002162 NCBITaxon:10090
 property_value: prefLabel "L4" xsd:string
 
@@ -409,6 +418,7 @@ comment: cell_set_preferred_alias:L5 IT_2 ; original_label:n74 ; cell_set_label:
 synonym: "L5 IT_2" EXACT []
 synonym: "n74" EXACT []
 synonym: "RNAseq 063-064" EXACT []
+is_a: CL:0000679
 relationship: RO:0002162 NCBITaxon:10090
 property_value: prefLabel "L5 IT_2" xsd:string
 
@@ -544,11 +554,12 @@ property_value: prefLabel "Vip Mybpc1_2" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:211
-name: Astro_1 primary motor cortex astrocyte of the cerebral cortex (Mus musculus)
+name: Astro_1 primary motor cortex astrocyte (Mus musculus)
 comment: cell_set_preferred_alias:Astro_1 ; original_label:n95 ; cell_set_label:RNAseq 093-094 ; cell_set_aligned_alias:''
 synonym: "Astro_1" EXACT []
 synonym: "n95" EXACT []
 synonym: "RNAseq 093-094" EXACT []
+is_a: CL:0000127
 relationship: RO:0002162 NCBITaxon:10090
 property_value: prefLabel "Astro_1" xsd:string
 
@@ -1259,6 +1270,7 @@ name: L5 IT_1 primary motor cortex glutamatergic neuron (Mus musculus)
 comment: cell_set_preferred_alias:L5 IT_1 ; original_label:L5 IT_1 ; cell_set_label:RNAseq 063 ; cell_set_aligned_alias:''
 synonym: "L5 IT_1" EXACT []
 synonym: "RNAseq 063" EXACT []
+is_a: CL:0000679
 relationship: RO:0002162 NCBITaxon:10090
 property_value: prefLabel "L5 IT_1" xsd:string
 
@@ -1715,11 +1727,11 @@ property_value: prefLabel "Sncg Col14a1" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:92
-name: Astro_Top2a primary motor cortex astrocyte of the cerebral cortex (Mus musculus)
+name: Astro_Top2a primary motor cortex astrocyte (Mus musculus)
 comment: cell_set_preferred_alias:Astro_Top2a ; original_label:Astro_Top2a ; cell_set_label:RNAseq 092 ; cell_set_aligned_alias:''
 comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Clspn,Lockd.
 synonym: "Astro_Top2a" EXACT []
-synonym: "Clspn,Lockd expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)" EXACT []
+synonym: "Clspn,Lockd expressing astrocyte of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 092" EXACT []
 is_a: CL:0000127
 relationship: BFO:0000050 UBERON:0001384
@@ -1730,11 +1742,11 @@ property_value: prefLabel "Astro_Top2a" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:93
-name: Astro Aqp4_Gfap primary motor cortex astrocyte of the cerebral cortex (Mus musculus)
+name: Astro Aqp4_Gfap primary motor cortex astrocyte (Mus musculus)
 comment: cell_set_preferred_alias:Astro Aqp4_Gfap ; original_label:Astro Aqp4_Gfap ; cell_set_label:RNAseq 093 ; cell_set_aligned_alias:''
 comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Myoc.
 synonym: "Astro Aqp4_Gfap" EXACT []
-synonym: "Myoc expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)" EXACT []
+synonym: "Myoc expressing astrocyte of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 093" EXACT []
 is_a: CL:0000127
 relationship: BFO:0000050 UBERON:0001384
@@ -1744,11 +1756,11 @@ property_value: prefLabel "Astro Aqp4_Gfap" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:94
-name: Astro Aqp4_Slc7a10 primary motor cortex astrocyte of the cerebral cortex (Mus musculus)
+name: Astro Aqp4_Slc7a10 primary motor cortex astrocyte (Mus musculus)
 comment: cell_set_preferred_alias:Astro Aqp4_Slc7a10 ; original_label:Astro Aqp4_Slc7a10 ; cell_set_label:RNAseq 094 ; cell_set_aligned_alias:''
 comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Phkg1,Slco1c1.
 synonym: "Astro Aqp4_Slc7a10" EXACT []
-synonym: "Phkg1,Slco1c1 expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)" EXACT []
+synonym: "Phkg1,Slco1c1 expressing astrocyte of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 094" EXACT []
 is_a: CL:0000127
 relationship: BFO:0000050 UBERON:0001384

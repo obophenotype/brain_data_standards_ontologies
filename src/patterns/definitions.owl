@@ -10,6 +10,10 @@ Ontology(<http://purl.obolibrary.org/obo/bdscratch/patterns/definitions.owl>
 <http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-19/patterns/definitions.owl>
 Annotation(owl:versionInfo "2021-03-19"^^xsd:string)
 
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000127>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000128>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000679>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0011005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_1>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_10>))
@@ -145,6 +149,7 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_1> "Pax6,Pip5k1b expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_1> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Pax6,Pip5k1b."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_1> "Lamp5 Pax6 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_1> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_1> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_10> (Sncg Slc17a8 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -152,6 +157,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_10> "Slc17a8,Yjefn3 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_10> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Slc17a8,Yjefn3."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_10> "Sncg Slc17a8 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_10> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_10> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_100> (Oligo Opalin_2 primary motor cortex oligodendrocyte (Mus musculus))
@@ -159,6 +165,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_100> "Il33,Prr5l expressing oligodendrocyte of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_100> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Il33,Prr5l."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_100> "Oligo Opalin_2 primary motor cortex oligodendrocyte (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_100> <http://purl.obolibrary.org/obo/CL_0000128>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_100> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_101> (Oligo Opalin_3 primary motor cortex oligodendrocyte (Mus musculus))
@@ -166,6 +173,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_101> "Cacna2d4,Mobp,Nckap5 expressing oligodendrocyte of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_101> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cacna2d4,Mobp,Nckap5."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_101> "Oligo Opalin_3 primary motor cortex oligodendrocyte (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_101> <http://purl.obolibrary.org/obo/CL_0000128>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_101> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_102> (Oligo Opalin_4 primary motor cortex oligodendrocyte (Mus musculus))
@@ -173,6 +181,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_102> "Kank1,Prom1,Sytl2 expressing oligodendrocyte of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_102> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Kank1,Prom1,Sytl2."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_102> "Oligo Opalin_4 primary motor cortex oligodendrocyte (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_102> <http://purl.obolibrary.org/obo/CL_0000128>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_102> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11> (Sncg Calb1_1 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -180,6 +189,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11> "Krt73,Sln,Syt6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Krt73,Sln,Syt6."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11> "Sncg Calb1_1 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_12> (Sncg Calb1_2 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -187,11 +197,13 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_12> "Calb1,Epb41l4a,Syt6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_12> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Calb1,Epb41l4a,Syt6."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_12> "Sncg Calb1_2 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_12> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_12> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_124> (CGE/PoA primary motor cortex GABAergic interneuron (Mus musculus))
 
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_124> "CGE/PoA primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_124> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_124> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_125> (Lamp5 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -199,11 +211,13 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_125> "Npy,Pde11a expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_125> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Npy,Pde11a."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_125> "Lamp5 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_125> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_125> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_128> (Lamp5_5 primary motor cortex GABAergic interneuron (Mus musculus))
 
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_128> "Lamp5_5 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_128> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_128> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_13> (Sncg Npy2r primary motor cortex GABAergic interneuron (Mus musculus))
@@ -211,6 +225,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_13> "Npy2r,Rgs12 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_13> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Npy2r,Rgs12."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_13> "Sncg Npy2r primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_13> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_13> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_133> (Sncg primary motor cortex GABAergic interneuron (Mus musculus))
@@ -218,11 +233,13 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_133> "Cnr1,Col25a1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_133> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cnr1,Col25a1."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_133> "Sncg primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_133> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_133> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_134> (Sncg_2 primary motor cortex GABAergic interneuron (Mus musculus))
 
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_134> "Sncg_2 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_134> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_134> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_138> (Vip primary motor cortex GABAergic interneuron (Mus musculus))
@@ -230,6 +247,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_138> "Vip expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_138> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Vip."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_138> "Vip primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_138> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_138> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_14> (Vip Sncg primary motor cortex GABAergic interneuron (Mus musculus))
@@ -237,11 +255,13 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_14> "Crh,Nectin3,Unc5b expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_14> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Crh,Nectin3,Unc5b."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_14> "Vip Sncg primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_14> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_14> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_149> (Vip_4 primary motor cortex GABAergic interneuron (Mus musculus))
 
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_149> "Vip_4 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_149> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_149> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_15> (Vip Serpinf1_1 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -249,16 +269,19 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_15> "Rgs16,Sfrp2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_15> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Rgs16,Sfrp2."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_15> "Vip Serpinf1_1 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_15> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_15> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_150> (MGE primary motor cortex GABAergic interneuron (Mus musculus))
 
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_150> "MGE primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_150> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_150> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_156> (Sst_1 primary motor cortex GABAergic interneuron (Mus musculus))
 
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_156> "Sst_1 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_156> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_156> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_16> (Vip Serpinf1_2 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -266,6 +289,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_16> "Ccn3,Col14a1,Pbx3 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_16> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Ccn3,Col14a1,Pbx3."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_16> "Vip Serpinf1_2 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_16> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_16> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_17> (Vip Serpinf1_3 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -273,11 +297,13 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_17> "Ccn3,Enpp2,Homer2,Plekhg1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_17> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Ccn3,Enpp2,Homer2,Plekhg1."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_17> "Vip Serpinf1_3 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_17> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_17> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_178> (Chandelier primary motor cortex GABAergic interneuron (Mus musculus))
 
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_178> "Chandelier primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_178> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_178> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_18> (Vip Htr1f primary motor cortex GABAergic interneuron (Mus musculus))
@@ -285,11 +311,13 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_18> "Ccn3,Vip,Vwc2l expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_18> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Ccn3,Vip,Vwc2l."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_18> "Vip Htr1f primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_18> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_18> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_182> (IT projecting primary motor cortex glutamatergic neuron (Mus musculus))
 
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_182> "IT projecting primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_182> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_182> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_183> (L2/3 IT primary motor cortex glutamatergic neuron (Mus musculus))
@@ -297,11 +325,13 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_183> "Calb1,Rasgrf2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_183> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Calb1,Rasgrf2."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_183> "L2/3 IT primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_183> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_183> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_188> (L4 primary motor cortex glutamatergic neuron (Mus musculus))
 
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_188> "L4 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_188> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_188> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_189> (L5 IT primary motor cortex glutamatergic neuron (Mus musculus))
@@ -309,6 +339,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_189> "Cdh12,Pdzrn3,St6galnac5 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_189> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cdh12,Pdzrn3,St6galnac5."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_189> "L5 IT primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_189> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_189> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_19> (Vip Gpc3 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -316,11 +347,13 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_19> "Pbx3,Pde3a,Vip expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_19> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Pbx3,Pde3a,Vip."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_19> "Vip Gpc3 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_19> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_19> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_190> (L5 IT_2 primary motor cortex glutamatergic neuron (Mus musculus))
 
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_190> "L5 IT_2 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_190> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_190> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_192> (L6 IT primary motor cortex glutamatergic neuron (Mus musculus))
@@ -328,6 +361,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_192> "Bmpr1b,Il1rapl2,Sulf1 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_192> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Bmpr1b,Il1rapl2,Sulf1."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_192> "L6 IT primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_192> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_192> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_193> (L5 ET primary motor cortex glutamatergic neuron (Mus musculus))
@@ -335,6 +369,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_193> "Gm2164,Npr3 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_193> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Gm2164,Npr3."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_193> "L5 ET primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_193> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_193> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_197> (L6 CT primary motor cortex glutamatergic neuron (Mus musculus))
@@ -342,6 +377,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_197> "Foxp2,Hs3st4 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_197> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Foxp2,Hs3st4."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_197> "L6 CT primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_197> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_197> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_2> (Lamp5 Egln3_1 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -349,6 +385,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_2> "Chrna7,Fbn2,Tafa1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_2> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Chrna7,Fbn2,Tafa1."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_2> "Lamp5 Egln3_1 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_2> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_2> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_20> (Vip C1ql1 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -356,6 +393,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_20> "Bmper,Btbd11,Crh,Vip expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_20> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Bmper,Btbd11,Crh,Vip."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_20> "Vip C1ql1 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_20> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_20> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_203> (L6b primary motor cortex glutamatergic neuron (Mus musculus))
@@ -363,6 +401,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_203> "Ccn2,Cplx3 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_203> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Ccn2,Cplx3."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_203> "L6b primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_203> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_203> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_207> (L5/6 NP primary motor cortex glutamatergic neuron (Mus musculus))
@@ -370,6 +409,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_207> "Etv1,Tshz2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_207> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Etv1,Tshz2."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_207> "L5/6 NP primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_207> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_207> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_21> (Vip Mybpc1_2 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -377,11 +417,13 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_21> "5033421B08Rik,Htr3a expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_21> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: 5033421B08Rik,Htr3a."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_21> "Vip Mybpc1_2 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_21> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_21> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
-# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_211> (Astro_1 primary motor cortex astrocyte of the cerebral cortex (Mus musculus))
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_211> (Astro_1 primary motor cortex astrocyte (Mus musculus))
 
-AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_211> "Astro_1 primary motor cortex astrocyte of the cerebral cortex (Mus musculus)"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_211> "Astro_1 primary motor cortex astrocyte (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_211> <http://purl.obolibrary.org/obo/CL_0000127>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_211> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_22> (Vip Mybpc1_1 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -389,6 +431,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_22> "Calb2,Gm2516 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_22> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Calb2,Gm2516."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_22> "Vip Mybpc1_1 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_22> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_22> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_23> (Vip Chat_1 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -396,6 +439,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_23> "Chat,Npy2r expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_23> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Chat,Npy2r."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_23> "Vip Chat_1 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_23> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_23> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_24> (Vip Mybpc1_3 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -403,6 +447,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_24> "Caln1,Grm8 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_24> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Caln1,Grm8."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_24> "Vip Mybpc1_3 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_24> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_24> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_25> (Vip Chat_2 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -410,6 +455,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_25> "Grik4,Htr4 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_25> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Grik4,Htr4."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_25> "Vip Chat_2 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_25> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_25> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_26> (Vip Igfbp6_1 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -417,6 +463,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_26> "Gm39185,Thsd7a expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_26> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Gm39185,Thsd7a."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_26> "Vip Igfbp6_1 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_26> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_26> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_27> (Vip Igfbp6_2 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -424,6 +471,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_27> "Crh,Thsd7b expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_27> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Crh,Thsd7b."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_27> "Vip Igfbp6_2 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_27> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_27> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_28> (Sst Chodl primary motor cortex GABAergic interneuron (Mus musculus))
@@ -431,6 +479,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_28> "Nos1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_28> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Nos1."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_28> "Sst Chodl primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_28> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_28> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_29> (Sst Penk primary motor cortex GABAergic interneuron (Mus musculus))
@@ -438,6 +487,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_29> "9530026P05Rik,Cartpt,Il1rapl2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_29> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: 9530026P05Rik,Cartpt,Il1rapl2."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_29> "Sst Penk primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_29> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_29> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_3> (Lamp5 Egln3_2 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -445,6 +495,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_3> "Crim1,Zfp804b expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_3> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Crim1,Zfp804b."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_3> "Lamp5 Egln3_2 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_3> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_3> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_30> (Sst Myh8_1 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -452,6 +503,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_30> "Il1rapl2,Reln expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_30> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Il1rapl2,Reln."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_30> "Sst Myh8_1 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_30> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_30> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_31> (Sst Myh8_2 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -459,6 +511,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_31> "Cdh13,Pld5,Sox6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_31> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cdh13,Pld5,Sox6."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_31> "Sst Myh8_2 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_31> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_31> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_32> (Sst Myh8_3 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -466,6 +519,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_32> "Cdh9,Grm1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_32> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cdh9,Grm1."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_32> "Sst Myh8_3 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_32> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_32> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_33> (Sst Htr1a primary motor cortex GABAergic interneuron (Mus musculus))
@@ -473,6 +527,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_33> "Gm30835,Pdyn expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_33> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Gm30835,Pdyn."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_33> "Sst Htr1a primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_33> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_33> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_34> (Sst Etv1 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -480,6 +535,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_34> "Col19a1,Fbn2,Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_34> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Col19a1,Fbn2,Trpc6."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_34> "Sst Etv1 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_34> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_34> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_35> (Sst Pvalb Etv1 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -487,6 +543,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_35> "Edaradd,Spon1,Whrn expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_35> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Edaradd,Spon1,Whrn."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_35> "Sst Pvalb Etv1 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_35> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_35> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_36> (Sst Crhr2_1 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -494,6 +551,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_36> "Eya4,Nek7,Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_36> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Eya4,Nek7,Trpc6."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_36> "Sst Crhr2_1 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_36> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_36> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_37> (Sst Crhr2_2 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -501,6 +559,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_37> "Lypd6b,Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_37> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Lypd6b,Trpc6."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_37> "Sst Crhr2_2 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_37> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_37> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_38> (Sst Hpse primary motor cortex GABAergic interneuron (Mus musculus))
@@ -508,6 +567,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_38> "Hpse,Rerg expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_38> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Hpse,Rerg."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_38> "Sst Hpse primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_38> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_38> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_39> (Sst Calb2 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -515,6 +575,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_39> "Olfm3,Sst expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_39> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Olfm3,Sst."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_39> "Sst Calb2 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_39> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_39> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_4> (Lamp5 Egln3_3 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -522,6 +583,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_4> "Cxcl14,Ntn1,Reln expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_4> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cxcl14,Ntn1,Reln."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_4> "Lamp5 Egln3_3 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_4> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_4> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_40> (Sst Pappa primary motor cortex GABAergic interneuron (Mus musculus))
@@ -529,6 +591,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_40> "Gm49678,Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_40> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Gm49678,Trpc6."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_40> "Sst Pappa primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_40> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_40> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_41> (Sst Pvalb Calb2 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -536,6 +599,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_41> "Moxd1,Prkg2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_41> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Moxd1,Prkg2."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_41> "Sst Pvalb Calb2 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_41> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_41> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_42> (Sst C1ql3_1 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -543,6 +607,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_42> "Gm48893,Pard3b expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_42> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Gm48893,Pard3b."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_42> "Sst C1ql3_1 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_42> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_42> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_43> (Sst C1ql3_2 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -550,6 +615,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_43> "Brinp3,Gxylt2,Ndnf expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_43> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Brinp3,Gxylt2,Ndnf."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_43> "Sst C1ql3_2 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_43> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_43> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_44> (Sst Tac2 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -557,6 +623,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_44> "Cdh13,Tac2,Tmtc2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_44> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cdh13,Tac2,Tmtc2."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_44> "Sst Tac2 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_44> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_44> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_45> (Sst Th_1 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -564,6 +631,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_45> "St6galnac5,St8sia4,Zfpm2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_45> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: St6galnac5,St8sia4,Zfpm2."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_45> "Sst Th_1 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_45> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_45> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_46> (Sst Th_2 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -571,6 +639,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_46> "Pard3b,Pnoc,Sst expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_46> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Pard3b,Pnoc,Sst."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_46> "Sst Th_2 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_46> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_46> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_47> (Sst Th_3 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -578,6 +647,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_47> "Cort,Th expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_47> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cort,Th."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_47> "Sst Th_3 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_47> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_47> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_48> (Pvalb Gabrg1 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -585,6 +655,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_48> "Gabrg1,Th expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_48> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Gabrg1,Th."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_48> "Pvalb Gabrg1 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_48> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_48> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_49> (Pvalb Egfem1 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -592,6 +663,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_49> "9330158H04Rik,Plch1,Tac1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_49> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: 9330158H04Rik,Plch1,Tac1."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_49> "Pvalb Egfem1 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_49> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_49> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_5> (Lamp5 Pdlim5_1 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -599,6 +671,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_5> "Dock5,Ndnf,Ndst4 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_5> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Dock5,Ndnf,Ndst4."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_5> "Lamp5 Pdlim5_1 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_5> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_5> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_50> (Pvalb Gpr149 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -606,6 +679,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_50> "Fzd6,Slit2,Syt2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_50> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Fzd6,Slit2,Syt2."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_50> "Pvalb Gpr149 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_50> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_50> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_51> (Pvalb Kank4 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -613,6 +687,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_51> "Cacna2d2,Sema3e,Syt2,Tmem132d expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_51> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cacna2d2,Sema3e,Syt2,Tmem132d."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_51> "Pvalb Kank4 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_51> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_51> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_52> (Pvalb Calb1_1 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -620,6 +695,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_52> "Cort,Gm28807,Nxph2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_52> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cort,Gm28807,Nxph2."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_52> "Pvalb Calb1_1 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_52> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_52> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_53> (Pvalb Calb1_2 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -627,6 +703,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_53> "Cntnap5c,Tac1,Tmem132c expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_53> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cntnap5c,Tac1,Tmem132c."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_53> "Pvalb Calb1_2 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_53> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_53> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_54> (Pvalb Reln primary motor cortex GABAergic interneuron (Mus musculus))
@@ -634,6 +711,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_54> "Cntnap4,Gm46102 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_54> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cntnap4,Gm46102."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_54> "Pvalb Reln primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_54> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_54> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_55> (Pvalb Il1rapl2 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -641,6 +719,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_55> "Eya4,Il1rapl2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_55> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Eya4,Il1rapl2."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_55> "Pvalb Il1rapl2 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_55> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_55> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_56> (Pvalb Vipr2_1 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -648,6 +727,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_56> "Lamb1,Nkx2-1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_56> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Lamb1,Nkx2-1."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_56> "Pvalb Vipr2_1 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_56> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_56> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_57> (Pvalb Vipr2_2 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -655,6 +735,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_57> "Cntnap5b,Unc5b expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_57> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cntnap5b,Unc5b."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_57> "Pvalb Vipr2_2 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_57> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_57> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_58> (L2/3 IT_1 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -662,6 +743,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_58> "6530403H02Rik,Adamts2,Met expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_58> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: 6530403H02Rik,Adamts2,Met."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_58> "L2/3 IT_1 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_58> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_58> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_59> (L2/3 IT_2 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -669,6 +751,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_59> "Ccdc3,Cux1,Meis2,Otof expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_59> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Ccdc3,Cux1,Meis2,Otof."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_59> "L2/3 IT_2 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_59> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_59> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_6> (Lamp5 Pdlim5_2 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -676,6 +759,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_6> "Ndnf,Pde11a expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_6> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Ndnf,Pde11a."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_6> "Lamp5 Pdlim5_2 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_6> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_6> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_60> (L2/3 IT_3 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -683,6 +767,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_60> "Cux2,Slit3,Stard8 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_60> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cux2,Slit3,Stard8."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_60> "L2/3 IT_3 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_60> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_60> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_61> (L4/5 IT_1 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -690,6 +775,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_61> "Cadps2,Prr16,Rorb expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_61> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cadps2,Prr16,Rorb."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_61> "L4/5 IT_1 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_61> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_61> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_62> (L4/5 IT_2 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -697,11 +783,13 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_62> "Col26a1,Cpne4,Il1rapl2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_62> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Col26a1,Cpne4,Il1rapl2."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_62> "L4/5 IT_2 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_62> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_62> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_63> (L5 IT_1 primary motor cortex glutamatergic neuron (Mus musculus))
 
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_63> "L5 IT_1 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_63> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_63> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_64> (L5 IT_2 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -709,6 +797,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_64> "Adamts18,Deptor,Gm49678,Man1a expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_64> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Adamts18,Deptor,Gm49678,Man1a."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_64> "L5 IT_2 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_64> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_64> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_65> (L5 IT_3 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -716,6 +805,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_65> "Cadps2,Enpp2,Pld5,Ptprk,Rxfp1 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_65> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cadps2,Enpp2,Pld5,Ptprk,Rxfp1."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_65> "L5 IT_3 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_65> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_65> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_66> (L5 IT_4 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -723,6 +813,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_66> "Chrm2,Cwh43,Pld5 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_66> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Chrm2,Cwh43,Pld5."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_66> "L5 IT_4 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_66> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_66> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_67> (L6 IT_1 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -730,6 +821,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_67> "Bmpr1b,Fst,Ntng1 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_67> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Bmpr1b,Fst,Ntng1."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_67> "L6 IT_1 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_67> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_67> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_68> (L6 IT_2 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -737,6 +829,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_68> "Bmpr1b,C1ql3,Ptpru expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_68> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Bmpr1b,C1ql3,Ptpru."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_68> "L6 IT_2 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_68> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_68> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_69> (L6 IT Car3 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -744,6 +837,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_69> "Nr4a2,Tfap2d expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_69> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Nr4a2,Tfap2d."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_69> "L6 IT Car3 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_69> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_69> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_7> (Lamp5 Slc35d3 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -751,6 +845,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_7> "Alk,Sema5a expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_7> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Alk,Sema5a."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_7> "Lamp5 Slc35d3 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_7> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_7> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_70> (L5 PT_1 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -758,6 +853,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_70> "Crym,Gm2164,Npr3 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_70> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Crym,Gm2164,Npr3."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_70> "L5 PT_1 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_70> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_70> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_71> (L5 PT_2 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -765,6 +861,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_71> "Erg,Gpc5,Trpc7 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_71> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Erg,Gpc5,Trpc7."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_71> "L5 PT_2 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_71> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_71> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_72> (L5 PT_3 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -772,6 +869,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_72> "Gpc5,Reln,Trmt9b,Trpc7 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_72> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Gpc5,Reln,Trmt9b,Trpc7."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_72> "L5 PT_3 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_72> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_72> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73> (L5 PT_4 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -779,6 +877,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73> "Gm2164,Npsr1 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Gm2164,Npsr1."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73> "L5 PT_4 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_74> (L5/6 NP CT primary motor cortex glutamatergic neuron (Mus musculus))
@@ -786,6 +885,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_74> "Grp,Rxfp1,Tshz2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_74> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Grp,Rxfp1,Tshz2."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_74> "L5/6 NP CT primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_74> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_74> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_75> (L6 CT Gpr139 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -793,6 +893,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_75> "Acaa1b,Col23a1,Gpr139 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_75> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Acaa1b,Col23a1,Gpr139."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_75> "L6 CT Gpr139 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_75> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_75> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_76> (L6 CT Cpa6 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -800,6 +901,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_76> "Foxp2,Hs3st4,Zfpm2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_76> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Foxp2,Hs3st4,Zfpm2."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_76> "L6 CT Cpa6 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_76> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_76> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_77> (L6 CT Grp primary motor cortex glutamatergic neuron (Mus musculus))
@@ -807,6 +909,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_77> "Grp,Meis2,Pdzrn4,Plcxd3 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_77> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Grp,Meis2,Pdzrn4,Plcxd3."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_77> "L6 CT Grp primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_77> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_77> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_78> (L6 CT Pou3f2 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -814,6 +917,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_78> "Cdh18,Gm10635,Satb2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_78> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cdh18,Gm10635,Satb2."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_78> "L6 CT Pou3f2 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_78> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_78> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_79> (L6 CT Kit_1 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -821,6 +925,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_79> "Gm10635,Ikzf2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_79> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Gm10635,Ikzf2."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_79> "L6 CT Kit_1 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_79> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_79> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_8> (Lamp5 Lhx6 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -828,6 +933,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_8> "Gm45680,Nos1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_8> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Gm45680,Nos1."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_8> "Lamp5 Lhx6 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_8> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_8> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_80> (L6 CT Kit_2 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -835,6 +941,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_80> "Nr4a2,Rxfp1,Tshz2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_80> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Nr4a2,Rxfp1,Tshz2."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_80> "L6 CT Kit_2 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_80> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_80> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_81> (L6b Col6a1 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -842,6 +949,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_81> "Bmpr1b,Ccn2,Hs3st2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_81> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Bmpr1b,Ccn2,Hs3st2."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_81> "L6b Col6a1 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_81> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_81> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_82> (L6b Shisa6_1 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -849,6 +957,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_82> "Cplx3,Ly6g6e,Svil expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_82> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cplx3,Ly6g6e,Svil."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_82> "L6b Shisa6_1 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_82> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_82> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_83> (L6b Shisa6_2 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -856,6 +965,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_83> "Moxd1,Nr4a2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_83> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Moxd1,Nr4a2."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_83> "L6b Shisa6_2 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_83> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_83> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_84> (L6b Ror1 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -863,6 +973,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_84> "Ccn2,Cplx3,Fbxl7 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_84> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Ccn2,Cplx3,Fbxl7."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_84> "L6b Ror1 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_84> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_84> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_85> (L6b Kcnip1 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -870,6 +981,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_85> "Gm42557,Olfr112,Rxfp2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_85> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Gm42557,Olfr112,Rxfp2."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_85> "L6b Kcnip1 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_85> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_85> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_86> (L5/6 NP_1 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -877,6 +989,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_86> "Cyp7b1,Dkk2,Vwc2l expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_86> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cyp7b1,Dkk2,Vwc2l."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_86> "L5/6 NP_1 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_86> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_86> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87> (L5/6 NP_2 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -884,6 +997,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87> "Abi3bp,Slc17a8 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Abi3bp,Slc17a8."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87> "L5/6 NP_2 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88> (L5/6 NP_3 primary motor cortex glutamatergic neuron (Mus musculus))
@@ -891,6 +1005,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88> "Lypd1,Tshz2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Lypd1,Tshz2."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88> "L5/6 NP_3 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88> <http://purl.obolibrary.org/obo/CL_0000679>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_9> (Sncg Col14a1 primary motor cortex GABAergic interneuron (Mus musculus))
@@ -898,27 +1013,31 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_9> "Cdh6,Col25a1,Eps8 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_9> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cdh6,Col25a1,Eps8."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_9> "Sncg Col14a1 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_9> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_9> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
-# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_92> (Astro_Top2a primary motor cortex astrocyte of the cerebral cortex (Mus musculus))
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_92> (Astro_Top2a primary motor cortex astrocyte (Mus musculus))
 
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_92> "Clspn,Lockd expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_92> "Clspn,Lockd expressing astrocyte of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_92> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Clspn,Lockd."^^xsd:string)
-AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_92> "Astro_Top2a primary motor cortex astrocyte of the cerebral cortex (Mus musculus)"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_92> "Astro_Top2a primary motor cortex astrocyte (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_92> <http://purl.obolibrary.org/obo/CL_0000127>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_92> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
-# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_93> (Astro Aqp4_Gfap primary motor cortex astrocyte of the cerebral cortex (Mus musculus))
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_93> (Astro Aqp4_Gfap primary motor cortex astrocyte (Mus musculus))
 
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_93> "Myoc expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_93> "Myoc expressing astrocyte of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_93> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Myoc."^^xsd:string)
-AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_93> "Astro Aqp4_Gfap primary motor cortex astrocyte of the cerebral cortex (Mus musculus)"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_93> "Astro Aqp4_Gfap primary motor cortex astrocyte (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_93> <http://purl.obolibrary.org/obo/CL_0000127>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_93> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
-# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_94> (Astro Aqp4_Slc7a10 primary motor cortex astrocyte of the cerebral cortex (Mus musculus))
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_94> (Astro Aqp4_Slc7a10 primary motor cortex astrocyte (Mus musculus))
 
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_94> "Phkg1,Slco1c1 expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_94> "Phkg1,Slco1c1 expressing astrocyte of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_94> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Phkg1,Slco1c1."^^xsd:string)
-AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_94> "Astro Aqp4_Slc7a10 primary motor cortex astrocyte of the cerebral cortex (Mus musculus)"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_94> "Astro Aqp4_Slc7a10 primary motor cortex astrocyte (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_94> <http://purl.obolibrary.org/obo/CL_0000127>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_94> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_95> (Oligo Enpp6_1 primary motor cortex oligodendrocyte (Mus musculus))
@@ -926,6 +1045,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_95> "Bcas1,Tcf7l2 expressing oligodendrocyte of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_95> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Bcas1,Tcf7l2."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_95> "Oligo Enpp6_1 primary motor cortex oligodendrocyte (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_95> <http://purl.obolibrary.org/obo/CL_0000128>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_95> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_96> (Oligo Enpp6_2 primary motor cortex oligodendrocyte (Mus musculus))
@@ -933,6 +1053,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_96> "9630013A20Rik,Bmp4 expressing oligodendrocyte of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_96> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: 9630013A20Rik,Bmp4."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_96> "Oligo Enpp6_2 primary motor cortex oligodendrocyte (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_96> <http://purl.obolibrary.org/obo/CL_0000128>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_96> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_97> (Oligo Enpp6_3 primary motor cortex oligodendrocyte (Mus musculus))
@@ -940,6 +1061,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_97> "Cnksr3,Mpzl1,Nckap5,Tmem163 expressing oligodendrocyte of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_97> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cnksr3,Mpzl1,Nckap5,Tmem163."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_97> "Oligo Enpp6_3 primary motor cortex oligodendrocyte (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_97> <http://purl.obolibrary.org/obo/CL_0000128>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_97> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_98> (Oligo Enpp6_4 primary motor cortex oligodendrocyte (Mus musculus))
@@ -947,6 +1069,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_98> "9630013A20Rik,Cnksr3 expressing oligodendrocyte of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_98> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: 9630013A20Rik,Cnksr3."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_98> "Oligo Enpp6_4 primary motor cortex oligodendrocyte (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_98> <http://purl.obolibrary.org/obo/CL_0000128>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_98> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_99> (Oligo Opalin_1 primary motor cortex oligodendrocyte (Mus musculus))
@@ -954,6 +1077,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_99> "A330049N07Rik,Anln,Rftn1 expressing oligodendrocyte of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_99> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: A330049N07Rik,Anln,Rftn1."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_99> "Oligo Opalin_1 primary motor cortex oligodendrocyte (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_99> <http://purl.obolibrary.org/obo/CL_0000128>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_99> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 

@@ -192,8 +192,8 @@ def generate_minimal_marker_template(dend_json_path, flat_marker_path, output_ma
         robot_class_curation_seed = {'ID': "ID",
                                      'Markers': "SC 'expresses' some % SPLIT=|",
                                      'part_of': "SC 'part of' some %",
-                                     'has_soma_location': "SC 'has soma location' some %",
-                                     'gross_cell_type': "SC %"
+                                     'has_soma_location': "SC 'has soma location' some %"
+                                     # 'gross_cell_type': "SC %"
                                      }
         class_template = [robot_class_curation_seed]
 
@@ -215,9 +215,10 @@ def generate_minimal_marker_template(dend_json_path, flat_marker_path, output_ma
                             d['part_of'] = ''
                             d['has_soma_location'] = taxonomy_config['Brain_region'][0]
 
-                for index, subtree in enumerate(subtrees):
-                    if o['cell_set_accession'] in subtree:
-                        d['gross_cell_type'] = taxonomy_config['Root_nodes'][index]['Cell_type']
+                # moved to dosdp patterns
+                # for index, subtree in enumerate(subtrees):
+                #     if o['cell_set_accession'] in subtree:
+                #         d['gross_cell_type'] = taxonomy_config['Root_nodes'][index]['Cell_type']
 
         class_robot_template = pd.DataFrame.from_records(class_template)
         class_robot_template.to_csv(output_marker_path, sep="\t", index=False)

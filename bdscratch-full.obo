@@ -166,7 +166,7 @@ comment: cell_set_preferred_alias:CGE/PoA ; original_label:n8 ; cell_set_label:R
 synonym: "CGE/PoA" EXACT []
 synonym: "n8" EXACT []
 synonym: "RNAseq 001-027, 089-090" EXACT []
-is_a: CL:0000003 ! native cell
+is_a: CL:0011005 ! GABAergic interneuron
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 property_value: prefLabel "CGE/PoA" xsd:string
 
@@ -294,7 +294,7 @@ comment: cell_set_preferred_alias:MGE ; original_label:n34 ; cell_set_label:RNAs
 synonym: "MGE" EXACT []
 synonym: "n34" EXACT []
 synonym: "RNAseq 028-057" EXACT []
-is_a: CL:0000003 ! native cell
+is_a: CL:0011005 ! GABAergic interneuron
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 property_value: prefLabel "MGE" xsd:string
 
@@ -560,12 +560,12 @@ property_value: prefLabel "Vip Mybpc1_2" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:211
-name: Astro_1 primary motor cortex astrocyte of the cerebral cortex (Mus musculus)
+name: Astro_1 primary motor cortex astrocyte (Mus musculus)
 comment: cell_set_preferred_alias:Astro_1 ; original_label:n95 ; cell_set_label:RNAseq 093-094 ; cell_set_aligned_alias:''
 synonym: "Astro_1" EXACT []
 synonym: "n95" EXACT []
 synonym: "RNAseq 093-094" EXACT []
-is_a: CL:0000003 ! native cell
+is_a: CL:0000127 ! astrocyte
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 property_value: prefLabel "Astro_1" xsd:string
 
@@ -1630,11 +1630,11 @@ property_value: prefLabel "Sncg Col14a1" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:92
-name: Astro_Top2a primary motor cortex astrocyte of the cerebral cortex (Mus musculus)
+name: Astro_Top2a primary motor cortex astrocyte (Mus musculus)
 comment: cell_set_preferred_alias:Astro_Top2a ; original_label:Astro_Top2a ; cell_set_label:RNAseq 092 ; cell_set_aligned_alias:''
 comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Clspn,Lockd.
 synonym: "Astro_Top2a" EXACT []
-synonym: "Clspn,Lockd expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)" EXACT []
+synonym: "Clspn,Lockd expressing astrocyte of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 092" EXACT []
 is_a: CL:0002605 ! astrocyte of the cerebral cortex
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
@@ -1645,13 +1645,13 @@ property_value: prefLabel "Astro_Top2a" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:93
-name: Astro Aqp4_Gfap primary motor cortex astrocyte of the cerebral cortex (Mus musculus)
+name: Astro Aqp4_Gfap primary motor cortex astrocyte (Mus musculus)
 comment: cell_set_preferred_alias:Astro Aqp4_Gfap ; original_label:Astro Aqp4_Gfap ; cell_set_label:RNAseq 093 ; cell_set_aligned_alias:''
 comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Myoc.
 synonym: "Astro Aqp4_Gfap" EXACT []
-synonym: "Myoc expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)" EXACT []
+synonym: "Myoc expressing astrocyte of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 093" EXACT []
-is_a: AllenDendClass_CS202002013:211 ! Astro_1 primary motor cortex astrocyte of the cerebral cortex (Mus musculus)
+is_a: AllenDendClass_CS202002013:211 ! Astro_1 primary motor cortex astrocyte (Mus musculus)
 is_a: CL:0002605 ! astrocyte of the cerebral cortex
 relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026697 ! expresses Myoc
@@ -1659,13 +1659,13 @@ property_value: prefLabel "Astro Aqp4_Gfap" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:94
-name: Astro Aqp4_Slc7a10 primary motor cortex astrocyte of the cerebral cortex (Mus musculus)
+name: Astro Aqp4_Slc7a10 primary motor cortex astrocyte (Mus musculus)
 comment: cell_set_preferred_alias:Astro Aqp4_Slc7a10 ; original_label:Astro Aqp4_Slc7a10 ; cell_set_label:RNAseq 094 ; cell_set_aligned_alias:''
 comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Phkg1,Slco1c1.
 synonym: "Astro Aqp4_Slc7a10" EXACT []
-synonym: "Phkg1,Slco1c1 expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)" EXACT []
+synonym: "Phkg1,Slco1c1 expressing astrocyte of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 094" EXACT []
-is_a: AllenDendClass_CS202002013:211 ! Astro_1 primary motor cortex astrocyte of the cerebral cortex (Mus musculus)
+is_a: AllenDendClass_CS202002013:211 ! Astro_1 primary motor cortex astrocyte (Mus musculus)
 is_a: CL:0002605 ! astrocyte of the cerebral cortex
 relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000025537 ! expresses Phkg1

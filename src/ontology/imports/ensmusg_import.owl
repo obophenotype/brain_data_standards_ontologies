@@ -7,8 +7,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bdscratch/imports/ensmusg_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-09/imports/ensmusg_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-09</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-19/imports/ensmusg_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-19</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -105,24 +105,6 @@
     
 
 
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000005716 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000005716">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Pvalb</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000006014 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000006014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Prg4</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://identifiers.org/ensembl/ENSMUSG00000009376 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000009376">
@@ -137,15 +119,6 @@
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000010066">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>Cacna2d2</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000010122 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000010122">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Slc47a1</rdfs:label>
     </owl:Class>
     
 
@@ -209,15 +182,6 @@
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000016918">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>Sulf1</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000017897 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000017897">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Eya2</rdfs:label>
     </owl:Class>
     
 
@@ -312,15 +276,6 @@
     
 
 
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000021318 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000021318">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gli3</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://identifiers.org/ensembl/ENSMUSG00000021508 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000021508">
@@ -344,15 +299,6 @@
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000021647">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>Cartpt</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000021665 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000021665">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Hexb</rdfs:label>
     </owl:Class>
     
 
@@ -474,15 +420,6 @@
     
 
 
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000023800 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000023800">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Tiam2</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://identifiers.org/ensembl/ENSMUSG00000024074 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000024074">
@@ -533,15 +470,6 @@
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000024598">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>Fbn2</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000024610 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000024610">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cd74</rdfs:label>
     </owl:Class>
     
 
@@ -600,15 +528,6 @@
     
 
 
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000025780 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000025780">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Itih5</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://identifiers.org/ensembl/ENSMUSG00000025813 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000025813">
@@ -632,15 +551,6 @@
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000026141">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>Col19a1</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000026288 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000026288">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Inpp5d</rdfs:label>
     </owl:Class>
     
 
@@ -740,15 +650,6 @@
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000026826">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>Nr4a2</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000026989 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000026989">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Dapl1</rdfs:label>
     </owl:Class>
     
 
@@ -888,15 +789,6 @@
     
 
 
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000029231 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000029231">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Pdgfra</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://identifiers.org/ensembl/ENSMUSG00000029334 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000029334">
@@ -951,15 +843,6 @@
     
 
 
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000030187 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000030187">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Klra2</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://identifiers.org/ensembl/ENSMUSG00000030222 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000030222">
@@ -974,24 +857,6 @@
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000030235">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>Slco1c1</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000030237 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000030237">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Slco1a4</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000030249 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000030249">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Abcc9</rdfs:label>
     </owl:Class>
     
 
@@ -1028,24 +893,6 @@
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000031216">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>Stard8</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000031273 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000031273">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Col4a6</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000031494 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000031494">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cd209a</rdfs:label>
     </owl:Class>
     
 
@@ -1113,15 +960,6 @@
     
 
 
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000032503 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000032503">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Arpp21</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://identifiers.org/ensembl/ENSMUSG00000032517 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000032517">
@@ -1158,15 +996,6 @@
     
 
 
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000032796 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000032796">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Lama1</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://identifiers.org/ensembl/ENSMUSG00000032841 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000032841">
@@ -1181,15 +1010,6 @@
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000034009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>Rxfp1</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000034127 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000034127">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Tspan8</rdfs:label>
     </owl:Class>
     
 
@@ -1248,24 +1068,6 @@
     
 
 
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000035551 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000035551">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Igfbpl1</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000035783 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000035783">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Acta2</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://identifiers.org/ensembl/ENSMUSG00000036019 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000036019">
@@ -1311,29 +1113,11 @@
     
 
 
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000036814 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000036814">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Slc6a20a</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://identifiers.org/ensembl/ENSMUSG00000036834 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000036834">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>Plch1</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000036949 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000036949">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Slc39a12</rdfs:label>
     </owl:Class>
     
 
@@ -1401,15 +1185,6 @@
     
 
 
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000039167 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000039167">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Adgrl4</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://identifiers.org/ensembl/ENSMUSG00000039316 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000039316">
@@ -1455,15 +1230,6 @@
     
 
 
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000039954 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000039954">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Stk32a</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://identifiers.org/ensembl/ENSMUSG00000040420 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000040420">
@@ -1478,15 +1244,6 @@
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000040452">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>Cdh12</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000040569 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000040569">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Slc26a7</rdfs:label>
     </owl:Class>
     
 
@@ -1608,15 +1365,6 @@
     
 
 
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000043760 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000043760">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Pkhd1</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://identifiers.org/ensembl/ENSMUSG00000044288 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000044288">
@@ -1676,15 +1424,6 @@
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000047907">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>Tshz2</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000048939 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000048939">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Atp13a5</rdfs:label>
     </owl:Class>
     
 
@@ -1779,15 +1518,6 @@
     
 
 
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000053025 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000053025">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Sv2b</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://identifiers.org/ensembl/ENSMUSG00000053368 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000053368">
@@ -1829,15 +1559,6 @@
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000056427">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>Slit3</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000056966 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000056966">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gjc3</rdfs:label>
     </owl:Class>
     
 
@@ -1896,15 +1617,6 @@
     
 
 
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000062078 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000062078">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Qk</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://identifiers.org/ensembl/ENSMUSG00000062372 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000062372">
@@ -1941,15 +1653,6 @@
     
 
 
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000064294 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000064294">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Aox3</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://identifiers.org/ensembl/ENSMUSG00000066197 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000066197">
@@ -1973,24 +1676,6 @@
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000069132">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>Nxph2</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000069378 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000069378">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Prdm6</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000070880 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000070880">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gad1</rdfs:label>
     </owl:Class>
     
 
@@ -2022,29 +1707,11 @@
     
 
 
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000078302 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000078302">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Foxd1</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://identifiers.org/ensembl/ENSMUSG00000078591 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000078591">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>Hs3st4</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000087516 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000087516">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Tbx3os1</rdfs:label>
     </owl:Class>
     
 
@@ -2076,15 +1743,6 @@
     
 
 
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000098087 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000098087">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gm17750</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://identifiers.org/ensembl/ENSMUSG00000098097 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000098097">
@@ -2103,15 +1761,6 @@
     
 
 
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000098326 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000098326">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Dlx6os1</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://identifiers.org/ensembl/ENSMUSG00000098760 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000098760">
@@ -2126,24 +1775,6 @@
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000100650">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>Gm28807</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000100832 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000100832">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gm29260</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000101389 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000101389">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Ms4a4a</rdfs:label>
     </owl:Class>
     
 
@@ -2234,15 +1865,6 @@
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000112276">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>5033421B08Rik</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://identifiers.org/ensembl/ENSMUSG00000112430 -->
-
-    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000112430">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gm30624</rdfs:label>
     </owl:Class>
     
 

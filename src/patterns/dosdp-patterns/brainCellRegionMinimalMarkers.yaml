@@ -6,6 +6,7 @@ classes:
   "animal cell": "CL:0000548"
   "Vertebrata <vertebrates>": "NCBITaxon:7742"
   "regional part of brain": "UBERON:0002616"
+  "cell": "CL:0000000"
 
 relations:
   part_of: "BFO:0000050"
@@ -48,7 +49,7 @@ logical_axioms:
      text: "'in_taxon' some %s"
      vars:
         - taxon
-#   - axiom_type: subClassOf
-#     text: "%s"
-#     vars:
-#       - gross_cell_type
+   - axiom_type: subClassOf
+     text: "%s"
+     vars:
+       - gross_cell_type
