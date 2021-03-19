@@ -107,8 +107,9 @@ def get_subtrees(dend_tree, taxonomy_config):
     subtrees = []
     for root_node in taxonomy_config['Root_nodes']:
         descendants = nx.descendants(dend_tree, root_node['Node'])
-        # subtrees exclude root node itself
-        # descendants.add(root_node['Node'])
+        # subtrees exclude root node itself, if not root and leaf at the same time
+        if len(descendants) == 0:
+            descendants.add(root_node['Node'])
         subtrees.append(descendants)
     return subtrees
 

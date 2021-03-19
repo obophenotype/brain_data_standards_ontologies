@@ -10,9 +10,14 @@ Ontology(<http://purl.obolibrary.org/obo/bdscratch/patterns/definitions.owl>
 <http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-19/patterns/definitions.owl>
 Annotation(owl:versionInfo "2021-03-19"^^xsd:string)
 
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000115>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000127>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000128>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000129>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000192>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000669>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000679>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0002453>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0011005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_1>))
@@ -20,7 +25,11 @@ Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClas
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_100>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_101>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_102>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_103>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_112>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_113>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_12>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_124>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_125>))
@@ -127,6 +136,7 @@ Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClas
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_9>))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_91>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_92>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_93>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_94>))
@@ -184,6 +194,14 @@ AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_102> <http://purl.obolibrary.org/obo/CL_0000128>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_102> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_103> (Endo primary motor cortex endothelial cell (Mus musculus))
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_103> "Adgrl4,Slco1a4 expressing endothelial cell of primary motor cortex (Mus musculus)"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_103> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Adgrl4,Slco1a4."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_103> "Endo primary motor cortex endothelial cell (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_103> <http://purl.obolibrary.org/obo/CL_0000115>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_103> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
+
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11> (Sncg Calb1_1 primary motor cortex GABAergic interneuron (Mus musculus))
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11> "Krt73,Sln,Syt6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)"^^xsd:string)
@@ -191,6 +209,30 @@ AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standard
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11> "Sncg Calb1_1 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111> (SMC primary motor cortex smooth muscle cell (Mus musculus))
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111> "Acta2 expressing smooth muscle cell of primary motor cortex (Mus musculus)"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Acta2."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111> "SMC primary motor cortex smooth muscle cell (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111> <http://purl.obolibrary.org/obo/CL_0000192>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_112> (Peri primary motor cortex pericyte cell (Mus musculus))
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_112> "Abcc9,Tbx3os1 expressing pericyte cell of primary motor cortex (Mus musculus)"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_112> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Abcc9,Tbx3os1."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_112> "Peri primary motor cortex pericyte cell (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_112> <http://purl.obolibrary.org/obo/CL_0000669>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_112> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_113> (Micro primary motor cortex microglial cell (Mus musculus))
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_113> "Hexb expressing microglial cell of primary motor cortex (Mus musculus)"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_113> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Hexb."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_113> "Micro primary motor cortex microglial cell (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_113> <http://purl.obolibrary.org/obo/CL_0000129>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_113> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_12> (Sncg Calb1_2 primary motor cortex GABAergic interneuron (Mus musculus))
 
@@ -1015,6 +1057,14 @@ AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standard
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_9> "Sncg Col14a1 primary motor cortex GABAergic interneuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_9> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_9> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
+
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_91> (OPC Pdgfra primary motor cortex oligodendrocyte precursor cell (Mus musculus))
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_91> "Pdgfra,Stk32a expressing oligodendrocyte precursor cell of primary motor cortex (Mus musculus)"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_91> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Pdgfra,Stk32a."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_91> "OPC Pdgfra primary motor cortex oligodendrocyte precursor cell (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_91> <http://purl.obolibrary.org/obo/CL_0002453>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_91> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_92> (Astro_Top2a primary motor cortex astrocyte (Mus musculus))
 

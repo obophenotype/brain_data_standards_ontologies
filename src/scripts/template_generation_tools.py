@@ -189,21 +189,20 @@ def generate_minimal_marker_template(dend_json_path, flat_marker_path, output_ma
 
     if taxonomy_config:
         subtrees = get_subtrees(dend_tree, taxonomy_config)
-        robot_class_curation_seed = {'ID': "ID",
+        robot_min_marker_seed = {'ID': "ID",
                                      'Markers': "SC 'expresses' some % SPLIT=|",
                                      'part_of': "SC 'part of' some %",
                                      'has_soma_location': "SC 'has soma location' some %"
-                                     # 'gross_cell_type': "SC %"
                                      }
-        class_template = [robot_class_curation_seed]
+        min_marker_template = [robot_min_marker_seed]
 
         for o in dend['nodes']:
-            if o['cell_set_accession'] in set.union(*subtrees) and o['cell_set_preferred_alias'] and \
-                    o['cell_set_accession'] in marker_expressions:
+            if o['cell_set_accession'] in set.union(*subtrees) and o['cell_set_preferred_alias']:
                 d = dict()
                 d['ID'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
-                d['Markers'] = EXPRESSION_SEPARATOR.join(marker_expressions[o['cell_set_accession']][EXPRESSIONS])
-                class_template.append(d)
+
+                if o['cell_set_accession'] in marker_expressions:
+                    d['Markers'] = EXPRESSION_SEPARATOR.join(marker_expressions[o['cell_set_accession']][EXPRESSIONS])
 
                 for index, subtree in enumerate(subtrees):
                     if o['cell_set_accession'] in subtree:
@@ -215,11 +214,8 @@ def generate_minimal_marker_template(dend_json_path, flat_marker_path, output_ma
                             d['part_of'] = ''
                             d['has_soma_location'] = taxonomy_config['Brain_region'][0]
 
-                # moved to dosdp patterns
-                # for index, subtree in enumerate(subtrees):
-                #     if o['cell_set_accession'] in subtree:
-                #         d['gross_cell_type'] = taxonomy_config['Root_nodes'][index]['Cell_type']
+                min_marker_template.append(d)
 
-        class_robot_template = pd.DataFrame.from_records(class_template)
+        class_robot_template = pd.DataFrame.from_records(min_marker_template)
         class_robot_template.to_csv(output_marker_path, sep="\t", index=False)
 

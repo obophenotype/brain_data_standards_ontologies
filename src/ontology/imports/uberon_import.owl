@@ -8504,7 +8504,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000956"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>cortex cerebralis</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeuroNames:39</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NeuroNames:39</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -8518,13 +8518,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000956"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>cortical plate (CTXpl)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeuroNames:39</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NeuroNames:39</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000956"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>cortical plate (areas)</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeuroNames:39</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NeuroNames:39</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000956"/>
@@ -14546,7 +14546,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000076"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <oboInOwl:source>ISBN:0781772214</oboInOwl:source>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0781772214</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001772"/>
@@ -14715,7 +14715,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003314"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <oboInOwl:source>ISBN:0781772214</oboInOwl:source>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0781772214</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001773"/>
@@ -14824,7 +14824,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002346"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <oboInOwl:source>ISBN:0781772214</oboInOwl:source>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0781772214</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001775"/>
@@ -16149,20 +16149,20 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001869"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>medial amygdalar nucleus</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeuroNames:241</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NeuroNames:241</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001869"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>nucleus amygdaloideus medialis</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeuroNames:241</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NeuroNames:241</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001869"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>nucleus medialis amygdalae</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeuroNames:241</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NeuroNames:241</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     
@@ -18924,7 +18924,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>Muscle tissue that contains fibers that are divided by transverse bands into striations.</owl:annotatedTarget>
         <oboInOwl:hasDbXref>CL:0000737</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>GOC:mtg_muscle</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
@@ -19384,7 +19384,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0011825"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <oboInOwl:source>FMA-modified</oboInOwl:source>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA-modified</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002072"/>
@@ -21128,7 +21128,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003314"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <oboInOwl:source>ISBN:0781772214</oboInOwl:source>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0781772214</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002203"/>
@@ -21802,34 +21802,34 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002298"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>accessory medullary lamina of pallidum</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>NeuroNames:236</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeuroNames:236</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002298"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>lamella pallidi incompleta</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>NeuroNames:236</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeuroNames:236</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002298"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>lamina medullaris accessoria</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>NeuroNames:236</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeuroNames:236</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002298"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>lamina medullaris incompleta pallidi</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>NeuroNames:236</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeuroNames:236</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002298"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>lamina pallidi incompleta</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>NeuroNames:236</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NeuroNames:236</oboInOwl:hasDbXref>
         <oboInOwl:hasSynonymType rdf:resource="http://purl.obolibrary.org/obo/uberon/core#LATIN"/>
     </owl:Axiom>
     <owl:Axiom>
@@ -22367,7 +22367,7 @@
         <oboInOwl:hasDbXref rdf:resource="http://tolweb.org/Chordata/2499"/>
         <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/uberon/issues/25"/>
         <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/uberon/issues/271"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0815318960</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0815318960</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0002328"/>
@@ -25931,7 +25931,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003055"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A temporary epithelium that derives from the outer layer of the ectdoerm and is shed once the inner layer differentiates to form a true epidermis.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ISBN:9780878932504</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:9780878932504</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003055"/>
@@ -26925,7 +26925,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A region of embryonic ectodermal cells that lie directly above the notochord. During neurulation, they change shape and produce an infolding of the neural plate (the neural fold) that then seals to form the neural tube[XAO]. The earliest recognizable dorsal ectodermal primordium of the central nervous system present near the end of gastrulation before infolding to form the neural keel; consists of a thickened pseudostratified epithelium[ZFA]</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Neural_plate"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:0815318960</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ISBN:0815318960</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref>OMD:neural+plate</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ZFIN:curator</oboInOwl:hasDbXref>
     </owl:Axiom>
@@ -27136,7 +27136,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003077"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>somitic mesoderm</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ISBN:9780878932504</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:9780878932504</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0003077"/>
@@ -34101,7 +34101,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004290"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <oboInOwl:source>EHDAA2-abduced</oboInOwl:source>
+        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EHDAA2-abduced</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004016"/>
@@ -34176,7 +34176,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004022"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0034706"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBIBook:NBK10047</oboInOwl:source>
+        <oboInOwl:source>NCBIBook:NBK10047</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004022"/>
@@ -34195,13 +34195,13 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004022"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>germinal neuroepithelium</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBIBook:NBK10047</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCBIBook:NBK10047</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004022"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>original neural tube</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBIBook:NBK10047</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCBIBook:NBK10047</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -34391,7 +34391,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004060"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0034706"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBIBook:NBK10047</oboInOwl:source>
+        <oboInOwl:source>NCBIBook:NBK10047</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004060"/>
@@ -34402,7 +34402,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004022"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBIBook:NBK10047</oboInOwl:source>
+        <oboInOwl:source>NCBIBook:NBK10047</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004060"/>
@@ -34421,19 +34421,19 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004060"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
         <owl:annotatedTarget>ependymal layer</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBIBook:NBK10047</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCBIBook:NBK10047</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004060"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>neural tube ependymal layer</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBIBook:NBK10047</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCBIBook:NBK10047</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004060"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
         <owl:annotatedTarget>neural tube ventricular germinal zone</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBIBook:NBK10047</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCBIBook:NBK10047</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004060"/>
@@ -34495,7 +34495,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004061"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/UBERON_0034707"/>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBIBook:NBK10047</oboInOwl:source>
+        <oboInOwl:source>NCBIBook:NBK10047</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004061"/>
@@ -34507,7 +34507,7 @@
             </owl:Restriction>
         </owl:annotatedTarget>
         <oboInOwl:notes>by division</oboInOwl:notes>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBIBook:NBK10047</oboInOwl:source>
+        <oboInOwl:source>NCBIBook:NBK10047</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004061"/>
@@ -40283,7 +40283,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0004872"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>splanchnic mesoderm</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>ISBN:9780878932504</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN:9780878932504</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -42126,7 +42126,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001950"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <oboInOwl:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCBIBook:NBK10047</oboInOwl:source>
+        <oboInOwl:source>NCBIBook:NBK10047</oboInOwl:source>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0005343"/>
@@ -48272,7 +48272,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A transient embryonic complex that comprises the pharyngeal arches, bulges of tissues of mesoderm and neural crest derivation through which pass nerves and pharyngeal arch arteries. The arches are separated internally by pharyngeal pouches, evaginations of foregut endoderm, and externally by pharyngeal clefts, invaginations of surface ectoderm. The development of the system ends when the stucture it contributes to are forming, which may include (depending on species) the thymus, thyroid, parathyroids, maxilla, mandible, aortic arch, cardiac outflow tract, external and middle ear[GO,modified].</owl:annotatedTarget>
         <oboInOwl:hasDbXref>GO:0060037</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref>GOC:dph</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GOC:dph</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008814"/>
@@ -48569,7 +48569,7 @@
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0008895"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
         <owl:annotatedTarget>visceral skeleton</owl:annotatedTarget>
-        <oboInOwl:hasDbXref>UBERONREF:0000007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERONREF:0000007</oboInOwl:hasDbXref>
     </owl:Axiom>
     
 
@@ -59065,7 +59065,7 @@
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <owl:annotatedTarget>A zone of skin that is part of the face.</owl:annotatedTarget>
         <oboInOwl:hasDbXref rdf:resource="https://github.com/obophenotype/uberon/issues/34"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:EJS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>UBERON:EJS</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_1000021"/>

@@ -94,12 +94,6 @@
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
-    
-
-
     <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
@@ -389,6 +383,12 @@
     <!-- http://identifiers.org/ensembl/ENSMUSG00000021647 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000021647"/>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000021665 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000021665"/>
     
 
 
@@ -716,6 +716,12 @@
     
 
 
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000029231 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000029231"/>
+    
+
+
     <!-- http://identifiers.org/ensembl/ENSMUSG00000029334 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000029334"/>
@@ -761,6 +767,18 @@
     <!-- http://identifiers.org/ensembl/ENSMUSG00000030235 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000030235"/>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000030237 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000030237"/>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000030249 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000030249"/>
     
 
 
@@ -902,6 +920,12 @@
     
 
 
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000035783 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000035783"/>
+    
+
+
     <!-- http://identifiers.org/ensembl/ENSMUSG00000036019 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000036019"/>
@@ -980,6 +1004,12 @@
     
 
 
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000039167 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000039167"/>
+    
+
+
     <!-- http://identifiers.org/ensembl/ENSMUSG00000039316 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000039316"/>
@@ -1007,6 +1037,12 @@
     <!-- http://identifiers.org/ensembl/ENSMUSG00000039714 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000039714"/>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000039954 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000039954"/>
     
 
 
@@ -1334,6 +1370,12 @@
     
 
 
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000087516 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000087516"/>
+    
+
+
     <!-- http://identifiers.org/ensembl/ENSMUSG00000092094 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000092094"/>
@@ -1466,6 +1508,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CL_0000115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000115"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0000127 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000127"/>
@@ -1478,81 +1526,39 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CL_0000129 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000129"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000192 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000192"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_0000669 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000669"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0000679 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000679"/>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CL_0002453 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002453"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0011005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0011005"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CL_4023008 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4023008"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CL_4023010 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4023010"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CL_4023011 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4023011"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CL_4023015 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4023015"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CL_4023016 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4023016"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CL_4023022 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4023022"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CL_4023023 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4023023"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CL_4023025 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4023025"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CL_4023031 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4023031"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CL_4023034 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4023034"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CL_4023036 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4023036"/>
     
 
 
@@ -1830,6 +1836,57 @@
     
 
 
+    <!-- http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_103 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_103">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000003"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_103"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000115"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001384"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000030237"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000039167"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adgrl4,Slco1a4 expressing endothelial cell of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endo</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endothelial</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 103</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Adgrl4,Slco1a4.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell_set_preferred_alias:Endo ; original_label:Endo ; cell_set_label:RNAseq 103 ; cell_set_aligned_alias:Endothelial</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endo primary motor cortex endothelial cell (Mus musculus)</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endo</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11">
@@ -1882,6 +1939,146 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell_set_preferred_alias:Sncg Calb1_1 ; original_label:Sncg Calb1_1 ; cell_set_label:RNAseq 011 ; cell_set_aligned_alias:&apos;&apos;</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sncg Calb1_1 primary motor cortex GABAergic interneuron (Mus musculus)</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sncg Calb1_1</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000003"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_111"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000192"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001384"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000035783"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acta2 expressing smooth muscle cell of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 111</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SMC</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Acta2.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell_set_preferred_alias:SMC ; original_label:SMC ; cell_set_label:RNAseq 111 ; cell_set_aligned_alias:SMC</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SMC primary motor cortex smooth muscle cell (Mus musculus)</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SMC</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_112 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_112">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000003"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_112"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000669"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001384"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000030249"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000087516"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abcc9,Tbx3os1 expressing pericyte cell of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peri</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pericyte</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 112</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Abcc9,Tbx3os1.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell_set_preferred_alias:Peri ; original_label:Peri ; cell_set_label:RNAseq 112 ; cell_set_aligned_alias:Pericyte</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peri primary motor cortex pericyte cell (Mus musculus)</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peri</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_113 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_113">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000003"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_113"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000129"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001384"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000021665"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hexb expressing microglial cell of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Micro</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Microglia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 113</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Hexb.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell_set_preferred_alias:Micro ; original_label:Micro ; cell_set_label:RNAseq 113 ; cell_set_aligned_alias:Microglia</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Micro primary motor cortex microglial cell (Mus musculus)</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Micro</skos:prefLabel>
     </owl:Class>
     
 
@@ -1959,6 +2156,12 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001384"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
             </owl:Restriction>
@@ -1988,7 +2191,6 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -2022,12 +2224,6 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamp5 primary motor cortex GABAergic interneuron (Mus musculus)</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamp5</skos:prefLabel>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_125"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_4023011"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1101/2020.02.29.970558</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -2046,6 +2242,12 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001384"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
@@ -2127,7 +2329,6 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023015"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -2161,12 +2362,6 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sncg primary motor cortex GABAergic interneuron (Mus musculus)</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sncg</skos:prefLabel>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_133"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_4023015"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1101/2020.02.29.970558</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -2185,6 +2380,12 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001384"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
@@ -2216,7 +2417,6 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023016"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -2244,12 +2444,6 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip primary motor cortex GABAergic interneuron (Mus musculus)</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip</skos:prefLabel>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_138"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_4023016"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1101/2020.02.29.970558</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -2324,6 +2518,12 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001384"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
@@ -2407,6 +2607,12 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001384"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
             </owl:Restriction>
@@ -2436,6 +2642,12 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001384"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
@@ -2585,7 +2797,12 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023036"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001384"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
@@ -2599,12 +2816,6 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chandelier primary motor cortex GABAergic interneuron (Mus musculus)</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chandelier</skos:prefLabel>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_178"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_4023036"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1101/2020.02.29.970558</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -2679,7 +2890,12 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001384"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
@@ -2693,12 +2909,6 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IT projecting primary motor cortex glutamatergic neuron (Mus musculus)</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IT projecting</skos:prefLabel>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_182"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_4023008"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1101/2020.02.29.970558</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -2768,6 +2978,12 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001384"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
@@ -2912,6 +3128,12 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001384"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
@@ -3102,7 +3324,6 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023010"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -3141,12 +3362,6 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamp5 Egln3_1 primary motor cortex GABAergic interneuron (Mus musculus)</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamp5 Egln3_1</skos:prefLabel>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_2"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_4023010"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1101/2020.02.29.970558</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -3379,6 +3594,12 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000127"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001384"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
@@ -3710,7 +3931,6 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023025"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -3737,12 +3957,6 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Chodl primary motor cortex GABAergic interneuron (Mus musculus)</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Chodl</skos:prefLabel>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_28"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_4023025"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1101/2020.02.29.970558</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -3817,7 +4031,6 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023022"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -3850,12 +4063,6 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamp5 Egln3_2 primary motor cortex GABAergic interneuron (Mus musculus)</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamp5 Egln3_2</skos:prefLabel>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_3"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_4023022"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1101/2020.02.29.970558</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -4298,7 +4505,6 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023031"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -4331,12 +4537,6 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Hpse primary motor cortex GABAergic interneuron (Mus musculus)</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Hpse</skos:prefLabel>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_38"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_4023031"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1101/2020.02.29.970558</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -4511,7 +4711,6 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023034"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -4544,12 +4743,6 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Pvalb Calb2 primary motor cortex GABAergic interneuron (Mus musculus)</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Pvalb Calb2</skos:prefLabel>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_41"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_4023034"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1101/2020.02.29.970558</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -5822,6 +6015,12 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001384"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
             </owl:Restriction>
@@ -6812,7 +7011,6 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -6845,12 +7043,6 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamp5 Lhx6 primary motor cortex GABAergic interneuron (Mus musculus)</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamp5 Lhx6</skos:prefLabel>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_8"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.obolibrary.org/obo/CL_4023023"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI:10.1101/2020.02.29.970558</oboInOwl:hasDbXref>
-    </owl:Axiom>
     
 
 
@@ -7398,6 +7590,57 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell_set_preferred_alias:Sncg Col14a1 ; original_label:Sncg Col14a1 ; cell_set_label:RNAseq 009 ; cell_set_aligned_alias:&apos;&apos;</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sncg Col14a1 primary motor cortex GABAergic interneuron (Mus musculus)</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sncg Col14a1</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_91 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_91">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CL_0000003"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_91"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002453"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001384"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000029231"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000039954"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPC</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPC Pdgfra</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pdgfra,Stk32a expressing oligodendrocyte precursor cell of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 091</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Pdgfra,Stk32a.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell_set_preferred_alias:OPC Pdgfra ; original_label:OPC Pdgfra ; cell_set_label:RNAseq 091 ; cell_set_aligned_alias:OPC</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPC Pdgfra primary motor cortex oligodendrocyte precursor cell (Mus musculus)</rdfs:label>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPC Pdgfra</skos:prefLabel>
     </owl:Class>
     
 
