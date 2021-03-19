@@ -1404,6 +1404,21 @@
           "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_64"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/CL_0000127",
+          "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_92"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_0000127",
+          "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_93"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_0000127",
+          "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_94"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/CL_0000128",
           "pred": "is_a",
           "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_100"
@@ -1627,21 +1642,6 @@
           "obj": "http://purl.obolibrary.org/obo/CL_0000679",
           "pred": "is_a",
           "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CL_0002605",
-          "pred": "is_a",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_92"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CL_0002605",
-          "pred": "is_a",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_93"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/CL_0002605",
-          "pred": "is_a",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_94"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CL_0011005",
@@ -2601,16 +2601,6 @@
         {
           "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
           "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_1"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_10"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
           "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_100"
         },
         {
@@ -2622,481 +2612,6 @@
           "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
           "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
           "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_102"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_12"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_125"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_13"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_133"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_138"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_14"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_15"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_16"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_17"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_18"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_183"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_189"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_19"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_192"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_193"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_197"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_2"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_20"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_203"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_207"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_21"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_22"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_23"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_24"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_25"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_26"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_27"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_28"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_29"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_3"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_30"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_31"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_32"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_33"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_34"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_35"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_36"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_37"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_38"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_39"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_4"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_40"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_41"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_42"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_43"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_44"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_45"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_46"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_47"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_48"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_49"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_5"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_50"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_51"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_52"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_53"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_54"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_55"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_56"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_57"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_58"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_59"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_6"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_60"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_61"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_62"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_64"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_65"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_66"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_67"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_68"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_69"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_7"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_70"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_71"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_72"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_74"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_75"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_76"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_77"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_78"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_79"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_8"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_80"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_81"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_82"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_83"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_84"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_85"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_86"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_9"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
@@ -3147,21 +2662,6 @@
           "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
           "pred": "http://purl.obolibrary.org/obo/RO_0002100",
           "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_10"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/RO_0002100",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_100"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/RO_0002100",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_101"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/RO_0002100",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_102"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
@@ -3637,46 +3137,6 @@
           "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
           "pred": "http://purl.obolibrary.org/obo/RO_0002100",
           "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_9"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/RO_0002100",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_92"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/RO_0002100",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_93"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/RO_0002100",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_94"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/RO_0002100",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_95"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/RO_0002100",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_96"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/RO_0002100",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_97"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/RO_0002100",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_98"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/UBERON_0001384",
-          "pred": "http://purl.obolibrary.org/obo/RO_0002100",
-          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_99"
         },
         {
           "obj": "http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_117",
@@ -6012,11 +5472,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-03-18"
+            "val": "2021-03-19"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-18/bdscratch-base.json",
+        "version": "http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-19/bdscratch-base.json",
         "xrefs": []
       },
       "nodes": [

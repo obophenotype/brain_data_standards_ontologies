@@ -204,8 +204,16 @@ def generate_minimal_marker_template(dend_json_path, flat_marker_path, output_ma
                 d['ID'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
                 d['Markers'] = EXPRESSION_SEPARATOR.join(marker_expressions[o['cell_set_accession']][EXPRESSIONS])
                 class_template.append(d)
-                d['part_of'] = taxonomy_config['Brain_region'][0]
-                d['has_soma_location'] = taxonomy_config['Brain_region'][0]
+
+                for index, subtree in enumerate(subtrees):
+                    if o['cell_set_accession'] in subtree:
+                        location_rel = taxonomy_config['Root_nodes'][index]['Location_relation']
+                        if location_rel == "part_of":
+                            d['part_of'] = taxonomy_config['Brain_region'][0]
+                            d['has_soma_location'] = ''
+                        elif location_rel == "has_soma_location":
+                            d['part_of'] = ''
+                            d['has_soma_location'] = taxonomy_config['Brain_region'][0]
 
                 for index, subtree in enumerate(subtrees):
                     if o['cell_set_accession'] in subtree:

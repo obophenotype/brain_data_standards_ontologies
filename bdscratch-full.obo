@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: bdscratch/releases/2021-03-18/bdscratch-full.owl
+data-version: bdscratch/releases/2021-03-19/bdscratch-full.owl
 subsetdef: 3_STAR ""
 subsetdef: attribute_slim ""
 subsetdef: BDS_subset ""
@@ -50,7 +50,7 @@ ontology: bdscratch/bdscratch-full
 property_value: dc-description "None" xsd:string
 property_value: dc-title "Brain Data Standards Cell Ontology" xsd:string
 property_value: dcterms-license https://creativecommons.org/licenses/unspecified
-property_value: owl:versionInfo "2021-03-18" xsd:string
+property_value: owl:versionInfo "2021-03-19" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:1
@@ -86,14 +86,11 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Il33,Prr5l expressing oligodendrocyte of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Oligo Opalin_2" EXACT []
 synonym: "RNAseq 100" EXACT []
-is_a: CL:0000029 ! neuron neural crest derived
 is_a: CL:0000128 ! oligodendrocyte
-is_a: CL:0010012 ! cerebral cortex neuron
 is_a: CL:1001579 ! cerebral cortex glial cell
 is_a: CL:2000005 ! brain macroglial cell
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: part_of UBERON:0001384 ! primary motor cortex
-relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024810 ! expresses Il33
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032841 ! expresses Prr5l
 property_value: prefLabel "Oligo Opalin_2" xsd:string
@@ -106,14 +103,11 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Cacna2d4,Mobp,Nckap5 expressing oligodendrocyte of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Oligo Opalin_3" EXACT []
 synonym: "RNAseq 101" EXACT []
-is_a: CL:0000029 ! neuron neural crest derived
 is_a: CL:0000128 ! oligodendrocyte
-is_a: CL:0010012 ! cerebral cortex neuron
 is_a: CL:1001579 ! cerebral cortex glial cell
 is_a: CL:2000005 ! brain macroglial cell
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: part_of UBERON:0001384 ! primary motor cortex
-relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032517 ! expresses Mobp
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000041460 ! expresses Cacna2d4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049690 ! expresses Nckap5
@@ -127,14 +121,11 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Kank1,Prom1,Sytl2 expressing oligodendrocyte of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Oligo Opalin_4" EXACT []
 synonym: "RNAseq 102" EXACT []
-is_a: CL:0000029 ! neuron neural crest derived
 is_a: CL:0000128 ! oligodendrocyte
-is_a: CL:0010012 ! cerebral cortex neuron
 is_a: CL:1001579 ! cerebral cortex glial cell
 is_a: CL:2000005 ! brain macroglial cell
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: part_of UBERON:0001384 ! primary motor cortex
-relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029086 ! expresses Prom1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030616 ! expresses Sytl2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032702 ! expresses Kank1
@@ -189,10 +180,7 @@ synonym: "n9" EXACT []
 synonym: "Npy,Pde11a expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 001-008" EXACT []
 is_a: AllenDendClass_CS202002013:124 ! CGE/PoA primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:4023011 {xref="DOI:10.1101/2020.02.29.970558"} ! Lamp5 GABAergic cortical interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029819 ! expresses Npy
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000075270 ! expresses Pde11a
@@ -231,10 +219,7 @@ synonym: "n17" EXACT []
 synonym: "RNAseq 009-014" EXACT []
 synonym: "Sncg" EXACT []
 is_a: AllenDendClass_CS202002013:124 ! CGE/PoA primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:4023015 {xref="DOI:10.1101/2020.02.29.970558"} ! sncg GABAergic cortical interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000044288 ! expresses Cnr1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000058897 ! expresses Col25a1
@@ -260,10 +245,7 @@ synonym: "RNAseq 015-027" EXACT []
 synonym: "Vip" EXACT []
 synonym: "Vip expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 is_a: AllenDendClass_CS202002013:124 ! CGE/PoA primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:4023016 {xref="DOI:10.1101/2020.02.29.970558"} ! Vip GABAergic cortical interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019772 ! expresses Vip
 property_value: prefLabel "Vip" xsd:string
@@ -400,8 +382,6 @@ synonym: "L2/3 IT" EXACT []
 synonym: "n67" EXACT []
 synonym: "RNAseq 058-060" EXACT []
 is_a: AllenDendClass_CS202002013:182 ! IT projecting primary motor cortex glutamatergic neuron (Mus musculus)
-is_a: CL:0010012 ! cerebral cortex neuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021708 ! expresses Rasgrf2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028222 ! expresses Calb1
@@ -427,8 +407,6 @@ synonym: "L5 IT" EXACT []
 synonym: "n73" EXACT []
 synonym: "RNAseq 063-066" EXACT []
 is_a: AllenDendClass_CS202002013:182 ! IT projecting primary motor cortex glutamatergic neuron (Mus musculus)
-is_a: CL:0010012 ! cerebral cortex neuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035357 ! expresses Pdzrn3
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039037 ! expresses St6galnac5
@@ -468,8 +446,6 @@ synonym: "L6 IT" EXACT []
 synonym: "n76" EXACT []
 synonym: "RNAseq 067-068" EXACT []
 is_a: AllenDendClass_CS202002013:182 ! IT projecting primary motor cortex glutamatergic neuron (Mus musculus)
-is_a: CL:0010012 ! cerebral cortex neuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000016918 ! expresses Sulf1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052430 ! expresses Bmpr1b
@@ -486,9 +462,7 @@ synonym: "L5 ET" EXACT []
 synonym: "n77" EXACT []
 synonym: "RNAseq 070-073" EXACT []
 is_a: CL:0000679 ! glutamatergic neuron
-is_a: CL:0010012 ! cerebral cortex neuron
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022206 ! expresses Npr3
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098760 ! expresses Gm2164
@@ -504,9 +478,7 @@ synonym: "L6 CT" EXACT []
 synonym: "n81" EXACT []
 synonym: "RNAseq 074-080" EXACT []
 is_a: CL:0000679 ! glutamatergic neuron
-is_a: CL:0010012 ! cerebral cortex neuron
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029563 ! expresses Foxp2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000078591 ! expresses Hs3st4
@@ -551,9 +523,7 @@ synonym: "L6b" EXACT []
 synonym: "n87" EXACT []
 synonym: "RNAseq 081-085" EXACT []
 is_a: CL:0000679 ! glutamatergic neuron
-is_a: CL:0010012 ! cerebral cortex neuron
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019997 ! expresses Ccn2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039714 ! expresses Cplx3
@@ -569,9 +539,7 @@ synonym: "L5/6 NP" EXACT []
 synonym: "n91" EXACT []
 synonym: "RNAseq 086-088" EXACT []
 is_a: CL:0000679 ! glutamatergic neuron
-is_a: CL:0010012 ! cerebral cortex neuron
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004151 ! expresses Etv1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047907 ! expresses Tshz2
@@ -688,10 +656,7 @@ synonym: "Nos1 expressing GABAergic interneuron of primary motor cortex (Mus mus
 synonym: "RNAseq 028" EXACT []
 synonym: "Sst Chodl" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:4023025 {xref="DOI:10.1101/2020.02.29.970558"} ! Long-range projecting Sst GABAergic cortical interneuron (Mus musculus)
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029361 ! expresses Nos1
 property_value: prefLabel "Sst Chodl" xsd:string
@@ -705,10 +670,7 @@ synonym: "9530026P05Rik,Cartpt,Il1rapl2 expressing GABAergic interneuron of prim
 synonym: "RNAseq 029" EXACT []
 synonym: "Sst Penk" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021647 ! expresses Cartpt
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses Il1rapl2
@@ -738,10 +700,7 @@ synonym: "Il1rapl2,Reln expressing GABAergic interneuron of primary motor cortex
 synonym: "RNAseq 030" EXACT []
 synonym: "Sst Myh8_1" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042453 ! expresses Reln
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses Il1rapl2
@@ -756,10 +715,7 @@ synonym: "Cdh13,Pld5,Sox6 expressing GABAergic interneuron of primary motor cort
 synonym: "RNAseq 031" EXACT []
 synonym: "Sst Myh8_2" EXACT []
 is_a: AllenDendClass_CS202002013:156 ! Sst_1 primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031841 ! expresses Cdh13
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000051910 ! expresses Sox6
@@ -775,10 +731,7 @@ synonym: "Cdh9,Grm1 expressing GABAergic interneuron of primary motor cortex (Mu
 synonym: "RNAseq 032" EXACT []
 synonym: "Sst Myh8_3" EXACT []
 is_a: AllenDendClass_CS202002013:156 ! Sst_1 primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019828 ! expresses Grm1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000025370 ! expresses Cdh9
@@ -793,10 +746,7 @@ synonym: "Gm30835,Pdyn expressing GABAergic interneuron of primary motor cortex 
 synonym: "RNAseq 033" EXACT []
 synonym: "Sst Htr1a" EXACT []
 is_a: AllenDendClass_CS202002013:156 ! Sst_1 primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027400 ! expresses Pdyn
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000105068 ! expresses Gm30835
@@ -811,10 +761,7 @@ synonym: "Col19a1,Fbn2,Trpc6 expressing GABAergic interneuron of primary motor c
 synonym: "RNAseq 034" EXACT []
 synonym: "Sst Etv1" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024598 ! expresses Fbn2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026141 ! expresses Col19a1
@@ -830,10 +777,7 @@ synonym: "Edaradd,Spon1,Whrn expressing GABAergic interneuron of primary motor c
 synonym: "RNAseq 035" EXACT []
 synonym: "Sst Pvalb Etv1" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038156 ! expresses Spon1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039137 ! expresses Whrn
@@ -849,10 +793,7 @@ synonym: "Eya4,Nek7,Trpc6 expressing GABAergic interneuron of primary motor cort
 synonym: "RNAseq 036" EXACT []
 synonym: "Sst Crhr2_1" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000010461 ! expresses Eya4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026393 ! expresses Nek7
@@ -868,10 +809,7 @@ synonym: "Lypd6b,Trpc6 expressing GABAergic interneuron of primary motor cortex 
 synonym: "RNAseq 037" EXACT []
 synonym: "Sst Crhr2_2" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026765 ! expresses Lypd6b
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! expresses Trpc6
@@ -886,10 +824,7 @@ synonym: "Hpse,Rerg expressing GABAergic interneuron of primary motor cortex (Mu
 synonym: "RNAseq 038" EXACT []
 synonym: "Sst Hpse" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:4023031 {xref="DOI:10.1101/2020.02.29.970558"} ! L4 Sst GABAergic cortical interneuron (Mus musculus)
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030222 ! expresses Rerg
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035273 ! expresses Hpse
@@ -904,10 +839,7 @@ synonym: "Olfm3,Sst expressing GABAergic interneuron of primary motor cortex (Mu
 synonym: "RNAseq 039" EXACT []
 synonym: "Sst Calb2" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004366 ! expresses Sst
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027965 ! expresses Olfm3
@@ -936,10 +868,7 @@ synonym: "Gm49678,Trpc6 expressing GABAergic interneuron of primary motor cortex
 synonym: "RNAseq 040" EXACT []
 synonym: "Sst Pappa" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! expresses Trpc6
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000116610 ! expresses Gm49678
@@ -954,10 +883,7 @@ synonym: "Moxd1,Prkg2 expressing GABAergic interneuron of primary motor cortex (
 synonym: "RNAseq 041" EXACT []
 synonym: "Sst Pvalb Calb2" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:4023034 {xref="DOI:10.1101/2020.02.29.970558"} ! L2/3 Pvalb like Sst GABAergic cortical interneuron (Mus musculus)
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020000 ! expresses Moxd1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029334 ! expresses Prkg2
@@ -972,10 +898,7 @@ synonym: "Gm48893,Pard3b expressing GABAergic interneuron of primary motor corte
 synonym: "RNAseq 042" EXACT []
 synonym: "Sst C1ql3_1" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052062 ! expresses Pard3b
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111950 ! expresses Gm48893
@@ -990,10 +913,7 @@ synonym: "Brinp3,Gxylt2,Ndnf expressing GABAergic interneuron of primary motor c
 synonym: "RNAseq 043" EXACT []
 synonym: "Sst C1ql3_2" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030074 ! expresses Gxylt2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035131 ! expresses Brinp3
@@ -1009,10 +929,7 @@ synonym: "Cdh13,Tac2,Tmtc2 expressing GABAergic interneuron of primary motor cor
 synonym: "RNAseq 044" EXACT []
 synonym: "Sst Tac2" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000025400 ! expresses Tac2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031841 ! expresses Cdh13
@@ -1028,10 +945,7 @@ synonym: "RNAseq 045" EXACT []
 synonym: "Sst Th_1" EXACT []
 synonym: "St6galnac5,St8sia4,Zfpm2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022306 ! expresses Zfpm2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039037 ! expresses St6galnac5
@@ -1047,10 +961,7 @@ synonym: "Pard3b,Pnoc,Sst expressing GABAergic interneuron of primary motor cort
 synonym: "RNAseq 046" EXACT []
 synonym: "Sst Th_2" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004366 ! expresses Sst
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000045731 ! expresses Pnoc
@@ -1066,10 +977,7 @@ synonym: "Cort,Th expressing GABAergic interneuron of primary motor cortex (Mus 
 synonym: "RNAseq 047" EXACT []
 synonym: "Sst Th_3" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000000214 ! expresses Th
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028971 ! expresses Cort
@@ -1084,10 +992,7 @@ synonym: "Gabrg1,Th expressing GABAergic interneuron of primary motor cortex (Mu
 synonym: "Pvalb Gabrg1" EXACT []
 synonym: "RNAseq 048" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000000214 ! expresses Th
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000001260 ! expresses Gabrg1
@@ -1102,10 +1007,7 @@ synonym: "9330158H04Rik,Plch1,Tac1 expressing GABAergic interneuron of primary m
 synonym: "Pvalb Egfem1" EXACT []
 synonym: "RNAseq 049" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036834 ! expresses Plch1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000061762 ! expresses Tac1
@@ -1135,10 +1037,7 @@ synonym: "Fzd6,Slit2,Syt2 expressing GABAergic interneuron of primary motor cort
 synonym: "Pvalb Gpr149" EXACT []
 synonym: "RNAseq 050" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022297 ! expresses Fzd6
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026452 ! expresses Syt2
@@ -1154,10 +1053,7 @@ synonym: "Cacna2d2,Sema3e,Syt2,Tmem132d expressing GABAergic interneuron of prim
 synonym: "Pvalb Kank4" EXACT []
 synonym: "RNAseq 051" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000010066 ! expresses Cacna2d2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026452 ! expresses Syt2
@@ -1174,10 +1070,7 @@ synonym: "Cort,Gm28807,Nxph2 expressing GABAergic interneuron of primary motor c
 synonym: "Pvalb Calb1_1" EXACT []
 synonym: "RNAseq 052" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028971 ! expresses Cort
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000069132 ! expresses Nxph2
@@ -1193,10 +1086,7 @@ synonym: "Cntnap5c,Tac1,Tmem132c expressing GABAergic interneuron of primary mot
 synonym: "Pvalb Calb1_2" EXACT []
 synonym: "RNAseq 053" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000034324 ! expresses Tmem132c
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038048 ! expresses Cntnap5c
@@ -1212,10 +1102,7 @@ synonym: "Cntnap4,Gm46102 expressing GABAergic interneuron of primary motor cort
 synonym: "Pvalb Reln" EXACT []
 synonym: "RNAseq 054" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031772 ! expresses Cntnap4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111061 ! expresses Gm46102
@@ -1230,10 +1117,7 @@ synonym: "Eya4,Il1rapl2 expressing GABAergic interneuron of primary motor cortex
 synonym: "Pvalb Il1rapl2" EXACT []
 synonym: "RNAseq 055" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000010461 ! expresses Eya4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses Il1rapl2
@@ -1248,9 +1132,6 @@ synonym: "Lamb1,Nkx2-1 expressing GABAergic interneuron of primary motor cortex 
 synonym: "Pvalb Vipr2_1" EXACT []
 synonym: "RNAseq 056" EXACT []
 is_a: AllenDendClass_CS202002013:178 ! Chandelier primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000001496 ! expresses Nkx2-1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000002900 ! expresses Lamb1
@@ -1265,9 +1146,6 @@ synonym: "Cntnap5b,Unc5b expressing GABAergic interneuron of primary motor corte
 synonym: "Pvalb Vipr2_2" EXACT []
 synonym: "RNAseq 057" EXACT []
 is_a: AllenDendClass_CS202002013:178 ! Chandelier primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:0000402 ! CNS interneuron
-is_a: CL:0002609 ! neuron of cerebral cortex
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020099 ! expresses Unc5b
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000067028 ! expresses Cntnap5b
@@ -1337,8 +1215,6 @@ synonym: "Cadps2,Prr16,Rorb expressing glutamatergic neuron of primary motor cor
 synonym: "L4/5 IT_1" EXACT []
 synonym: "RNAseq 061" EXACT []
 is_a: AllenDendClass_CS202002013:188 ! L4 primary motor cortex glutamatergic neuron (Mus musculus)
-is_a: CL:0010012 ! cerebral cortex neuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000017978 ! expresses Cadps2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036192 ! expresses Rorb
@@ -1354,8 +1230,6 @@ synonym: "Col26a1,Cpne4,Il1rapl2 expressing glutamatergic neuron of primary moto
 synonym: "L4/5 IT_2" EXACT []
 synonym: "RNAseq 062" EXACT []
 is_a: AllenDendClass_CS202002013:188 ! L4 primary motor cortex glutamatergic neuron (Mus musculus)
-is_a: CL:0010012 ! cerebral cortex neuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004415 ! expresses Col26a1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032564 ! expresses Cpne4
@@ -1451,8 +1325,6 @@ synonym: "L6 IT Car3" EXACT []
 synonym: "Nr4a2,Tfap2d expressing glutamatergic neuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 069" EXACT []
 is_a: AllenDendClass_CS202002013:182 ! IT projecting primary motor cortex glutamatergic neuron (Mus musculus)
-is_a: CL:0010012 ! cerebral cortex neuron
-relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026826 ! expresses Nr4a2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042596 ! expresses Tfap2d
@@ -1764,12 +1636,9 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Astro_Top2a" EXACT []
 synonym: "Clspn,Lockd expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 092" EXACT []
-is_a: CL:0000029 ! neuron neural crest derived
 is_a: CL:0002605 ! astrocyte of the cerebral cortex
-is_a: CL:0010012 ! cerebral cortex neuron
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: part_of UBERON:0001384 ! primary motor cortex
-relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042489 ! expresses Clspn
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098318 ! expresses Lockd
 property_value: prefLabel "Astro_Top2a" xsd:string
@@ -1783,11 +1652,8 @@ synonym: "Astro Aqp4_Gfap" EXACT []
 synonym: "Myoc expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 093" EXACT []
 is_a: AllenDendClass_CS202002013:211 ! Astro_1 primary motor cortex astrocyte of the cerebral cortex (Mus musculus)
-is_a: CL:0000029 ! neuron neural crest derived
 is_a: CL:0002605 ! astrocyte of the cerebral cortex
-is_a: CL:0010012 ! cerebral cortex neuron
 relationship: part_of UBERON:0001384 ! primary motor cortex
-relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026697 ! expresses Myoc
 property_value: prefLabel "Astro Aqp4_Gfap" xsd:string
 
@@ -1800,11 +1666,8 @@ synonym: "Astro Aqp4_Slc7a10" EXACT []
 synonym: "Phkg1,Slco1c1 expressing astrocyte of the cerebral cortex of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 094" EXACT []
 is_a: AllenDendClass_CS202002013:211 ! Astro_1 primary motor cortex astrocyte of the cerebral cortex (Mus musculus)
-is_a: CL:0000029 ! neuron neural crest derived
 is_a: CL:0002605 ! astrocyte of the cerebral cortex
-is_a: CL:0010012 ! cerebral cortex neuron
 relationship: part_of UBERON:0001384 ! primary motor cortex
-relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000025537 ! expresses Phkg1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030235 ! expresses Slco1c1
 property_value: prefLabel "Astro Aqp4_Slc7a10" xsd:string
@@ -1817,14 +1680,11 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Bcas1,Tcf7l2 expressing oligodendrocyte of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Oligo Enpp6_1" EXACT []
 synonym: "RNAseq 095" EXACT []
-is_a: CL:0000029 ! neuron neural crest derived
 is_a: CL:0000128 ! oligodendrocyte
-is_a: CL:0010012 ! cerebral cortex neuron
 is_a: CL:1001579 ! cerebral cortex glial cell
 is_a: CL:2000005 ! brain macroglial cell
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: part_of UBERON:0001384 ! primary motor cortex
-relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000013523 ! expresses Bcas1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024985 ! expresses Tcf7l2
 property_value: prefLabel "Oligo Enpp6_1" xsd:string
@@ -1837,14 +1697,11 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "9630013A20Rik,Bmp4 expressing oligodendrocyte of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Oligo Enpp6_2" EXACT []
 synonym: "RNAseq 096" EXACT []
-is_a: CL:0000029 ! neuron neural crest derived
 is_a: CL:0000128 ! oligodendrocyte
-is_a: CL:0010012 ! cerebral cortex neuron
 is_a: CL:1001579 ! cerebral cortex glial cell
 is_a: CL:2000005 ! brain macroglial cell
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: part_of UBERON:0001384 ! primary motor cortex
-relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021835 ! expresses Bmp4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000115529 ! expresses 9630013A20Rik
 property_value: prefLabel "Oligo Enpp6_2" xsd:string
@@ -1857,14 +1714,11 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Cnksr3,Mpzl1,Nckap5,Tmem163 expressing oligodendrocyte of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Oligo Enpp6_3" EXACT []
 synonym: "RNAseq 097" EXACT []
-is_a: CL:0000029 ! neuron neural crest derived
 is_a: CL:0000128 ! oligodendrocyte
-is_a: CL:0010012 ! cerebral cortex neuron
 is_a: CL:1001579 ! cerebral cortex glial cell
 is_a: CL:2000005 ! brain macroglial cell
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: part_of UBERON:0001384 ! primary motor cortex
-relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000015202 ! expresses Cnksr3
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026347 ! expresses Tmem163
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026566 ! expresses Mpzl1
@@ -1879,14 +1733,11 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "9630013A20Rik,Cnksr3 expressing oligodendrocyte of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Oligo Enpp6_4" EXACT []
 synonym: "RNAseq 098" EXACT []
-is_a: CL:0000029 ! neuron neural crest derived
 is_a: CL:0000128 ! oligodendrocyte
-is_a: CL:0010012 ! cerebral cortex neuron
 is_a: CL:1001579 ! cerebral cortex glial cell
 is_a: CL:2000005 ! brain macroglial cell
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: part_of UBERON:0001384 ! primary motor cortex
-relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000015202 ! expresses Cnksr3
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000115529 ! expresses 9630013A20Rik
 property_value: prefLabel "Oligo Enpp6_4" xsd:string
@@ -1899,14 +1750,11 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "A330049N07Rik,Anln,Rftn1 expressing oligodendrocyte of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Oligo Opalin_1" EXACT []
 synonym: "RNAseq 099" EXACT []
-is_a: CL:0000029 ! neuron neural crest derived
 is_a: CL:0000128 ! oligodendrocyte
-is_a: CL:0010012 ! cerebral cortex neuron
 is_a: CL:1001579 ! cerebral cortex glial cell
 is_a: CL:2000005 ! brain macroglial cell
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: part_of UBERON:0001384 ! primary motor cortex
-relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036777 ! expresses Anln
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039316 ! expresses Rftn1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111994 ! expresses A330049N07Rik
