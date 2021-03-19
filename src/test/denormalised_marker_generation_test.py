@@ -65,7 +65,6 @@ class DenormalisedMarkerTest(unittest.TestCase):
         tree = read_dendrogram_tree(PATH_DEND_JSON)
         ancestors = nx.ancestors(tree, "CS202002013_213")
 
-        print(ancestors)
         self.assertEqual(3, len(ancestors))
         self.assertTrue("CS202002013_212" in ancestors)
         self.assertTrue("CS202002013_118" in ancestors)
@@ -232,7 +231,7 @@ class DenormalisedMarkerTest(unittest.TestCase):
         # self expressions
         self.assertTrue("ensembl:ENSMUSG00000044288" in expressions)
         self.assertTrue("ensembl:ENSMUSG00000058897" in expressions)
-        print(expressions)
+
         self.assertEqual(2, len(expressions))
 
         # 9 is child of 133

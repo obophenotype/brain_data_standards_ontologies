@@ -38,7 +38,7 @@ class DosdpPatternGenerationTest(unittest.TestCase):
         self.assertFalse(ALLEN_CLASS + "CS202002013_122" in output)  # parent
         self.assertFalse(ALLEN_CLASS + "CS202002013_120" in output)  # grand parent
 
-        self.assertFalse(ALLEN_CLASS + "CS202002013_103" in output)  # root
+        self.assertTrue(ALLEN_CLASS + "CS202002013_103" in output)  # root & leaf
         self.assertFalse(ALLEN_CLASS + "CS202002013_220" in output)  # parent
 
         self.assertFalse(ALLEN_CLASS + "CS202002013_179" in output)  # root
