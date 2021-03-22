@@ -7,14 +7,14 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/bdscratch/patterns/definitions.owl>
-<http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-19/patterns/definitions.owl>
-Annotation(owl:versionInfo "2021-03-19"^^xsd:string)
+<http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-22/patterns/definitions.owl>
+Annotation(owl:versionInfo "2021-03-22"^^xsd:string)
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000115>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000127>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000128>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000129>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000192>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000359>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000669>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000679>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0002453>))
@@ -210,12 +210,12 @@ AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11> <http://purl.obolibrary.org/obo/CL_0011005>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_11> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
-# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111> (SMC primary motor cortex smooth muscle cell (Mus musculus))
+# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111> (SMC primary motor cortex vascular associated smooth muscle cell (Mus musculus))
 
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111> "Acta2 expressing smooth muscle cell of primary motor cortex (Mus musculus)"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111> "Acta2 expressing vascular associated smooth muscle cell of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111> "The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Acta2."^^xsd:string)
-AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111> "SMC primary motor cortex smooth muscle cell (Mus musculus)"^^xsd:string)
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111> <http://purl.obolibrary.org/obo/CL_0000192>)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111> "SMC primary motor cortex vascular associated smooth muscle cell (Mus musculus)"^^xsd:string)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111> <http://purl.obolibrary.org/obo/CL_0000359>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_112> (Peri primary motor cortex pericyte cell (Mus musculus))

@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2021-03-19
+data-version: releases/2021-03-22
 subsetdef: 3_STAR ""
 subsetdef: added_for_HCA ""
 subsetdef: attribute_slim ""
@@ -53,7 +53,7 @@ ontology: bdscratch
 property_value: dc-description "None" xsd:string
 property_value: dc-title "Brain Data Standards Cell Ontology" xsd:string
 property_value: dcterms-license https://creativecommons.org/licenses/unspecified
-property_value: owl:versionInfo "2021-03-19" xsd:string
+property_value: owl:versionInfo "2021-03-22" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:1
@@ -146,8 +146,8 @@ synonym: "RNAseq 103" EXACT []
 is_a: CL:1001602 ! cerebral cortex endothelial cell
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: part_of UBERON:0001384 ! primary motor cortex
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030237 ! expresses
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039167 ! expresses
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030237 ! expresses Slco1a4
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039167 ! expresses Adgrl4
 property_value: prefLabel "Endo" xsd:string
 
 [Term]
@@ -166,17 +166,17 @@ property_value: prefLabel "Sncg Calb1_1" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:111
-name: SMC primary motor cortex smooth muscle cell (Mus musculus)
+name: SMC primary motor cortex vascular associated smooth muscle cell (Mus musculus)
 comment: cell_set_preferred_alias:SMC ; original_label:SMC ; cell_set_label:RNAseq 111 ; cell_set_aligned_alias:SMC
 comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Acta2.
-synonym: "Acta2 expressing smooth muscle cell of primary motor cortex (Mus musculus)" EXACT []
+synonym: "Acta2 expressing vascular associated smooth muscle cell of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 111" EXACT []
 synonym: "SMC" EXACT []
-is_a: CL:0000192 ! smooth muscle cell
+is_a: CL:0000359 ! vascular associated smooth muscle cell
 is_a: CL:0002319 ! neural cell
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: part_of UBERON:0001384 ! primary motor cortex
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035783 ! expresses
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035783 ! expresses Acta2
 property_value: prefLabel "SMC" xsd:string
 
 [Term]
@@ -191,8 +191,8 @@ synonym: "RNAseq 112" EXACT []
 is_a: CL:2000043 ! brain pericyte
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: part_of UBERON:0001384 ! primary motor cortex
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030249 ! expresses
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000087516 ! expresses
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030249 ! expresses Abcc9
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000087516 ! expresses Tbx3os1
 property_value: prefLabel "Peri" xsd:string
 
 [Term]
@@ -208,7 +208,7 @@ is_a: CL:0000129 ! microglial cell
 is_a: CL:1001579 ! cerebral cortex glial cell
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: part_of UBERON:0001384 ! primary motor cortex
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021665 ! expresses
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021665 ! expresses Hexb
 property_value: prefLabel "Micro" xsd:string
 
 [Term]
@@ -247,6 +247,7 @@ synonym: "n9" EXACT []
 synonym: "Npy,Pde11a expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 001-008" EXACT []
 is_a: AllenDendClass_CS202002013:124 ! CGE/PoA primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: CL:4023011 {xref="DOI:10.1101/2020.02.29.970558"} ! Lamp5 GABAergic cortical interneuron
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029819 ! expresses Npy
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000075270 ! expresses Pde11a
 property_value: prefLabel "Lamp5" xsd:string
@@ -284,6 +285,7 @@ synonym: "n17" EXACT []
 synonym: "RNAseq 009-014" EXACT []
 synonym: "Sncg" EXACT []
 is_a: AllenDendClass_CS202002013:124 ! CGE/PoA primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: CL:4023015 {xref="DOI:10.1101/2020.02.29.970558"} ! sncg GABAergic cortical interneuron
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000044288 ! expresses Cnr1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000058897 ! expresses Col25a1
 property_value: prefLabel "Sncg" xsd:string
@@ -308,6 +310,7 @@ synonym: "RNAseq 015-027" EXACT []
 synonym: "Vip" EXACT []
 synonym: "Vip expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 is_a: AllenDendClass_CS202002013:124 ! CGE/PoA primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: CL:4023016 {xref="DOI:10.1101/2020.02.29.970558"} ! Vip GABAergic cortical interneuron
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019772 ! expresses Vip
 property_value: prefLabel "Vip" xsd:string
 
@@ -407,6 +410,7 @@ synonym: "Chandelier" EXACT []
 synonym: "n62" EXACT []
 synonym: "RNAseq 056-057" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: CL:4023036 {xref="DOI:10.1101/2020.02.29.970558"} ! Chandelier Pvalb GABAergic cortical interneuron (Mus musculus)
 property_value: prefLabel "Chandelier" xsd:string
 
 [Term]
@@ -429,7 +433,7 @@ comment: cell_set_preferred_alias:IT projecting ; original_label:n66 ; cell_set_
 synonym: "IT projecting" EXACT []
 synonym: "n66" EXACT []
 synonym: "RNAseq 058-069" EXACT []
-is_a: CL:0000679 ! glutamatergic neuron
+is_a: CL:4023008 {xref="DOI:10.1101/2020.02.29.970558"} ! intratelencephalic-projecting glutamatergic cortical neuron
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 property_value: prefLabel "IT projecting" xsd:string
@@ -552,6 +556,7 @@ synonym: "Chrna7,Fbn2,Tafa1 expressing GABAergic interneuron of primary motor co
 synonym: "Lamp5 Egln3_1" EXACT []
 synonym: "RNAseq 002" EXACT []
 is_a: AllenDendClass_CS202002013:125 ! Lamp5 primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: CL:4023010 {xref="DOI:10.1101/2020.02.29.970558"} ! alpha7 Lamp5 GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024598 ! expresses Fbn2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030525 ! expresses Chrna7
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059187 ! expresses Tafa1
@@ -715,6 +720,7 @@ synonym: "Nos1 expressing GABAergic interneuron of primary motor cortex (Mus mus
 synonym: "RNAseq 028" EXACT []
 synonym: "Sst Chodl" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: CL:4023025 {xref="DOI:10.1101/2020.02.29.970558"} ! Long-range projecting Sst GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029361 ! expresses Nos1
 property_value: prefLabel "Sst Chodl" xsd:string
 
@@ -741,6 +747,7 @@ synonym: "Crim1,Zfp804b expressing GABAergic interneuron of primary motor cortex
 synonym: "Lamp5 Egln3_2" EXACT []
 synonym: "RNAseq 003" EXACT []
 is_a: AllenDendClass_CS202002013:128 ! Lamp5_5 primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: CL:4023022 {xref="DOI:10.1101/2020.02.29.970558"} ! canopy Lamp5 GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024074 ! expresses Crim1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000092094 ! expresses Zfp804b
 property_value: prefLabel "Lamp5 Egln3_2" xsd:string
@@ -862,6 +869,7 @@ synonym: "Hpse,Rerg expressing GABAergic interneuron of primary motor cortex (Mu
 synonym: "RNAseq 038" EXACT []
 synonym: "Sst Hpse" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: CL:4023031 {xref="DOI:10.1101/2020.02.29.970558"} ! L4 Sst GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030222 ! expresses Rerg
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035273 ! expresses Hpse
 property_value: prefLabel "Sst Hpse" xsd:string
@@ -915,6 +923,7 @@ synonym: "Moxd1,Prkg2 expressing GABAergic interneuron of primary motor cortex (
 synonym: "RNAseq 041" EXACT []
 synonym: "Sst Pvalb Calb2" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: CL:4023034 {xref="DOI:10.1101/2020.02.29.970558"} ! L2/3 Pvalb like Sst GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020000 ! expresses Moxd1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029334 ! expresses Prkg2
 property_value: prefLabel "Sst Pvalb Calb2" xsd:string
@@ -1488,6 +1497,7 @@ synonym: "Gm45680,Nos1 expressing GABAergic interneuron of primary motor cortex 
 synonym: "Lamp5 Lhx6" EXACT []
 synonym: "RNAseq 008" EXACT []
 is_a: AllenDendClass_CS202002013:125 ! Lamp5 primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: CL:4023023 {xref="DOI:10.1101/2020.02.29.970558"} ! L5,6 Neurogliaform Lamp5 GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029361 ! expresses Nos1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000110002 ! expresses Gm45680
 property_value: prefLabel "Lamp5 Lhx6" xsd:string
@@ -1636,8 +1646,8 @@ synonym: "RNAseq 091" EXACT []
 is_a: CL:0002453 ! oligodendrocyte precursor cell
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: part_of UBERON:0001384 ! primary motor cortex
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029231 ! expresses
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039954 ! expresses
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029231 ! expresses Pdgfra
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039954 ! expresses Stk32a
 property_value: prefLabel "OPC Pdgfra" xsd:string
 
 [Term]
@@ -4529,8 +4539,8 @@ is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
 intersection_of: CL:0000099 ! interneuron
 intersection_of: capable_of GO:0061534 ! gamma-aminobutyric acid secretion, neurotransmission
 intersection_of: RO:0002100 UBERON:0000956 ! has soma location cerebral cortex
-intersection_of: RO:0002292 PR:000015665 ! expresses somatostatin
-relationship: RO:0002292 PR:000015665 ! expresses somatostatin
+intersection_of: RO:0002292 PR:000015665 ! expresses sst
+relationship: RO:0002292 PR:000015665 ! expresses sst
 created_by: http://orcid.org/0000-0001-7258-9596
 
 [Term]
@@ -11715,9 +11725,9 @@ synonym: "mSST" EXACT PRO-short-label [PRO:DNx]
 synonym: "Smst" RELATED Gene-based [UniProtKB:P60041]
 synonym: "Sst" RELATED Gene-based [UniProtKB:P60041]
 xref: UniProtKB:P60041
-is_a: PR:000015665 ! somatostatin
+is_a: PR:000015665 ! sst
 is_a: PR:000029032 ! Mus musculus protein
-intersection_of: PR:000015665 ! somatostatin
+intersection_of: PR:000015665 ! sst
 intersection_of: only_in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: has_gene_template http://www.informatics.jax.org/marker/MGI:98326 ! Sst (mouse)
 
@@ -30993,6 +31003,11 @@ name: Cartpt
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000021665
+name: Hexb
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000021708
 name: Rasgrf2
 is_a: SO:0000704 ! gene
@@ -31263,6 +31278,11 @@ name: Cwh43
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000029231
+name: Pdgfra
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000029334
 name: Prkg2
 is_a: SO:0000704 ! gene
@@ -31300,6 +31320,16 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000030235
 name: Slco1c1
+is_a: SO:0000704 ! gene
+
+[Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000030237
+name: Slco1a4
+is_a: SO:0000704 ! gene
+
+[Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000030249
+name: Abcc9
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -31418,6 +31448,11 @@ name: Pdzrn3
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000035783
+name: Acta2
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000036019
 name: Tmtc2
 is_a: SO:0000704 ! gene
@@ -31483,6 +31518,11 @@ name: Whrn
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000039167
+name: Adgrl4
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000039316
 name: Rftn1
 is_a: SO:0000704 ! gene
@@ -31505,6 +31545,11 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000039714
 name: Cplx3
+is_a: SO:0000704 ! gene
+
+[Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000039954
+name: Stk32a
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -31775,6 +31820,11 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000078591
 name: Hs3st4
+is_a: SO:0000704 ! gene
+
+[Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000087516
+name: Tbx3os1
 is_a: SO:0000704 ! gene
 
 [Term]

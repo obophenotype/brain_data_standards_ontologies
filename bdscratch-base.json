@@ -1514,7 +1514,7 @@
           "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_113"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/CL_0000192",
+          "obj": "http://purl.obolibrary.org/obo/CL_0000359",
           "pred": "is_a",
           "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111"
         },
@@ -2067,6 +2067,61 @@
           "obj": "http://purl.obolibrary.org/obo/CL_0011005",
           "pred": "is_a",
           "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_9"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_4023008",
+          "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_182"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_4023010",
+          "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_2"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_4023011",
+          "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_125"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_4023015",
+          "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_133"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_4023016",
+          "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_138"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_4023022",
+          "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_3"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_4023023",
+          "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_8"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_4023025",
+          "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_28"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_4023031",
+          "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_38"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_4023034",
+          "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_41"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_4023036",
+          "pred": "is_a",
+          "sub": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_178"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/NCBITaxon_10090",
@@ -5652,11 +5707,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-03-19"
+            "val": "2021-03-22"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-19/bdscratch-base.json",
+        "version": "http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-22/bdscratch-base.json",
         "xrefs": []
       },
       "nodes": [
@@ -5905,7 +5960,7 @@
         },
         {
           "id": "http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111",
-          "lbl": "SMC primary motor cortex smooth muscle cell (Mus musculus)",
+          "lbl": "SMC primary motor cortex vascular associated smooth muscle cell (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
               {
@@ -5920,7 +5975,7 @@
             "synonyms": [
               {
                 "pred": "hasExactSynonym",
-                "val": "Acta2 expressing smooth muscle cell of primary motor cortex (Mus musculus)",
+                "val": "Acta2 expressing vascular associated smooth muscle cell of primary motor cortex (Mus musculus)",
                 "xrefs": []
               },
               {

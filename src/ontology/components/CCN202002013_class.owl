@@ -8,6 +8,17 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://www.semanticweb.org/brain_data_standards/components/CCN202002013_class.owl>
 
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023010>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023022>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023025>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023031>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023034>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023036>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_1>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_10>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_100>))
@@ -133,6 +144,7 @@ Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClas
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_97>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_98>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_99>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))
 
@@ -236,6 +248,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_125> "n9"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_125> "cell_set_preferred_alias:Lamp5 ; original_label:n9 ; cell_set_label:RNAseq 001-008 ; cell_set_aligned_alias:Lamp5"^^xsd:string)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_125> "Lamp5"^^xsd:string)
+SubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "DOI:10.1101/2020.02.29.970558"^^xsd:string) <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_125> <http://purl.obolibrary.org/obo/CL_4023011>)
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_128> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_128>)
 
@@ -259,6 +272,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_133> "n17"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_133> "cell_set_preferred_alias:Sncg ; original_label:n17 ; cell_set_label:RNAseq 009-014 ; cell_set_aligned_alias:Sncg"^^xsd:string)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_133> "Sncg"^^xsd:string)
+SubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "DOI:10.1101/2020.02.29.970558"^^xsd:string) <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_133> <http://purl.obolibrary.org/obo/CL_4023015>)
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_134> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_134>)
 
@@ -275,6 +289,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_138> "n22"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_138> "cell_set_preferred_alias:Vip ; original_label:n22 ; cell_set_label:RNAseq 015-027 ; cell_set_aligned_alias:Vip"^^xsd:string)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_138> "Vip"^^xsd:string)
+SubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "DOI:10.1101/2020.02.29.970558"^^xsd:string) <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_138> <http://purl.obolibrary.org/obo/CL_4023016>)
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_14> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_14>)
 
@@ -335,6 +350,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_178> "n62"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_178> "cell_set_preferred_alias:Chandelier ; original_label:n62 ; cell_set_label:RNAseq 056-057 ; cell_set_aligned_alias:Chandelier"^^xsd:string)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_178> "Chandelier"^^xsd:string)
+SubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "DOI:10.1101/2020.02.29.970558"^^xsd:string) <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_178> <http://purl.obolibrary.org/obo/CL_4023036>)
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_18> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_18>)
 
@@ -350,6 +366,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_182> "n66"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_182> "cell_set_preferred_alias:IT projecting ; original_label:n66 ; cell_set_label:RNAseq 058-069 ; cell_set_aligned_alias:IT projecting"^^xsd:string)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_182> "IT projecting"^^xsd:string)
+SubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "DOI:10.1101/2020.02.29.970558"^^xsd:string) <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_182> <http://purl.obolibrary.org/obo/CL_4023008>)
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_183> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_183>)
 
@@ -420,6 +437,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_2> "RNAseq 002"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_2> "cell_set_preferred_alias:Lamp5 Egln3_1 ; original_label:Lamp5 Egln3_1 ; cell_set_label:RNAseq 002 ; cell_set_aligned_alias:''"^^xsd:string)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_2> "Lamp5 Egln3_1"^^xsd:string)
+SubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "DOI:10.1101/2020.02.29.970558"^^xsd:string) <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_2> <http://purl.obolibrary.org/obo/CL_4023010>)
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_20> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_20>)
 
@@ -507,6 +525,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_28> "Sst Chodl"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_28> "cell_set_preferred_alias:Sst Chodl ; original_label:Sst Chodl ; cell_set_label:RNAseq 028 ; cell_set_aligned_alias:Sst Chodl"^^xsd:string)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_28> "Sst Chodl"^^xsd:string)
+SubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "DOI:10.1101/2020.02.29.970558"^^xsd:string) <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_28> <http://purl.obolibrary.org/obo/CL_4023025>)
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_29> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_29>)
 
@@ -521,6 +540,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_3> "RNAseq 003"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_3> "cell_set_preferred_alias:Lamp5 Egln3_2 ; original_label:Lamp5 Egln3_2 ; cell_set_label:RNAseq 003 ; cell_set_aligned_alias:''"^^xsd:string)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_3> "Lamp5 Egln3_2"^^xsd:string)
+SubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "DOI:10.1101/2020.02.29.970558"^^xsd:string) <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_3> <http://purl.obolibrary.org/obo/CL_4023022>)
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_30> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_30>)
 
@@ -584,6 +604,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_38> "Sst Hpse"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_38> "cell_set_preferred_alias:Sst Hpse ; original_label:Sst Hpse ; cell_set_label:RNAseq 038 ; cell_set_aligned_alias:''"^^xsd:string)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_38> "Sst Hpse"^^xsd:string)
+SubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "DOI:10.1101/2020.02.29.970558"^^xsd:string) <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_38> <http://purl.obolibrary.org/obo/CL_4023031>)
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_39> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_39>)
 
@@ -612,6 +633,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_41> "Sst Pvalb Calb2"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_41> "cell_set_preferred_alias:Sst Pvalb Calb2 ; original_label:Sst Pvalb Calb2 ; cell_set_label:RNAseq 041 ; cell_set_aligned_alias:''"^^xsd:string)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_41> "Sst Pvalb Calb2"^^xsd:string)
+SubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "DOI:10.1101/2020.02.29.970558"^^xsd:string) <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_41> <http://purl.obolibrary.org/obo/CL_4023034>)
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_42> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_42>)
 
@@ -910,6 +932,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_8> "RNAseq 008"^^xsd:string)
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_8> "cell_set_preferred_alias:Lamp5 Lhx6 ; original_label:Lamp5 Lhx6 ; cell_set_label:RNAseq 008 ; cell_set_aligned_alias:Lamp5 Lhx6"^^xsd:string)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_8> "Lamp5 Lhx6"^^xsd:string)
+SubClassOf(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "DOI:10.1101/2020.02.29.970558"^^xsd:string) <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_8> <http://purl.obolibrary.org/obo/CL_4023023>)
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_80> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_80>)
 

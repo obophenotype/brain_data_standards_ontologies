@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: bdscratch/releases/2021-03-19/bdscratch-base.owl
+data-version: bdscratch/releases/2021-03-22/bdscratch-base.owl
 ontology: bdscratch/bdscratch-base
 property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Brain Data Standards Cell Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
-property_value: owl:versionInfo "2021-03-19" xsd:string
+property_value: owl:versionInfo "2021-03-22" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:1
@@ -118,13 +118,13 @@ property_value: prefLabel "Sncg Calb1_1" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:111
-name: SMC primary motor cortex smooth muscle cell (Mus musculus)
+name: SMC primary motor cortex vascular associated smooth muscle cell (Mus musculus)
 comment: cell_set_preferred_alias:SMC ; original_label:SMC ; cell_set_label:RNAseq 111 ; cell_set_aligned_alias:SMC
 comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Acta2.
-synonym: "Acta2 expressing smooth muscle cell of primary motor cortex (Mus musculus)" EXACT []
+synonym: "Acta2 expressing vascular associated smooth muscle cell of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 111" EXACT []
 synonym: "SMC" EXACT []
-is_a: CL:0000192
+is_a: CL:0000359
 relationship: BFO:0000050 UBERON:0001384
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035783 ! expresses
@@ -199,6 +199,7 @@ synonym: "n9" EXACT []
 synonym: "Npy,Pde11a expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 001-008" EXACT []
 is_a: CL:0011005
+is_a: CL:4023011 {xref="DOI:10.1101/2020.02.29.970558"}
 relationship: RO:0002100 UBERON:0001384 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029819 ! expresses
@@ -242,6 +243,7 @@ synonym: "n17" EXACT []
 synonym: "RNAseq 009-014" EXACT []
 synonym: "Sncg" EXACT []
 is_a: CL:0011005
+is_a: CL:4023015 {xref="DOI:10.1101/2020.02.29.970558"}
 relationship: RO:0002100 UBERON:0001384 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000044288 ! expresses
@@ -270,6 +272,7 @@ synonym: "RNAseq 015-027" EXACT []
 synonym: "Vip" EXACT []
 synonym: "Vip expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 is_a: CL:0011005
+is_a: CL:4023016 {xref="DOI:10.1101/2020.02.29.970558"}
 relationship: RO:0002100 UBERON:0001384 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019772 ! expresses
@@ -383,6 +386,7 @@ synonym: "Chandelier" EXACT []
 synonym: "n62" EXACT []
 synonym: "RNAseq 056-057" EXACT []
 is_a: CL:0011005
+is_a: CL:4023036 {xref="DOI:10.1101/2020.02.29.970558"}
 relationship: RO:0002100 UBERON:0001384 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 property_value: prefLabel "Chandelier" xsd:string
@@ -411,6 +415,7 @@ synonym: "IT projecting" EXACT []
 synonym: "n66" EXACT []
 synonym: "RNAseq 058-069" EXACT []
 is_a: CL:0000679
+is_a: CL:4023008 {xref="DOI:10.1101/2020.02.29.970558"}
 relationship: RO:0002100 UBERON:0001384 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 property_value: prefLabel "IT projecting" xsd:string
@@ -546,6 +551,7 @@ synonym: "Chrna7,Fbn2,Tafa1 expressing GABAergic interneuron of primary motor co
 synonym: "Lamp5 Egln3_1" EXACT []
 synonym: "RNAseq 002" EXACT []
 is_a: CL:0011005
+is_a: CL:4023010 {xref="DOI:10.1101/2020.02.29.970558"}
 relationship: RO:0002100 UBERON:0001384 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024598 ! expresses
@@ -728,6 +734,7 @@ synonym: "Nos1 expressing GABAergic interneuron of primary motor cortex (Mus mus
 synonym: "RNAseq 028" EXACT []
 synonym: "Sst Chodl" EXACT []
 is_a: CL:0011005
+is_a: CL:4023025 {xref="DOI:10.1101/2020.02.29.970558"}
 relationship: RO:0002100 UBERON:0001384 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029361 ! expresses
@@ -758,6 +765,7 @@ synonym: "Crim1,Zfp804b expressing GABAergic interneuron of primary motor cortex
 synonym: "Lamp5 Egln3_2" EXACT []
 synonym: "RNAseq 003" EXACT []
 is_a: CL:0011005
+is_a: CL:4023022 {xref="DOI:10.1101/2020.02.29.970558"}
 relationship: RO:0002100 UBERON:0001384 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024074 ! expresses
@@ -897,6 +905,7 @@ synonym: "Hpse,Rerg expressing GABAergic interneuron of primary motor cortex (Mu
 synonym: "RNAseq 038" EXACT []
 synonym: "Sst Hpse" EXACT []
 is_a: CL:0011005
+is_a: CL:4023031 {xref="DOI:10.1101/2020.02.29.970558"}
 relationship: RO:0002100 UBERON:0001384 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030222 ! expresses
@@ -958,6 +967,7 @@ synonym: "Moxd1,Prkg2 expressing GABAergic interneuron of primary motor cortex (
 synonym: "RNAseq 041" EXACT []
 synonym: "Sst Pvalb Calb2" EXACT []
 is_a: CL:0011005
+is_a: CL:4023034 {xref="DOI:10.1101/2020.02.29.970558"}
 relationship: RO:0002100 UBERON:0001384 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020000 ! expresses
@@ -1623,6 +1633,7 @@ synonym: "Gm45680,Nos1 expressing GABAergic interneuron of primary motor cortex 
 synonym: "Lamp5 Lhx6" EXACT []
 synonym: "RNAseq 008" EXACT []
 is_a: CL:0011005
+is_a: CL:4023023 {xref="DOI:10.1101/2020.02.29.970558"}
 relationship: RO:0002100 UBERON:0001384 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029361 ! expresses
