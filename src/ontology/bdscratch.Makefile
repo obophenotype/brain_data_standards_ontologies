@@ -68,3 +68,13 @@ components/%_minimal_markers.owl: ../templates/%_minimal_markers.tsv bdscratch-e
     		annotate --ontology-iri ${BDS_BASE}$@ \
     		convert --format ofn --output $@
 
+$(ONT)-relax.owl: $(ONT)-full.owl
+	$(ROBOT) relax  --input $< --output $@
+
+$(ONT)-relax.obo: $(ONT)-relax.owl
+	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $@ && rm $@.tmp.obo
+
+$(ONT)-relax.json: $(ONT)-relax.owl
+	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		convert --check false -f json -o $@.tmp.json &&\
+	jq -S 'walk(if type == "array" then sort else . end)' $@.tmp.json > $@ && rm $@.tmp.json

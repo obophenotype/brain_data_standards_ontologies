@@ -50,7 +50,7 @@ PATTERN_RELEASE_FILES=       $(PATTERNDIR)/definitions.owl $(PATTERNDIR)/pattern
 
 FORMATS = $(sort  owl obo json owl)
 FORMATS_INCL_TSV = $(sort $(FORMAT) tsv)
-RELEASE_ARTEFACTS = $(sort  base simple-non-classified full simple base full)
+RELEASE_ARTEFACTS = $(sort  base simple-non-classified full simple base full relax)
 
 # ----------------------------------------
 # Top-level targets
