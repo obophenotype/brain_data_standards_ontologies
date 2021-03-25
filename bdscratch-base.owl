@@ -1685,6 +1685,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000027168"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamp5 Pax6</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pax6,Pip5k1b expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 001</oboInOwl:hasExactSynonym>
@@ -1735,6 +1741,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000048967"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_10"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 010</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slc17a8,Yjefn3 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sncg Slc17a8</oboInOwl:hasExactSynonym>
@@ -1783,6 +1795,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000032841"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_100"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Il33,Prr5l expressing oligodendrocyte of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -1841,6 +1859,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000049690"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_101"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cacna2d4,Mobp,Nckap5 expressing oligodendrocyte of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oligo Opalin_3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 101</oboInOwl:hasExactSynonym>
@@ -1897,6 +1921,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000032702"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_102"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kank1,Prom1,Sytl2 expressing oligodendrocyte of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oligo Opalin_4</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 102</oboInOwl:hasExactSynonym>
@@ -1945,6 +1975,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000039167"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_103"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adgrl4,Slco1a4 expressing endothelial cell of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -2004,6 +2040,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000063661"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_11"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Krt73,Sln,Syt6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 011</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sncg Calb1_1</oboInOwl:hasExactSynonym>
@@ -2046,6 +2088,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000035783"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_111"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acta2 expressing vascular associated smooth muscle cell of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -2098,6 +2146,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000087516"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_112"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abcc9,Tbx3os1 expressing pericyte cell of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peri</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pericyte</oboInOwl:hasExactSynonym>
@@ -2141,6 +2195,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000021665"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_113"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hexb expressing microglial cell of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -2200,6 +2260,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000028222"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_12"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calb1,Epb41l4a,Syt6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 012</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sncg Calb1_2</oboInOwl:hasExactSynonym>
@@ -2236,6 +2302,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CGE/PoA</oboInOwl:hasExactSynonym>
@@ -2288,6 +2360,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000075270"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_125"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamp5</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Npy,Pde11a expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 001-008</oboInOwl:hasExactSynonym>
@@ -2331,6 +2409,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_128"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamp5_5</oboInOwl:hasExactSynonym>
@@ -2380,6 +2464,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000029101"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_13"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Npy2r,Rgs12 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -2433,6 +2523,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000058897"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_133"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cnr1,Col25a1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 009-014</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sncg</oboInOwl:hasExactSynonym>
@@ -2478,6 +2574,12 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_134"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 009-010</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sncg_2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n18</oboInOwl:hasExactSynonym>
@@ -2520,6 +2622,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000019772"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_138"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 015-027</oboInOwl:hasExactSynonym>
@@ -2585,6 +2693,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000049796"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_14"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crh,Nectin3,Unc5b expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 014</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip Sncg</oboInOwl:hasExactSynonym>
@@ -2621,6 +2735,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_149"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 026-027</oboInOwl:hasExactSynonym>
@@ -2672,6 +2792,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000027996"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_15"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 015</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rgs16,Sfrp2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip Serpinf1_1</oboInOwl:hasExactSynonym>
@@ -2710,6 +2836,12 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_150"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MGE</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 028-057</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">n34</oboInOwl:hasExactSynonym>
@@ -2745,6 +2877,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_156"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 031-033</oboInOwl:hasExactSynonym>
@@ -2800,6 +2938,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000038718"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_16"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ccn3,Col14a1,Pbx3 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -2864,6 +3008,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000040624"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_17"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ccn3,Enpp2,Homer2,Plekhg1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 017</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip Serpinf1_3</oboInOwl:hasExactSynonym>
@@ -2901,6 +3051,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_178"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chandelier</oboInOwl:hasExactSynonym>
@@ -2964,6 +3120,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000045648"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_18"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ccn3,Vip,Vwc2l expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 018</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip Htr1f</oboInOwl:hasExactSynonym>
@@ -3001,6 +3163,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_182"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IT projecting</oboInOwl:hasExactSynonym>
@@ -3058,6 +3226,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000028222"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_183"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calb1,Rasgrf2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L2/3 IT</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 058-060</oboInOwl:hasExactSynonym>
@@ -3095,6 +3269,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_188"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L4</oboInOwl:hasExactSynonym>
@@ -3150,6 +3330,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000040452"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_189"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cdh12,Pdzrn3,St6galnac5 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -3209,6 +3395,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000041741"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_19"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pbx3,Pde3a,Vip expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 019</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip Gpc3</oboInOwl:hasExactSynonym>
@@ -3245,6 +3437,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_190"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L5 IT_2</oboInOwl:hasExactSynonym>
@@ -3302,6 +3500,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000059203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_192"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bmpr1b,Il1rapl2,Sulf1 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L6 IT</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 067-068</oboInOwl:hasExactSynonym>
@@ -3353,6 +3557,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000098760"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_193"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gm2164,Npr3 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L5 ET</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 070-073</oboInOwl:hasExactSynonym>
@@ -3402,6 +3612,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000078591"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_197"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Foxp2,Hs3st4 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -3460,6 +3676,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000059187"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_2"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chrna7,Fbn2,Tafa1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -3530,6 +3752,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000049796"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_20"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bmper,Btbd11,Crh,Vip expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 020</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip C1ql1</oboInOwl:hasExactSynonym>
@@ -3578,6 +3806,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000039714"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ccn2,Cplx3 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -3631,6 +3865,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000047907"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_207"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Etv1,Tshz2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L5/6 NP</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 086-088</oboInOwl:hasExactSynonym>
@@ -3682,6 +3922,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000112276"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_21"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5033421B08Rik,Htr3a expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 021</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip Mybpc1_2</oboInOwl:hasExactSynonym>
@@ -3718,6 +3964,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_211"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Astro_1</oboInOwl:hasExactSynonym>
@@ -3767,6 +4019,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000110281"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_22"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calb2,Gm2516 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -3819,6 +4077,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000028004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_23"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chat,Npy2r expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 023</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip Chat_1</oboInOwl:hasExactSynonym>
@@ -3867,6 +4131,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000060371"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_24"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caln1,Grm8 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -3919,6 +4189,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000032017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_25"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grik4,Htr4 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 025</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip Chat_2</oboInOwl:hasExactSynonym>
@@ -3967,6 +4243,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000110468"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_26"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gm39185,Thsd7a expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -4019,6 +4301,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000049796"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_27"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crh,Thsd7b expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 027</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip Igfbp6_2</oboInOwl:hasExactSynonym>
@@ -4062,6 +4350,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000029361"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_28"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nos1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -4126,6 +4420,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000097462"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_29"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9530026P05Rik,Cartpt,Il1rapl2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 029</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Penk</oboInOwl:hasExactSynonym>
@@ -4175,6 +4475,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000092094"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_3"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crim1,Zfp804b expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -4233,6 +4539,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000059203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_30"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Il1rapl2,Reln expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 030</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Myh8_1</oboInOwl:hasExactSynonym>
@@ -4289,6 +4601,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000055214"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_31"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cdh13,Pld5,Sox6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 031</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Myh8_2</oboInOwl:hasExactSynonym>
@@ -4339,6 +4657,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000025370"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_32"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cdh9,Grm1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 032</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Myh8_3</oboInOwl:hasExactSynonym>
@@ -4387,6 +4711,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000105068"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_33"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gm30835,Pdyn expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -4445,6 +4775,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000031997"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_34"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Col19a1,Fbn2,Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 034</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Etv1</oboInOwl:hasExactSynonym>
@@ -4499,6 +4835,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000095105"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_35"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edaradd,Spon1,Whrn expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -4557,6 +4899,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000031997"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_36"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eya4,Nek7,Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 036</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Crhr2_1</oboInOwl:hasExactSynonym>
@@ -4605,6 +4953,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000031997"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_37"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lypd6b,Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -4656,6 +5010,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000035273"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_38"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hpse,Rerg expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -4714,6 +5074,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000027965"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_39"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olfm3,Sst expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 039</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Calb2</oboInOwl:hasExactSynonym>
@@ -4770,6 +5136,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000042453"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_4"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cxcl14,Ntn1,Reln expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamp5 Egln3_3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 004</oboInOwl:hasExactSynonym>
@@ -4818,6 +5190,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000116610"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_40"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gm49678,Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -4869,6 +5247,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000029334"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_41"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Moxd1,Prkg2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -4927,6 +5311,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000111950"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_42"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gm48893,Pard3b expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 042</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst C1ql3_1</oboInOwl:hasExactSynonym>
@@ -4981,6 +5371,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000049001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_43"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brinp3,Gxylt2,Ndnf expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -5039,6 +5435,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000036019"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_44"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cdh13,Tac2,Tmtc2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 044</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Tac2</oboInOwl:hasExactSynonym>
@@ -5093,6 +5495,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000040710"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_45"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 045</oboInOwl:hasExactSynonym>
@@ -5151,6 +5559,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000052062"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_46"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pard3b,Pnoc,Sst expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 046</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Th_2</oboInOwl:hasExactSynonym>
@@ -5201,6 +5615,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000028971"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_47"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cort,Th expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 047</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Th_3</oboInOwl:hasExactSynonym>
@@ -5249,6 +5669,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000001260"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_48"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gabrg1,Th expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -5307,6 +5733,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000073154"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_49"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9330158H04Rik,Plch1,Tac1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pvalb Egfem1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 049</oboInOwl:hasExactSynonym>
@@ -5363,6 +5795,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000049001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_5"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dock5,Ndnf,Ndst4 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamp5 Pdlim5_1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 005</oboInOwl:hasExactSynonym>
@@ -5417,6 +5855,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000031558"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_50"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fzd6,Slit2,Syt2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -5481,6 +5925,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000063531"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_51"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cacna2d2,Sema3e,Syt2,Tmem132d expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pvalb Kank4</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 051</oboInOwl:hasExactSynonym>
@@ -5535,6 +5985,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000100650"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_52"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cort,Gm28807,Nxph2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -5593,6 +6049,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000061762"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_53"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cntnap5c,Tac1,Tmem132c expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pvalb Calb1_2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 053</oboInOwl:hasExactSynonym>
@@ -5641,6 +6103,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000111061"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_54"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cntnap4,Gm46102 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -5693,6 +6161,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000059203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_55"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eya4,Il1rapl2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pvalb Il1rapl2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 055</oboInOwl:hasExactSynonym>
@@ -5743,6 +6217,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000002900"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_56"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamb1,Nkx2-1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pvalb Vipr2_1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 056</oboInOwl:hasExactSynonym>
@@ -5791,6 +6271,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000067028"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_57"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cntnap5b,Unc5b expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -5847,6 +6333,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000098097"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_58"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6530403H02Rik,Adamts2,Met expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -5911,6 +6403,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000062372"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_59"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ccdc3,Cux1,Meis2,Otof expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L2/3 IT_2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 059</oboInOwl:hasExactSynonym>
@@ -5959,6 +6457,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000075270"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_6"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamp5 Pdlim5_2</oboInOwl:hasExactSynonym>
@@ -6017,6 +6521,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000056427"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_60"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cux2,Slit3,Stard8 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L2/3 IT_3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 060</oboInOwl:hasExactSynonym>
@@ -6071,6 +6581,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000073565"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_61"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cadps2,Prr16,Rorb expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -6129,6 +6645,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000059203"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_62"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Col26a1,Cpne4,Il1rapl2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L4/5 IT_2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 062</oboInOwl:hasExactSynonym>
@@ -6165,6 +6687,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_63"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L5 IT_1</oboInOwl:hasExactSynonym>
@@ -6225,6 +6753,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000116610"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_64"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adamts18,Deptor,Gm49678,Man1a expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -6295,6 +6829,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000055214"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_65"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cadps2,Enpp2,Pld5,Ptprk,Rxfp1 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L5 IT_3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 065</oboInOwl:hasExactSynonym>
@@ -6349,6 +6889,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000055214"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_66"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chrm2,Cwh43,Pld5 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -6407,6 +6953,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000059857"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_67"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bmpr1b,Fst,Ntng1 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L6 IT_1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 067</oboInOwl:hasExactSynonym>
@@ -6463,6 +7015,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000052430"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_68"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bmpr1b,C1ql3,Ptpru expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L6 IT_2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 068</oboInOwl:hasExactSynonym>
@@ -6513,6 +7071,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000042596"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_69"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L6 IT Car3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nr4a2,Tfap2d expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 069</oboInOwl:hasExactSynonym>
@@ -6561,6 +7125,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000055471"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_7"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alk,Sema5a expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -6619,6 +7189,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000098760"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_70"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crym,Gm2164,Npr3 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L5 ET_1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L5 PT_1</oboInOwl:hasExactSynonym>
@@ -6674,6 +7250,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000040732"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_71"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Erg,Gpc5,Trpc7 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -6739,6 +7321,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000042453"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_72"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gpc5,Reln,Trmt9b,Trpc7 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L5 ET_3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L5 PT_3</oboInOwl:hasExactSynonym>
@@ -6788,6 +7376,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000098760"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_73"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gm2164,Npsr1 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -6847,6 +7441,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000047907"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_74"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grp,Rxfp1,Tshz2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L5/6 NP CT</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 074</oboInOwl:hasExactSynonym>
@@ -6903,6 +7503,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000066197"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_75"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acaa1b,Col23a1,Gpr139 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L6 CT Gpr139</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 075</oboInOwl:hasExactSynonym>
@@ -6957,6 +7563,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000078591"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_76"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Foxp2,Hs3st4,Zfpm2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -7021,6 +7633,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000049148"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_77"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grp,Meis2,Pdzrn4,Plcxd3 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L6 CT Grp</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 077</oboInOwl:hasExactSynonym>
@@ -7077,6 +7695,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000111765"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_78"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cdh18,Gm10635,Satb2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L6 CT Pou3f2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 078</oboInOwl:hasExactSynonym>
@@ -7125,6 +7749,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000111765"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_79"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gm10635,Ikzf2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -7176,6 +7806,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000110002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_8"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gm45680,Nos1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -7246,6 +7882,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000096972"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_80"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L6 CT Kit_2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nr4a2,Rxfp1,Tshz2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 080</oboInOwl:hasExactSynonym>
@@ -7300,6 +7942,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000052430"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_81"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bmpr1b,Ccn2,Hs3st2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -7358,6 +8006,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000039714"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_82"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cplx3,Ly6g6e,Svil expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L6b Shisa6_1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 082</oboInOwl:hasExactSynonym>
@@ -7406,6 +8060,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000026826"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_83"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L6b Shisa6_2</oboInOwl:hasExactSynonym>
@@ -7464,6 +8124,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000043556"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_84"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ccn2,Cplx3,Fbxl7 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L6b Ror1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 084</oboInOwl:hasExactSynonym>
@@ -7518,6 +8184,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000107384"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_85"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gm42557,Olfr112,Rxfp2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -7576,6 +8248,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000045648"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_86"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cyp7b1,Dkk2,Vwc2l expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L5/6 NP_1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 086</oboInOwl:hasExactSynonym>
@@ -7626,6 +8304,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000035258"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_87"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abi3bp,Slc17a8 expressing glutamatergic neuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L5/6 NP_2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 087</oboInOwl:hasExactSynonym>
@@ -7674,6 +8358,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000047907"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_88"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L5/6 NP_3</oboInOwl:hasExactSynonym>
@@ -7732,6 +8422,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000058897"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_9"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cdh6,Col25a1,Eps8 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 009</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sncg Col14a1</oboInOwl:hasExactSynonym>
@@ -7780,6 +8476,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000039954"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_91"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OPC</oboInOwl:hasExactSynonym>
@@ -7833,6 +8535,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000098318"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_92"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Astro_Top2a</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clspn,Lockd expressing astrocyte of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 092</oboInOwl:hasExactSynonym>
@@ -7875,6 +8583,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000026697"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_93"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Astro Aqp4_Gfap</oboInOwl:hasExactSynonym>
@@ -7927,6 +8641,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000030235"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_94"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Astro Aqp4_Slc7a10</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phkg1,Slco1c1 expressing astrocyte of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 094</oboInOwl:hasExactSynonym>
@@ -7977,6 +8697,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000024985"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_95"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bcas1,Tcf7l2 expressing oligodendrocyte of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oligo Enpp6_1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 095</oboInOwl:hasExactSynonym>
@@ -8025,6 +8751,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000115529"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_96"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9630013A20Rik,Bmp4 expressing oligodendrocyte of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -8089,6 +8821,12 @@
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000049690"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_97"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cnksr3,Mpzl1,Nckap5,Tmem163 expressing oligodendrocyte of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oligo Enpp6_3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 097</oboInOwl:hasExactSynonym>
@@ -8137,6 +8875,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000115529"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_98"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9630013A20Rik,Cnksr3 expressing oligodendrocyte of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -8193,6 +8937,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
                 <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000111994"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_99"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A330049N07Rik,Anln,Rftn1 expressing oligodendrocyte of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>

@@ -107,7 +107,8 @@ def generate_equivalent_class_reification_template(dend_json_path, output_filepa
     subtrees = get_subtrees(dend_tree, config_yaml)
 
     robot_class_equivalent_seed = {'ID': 'ID',
-                                   'Exemplar': "EC CL:0000003 and 'has_exemplar' value %"
+                                   'Exemplar': "EC CL:0000003 and 'has_exemplar' value %",
+                                   'Exemplar_SC': "SC 'has_exemplar' value %"
                                    }
 
     equivalent_template = [robot_class_equivalent_seed]
@@ -117,6 +118,7 @@ def generate_equivalent_class_reification_template(dend_json_path, output_filepa
             d = dict()
             d['ID'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
             d['Exemplar'] = 'AllenDend:' + o['cell_set_accession']
+            d['Exemplar_SC'] = 'AllenDend:' + o['cell_set_accession']
             equivalent_template.append(d)
 
     equivalent_robot_template = pd.DataFrame.from_records(equivalent_template)

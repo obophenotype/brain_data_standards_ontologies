@@ -4539,8 +4539,8 @@ is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
 intersection_of: CL:0000099 ! interneuron
 intersection_of: capable_of GO:0061534 ! gamma-aminobutyric acid secretion, neurotransmission
 intersection_of: RO:0002100 UBERON:0000956 ! has soma location cerebral cortex
-intersection_of: RO:0002292 PR:000015665 ! expresses sst
-relationship: RO:0002292 PR:000015665 ! expresses sst
+intersection_of: RO:0002292 PR:000015665 ! expresses somatostatin
+relationship: RO:0002292 PR:000015665 ! expresses somatostatin
 created_by: http://orcid.org/0000-0001-7258-9596
 
 [Term]
@@ -11725,9 +11725,9 @@ synonym: "mSST" EXACT PRO-short-label [PRO:DNx]
 synonym: "Smst" RELATED Gene-based [UniProtKB:P60041]
 synonym: "Sst" RELATED Gene-based [UniProtKB:P60041]
 xref: UniProtKB:P60041
-is_a: PR:000015665 ! sst
+is_a: PR:000015665 ! somatostatin
 is_a: PR:000029032 ! Mus musculus protein
-intersection_of: PR:000015665 ! sst
+intersection_of: PR:000015665 ! somatostatin
 intersection_of: only_in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: has_gene_template http://www.informatics.jax.org/marker/MGI:98326 ! Sst (mouse)
 
