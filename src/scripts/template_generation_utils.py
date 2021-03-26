@@ -1,5 +1,6 @@
 import yaml
 import os
+import csv
 import networkx as nx
 
 from marker_tools import EXPRESSIONS
@@ -114,7 +115,34 @@ def get_subtrees(dend_tree, taxonomy_config):
 
 
 def get_root_nodes(config_yaml):
+    """
+    List the root nodes defined in the given taxonomy config.
+    Args:
+        config_yaml: configuration content
+
+    Returns: list of root nodes
+
+    """
     root_nodes = []
     for root_node in config_yaml['Root_nodes']:
         root_nodes.append(root_node['Node'])
     return root_nodes
+
+
+def read_tsv(tsv_path):
+    """
+    Reads tsv file content into a dict. Key is the first column value and the value is list of row values
+    Args:
+        tsv_path: Path of the TSV file
+
+    Returns:
+        TSV content dict. Key is the first column value and the value is list of row values.
+    """
+    records = dict()
+    with open(tsv_path) as fd:
+        rd = csv.reader(fd, delimiter="\t", quotechar='"')
+        for row in rd:
+            _id = row[0]
+            records[_id] = row
+
+    return records
