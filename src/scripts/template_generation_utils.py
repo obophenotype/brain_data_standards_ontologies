@@ -139,11 +139,31 @@ def read_tsv(tsv_path):
     Returns:
         TSV content dict. Key is the first column value and the value is list of row values.
     """
+    return read_csv(tsv_path, delimiter="\t")
+
+
+def read_csv(csv_path, delimiter=","):
+    """
+    Reads tsv file content into a dict. Key is the first column value and the value is list of row values
+    Args:
+        csv_path: Path of the CSV file
+        delimiter: Value delimiter. Default is comma.
+
+    Returns:
+        CSV content dict. Key is the first column value and the value is list of row values.
+    """
     records = dict()
-    with open(tsv_path) as fd:
-        rd = csv.reader(fd, delimiter="\t", quotechar='"')
+    with open(csv_path) as fd:
+        rd = csv.reader(fd, delimiter=delimiter, quotechar='"')
         for row in rd:
             _id = row[0]
             records[_id] = row
 
     return records
+
+
+def index_dendrogram(dend):
+    dend_dict = dict()
+    for o in dend['nodes']:
+        dend_dict[o['cell_set_accession']] = o
+    return dend_dict
