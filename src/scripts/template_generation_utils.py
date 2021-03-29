@@ -130,23 +130,24 @@ def get_root_nodes(config_yaml):
     return root_nodes
 
 
-def read_tsv(tsv_path):
+def read_tsv(tsv_path, id_column=0):
     """
     Reads tsv file content into a dict. Key is the first column value and the value is list of row values
     Args:
         tsv_path: Path of the TSV file
-
+        id_column: Id column becomes the key of the dict. This column should be unique. Default is the first column.
     Returns:
         TSV content dict. Key is the first column value and the value is list of row values.
     """
-    return read_csv(tsv_path, delimiter="\t")
+    return read_csv(tsv_path, id_column=id_column, delimiter="\t")
 
 
-def read_csv(csv_path, delimiter=","):
+def read_csv(csv_path, id_column=0, delimiter=","):
     """
-    Reads tsv file content into a dict. Key is the first column value and the value is list of row values
+    Reads tsv file content into a dict. Key is the id column value and the value is list of row values
     Args:
         csv_path: Path of the CSV file
+        id_column: Id column becomes the key of the dict. This column should be unique. Default is the first column.
         delimiter: Value delimiter. Default is comma.
 
     Returns:
@@ -156,7 +157,7 @@ def read_csv(csv_path, delimiter=","):
     with open(csv_path) as fd:
         rd = csv.reader(fd, delimiter=delimiter, quotechar='"')
         for row in rd:
-            _id = row[0]
+            _id = row[id_column]
             records[_id] = row
 
     return records

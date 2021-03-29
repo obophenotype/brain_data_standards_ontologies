@@ -241,7 +241,7 @@ def generate_nomenclature_table_template(dend_json_path, output_filepath):
     taxonomy_config = read_taxonomy_config(taxon)
 
     if taxonomy_config and os.path.exists(nomenclature_path):
-        nomenclature_records = read_csv(nomenclature_path)
+        nomenclature_records = read_csv(nomenclature_path, id_column=cell_set_accession)
 
         nomenclature_table_seed = {'ID': "ID",
                                    'Classification': "SC %"
@@ -252,32 +252,20 @@ def generate_nomenclature_table_template(dend_json_path, output_filepath):
         for root in taxonomy_config['non_taxonomy_roots']:
             non_taxo_roots[root["Node"]] = root["Cell_type"]
 
-        all_children = set()
-        annotated_children = dict()
         for record in nomenclature_records:
             columns = nomenclature_records[record]
-            if columns[child_cell_set_accessions]:
-                all_children.update(columns[child_cell_set_accessions].split("|"))
             if columns[cell_set_accession] in non_taxo_roots:
                 if columns[cell_set_accession] in dend_nodes:
-                    log.error("Node {} exists both in dendrogram and nomenclature of the taxonomy: {}."
-                              .format(columns[cell_set_accession], taxon))
-                    # raise Exception("Node {} exists both in dendrogram and nomenclature of the taxonomy: {}."
-                    #                 .format(child, taxon))
+                    raise Exception("Node {} exists both in dendrogram and nomenclature of the taxonomy: {}."
+                                    .format(child, taxon))
                 children = columns[child_cell_set_accessions].split("|")
                 for child in children:
-                    if child in annotated_children:
-                        log.error("Child {} has multiple classifications: {} and {}".format(child,
-                                  annotated_children[child], non_taxo_roots[columns[cell_set_accession]]))
-                    if child not in non_taxo_roots:
+                    # child of root with cell_set_preferred_alias
+                    if child not in non_taxo_roots and nomenclature_records[child][0]:
                         d = dict()
                         d['ID'] = ALLEN_DEND_CLASS + child
                         d['Classification'] = non_taxo_roots[columns[cell_set_accession]]
                         nomenclature_template.append(d)
-                        annotated_children[child] = non_taxo_roots[columns[cell_set_accession]]
-
-        for not_annotated in all_children.difference(annotated_children.keys()):
-            log.error("Not annotated nomenclature child: " + not_annotated)
 
         class_robot_template = pd.DataFrame.from_records(nomenclature_template)
         class_robot_template.to_csv(output_filepath, sep="\t", index=False)
