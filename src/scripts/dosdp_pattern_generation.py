@@ -1,6 +1,7 @@
 import pandas as pd
 import os
 import csv
+import argparse
 
 from dendrogram_tools import dend_json_2_nodes_n_edges
 from template_generation_utils import read_taxonomy_config, get_subtrees
@@ -138,5 +139,20 @@ def read_ensmusg():
     return ensmusg
 
 
-# generate_pattern_table_denormalised_markers("../dendrograms/CCN202002013.json", "../patterns/data/default/brainCellRegionMarker.tsv")
-generate_pattern_table_reification("../dendrograms/CCN202002013.json", "../patterns/data/default/brainCellRegionMinimalMarkers.tsv")
+parser = argparse.ArgumentParser(description='Generates DOSDP templates based on the denormalized marker '
+                                             'or reification (individuals) based approaches.')
+parser.add_argument('input', help="Path to input JSON file")
+parser.add_argument('-dm', action='store_true', help="Generate DOSDP tables for denormalized markers approach.")
+parser.add_argument('-re', action='store_true', help="Generate DOSDP tables for "
+                                                     "reification (individuals) based approach.")
+
+args = parser.parse_args()
+
+if args.dm:
+    print(args.input)
+    generate_pattern_table_reification(args.input, "../patterns/data/default/brainCellRegionMinimalMarkers.tsv")
+else:
+    print(args.input)
+    generate_pattern_table_denormalised_markers(args.input, "../patterns/data/default/brainCellRegionMarker.tsv")
+
+
