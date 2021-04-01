@@ -76,7 +76,10 @@ def generate_curated_class_template(dend_json_path, output_filepath):
                                      'Comment': 'A rdfs:comment',
                                      'Classification': 'SC %',
                                      'Classification_comment': ">A rdfs:comment",
-                                     'Classification_pub': ">A oboInOwl:hasDbXref SPLIT=|"
+                                     'Classification_pub': ">A oboInOwl:hasDbXref SPLIT=|",
+                                     'Expresses': "SC 'expresses' some % SPLIT=",
+                                     'Expresses_comment': ">A rdfs:comment",
+                                     'Expresses_pub': ">A oboInOwl:hasDbXref SPLIT=|"
                                      }
         class_template = [robot_class_curation_seed]
 
