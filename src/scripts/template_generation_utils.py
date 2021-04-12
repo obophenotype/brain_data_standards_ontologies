@@ -1,6 +1,9 @@
 import yaml
 import os
 import networkx as nx
+import json
+
+from dendrogram_tools import tree_recurse
 
 
 TAXONOMY_DETAILS_YAML = os.path.join(os.path.dirname(os.path.realpath(__file__)),
@@ -92,6 +95,48 @@ def get_max_marker_count(marker_expressions):
             max_count = expression_count
 
     return max_count
+
+
+def read_dendrogram_tree(dend_json_path):
+    """
+    Reads the dendrogram file and builds a tree representation using the edges.
+    Args:
+        dend_json_path: Path of the dendrogram file
+
+    Returns: networkx directed graph that represents the taxonomy
+
+    """
+    with open(dend_json_path, 'r') as f:
+        j = json.loads(f.read())
+
+    out = {}
+    tree_recurse(j, out)
+
+    tree = nx.DiGraph()
+    for edge in out['edges']:
+        tree.add_edge(edge[1], edge[0])
+
+    return tree
+
+
+def get_dend_subtrees(dend_json_path):
+    """
+    Reads both the dendrogram and the elated config file and returns subtrees defined in the config file through
+    utilizing Root_nodes.
+    Args:
+        dend_json_path: path to the dendrogram file.
+
+    Returns: list of subtree nodes list
+
+    """
+    dend_tree = read_dendrogram_tree(dend_json_path)
+
+    path_parts = dend_json_path.split(os.path.sep)
+    taxon = path_parts[len(path_parts) - 1].split(".")[0]
+    config_yaml = read_taxonomy_config(taxon)
+
+    subtrees = get_subtrees(dend_tree, config_yaml)
+    return subtrees
 
 
 def get_subtrees(dend_tree, taxonomy_config):

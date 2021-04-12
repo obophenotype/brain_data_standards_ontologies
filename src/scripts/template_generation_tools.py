@@ -4,8 +4,8 @@ import os
 
 from dendrogram_tools import dend_json_2_nodes_n_edges
 from template_generation_utils import get_synonyms_from_taxonomy, get_synonym_pairs, get_root_nodes, \
-    get_max_marker_count, read_taxonomy_config, get_subtrees
-from marker_tools import read_dendrogram_tree, read_marker_file, extend_expressions, EXPRESSIONS, EXPRESSION_SEPARATOR
+    get_max_marker_count, read_taxonomy_config, get_subtrees, read_dendrogram_tree, get_dend_subtrees
+from marker_tools import read_marker_file, extend_expressions, EXPRESSIONS, EXPRESSION_SEPARATOR
 
 # TODO - refactor with generic template generation function
 
@@ -27,7 +27,8 @@ def generate_ind_template(dend_json_path, output_filepath):
                            'cell_set_additional_aliases': "A n2o:cell_set_additional_aliases SPLIT=|",
                            'cell_set_alias_assignee': "A n2o:cell_set_alias_assignee SPLIT=|",
                            'cell_set_alias_citation': "A n2o:cell_set_alias_citation SPLIT=|",
-                           'Metadata': "A n2o:node_metadata"
+                           'Metadata': "A n2o:node_metadata",
+                           'Exemplar_of': "TI exemplar_of some %"
                            }
     dl = [robot_template_seed]
 
@@ -50,6 +51,10 @@ def generate_ind_template(dend_json_path, output_filepath):
                            'cell_set_additional_aliases', 'cell_set_alias_assignee', 'cell_set_alias_citation']
         for prop in meta_properties:
             d[prop] = o[prop] if prop in o.keys() else ''
+
+        if o['cell_set_accession'] in set().union(*get_dend_subtrees(dend_json_path)) and o['cell_set_preferred_alias']:
+            d['Exemplar_of'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + \
+                               o['cell_set_accession']
 
         # There should only be one!
         dl.append(d)

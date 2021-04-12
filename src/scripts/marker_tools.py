@@ -1,12 +1,10 @@
-from dendrogram_tools import tree_recurse
-import json
 import csv
 import networkx as nx
 import pandas as pd
 import logging
 import os
 
-from template_generation_utils import get_root_nodes, read_taxonomy_config
+from template_generation_utils import get_root_nodes, read_taxonomy_config, read_dendrogram_tree
 
 CLUSTER = "cluster"
 EXPRESSIONS = "expressions"
@@ -55,28 +53,6 @@ def generate_denormalised_marker(dend_json_path, flat_marker_path, output_marker
     marker_expressions = read_marker_file(flat_marker_path)
     marker_extended_expressions = extend_expressions(tree, marker_expressions, root_terms)
     generate_marker_table(marker_extended_expressions, output_marker_path)
-
-
-def read_dendrogram_tree(dend_json_path):
-    """
-    Reads the dendrogram file and builds a tree representation using the edges.
-    Args:
-        dend_json_path: Path of the dendrogram file
-
-    Returns: networkx directed graph that represents the taxonomy
-
-    """
-    with open(dend_json_path, 'r') as f:
-        j = json.loads(f.read())
-
-    out = {}
-    tree_recurse(j, out)
-
-    tree = nx.DiGraph()
-    for edge in out['edges']:
-        tree.add_edge(edge[1], edge[0])
-
-    return tree
 
 
 def read_marker_file(flat_marker_path):

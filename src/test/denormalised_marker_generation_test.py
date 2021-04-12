@@ -3,7 +3,8 @@ import networkx as nx
 import os
 # import matplotlib.pyplot as plt
 from networkx.drawing.nx_agraph import graphviz_layout
-from marker_tools import generate_denormalised_marker, read_dendrogram_tree, read_marker_file, \
+from template_generation_utils import read_dendrogram_tree
+from marker_tools import generate_denormalised_marker, read_marker_file, \
     extend_expressions
 
 
