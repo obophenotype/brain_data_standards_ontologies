@@ -53,6 +53,7 @@ Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000022371>))
 Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000022419>))
 Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000022425>))
 Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000022656>))
+Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000022860>))
 Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000024074>))
 Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000024211>))
 Declaration(Class(<http://identifiers.org/ensembl/ENSMUSG00000024236>))
@@ -639,6 +640,7 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_28> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_28>)
 
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_28> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>))
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_28> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000022860>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_28> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://identifiers.org/ensembl/ENSMUSG00000029361>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_29> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_29>)

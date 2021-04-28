@@ -1,13 +1,18 @@
 import pandas as pd
 import json
 import os
+import logging
 
 from dendrogram_tools import dend_json_2_nodes_n_edges
 from template_generation_utils import get_synonyms_from_taxonomy, get_synonym_pairs, get_root_nodes, \
-    get_max_marker_count, read_taxonomy_config, get_subtrees
+    get_max_marker_count, read_taxonomy_config, get_subtrees, index_dendrogram, read_csv
 from marker_tools import read_dendrogram_tree, read_marker_file, extend_expressions, EXPRESSIONS, EXPRESSION_SEPARATOR
 
 # TODO - refactor with generic template generation function
+
+log = logging.getLogger(__name__)
+
+ALLEN_DEND_CLASS = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_'
 
 
 def generate_ind_template(dend_json_path, output_filepath):
@@ -220,4 +225,49 @@ def generate_minimal_marker_template(dend_json_path, flat_marker_path, output_ma
 
         class_robot_template = pd.DataFrame.from_records(min_marker_template)
         class_robot_template.to_csv(output_marker_path, sep="\t", index=False)
+
+
+def generate_nomenclature_table_template(dend_json_path, output_filepath):
+    dend = dend_json_2_nodes_n_edges(dend_json_path)
+    dend_nodes = index_dendrogram(dend)
+
+    path_parts = dend_json_path.split(os.path.sep)
+    taxon = path_parts[len(path_parts) - 1].split(".")[0]
+
+    cell_set_accession = 3
+    child_cell_set_accessions = 13
+    nomenclature_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), '../dendrograms/nomenclature_table_{}.csv'.format(taxon))
+
+    taxonomy_config = read_taxonomy_config(taxon)
+
+    if taxonomy_config and os.path.exists(nomenclature_path):
+        nomenclature_records = read_csv(nomenclature_path, id_column=cell_set_accession)
+
+        nomenclature_table_seed = {'ID': "ID",
+                                   'Classification': "SC %"
+                                   }
+        nomenclature_template = [nomenclature_table_seed]
+
+        non_taxo_roots = {}
+        for root in taxonomy_config['non_taxonomy_roots']:
+            non_taxo_roots[root["Node"]] = root["Cell_type"]
+
+        for record in nomenclature_records:
+            columns = nomenclature_records[record]
+            if columns[cell_set_accession] in non_taxo_roots:
+                if columns[cell_set_accession] in dend_nodes:
+                    raise Exception("Node {} exists both in dendrogram and nomenclature of the taxonomy: {}."
+                                    .format(child, taxon))
+                children = columns[child_cell_set_accessions].split("|")
+                for child in children:
+                    # child of root with cell_set_preferred_alias
+                    if child not in non_taxo_roots and nomenclature_records[child][0]:
+                        d = dict()
+                        d['ID'] = ALLEN_DEND_CLASS + child
+                        d['Classification'] = non_taxo_roots[columns[cell_set_accession]]
+                        nomenclature_template.append(d)
+
+        class_robot_template = pd.DataFrame.from_records(nomenclature_template)
+        class_robot_template.to_csv(output_filepath, sep="\t", index=False)
+
 

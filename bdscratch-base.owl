@@ -13,12 +13,12 @@
      xmlns:helper="http://www.semanticweb.org/brain_data_standards/helper.owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bdscratch/bdscratch-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-25/bdscratch-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-29/bdscratch-base.owl"/>
         <dc:description>None</dc:description>
         <dc:title>Brain Data Standards Cell Ontology</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-25</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-29</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -473,6 +473,12 @@
     <!-- http://identifiers.org/ensembl/ENSMUSG00000022656 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000022656"/>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000022860 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000022860"/>
     
 
 
@@ -1520,6 +1526,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CL_0000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000125"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0000127 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000127"/>
@@ -1556,6 +1568,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CL_0000881 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000881"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_0002453 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0002453"/>
@@ -1565,6 +1583,12 @@
     <!-- http://purl.obolibrary.org/obo/CL_0011005 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0011005"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_4023007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4023007"/>
     
 
 
@@ -1598,6 +1622,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CL_4023017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4023017"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_4023018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4023018"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_4023022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4023022"/>
@@ -1616,6 +1652,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CL_4023027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4023027"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CL_4023031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4023031"/>
@@ -1631,6 +1673,18 @@
     <!-- http://purl.obolibrary.org/obo/CL_4023036 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4023036"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_4023044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4023044"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CL_4023045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_4023045"/>
     
 
 
@@ -1772,6 +1826,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000128"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1828,6 +1883,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000128"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1890,6 +1946,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000128"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1953,6 +2010,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000115"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -1991,6 +2049,54 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell_set_preferred_alias:Endo ; original_label:Endo ; cell_set_label:RNAseq 103 ; cell_set_aligned_alias:Endothelial</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endo primary motor cortex endothelial cell (Mus musculus)</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Endo</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_104 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_105 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_106 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_107 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_108 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_109 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
     </owl:Class>
     
 
@@ -2057,6 +2163,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_110 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_111">
@@ -2071,6 +2185,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000359"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2121,6 +2236,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000669"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2178,6 +2294,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000129"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -2211,6 +2328,33 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell_set_preferred_alias:Micro ; original_label:Micro ; cell_set_label:RNAseq 113 ; cell_set_aligned_alias:Microglia</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Micro primary motor cortex microglial cell (Mus musculus)</rdfs:label>
         <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Micro</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_114 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000881"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_115 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000881"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_116 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_116">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000881"/>
     </owl:Class>
     
 
@@ -3898,6 +4042,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -3997,6 +4142,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -4053,6 +4199,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -4109,6 +4256,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -4165,6 +4313,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023007"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -4333,6 +4482,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023017"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023025"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -4344,6 +4494,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002162"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_10090"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002292"/>
+                <owl:someValuesFrom rdf:resource="http://identifiers.org/ensembl/ENSMUSG00000022860"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -4390,6 +4546,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -4515,6 +4672,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -4571,6 +4730,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -4633,6 +4794,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023017"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -4689,6 +4852,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -4745,6 +4909,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -4807,6 +4972,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -4869,6 +5035,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -4931,6 +5098,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -4987,6 +5155,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023017"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023031"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5050,6 +5219,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -5168,6 +5338,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -5224,6 +5395,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023017"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023034"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5287,6 +5459,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -5343,6 +5516,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -5405,6 +5579,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -5467,6 +5642,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -5529,6 +5705,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -5591,6 +5768,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023017"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -5647,6 +5825,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023018"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -5703,6 +5882,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023018"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -5827,6 +6007,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023018"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -5889,6 +6070,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023018"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -5957,6 +6139,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023018"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -6019,6 +6202,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023018"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -6081,6 +6265,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023018"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -6137,6 +6322,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023018"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -6193,6 +6379,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023018"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -6249,6 +6436,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0011005"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023018"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -7159,6 +7347,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023008"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023045"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -7222,6 +7412,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023008"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023045"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -7285,6 +7477,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023008"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023044"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -7354,6 +7548,8 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023008"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023044"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -7411,6 +7607,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023008"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -7473,6 +7670,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023008"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -7535,6 +7733,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023008"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -7597,6 +7796,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023008"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -7665,6 +7865,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023008"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -7727,6 +7928,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023008"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -7846,6 +8048,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023008"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -7914,6 +8117,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023008"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -7976,6 +8180,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023008"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -8038,6 +8243,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023008"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -8094,6 +8300,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023008"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -8156,6 +8363,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023008"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -8218,6 +8426,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023008"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -8280,6 +8489,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023008"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -8336,6 +8546,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000679"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_4023008"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002100"/>
@@ -8453,6 +8664,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0002453"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -8510,6 +8722,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000127"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -8566,6 +8779,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000127"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -8616,6 +8830,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000127"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -8672,6 +8887,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000128"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -8728,6 +8944,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000128"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -8784,6 +9001,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000128"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -8852,6 +9070,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000128"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -8908,6 +9127,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000125"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CL_0000128"/>
         <rdfs:subClassOf>
             <owl:Restriction>
