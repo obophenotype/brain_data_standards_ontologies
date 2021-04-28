@@ -13,6 +13,7 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002215>))
 Declaration(ObjectProperty(:has_exemplar))
 Declaration(ObjectProperty(:has_subexemplar))
 Declaration(ObjectProperty(:subcluster_of))
+Declaration(ObjectProperty(:exemplar_of))
 
 ############################
 #   Object Properties
@@ -38,6 +39,10 @@ SubObjectPropertyOf(:has_subexemplar :has_exemplar)
 # Object Property: :subcluster_of (:subcluster_of)
 
 TransitiveObjectProperty(:subcluster_of)
+
+# Object Property: :exemplar_of (exemplar_of)
+
+AnnotationAssertion(rdfs:label :exemplar_of "exemplar_of")
 
 
 

@@ -3,8 +3,7 @@ import os
 import csv
 from dendrogram_tools import dend_json_2_nodes_n_edges
 from template_generation_utils import get_synonyms_from_taxonomy, get_synonym_pairs, \
-    PAIR_SEPARATOR, OR_SEPARATOR, read_taxonomy_config, get_subtrees
-from marker_tools import read_dendrogram_tree
+    PAIR_SEPARATOR, OR_SEPARATOR, read_taxonomy_config, get_subtrees, read_dendrogram_tree
 
 PATH_DENDROGRAM_JSON = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/CCN202002013.json")
 
