@@ -1,0 +1,56 @@
+name: Validate Markers
+
+# Controls when the action will run.
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    paths:
+      - 'src/markers/**.tsv'
+      - '.github/workflows/marker_check.yaml'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "ontology_qc"
+  validate-markers:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: validate markers
+        run: python ./src/scripts/marker_validator.py
+      - id: marker-report
+        name: generate report
+        if: ${{ failure() }}
+        run: |
+          output=$(python ./src/scripts/marker_validator.py --silent)
+          output="${output//'%'/'%25'}"
+          output="${output//$'\n'/'%0A'}"
+          output="${output//$'\r'/'%0D'}"
+          echo "::set-output name=validation-report::$output"
+      - name: mail failure report
+        if: ${{ failure() }}
+        uses: dawidd6/action-send-mail@v2
+        with:
+          # mail server settings
+          server_address: smtp.gmail.com
+          server_port: 465
+          # user credentials
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          # email subject
+          subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
+          # email body as text
+          body: ${{steps.marker-report.outputs.validation-report}}
+          # comma-separated string, send email to
+          to: ${{secrets.MAIL_TO}}
+          cc: ${{secrets.MAIL_CC}}
+          # from email name
+          from: BDS Build Robot

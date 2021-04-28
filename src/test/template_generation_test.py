@@ -2,13 +2,16 @@ import unittest
 import os
 import csv
 
-from template_generation_tools import generate_curated_class_template, generate_equivalent_class_marker_template
+from template_generation_tools import generate_curated_class_template, generate_equivalent_class_marker_template\
+    , generate_nomenclature_table_template
+from template_generation_utils import read_tsv
 
 PATH_DENDROGRAM_JSON = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/CCN202002013.json")
 PATH_MARKER = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/CS202002013_markers.tsv")
 PATH_OUTPUT_CLASS_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/output_class.tsv")
 PATH_OUTPUT_EC_MARKER_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                          "./test_data/output_equivalent_marker.tsv")
+PATH_OUTPUT_NOMENCLATURE_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/nomenclature.tsv")
 
 ALLEN_CLASS = "http://www.semanticweb.org/brain_data_standards/AllenDendClass_"
 
@@ -23,14 +26,16 @@ class TemplateGenerationTest(unittest.TestCase):
     def setUp(self):
         delete_file(PATH_OUTPUT_CLASS_TSV)
         delete_file(PATH_OUTPUT_EC_MARKER_TSV)
+        delete_file(PATH_OUTPUT_NOMENCLATURE_TSV)
 
     def tearDown(self):
-        # delete_file(PATH_OUTPUT_CLASS_TSV)
+        delete_file(PATH_OUTPUT_CLASS_TSV)
         delete_file(PATH_OUTPUT_EC_MARKER_TSV)
+        delete_file(PATH_OUTPUT_NOMENCLATURE_TSV)
 
     def test_curated_class_template_generation(self):
         generate_curated_class_template(PATH_DENDROGRAM_JSON, PATH_OUTPUT_CLASS_TSV)
-        output = read_class_file(PATH_OUTPUT_CLASS_TSV)
+        output = read_tsv(PATH_OUTPUT_CLASS_TSV)
 
         # assert only descendants of the root nodes (except root nodes itself) exist
         self.assertFalse(ALLEN_CLASS + "CS202002013_117" in output)  # root
@@ -57,7 +62,7 @@ class TemplateGenerationTest(unittest.TestCase):
 
     def test_equivalent_class_marker_template_generation(self):
         generate_equivalent_class_marker_template(PATH_DENDROGRAM_JSON, PATH_MARKER, PATH_OUTPUT_EC_MARKER_TSV)
-        output = read_class_file(PATH_OUTPUT_EC_MARKER_TSV)
+        output = read_tsv(PATH_OUTPUT_EC_MARKER_TSV)
 
         # assert only descendants of the root nodes (except root nodes itself) exist
         self.assertFalse(ALLEN_CLASS + "CS202002013_117" in output)  # root
@@ -84,19 +89,35 @@ class TemplateGenerationTest(unittest.TestCase):
         self.assertFalse(ALLEN_CLASS + "CS202002013_219" in output)  # parent
         self.assertFalse(ALLEN_CLASS + "CS202002013_220" in output)  # grand parent
 
+    def test_nomenclature_table_template_generation(self):
+        generate_nomenclature_table_template(PATH_DENDROGRAM_JSON, PATH_OUTPUT_EC_MARKER_TSV)
+        output = read_tsv(PATH_OUTPUT_EC_MARKER_TSV)
+
+        # assert only descendants of the root nodes (except root nodes itself) exist
+        self.assertFalse(ALLEN_CLASS + "CS202002013_258" in output)  # root
+        self.assertFalse(ALLEN_CLASS + "CS202002013_237" in output)  # root
+        self.assertFalse(ALLEN_CLASS + "CS202002013_232" in output)  # root
+        self.assertFalse(ALLEN_CLASS + "CS202002013_261" in output)  # root
+
+        self.assertTrue(ALLEN_CLASS + "CS202002013_28" in output)  # child of CS202002013_232
+        self.assertEqual("CL:4023017", output[ALLEN_CLASS + "CS202002013_28"][1])
+        self.assertTrue(ALLEN_CLASS + "CS202002013_32" in output)  # child of CS202002013_232 and CS202002013_235
+        self.assertEqual("CL:4023027", output[ALLEN_CLASS + "CS202002013_32"][1])
+        self.assertTrue(ALLEN_CLASS + "CS202002013_40" in output)  # child of CS202002013_232
+        self.assertEqual("CL:4023017", output[ALLEN_CLASS + "CS202002013_40"][1])
+        self.assertTrue(ALLEN_CLASS + "CS202002013_47" in output)  # child of CS202002013_232
+        self.assertEqual("CL:4023017", output[ALLEN_CLASS + "CS202002013_47"][1])
+
+        self.assertTrue(ALLEN_CLASS + "CS202002013_114" in output)  # child of CS202002013_237
+        self.assertEqual("CL:0000881", output[ALLEN_CLASS + "CS202002013_114"][1])
+        self.assertTrue(ALLEN_CLASS + "CS202002013_115" in output)  # child of CS202002013_237
+        self.assertEqual("CL:0000881", output[ALLEN_CLASS + "CS202002013_115"][1])
+        self.assertTrue(ALLEN_CLASS + "CS202002013_116" in output)  # child of CS202002013_237
+        self.assertEqual("CL:0000881", output[ALLEN_CLASS + "CS202002013_116"][1])
+
+
     # def test_migrate(self):
     #     curated_class_migrate()
-
-
-def read_class_file(class_template):
-    records = {}
-    with open(class_template) as fd:
-        rd = csv.reader(fd, delimiter="\t", quotechar='"')
-        for row in rd:
-            _id = row[0]
-            records[_id] = row
-
-    return records
 
 
 def curated_class_migrate():
@@ -107,8 +128,8 @@ def curated_class_migrate():
 
 
 def curation_table_migrate_manual_edits(source_path, target_path, migrate_columns):
-    source = read_class_file(source_path)
-    target = read_class_file(target_path)
+    source = read_tsv(source_path)
+    target = read_tsv(target_path)
 
     new_target_path = target_path.replace(".tsv", "_migrate.tsv")
 

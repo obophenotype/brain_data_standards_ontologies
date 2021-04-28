@@ -7,7 +7,7 @@
     "base": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["Taxonomy_id", "Description", "Reference", "DOI", "Species", "Brain_region", "Root_nodes"],
+      "required": ["Taxonomy_id", "Description", "Reference", "DOI", "Species", "Brain_region", "Root_nodes", "non_taxonomy_roots"],
       "properties": {
         "Taxonomy_id" :  {
           "type": "string",
@@ -46,6 +46,11 @@
           "type": "array",
           "items": {
             "$ref" : "#/definitions/root_node"  }
+        },
+        "non_taxonomy_roots": {
+          "type": "array",
+          "items": {
+            "$ref" : "#/definitions/non_taxon_root"  }
         }
       }
     },
@@ -65,6 +70,21 @@
         "Location_relation": {
           "type": "string",
           "description": ""
+        }
+      }
+    },
+    "non_taxon_root":{
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["Node", "Cell_type"],
+      "properties": {
+        "Node": {
+          "type": "string",
+          "description": "cell_set_accession of a non-taxonomy root node"
+        },
+        "Cell_type": {
+          "type": "string",
+          "description": "Gross cell type corresponding to a non-taxonomy root node."
         }
       }
     }

@@ -1,5 +1,6 @@
 import yaml
 import os
+import csv
 import networkx as nx
 import json
 
@@ -160,7 +161,55 @@ def get_subtrees(dend_tree, taxonomy_config):
 
 
 def get_root_nodes(config_yaml):
+    """
+    List the root nodes defined in the given taxonomy config.
+    Args:
+        config_yaml: configuration content
+
+    Returns: list of root nodes
+
+    """
     root_nodes = []
     for root_node in config_yaml['Root_nodes']:
         root_nodes.append(root_node['Node'])
     return root_nodes
+
+
+def read_tsv(tsv_path, id_column=0):
+    """
+    Reads tsv file content into a dict. Key is the first column value and the value is list of row values
+    Args:
+        tsv_path: Path of the TSV file
+        id_column: Id column becomes the key of the dict. This column should be unique. Default is the first column.
+    Returns:
+        TSV content dict. Key is the first column value and the value is list of row values.
+    """
+    return read_csv(tsv_path, id_column=id_column, delimiter="\t")
+
+
+def read_csv(csv_path, id_column=0, delimiter=","):
+    """
+    Reads tsv file content into a dict. Key is the id column value and the value is list of row values
+    Args:
+        csv_path: Path of the CSV file
+        id_column: Id column becomes the key of the dict. This column should be unique. Default is the first column.
+        delimiter: Value delimiter. Default is comma.
+
+    Returns:
+        CSV content dict. Key is the first column value and the value is list of row values.
+    """
+    records = dict()
+    with open(csv_path) as fd:
+        rd = csv.reader(fd, delimiter=delimiter, quotechar='"')
+        for row in rd:
+            _id = row[id_column]
+            records[_id] = row
+
+    return records
+
+
+def index_dendrogram(dend):
+    dend_dict = dict()
+    for o in dend['nodes']:
+        dend_dict[o['cell_set_accession']] = o
+    return dend_dict
