@@ -57,7 +57,7 @@ components/%_class.owl: ../templates/%_class.tsv bdscratch-edit.owl
     		annotate --ontology-iri ${BDS_BASE}$@ \
     		convert --format ofn --output $@
 
-components/%_equivalent_class.owl: ../templates/%_equivalent_reification.tsv bdscratch-edit.owl
+components/%_equivalent_class.owl: ../templates/%_equivalent_markers.tsv bdscratch-edit.owl
 	$(ROBOT) template --input bdscratch-edit.owl --template $< \
 	        --add-prefixes template_prefixes.json \
     		annotate --ontology-iri ${BDS_BASE}$@ \
