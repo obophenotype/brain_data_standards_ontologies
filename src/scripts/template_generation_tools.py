@@ -86,16 +86,22 @@ def generate_curated_class_template(dend_json_path, output_filepath):
                                      'Comment': 'A rdfs:comment',
                                      'Classification': 'SC %',
                                      'Classification_comment': ">A rdfs:comment",
-                                     'Classification_pub': ">A oboInOwl:hasDbXref SPLIT=|"
+                                     'Classification_pub': ">A oboInOwl:hasDbXref SPLIT=|",
+                                     'Expresses': "SC 'expresses' some % SPLIT=|",
+                                     'Expresses_comment': ">A rdfs:comment",
+                                     'Expresses_pub': ">A oboInOwl:hasDbXref SPLIT=|"
                                      }
         class_template = [robot_class_curation_seed]
 
         for o in dend['nodes']:
-            if o['cell_set_accession'] in set.union(*subtrees) and o['cell_set_preferred_alias']:
+            if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or
+                                                                    o['cell_set_additional_alias']):
                 d = dict()
                 d['ID'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
                 if o['cell_set_preferred_alias']:
                     d['prefLabel'] = o['cell_set_preferred_alias']
+                elif o['cell_set_additional_alias']:
+                    d['prefLabel'] = o['cell_set_additional_alias']
                 d['Synonyms_from_taxonomy'] = get_synonyms_from_taxonomy(o)
                 d['Comment'] = get_synonym_pairs(o)
                 for k in robot_class_curation_seed.keys():
@@ -125,7 +131,8 @@ def generate_equivalent_class_reification_template(dend_json_path, output_filepa
     equivalent_template = [robot_class_equivalent_seed]
 
     for o in dend['nodes']:
-        if o['cell_set_accession'] in set().union(*subtrees) and o['cell_set_preferred_alias']:
+        if o['cell_set_accession'] in set().union(*subtrees) and (o['cell_set_preferred_alias'] or
+                                                                  o['cell_set_additional_alias']):
             d = dict()
             d['ID'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
             d['Exemplar'] = 'AllenDend:' + o['cell_set_accession']
@@ -210,7 +217,8 @@ def generate_minimal_marker_template(dend_json_path, flat_marker_path, output_ma
         min_marker_template = [robot_min_marker_seed]
 
         for o in dend['nodes']:
-            if o['cell_set_accession'] in set.union(*subtrees) and o['cell_set_preferred_alias']:
+            if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or
+                                                                    o['cell_set_additional_alias']):
                 d = dict()
                 d['ID'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
 
@@ -233,7 +241,7 @@ def generate_minimal_marker_template(dend_json_path, flat_marker_path, output_ma
         class_robot_template.to_csv(output_marker_path, sep="\t", index=False)
 
 
-def generate_nomenclature_table_template(dend_json_path, output_filepath):
+def generate_non_taxonomy_classification_template(dend_json_path, output_filepath):
     dend = dend_json_2_nodes_n_edges(dend_json_path)
     dend_nodes = index_dendrogram(dend)
 
@@ -242,7 +250,8 @@ def generate_nomenclature_table_template(dend_json_path, output_filepath):
 
     cell_set_accession = 3
     child_cell_set_accessions = 13
-    nomenclature_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), '../dendrograms/nomenclature_table_{}.csv'.format(taxon))
+    nomenclature_path = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                                     '../dendrograms/nomenclature_table_{}.csv'.format(taxon))
 
     taxonomy_config = read_taxonomy_config(taxon)
 
@@ -263,7 +272,7 @@ def generate_nomenclature_table_template(dend_json_path, output_filepath):
             if columns[cell_set_accession] in non_taxo_roots:
                 if columns[cell_set_accession] in dend_nodes:
                     raise Exception("Node {} exists both in dendrogram and nomenclature of the taxonomy: {}."
-                                    .format(child, taxon))
+                                    .format(columns[cell_set_accession], taxon))
                 children = columns[child_cell_set_accessions].split("|")
                 for child in children:
                     # child of root with cell_set_preferred_alias

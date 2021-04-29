@@ -1,6 +1,6 @@
 from template_generation_tools import generate_curated_class_template, generate_ind_template, \
     generate_equivalent_class_reification_template, generate_equivalent_class_marker_template, \
-    generate_minimal_marker_template, generate_nomenclature_table_template
+    generate_minimal_marker_template, generate_non_taxonomy_classification_template
 from marker_tools import generate_denormalised_marker_template
 import argparse
 
@@ -38,7 +38,7 @@ elif args.er:
 elif args.em:
     generate_equivalent_class_marker_template(args.input, '../markers/CS202002013_markers.tsv', args.output)
 elif args.n:
-    generate_nomenclature_table_template(args.input, args.output)
+    generate_non_taxonomy_classification_template(args.input, args.output)
 else:
     generate_ind_template(args.input, args.output)
 

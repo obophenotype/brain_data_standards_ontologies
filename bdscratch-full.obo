@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: bdscratch/releases/2021-03-29/bdscratch-full.owl
+data-version: bdscratch/releases/2021-04-29/bdscratch-full.owl
 subsetdef: 3_STAR ""
 subsetdef: added_for_HCA ""
 subsetdef: attribute_slim ""
@@ -53,7 +53,7 @@ ontology: bdscratch/bdscratch-full
 property_value: dc-description "None" xsd:string
 property_value: dc-title "Brain Data Standards Cell Ontology" xsd:string
 property_value: dcterms-license https://creativecommons.org/licenses/unspecified
-property_value: owl:versionInfo "2021-03-29" xsd:string
+property_value: owl:versionInfo "2021-04-29" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:1
@@ -78,7 +78,6 @@ synonym: "Slc17a8,Yjefn3 expressing GABAergic interneuron of primary motor corte
 synonym: "Sncg Slc17a8" EXACT []
 is_a: AllenDendClass_CS202002013:134 ! Sncg_2 primary motor cortex GABAergic interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019935 ! expresses Slc17a8
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000048967 ! expresses Yjefn3
 property_value: prefLabel "Sncg Slc17a8" xsd:string
 
 [Term]
@@ -145,7 +144,7 @@ synonym: "Endothelial" EXACT []
 synonym: "RNAseq 103" EXACT []
 is_a: CL:0000710 ! neurecto-epithelial cell
 is_a: CL:1001579 ! cerebral cortex glial cell
-is_a: CL:1001602 ! cerebral cortex endothelial cell
+is_a: CL:1001602 {xref="DOI:10.1101/2020.02.29.970558"} ! cerebral cortex endothelial cell
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030237 ! expresses Slco1a4
@@ -154,27 +153,99 @@ property_value: prefLabel "Endo" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:104
+name: VLMC_1 primary motor cortex vascular leptomeningeal cell (Mus musculus)
+comment: cell_set_preferred_alias:VLMC_1 ; original_label:VLMC_1 ; cell_set_label:RNAseq 104 ; cell_set_aligned_alias:''
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Col4a6,Gm30624,Itih5.
+synonym: "Col4a6,Gm30624,Itih5 expressing vascular leptomeningeal cell of primary motor cortex (Mus musculus)" EXACT []
+synonym: "RNAseq 104" EXACT []
+synonym: "VLMC_1" EXACT []
 is_a: CL:0000125 ! glial cell
+is_a: CL:0000710 ! neurecto-epithelial cell
+is_a: CL:4023051 ! vascular leptomeningeal cell
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000025780 ! expresses Itih5
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031273 ! expresses Col4a6
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000112430 ! expresses Gm30624
+property_value: prefLabel "VLMC_1" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:105
+name: VLMC_2 primary motor cortex vascular leptomeningeal cell (Mus musculus)
+comment: cell_set_preferred_alias:VLMC_2 ; original_label:VLMC_2 ; cell_set_label:RNAseq 105 ; cell_set_aligned_alias:''
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Aox3,Lama1.
+synonym: "Aox3,Lama1 expressing vascular leptomeningeal cell of primary motor cortex (Mus musculus)" EXACT []
+synonym: "RNAseq 105" EXACT []
+synonym: "VLMC_2" EXACT []
 is_a: CL:0000125 ! glial cell
+is_a: CL:0000710 ! neurecto-epithelial cell
+is_a: CL:4023051 ! vascular leptomeningeal cell
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032796 ! expresses Lama1
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000064294 ! expresses Aox3
+property_value: prefLabel "VLMC_2" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:106
+name: VLMC_3 primary motor cortex vascular leptomeningeal cell (Mus musculus)
+comment: cell_set_preferred_alias:VLMC_3 ; original_label:VLMC_3 ; cell_set_label:RNAseq 106 ; cell_set_aligned_alias:''
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Pkhd1.
+synonym: "Pkhd1 expressing vascular leptomeningeal cell of primary motor cortex (Mus musculus)" EXACT []
+synonym: "RNAseq 106" EXACT []
+synonym: "VLMC_3" EXACT []
 is_a: CL:0000125 ! glial cell
+is_a: CL:0000710 ! neurecto-epithelial cell
+is_a: CL:4023051 ! vascular leptomeningeal cell
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000043760 ! expresses Pkhd1
+property_value: prefLabel "VLMC_3" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:107
+name: VLMC_4 primary motor cortex vascular leptomeningeal cell (Mus musculus)
+comment: cell_set_preferred_alias:VLMC_4 ; original_label:VLMC_4 ; cell_set_label:RNAseq 107 ; cell_set_aligned_alias:''
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Prdm6,Slc6a20a.
+synonym: "Prdm6,Slc6a20a expressing vascular leptomeningeal cell of primary motor cortex (Mus musculus)" EXACT []
+synonym: "RNAseq 107" EXACT []
+synonym: "VLMC_4" EXACT []
 is_a: CL:0000125 ! glial cell
+is_a: CL:0000710 ! neurecto-epithelial cell
+is_a: CL:4023051 ! vascular leptomeningeal cell
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036814 ! expresses Slc6a20a
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000069378 ! expresses Prdm6
+property_value: prefLabel "VLMC_4" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:108
+name: VLMC_5 primary motor cortex vascular leptomeningeal cell (Mus musculus)
+comment: cell_set_preferred_alias:VLMC_5 ; original_label:VLMC_5 ; cell_set_label:RNAseq 108 ; cell_set_aligned_alias:''
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Slc47a1.
+synonym: "RNAseq 108" EXACT []
+synonym: "Slc47a1 expressing vascular leptomeningeal cell of primary motor cortex (Mus musculus)" EXACT []
+synonym: "VLMC_5" EXACT []
 is_a: CL:0000125 ! glial cell
+is_a: CL:0000710 ! neurecto-epithelial cell
+is_a: CL:4023051 ! vascular leptomeningeal cell
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000010122 ! expresses Slc47a1
+property_value: prefLabel "VLMC_5" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:109
+name: VLMC_6 primary motor cortex vascular leptomeningeal cell (Mus musculus)
+comment: cell_set_preferred_alias:VLMC_6 ; original_label:VLMC_6 ; cell_set_label:RNAseq 109 ; cell_set_aligned_alias:''
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Dapl1,Prg4,Slc26a7.
+synonym: "Dapl1,Prg4,Slc26a7 expressing vascular leptomeningeal cell of primary motor cortex (Mus musculus)" EXACT []
+synonym: "RNAseq 109" EXACT []
+synonym: "VLMC_6" EXACT []
 is_a: CL:0000125 ! glial cell
+is_a: CL:0000710 ! neurecto-epithelial cell
+is_a: CL:4023051 ! vascular leptomeningeal cell
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000006014 ! expresses Prg4
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026989 ! expresses Dapl1
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040569 ! expresses Slc26a7
+property_value: prefLabel "VLMC_6" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:11
@@ -192,7 +263,19 @@ property_value: prefLabel "Sncg Calb1_1" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:110
+name: VLMC_7 primary motor cortex vascular leptomeningeal cell (Mus musculus)
+comment: cell_set_preferred_alias:VLMC_7 ; original_label:VLMC_7 ; cell_set_label:RNAseq 110 ; cell_set_aligned_alias:''
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Dapl1,Tspan8.
+synonym: "Dapl1,Tspan8 expressing vascular leptomeningeal cell of primary motor cortex (Mus musculus)" EXACT []
+synonym: "RNAseq 110" EXACT []
+synonym: "VLMC_7" EXACT []
 is_a: CL:0000125 ! glial cell
+is_a: CL:0000710 ! neurecto-epithelial cell
+is_a: CL:4023051 ! vascular leptomeningeal cell
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026989 ! expresses Dapl1
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000034127 ! expresses Tspan8
+property_value: prefLabel "VLMC_7" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:111
@@ -202,7 +285,7 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Acta2 expressing vascular associated smooth muscle cell of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 111" EXACT []
 synonym: "SMC" EXACT []
-is_a: CL:0000359 ! vascular associated smooth muscle cell
+is_a: CL:0002590 {xref="DOI:10.1101/2020.02.29.970558"} ! smooth muscle cell of the brain vasculature
 is_a: CL:1001579 ! cerebral cortex glial cell
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: part_of UBERON:0001384 ! primary motor cortex
@@ -219,7 +302,7 @@ synonym: "Peri" EXACT []
 synonym: "Pericyte" EXACT []
 synonym: "RNAseq 112" EXACT []
 is_a: CL:1001579 ! cerebral cortex glial cell
-is_a: CL:2000043 ! brain pericyte
+is_a: CL:2000043 {xref="DOI:10.1101/2020.02.29.970558"} ! brain pericyte
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: part_of UBERON:0001384 ! primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030249 ! expresses Abcc9
@@ -235,7 +318,7 @@ synonym: "Hexb expressing microglial cell of primary motor cortex (Mus musculus)
 synonym: "Micro" EXACT []
 synonym: "Microglia" EXACT []
 synonym: "RNAseq 113" EXACT []
-is_a: CL:0000129 ! microglial cell
+is_a: CL:0000129 {xref="DOI:10.1101/2020.02.29.970558"} ! microglial cell
 is_a: CL:1001579 ! cerebral cortex glial cell
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: part_of UBERON:0001384 ! primary motor cortex
@@ -245,17 +328,17 @@ property_value: prefLabel "Micro" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:114
 is_a: CL:0000125 ! glial cell
-is_a: CL:0000881
+is_a: CL:0000881 ! perivascular macrophage
 
 [Term]
 id: AllenDendClass_CS202002013:115
 is_a: CL:0000125 ! glial cell
-is_a: CL:0000881
+is_a: CL:0000881 ! perivascular macrophage
 
 [Term]
 id: AllenDendClass_CS202002013:116
 is_a: CL:0000125 ! glial cell
-is_a: CL:0000881
+is_a: CL:0000881 ! perivascular macrophage
 
 [Term]
 id: AllenDendClass_CS202002013:12
@@ -275,12 +358,16 @@ property_value: prefLabel "Sncg Calb1_2" xsd:string
 id: AllenDendClass_CS202002013:124
 name: CGE/PoA primary motor cortex GABAergic interneuron (Mus musculus)
 comment: cell_set_preferred_alias:CGE/PoA ; original_label:n8 ; cell_set_label:RNAseq 001-027, 089-090 ; cell_set_aligned_alias:CGE/PoA
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Adarb2,Prox1.
+synonym: "Adarb2,Prox1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "CGE/PoA" EXACT []
 synonym: "n8" EXACT []
 synonym: "RNAseq 001-027, 089-090" EXACT []
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000010175 ! expresses Prox1
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052551 ! expresses Adarb2
 property_value: prefLabel "CGE/PoA" xsd:string
 
 [Term]
@@ -302,10 +389,14 @@ property_value: prefLabel "Lamp5" xsd:string
 id: AllenDendClass_CS202002013:128
 name: Lamp5_5 primary motor cortex GABAergic interneuron (Mus musculus)
 comment: cell_set_preferred_alias:Lamp5_5 ; original_label:n12 ; cell_set_label:RNAseq 003-004 ; cell_set_aligned_alias:''
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cxcl14,Ndnf.
+synonym: "Cxcl14,Ndnf expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Lamp5_5" EXACT []
 synonym: "n12" EXACT []
 synonym: "RNAseq 003-004" EXACT []
 is_a: AllenDendClass_CS202002013:125 ! Lamp5 primary motor cortex GABAergic interneuron (Mus musculus)
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021508 ! expresses Cxcl14
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049001 ! expresses Ndnf
 property_value: prefLabel "Lamp5_5" xsd:string
 
 [Term]
@@ -320,6 +411,19 @@ is_a: AllenDendClass_CS202002013:133 ! Sncg primary motor cortex GABAergic inter
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028004 ! expresses Npy2r
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029101 ! expresses Rgs12
 property_value: prefLabel "Sncg Npy2r" xsd:string
+
+[Term]
+id: AllenDendClass_CS202002013:130
+name: Neurogliaform cell primary motor cortex GABAergic interneuron (Mus musculus)
+comment: cell_set_preferred_alias:'' ; original_label:n14 ; cell_set_label:RNAseq 005-007 ; cell_set_aligned_alias:''
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Kit,Pde11a.
+synonym: "Kit,Pde11a expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
+synonym: "n14" EXACT []
+synonym: "RNAseq 005-007" EXACT []
+is_a: AllenDendClass_CS202002013:125 ! Lamp5 primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: CL:4023024 {xref="DOI:10.1101/2020.02.29.970558"} ! Neurogliaform Lamp5 GABAergic cortical interneuron (Mus musculus)
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000005672 ! expresses Kit
+property_value: prefLabel "Neurogliaform cell" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:133
@@ -340,10 +444,14 @@ property_value: prefLabel "Sncg" xsd:string
 id: AllenDendClass_CS202002013:134
 name: Sncg_2 primary motor cortex GABAergic interneuron (Mus musculus)
 comment: cell_set_preferred_alias:Sncg_2 ; original_label:n18 ; cell_set_label:RNAseq 009-010 ; cell_set_aligned_alias:''
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Frem1,Yjefn3.
+synonym: "Frem1,Yjefn3 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "n18" EXACT []
 synonym: "RNAseq 009-010" EXACT []
 synonym: "Sncg_2" EXACT []
 is_a: AllenDendClass_CS202002013:133 ! Sncg primary motor cortex GABAergic interneuron (Mus musculus)
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000048967 ! expresses Yjefn3
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059049 ! expresses Frem1
 property_value: prefLabel "Sncg_2" xsd:string
 
 [Term]
@@ -361,6 +469,21 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019772 ! exp
 property_value: prefLabel "Vip" xsd:string
 
 [Term]
+id: AllenDendClass_CS202002013:139
+name: L5/6 CCK cell primary motor cortex GABAergic interneuron (Mus musculus)
+comment: cell_set_preferred_alias:'' ; original_label:n23 ; cell_set_label:RNAseq 015-017 ; cell_set_aligned_alias:''
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Col14a1,Enpp2,Pbx3.
+synonym: "Col14a1,Enpp2,Pbx3 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
+synonym: "n23" EXACT []
+synonym: "RNAseq 015-017" EXACT []
+is_a: AllenDendClass_CS202002013:138 ! Vip primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: CL:4023019 {xref="DOI:10.1101/2020.02.29.970558"} ! L5/6 CCK and Vip expressing cortical GABAergic interneuron (Mus musculus)
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022371 ! expresses Col14a1
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022425 ! expresses Enpp2
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038718 ! expresses Pbx3
+property_value: prefLabel "L5/6 CCK cell" xsd:string
+
+[Term]
 id: AllenDendClass_CS202002013:14
 name: Vip Sncg primary motor cortex GABAergic interneuron (Mus musculus)
 comment: cell_set_preferred_alias:Vip Sncg ; original_label:Vip Sncg ; cell_set_label:RNAseq 014 ; cell_set_aligned_alias:''
@@ -369,19 +492,38 @@ synonym: "Crh,Nectin3,Unc5b expressing GABAergic interneuron of primary motor co
 synonym: "RNAseq 014" EXACT []
 synonym: "Vip Sncg" EXACT []
 is_a: AllenDendClass_CS202002013:133 ! Sncg primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: CL:4023016 ! Vip GABAergic cortical interneuron
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020099 ! expresses Unc5b
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022656 ! expresses Nectin3
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049796 ! expresses Crh
 property_value: prefLabel "Vip Sncg" xsd:string
 
 [Term]
+id: AllenDendClass_CS202002013:143
+name: L5 VIP cell primary motor cortex GABAergic interneuron (Mus musculus)
+comment: cell_set_preferred_alias:'' ; original_label:n27 ; cell_set_label:RNAseq 018-020 ; cell_set_aligned_alias:''
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Car4,Crh,Vip.
+synonym: "Car4,Crh,Vip expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
+synonym: "n27" EXACT []
+synonym: "RNAseq 018-020" EXACT []
+is_a: AllenDendClass_CS202002013:138 ! Vip primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: CL:4023014 {xref="DOI:10.1101/2020.02.29.970558"} ! L5 Vip expressing cortical GABAergic interneuron (Mus musculus)
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000000805 ! expresses Car4
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049796 ! expresses Crh
+property_value: prefLabel "L5 VIP cell" xsd:string
+
+[Term]
 id: AllenDendClass_CS202002013:149
 name: Vip_4 primary motor cortex GABAergic interneuron (Mus musculus)
 comment: cell_set_preferred_alias:Vip_4 ; original_label:n33 ; cell_set_label:RNAseq 026-027 ; cell_set_aligned_alias:''
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Gm39185,Thsd7b.
+synonym: "Gm39185,Thsd7b expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "n33" EXACT []
 synonym: "RNAseq 026-027" EXACT []
 synonym: "Vip_4" EXACT []
 is_a: AllenDendClass_CS202002013:138 ! Vip primary motor cortex GABAergic interneuron (Mus musculus)
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042581 ! expresses Thsd7b
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000110468 ! expresses Gm39185
 property_value: prefLabel "Vip_4" xsd:string
 
 [Term]
@@ -392,7 +534,7 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Rgs16,Sfrp2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 015" EXACT []
 synonym: "Vip Serpinf1_1" EXACT []
-is_a: AllenDendClass_CS202002013:138 ! Vip primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: AllenDendClass_CS202002013:139 ! L5/6 CCK cell primary motor cortex GABAergic interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026475 ! expresses Rgs16
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027996 ! expresses Sfrp2
 property_value: prefLabel "Vip Serpinf1_1" xsd:string
@@ -401,23 +543,46 @@ property_value: prefLabel "Vip Serpinf1_1" xsd:string
 id: AllenDendClass_CS202002013:150
 name: MGE primary motor cortex GABAergic interneuron (Mus musculus)
 comment: cell_set_preferred_alias:MGE ; original_label:n34 ; cell_set_label:RNAseq 028-057 ; cell_set_aligned_alias:MGE
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Gm1604b,Nxph1.
+synonym: "Gm1604b,Nxph1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "MGE" EXACT []
 synonym: "n34" EXACT []
 synonym: "RNAseq 028-057" EXACT []
 is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000046178 ! expresses Nxph1
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000094083 ! expresses Gm1604b
 property_value: prefLabel "MGE" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:156
 name: Sst_1 primary motor cortex GABAergic interneuron (Mus musculus)
 comment: cell_set_preferred_alias:Sst_1 ; original_label:n40 ; cell_set_label:RNAseq 031-033 ; cell_set_aligned_alias:''
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Pdyn,Unc13c.
 synonym: "n40" EXACT []
+synonym: "Pdyn,Unc13c expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 031-033" EXACT []
 synonym: "Sst_1" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027400 ! expresses Pdyn
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000062151 ! expresses Unc13c
 property_value: prefLabel "Sst_1" xsd:string
+
+[Term]
+id: AllenDendClass_CS202002013:159
+name: L5 T Martinotti cell primary motor cortex GABAergic interneuron (Mus musculus)
+comment: cell_set_preferred_alias:'' ; original_label:n43 ; cell_set_label:RNAseq 034-035 ; cell_set_aligned_alias:''
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Fbn2,Spon1,Trpc6.
+synonym: "Fbn2,Spon1,Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
+synonym: "n43" EXACT []
+synonym: "RNAseq 034-035" EXACT []
+is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: CL:4023027 {xref="DOI:10.1101/2020.02.29.970558"} ! L5 ‘T-shaped’ Martinotti Sst GABAergic cortical interneuron (Mus musculus)
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024598 ! expresses Fbn2
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! expresses Trpc6
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038156 ! expresses Spon1
+property_value: prefLabel "L5 T Martinotti cell" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:16
@@ -427,11 +592,52 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Ccn3,Col14a1,Pbx3 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 016" EXACT []
 synonym: "Vip Serpinf1_2" EXACT []
-is_a: AllenDendClass_CS202002013:138 ! Vip primary motor cortex GABAergic interneuron (Mus musculus)
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022371 ! expresses Col14a1
+is_a: AllenDendClass_CS202002013:139 ! L5/6 CCK cell primary motor cortex GABAergic interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000037362 ! expresses Ccn3
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038718 ! expresses Pbx3
 property_value: prefLabel "Vip Serpinf1_2" xsd:string
+
+[Term]
+id: AllenDendClass_CS202002013:161
+name: L5 non-Martinotti cell primary motor cortex GABAergic interneuron (Mus musculus)
+comment: cell_set_preferred_alias:'' ; original_label:n45 ; cell_set_label:RNAseq 036-037 ; cell_set_aligned_alias:''
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Lgals1,Rbp4,Trpc6.
+synonym: "Lgals1,Rbp4,Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
+synonym: "n45" EXACT []
+synonym: "RNAseq 036-037" EXACT []
+is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: CL:4023028 {xref="DOI:10.1101/2020.02.29.970558"} ! L5 Non-martinotti Sst GABAergic cortical interneuron (Mus musculus)
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024990 ! expresses Rbp4
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! expresses Trpc6
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000068220 ! expresses Lgals1
+property_value: prefLabel "L5 non-Martinotti cell" xsd:string
+
+[Term]
+id: AllenDendClass_CS202002013:164
+name: L2/3/5 fan Martinotti cell primary motor cortex GABAergic interneuron (Mus musculus)
+comment: cell_set_preferred_alias:'' ; original_label:n48 ; cell_set_label:RNAseq 039-040 ; cell_set_aligned_alias:''
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Olfm3,Sst.
+synonym: "n48" EXACT []
+synonym: "Olfm3,Sst expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
+synonym: "RNAseq 039-040" EXACT []
+is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: CL:4023030 {xref="DOI:10.1101/2020.02.29.970558"} ! L2/3/4 Fan martinotti Sst GABAergic cortical interneuron (Mus musculus)
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004366 ! expresses Sst
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027965 ! expresses Olfm3
+property_value: prefLabel "L2/3/5 fan Martinotti cell" xsd:string
+
+[Term]
+id: AllenDendClass_CS202002013:165
+name: L5/6 non-Martinotti cell primary motor cortex GABAergic interneuron (Mus musculus)
+comment: cell_set_preferred_alias:'' ; original_label:n49 ; cell_set_label:RNAseq 042-045 ; cell_set_aligned_alias:''
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cdh13,Crh,Tmtc2.
+synonym: "Cdh13,Crh,Tmtc2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
+synonym: "n49" EXACT []
+synonym: "RNAseq 042-045" EXACT []
+is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031841 ! expresses Cdh13
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036019 ! expresses Tmtc2
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049796 ! expresses Crh
+property_value: prefLabel "L5/6 non-Martinotti cell" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:17
@@ -441,22 +647,51 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Ccn3,Enpp2,Homer2,Plekhg1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 017" EXACT []
 synonym: "Vip Serpinf1_3" EXACT []
-is_a: AllenDendClass_CS202002013:138 ! Vip primary motor cortex GABAergic interneuron (Mus musculus)
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022425 ! expresses Enpp2
+is_a: AllenDendClass_CS202002013:139 ! L5/6 CCK cell primary motor cortex GABAergic interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000025813 ! expresses Homer2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000037362 ! expresses Ccn3
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040624 ! expresses Plekhg1
 property_value: prefLabel "Vip Serpinf1_3" xsd:string
 
 [Term]
+id: AllenDendClass_CS202002013:170
+name: L6 Th+ SST/PV cell primary motor cortex GABAergic interneuron (Mus musculus)
+comment: cell_set_preferred_alias:'' ; original_label:n54 ; cell_set_label:RNAseq 046-047 ; cell_set_aligned_alias:''
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cort,Th.
+synonym: "Cort,Th expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
+synonym: "n54" EXACT []
+synonym: "RNAseq 046-047" EXACT []
+is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000000214 ! expresses Th
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028971 ! expresses Cort
+property_value: prefLabel "L6 Th+ SST/PV cell" xsd:string
+
+[Term]
+id: AllenDendClass_CS202002013:177
+name: Upper FS Basket cell primary motor cortex GABAergic interneuron (Mus musculus)
+comment: cell_set_preferred_alias:'' ; original_label:n61 ; cell_set_label:RNAseq 054-055 ; cell_set_aligned_alias:''
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cemip,Eya4.
+synonym: "Cemip,Eya4 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
+synonym: "n61" EXACT []
+synonym: "RNAseq 054-055" EXACT []
+is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000010461 ! expresses Eya4
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052353 ! expresses Cemip
+property_value: prefLabel "Upper FS Basket cell" xsd:string
+
+[Term]
 id: AllenDendClass_CS202002013:178
 name: Chandelier primary motor cortex GABAergic interneuron (Mus musculus)
 comment: cell_set_preferred_alias:Chandelier ; original_label:n62 ; cell_set_label:RNAseq 056-057 ; cell_set_aligned_alias:Chandelier
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Cntnap5b,Unc5b.
 synonym: "Chandelier" EXACT []
+synonym: "Cntnap5b,Unc5b expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "n62" EXACT []
 synonym: "RNAseq 056-057" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
 is_a: CL:4023036 {xref="DOI:10.1101/2020.02.29.970558"} ! Chandelier Pvalb GABAergic cortical interneuron (Mus musculus)
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020099 ! expresses Unc5b
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000067028 ! expresses Cntnap5b
 property_value: prefLabel "Chandelier" xsd:string
 
 [Term]
@@ -467,7 +702,7 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Ccn3,Vip,Vwc2l expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 018" EXACT []
 synonym: "Vip Htr1f" EXACT []
-is_a: AllenDendClass_CS202002013:138 ! Vip primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: AllenDendClass_CS202002013:143 ! L5 VIP cell primary motor cortex GABAergic interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000037362 ! expresses Ccn3
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000045648 ! expresses Vwc2l
 property_value: prefLabel "Vip Htr1f" xsd:string
@@ -476,12 +711,16 @@ property_value: prefLabel "Vip Htr1f" xsd:string
 id: AllenDendClass_CS202002013:182
 name: IT projecting primary motor cortex glutamatergic neuron (Mus musculus)
 comment: cell_set_preferred_alias:IT projecting ; original_label:n66 ; cell_set_label:RNAseq 058-069 ; cell_set_aligned_alias:IT projecting
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Fstl4,Satb2.
+synonym: "Fstl4,Satb2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "IT projecting" EXACT []
 synonym: "n66" EXACT []
 synonym: "RNAseq 058-069" EXACT []
 is_a: CL:4023008 {xref="DOI:10.1101/2020.02.29.970558"} ! intratelencephalic-projecting glutamatergic cortical neuron
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036264 ! expresses Fstl4
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038331 ! expresses Satb2
 property_value: prefLabel "IT projecting" xsd:string
 
 [Term]
@@ -494,6 +733,7 @@ synonym: "L2/3 IT" EXACT []
 synonym: "n67" EXACT []
 synonym: "RNAseq 058-060" EXACT []
 is_a: AllenDendClass_CS202002013:182 ! IT projecting primary motor cortex glutamatergic neuron (Mus musculus)
+is_a: CL:4023047 {xref="DOI:10.1101/2020.02.29.970558"} ! L2/3 intratelencephalic projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021708 ! expresses Rasgrf2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028222 ! expresses Calb1
 property_value: prefLabel "L2/3 IT" xsd:string
@@ -502,10 +742,15 @@ property_value: prefLabel "L2/3 IT" xsd:string
 id: AllenDendClass_CS202002013:188
 name: L4 primary motor cortex glutamatergic neuron (Mus musculus)
 comment: cell_set_preferred_alias:L4 ; original_label:n72 ; cell_set_label:RNAseq 061-062 ; cell_set_aligned_alias:L4
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: A830036E02Rik,Kcnh5,Rorb.
+synonym: "A830036E02Rik,Kcnh5,Rorb expressing glutamatergic neuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "L4" EXACT []
 synonym: "n72" EXACT []
 synonym: "RNAseq 061-062" EXACT []
 is_a: AllenDendClass_CS202002013:182 ! IT projecting primary motor cortex glutamatergic neuron (Mus musculus)
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000034402 ! expresses Kcnh5
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036192 ! expresses Rorb
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000084890 ! expresses A830036E02Rik
 property_value: prefLabel "L4" xsd:string
 
 [Term]
@@ -518,6 +763,7 @@ synonym: "L5 IT" EXACT []
 synonym: "n73" EXACT []
 synonym: "RNAseq 063-066" EXACT []
 is_a: AllenDendClass_CS202002013:182 ! IT projecting primary motor cortex glutamatergic neuron (Mus musculus)
+is_a: CL:4023049 {xref="DOI:10.1101/2020.02.29.970558"} ! L5 intratelencephalic projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035357 ! expresses Pdzrn3
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039037 ! expresses St6galnac5
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040452 ! expresses Cdh12
@@ -531,7 +777,7 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Pbx3,Pde3a,Vip expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 019" EXACT []
 synonym: "Vip Gpc3" EXACT []
-is_a: AllenDendClass_CS202002013:138 ! Vip primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: AllenDendClass_CS202002013:143 ! L5 VIP cell primary motor cortex GABAergic interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038718 ! expresses Pbx3
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000041741 ! expresses Pde3a
 property_value: prefLabel "Vip Gpc3" xsd:string
@@ -540,10 +786,14 @@ property_value: prefLabel "Vip Gpc3" xsd:string
 id: AllenDendClass_CS202002013:190
 name: L5 IT_2 primary motor cortex glutamatergic neuron (Mus musculus)
 comment: cell_set_preferred_alias:L5 IT_2 ; original_label:n74 ; cell_set_label:RNAseq 063-064 ; cell_set_aligned_alias:''
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Deptor,Il1rapl2.
+synonym: "Deptor,Il1rapl2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "L5 IT_2" EXACT []
 synonym: "n74" EXACT []
 synonym: "RNAseq 063-064" EXACT []
 is_a: AllenDendClass_CS202002013:189 ! L5 IT primary motor cortex glutamatergic neuron (Mus musculus)
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022419 ! expresses Deptor
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses Il1rapl2
 property_value: prefLabel "L5 IT_2" xsd:string
 
 [Term]
@@ -556,6 +806,7 @@ synonym: "L6 IT" EXACT []
 synonym: "n76" EXACT []
 synonym: "RNAseq 067-068" EXACT []
 is_a: AllenDendClass_CS202002013:182 ! IT projecting primary motor cortex glutamatergic neuron (Mus musculus)
+is_a: CL:4023050 {xref="DOI:10.1101/2020.02.29.970558"} ! L6 intratelencephalic projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000016918 ! expresses Sulf1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052430 ! expresses Bmpr1b
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses Il1rapl2
@@ -570,7 +821,7 @@ synonym: "Gm2164,Npr3 expressing glutamatergic neuron of primary motor cortex (M
 synonym: "L5 ET" EXACT []
 synonym: "n77" EXACT []
 synonym: "RNAseq 070-073" EXACT []
-is_a: CL:0000679 ! glutamatergic neuron
+is_a: CL:4023041 {xref="DOI:10.1101/2020.02.29.970558"} ! L5 extratelencephalic projecting glutamatergic cortical neuron
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022206 ! expresses Npr3
@@ -586,9 +837,7 @@ synonym: "Foxp2,Hs3st4 expressing glutamatergic neuron of primary motor cortex (
 synonym: "L6 CT" EXACT []
 synonym: "n81" EXACT []
 synonym: "RNAseq 074-080" EXACT []
-is_a: CL:0000679 ! glutamatergic neuron
-relationship: in_taxon NCBITaxon:10090 ! Mus musculus
-relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
+is_a: CL:4023055 {xref="DOI:10.1101/2020.02.29.970558"} ! corticothalamic VAL/VM projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029563 ! expresses Foxp2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000078591 ! expresses Hs3st4
 property_value: prefLabel "L6 CT" xsd:string
@@ -616,10 +865,9 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Bmper,Btbd11,Crh,Vip expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 020" EXACT []
 synonym: "Vip C1ql1" EXACT []
-is_a: AllenDendClass_CS202002013:138 ! Vip primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: AllenDendClass_CS202002013:143 ! L5 VIP cell primary motor cortex GABAergic interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020042 ! expresses Btbd11
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031963 ! expresses Bmper
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049796 ! expresses Crh
 property_value: prefLabel "Vip C1ql1" xsd:string
 
 [Term]
@@ -631,9 +879,7 @@ synonym: "Ccn2,Cplx3 expressing glutamatergic neuron of primary motor cortex (Mu
 synonym: "L6b" EXACT []
 synonym: "n87" EXACT []
 synonym: "RNAseq 081-085" EXACT []
-is_a: CL:0000679 ! glutamatergic neuron
-relationship: in_taxon NCBITaxon:10090 ! Mus musculus
-relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
+is_a: CL:4023046 {xref="DOI:10.1101/2020.02.29.970558"} ! L6b subplate glutamatergic neuron of the primary motor cortex (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019997 ! expresses Ccn2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039714 ! expresses Cplx3
 property_value: prefLabel "L6b" xsd:string
@@ -647,9 +893,7 @@ synonym: "Etv1,Tshz2 expressing glutamatergic neuron of primary motor cortex (Mu
 synonym: "L5/6 NP" EXACT []
 synonym: "n91" EXACT []
 synonym: "RNAseq 086-088" EXACT []
-is_a: CL:0000679 ! glutamatergic neuron
-relationship: in_taxon NCBITaxon:10090 ! Mus musculus
-relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
+is_a: CL:4023043 {xref="DOI:10.1101/2020.02.29.970558"} ! L5/6 near-projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004151 ! expresses Etv1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047907 ! expresses Tshz2
 property_value: prefLabel "L5/6 NP" xsd:string
@@ -663,7 +907,7 @@ synonym: "5033421B08Rik,Htr3a expressing GABAergic interneuron of primary motor 
 synonym: "RNAseq 021" EXACT []
 synonym: "Vip Mybpc1_2" EXACT []
 is_a: AllenDendClass_CS202002013:138 ! Vip primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023007
+is_a: CL:4023007 ! L2/3 bipolar Vip expressing GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032269 ! expresses Htr3a
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000112276 ! expresses 5033421B08Rik
 property_value: prefLabel "Vip Mybpc1_2" xsd:string
@@ -672,12 +916,16 @@ property_value: prefLabel "Vip Mybpc1_2" xsd:string
 id: AllenDendClass_CS202002013:211
 name: Astro_1 primary motor cortex astrocyte (Mus musculus)
 comment: cell_set_preferred_alias:Astro_1 ; original_label:n95 ; cell_set_label:RNAseq 093-094 ; cell_set_aligned_alias:''
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Gli3,Slc39a12.
 synonym: "Astro_1" EXACT []
+synonym: "Gli3,Slc39a12 expressing astrocyte of primary motor cortex (Mus musculus)" EXACT []
 synonym: "n95" EXACT []
 synonym: "RNAseq 093-094" EXACT []
 is_a: CL:0002605 ! astrocyte of the cerebral cortex
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: part_of UBERON:0001384 ! primary motor cortex
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021318 ! expresses Gli3
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036949 ! expresses Slc39a12
 property_value: prefLabel "Astro_1" xsd:string
 
 [Term]
@@ -689,7 +937,7 @@ synonym: "Calb2,Gm2516 expressing GABAergic interneuron of primary motor cortex 
 synonym: "RNAseq 022" EXACT []
 synonym: "Vip Mybpc1_1" EXACT []
 is_a: AllenDendClass_CS202002013:138 ! Vip primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023007
+is_a: CL:4023007 ! L2/3 bipolar Vip expressing GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000003657 ! expresses Calb2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000110281 ! expresses Gm2516
 property_value: prefLabel "Vip Mybpc1_1" xsd:string
@@ -703,7 +951,7 @@ synonym: "Chat,Npy2r expressing GABAergic interneuron of primary motor cortex (M
 synonym: "RNAseq 023" EXACT []
 synonym: "Vip Chat_1" EXACT []
 is_a: AllenDendClass_CS202002013:138 ! Vip primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023007
+is_a: CL:4023007 ! L2/3 bipolar Vip expressing GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021919 ! expresses Chat
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028004 ! expresses Npy2r
 property_value: prefLabel "Vip Chat_1" xsd:string
@@ -717,7 +965,7 @@ synonym: "Caln1,Grm8 expressing GABAergic interneuron of primary motor cortex (M
 synonym: "RNAseq 024" EXACT []
 synonym: "Vip Mybpc1_3" EXACT []
 is_a: AllenDendClass_CS202002013:138 ! Vip primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023007
+is_a: CL:4023007 ! L2/3 bipolar Vip expressing GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024211 ! expresses Grm8
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000060371 ! expresses Caln1
 property_value: prefLabel "Vip Mybpc1_3" xsd:string
@@ -731,7 +979,7 @@ synonym: "Grik4,Htr4 expressing GABAergic interneuron of primary motor cortex (M
 synonym: "RNAseq 025" EXACT []
 synonym: "Vip Chat_2" EXACT []
 is_a: AllenDendClass_CS202002013:138 ! Vip primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023007
+is_a: CL:4023007 ! L2/3 bipolar Vip expressing GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026322 ! expresses Htr4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032017 ! expresses Grik4
 property_value: prefLabel "Vip Chat_2" xsd:string
@@ -746,7 +994,6 @@ synonym: "RNAseq 026" EXACT []
 synonym: "Vip Igfbp6_1" EXACT []
 is_a: AllenDendClass_CS202002013:149 ! Vip_4 primary motor cortex GABAergic interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032625 ! expresses Thsd7a
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000110468 ! expresses Gm39185
 property_value: prefLabel "Vip Igfbp6_1" xsd:string
 
 [Term]
@@ -758,7 +1005,6 @@ synonym: "Crh,Thsd7b expressing GABAergic interneuron of primary motor cortex (M
 synonym: "RNAseq 027" EXACT []
 synonym: "Vip Igfbp6_2" EXACT []
 is_a: AllenDendClass_CS202002013:149 ! Vip_4 primary motor cortex GABAergic interneuron (Mus musculus)
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042581 ! expresses Thsd7b
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049796 ! expresses Crh
 property_value: prefLabel "Vip Igfbp6_2" xsd:string
 
@@ -766,13 +1012,13 @@ property_value: prefLabel "Vip Igfbp6_2" xsd:string
 id: AllenDendClass_CS202002013:28
 name: Sst Chodl primary motor cortex GABAergic interneuron (Mus musculus)
 comment: cell_set_preferred_alias:Sst Chodl ; original_label:Sst Chodl ; cell_set_label:RNAseq 028 ; cell_set_aligned_alias:Sst Chodl
-comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Nos1.
-synonym: "Nos1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Chodl,Nos1.
+synonym: "Chodl,Nos1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 028" EXACT []
 synonym: "Sst Chodl" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
 is_a: CL:4023025 {xref="DOI:10.1101/2020.02.29.970558"} ! Long-range projecting Sst GABAergic cortical interneuron (Mus musculus)
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022860 ! expresses
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022860 ! expresses Chodl
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029361 ! expresses Nos1
 property_value: prefLabel "Sst Chodl" xsd:string
 
@@ -814,8 +1060,7 @@ synonym: "Il1rapl2,Reln expressing GABAergic interneuron of primary motor cortex
 synonym: "RNAseq 030" EXACT []
 synonym: "Sst Myh8_1" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023017 ! sst GABAergic cortical interneuron
-is_a: CL:4023027
+is_a: CL:4023027 ! L5 ‘T-shaped’ Martinotti Sst GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042453 ! expresses Reln
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses Il1rapl2
 property_value: prefLabel "Sst Myh8_1" xsd:string
@@ -829,8 +1074,7 @@ synonym: "Cdh13,Pld5,Sox6 expressing GABAergic interneuron of primary motor cort
 synonym: "RNAseq 031" EXACT []
 synonym: "Sst Myh8_2" EXACT []
 is_a: AllenDendClass_CS202002013:156 ! Sst_1 primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023017 ! sst GABAergic cortical interneuron
-is_a: CL:4023027
+is_a: CL:4023027 ! L5 ‘T-shaped’ Martinotti Sst GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031841 ! expresses Cdh13
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000051910 ! expresses Sox6
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000055214 ! expresses Pld5
@@ -845,8 +1089,7 @@ synonym: "Cdh9,Grm1 expressing GABAergic interneuron of primary motor cortex (Mu
 synonym: "RNAseq 032" EXACT []
 synonym: "Sst Myh8_3" EXACT []
 is_a: AllenDendClass_CS202002013:156 ! Sst_1 primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023017 ! sst GABAergic cortical interneuron
-is_a: CL:4023027
+is_a: CL:4023027 ! L5 ‘T-shaped’ Martinotti Sst GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019828 ! expresses Grm1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000025370 ! expresses Cdh9
 property_value: prefLabel "Sst Myh8_3" xsd:string
@@ -861,7 +1104,6 @@ synonym: "RNAseq 033" EXACT []
 synonym: "Sst Htr1a" EXACT []
 is_a: AllenDendClass_CS202002013:156 ! Sst_1 primary motor cortex GABAergic interneuron (Mus musculus)
 is_a: CL:4023017 ! sst GABAergic cortical interneuron
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027400 ! expresses Pdyn
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000105068 ! expresses Gm30835
 property_value: prefLabel "Sst Htr1a" xsd:string
 
@@ -873,11 +1115,8 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Col19a1,Fbn2,Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 034" EXACT []
 synonym: "Sst Etv1" EXACT []
-is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023017 ! sst GABAergic cortical interneuron
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024598 ! expresses Fbn2
+is_a: AllenDendClass_CS202002013:159 ! L5 T Martinotti cell primary motor cortex GABAergic interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026141 ! expresses Col19a1
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! expresses Trpc6
 property_value: prefLabel "Sst Etv1" xsd:string
 
 [Term]
@@ -888,9 +1127,8 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Edaradd,Spon1,Whrn expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 035" EXACT []
 synonym: "Sst Pvalb Etv1" EXACT []
-is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023017 ! sst GABAergic cortical interneuron
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038156 ! expresses Spon1
+is_a: AllenDendClass_CS202002013:159 ! L5 T Martinotti cell primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: CL:4023018 ! pvalb GABAergic cortical interneuron
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039137 ! expresses Whrn
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000095105 ! expresses Edaradd
 property_value: prefLabel "Sst Pvalb Etv1" xsd:string
@@ -903,11 +1141,9 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Eya4,Nek7,Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 036" EXACT []
 synonym: "Sst Crhr2_1" EXACT []
-is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023017 ! sst GABAergic cortical interneuron
+is_a: AllenDendClass_CS202002013:161 ! L5 non-Martinotti cell primary motor cortex GABAergic interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000010461 ! expresses Eya4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026393 ! expresses Nek7
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! expresses Trpc6
 property_value: prefLabel "Sst Crhr2_1" xsd:string
 
 [Term]
@@ -918,10 +1154,8 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Lypd6b,Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 037" EXACT []
 synonym: "Sst Crhr2_2" EXACT []
-is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023017 ! sst GABAergic cortical interneuron
+is_a: AllenDendClass_CS202002013:161 ! L5 non-Martinotti cell primary motor cortex GABAergic interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026765 ! expresses Lypd6b
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! expresses Trpc6
 property_value: prefLabel "Sst Crhr2_2" xsd:string
 
 [Term]
@@ -946,10 +1180,7 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Olfm3,Sst expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 039" EXACT []
 synonym: "Sst Calb2" EXACT []
-is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023017 ! sst GABAergic cortical interneuron
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004366 ! expresses Sst
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027965 ! expresses Olfm3
+is_a: AllenDendClass_CS202002013:164 ! L2/3/5 fan Martinotti cell primary motor cortex GABAergic interneuron (Mus musculus)
 property_value: prefLabel "Sst Calb2" xsd:string
 
 [Term]
@@ -962,7 +1193,6 @@ synonym: "Lamp5 Egln3_3" EXACT []
 synonym: "RNAseq 004" EXACT []
 is_a: AllenDendClass_CS202002013:128 ! Lamp5_5 primary motor cortex GABAergic interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020902 ! expresses Ntn1
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021508 ! expresses Cxcl14
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042453 ! expresses Reln
 property_value: prefLabel "Lamp5 Egln3_3" xsd:string
 
@@ -974,8 +1204,7 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Gm49678,Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 040" EXACT []
 synonym: "Sst Pappa" EXACT []
-is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023017 ! sst GABAergic cortical interneuron
+is_a: AllenDendClass_CS202002013:164 ! L2/3/5 fan Martinotti cell primary motor cortex GABAergic interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! expresses Trpc6
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000116610 ! expresses Gm49678
 property_value: prefLabel "Sst Pappa" xsd:string
@@ -989,6 +1218,7 @@ synonym: "Moxd1,Prkg2 expressing GABAergic interneuron of primary motor cortex (
 synonym: "RNAseq 041" EXACT []
 synonym: "Sst Pvalb Calb2" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: CL:4023018 ! pvalb GABAergic cortical interneuron
 is_a: CL:4023034 {xref="DOI:10.1101/2020.02.29.970558"} ! L2/3 Pvalb like Sst GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020000 ! expresses Moxd1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029334 ! expresses Prkg2
@@ -1002,7 +1232,7 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Gm48893,Pard3b expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 042" EXACT []
 synonym: "Sst C1ql3_1" EXACT []
-is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: AllenDendClass_CS202002013:165 ! L5/6 non-Martinotti cell primary motor cortex GABAergic interneuron (Mus musculus)
 is_a: CL:4023017 ! sst GABAergic cortical interneuron
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052062 ! expresses Pard3b
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111950 ! expresses Gm48893
@@ -1016,7 +1246,7 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Brinp3,Gxylt2,Ndnf expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 043" EXACT []
 synonym: "Sst C1ql3_2" EXACT []
-is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: AllenDendClass_CS202002013:165 ! L5/6 non-Martinotti cell primary motor cortex GABAergic interneuron (Mus musculus)
 is_a: CL:4023017 ! sst GABAergic cortical interneuron
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030074 ! expresses Gxylt2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035131 ! expresses Brinp3
@@ -1031,11 +1261,9 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Cdh13,Tac2,Tmtc2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 044" EXACT []
 synonym: "Sst Tac2" EXACT []
-is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: AllenDendClass_CS202002013:165 ! L5/6 non-Martinotti cell primary motor cortex GABAergic interneuron (Mus musculus)
 is_a: CL:4023017 ! sst GABAergic cortical interneuron
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000025400 ! expresses Tac2
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031841 ! expresses Cdh13
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036019 ! expresses Tmtc2
 property_value: prefLabel "Sst Tac2" xsd:string
 
 [Term]
@@ -1046,7 +1274,7 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "RNAseq 045" EXACT []
 synonym: "Sst Th_1" EXACT []
 synonym: "St6galnac5,St8sia4,Zfpm2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
-is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: AllenDendClass_CS202002013:165 ! L5/6 non-Martinotti cell primary motor cortex GABAergic interneuron (Mus musculus)
 is_a: CL:4023017 ! sst GABAergic cortical interneuron
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022306 ! expresses Zfpm2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039037 ! expresses St6galnac5
@@ -1061,7 +1289,7 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Pard3b,Pnoc,Sst expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 046" EXACT []
 synonym: "Sst Th_2" EXACT []
-is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: AllenDendClass_CS202002013:170 ! L6 Th+ SST/PV cell primary motor cortex GABAergic interneuron (Mus musculus)
 is_a: CL:4023017 ! sst GABAergic cortical interneuron
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004366 ! expresses Sst
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000045731 ! expresses Pnoc
@@ -1076,10 +1304,8 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Cort,Th expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 047" EXACT []
 synonym: "Sst Th_3" EXACT []
-is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: AllenDendClass_CS202002013:170 ! L6 Th+ SST/PV cell primary motor cortex GABAergic interneuron (Mus musculus)
 is_a: CL:4023017 ! sst GABAergic cortical interneuron
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000000214 ! expresses Th
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028971 ! expresses Cort
 property_value: prefLabel "Sst Th_3" xsd:string
 
 [Term]
@@ -1119,7 +1345,7 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Dock5,Ndnf,Ndst4 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Lamp5 Pdlim5_1" EXACT []
 synonym: "RNAseq 005" EXACT []
-is_a: AllenDendClass_CS202002013:125 ! Lamp5 primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: AllenDendClass_CS202002013:130 ! Neurogliaform cell primary motor cortex GABAergic interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027971 ! expresses Ndst4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000044447 ! expresses Dock5
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049001 ! expresses Ndnf
@@ -1194,7 +1420,7 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Cntnap4,Gm46102 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Pvalb Reln" EXACT []
 synonym: "RNAseq 054" EXACT []
-is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: AllenDendClass_CS202002013:177 ! Upper FS Basket cell primary motor cortex GABAergic interneuron (Mus musculus)
 is_a: CL:4023018 ! pvalb GABAergic cortical interneuron
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031772 ! expresses Cntnap4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111061 ! expresses Gm46102
@@ -1208,9 +1434,8 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Eya4,Il1rapl2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Pvalb Il1rapl2" EXACT []
 synonym: "RNAseq 055" EXACT []
-is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: AllenDendClass_CS202002013:177 ! Upper FS Basket cell primary motor cortex GABAergic interneuron (Mus musculus)
 is_a: CL:4023018 ! pvalb GABAergic cortical interneuron
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000010461 ! expresses Eya4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses Il1rapl2
 property_value: prefLabel "Pvalb Il1rapl2" xsd:string
 
@@ -1236,8 +1461,6 @@ synonym: "Cntnap5b,Unc5b expressing GABAergic interneuron of primary motor corte
 synonym: "Pvalb Vipr2_2" EXACT []
 synonym: "RNAseq 057" EXACT []
 is_a: AllenDendClass_CS202002013:178 ! Chandelier primary motor cortex GABAergic interneuron (Mus musculus)
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020099 ! expresses Unc5b
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000067028 ! expresses Cntnap5b
 property_value: prefLabel "Pvalb Vipr2_2" xsd:string
 
 [Term]
@@ -1277,7 +1500,7 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Lamp5 Pdlim5_2" EXACT []
 synonym: "Ndnf,Pde11a expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 006" EXACT []
-is_a: AllenDendClass_CS202002013:125 ! Lamp5 primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: AllenDendClass_CS202002013:130 ! Neurogliaform cell primary motor cortex GABAergic interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049001 ! expresses Ndnf
 property_value: prefLabel "Lamp5 Pdlim5_2" xsd:string
 
@@ -1305,7 +1528,6 @@ synonym: "L4/5 IT_1" EXACT []
 synonym: "RNAseq 061" EXACT []
 is_a: AllenDendClass_CS202002013:188 ! L4 primary motor cortex glutamatergic neuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000017978 ! expresses Cadps2
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036192 ! expresses Rorb
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000073565 ! expresses Prr16
 property_value: prefLabel "L4/5 IT_1" xsd:string
 
@@ -1318,6 +1540,7 @@ synonym: "Col26a1,Cpne4,Il1rapl2 expressing glutamatergic neuron of primary moto
 synonym: "L4/5 IT_2" EXACT []
 synonym: "RNAseq 062" EXACT []
 is_a: AllenDendClass_CS202002013:188 ! L4 primary motor cortex glutamatergic neuron (Mus musculus)
+is_a: CL:4023048 {xref="DOI:10.1101/2020.02.29.970558"} ! L4/5 intratelencephalic projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004415 ! expresses Col26a1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032564 ! expresses Cpne4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses Il1rapl2
@@ -1342,7 +1565,6 @@ synonym: "L5 IT_2" EXACT []
 synonym: "RNAseq 064" EXACT []
 is_a: AllenDendClass_CS202002013:190 ! L5 IT_2 primary motor cortex glutamatergic neuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000003746 ! expresses Man1a
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022419 ! expresses Deptor
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000053399 ! expresses Adamts18
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000116610 ! expresses Gm49678
 property_value: prefLabel "L5 IT_2" xsd:string
@@ -1424,7 +1646,7 @@ comment: The minimal set of markers required to distinguish this cell type from 
 synonym: "Alk,Sema5a expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Lamp5 Slc35d3" EXACT []
 synonym: "RNAseq 007" EXACT []
-is_a: AllenDendClass_CS202002013:125 ! Lamp5 primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: AllenDendClass_CS202002013:130 ! Neurogliaform cell primary motor cortex GABAergic interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022231 ! expresses Sema5a
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000055471 ! expresses Alk
 property_value: prefLabel "Lamp5 Slc35d3" xsd:string
@@ -1440,7 +1662,7 @@ synonym: "L5 PT_1" EXACT []
 synonym: "RNAseq 070" EXACT []
 is_a: AllenDendClass_CS202002013:193 ! L5 ET primary motor cortex glutamatergic neuron (Mus musculus)
 is_a: CL:4023008 ! intratelencephalic-projecting glutamatergic cortical neuron
-is_a: CL:4023045
+is_a: CL:4023045 ! medulla-projecting extratelencephalic-projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030905 ! expresses Crym
 property_value: prefLabel "L5 PT_1" xsd:string
 
@@ -1455,7 +1677,7 @@ synonym: "L5 PT_2" EXACT []
 synonym: "RNAseq 071" EXACT []
 is_a: AllenDendClass_CS202002013:193 ! L5 ET primary motor cortex glutamatergic neuron (Mus musculus)
 is_a: CL:4023008 ! intratelencephalic-projecting glutamatergic cortical neuron
-is_a: CL:4023045
+is_a: CL:4023045 ! medulla-projecting extratelencephalic-projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021541 ! expresses Trpc7
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022112 ! expresses Gpc5
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040732 ! expresses Erg
@@ -1472,7 +1694,7 @@ synonym: "L5 PT_3" EXACT []
 synonym: "RNAseq 072" EXACT []
 is_a: AllenDendClass_CS202002013:193 ! L5 ET primary motor cortex glutamatergic neuron (Mus musculus)
 is_a: CL:4023008 ! intratelencephalic-projecting glutamatergic cortical neuron
-is_a: CL:4023044
+is_a: CL:4023044 ! non-medulla-projecting extratelencephalic-projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021541 ! expresses Trpc7
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022112 ! expresses Gpc5
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039620 ! expresses Trmt9b
@@ -1490,7 +1712,7 @@ synonym: "L5 PT_4" EXACT []
 synonym: "RNAseq 073" EXACT []
 is_a: AllenDendClass_CS202002013:193 ! L5 ET primary motor cortex glutamatergic neuron (Mus musculus)
 is_a: CL:4023008 ! intratelencephalic-projecting glutamatergic cortical neuron
-is_a: CL:4023044
+is_a: CL:4023044 ! non-medulla-projecting extratelencephalic-projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000043659 ! expresses Npsr1
 property_value: prefLabel "L5 PT_4" xsd:string
 
@@ -1725,6 +1947,19 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026344 ! exp
 property_value: prefLabel "L5/6 NP_3" xsd:string
 
 [Term]
+id: AllenDendClass_CS202002013:89
+name: Meis2 primary motor cortex meis2 expressing cortial GABAergic cell (Mus musculus) (Mus musculus)
+comment: cell_set_preferred_alias:Meis2 ; original_label:Meis2 ; cell_set_label:RNAseq 089 ; cell_set_aligned_alias:''
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Meis2,Tiam2.
+synonym: "Meis2" EXACT []
+synonym: "Meis2,Tiam2 expressing meis2 expressing cortial GABAergic cell (Mus musculus) of primary motor cortex (Mus musculus)" EXACT []
+synonym: "RNAseq 089" EXACT []
+is_a: CL:4023065 ! meis2 expressing cortial GABAergic cell (Mus musculus)
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000023800 ! expresses Tiam2
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027210 ! expresses Meis2
+property_value: prefLabel "Meis2" xsd:string
+
+[Term]
 id: AllenDendClass_CS202002013:9
 name: Sncg Col14a1 primary motor cortex GABAergic interneuron (Mus musculus)
 comment: cell_set_preferred_alias:Sncg Col14a1 ; original_label:Sncg Col14a1 ; cell_set_label:RNAseq 009 ; cell_set_aligned_alias:''
@@ -1733,9 +1968,24 @@ synonym: "Cdh6,Col25a1,Eps8 expressing GABAergic interneuron of primary motor co
 synonym: "RNAseq 009" EXACT []
 synonym: "Sncg Col14a1" EXACT []
 is_a: AllenDendClass_CS202002013:134 ! Sncg_2 primary motor cortex GABAergic interneuron (Mus musculus)
+is_a: CL:4023016 ! Vip GABAergic cortical interneuron
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000015766 ! expresses Eps8
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039385 ! expresses Cdh6
 property_value: prefLabel "Sncg Col14a1" xsd:string
+
+[Term]
+id: AllenDendClass_CS202002013:90
+name: Meis2_Top2a primary motor cortex meis2 expressing cortial GABAergic cell (Mus musculus) (Mus musculus)
+comment: cell_set_preferred_alias:Meis2_Top2a ; original_label:Meis2_Top2a ; cell_set_label:RNAseq 090 ; cell_set_aligned_alias:''
+comment: The minimal set of markers required to distinguish this cell type from other cell types in the primary motor cortex is: Gm17750,Gm29260,Igfbpl1.
+synonym: "Gm17750,Gm29260,Igfbpl1 expressing meis2 expressing cortial GABAergic cell (Mus musculus) of primary motor cortex (Mus musculus)" EXACT []
+synonym: "Meis2_Top2a" EXACT []
+synonym: "RNAseq 090" EXACT []
+is_a: CL:4023065 ! meis2 expressing cortial GABAergic cell (Mus musculus)
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035551 ! expresses Igfbpl1
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098087 ! expresses Gm17750
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000100832 ! expresses Gm29260
+property_value: prefLabel "Meis2_Top2a" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:91
@@ -1746,7 +1996,7 @@ synonym: "OPC" EXACT []
 synonym: "OPC Pdgfra" EXACT []
 synonym: "Pdgfra,Stk32a expressing oligodendrocyte precursor cell of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 091" EXACT []
-is_a: CL:0002453 ! oligodendrocyte precursor cell
+is_a: CL:0002453 {xref="DOI:10.1101/2020.02.29.970558"} ! oligodendrocyte precursor cell
 is_a: CL:1001579 ! cerebral cortex glial cell
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: part_of UBERON:0001384 ! primary motor cortex
@@ -2063,6 +2313,16 @@ xref: CARO:0000013
 is_a: CL:0000000 ! cell
 
 [Term]
+id: CL:0000005
+name: fibroblast neural crest derived
+namespace: cell
+def: "Any fibroblast that is deriived from the neural crest." [https://orcid.org/0000-0001-5208-3432]
+is_a: CL:0000057 ! fibroblast
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: develops_from CL:0000333 ! migratory neural crest cell
+relationship: develops_from CL:0000008 ! migratory cranial neural crest cell
+
+[Term]
 id: CL:0000008
 name: migratory cranial neural crest cell
 namespace: cell
@@ -2307,6 +2567,19 @@ xref: VHOG:0001529
 is_a: CL:0000680 ! muscle precursor cell
 
 [Term]
+id: CL:0000057
+name: fibroblast
+namespace: cell
+def: "A connective tissue cell which secretes an extracellular matrix rich in collagen and other macromolecules. Flattened and irregular in outline with branching processes; appear fusiform or spindle-shaped." [http://en.wikipedia.org/wiki/Fibroblast, ISBN:0517223651, MESH:A11.329.228, MESH:D005347]
+comment: These cells may be vimentin-positive, fibronectin-positive, fsp1-positive, MMP-1-positive, collagen I-positive, collagen III-positive, and alpha-SMA-negative.
+xref: BTO:0000452
+xref: CALOHA:TS-0362
+xref: FMA:63877
+xref: VHOG:0001482
+is_a: CL:0002320 ! connective tissue cell
+relationship: develops_from CL:0000134 ! mesenchymal stem cell
+
+[Term]
 id: CL:0000066
 name: epithelial cell
 namespace: cell
@@ -2362,6 +2635,17 @@ name: squamous epithelial cell
 namespace: cell
 xref: CALOHA:TS-1249
 is_a: CL:0000066 ! epithelial cell
+
+[Term]
+id: CL:0000077
+name: mesothelial cell
+namespace: cell
+def: "A flattened epithelial cell of mesenchymal origin that lines the serous cavity." [GOC:tfm, ISBN:0721662544]
+synonym: "mesotheliocyte" EXACT []
+xref: FMA:66773
+is_a: CL:0000076 ! squamous epithelial cell
+is_a: CL:0000213 ! lining cell
+is_a: CL:0002078 ! meso-epithelial cell
 
 [Term]
 id: CL:0000080
@@ -3299,6 +3583,23 @@ intersection_of: part_of UBERON:0001017 ! central nervous system
 relationship: part_of UBERON:0001017 ! central nervous system
 
 [Term]
+id: CL:0000881
+name: perivascular macrophage
+namespace: cell
+def: "A central nervous system macrophage found in small blood vessels in the brain. Markers include CD14+CD16+CD163+." [GO_REF:0000031, GOC:tfm, PMID:16507898]
+comment: Markers: Human/monkey, mice: CD163. Human: CD14+CD16+CD163+.
+is_a: CL:0000878 {is_inferred="true"} ! central nervous system macrophage
+intersection_of: CL:0000878 ! central nervous system macrophage
+intersection_of: part_of UBERON:0001981 ! blood vessel
+intersection_of: RO:0002104 PR:000001483 ! has plasma membrane part low affinity immunoglobulin gamma Fc region receptor III
+intersection_of: RO:0002104 PR:000001889 ! has plasma membrane part CD14 molecule
+intersection_of: RO:0002104 PR:000001925 ! has plasma membrane part scavenger receptor cysteine-rich type 1 protein M130
+relationship: part_of UBERON:0001981 ! blood vessel
+relationship: RO:0002104 PR:000001483 ! has plasma membrane part low affinity immunoglobulin gamma Fc region receptor III
+relationship: RO:0002104 PR:000001889 ! has plasma membrane part CD14 molecule
+relationship: RO:0002104 PR:000001925 ! has plasma membrane part scavenger receptor cysteine-rich type 1 protein M130
+
+[Term]
 id: CL:0000988
 name: hematopoietic cell
 namespace: cell
@@ -3784,6 +4085,19 @@ created_by: tmeehan
 creation_date: 2010-09-07T10:45:47Z
 
 [Term]
+id: CL:0002240
+name: marrow fibroblast
+namespace: cell
+def: "A fibroblast in the bone marrow." [GOC:tfm]
+xref: FMA:84377
+is_a: CL:0000057 ! fibroblast
+is_a: CL:0002092 ! bone marrow cell
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: part_of UBERON:0002371 ! bone marrow
+created_by: tmeehan
+creation_date: 2010-09-07T02:25:18Z
+
+[Term]
 id: CL:0002242
 name: nucleate cell
 namespace: cell
@@ -4011,6 +4325,31 @@ created_by: tmeehan
 creation_date: 2011-02-28T04:20:39Z
 
 [Term]
+id: CL:0002548
+name: fibroblast of cardiac tissue
+namespace: cell
+def: "A fibroblast that is part of the heart." [GOC:tfm]
+synonym: "cardiac fibroblast" EXACT []
+is_a: CL:0000057 {is_inferred="true"} ! fibroblast
+is_a: CL:0002494 {is_inferred="true"} ! cardiocyte
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: part_of UBERON:0000948 ! heart
+relationship: part_of UBERON:0000948 ! heart
+created_by: tmeehan
+creation_date: 2011-02-28T04:57:44Z
+
+[Term]
+id: CL:0002551
+name: fibroblast of dermis
+namespace: cell
+is_a: CL:0002620 {is_inferred="true"} ! skin fibroblast
+intersection_of: CL:0002620 ! skin fibroblast
+intersection_of: part_of UBERON:0002067 ! dermis
+relationship: part_of UBERON:0002067 ! dermis
+created_by: tmeehan
+creation_date: 2011-02-28T05:05:33Z
+
+[Term]
 id: CL:0002570
 name: mesenchymal stem cell of adipose
 namespace: cell
@@ -4069,6 +4408,9 @@ namespace: cell
 def: "A vascular associated smooth muscle cell of the brain vasculature." [GOC:tfm]
 is_a: CL:0000359 {is_inferred="true"} ! vascular associated smooth muscle cell
 is_a: CL:0002319 ! neural cell
+intersection_of: CL:0000359 ! vascular associated smooth muscle cell
+intersection_of: part_of UBERON:0000955 ! brain
+relationship: part_of UBERON:0000955 ! brain
 created_by: tmeehan
 creation_date: 2011-03-06T05:01:20Z
 
@@ -4110,6 +4452,20 @@ intersection_of: CL:0000117 ! CNS neuron (sensu Vertebrata)
 intersection_of: part_of UBERON:0000956 ! cerebral cortex
 created_by: tmeehan
 creation_date: 2011-03-06T07:37:08Z
+
+[Term]
+id: CL:0002620
+name: skin fibroblast
+namespace: cell
+def: "A fibroblast of skin." [GOC:tfm]
+xref: BTO:0001255
+xref: CALOHA:TS-0935
+is_a: CL:0000057 {is_inferred="true"} ! fibroblast
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: part_of UBERON:0002097 ! skin of body
+relationship: part_of UBERON:0002097 ! skin of body
+created_by: tmeehan
+creation_date: 2011-03-14T12:31:49Z
 
 [Term]
 id: CL:0002676
@@ -4289,6 +4645,27 @@ is_a: CL:0000048 ! multi fate stem cell
 is_a: CL:0002321 ! embryonic cell (metazoa)
 
 [Term]
+id: CL:0011019
+name: mesothelial cell of epicardium
+def: "A mesothelial cell that is part of the epicardium." []
+is_a: CL:0000077 ! mesothelial cell
+is_a: CL:0002494 ! cardiocyte
+intersection_of: CL:0000077 ! mesothelial cell
+intersection_of: part_of UBERON:0002348 ! epicardium
+relationship: part_of UBERON:0002348 ! epicardium
+created_by: http://orcid.org/0000-0001-5208-3432
+
+[Term]
+id: CL:0011022
+name: fibroblast of skin of back
+def: "A fibroblast that is part of skin of back." []
+is_a: CL:0002620 ! skin fibroblast
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: part_of UBERON:0001068 ! skin of back
+relationship: part_of UBERON:0001068 ! skin of back
+created_by: http://orcid.org/0000-0001-5208-3432
+
+[Term]
 id: CL:0011026
 name: progenitor cell
 def: "A precursor cell that has a tendency to differentiate into a specific type of cell. They are descendants of stem cells, only they are more constrained in their differentiation potential or capacity for self-renewal, and are often more limited in both senses." [https://doi.org/10.1016/B978-0-12-409503-8.00002-0, ISBN:978-1-62808-994-3]
@@ -4355,6 +4732,29 @@ intersection_of: part_of UBERON:0001890 ! forebrain
 relationship: part_of UBERON:0001890 ! forebrain
 
 [Term]
+id: CL:1000303
+name: fibroblast of areolar connective tissue
+namespace: cell
+def: "A fibroblast that is part of the areolar connective tissue." [GOC:tfm]
+xref: FMA:261279
+is_a: CL:0000057 {is_inferred="true"} ! fibroblast
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: part_of UBERON:0006815 ! areolar connective tissue
+relationship: part_of UBERON:0006815 ! areolar connective tissue
+
+[Term]
+id: CL:1000306
+name: fibroblast of tunica adventitia of artery
+namespace: cell
+def: "A fibroblast that is part of the tunica adventitia of artery." [GOC:tfm]
+xref: FMA:261285
+is_a: CL:0000057 {is_inferred="true"} ! fibroblast
+is_a: CL:0002503 ! adventitial cell
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: part_of UBERON:0005734 ! tunica adventitia of blood vessel
+relationship: part_of UBERON:0005734 ! tunica adventitia of blood vessel
+
+[Term]
 id: CL:1000412
 name: endothelial cell of arteriole
 namespace: cell
@@ -4417,6 +4817,17 @@ intersection_of: part_of UBERON:0001775 ! ciliary body
 relationship: part_of UBERON:0001775 ! ciliary body
 
 [Term]
+id: CL:1000444
+name: mesothelial cell of anterior chamber of eye
+namespace: cell
+def: "A mesothelial cell that is part of the anterior chamber of eyeball." [GOC:tfm]
+xref: FMA:70615
+is_a: CL:0000077 {is_inferred="true"} ! mesothelial cell
+intersection_of: CL:0000077 ! mesothelial cell
+intersection_of: part_of UBERON:0001766 ! anterior chamber of eyeball
+relationship: part_of UBERON:0001766 ! anterior chamber of eyeball
+
+[Term]
 id: CL:1001576
 name: oral mucosa squamous cell
 def: "Squamous cell of oral epithelium." [NPX:PDR]
@@ -4457,6 +4868,16 @@ intersection_of: CL:0000115 ! endothelial cell
 intersection_of: part_of UBERON:0000956 ! cerebral cortex
 relationship: part_of UBERON:0000956 ! cerebral cortex
 relationship: part_of UBERON:0013694 ! brain endothelium
+
+[Term]
+id: CL:1001609
+name: muscle fibroblast
+def: "Fibroblast from muscle organ." [NPX:PDR]
+xref: CALOHA:TS-0643
+is_a: CL:0000057 ! fibroblast
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: part_of UBERON:0001630 ! muscle organ
+relationship: part_of UBERON:0001630 ! muscle organ
 
 [Term]
 id: CL:1001610
@@ -4557,6 +4978,18 @@ created_by: TermGenie
 creation_date: 2014-06-25T02:28:17Z
 
 [Term]
+id: CL:2000042
+name: embryonic fibroblast
+namespace: cell
+def: "Any fibroblast that is part of a embryo." [GOC:TermGenie]
+is_a: CL:0000057 ! fibroblast
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: part_of UBERON:0000922 ! embryo
+relationship: part_of UBERON:0000922 ! embryo
+created_by: TermGenie
+creation_date: 2014-07-09T00:12:00Z
+
+[Term]
 id: CL:2000043
 name: brain pericyte
 namespace: cell
@@ -4567,6 +5000,69 @@ intersection_of: part_of UBERON:0000955 ! brain
 relationship: part_of UBERON:0000955 ! brain
 created_by: TermGenie
 creation_date: 2014-07-09T00:18:22Z
+
+[Term]
+id: CL:2000066
+name: cardiac ventricle fibroblast
+namespace: cell
+def: "Any fibroblast that is part of a cardiac ventricle." [GOC:TermGenie]
+comment: http://www.sciencellonline.com/site/productInformation.php?keyword=6310
+is_a: CL:0002548 ! fibroblast of cardiac tissue
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: part_of UBERON:0002082 ! cardiac ventricle
+relationship: part_of UBERON:0002082 ! cardiac ventricle
+created_by: TermGenie
+creation_date: 2014-10-07T18:35:38Z
+
+[Term]
+id: CL:2000067
+name: cardiac atrium fibroblast
+namespace: cell
+def: "Any fibroblast that is part of a cardiac atrium." [GOC:TermGenie]
+comment: http://www.sciencellonline.com/site/productInformation.php?keyword=6320
+is_a: CL:0002548 ! fibroblast of cardiac tissue
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: part_of UBERON:0002081 ! cardiac atrium
+relationship: part_of UBERON:0002081 ! cardiac atrium
+created_by: TermGenie
+creation_date: 2014-10-07T18:36:54Z
+
+[Term]
+id: CL:2000068
+name: pericardium fibroblast
+namespace: cell
+def: "Any fibroblast that is part of a pericardium." [GOC:TermGenie]
+comment: http://www.sciencellonline.com/site/productInformation.php?keyword=6430
+is_a: CL:0000057 ! fibroblast
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: part_of UBERON:0002407 ! pericardium
+relationship: part_of UBERON:0002407 ! pericardium
+created_by: TermGenie
+creation_date: 2014-10-07T18:38:06Z
+
+[Term]
+id: CL:2000070
+name: optic choroid fibroblast
+namespace: cell
+def: "Any fibroblast that is part of a optic choroid." [GOC:TermGenie]
+comment: http://www.sciencellonline.com/site/productInformation.php?keyword=6620
+is_a: CL:0000057 ! fibroblast
+intersection_of: CL:0000057 ! fibroblast
+intersection_of: part_of UBERON:0001776 ! optic choroid
+relationship: part_of UBERON:0001776 ! optic choroid
+created_by: TermGenie
+creation_date: 2014-10-07T18:50:43Z
+
+[Term]
+id: CL:4023007
+name: L2/3 bipolar Vip expressing GABAergic cortical interneuron (Mus musculus)
+def: "A Vip GABAergic cortical interneuron with bipolar morphology, with a soma found in L2/3. L2/3 bipolar Vip Cells have extending axons across all layers (with preferences for layers II/III and Va) and a dendritic tree that is vertically more restricted than deeper layer VIP cells and extend fewer dendrites into the layers outside their home layer (location of soma). L2/3 Bipolar Vip Cells have great variability in firing patterns, though most are continuous adapting. L2/3 Bipolar Vip Cells are more depolarized in their resting state, had less fast rectification, and had smaller after hyperpolarization than deeper Vip cells." [PMID:26420784]
+subset: BDS_subset
+synonym: "L2/3 bipolar Vip (Mus)" EXACT []
+is_a: CL:4023016 ! Vip GABAergic cortical interneuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 PR:P32648 ! expresses VIP peptides (mouse)
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
 
 [Term]
 id: CL:4023008
@@ -4581,9 +5077,20 @@ relationship: RO:0013001 UBERON:0001893 ! has synaptic IO in telencephalon
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
 
 [Term]
+id: CL:4023009
+name: extratelencephalic-projecting glutamatergic cortical neuron
+def: "A glutamatergic neuron located in the cerebral cortex that projects to structures not derived from telencephalon." [DOI:10.1101/2020.10.19.343129]
+subset: BDS_subset
+synonym: "ET projecting neuron" EXACT []
+xref: ILX:0770101
+is_a: CL:0000679 ! glutamatergic neuron
+relationship: RO:0002100 UBERON:0000956 ! has soma location cerebral cortex
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
+
+[Term]
 id: CL:4023010
 name: alpha7 Lamp5 GABAergic cortical interneuron (Mus musculus)
-def: "A Lamp5 GABAergic cortical interneuron that is strongly labelled for α7 nAChRs. These cells are located in L1 and have multipolar dendrites with vertically descending axonal collaterals that project deep into the column, usually branching and terminating in L5A. Unlike typical Lamp5 electrophysiology, they have Vip- and Sst-like firing properties, with active depolarizing hump at near-threshold membrane potentials, and  larger hyperpolarization sag, stronger burst, and rebound firing." [PMID:30413647, PMID:33184512]
+def: "A Lamp5 GABAergic cortical interneuron that is strongly labelled for α7 nAChRs. These cells have soma found in L1 and have multipolar dendrites with vertically descending axonal collaterals that project deep into the column, usually branching and terminating in L5A. Unlike typical Lamp5 electrophysiology, they have Vip- and Sst-like firing properties, with active depolarizing hump at near-threshold membrane potentials, and  larger hyperpolarization sag, stronger burst, and rebound firing." [PMID:30413647, PMID:33184512]
 subset: BDS_subset
 synonym: "A7 Lamp5 (Mus)" EXACT []
 is_a: CL:4023011 ! Lamp5 GABAergic cortical interneuron
@@ -4601,9 +5108,42 @@ is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
 intersection_of: CL:0000099 ! interneuron
 intersection_of: capable_of GO:0061534 ! gamma-aminobutyric acid secretion, neurotransmission
 intersection_of: RO:0002100 UBERON:0000956 ! has soma location cerebral cortex
-intersection_of: RO:0002292 PR:000032148 ! expresses Lamp5
-relationship: RO:0002292 PR:000032148 ! expresses Lamp5
+intersection_of: RO:0002292 PR:000032148 ! expresses lysosome-associated membrane glycoprotein 5
+relationship: RO:0002292 PR:000032148 ! expresses lysosome-associated membrane glycoprotein 5
 created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023012
+name: near-projecting glutamatergic cortical neuron
+def: "A glutamatergic neuron located in the cerebral cortex that projects axons locally rather than distantly." [DOI:10.1101/2020.10.19.343129]
+subset: BDS_subset
+synonym: "NP neuron" EXACT []
+xref: ILX:0770103
+is_a: CL:0000679 ! glutamatergic neuron
+relationship: RO:0002100 UBERON:0000956 ! has soma location cerebral cortex
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023013
+name: corticothalamic-projecting glutamatergic cortical neuron
+def: "A glutamatergic neuron located in the cerebral cortex that projects to the thalamus." [DOI:10.1101/2020.10.19.343129]
+subset: BDS_subset
+synonym: "CT projecting neuron" EXACT []
+is_a: CL:0000679 ! glutamatergic neuron
+relationship: RO:0002100 UBERON:0000956 ! has soma location cerebral cortex
+relationship: RO:0013001 UBERON:0010225 ! has synaptic IO in thalamic complex
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023014
+name: L5 Vip expressing cortical GABAergic interneuron (Mus musculus)
+def: "A Vip GABAergic cortical interneuron with a soma found in L5. L5 Vip cells have mostly local morphology with some deep-projecting axons. They show only moderate resistance, comparable to that of Sst subclass and unlike typical Vip subclass cells that tend to show high input resistance. L5 Vip cells show particularly low resting membrane potential." [PMID:26420784, PMID:26612957]
+subset: BDS_subset
+synonym: "L5 VIP (Mus)" EXACT []
+is_a: CL:4023016 ! Vip GABAergic cortical interneuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 PR:P32648 ! expresses VIP peptides (mouse)
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
 
 [Term]
 id: CL:4023015
@@ -4629,8 +5169,8 @@ is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
 intersection_of: CL:0000099 ! interneuron
 intersection_of: capable_of GO:0061534 ! gamma-aminobutyric acid secretion, neurotransmission
 intersection_of: RO:0002100 UBERON:0000956 ! has soma location cerebral cortex
-intersection_of: RO:0002292 PR:000017299 ! expresses vip
-relationship: RO:0002292 PR:000017299 ! expresses vip
+intersection_of: RO:0002292 PR:000017299 ! expresses VIP peptides
+relationship: RO:0002292 PR:000017299 ! expresses VIP peptides
 created_by: http://orcid.org/0000-0001-7258-9596
 
 [Term]
@@ -4643,8 +5183,8 @@ is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
 intersection_of: CL:0000099 ! interneuron
 intersection_of: capable_of GO:0061534 ! gamma-aminobutyric acid secretion, neurotransmission
 intersection_of: RO:0002100 UBERON:0000956 ! has soma location cerebral cortex
-intersection_of: RO:0002292 PR:000015665 ! expresses sst
-relationship: RO:0002292 PR:000015665 ! expresses sst
+intersection_of: RO:0002292 PR:000015665 ! expresses somatostatin
+relationship: RO:0002292 PR:000015665 ! expresses somatostatin
 created_by: http://orcid.org/0000-0001-7258-9596
 
 [Term]
@@ -4657,9 +5197,20 @@ is_a: CL:0010011 ! cerebral cortex GABAergic interneuron
 intersection_of: CL:0000099 ! interneuron
 intersection_of: capable_of GO:0061534 ! gamma-aminobutyric acid secretion, neurotransmission
 intersection_of: RO:0002100 UBERON:0000956 ! has soma location cerebral cortex
-intersection_of: RO:0002292 PR:000013502 ! expresses pvalb
-relationship: RO:0002292 PR:000013502 ! expresses pvalb
+intersection_of: RO:0002292 PR:000013502 ! expresses parvalbumin alpha
+relationship: RO:0002292 PR:000013502 ! expresses parvalbumin alpha
 created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023019
+name: L5/6 CCK and Vip expressing cortical GABAergic interneuron (Mus musculus)
+def: "A Vip GABAergic cortical interneuron that expresses CCK. L5/6 CCK cells have soma found mainly in L5 and L6 and have large axonal arborization." [PMID:33184512]
+subset: BDS_subset
+synonym: "L5/6 CCK Vip (Mus)" EXACT []
+is_a: CL:4023016 ! Vip GABAergic cortical interneuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 PR:P32648 ! expresses VIP peptides (mouse)
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
 
 [Term]
 id: CL:4023022
@@ -4674,10 +5225,23 @@ created_by: http://orcid.org/0000-0001-7258-9596
 [Term]
 id: CL:4023023
 name: L5,6 Neurogliaform Lamp5 GABAergic cortical interneuron (Mus musculus)
-def: "A Lamp 5 GABAergic cortical interneuron with neurogliaform morphology located in L5,6. L5,6 NGC Lamp5 have deep afterhyperpolarization (AHP) but narrow action potentials (APs). Unlike other deep neurogliaform cells (which are caudal ganglionic eminence (CGE) derived), L5,6 NGC Lamp5 cells are medial ganglionic eminence (MGE)-derived" [PMID:26727548]
+def: "A Lamp 5 GABAergic cortical interneuron with neurogliaform morphology with a soma found in L5,6. L5,6 NGC Lamp5 have deep afterhyperpolarization (AHP) but narrow action potentials (APs). Unlike other deep neurogliaform cells (which are caudal ganglionic eminence (CGE) derived), L5,6 NGC Lamp5 cells are medial ganglionic eminence (MGE)-derived" [PMID:26727548]
 subset: BDS_subset
 synonym: "L5,6 NGC Lamp5 (mus)" EXACT []
 is_a: CL:4023011 ! Lamp5 GABAergic cortical interneuron
+relationship: bearer_of PATO:0070001 ! neurogliaform morphology
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 PR:Q9D387 ! expresses lysosome-associated membrane glycoprotein 5 (mouse)
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023024
+name: Neurogliaform Lamp5 GABAergic cortical interneuron (Mus musculus)
+def: "A Lamp5 GABAergic cortical interneuron with layer-adapting morphology. NGC Lamp5 cells have a small round soma, short dendrites, and a wide dense axonal arbor that tends to establish a dense axonal mesh with high connection probability both to themselves and L2 pyramidal cells. NGC Lamp5 cells have unique synaptic properties that distinguish them from other GABAergic interneurons, including the release of GABA to the extracellular space via volume transmission, and the ability to produce GABA-B responses in connected postsynaptic targets." [PMID:27477017]
+subset: BDS_subset
+synonym: "NGC Lamp5 (mus)" EXACT []
+is_a: CL:4023011 ! Lamp5 GABAergic cortical interneuron
+relationship: bearer_of PATO:0070001 ! neurogliaform morphology
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: RO:0002292 PR:Q9D387 ! expresses lysosome-associated membrane glycoprotein 5 (mouse)
 created_by: http://orcid.org/0000-0001-7258-9596
@@ -4694,12 +5258,48 @@ relationship: RO:0002292 PR:P60041 ! expresses somatostatin (mouse)
 created_by: http://orcid.org/0000-0001-7258-9596
 
 [Term]
+id: CL:4023027
+name: L5 ‘T-shaped’ Martinotti Sst GABAergic cortical interneuron (Mus musculus)
+def: "A Sst GABAergic cortical interneuron with a soma found in L5 and possesses 'T-shaped' martinotti morphologies with local axonal plexus in L5a and translaminar axons restricted to the uppermost part of L1. They show low-threshold spiking patterns with strong rebound firing, and inhibit the L1 apical tuft of nearby pyramidal cells." [PMID:28254942, PMID:29326172]
+subset: BDS_subset
+synonym: "L5 T Martinotti SST (Mus)" EXACT []
+is_a: CL:4023017 ! sst GABAergic cortical interneuron
+relationship: bearer_of PATO:0070008 ! 'T-shaped' martinotti morphology
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 PR:P60041 ! expresses somatostatin (mouse)
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023028
+name: L5 Non-martinotti Sst GABAergic cortical interneuron (Mus musculus)
+def: "A Sst GABAergic cortical interneuron with a soma found in lower L5 with mostly local axonal arborization but with some sparse ascending axons. L5 Non-martinotti Sst cells show somatic localization and local axon plexus in L5b and L5b/6 and substantial innervation of L3 and L4, and receive thalamic input from the ventral posteromedial nucleus and specifically target L4 neurons, avoiding L5 pyramidal cells. L5 Non-martinotti Sst cells tend to show a higher input resistance and seem to be less stuttering." [PMID:28254942, PMID:29326172]
+subset: BDS_subset
+synonym: "L5 Non-martinotti SST (Mus)" EXACT []
+is_a: CL:4023017 ! sst GABAergic cortical interneuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 PR:P60041 ! expresses somatostatin (mouse)
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023030
+name: L2/3/4 Fan martinotti Sst GABAergic cortical interneuron (Mus musculus)
+def: "A Sst GABAergic cortical interneuron that has \"Fanning-out' Martinotti morphology with local axon arbor and long ascending axons that spreads horizontally and arborizes significantly in L1. They have an adapting firing pattern and non-zero afterdepolarization (ADP)." [PMID:27225074, PMID:27477017, PMID:28254942, PMID:29326172]
+subset: BDS_subset
+synonym: "L2/3/5 Fan Martinotti SST (Mus)" EXACT []
+is_a: CL:4023017 ! sst GABAergic cortical interneuron
+relationship: bearer_of PATO:0070009 ! 'fanning-out' martinotti morphology
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002292 PR:P60041 ! expresses somatostatin (mouse)
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
 id: CL:4023031
 name: L4 Sst GABAergic cortical interneuron (Mus musculus)
-def: "A Sst GABAergic cortical interneuron that is found in lower L2/3 and upper 5, L4 Sst cells have martinotti morphology with ascending axons but denser local axons and sparser ‘fanning-out’ projections to L1. L4 Sst cells have smaller membrane time constant to calb2 (L2/3/5 Fan Martinotti Cell) and non-zero afterdepolarization (ADP)." [PMID:33184512]
+def: "A Sst GABAergic cortical interneuron with a soma found in lower L2/3 and upper 5, L4 Sst cells have martinotti morphology with ascending axons but denser local axons and sparser ‘fanning-out’ projections to L1. L4 Sst cells have smaller membrane time constant to calb2 (L2/3/5 Fan Martinotti Cell) and non-zero afterdepolarization (ADP)." [PMID:33184512]
 subset: BDS_subset
 synonym: "L4 SST (Mus)" EXACT []
 is_a: CL:4023017 ! sst GABAergic cortical interneuron
+relationship: bearer_of PATO:0070007 ! martinotti morphology
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: RO:0002292 PR:P60041 ! expresses somatostatin (mouse)
 created_by: http://orcid.org/0000-0001-7258-9596
@@ -4707,7 +5307,7 @@ created_by: http://orcid.org/0000-0001-7258-9596
 [Term]
 id: CL:4023034
 name: L2/3 Pvalb like Sst GABAergic cortical interneuron (Mus musculus)
-def: "A Sst GABAergic cortical interneuron transcriptomically between the Sst and the Pvalb families and found in L2/3. Some L2/3 PV-like SST cells have Martinotti morphology while some have basket cell morphology. L2/3 PV-like SST cells have lower AP width and higher firing rate than typical Sst subclass cells. L2/3 PV-like SST cells have high maximum firing rate variability, with many classified as belonging to the Pvalb subclass on the basis of electrophysiology." [PMID:33184512]
+def: "A Sst GABAergic cortical interneuron transcriptomically between the Sst and the Pvalb families with a soma found in L2/3. Some L2/3 PV-like SST cells have Martinotti morphology while some have basket cell morphology. L2/3 PV-like SST cells have lower AP width and higher firing rate than typical Sst subclass cells. L2/3 PV-like SST cells have high maximum firing rate variability, with many classified as belonging to the Pvalb subclass on the basis of electrophysiology." [PMID:33184512]
 subset: BDS_subset
 synonym: "L2/3 PV-like SST Mus)" EXACT []
 is_a: CL:4023017 ! sst GABAergic cortical interneuron
@@ -4718,14 +5318,202 @@ created_by: http://orcid.org/0000-0001-7258-9596
 [Term]
 id: CL:4023036
 name: Chandelier Pvalb GABAergic cortical interneuron (Mus musculus)
-def: "A Pvalb GABAergic cortical interneuron that is recognizable by the straight terminal axonal 'cartridges' of vertically oriented strings of synaptic boutons. Chandelier PV cells are mostly found in upper L2/3, with some in deep L5. Chandelier PV cells exhibit fast-spiking but lower firing rate compared to basket cells, and have practically absent hyperpolarization sag. Chandelier PV cells' boutons target exclusively the axon initial segment (AIS) of pyramidal cells, with a single cell innervating hundreds of pyramidal cells in a clustered manner." [PMID:27477017]
+def: "A Pvalb GABAergic cortical interneuron that is recognizable by the straight terminal axonal 'cartridges' of vertically oriented strings of synaptic boutons. Chandelier PV cells have soma found in in upper L2/3, with some in deep L5. Chandelier PV cells exhibit fast-spiking but lower firing rate compared to basket cells, and have practically absent hyperpolarization sag. Chandelier PV cells' boutons target exclusively the axon initial segment (AIS) of pyramidal cells, with a single cell innervating hundreds of pyramidal cells in a clustered manner." [PMID:27477017]
 subset: BDS_subset
 synonym: "Chandelier PV (Mus)" EXACT []
 xref: ILX:0107356
 is_a: CL:4023018 ! pvalb GABAergic cortical interneuron
+relationship: bearer_of PATO:0070011 ! chandelier cell morphology
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: RO:0002292 PR:P32848 ! expresses parvalbumin alpha (mouse)
 created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023038
+name: L6b glutamatergic cortical neuron
+def: "A glutamatergic neuron with a soma found in cortical layer 6b. They are transcriptomically related to corticothalamic-projecting neurons but have differential projections to the thalamus or anterior cingulate." [DOI:10.1101/2020.10.19.34312, PMID:30382198]
+subset: BDS_subset
+xref: ILX:0770163
+is_a: CL:0000679 ! glutamatergic neuron
+relationship: RO:0002100 UBERON:0000956 ! has soma location cerebral cortex
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023040
+name: L2/3-6 intratelencephalic projecting glutamatergic cortical neuron
+def: "A intratelencephalic-projecting glutamatergic neuron with a soma found in cortical layers L2/3-6" [DOI:10.1101/2020.10.19.343129]
+subset: BDS_subset
+synonym: "L2/3-6 IT projecting neuron" EXACT []
+is_a: CL:4023008 ! intratelencephalic-projecting glutamatergic cortical neuron
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023041
+name: L5 extratelencephalic projecting glutamatergic cortical neuron
+def: "A glutamatergic neuron, with a soma found in the deeper portion of L5, that has long-range axonal projections including deep subcortical targets outside of the telencephalon and, in some cases, the spinal cord. While the L5 ET neuron projections are not limited to ET targets, they are clearly differentiated from the neuron subclasses whose projections are constrained to intratelencephalic (IT) targets.  L5 ET neurons are generally the largest excitatory cortical neurons, typically having a thick apical dendrite with a prominent dendritic tuft in layer 1 and displaying burst-firing physiological characteristics." [DOI:10.1101/2020.10.19.343129]
+subset: BDS_subset
+synonym: "burst-firing layer 5 neuron" EXACT []
+synonym: "L5b neuron" EXACT []
+synonym: "pyramidal tract (PT) neuron" EXACT []
+synonym: "subcerebral projection (SCPN) neuron" EXACT []
+synonym: "thick-tufted layer 5 pyramidal neuron" EXACT []
+is_a: CL:4023009 ! extratelencephalic-projecting glutamatergic cortical neuron
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023042
+name: L6 corticothalamic-projecting glutamatergic cortical neuron
+def: "A corticothalamic-projecting neuron with a soma found in cortical layer 6." [DOI:10.1101/2020.10.19.343129]
+subset: BDS_subset
+synonym: "L6 CT" EXACT []
+is_a: CL:4023013 ! corticothalamic-projecting glutamatergic cortical neuron
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023043
+name: L5/6 near-projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
+def: "A near-projecting glutamatergic neuron with a soma found in layer 5/6 of the primary motor cortex." [DOI:10.1101/2020.10.19.343129, PMID:31209381]
+subset: BDS_subset
+synonym: "L5/6 NP" EXACT []
+xref: ILX:0770161
+is_a: CL:4023012 ! near-projecting glutamatergic cortical neuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023044
+name: non-medulla-projecting extratelencephalic-projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
+def: "An extratelencephalic-projecting glutamatergic neuron located in layer 5b of the primary motor cortex that does not project to the medulla. Non-MY ET cells are large, big-tufted cells with the apical dendrite often bifurcating close to the soma, suggesting they are corticospinal cells. Non-MY ET cells have bigger hyperpolarization sag, lower input resistance, and smaller AP width, compared to L5 IT neurons." [DOI:10.1101/2020.10.19.343129, PMID:24137110, PMID:9236245]
+subset: BDS_subset
+synonym: "non-MY ET MOp (Mus)" EXACT []
+is_a: CL:4023041 ! L5 extratelencephalic projecting glutamatergic cortical neuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023045
+name: medulla-projecting extratelencephalic-projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
+def: "An extratelencephalic-projecting glutamatergic neuron located in layer 5b of the primary motor cortex that projects to the medulla. MY ET cells are large, big-tufted cells with the apical dendrite often bifurcating close to the soma, suggesting they are corticospinal cells. MY ET cells have bigger hyperpolarization sag, lower input resistance, and smaller AP width, compared to L5 IT neurons." [DOI:10.1101/2020.10.19.343129, PMID:24137110, PMID:9236245]
+subset: BDS_subset
+synonym: "MY ET MOp (Mus)" EXACT []
+is_a: CL:4023041 ! L5 extratelencephalic projecting glutamatergic cortical neuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
+relationship: RO:0013001 UBERON:0001896 ! has synaptic IO in medulla oblongata
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023046
+name: L6b subplate glutamatergic neuron of the primary motor cortex (Mus musculus)
+def: "An excitatory glutamatergic neuron transcriptomically related to the CT subclass, with a soma preferentially located in the bottom of L6 of the primary motor cortex." [PMID:33184512]
+subset: BDS_subset
+is_a: CL:4023038 ! L6b glutamatergic cortical neuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023047
+name: L2/3 intratelencephalic projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
+def: "An intratelencephalic-projecting glutamatergic neuron with a soma found in cortical layer 2/3." [DOI:10.1101/2020.10.19.343129]
+subset: BDS_subset
+synonym: "L2/3 IT MOp (Mus)" EXACT []
+is_a: CL:4023040 ! L2/3-6 intratelencephalic projecting glutamatergic cortical neuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023048
+name: L4/5 intratelencephalic projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
+def: "An intratelencephalic-projecting glutamatergic with a soma located in upper L5 of the primary motor cortex. These cells have thin untufted apical dendrites." [PMID:33184512]
+subset: BDS_subset
+synonym: "L4/5 IT MOp (Mus)" EXACT []
+xref: ILX:0770174
+is_a: CL:4023040 ! L2/3-6 intratelencephalic projecting glutamatergic cortical neuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023049
+name: L5 intratelencephalic projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
+def: "An intratelencephalic-projecting glutamatergic neuron with a soma found in L5 of the primary motor cortex." [PMID:33184512]
+subset: BDS_subset
+synonym: "L5 IT MOp (Mus)" EXACT []
+xref: ILX:0770157
+is_a: CL:4023040 ! L2/3-6 intratelencephalic projecting glutamatergic cortical neuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023050
+name: L6 intratelencephalic projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
+def: "An intratelencephalic-projecting glutamatergic neuron with a soma found in L6 of the primary motor cortex. These cells are short untufted pyramidal cells, which could be stellate or inverted." [PMID:9236245]
+subset: BDS_subset
+synonym: "L6 IT MOp (Mus)" EXACT []
+xref: ILX:0770158
+is_a: CL:4023040 ! L2/3-6 intratelencephalic projecting glutamatergic cortical neuron
+relationship: bearer_of PATO:0070019 ! untufted pyramidal morphology
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023051
+name: vascular leptomeningeal cell
+def: "A type of mesothelial fibroblast that is derived from the neural crest, is localized on blood vessels, and is a key component of the pia and arachnoid membranes surrounding the brain." [PMID:27284195, PMID:29443965, PMID:30096314]
+subset: BDS_subset
+synonym: "VLMC" EXACT []
+xref: ILX:0770143
+is_a: CL:4023058 ! mesothelial fibroblast of the leptomeninx
+relationship: develops_from CL:0011012 ! neural crest cell
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023054
+name: mesothelial fibroblast
+def: "A mesothelial cell that has undergone mesothelial-to-mesenchymal transition (MMT) to become a fibroblast cell." [PMID:26106328]
+is_a: CL:0000057 ! fibroblast
+is_a: CL:0000077 ! mesothelial cell
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023055
+name: corticothalamic VAL/VM projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
+def: "A corticothalamic-projecting glutamatergic neuron that is located in L6 and lower L5 of the primary motor cortex, with a pyramidal morphology and mostly untufted apical dendrites terminating in midcortical layers. CT VAL/VM cells have a near tonic firing pattern and are distinguished from L6 IT neurons by a lower inter-spike interval adaptation index." [PMID:20556241, PMID:9236245]
+subset: BDS_subset
+synonym: "CT VAL/VM MOp (Mus)" EXACT []
+is_a: CL:4023042 ! L6 corticothalamic-projecting glutamatergic cortical neuron
+relationship: bearer_of PATO:0070019 ! untufted pyramidal morphology
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023058
+name: mesothelial fibroblast of the leptomeninx
+def: "A mesothelial fibroblast found in the leptomeninx." []
+is_a: CL:0002319 ! neural cell
+is_a: CL:4023054 ! mesothelial fibroblast
+intersection_of: CL:4023054 ! mesothelial fibroblast
+intersection_of: part_of UBERON:0000391 ! leptomeninx
+relationship: part_of UBERON:0000391 ! leptomeninx
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: CL:4023065
+name: meis2 expressing cortial GABAergic cell (Mus musculus)
+def: "A mouse GABAergic cell located in the cerebral cortex that expresses meis2." [PMID:33372656]
+subset: BDS_subset
+is_a: CL:0000617 ! GABAergic neuron
+relationship: in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: RO:0002100 UBERON:0000956 ! has soma location cerebral cortex
+relationship: RO:0002292 PR:P97367 ! expresses homeobox protein Meis2 (mouse)
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
 
 [Term]
 id: CP:0000028
@@ -5377,11 +6165,9 @@ xref: NIF_Subcellular:sao1337158144
 
 [Term]
 id: GO:0005622
-name: intracellular
 name: intracellular anatomical structure
 namespace: cellular_component
 def: "A component of a cell contained within (but not including) the plasma membrane. In eukaryotes it includes the nucleus and cytoplasm." [ISBN:0198506732]
-def: "The living contents of a cell; the matter contained within (but not including) the plasma membrane, usually taken to exclude large vacuoles and masses of secretory or ingested material. In eukaryotes it includes the nucleus and cytoplasm." [ISBN:0198506732]
 subset: gocheck_do_not_annotate
 subset: goslim_chembl
 subset: goslim_generic
@@ -5475,7 +6261,7 @@ subset: goslim_plant
 subset: goslim_yeast
 xref: Wikipedia:Cytoplasm
 is_a: GO:0110165 ! cellular anatomical entity
-relationship: part_of GO:0005622 ! intracellular
+relationship: part_of GO:0005622 ! intracellular anatomical structure
 
 [Term]
 id: GO:0005764
@@ -5523,6 +6309,7 @@ id: GO:0005775
 name: vacuolar lumen
 namespace: cellular_component
 def: "The volume enclosed within the vacuolar membrane." [ISBN:0198506732]
+is_a: GO:0043233 ! organelle lumen
 is_a: GO:0070013 ! intracellular organelle lumen
 intersection_of: GO:0031974 ! membrane-enclosed lumen
 intersection_of: part_of GO:0005773 ! vacuole
@@ -6693,6 +7480,7 @@ id: GO:0031981
 name: nuclear lumen
 namespace: cellular_component
 def: "The volume enclosed by the nuclear inner membrane." [GOC:mah, GOC:pz]
+is_a: GO:0043233 ! organelle lumen
 is_a: GO:0070013 ! intracellular organelle lumen
 relationship: part_of GO:0005634 ! nucleus
 
@@ -7129,11 +7917,7 @@ name: intracellular organelle
 namespace: cellular_component
 def: "Organized structure of distinctive morphology and function, occurring within the cell. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton. Excludes the plasma membrane." [GOC:go_curators]
 subset: goslim_pir
-is_a: GO:0005622 ! intracellular
-is_a: GO:0043226 ! organelle
-intersection_of: GO:0043226 ! organelle
-intersection_of: part_of GO:0005622 ! intracellular
-relationship: part_of GO:0005622 ! intracellular
+is_a: GO:0005622 ! intracellular anatomical structure
 
 [Term]
 id: GO:0043231
@@ -7156,7 +7940,8 @@ synonym: "intracellular non-membrane-enclosed organelle" EXACT []
 is_a: GO:0043228 ! non-membrane-bounded organelle
 is_a: GO:0043229 ! intracellular organelle
 intersection_of: GO:0043228 ! non-membrane-bounded organelle
-intersection_of: part_of GO:0005622 ! intracellular
+intersection_of: part_of GO:0005622 ! intracellular anatomical structure
+relationship: part_of GO:0005622 ! intracellular anatomical structure
 
 [Term]
 id: GO:0043233
@@ -7706,8 +8491,8 @@ is_a: GO:0006810 ! transport
 is_a: GO:0051641 ! cellular localization
 is_a: GO:0051649 ! establishment of localization in cell
 intersection_of: GO:0006810 ! transport
-intersection_of: occurs_in GO:0005622 ! intracellular
-relationship: occurs_in GO:0005622 ! intracellular
+intersection_of: occurs_in GO:0005622 ! intracellular anatomical structure
+relationship: occurs_in GO:0005622 ! intracellular anatomical structure
 created_by: jl
 creation_date: 2013-12-18T14:04:50Z
 
@@ -8936,7 +9721,7 @@ name: intracellular organelle lumen
 namespace: cellular_component
 def: "An organelle lumen that is part of an intracellular organelle." [GOC:mah]
 subset: goslim_mouse
-is_a: GO:0043233 ! organelle lumen
+is_a: GO:0031974 ! membrane-enclosed lumen
 intersection_of: GO:0031974 ! membrane-enclosed lumen
 intersection_of: part_of GO:0043229 ! intracellular organelle
 relationship: part_of GO:0043229 ! intracellular organelle
@@ -9027,9 +9812,9 @@ name: intracellular vesicle
 namespace: cellular_component
 def: "Any vesicle that is part of the intracellular region." [GOC:vesicles]
 is_a: GO:0031982 ! vesicle
-is_a: GO:0043229 ! intracellular organelle
 intersection_of: GO:0031982 ! vesicle
-intersection_of: part_of GO:0005622 ! intracellular
+intersection_of: part_of GO:0005622 ! intracellular anatomical structure
+relationship: part_of GO:0005622 ! intracellular anatomical structure
 created_by: pr
 creation_date: 2016-03-29T17:39:45Z
 
@@ -10285,6 +11070,15 @@ is_a: BFO:0000020 ! specifically dependent continuant
 property_value: IAO:0000589 "quality (PATO)" xsd:string
 
 [Term]
+id: PATO:0000051
+name: morphology
+namespace: quality
+def: "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure." [PATOC:GVG]
+subset: attribute_slim
+is_a: BFO:0000019 ! quality
+is_a: PATO:0001241 ! physical object quality
+
+[Term]
 id: PATO:0001241
 name: physical object quality
 namespace: quality
@@ -10468,6 +11262,91 @@ subset: value_slim
 is_a: PATO:0001404 ! nucleate quality
 created_by: gkoutos
 creation_date: 2013-10-21T05:44:34Z
+
+[Term]
+id: PATO:0010006
+name: cell morphology
+namespace: quality
+def: "A quality of a single cell inhering in the bearer by virtue of the bearer's size or shape or structure." [ORCID:0000-0002-7073-9172]
+comment: Use this term for morphologies that can *only* inhere in a cell, e.g. morphological qualities inhering in a cell by virtue of the presence, location or shape of one or more cell parts.
+is_a: PATO:0000051 ! morphology
+created_by: http://orcid.org/0000-0002-7073-9172
+creation_date: 2021-01-23T11:31:53Z
+
+[Term]
+id: PATO:0070001
+name: neurogliaform morphology
+namespace: quality
+def: "A cell morphology that inheres in neurons which have a small round soma, a large number of short, smooth, or slightly beaded primary dendrites that give rise to only a few secondary branches, and a branched axon that establishes a dense axonal mesh with thin shafts." [PMID:17122314]
+xref: ilxtr:NeurogliaformPhenotype
+is_a: PATO:0010006 ! cell morphology
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: PATO:0070007
+name: martinotti morphology
+namespace: quality
+def: "A cell morphology that inheres in neurons which are large and non-spiny, with dendrites radiating in a multipolar or bitufted pattern, often favouring the descending side, and axons that ascend directly from the superficial side of the soma, and travel upward without branching." [doi:10.1016/b978-0-12-369497-3.10004-4]
+xref: ilxtr:MartinottiPhenotype
+is_a: PATO:0010006 ! cell morphology
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: PATO:0070008
+name: 'T-shaped' martinotti morphology
+namespace: quality
+def: "A martinotti cell morphology that inheres in neurons which have axons that form a horizontal ramification, making it T-shaped." [doi:10.1016/b978-0-12-369497-3.10004-4]
+is_a: PATO:0070007 ! martinotti morphology
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: PATO:0070009
+name: 'fanning-out' martinotti morphology
+namespace: quality
+def: "A martinotti cell morphology that inheres in neurons which have axons that form a fan-like plexus." [doi:10.1016/b978-0-12-369497-3.10004-4]
+is_a: PATO:0070007 ! martinotti morphology
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: PATO:0070011
+name: chandelier cell morphology
+namespace: quality
+def: "A cell morphology that inheres in neurons which are small and round, and make highly specialized synapses with the axon initial segments of pyramidal neurons, wrapping them with candle-shaped synaptic “cartridges”." [doi:10.1016/b978-0-12-369497-3.10004-4]
+xref: ILX:0102028
+xref: ilxtr:ChandelierPhenotype
+xref: nifext:4
+is_a: PATO:0010006 ! cell morphology
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: PATO:0070015
+name: pyramidal family morphology
+namespace: quality
+def: "A cell morphology that inheres in neurons which have a pyramidal shaped soma, a single axon, a large apical dendrite and multiple basal dendrites." [doi:10.1016/b978-0-12-369497-3.10004-4]
+xref: ILX:0109553
+xref: SAO:1465673360
+is_a: PATO:0010006 ! cell morphology
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: PATO:0070017
+name: standard pyramidal morphology
+namespace: quality
+def: "A pyramidal family morphology that inheres in neurons which have a standard pyramidal shape with its apical dendrite aligned vertically." [doi:10.1016/b978-0-12-369497-3.10004-4]
+synonym: "pyramidal cell morphology" EXACT []
+synonym: "vertical pyramidal morphology" EXACT []
+xref: ilxtr:PyramidalPhenotype
+is_a: PATO:0070015 ! pyramidal family morphology
+created_by: http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: PATO:0070019
+name: untufted pyramidal morphology
+namespace: quality
+def: "A pyramidal cell morphology that inheres in neurons which lack a clear tuft formation but extend to large radial distances." [PMID:30715238]
+xref: ilxtr:UntuftedPyramidalPhenotype
+is_a: PATO:0070017 ! standard pyramidal morphology
+created_by: http://orcid.org/0000-0001-7258-9596
 
 [Term]
 id: PR:000000001
@@ -10982,6 +11861,17 @@ xref: PIRSF:PIRSF501074
 is_a: PR:000000001 ! protein
 
 [Term]
+id: PR:000001925
+name: scavenger receptor cysteine-rich type 1 protein M130
+namespace: protein
+def: "A protein that is a translation product of the human CD163 gene or a 1:1 ortholog thereof." [PRO:WCB]
+comment: Category=gene. Requested by=CL.
+synonym: "CD163" EXACT PRO-short-label [PRO:DNx]
+synonym: "hemoglobin scavenger receptor" EXACT []
+synonym: "M130" RELATED Gene-based []
+is_a: PR:000000001 ! protein
+
+[Term]
 id: PR:000001944
 name: transcription factor PU.1
 namespace: protein
@@ -11121,9 +12011,20 @@ synonym: "GATA2" EXACT PRO-short-label [PRO:DNx]
 is_a: PR:000000001 ! protein
 
 [Term]
+id: PR:000010317
+name: homeobox protein Meis2
+namespace: protein
+def: "A protein that is a translation product of the human MEIS2 gene or a 1:1 ortholog thereof." [PRO:DNx]
+comment: Category=gene.
+synonym: "Meis1-related protein 1" EXACT []
+synonym: "MEIS2" EXACT PRO-short-label [PRO:DNx]
+synonym: "MRG1" RELATED Gene-based []
+synonym: "Stra10" RELATED Gene-based []
+is_a: PR:000000001 ! protein
+
+[Term]
 id: PR:000013502
 name: parvalbumin alpha
-name: pvalb
 namespace: protein
 def: "A protein that is a translation product of the human PVALB gene or a 1:1 ortholog thereof." [PRO:DNx]
 comment: Category=gene.
@@ -11134,7 +12035,6 @@ is_a: PR:000000001 ! protein
 [Term]
 id: PR:000015325
 name: gamma-synuclein
-name: sncg
 namespace: protein
 def: "A protein that is a translation product of the human SNCG gene or a 1:1 ortholog thereof." [PRO:DNx]
 comment: Category=gene.
@@ -11151,7 +12051,6 @@ is_a: PR:000000001 ! protein
 [Term]
 id: PR:000015665
 name: somatostatin
-name: sst
 namespace: protein
 def: "A protein that is a translation product of the human SST gene or a 1:1 ortholog thereof." [PRO:DNx]
 comment: Category=gene.
@@ -11179,7 +12078,6 @@ is_a: PR:000000001 ! protein
 
 [Term]
 id: PR:000017299
-name: vip
 name: VIP peptides
 namespace: protein
 def: "A protein that is a translation product of the human VIP gene or a 1:1 ortholog thereof." [PRO:DNx]
@@ -11237,7 +12135,6 @@ relationship: capable_of GO:0004930 ! G protein-coupled receptor activity
 
 [Term]
 id: PR:000032148
-name: Lamp5
 name: lysosome-associated membrane glycoprotein 5
 namespace: protein
 def: "A protein that is a translation product of the human LAMP5 gene or a 1:1 ortholog thereof." [PRO:DNx]
@@ -11681,9 +12578,9 @@ comment: Category=organism-gene.
 synonym: "mVIP" EXACT PRO-short-label [PRO:DNx]
 synonym: "Vip" RELATED Gene-based [UniProtKB:P32648]
 xref: UniProtKB:P32648
-is_a: PR:000017299 ! vip
+is_a: PR:000017299 ! VIP peptides
 is_a: PR:000029032 ! Mus musculus protein
-intersection_of: PR:000017299 ! vip
+intersection_of: PR:000017299 ! VIP peptides
 intersection_of: only_in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: has_gene_template http://www.informatics.jax.org/marker/MGI:98933 ! Vip (mouse)
 
@@ -11697,9 +12594,9 @@ synonym: "mPVALB" EXACT PRO-short-label [PRO:DNx]
 synonym: "Pva" RELATED Gene-based [UniProtKB:P32848]
 synonym: "Pvalb" RELATED Gene-based [UniProtKB:P32848]
 xref: UniProtKB:P32848
-is_a: PR:000013502 ! pvalb
+is_a: PR:000013502 ! parvalbumin alpha
 is_a: PR:000029032 ! Mus musculus protein
-intersection_of: PR:000013502 ! pvalb
+intersection_of: PR:000013502 ! parvalbumin alpha
 intersection_of: only_in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: has_gene_template http://www.informatics.jax.org/marker/MGI:97821 ! Pvalb (mouse)
 
@@ -11829,11 +12726,46 @@ synonym: "mSST" EXACT PRO-short-label [PRO:DNx]
 synonym: "Smst" RELATED Gene-based [UniProtKB:P60041]
 synonym: "Sst" RELATED Gene-based [UniProtKB:P60041]
 xref: UniProtKB:P60041
-is_a: PR:000015665 ! sst
+is_a: PR:000015665 ! somatostatin
 is_a: PR:000029032 ! Mus musculus protein
-intersection_of: PR:000015665 ! sst
+intersection_of: PR:000015665 ! somatostatin
 intersection_of: only_in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: has_gene_template http://www.informatics.jax.org/marker/MGI:98326 ! Sst (mouse)
+
+[Term]
+id: PR:P97367
+name: homeobox protein Meis2 (mouse)
+namespace: protein
+def: "A homeobox protein Meis2 that is encoded in the genome of mouse." [OMA:P97367, PRO:DNx]
+comment: Category=organism-gene.
+synonym: "Meis1-related protein 1 (mouse)" EXACT [UniProtKB:P97367]
+synonym: "Meis2" RELATED Gene-based [UniProtKB:P97367]
+synonym: "mMEIS2" EXACT PRO-short-label [PRO:DNx]
+synonym: "Mrg1" RELATED Gene-based [UniProtKB:P97367]
+synonym: "Stra10" RELATED Gene-based [UniProtKB:P97367]
+xref: UniProtKB:P97367
+is_a: PR:000010317 ! homeobox protein Meis2
+is_a: PR:000029032 ! Mus musculus protein
+intersection_of: PR:000010317 ! homeobox protein Meis2
+intersection_of: only_in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: has_gene_template http://www.informatics.jax.org/marker/MGI:108564 ! Meis2 (mouse)
+
+[Term]
+id: PR:Q2VLH6
+name: scavenger receptor cysteine-rich type 1 protein M130 (mouse)
+namespace: protein
+def: "A scavenger receptor cysteine-rich type 1 protein M130 that is encoded in the genome of mouse." [OMA:Q2VLH6, PRO:DNx]
+comment: Category=organism-gene.
+synonym: "Cd163" RELATED Gene-based [UniProtKB:Q2VLH6]
+synonym: "CD163 (mouse)" EXACT [UniProtKB:Q2VLH6]
+synonym: "M130" RELATED Gene-based [UniProtKB:Q2VLH6]
+synonym: "mCD163" EXACT PRO-short-label [PRO:DNx]
+xref: UniProtKB:Q2VLH6
+is_a: PR:000001925 ! scavenger receptor cysteine-rich type 1 protein M130
+is_a: PR:000029032 ! Mus musculus protein
+intersection_of: PR:000001925 ! scavenger receptor cysteine-rich type 1 protein M130
+intersection_of: only_in_taxon NCBITaxon:10090 ! Mus musculus
+relationship: has_gene_template http://www.informatics.jax.org/marker/MGI:2135946 ! Cd163 (mouse)
 
 [Term]
 id: PR:Q61391
@@ -11949,8 +12881,8 @@ synonym: "lysosome-associated membrane protein 5 (mouse)" EXACT [UniProtKB:Q9D38
 synonym: "mLAMP5" EXACT PRO-short-label [PRO:DNx]
 xref: UniProtKB:Q9D387
 is_a: PR:000029032 ! Mus musculus protein
-is_a: PR:000032148 ! Lamp5
-intersection_of: PR:000032148 ! Lamp5
+is_a: PR:000032148 ! lysosome-associated membrane glycoprotein 5
+intersection_of: PR:000032148 ! lysosome-associated membrane glycoprotein 5
 intersection_of: only_in_taxon NCBITaxon:10090 ! Mus musculus
 relationship: has_gene_template http://www.informatics.jax.org/marker/MGI:1923411 ! Lamp5 (mouse)
 
@@ -12908,6 +13840,28 @@ relationship: preceded_by UBERON:0000110 ! neurula stage
 property_value: seeAlso https://github.com/obophenotype/uberon/issues/533 xsd:anyURI
 
 [Term]
+id: UBERON:0000125
+name: neural nucleus
+namespace: uberon
+def: "A spatially aggregated collection of nerve cell bodies in the CNS, consisting of one or more subpopulations that share cell type, chemical phenotype, and connections, and including nearby cells that share the same cell type, chemical phenotype, and connections. (CUMBO)" [NLX:28443]
+subset: cumbo
+synonym: "nervous system nucleus" EXACT []
+synonym: "neuraxis nucleus" EXACT [FMA:83686]
+synonym: "neuronal nucleus" EXACT [AEO:0000136]
+synonym: "nucleus" BROAD []
+synonym: "nucleus of CNS" EXACT [NLX:28443]
+synonym: "nucleus of neuraxis" RELATED []
+xref: AEO:0000136
+xref: FMA:83686
+xref: NCIT:C13197
+xref: NLX:28443
+xref: Nucleus:(neuroanatomy)
+is_a: UBERON:0011215 ! central nervous system cell part cluster
+relationship: composed_primarily_of UBERON:0002020 ! gray matter
+property_value: UBPROP:0000001 "Anatomical structure consisting of a discrete aggregate of neuronal soma[GO][GO_REF:0000021]." xsd:string {source="GO_REF:0000021"}
+property_value: UBPROP:0000012 "Proposed CUMBO def from MM: A subcortical part of the nervous system consisting of a relatively compact group of cells that is distinguishable histologically that share a commonality of cytoarchitecture, chemoarchitecturel and connectivity. (comments: I put in 'subcortical' because I don't think we consider either the cerebellar cortex or cerebral cortex to be nuclei. Some people distinguish between a nucleus and a laminar structure (see Wikipedia definition). However, there are structures identified as nuclei that are laminar, e.g., lateral geniculate nucleus, although they are not laminated in all species. Also, I put in 'relatively compact' and 'distiguishable by histology' because we have groups of cells, e.g., cholinergic cell groups, doparminergic cell groups that are related on the 3 criteria but which we don't tend to consider nuclei because they don't occupy an easily defined territory. But all is open to debate." xsd:string
+
+[Term]
 id: UBERON:0000153
 name: anterior region of body
 namespace: uberon
@@ -13350,6 +14304,35 @@ intersection_of: surrounded_by UBERON:0000389 ! lens cortex
 relationship: develops_from UBERON:0005614 ! lens anterior epithelium
 relationship: part_of UBERON:0000965 ! lens of camera-type eye
 relationship: surrounded_by UBERON:0000389 ! lens cortex
+
+[Term]
+id: UBERON:0000391
+name: leptomeninx
+namespace: uberon
+def: "pia mater or arachnoid mater." [http://en.wikipedia.org/wiki/Leptomeninges, https://github.com/obophenotype/uberon/issues/300]
+subset: organ_slim
+synonym: "arachnoid mater and pia mater" RELATED [FMA:231515]
+synonym: "arachnoidea mater et pia mater" RELATED [BTO:0001634]
+synonym: "leptomeninges" EXACT PLURAL [NLXANAT:090207]
+synonym: "pia-arachnoid" RELATED [BTO:0001634]
+synonym: "pia-arachnoid of neuraxis" RELATED [FMA:231515]
+xref: BTO:0001634
+xref: CALOHA:TS-0546
+xref: FMA:231515
+xref: http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=2347
+xref: http://en.wikipedia.org/wiki/Leptomeninges
+xref: http://linkedlifedata.com/resource/umls/id/C0228126
+xref: http://www.snomedbrowser.com/Codes/Details/362303006
+xref: NCIT:C32979
+xref: NLXANAT:090207
+xref: UMLS:C0228126 {source="ncithesaurus:Leptomeninges"}
+is_a: UBERON:0002360 ! meninx
+is_a: UBERON:0010313 ! neural crest-derived structure
+relationship: develops_from UBERON:0007646 ! endomeninx
+relationship: immediate_transformation_of UBERON:0007646 ! endomeninx
+property_value: editor_note "check relationship to secondary meninx" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor https://github.com/cmungall
+property_value: UBPROP:0000012 "in FMA/NIF this is a superclass of PM/AM - in BTO it is the mereological sum. We go with superclass here, as we are naming the class in the singular" xsd:string {external_ontology="FMA"}
 
 [Term]
 id: UBERON:0000409
@@ -17482,6 +18465,78 @@ property_value: UBPROP:0000008 "In the most primitive living vertebrates, the ha
 property_value: UBPROP:0000008 "The cerebrum of birds has evolved along different lines to that of mammals, although they are similarly enlarged, by comparison with reptiles. However, this enlargement is largely due to the basal ganglia, with the other areas remaining relatively primitive in structure." xsd:string {source="Variation_among_species"}
 
 [Term]
+id: UBERON:0001894
+name: diencephalon
+namespace: uberon
+def: "The division of the forebrain that develops from the foremost primary cerebral vesicle." [http://en.wikipedia.org/wiki/Diencephalon]
+subset: efo_slim
+subset: pheno_slim
+subset: uberon_slim
+subset: vertebrate_core
+synonym: "between brain" EXACT []
+synonym: "betweenbrain" RELATED [BTO:0000342]
+synonym: "DiE" BROAD ABBREVIATION [BIRNLEX:1503, NIFSTD:NeuroNames_abbrevSource]
+synonym: "diencephalon" RELATED LATIN [http://en.wikipedia.org/wiki/Diencephalon]
+synonym: "interbrain" EXACT [Swanson:2004]
+synonym: "mature diencephalon" EXACT [FMA:62001]
+synonym: "thalamencephalon" EXACT [MGI:anna]
+xref: AAO:0010481
+xref: BAMS:DI
+xref: BAMS:Di
+xref: BAMS:DiE
+xref: BAMS:IB
+xref: BAMS:Zh.
+xref: BIRNLEX:1503
+xref: BM:Die
+xref: BTO:0000342
+xref: CALOHA:TS-0199
+xref: DHBA:10389
+xref: DMBA:16308
+xref: EFO:0000911
+xref: EHDAA2:0000385
+xref: EHDAA:1969
+xref: EHDAA:2645
+xref: EHDAA:3472
+xref: EMAPA:16896
+xref: EV:0100194
+xref: FMA:62001
+xref: GAID:618
+xref: HBA:4391
+xref: http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=288
+xref: http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=288 {source="BIRNLEX:1503"}
+xref: http://en.wikipedia.org/wiki/Diencephalon
+xref: http://linkedlifedata.com/resource/umls/id/C0012144
+xref: http://www.snomedbrowser.com/Codes/Details/279328001
+xref: MA:0000171
+xref: MAT:0000420
+xref: MBA:1129
+xref: MESH:A08.186.211.730.385
+xref: MIAA:0000420
+xref: NCIT:C12456
+xref: OpenCyc:Mx4rwC-V0JwpEbGdrcN5Y29ycA
+xref: PBA:128013010
+xref: TAO:0000101
+xref: UMLS:C0012144 {source="BIRNLEX:1503"}
+xref: UMLS:C0012144 {source="ncithesaurus:Diencephalon"}
+xref: VHOG:0000318
+xref: XAO:0000013
+xref: ZFA:0000101
+is_a: UBERON:0002616 ! regional part of brain
+is_a: UBERON:0010314 ! structure with developmental contribution from neural crest
+relationship: contributes_to_morphology_of UBERON:0001890 ! forebrain
+relationship: develops_from UBERON:0006222 ! future diencephalon
+relationship: has_developmental_contribution_from UBERON:0003851 {evidence="definitional"} ! diencephalon neural crest
+relationship: immediate_transformation_of UBERON:0006222 {evidence="definitional"} ! future diencephalon
+relationship: part_of UBERON:0001890 ! forebrain
+property_value: depicted:by http://upload.wikimedia.org/wikipedia/commons/5/54/EmbryonicBrain.svg xsd:anyURI
+property_value: RO:0002175 NCBITaxon:7762 {notes="not well differentiated from the cerebrum. (Ariens, p. 868)", source="http://www.ncbi.nlm.nih.gov/pubmed/8932866"}
+property_value: UBPROP:0000001 "The more posterior and ventral of two forebrain neuromeres, the other being the telencephalon; major derivatives are the eye cups, the brain pretectal region, the thalamus, hypothalamus, and epithalamus (including the habenula and epiphysis). Kimmel et al, 1995.[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000101", ontology="TAO", source="ZFIN:curator"}
+property_value: UBPROP:0000001 "Unpaired part of the forebrain comprised of three major parts; the epithalamus, thalamus, and hypothalamus.[AAO]" xsd:string {date_retrieved="2012-06-20", external_class="AAO:0010481", ontology="AAO", source="AAO:BJB"}
+property_value: UBPROP:0000003 "Fine structural, computerized three-dimensional (3D) mapping of cell connectivity in the amphioxus nervous system and comparative molecular genetic studies of amphioxus and tunicates have provided recent insights into the phylogenetic origin of the vertebrate nervous system. The results suggest that several of the genetic mechanisms for establishing and patterning the vertebrate nervous system already operated in the ancestral chordate and that the nerve cord of the proximate invertebrate ancestor of the vertebrates included a diencephalon, midbrain, hindbrain, and spinal cord.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000318", ontology="VHOG", source="http://bgee.unil.ch/", source="DOI:10.1016/S0959-4388(99)00003-3 Holland LZ and Holland ND, Chordate origins of the vertebrate central nervous system. Current Opinion in Neurobiology (1999)"}
+property_value: UBPROP:0000007 "diencephalic" xsd:string
+property_value: UBPROP:0000012 "in ABA, this is part of the brain stem" xsd:string {external_ontology="ABA"}
+
+[Term]
 id: UBERON:0001896
 name: medulla oblongata
 namespace: uberon
@@ -19161,6 +20216,26 @@ relationship: part_of UBERON:0002081 ! cardiac atrium
 property_value: UBPROP:0000003 "As noted, the hearts of birds and mammals have four chambers that arises from the two chambers (atrium and ventricle) of the fish heart.[uncertain][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000602", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0072528305 Kardong KV, Vertebrates: Comparative Anatomy, Function, Evolution (2006) p.481"}
 
 [Term]
+id: UBERON:0002308
+name: nucleus of brain
+namespace: uberon
+def: "A neural nucleus that is part of the brain." [http://orcid.org/0000-0002-6601-2165]
+synonym: "brain nuclei" RELATED PLURAL [ZFA:0005575]
+synonym: "brain nucleus" EXACT []
+xref: EMAPA:35185
+xref: FMA:83840
+xref: http://linkedlifedata.com/resource/umls/id/C1706993
+xref: http://www.snomedbrowser.com/Codes/Details/426465002
+xref: MA:0000811
+xref: NCIT:C49346
+xref: UMLS:C1706993 {source="ncithesaurus:Brain_Nucleus"}
+xref: ZFA:0005575
+is_a: UBERON:0000125 ! neural nucleus
+intersection_of: UBERON:0000125 ! neural nucleus
+intersection_of: part_of UBERON:0000955 ! brain
+relationship: part_of UBERON:0003528 ! brain gray matter
+
+[Term]
 id: UBERON:0002315
 name: gray matter of spinal cord
 namespace: uberon
@@ -19612,6 +20687,52 @@ relationship: composed_primarily_of UBERON:0006815 {source="WP"} ! areolar conne
 relationship: continuous_with UBERON:0002408 ! parietal serous pericardium
 relationship: part_of UBERON:0002407 {source="FMA"} ! pericardium
 property_value: UBPROP:0000010 "most superficial part of pericardium; continuous with the outer adventitial layer of the neighboring great blood vessels. [Wikipedia:Pericardium]" xsd:string
+
+[Term]
+id: UBERON:0002360
+name: meninx
+namespace: uberon
+def: "Membrane organ that surrounds the brain and the spinal cord." [FMA:9589, http://en.wikipedia.org/wiki/Meninx, http://www.shsu.edu/~bio_mlt/Chap15.html]
+subset: efo_slim
+subset: organ_slim
+subset: pheno_slim
+subset: uberon_slim
+subset: vertebrate_core
+synonym: "layer of meninges" EXACT []
+synonym: "meningeal layer" EXACT []
+synonym: "meninx primitiva" NARROW [VHOG:0001295]
+xref: BTO:0000144
+xref: CALOHA:TS-1177
+xref: EFO:0000867
+xref: EMAPA:32660
+xref: EV:0100312
+xref: FMA:9589
+xref: GAID:687
+xref: http://en.wikipedia.org/wiki/Meninx
+xref: http://linkedlifedata.com/resource/umls/id/C0025285
+xref: MA:0001113
+xref: MAT:0000113
+xref: MESH:D008578
+xref: NCIT:C12348
+xref: NLXANAT:090204
+xref: OpenCyc:Mx4rwDOl8JwpEbGdrcN5Y29ycA
+xref: TAO:0001355
+xref: UMLS:C0025285 {source="ncithesaurus:Meninges"}
+xref: VHOG:0001295
+xref: ZFA:0001355
+is_a: UBERON:0000094 {source="FMA"} ! membrane organ
+is_a: UBERON:0004121 ! ectoderm-derived structure
+is_a: UBERON:0010314 ! structure with developmental contribution from neural crest
+relationship: develops_from UBERON:0007645 ! future meninx
+relationship: immediate_transformation_of UBERON:0007645 {source="Bgee:AN"} ! future meninx
+relationship: part_of UBERON:0010743 ! meningeal cluster
+property_value: depicted:by Illu:meninges.jpg xsd:anyURI
+property_value: UBPROP:0000001 "Membrane covering the brain and spinal cord. It is represented by a single layer in fishes, two in amphibians, reptiles and birds and three in mammals (named dura mater, arachnoid and pia mater). [TFD][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0001295", ontology="VHOG", source="http://bgee.unil.ch/", source="http://medical-dictionary.thefreedictionary.com/meninges"}
+property_value: UBPROP:0000003 "In fishes, the meninges consist of a single membrane, the primitive meninx, wrapped around the brain and spinal cord. With the adoption of terrestrial life, the meninges doubled. In amphibians, reptiles, and birds, the meninges include a thick outer dura mater derived from mesoderm and a thin inner secondary meninx. (...) In mammals, the dura mater persists, but division of the secondary meninx yields both the arachnoid and the pia mater from ectomesoderm.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0001295", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0072528305 Kardong KV, Vertebrates: Comparative Anatomy, Function, Evolution (2006) p.639"}
+property_value: UBPROP:0000007 "meningeal" xsd:string
+property_value: UBPROP:0000008 "Whereas cyclostomes and fishes only have a single envelope called the primitive meninx, amphibians have two layers, consisting of an outer dura mater which is extremely dense and protective, and a pia-arachnoid or secondary meninx which is more delicate and vascular. Mammals have three meninges: pia mater (which follows all the convolutions of the brain and is the most interior), the arachnoid layer (which is delicate and sends strands to the pia mater), and the dura mater (the outer, more protective meninx)." xsd:string
+property_value: UBPROP:0000012 "Not consider part of the CNS/neuraxis in FMA" xsd:string {external_ontology="FMA", seeAlso="https://github.com/obophenotype/uberon/issues/1261"}
+property_value: UBPROP:0000202 FMA:76821
 
 [Term]
 id: UBERON:0002365
@@ -21362,6 +22483,137 @@ property_value: UBPROP:0000003 "The jaw joint of all jawed vertebrates, except f
 property_value: UBPROP:0000012 "Inclusion of the FMA class 'lower jaw' is debatable - this mostly corresponds to the lower jaw skeleton (with 'maxillary part of mouth' corresponding to the upper jaw region); however, the FMA class also includes gingiva. See also: https://github.com/obophenotype/mouse-anatomy-ontology/issues/102" xsd:string {external_ontology="FMA"}
 
 [Term]
+id: UBERON:0003288
+name: meninx of midbrain
+namespace: uberon
+def: "A meninx that is part of a midbrain [Automatically generated definition]." [OBOL:automatic]
+synonym: "meninges of midbrain" EXACT PLURAL [OBOL:automatic]
+synonym: "mesencephalon meninges" RELATED PLURAL [VHOG:0000012]
+synonym: "midbrain meninges" EXACT PLURAL [OBOL:automatic]
+synonym: "midbrain meninx" EXACT [OBOL:automatic]
+xref: EHDAA2:0001174
+xref: EHDAA:3708
+xref: EMAPA:17791
+xref: MA:0001058
+xref: RETIRED_EHDAA2:0001109
+xref: VHOG:0000012
+is_a: UBERON:0003547 ! brain meninx
+intersection_of: UBERON:0002360 ! meninx
+intersection_of: part_of UBERON:0001891 ! midbrain
+relationship: part_of UBERON:0001891 ! midbrain
+property_value: editor_note "consider changing genus to subdivision of meninx" xsd:string
+property_value: UBPROP:0000001 "Meninges that are part of the midbrain. [Bgee_curator][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000012", ontology="VHOG", source="http://bgee.unil.ch/"}
+property_value: UBPROP:0000003 "In fishes, the meninges consist of a single membrane, the primitive meninx, wrapped around the brain and spinal cord. With the adoption of terrestrial life, the meninges doubled. In amphibians, reptiles, and birds, the meninges include a thick outer dura mater derived from mesoderm and a thin inner secondary meninx. (...) In mammals, the dura mater persists, but division of the secondary meninx yields both the arachnoid and the pia mater from ectomesoderm.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000012", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0072528305 Kardong KV, Vertebrates: Comparative Anatomy, Function, Evolution (2006) p.639"}
+
+[Term]
+id: UBERON:0003289
+name: meninx of telencephalon
+namespace: uberon
+def: "A meninx that is part of a telencephalon [Automatically generated definition]." [OBOL:automatic]
+synonym: "meninges of telencephalon" EXACT PLURAL [OBOL:automatic]
+synonym: "telencephalon meninges" EXACT PLURAL [OBOL:automatic]
+synonym: "telencephalon meninx" EXACT [OBOL:automatic]
+xref: EHDAA2:0001990
+xref: EHDAA:5476
+xref: EMAPA:17774
+xref: MA:0000979
+xref: VHOG:0000010
+is_a: UBERON:0003548 ! forebrain meninges
+intersection_of: UBERON:0002360 ! meninx
+intersection_of: part_of UBERON:0001893 ! telencephalon
+relationship: part_of UBERON:0001893 ! telencephalon
+property_value: editor_note "consider changing genus to subdivision of meninx" xsd:string
+property_value: UBPROP:0000001 "Meninges that are part of the telencephalon. [Bgee_curator][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000010", ontology="VHOG", source="http://bgee.unil.ch/"}
+property_value: UBPROP:0000003 "In fishes, the meninges consist of a single membrane, the primitive meninx, wrapped around the brain and spinal cord. With the adoption of terrestrial life, the meninges doubled. In amphibians, reptiles, and birds, the meninges include a thick outer dura mater derived from mesoderm and a thin inner secondary meninx. (...) In mammals, the dura mater persists, but division of the secondary meninx yields both the arachnoid and the pia mater from ectomesoderm.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000010", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0072528305 Kardong KV, Vertebrates: Comparative Anatomy, Function, Evolution (2006) p.639"}
+
+[Term]
+id: UBERON:0003290
+name: meninx of diencephalon
+namespace: uberon
+def: "A meninx that is part of a diencephalon [Automatically generated definition]." [OBOL:automatic]
+synonym: "between brain meninges" EXACT [OBOL:automatic]
+synonym: "between brain meninx" EXACT [OBOL:automatic]
+synonym: "diencephalon meninges" EXACT [OBOL:automatic]
+synonym: "diencephalon meninx" EXACT [OBOL:automatic]
+synonym: "interbrain meninges" EXACT [OBOL:automatic]
+synonym: "interbrain meninx" EXACT [OBOL:automatic]
+synonym: "mature diencephalon meninges" EXACT [OBOL:automatic]
+synonym: "mature diencephalon meninx" EXACT [OBOL:automatic]
+synonym: "meninges of between brain" EXACT [OBOL:automatic]
+synonym: "meninges of diencephalon" EXACT [OBOL:automatic]
+synonym: "meninges of interbrain" EXACT [OBOL:automatic]
+synonym: "meninges of mature diencephalon" EXACT [OBOL:automatic]
+synonym: "meninx of between brain" EXACT [OBOL:automatic]
+synonym: "meninx of interbrain" EXACT [OBOL:automatic]
+synonym: "meninx of mature diencephalon" EXACT [OBOL:automatic]
+xref: EHDAA2:0000399
+xref: EHDAA:5458
+xref: EMAPA:17764
+xref: MA:0000826
+xref: VHOG:0000009
+is_a: UBERON:0003548 ! forebrain meninges
+intersection_of: UBERON:0002360 ! meninx
+intersection_of: part_of UBERON:0001894 ! diencephalon
+relationship: part_of UBERON:0001894 ! diencephalon
+property_value: editor_note "consider changing genus to subdivision of meninx" xsd:string
+property_value: UBPROP:0000001 "Meninges that are part of the diencephalon. [Bgee_curator][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000009", ontology="VHOG", source="http://bgee.unil.ch/"}
+property_value: UBPROP:0000003 "In fishes, the meninges consist of a single membrane, the primitive meninx, wrapped around the brain and spinal cord. With the adoption of terrestrial life, the meninges doubled. In amphibians, reptiles, and birds, the meninges include a thick outer dura mater derived from mesoderm and a thin inner secondary meninx. (...) In mammals, the dura mater persists, but division of the secondary meninx yields both the arachnoid and the pia mater from ectomesoderm.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000009", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0072528305 Kardong KV, Vertebrates: Comparative Anatomy, Function, Evolution (2006) p.639"}
+
+[Term]
+id: UBERON:0003291
+name: meninx of hindbrain
+namespace: uberon
+def: "A meninx that is part of a hindbrain [Automatically generated definition]." [OBOL:automatic]
+synonym: "hindbrain meninges" EXACT [OBOL:automatic]
+synonym: "hindbrain meninx" EXACT [OBOL:automatic]
+synonym: "meninges of hindbrain" EXACT [OBOL:automatic]
+synonym: "rhomencephalon meninges" RELATED PLURAL [VHOG:0000011]
+xref: EHDAA2:0000770
+xref: EHDAA:3688
+xref: EMAPA:17783
+xref: MA:0000987
+xref: VHOG:0000011
+is_a: UBERON:0003547 ! brain meninx
+intersection_of: UBERON:0002360 ! meninx
+intersection_of: part_of UBERON:0002028 ! hindbrain
+relationship: develops_from UBERON:0010091 ! future hindbrain meninx
+relationship: immediate_transformation_of UBERON:0010091 {evidence="definitional"} ! future hindbrain meninx
+relationship: part_of UBERON:0002028 ! hindbrain
+property_value: editor_note "consider changing genus to subdivision of meninx" xsd:string
+property_value: UBPROP:0000001 "Meninges that are part of the hindbrain. [Bgee_curator][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000011", ontology="VHOG", source="http://bgee.unil.ch/"}
+property_value: UBPROP:0000003 "In fishes, the meninges consist of a single membrane, the primitive meninx, wrapped around the brain and spinal cord. With the adoption of terrestrial life, the meninges doubled. In amphibians, reptiles, and birds, the meninges include a thick outer dura mater derived from mesoderm and a thin inner secondary meninx. (...) In mammals, the dura mater persists, but division of the secondary meninx yields both the arachnoid and the pia mater from ectomesoderm.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000011", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0072528305 Kardong KV, Vertebrates: Comparative Anatomy, Function, Evolution (2006) p.639"}
+
+[Term]
+id: UBERON:0003292
+name: meninx of spinal cord
+namespace: uberon
+def: "A meninx that is part of a spinal cord [Automatically generated definition]." [OBOL:automatic]
+subset: pheno_slim
+synonym: "menines of spinal cord" EXACT PLURAL []
+synonym: "meninges of spinal cord" EXACT [OBOL:automatic]
+synonym: "spinal cord meninges" EXACT [OBOL:automatic]
+synonym: "spinal cord meninx" EXACT [OBOL:automatic]
+synonym: "spinal meninges" EXACT PLURAL []
+synonym: "spinal meninx" EXACT []
+xref: CALOHA:TS-2148
+xref: EHDAA2:0001895
+xref: EHDAA:2865
+xref: EMAPA:17804
+xref: http://linkedlifedata.com/resource/umls/id/C0037938
+xref: http://www.snomedbrowser.com/Codes/Details/181097002
+xref: MA:0001130
+xref: NCIT:C12350
+xref: UMLS:C0037938 {source="ncithesaurus:Spinal_Meninges"}
+xref: VHOG:0000443
+is_a: UBERON:0002360 ! meninx
+is_a: UBERON:0005174 ! dorsal region element
+intersection_of: UBERON:0002360 ! meninx
+intersection_of: part_of UBERON:0002240 ! spinal cord
+relationship: part_of UBERON:0002240 ! spinal cord
+property_value: UBPROP:0000001 "Meninges that are part of the spinal cord. [Bgee_curator][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000443", ontology="VHOG", source="http://bgee.unil.ch/"}
+property_value: UBPROP:0000003 "In fishes, the meninges consist of a single membrane, the primitive meninx, wrapped around the brain and spinal cord. With the adoption of terrestrial life, the meninges doubled. In amphibians, reptiles, and birds, the meninges include a thick outer dura mater derived from mesoderm and a thin inner secondary meninx. (...) In mammals, the dura mater persists, but division of the secondary meninx yields both the arachnoid and the pia mater from ectomesoderm.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000443", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0072528305 Kardong KV, Vertebrates: Comparative Anatomy, Function, Evolution (2006) p.639"}
+
+[Term]
 id: UBERON:0003294
 name: gland of foregut
 namespace: uberon
@@ -21393,6 +22645,23 @@ is_a: UBERON:0036225 ! respiratory system gland
 intersection_of: UBERON:0002530 ! gland
 intersection_of: part_of UBERON:0001042 ! chordate pharynx
 relationship: part_of UBERON:0001042 {source="BTO"} ! chordate pharynx
+
+[Term]
+id: UBERON:0003296
+name: gland of diencephalon
+namespace: uberon
+def: "Any gland that is part of the diencephalon. Examples: pineal gland, neurohypophysis." [http://orcid.org/0000-0002-6601-2165]
+synonym: "diencephalon gland" EXACT [OBOL:automatic]
+synonym: "interbrain gland" EXACT [OBOL:automatic]
+xref: EHDAA2:0000395
+xref: EHDAA:4475
+xref: EMAPA:16897
+xref: VHOG:0000653
+is_a: UBERON:0002530 ! gland
+is_a: UBERON:0004121 ! ectoderm-derived structure
+intersection_of: UBERON:0002530 ! gland
+intersection_of: part_of UBERON:0001894 ! diencephalon
+relationship: part_of UBERON:0001894 ! diencephalon
 
 [Term]
 id: UBERON:0003297
@@ -22109,6 +23378,46 @@ intersection_of: part_of UBERON:0000955 ! brain
 relationship: part_of UBERON:0000955 ! brain
 
 [Term]
+id: UBERON:0003547
+name: brain meninx
+namespace: uberon
+def: "A meninx that is part of a brain [Automatically generated definition]." [OBOL:automatic]
+subset: organ_slim
+subset: pheno_slim
+synonym: "brain meninges" EXACT [OBOL:automatic]
+synonym: "meninges of brain" EXACT [OBOL:automatic]
+synonym: "meninx of brain" EXACT [OBOL:automatic]
+xref: CALOHA:TS-2147
+xref: EMAPA:32662
+xref: EV:0100312
+xref: http://www.snomedbrowser.com/Codes/Details/180949007
+xref: MA:0000813
+xref: VHOG:0000013
+is_a: UBERON:0002360 ! meninx
+intersection_of: UBERON:0002360 ! meninx
+intersection_of: part_of UBERON:0000955 ! brain
+relationship: part_of UBERON:0000955 ! brain
+property_value: UBPROP:0000001 "Meninges that are part of the brain. [Bgee_curator][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000013", ontology="VHOG", source="http://bgee.unil.ch/"}
+property_value: UBPROP:0000003 "In fishes, the meninges consist of a single membrane, the primitive meninx, wrapped around the brain and spinal cord. With the adoption of terrestrial life, the meninges doubled. In amphibians, reptiles, and birds, the meninges include a thick outer dura mater derived from mesoderm and a thin inner secondary meninx. (...) In mammals, the dura mater persists, but division of the secondary meninx yields both the arachnoid and the pia mater from ectomesoderm.[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000013", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0072528305 Kardong KV, Vertebrates: Comparative Anatomy, Function, Evolution (2006) p.639"}
+
+[Term]
+id: UBERON:0003548
+name: forebrain meninges
+namespace: uberon
+def: "A meninx that is part of a forebrain [Automatically generated definition]." [OBOL:automatic]
+synonym: "forebrain meninx" EXACT [OBOL:automatic]
+synonym: "meninges of forebrain" EXACT [OBOL:automatic]
+synonym: "meninx of forebrain" EXACT [OBOL:automatic]
+xref: EMAPA:17764
+xref: EMAPA:17774
+xref: EMAPA:37543 {source="MA:th"}
+xref: MA:0000883
+is_a: UBERON:0003547 ! brain meninx
+intersection_of: UBERON:0002360 ! meninx
+intersection_of: part_of UBERON:0001890 ! forebrain
+relationship: part_of UBERON:0001890 ! forebrain
+
+[Term]
 id: UBERON:0003566
 name: head connective tissue
 namespace: uberon
@@ -22644,6 +23953,28 @@ intersection_of: has_potential_to_developmentally_contribute_to UBERON:0001893 !
 relationship: has_potential_to_developmentally_contribute_to UBERON:0001893 ! telencephalon
 property_value: UBPROP:0000001 "Cranial neural crest that is part of the telencephalon.[TAO]" xsd:string {date_retrieved="2012-08-14", external_class="TAO:0000812", ontology="TAO", source="ZFIN:curator"}
 property_value: UBPROP:0000003 "We conclude this section by listing some of the many synapomorphies of craniates, including (1) the neural crest (...).[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000799", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.43"}
+
+[Term]
+id: UBERON:0003851
+name: diencephalon neural crest
+namespace: uberon
+def: "A neural crest that has_potential_to_developmentally_contribute_to a diencephalon." [OBOL:automatic]
+subset: efo_slim
+synonym: "diencephalic neural crest" EXACT [ZFA:0000811]
+synonym: "future diencephalon neural crest" EXACT [EHDAA2:0000603]
+synonym: "neural crest diencephalon" EXACT [ZFA:0000811]
+synonym: "neural crest of future diencephalon" EXACT [EMAPA:16518]
+xref: EFO:0003573
+xref: EHDAA2:0000603
+xref: EMAPA:16518
+xref: TAO:0000811
+xref: VHOG:0000798
+xref: ZFA:0000811
+is_a: UBERON:0002342 ! neural crest
+intersection_of: UBERON:0002342 ! neural crest
+intersection_of: has_potential_to_developmentally_contribute_to UBERON:0001894 ! diencephalon
+relationship: has_potential_to_developmentally_contribute_to UBERON:0001894 ! diencephalon
+property_value: UBPROP:0000003 "We conclude this section by listing some of the many synapomorphies of craniates, including (1) the neural crest (...).[well established][VHOG]" xsd:string {date_retrieved="2012-09-17", external_class="VHOG:0000798", ontology="VHOG", source="http://bgee.unil.ch/", source="ISBN:978-0030223693 Liem KF, Bemis WE, Walker WF, Grande L, Functional Anatomy of the Vertebrates: An Evolutionary Perspective (2001) p.43"}
 
 [Term]
 id: UBERON:0003852
@@ -26014,6 +27345,28 @@ relationship: part_of UBERON:0006264 {source="EHDAA2"} ! mouth-foregut junction
 property_value: depicted:by http://upload.wikimedia.org/wikipedia/commons/9/93/Gray977.png xsd:anyURI
 
 [Term]
+id: UBERON:0006222
+name: future diencephalon
+namespace: uberon
+def: "The foremost region of the future forebrain that develops into the diencephalon." [http://en.wikipedia.org/wiki/Diencephalon, UBERON:cjm]
+subset: efo_slim
+subset: emapa_ehdaa2
+subset: vertebrate_core
+synonym: "presumptive diencephalon" EXACT [TAO:0000574]
+xref: EFO:0003442
+xref: EHDAA2:0000600
+xref: EHDAA:844
+xref: EMAPA:16514
+xref: RETIRED_EHDAA2:0000386
+xref: TAO:0000574
+xref: ZFA:0000574
+is_a: UBERON:0006598 ! presumptive structure
+intersection_of: UBERON:0006598 ! presumptive structure
+intersection_of: has_potential_to_develop_into UBERON:0001894 ! diencephalon
+relationship: has_potential_to_develop_into UBERON:0001894 ! diencephalon
+relationship: part_of UBERON:0006240 {source="EHDAA2"} ! future forebrain
+
+[Term]
 id: UBERON:0006238
 name: future brain
 namespace: uberon
@@ -26228,6 +27581,19 @@ xref: MESH:D001826
 is_a: UBERON:0000463 ! organism substance
 
 [Term]
+id: UBERON:0006331
+name: brainstem nucleus
+namespace: uberon
+def: "A nucleus of brain that is part of a brainstem." [OBOL:automatic]
+synonym: "brain stem nucleus" RELATED [EMAPA:32790]
+xref: EMAPA:32790
+xref: MA:0000821
+is_a: UBERON:0002308 ! nucleus of brain
+intersection_of: UBERON:0002308 ! nucleus of brain
+intersection_of: part_of UBERON:0002298 ! brainstem
+relationship: part_of UBERON:0002298 ! brainstem
+
+[Term]
 id: UBERON:0006347
 name: communicating artery
 namespace: uberon
@@ -26292,6 +27658,18 @@ is_a: UBERON:0004921 ! subdivision of digestive tract
 property_value: IAO:0000232 "currently this is an extremely generic class, encompassing both protostomes and deuterostomes." xsd:string
 property_value: UBPROP:0000007 "branchial" xsd:string
 property_value: UBPROP:0000007 "pharyngeal" xsd:string
+
+[Term]
+id: UBERON:0006569
+name: diencephalic nucleus
+namespace: uberon
+def: "A nucleus of brain that is part of a diencephalon." [OBOL:automatic]
+xref: TAO:0002191
+xref: ZFA:0001659
+is_a: UBERON:0002308 ! nucleus of brain
+intersection_of: UBERON:0002308 ! nucleus of brain
+intersection_of: part_of UBERON:0001894 ! diencephalon
+relationship: part_of UBERON:0001894 ! diencephalon
 
 [Term]
 id: UBERON:0006595
@@ -26851,6 +28229,21 @@ intersection_of: part_of UBERON:0001638 ! vein
 relationship: part_of UBERON:0001638 ! vein
 
 [Term]
+id: UBERON:0007245
+name: nuclear complex of neuraxis
+namespace: uberon
+def: "Gray matter of the central nervous system which is a collection of clustered nuclei." [http://orcid.org/0000-0002-6601-2165]
+synonym: "cluster of neural nuclei" RELATED []
+synonym: "neural nuclei" RELATED []
+synonym: "nuclear complex" RELATED []
+xref: FMA:256381
+xref: FMA:84059
+is_a: UBERON:0002020 ! gray matter
+intersection_of: UBERON:0002020 ! gray matter
+intersection_of: composed_primarily_of UBERON:0000125 ! neural nucleus
+relationship: composed_primarily_of UBERON:0000125 ! neural nucleus
+
+[Term]
 id: UBERON:0007277
 name: presumptive hindbrain
 namespace: uberon
@@ -27044,6 +28437,19 @@ property_value: UBPROP:0000002 "relationship loss: develops_from superficial bla
 property_value: UBPROP:0000008 "Originally this tissue is one cell layer thick but in most vertebrates it soon becomes a two layered structure. The outer layer gives rise to the periderm." xsd:string
 
 [Term]
+id: UBERON:0007414
+name: nucleus of midbrain tegmentum
+namespace: uberon
+alt_id: UBERON:0012277
+def: "A nucleus of brain that spans a midbrain tegmentum." [OBOL:automatic]
+synonym: "tegmental nuclei" EXACT PLURAL []
+synonym: "tegmental nucleus" EXACT [ZFA:0005577]
+xref: FMA:258768
+xref: ZFA:0005577
+is_a: UBERON:0000125 ! neural nucleus
+property_value: IAO:0000232 "this class groups together any nuclei in the tegmentum region, possibly including disparate structures across species" xsd:string
+
+[Term]
 id: UBERON:0007500
 name: epithelial tube open at both ends
 namespace: uberon
@@ -27133,6 +28539,53 @@ is_a: UBERON:0019304 ! sensory organ epithelium
 intersection_of: UBERON:0000483 ! epithelium
 intersection_of: part_of UBERON:0000970 ! eye
 relationship: part_of UBERON:0000970 ! eye
+
+[Term]
+id: UBERON:0007635
+name: nucleus of medulla oblongata
+namespace: uberon
+def: "A neural nucleus that is part of a medulla oblongata." [OBOL:automatic]
+xref: FMA:258772
+xref: http://www.snomedbrowser.com/Codes/Details/304943004
+is_a: UBERON:0006331 ! brainstem nucleus
+is_a: UBERON:0009662 ! hindbrain nucleus
+intersection_of: UBERON:0000125 ! neural nucleus
+intersection_of: part_of UBERON:0001896 ! medulla oblongata
+relationship: part_of UBERON:0001896 ! medulla oblongata
+
+[Term]
+id: UBERON:0007645
+name: future meninx
+namespace: uberon
+alt_id: UBERON:0004065
+def: "A developing mesenchymal capsule that covers the developing brain and spinal cord and is the precursor of the meningeal cluster. In mammals this gives rise to the arachnoid mater, pia mater and dura mater. In cyclostomes and fishes, the future meninx gives rise to a single meningeal layer, the primitive meninx." [http://orcid.org/0000-0002-6601-2165]
+subset: pheno_slim
+synonym: "meninx primitiva" RELATED [MP:0009726]
+synonym: "primary meninx" EXACT [EHDAA2:0004453]
+synonym: "primitive meninx" RELATED []
+synonym: "primordial meninx" RELATED []
+xref: EHDAA2:0004453
+is_a: UBERON:0006598 ! presumptive structure
+intersection_of: UBERON:0006598 ! presumptive structure
+intersection_of: has_potential_to_develop_into UBERON:0002360 ! meninx
+relationship: has_developmental_contribution_from UBERON:0007213 {source="ISBN:0073040584"} ! mesenchyme derived from head neural crest
+relationship: has_potential_to_develop_into UBERON:0002360 ! meninx
+relationship: part_of UBERON:0010743 {source="EHDAA2"} ! meningeal cluster
+property_value: editor_note "decide whether to treat the endo and ecto meninx as subtypes or parts of the future meninx" xsd:string
+property_value: UBPROP:0000001 "the outermost mesenchymal covering of the developing brain and spinal cord that is composed of tough fibrous connective tissue from which the arachnoid mater, pia mater and dura mater are formed[MP:0009726]d" xsd:string {source="MP:0009726"}
+
+[Term]
+id: UBERON:0007646
+name: endomeninx
+namespace: uberon
+def: "The innermost layer of the mesenchymal capsule that surrounds the developing brain, primarily of neural crest origin. The endomeninx forms the leptomeninx." [ISBN:9781607950325]
+synonym: "future leptomeninges" EXACT []
+synonym: "future leptomeninx" EXACT []
+is_a: UBERON:0007645 ! future meninx
+intersection_of: UBERON:0007645 ! future meninx
+intersection_of: has_potential_to_develop_into UBERON:0000391 ! leptomeninx
+relationship: develops_from UBERON:0007213 {source="ISBN:9781607950325"} ! mesenchyme derived from head neural crest
+relationship: has_potential_to_develop_into UBERON:0000391 ! leptomeninx
 
 [Term]
 id: UBERON:0007651
@@ -27633,6 +29086,20 @@ is_a: UBERON:0000475 ! organism subdivision
 relationship: part_of UBERON:0002100 ! trunk
 
 [Term]
+id: UBERON:0009580
+name: diencephalon mantle layer
+namespace: uberon
+synonym: "diencephalon lateral wall mantle layer" EXACT []
+synonym: "mantle layer lateral wall diencephalon" EXACT [VHOG:0000912]
+xref: EHDAA2:0000397
+xref: EMAPA:16906
+xref: VHOG:0000912
+is_a: UBERON:0004061 ! neural tube mantle layer
+intersection_of: UBERON:0004061 ! neural tube mantle layer
+intersection_of: part_of UBERON:0006222 ! future diencephalon
+relationship: part_of UBERON:0006222 ! future diencephalon
+
+[Term]
 id: UBERON:0009581
 name: midbrain mantle layer
 namespace: uberon
@@ -27787,6 +29254,43 @@ xref: EHDAA2:0002094
 is_a: CARO:0000000 ! anatomical entity
 is_a: UBERON:0005256 ! trunk mesenchyme
 relationship: part_of UBERON:0003077 ! paraxial mesoderm
+
+[Term]
+id: UBERON:0009661
+name: midbrain nucleus
+namespace: uberon
+def: "Nucleus located in the midbrain." [ZFIN:curator]
+xref: http://www.snomedbrowser.com/Codes/Details/279285003
+xref: TAO:0002209
+xref: ZFA:0001665
+is_a: UBERON:0002308 ! nucleus of brain
+intersection_of: UBERON:0002308 ! nucleus of brain
+intersection_of: part_of UBERON:0001891 ! midbrain
+relationship: part_of UBERON:0001891 ! midbrain
+
+[Term]
+id: UBERON:0009662
+name: hindbrain nucleus
+namespace: uberon
+def: "Nucleus located within the hindbrain." [ZFIN:curator]
+xref: TAO:0002177
+xref: ZFA:0001658
+is_a: UBERON:0002308 ! nucleus of brain
+intersection_of: UBERON:0002308 ! nucleus of brain
+intersection_of: part_of UBERON:0002028 ! hindbrain
+relationship: part_of UBERON:0002028 ! hindbrain
+
+[Term]
+id: UBERON:0009663
+name: telencephalic nucleus
+namespace: uberon
+def: "A nucleus of brain that is part of a telencephalon." [OBOL:automatic]
+xref: TAO:0002178
+xref: ZFA:0001660
+is_a: UBERON:0002308 ! nucleus of brain
+intersection_of: UBERON:0002308 ! nucleus of brain
+intersection_of: part_of UBERON:0001893 ! telencephalon
+relationship: part_of UBERON:0001893 ! telencephalon
 
 [Term]
 id: UBERON:0009715
@@ -27993,6 +29497,23 @@ relationship: part_of UBERON:0002199 {source="EHDAA2"} ! integument
 property_value: editor_note "check development" xsd:string
 
 [Term]
+id: UBERON:0010091
+name: future hindbrain meninx
+namespace: uberon
+def: "A multi-tissue structure that has the potential to develop into a meninx of hindbrain." [OBOL:automatic]
+synonym: "future hindbrain meninges" EXACT [EHDAA2:0000610]
+xref: EHDAA2:0000610
+is_a: UBERON:0004121 ! ectoderm-derived structure
+is_a: UBERON:0005291 ! embryonic tissue
+is_a: UBERON:0007524 ! dense mesenchyme tissue
+is_a: UBERON:0007645 ! future meninx
+is_a: UBERON:0010314 ! structure with developmental contribution from neural crest
+intersection_of: UBERON:0006598 ! presumptive structure
+intersection_of: has_potential_to_develop_into UBERON:0003291 ! meninx of hindbrain
+relationship: has_potential_to_develop_into UBERON:0003291 ! meninx of hindbrain
+relationship: part_of UBERON:0002028 ! hindbrain
+
+[Term]
 id: UBERON:0010096
 name: future myelencephalon
 namespace: uberon
@@ -28050,6 +29571,16 @@ comment: One might argue that all boundaries are actually fiat in the sense that
 subset: upper_level
 xref: CARO:0001004
 is_a: UBERON:0000466 {source="CARO"} ! immaterial anatomical entity
+
+[Term]
+id: UBERON:0010225
+name: thalamic complex
+namespace: uberon
+def: "A nuclear complex which in mammals consists of four parts, the hypothalamus, epithalamus, ventral thalamus, and dorsal thalamus[WP,modified]." [http://en.wikipedia.org/wiki/Thalamus#Thalamic_nuclei]
+xref: EHDAA2:0004469
+xref: FMA:258745
+is_a: UBERON:0007245 ! nuclear complex of neuraxis
+is_a: UBERON:0019269 ! gray matter of diencephalon
 
 [Term]
 id: UBERON:0010227
@@ -28513,6 +30044,34 @@ is_a: UBERON:0000055 ! vessel
 relationship: part_of UBERON:0002049 {source="ZFA"} ! vasculature
 
 [Term]
+id: UBERON:0010743
+name: meningeal cluster
+namespace: uberon
+def: "The collection of all meningeal layers that line a central nervous system." [https://orcid.org/0000-0002-6601-2165]
+subset: pheno_slim
+synonym: "cerebral meninges" EXACT []
+synonym: "cluster of meninges" EXACT [FMA:231572]
+synonym: "meninges" EXACT [FMA:231572]
+xref: EHDAA2:0004661
+xref: EMAPA:32660
+xref: FMA:231572
+xref: http://braininfo.rprc.washington.edu/centraldirectory.aspx?ID=1465
+xref: http://en.wikipedia.org/wiki/Meninges
+xref: http://linkedlifedata.com/resource/umls/id/C0228116
+xref: http://www.snomedbrowser.com/Codes/Details/362879001
+xref: NCIT:C12349
+is_a: CARO:0000000 ! anatomical entity
+is_a: UBERON:0034925 ! anatomical collection
+intersection_of: UBERON:0034925 ! anatomical collection
+intersection_of: bounding_layer_of UBERON:0001017 ! central nervous system
+intersection_of: has_member UBERON:0002360 ! meninx
+relationship: bounding_layer_of UBERON:0001017 ! central nervous system
+relationship: has_member UBERON:0002360 ! meninx
+relationship: part_of UBERON:0001017 ! central nervous system
+property_value: UBPROP:0000007 "meningeal" xsd:string
+property_value: UBPROP:0000008 "In some primitive organisms, the meningeal cluster includes only the primitive meninx" xsd:string
+
+[Term]
 id: UBERON:0010912
 name: subdivision of skeleton
 namespace: uberon
@@ -28830,6 +30389,19 @@ intersection_of: UBERON:0000464 ! anatomical space
 intersection_of: luminal_space_of UBERON:0004768 ! bone of lower jaw
 relationship: luminal_space_of UBERON:0004768 ! bone of lower jaw
 relationship: part_of UBERON:0004768 ! bone of lower jaw
+
+[Term]
+id: UBERON:0011777
+name: nucleus of spinal cord
+namespace: uberon
+def: "A neural nucleus that is part of the spinal cord." [http://orcid.org/0000-0002-6601-2165]
+subset: grouping_class
+synonym: "spinal cord nucleus" EXACT [FMA:77011]
+xref: FMA:77011
+is_a: UBERON:0000125 ! neural nucleus
+intersection_of: UBERON:0000125 ! neural nucleus
+intersection_of: part_of UBERON:0002240 ! spinal cord
+relationship: part_of UBERON:0002240 ! spinal cord
 
 [Term]
 id: UBERON:0011814
@@ -30075,6 +31647,19 @@ relationship: connects UBERON:0001892 ! rhombomere
 relationship: part_of UBERON:0007277 ! presumptive hindbrain
 
 [Term]
+id: UBERON:0018251
+name: meningeal vein
+namespace: uberon
+def: "One of the veins draining a meninix." [http://orcid.org/0000-0002-6601-2165]
+xref: FMA:50839
+xref: http://www.snomedbrowser.com/Codes/Details/84842006
+is_a: UBERON:0001638 ! vein
+intersection_of: UBERON:0001638 ! vein
+intersection_of: drains UBERON:0002360 ! meninx
+relationship: drains UBERON:0002360 ! meninx
+property_value: UBPROP:0000008 "In humans, any of several veins that accompany the meningeal arteries, communicate with the sinuses of the dura mater and diploic veins, and drain into the regional veins outside the cranial vault." xsd:string
+
+[Term]
 id: UBERON:0018257
 name: submucosa of digestive tract
 namespace: uberon
@@ -30190,6 +31775,16 @@ is_a: UBERON:0003528 ! brain gray matter
 intersection_of: UBERON:0002020 ! gray matter
 intersection_of: part_of UBERON:0001891 ! midbrain
 relationship: part_of UBERON:0001891 ! midbrain
+
+[Term]
+id: UBERON:0019269
+name: gray matter of diencephalon
+namespace: uberon
+xref: FMA:83912
+is_a: UBERON:0019264 ! gray matter of forebrain
+intersection_of: UBERON:0002020 ! gray matter
+intersection_of: part_of UBERON:0001894 ! diencephalon
+relationship: part_of UBERON:0001894 ! diencephalon
 
 [Term]
 id: UBERON:0019304
@@ -30957,6 +32552,11 @@ name: Th
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000000805
+name: Car4
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000001260
 name: Gabrg1
 is_a: SO:0000704 ! gene
@@ -30997,6 +32597,16 @@ name: Col26a1
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000005672
+name: Kit
+is_a: SO:0000704 ! gene
+
+[Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000006014
+name: Prg4
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000009376
 name: Met
 is_a: SO:0000704 ! gene
@@ -31004,6 +32614,16 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000010066
 name: Cacna2d2
+is_a: SO:0000704 ! gene
+
+[Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000010122
+name: Slc47a1
+is_a: SO:0000704 ! gene
+
+[Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000010175
+name: Prox1
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -31092,6 +32712,11 @@ name: Ntn1
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000021318
+name: Gli3
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000021508
 name: Cxcl14
 is_a: SO:0000704 ! gene
@@ -31177,6 +32802,16 @@ name: Nectin3
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000022860
+name: Chodl
+is_a: SO:0000704 ! gene
+
+[Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000023800
+name: Tiam2
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000024074
 name: Crim1
 is_a: SO:0000704 ! gene
@@ -31222,6 +32857,11 @@ name: Tcf7l2
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000024990
+name: Rbp4
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000025370
 name: Cdh9
 is_a: SO:0000704 ! gene
@@ -31234,6 +32874,11 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000025537
 name: Phkg1
+is_a: SO:0000704 ! gene
+
+[Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000025780
+name: Itih5
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -31304,6 +32949,11 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000026826
 name: Nr4a2
+is_a: SO:0000704 ! gene
+
+[Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000026989
+name: Dapl1
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -31457,6 +33107,11 @@ name: Stard8
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000031273
+name: Col4a6
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000031558
 name: Slit2
 is_a: SO:0000704 ! gene
@@ -31512,6 +33167,11 @@ name: Kank1
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000032796
+name: Lama1
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000032841
 name: Prr5l
 is_a: SO:0000704 ! gene
@@ -31522,6 +33182,11 @@ name: Rxfp1
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000034127
+name: Tspan8
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000034310
 name: Tmem132d
 is_a: SO:0000704 ! gene
@@ -31529,6 +33194,11 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000034324
 name: Tmem132c
+is_a: SO:0000704 ! gene
+
+[Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000034402
+name: Kcnh5
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -31552,6 +33222,11 @@ name: Pdzrn3
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000035551
+name: Igfbpl1
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000035783
 name: Acta2
 is_a: SO:0000704 ! gene
@@ -31572,6 +33247,11 @@ name: Pdzrn4
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000036264
+name: Fstl4
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000036545
 name: Adamts2
 is_a: SO:0000704 ! gene
@@ -31582,8 +33262,18 @@ name: Anln
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000036814
+name: Slc6a20a
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000036834
 name: Plch1
+is_a: SO:0000704 ! gene
+
+[Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000036949
+name: Slc39a12
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -31667,6 +33357,11 @@ name: Cdh12
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000040569
+name: Slc26a7
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000040624
 name: Plekhg1
 is_a: SO:0000704 ! gene
@@ -31732,6 +33427,11 @@ name: Npsr1
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000043760
+name: Pkhd1
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000044288
 name: Cnr1
 is_a: SO:0000704 ! gene
@@ -31754,6 +33454,11 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000045731
 name: Pnoc
+is_a: SO:0000704 ! gene
+
+[Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000046178
+name: Nxph1
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -31812,8 +33517,18 @@ name: Pard3b
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000052353
+name: Cemip
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000052430
 name: Bmpr1b
+is_a: SO:0000704 ! gene
+
+[Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000052551
+name: Adarb2
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -31847,6 +33562,11 @@ name: Col25a1
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000059049
+name: Frem1
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000059187
 name: Tafa1
 is_a: SO:0000704 ! gene
@@ -31872,6 +33592,11 @@ name: Tac1
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000062151
+name: Unc13c
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000062372
 name: Otof
 is_a: SO:0000704 ! gene
@@ -31892,6 +33617,11 @@ name: Krt73
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000064294
+name: Aox3
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000066197
 name: Gpr139
 is_a: SO:0000704 ! gene
@@ -31902,8 +33632,18 @@ name: Cntnap5b
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000068220
+name: Lgals1
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000069132
 name: Nxph2
+is_a: SO:0000704 ! gene
+
+[Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000069378
+name: Prdm6
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -31927,6 +33667,11 @@ name: Hs3st4
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000084890
+name: A830036E02Rik
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000087516
 name: Tbx3os1
 is_a: SO:0000704 ! gene
@@ -31937,6 +33682,11 @@ name: Zfp804b
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000094083
+name: Gm1604b
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000095105
 name: Edaradd
 is_a: SO:0000704 ! gene
@@ -31944,6 +33694,11 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000097462
 name: 9530026P05Rik
+is_a: SO:0000704 ! gene
+
+[Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000098087
+name: Gm17750
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -31964,6 +33719,11 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000100650
 name: Gm28807
+is_a: SO:0000704 ! gene
+
+[Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000100832
+name: Gm29260
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -32017,6 +33777,11 @@ name: 5033421B08Rik
 is_a: SO:0000704 ! gene
 
 [Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000112430
+name: Gm30624
+is_a: SO:0000704 ! gene
+
+[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000115529
 name: 9630013A20Rik
 is_a: SO:0000704 ! gene
@@ -32063,6 +33828,15 @@ is_a: SO:0001217 ! protein_coding_gene
 relationship: only_in_taxon NCBITaxon:10090 ! Mus musculus
 
 [Term]
+id: http://www.informatics.jax.org/marker/MGI:108564
+name: Meis2 (mouse)
+namespace: gene
+def: "A protein coding gene Meis2 in mouse." [PRO:DNx]
+comment: Category=external.
+is_a: SO:0001217 ! protein_coding_gene
+relationship: only_in_taxon NCBITaxon:10090 ! Mus musculus
+
+[Term]
 id: http://www.informatics.jax.org/marker/MGI:109440
 name: Ly6g (mouse)
 namespace: gene
@@ -32094,6 +33868,15 @@ id: http://www.informatics.jax.org/marker/MGI:1923411
 name: Lamp5 (mouse)
 namespace: gene
 def: "A protein coding gene Lamp5 in mouse." [PRO:DNx]
+comment: Category=external.
+is_a: SO:0001217 ! protein_coding_gene
+relationship: only_in_taxon NCBITaxon:10090 ! Mus musculus
+
+[Term]
+id: http://www.informatics.jax.org/marker/MGI:2135946
+name: Cd163 (mouse)
+namespace: gene
+def: "A protein coding gene Cd163 in mouse." [PRO:DNx]
 comment: Category=external.
 is_a: SO:0001217 ! protein_coding_gene
 relationship: only_in_taxon NCBITaxon:10090 ! Mus musculus
@@ -32506,7 +34289,6 @@ name: has effector activity
 def: "A 'has effector activity' B if A and B are GO molecular functions (GO_0003674),  A 'has component activity' B and B is the effector (output function) of B.  Each compound function has only one effector activity." [GOC:dos]
 comment: This relation is designed for constructing compound molecular functions, typically in combination with one or more regulatory component activity relations.
 is_functional: true
-is_a: regulates ! regulates
 is_a: RO:0002017 ! has component activity
 created_by: dos
 creation_date: 2017-09-22T14:14:36Z
@@ -32643,7 +34425,6 @@ property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000118 "consumes" xsd:string
 domain: BFO:0000015 ! process
-range: BFO:0000040 ! material entity
 is_a: RO:0000057 ! has participant
 inverse_of: RO:0002352 ! input of
 
@@ -33457,7 +35238,6 @@ holds_over_chain: subcluster_of capable_of
 is_transitive: false
 is_a: capable_of_part_of ! capable of part of
 is_a: functionally_related_to ! functionally related to
-expand_expression_to: "RO_0000053 some (RO_0000054 only ?Y)" []
 
 [Typedef]
 id: capable_of_part_of
@@ -33471,7 +35251,6 @@ property_value: seeAlso "defining-property-chains-involving-reflexivity"
 holds_over_chain: capable_of part_of {http://purl.obolibrary.org/obo/RO_0002582="true"}
 is_a: functionally_related_to ! functionally related to
 is_a: RO:0002500 ! causal agent in process
-expand_expression_to: "RO_0000053 some (RO_0000054 only (BFO_0000050 some ?Y))" []
 
 [Typedef]
 id: channel_for
@@ -33687,6 +35466,10 @@ namespace: uberon
 xref: RO:0002230
 is_transitive: true
 is_a: has_part ! has_part
+
+[Typedef]
+id: exemplar_of
+name: exemplar_of
 
 [Typedef]
 id: existence_ends_during
@@ -34039,6 +35822,7 @@ name: located_in
 namespace: protein
 namespace: uberon
 def: "a relation between two independent continuants, the target and the location, in which the target is entirely within the location" []
+subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 xref: RO:0001025
 property_value: editor_note "Location as a relation between instances: The primitive instance-level relation c located_in r at t reflects the fact that each continuant is at any given time associated with exactly one spatial region, namely its exact location. Following we can use this relation to define a further instance-level location relation - not between a continuant and the region which it exactly occupies, but rather between one continuant and another. c is located in c1, in this sense, whenever the spatial region occupied by c is part_of the spatial region occupied by c1.    Note that this relation comprehends both the relation of exact location between one continuant and another which obtains when r and r1 are identical (for example, when a portion of fluid exactly fills a cavity), as well as those sorts of inexact location relations which obtain, for example, between brain and head or between ovum and uterus" xsd:string
 property_value: editor_note "Most location relations will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
@@ -34090,7 +35874,6 @@ name: negatively regulates
 namespace: external
 def: "Process(P1) negatively regulates process(P2) iff: P1 terminates P2, or P1 descreases the the frequency of initiation of P2 or the magnitude or rate of output of P2." []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
-subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
 xref: RO:0002212
@@ -34226,7 +36009,6 @@ name: positively regulates
 namespace: external
 def: "Process(P1) postively regulates process(P2) iff: P1 initiates P2, or P1 increases the the frequency of initiation of P2 or the magnitude or rate of output of P2." []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
-subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
 xref: RO:0002213
@@ -34340,7 +36122,6 @@ name: regulates
 namespace: external
 def: "process(P1) regulates process(P2) iff: P1 results in the initiation or termination of P2 OR affects the frequency of its initiation or termination OR affects the magnitude or rate of output of P2." []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
-subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
 xref: RO:0002211

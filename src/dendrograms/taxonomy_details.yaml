@@ -15,9 +15,9 @@
     - Node: CS202002013_179
       Cell_type: CL:0000679
       Location_relation: has_soma_location
-#    - Node: CS202002013_209
-#      Cell_type: #add CL for Meis2 here
-#      Location_relation: RO:0002100
+    - Node: CS202002013_209
+      Cell_type: CL:4023065
+      Location_relation: RO:0002100
     - Node: CS202002013_91
       Cell_type: CL:0002453
       Location_relation: part_of
@@ -30,9 +30,9 @@
     - Node: CS202002013_103
       Cell_type: CL:0000115
       Location_relation: part_of
-#    - Node: CS202002013_222
-#      Cell_type: #add CL for VLMC here
-#      Location_relation: RO:0002100
+    - Node: CS202002013_222
+      Cell_type: CL:4023051
+      Location_relation: RO:0002100
     - Node: CS202002013_111
       Cell_type: CL:0000359
       Location_relation: part_of
@@ -52,12 +52,9 @@
     - Node: CS202002013_235
       Cell_type: CL:0000125
       # non-neuronal currently mapped as glial cell
-      # Node: CS202002013_236 #Oligodendrocyte-OPC no such CL mapping
     - Node: CS202002013_237
       Cell_type: CL:0000881
       # Node: CS202002013_238 #other NN no such CL mapping
-      # Node: CS202002013_255 #VLMC(i)
-      # Node: CS202002013_256 #Large CCK BC
     - Node: CS202002013_257
       Cell_type: CL:4023007
     - Node: CS202002013_258

@@ -6,7 +6,7 @@ MARKER_DENORMALIZED_FILES = $(patsubst %, ../markers/%_markers_denormalized.tsv,
 EQUIVALENT_CLASS_MARKER_FILES = $(patsubst %, ../templates/%_equivalent_markers.tsv, $(JOBS))
 EQUIVALENT_CLASS_REIFICATION_FILES = $(patsubst %, ../templates/%_equivalent_reification.tsv, $(JOBS))
 TEMPLATE_MINIMAL_MARKER_FILES = $(patsubst %, ../templates/%_minimal_markers.tsv, $(JOBS))
-NOMENCLATURE_TEMPLATE_FILES = $(patsubst %, ../templates/nomenclature_table_%.tsv, $(JOBS))
+NOMENCLATURE_TEMPLATE_FILES = $(patsubst %, ../templates/%_non_taxonomy_classification.tsv, $(JOBS))
 
 
 all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_FILES) $(MARKER_DENORMALIZED_FILES) $(EQUIVALENT_CLASS_MARKER_FILES) $(EQUIVALENT_CLASS_REIFICATION_FILES) $(TEMPLATE_MINIMAL_MARKER_FILES) $(NOMENCLATURE_TEMPLATE_FILES)
@@ -29,6 +29,6 @@ all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_FILES) $(MARKER_DENORMALIZED_FILES) $(EQ
 ../templates/%_minimal_markers.tsv: %.json
 	python ../scripts/template_runner.py -mm $< $@
 
-../templates/nomenclature_table_%.tsv: %.json
+../templates/%_non_taxonomy_classification.tsv: %.json
 	python ../scripts/template_runner.py -n $< $@
 

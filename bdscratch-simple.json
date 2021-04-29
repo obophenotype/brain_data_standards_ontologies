@@ -28,11 +28,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-03-29"
+            "val": "2021-04-29"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-29/bdscratch-simple.json",
+        "version": "http://purl.obolibrary.org/obo/bdscratch/releases/2021-04-29/bdscratch-simple.json",
         "xrefs": []
       },
       "nodes": [
@@ -275,10 +275,6 @@
                 "val": "For compatibility with BFO, this relation has a shortcut definition in which the expression \"capable of some P\" expands to \"bearer_of (some realized_by only P)\"."
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000424",
-                "val": "RO_0000053 some (RO_0000054 only ?Y)"
-              },
-              {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
                 "val": "protein"
               },
@@ -402,6 +398,11 @@
         {
           "id": "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
           "lbl": "has_exact_synonym",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://www.semanticweb.org/brain_data_standards/helper.owl#exemplar_of",
+          "lbl": "exemplar_of",
           "type": "PROPERTY"
         },
         {
