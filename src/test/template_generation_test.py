@@ -139,7 +139,9 @@ def curation_table_migrate_manual_edits(source_path, target_path, migrate_column
             if key in source:
                 # copy migrate columns
                 for migrate_column in migrate_columns:
-                    print(str(key) + "   " + str(migrate_column))
-                    row[migrate_column] = source.get(key)[migrate_column]
+                    if len(source.get(key)) > migrate_column:
+                        row[migrate_column] = source.get(key)[migrate_column]
+                    else:
+                        row[migrate_column] = ""
 
             writer.writerow(row)
