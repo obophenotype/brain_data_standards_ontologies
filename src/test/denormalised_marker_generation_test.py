@@ -3,7 +3,8 @@ import networkx as nx
 import os
 # import matplotlib.pyplot as plt
 from networkx.drawing.nx_agraph import graphviz_layout
-from marker_tools import generate_denormalised_marker, read_dendrogram_tree, read_marker_file, \
+from template_generation_utils import read_dendrogram_tree
+from marker_tools import generate_denormalised_marker, read_marker_file, \
     extend_expressions
 
 
@@ -65,7 +66,6 @@ class DenormalisedMarkerTest(unittest.TestCase):
         tree = read_dendrogram_tree(PATH_DEND_JSON)
         ancestors = nx.ancestors(tree, "CS202002013_213")
 
-        print(ancestors)
         self.assertEqual(3, len(ancestors))
         self.assertTrue("CS202002013_212" in ancestors)
         self.assertTrue("CS202002013_118" in ancestors)
@@ -232,7 +232,7 @@ class DenormalisedMarkerTest(unittest.TestCase):
         # self expressions
         self.assertTrue("ensembl:ENSMUSG00000044288" in expressions)
         self.assertTrue("ensembl:ENSMUSG00000058897" in expressions)
-        print(expressions)
+
         self.assertEqual(2, len(expressions))
 
         # 9 is child of 133
