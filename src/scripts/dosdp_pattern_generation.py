@@ -140,6 +140,7 @@ def read_ensmusg():
             ensmusg[_id] = row[2]
     return ensmusg
 
-
-generate_pattern_table_denormalised_markers("../dendrograms/CCN202002013.json", "../patterns/data/default/brainCellRegionMarker.tsv")
+# ec_denormalised markers branch
+# generate_pattern_table_denormalised_markers("../dendrograms/CCN202002013.json", "../patterns/data/default/brainCellRegionMarker.tsv")
+# ec_individuals branch
 # generate_pattern_table_reification("../dendrograms/CCN202002013.json", "../patterns/data/default/brainCellRegionMinimalMarkers.tsv")
