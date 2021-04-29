@@ -78,8 +78,8 @@ class TemplateUtilsTest(unittest.TestCase):
             writer.writerow(["ID", "cell_set_additional_alias", "cell_set_aligned_alias"])
             for o in dend['nodes']:
                 if o['cell_set_accession'] in set.union(*subtrees) and not o['cell_set_preferred_alias']:
-                    if o['cell_set_additional_alias'] or o['cell_set_aligned_alias']:
-                        additional_alias = o['cell_set_additional_alias'] if 'cell_set_additional_alias' in o.keys() else ''
+                    if o['cell_set_additional_aliases'] or o['cell_set_aligned_alias']:
+                        additional_alias = o['cell_set_additional_aliases'] if 'cell_set_additional_aliases' in o.keys() else ''
                         aligned_alias = o['cell_set_aligned_alias'] if 'cell_set_aligned_alias' in o.keys() else ''
                         writer.writerow([o['cell_set_accession'], additional_alias, aligned_alias])
 

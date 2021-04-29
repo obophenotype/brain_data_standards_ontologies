@@ -95,13 +95,13 @@ def generate_curated_class_template(dend_json_path, output_filepath):
 
         for o in dend['nodes']:
             if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or
-                                                                    o['cell_set_additional_alias']):
+                                                                    o['cell_set_additional_aliases']):
                 d = dict()
                 d['ID'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
                 if o['cell_set_preferred_alias']:
                     d['prefLabel'] = o['cell_set_preferred_alias']
-                elif o['cell_set_additional_alias']:
-                    d['prefLabel'] = o['cell_set_additional_alias']
+                elif o['cell_set_additional_aliases']:
+                    d['prefLabel'] = o['cell_set_additional_aliases']
                 d['Synonyms_from_taxonomy'] = get_synonyms_from_taxonomy(o)
                 d['Comment'] = get_synonym_pairs(o)
                 for k in robot_class_curation_seed.keys():
@@ -132,7 +132,7 @@ def generate_equivalent_class_reification_template(dend_json_path, output_filepa
 
     for o in dend['nodes']:
         if o['cell_set_accession'] in set().union(*subtrees) and (o['cell_set_preferred_alias'] or
-                                                                  o['cell_set_additional_alias']):
+                                                                  o['cell_set_additional_aliases']):
             d = dict()
             d['ID'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
             d['Exemplar'] = 'AllenDend:' + o['cell_set_accession']
@@ -218,7 +218,7 @@ def generate_minimal_marker_template(dend_json_path, flat_marker_path, output_ma
 
         for o in dend['nodes']:
             if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or
-                                                                    o['cell_set_additional_alias']):
+                                                                    o['cell_set_additional_aliases']):
                 d = dict()
                 d['ID'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
 
