@@ -1,0 +1,55 @@
+pattern_name: brainCellRegionMinimalMarkers
+pattern_iri: http://purl.obolibrary.org/obo/odk/brainCellRegionMinimalMarkers.yaml
+description: "Naming scheme and axiomatisation for brain cells from BDS."
+
+classes:
+  "animal cell": "CL:0000548"
+  "Vertebrata <vertebrates>": "NCBITaxon:7742"
+  "regional part of brain": "UBERON:0002616"
+  "cell": "CL:0000000"
+
+relations:
+  part_of: "BFO:0000050"
+  in_taxon: "RO:0002162"
+  has_soma_location: "RO:0002100"
+
+vars:
+  gross_cell_type: "'cell'"
+  taxon: "'Vertebrata <vertebrates>'"
+  brain_region: "'regional part of brain'"
+
+data_vars:
+  cell_set_preferred_alias: "xsd:string"
+  minimal_markers: "xsd:string" # A list of maker names delimited by ', '
+
+name:
+   text: "%s %s %s (%s)"
+   vars:
+      - cell_set_preferred_alias
+      - brain_region
+      - gross_cell_type
+      - taxon
+
+comment:
+    text: "The minimal set of markers required to distinguish this cell type from other cell types in the %s is: %s."
+    vars:
+      - brain_region
+      - minimal_markers
+
+generated_synonyms:
+   - text: "%s expressing %s of %s (%s)"
+     vars:
+        - minimal_markers
+        - gross_cell_type
+        - brain_region
+        - taxon
+
+logical_axioms:
+   - axiom_type: subClassOf
+     text: "'in_taxon' some %s"
+     vars:
+        - taxon
+   - axiom_type: subClassOf
+     text: "%s"
+     vars:
+       - gross_cell_type

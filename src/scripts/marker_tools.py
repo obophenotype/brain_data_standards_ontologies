@@ -1,10 +1,10 @@
-from dendrogram_tools import tree_recurse
-import json
 import csv
 import networkx as nx
 import pandas as pd
 import logging
-import yaml
+import os
+
+from template_generation_utils import get_root_nodes, read_taxonomy_config, read_dendrogram_tree
 
 CLUSTER = "cluster"
 EXPRESSIONS = "expressions"
@@ -26,11 +26,11 @@ def generate_denormalised_marker_template(dend_json_path, flat_marker_path, conf
         output_marker_path: Path of the new marker file
 
     """
-    root_nodes = []
-    with open(config_path) as file:
-        config_yaml = yaml.full_load(file)
-        for root_node in config_yaml[0]['Root_nodes']:
-            root_nodes.append(root_node['Node'])
+    path_parts = dend_json_path.split(os.path.sep)
+    taxon = path_parts[len(path_parts) - 1].split(".")[0]
+    config_yaml = read_taxonomy_config(taxon)
+
+    root_nodes = get_root_nodes(config_yaml)
 
     generate_denormalised_marker(dend_json_path, flat_marker_path, output_marker_path, root_nodes)
 
@@ -53,28 +53,6 @@ def generate_denormalised_marker(dend_json_path, flat_marker_path, output_marker
     marker_expressions = read_marker_file(flat_marker_path)
     marker_extended_expressions = extend_expressions(tree, marker_expressions, root_terms)
     generate_marker_table(marker_extended_expressions, output_marker_path)
-
-
-def read_dendrogram_tree(dend_json_path):
-    """
-    Reads the dendrogram file and builds a tree representation using the edges.
-    Args:
-        dend_json_path: Path of the dendrogram file
-
-    Returns: networkx directed graph that represents the taxonomy
-
-    """
-    with open(dend_json_path, 'r') as f:
-        j = json.loads(f.read())
-
-    out = {}
-    tree_recurse(j, out)
-
-    tree = nx.DiGraph()
-    for edge in out['edges']:
-        tree.add_edge(edge[1], edge[0])
-
-    return tree
 
 
 def read_marker_file(flat_marker_path):
@@ -203,4 +181,4 @@ def generate_marker_table(marker_data, output_filepath):
                 d[k] = ''
         template.append(d)
     class_robot_template = pd.DataFrame.from_records(template)
-    class_robot_template.to_csv(output_filepath, sep="\t", index=False)
+    class_robot_template.to_csv(output_filepath.replace("CCN", "CS"), sep="\t", index=False)

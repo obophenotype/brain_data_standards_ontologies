@@ -30,6 +30,7 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002292>))
 Declaration(ObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar>))
 Declaration(ObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_subexemplar>))
 Declaration(ObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#exemplar_of>))
 Declaration(AnnotationProperty(dce:description))
 Declaration(AnnotationProperty(dce:title))
 Declaration(AnnotationProperty(dcterms:license))
@@ -61,6 +62,10 @@ SubObjectPropertyOf(<http://www.semanticweb.org/brain_data_standards/helper.owl#
 # Object Property: <http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> (<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of>)
 
 TransitiveObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of>)
+
+# Object Property: <http://www.semanticweb.org/brain_data_standards/helper.owl#exemplar_of> (exemplar_of)
+
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/helper.owl#exemplar_of> "exemplar_of")
 
 
 

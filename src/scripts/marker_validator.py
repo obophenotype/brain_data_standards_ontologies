@@ -4,9 +4,9 @@ import logging
 import argparse
 
 from dendrogram_tools import dend_json_2_nodes_n_edges
-from template_generation_utils import read_tsv
+from template_generation_utils import read_tsv, index_dendrogram
 from abc import ABC, abstractmethod
-from os.path import isfile, join, abspath
+from os.path import isfile, join
 
 log = logging.getLogger(__name__)
 
@@ -30,13 +30,6 @@ def get_taxonomy_file_name(marker_file_name):
 
 def get_marker_file_name(taxonomy_file_name):
     return taxonomy_file_name.replace(".json", "_markers.tsv") .replace("CCN", "CS")
-
-
-def index_dendrogram(dend):
-    dend_dict = dict()
-    for o in dend['nodes']:
-        dend_dict[o['cell_set_accession']] = o
-    return dend_dict
 
 
 def save_report(report):
