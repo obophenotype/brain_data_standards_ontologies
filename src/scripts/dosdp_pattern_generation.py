@@ -66,7 +66,7 @@ def generate_pattern_table_reification(dend_json_path, output_filepath):
         dl = []
         for o in dend['nodes']:
             if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or
-                                                                    o['cell_set_additional_alias']):
+                                                                    o['cell_set_additional_aliases']):
                 d = dict()
                 d['defined_class'] = ALLEN_DEND_ + o['cell_set_accession']
                 d['gross_cell_type'] = get_gross_cell_type(o['cell_set_accession'], subtrees, taxonomy_config)
@@ -74,8 +74,8 @@ def generate_pattern_table_reification(dend_json_path, output_filepath):
                 d['brain_region'] = taxonomy_config['Brain_region'][0]
                 if o['cell_set_preferred_alias']:
                     d['cell_set_preferred_alias'] = o['cell_set_preferred_alias']
-                elif o['cell_set_additional_alias']:
-                    d['cell_set_preferred_alias'] = o['cell_set_additional_alias']
+                elif o['cell_set_additional_aliases']:
+                    d['cell_set_preferred_alias'] = o['cell_set_additional_aliases']
 
                 if o['cell_set_accession'] in minimal_markers:
                     d['minimal_markers'] = minimal_markers[o['cell_set_accession']]
