@@ -21,6 +21,7 @@ vars:
 data_vars:
   cell_set_preferred_alias: "xsd:string"
   minimal_markers: "xsd:string" # A list of maker names delimited by ', '
+  allen_markers: "xsd:string" # A list of maker names delimited by ', '
 
 name:
    text: "%s %s %s (%s)"
@@ -33,7 +34,7 @@ name:
 def:
   text: >
     A %s of the %s %s that expresses: %s. These cells can be distinguished from other cells in the %s
-    by expression of the markers: %s."
+    by their expression of: %s."
   vars:
    - gross_cell_type
    - taxon
