@@ -133,10 +133,11 @@ def read_markers(marker_path, ensmusg_names):
             names = []
             if row[2]:
                 for marker in row[2].split("|"):
-                    if marker in ensmusg_names:
-                        names.append(ensmusg_names[marker])
+                    marker_name = marker.strip()
+                    if marker_name in ensmusg_names:
+                        names.append(ensmusg_names[marker_name])
                     else:
-                        print(marker + " couldn't find in ensmusg.tsv")
+                        print(marker_name + " couldn't find in ensmusg.tsv")
                 markers[_id] = ",".join(sorted(names))
     return markers
 
