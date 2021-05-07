@@ -26,9 +26,9 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 
 # Class: <http://purl.obolibrary.org/obo/odk/brainCellRegionMinimalMarkers.yaml> (xsd:string 'regional part of brain' 'cell' ('Vertebrata <vertebrates>'))
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/odk/brainCellRegionMinimalMarkers.yaml> "A 'cell' of the 'Vertebrata <vertebrates>' 'regional part of brain' that expresses: xsd:string. These cells can be distinguished from other cells in the 'regional part of brain' by their expression of: xsd:string."^^xsd:string)
 AnnotationAssertion(<http://purl.org/dc/terms/title> <http://purl.obolibrary.org/obo/odk/brainCellRegionMinimalMarkers.yaml> "brainCellRegionMinimalMarkers"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/odk/brainCellRegionMinimalMarkers.yaml> "xsd:string expressing 'cell' of 'regional part of brain' ('Vertebrata <vertebrates>')"^^xsd:string)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/odk/brainCellRegionMinimalMarkers.yaml> "The minimal set of markers required to distinguish this cell type from other cell types in the 'regional part of brain' is: xsd:string."^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/odk/brainCellRegionMinimalMarkers.yaml> "xsd:string 'regional part of brain' 'cell' ('Vertebrata <vertebrates>')"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/odk/brainCellRegionMinimalMarkers.yaml> <http://purl.obolibrary.org/obo/CL_0000000>)
 SubClassOf(<http://purl.obolibrary.org/obo/odk/brainCellRegionMinimalMarkers.yaml> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7742>))
