@@ -10,57 +10,76 @@
     - UBERON:0001384
   Root_nodes:
     - Node: CS202002013_123
-      Cell_type: CL:0011005
+      Cell_type: CL:0011005 
       Location_relation: has_soma_location
+      #GABAergic interneuron
     - Node: CS202002013_179
       Cell_type: CL:0000679
       Location_relation: has_soma_location
+      #glutamatergic neuron
     - Node: CS202002013_209
       Cell_type: CL:4023065
       Location_relation: RO:0002100
+      #meis2 GABAergic
     - Node: CS202002013_91
       Cell_type: CL:0002453
       Location_relation: part_of
+      #oligodendrocyte precursor cell
     - Node: CS202002013_210
       Cell_type: CL:0000127
       Location_relation: part_of
+      #astrocyte
     - Node: CS202002013_212
       Cell_type: CL:0000128
       Location_relation: part_of
+      #oligodendrocyte
     - Node: CS202002013_103
       Cell_type: CL:0000115
       Location_relation: part_of
+      #endothelial cell
     - Node: CS202002013_222
       Cell_type: CL:4023051
       Location_relation: RO:0002100
+      #VLMC
     - Node: CS202002013_111
       Cell_type: CL:0000359
       Location_relation: part_of
+      #vascular associated SMC
     - Node: CS202002013_112
       Cell_type: CL:0000669
       Location_relation: part_of
+      #pericyte
     - Node: CS202002013_113
       Cell_type: CL:0000129
       Location_relation: part_of
+      #microglial
   non_taxonomy_roots:
     - Node: CS202002013_232
       Cell_type: CL:4023017
+      #sst
     - Node: CS202002013_233
       Cell_type: CL:4023018
+      #pvalb
     - Node: CS202002013_234
       Cell_type: CL:4023008
+      #IT-projecting
     - Node: CS202002013_235
       Cell_type: CL:0000125
       # non-neuronal currently mapped as glial cell
     - Node: CS202002013_237
       Cell_type: CL:0000881
+      #perivascular macrophage
       # Node: CS202002013_238 #other NN no such CL mapping
     - Node: CS202002013_257
       Cell_type: CL:4023007
+      #L2/3 bipolar vip
     - Node: CS202002013_258
       Cell_type: CL:4023027
+      # L5 T-martinotti 
       # Node: CS202002013_259 #lower FS BC
     - Node: CS202002013_260
       Cell_type: CL:4023045
+      #MY ET
     - Node: CS202002013_261
       Cell_type: CL:4023044
+      #non-MY ET
