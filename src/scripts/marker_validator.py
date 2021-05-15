@@ -5,7 +5,7 @@ import argparse
 
 from dendrogram_tools import dend_json_2_nodes_n_edges
 from template_generation_utils import read_tsv, index_dendrogram
-from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod, ABCMeta
 from os.path import isfile, join
 
 log = logging.getLogger(__name__)
@@ -16,8 +16,9 @@ DENDROGRAMS_FOLDER = join(os.path.dirname(os.path.realpath(__file__)), "../dendr
 PATH_REPORT = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../../target/report.txt")
 
 
-def is_denormalized_file(file_name):
-    return file_name.endswith("_markers_denormalized.tsv")
+def is_whitelist_file(file_name):
+    """White list documents that are exempt from validation."""
+    return file_name.endswith("_markers_denormalized.tsv") or file_name.endswith("_Allen_markers.tsv")
 
 
 def get_taxonomy_files():
@@ -50,7 +51,17 @@ class BaseChecker(ABC):
         return "=== Default Checker :"
 
 
-class FileNameChecker(BaseChecker):
+class StrictChecker(BaseChecker, metaclass=ABCMeta):
+    """Failures of strict checks cause exceptions."""
+    pass
+
+
+class SoftChecker(BaseChecker, metaclass=ABCMeta):
+    """Failures of soft checks cause warnings."""
+    pass
+
+
+class FileNameChecker(StrictChecker):
     """
     - Marker files are submitted under src/markers/.
     - Files must be named CS{taxonomy_id}_markers.tsv.
@@ -64,7 +75,7 @@ class FileNameChecker(BaseChecker):
         expected_names = [get_marker_file_name(f) for f in get_taxonomy_files()]
         files = [f for f in os.listdir(MARKERS_FOLDER) if isfile(join(MARKERS_FOLDER, f))]
         for file in files:
-            if not is_denormalized_file(file) and file not in expected_names:
+            if not is_whitelist_file(file) and file not in expected_names:
                 message = "Invalid marker file name: {}. Name should be one of {}"\
                     .format(file, expected_names)
                 self.reports.append(message)
@@ -76,7 +87,7 @@ class FileNameChecker(BaseChecker):
         return "=== File Name Checks :"
 
 
-class TableStructureChecker(BaseChecker):
+class TableStructureChecker(StrictChecker):
     """
     - Marker files must have 3 columns.
     - Expected headers are in order : 'Taxonomy_node_ID', 'clusterName', 'Markers'.
@@ -89,7 +100,7 @@ class TableStructureChecker(BaseChecker):
     def check(self):
         files = [f for f in os.listdir(MARKERS_FOLDER) if isfile(join(MARKERS_FOLDER, f))]
         for file in files:
-            if not is_denormalized_file(file):
+            if not is_whitelist_file(file):
                 records = read_tsv(join(MARKERS_FOLDER, file))
                 header_row = records[next(iter(records))]
                 if header_row != self.expected_headers:
@@ -102,12 +113,9 @@ class TableStructureChecker(BaseChecker):
         return "=== Table Structure Checks :"
 
 
-class MarkerContentChecker(BaseChecker):
+class DendrogramCrossChecker(SoftChecker):
     """
-    - All dendrogram nodes must be present.
-    - Taxonomy_node_ID must be valid (exists in the dendrogram).
-    - clusterName must(?) match clusterName in dendrogram
-    - Markers must match regex ^\\\w+:\\\w+$ with multiple entries delimited by |
+    - All dendrogram nodes must be present in the marker file.
     """
 
     def __init__(self):
@@ -116,29 +124,46 @@ class MarkerContentChecker(BaseChecker):
     def check(self):
         files = [f for f in os.listdir(MARKERS_FOLDER) if isfile(join(MARKERS_FOLDER, f))]
         for marker_file in files:
-            if not is_denormalized_file(marker_file):
+            if not is_whitelist_file(marker_file):
                 dendrogram_path = join(DENDROGRAMS_FOLDER, get_taxonomy_file_name(marker_file))
                 if os.path.exists(dendrogram_path):
                     marker_records = read_tsv(join(MARKERS_FOLDER, marker_file))
                     dend = dend_json_2_nodes_n_edges(join(DENDROGRAMS_FOLDER, dendrogram_path))
-                    dend_dict = index_dendrogram(dend)
                     self.check_all_nodes_exist(dend, marker_records, marker_file)
-                    self.check_all_node_ids_valid(dend_dict, marker_records, marker_file)
-                    self.check_cluster_name(dend_dict, marker_records, marker_file)
-                    self.check_marker_names(marker_records, marker_file)
 
     def check_all_nodes_exist(self, dend, marker_records, marker_file):
         missing_nodes = []
         for o in dend['nodes']:
             if o['cell_set_accession'] not in marker_records:
                 missing_nodes.append(o['cell_set_accession'])
-                if len(missing_nodes) > 4:
-                    break
         if missing_nodes:
-            message = "All dendrogram nodes must be present in the marker file {}. Top 5 missing nodes: {}" \
-                .format(marker_file, missing_nodes)
+            message = "All dendrogram nodes must be present in the marker file {}. Total {} missing nodes. " \
+                      "\nTop 5 missing nodes are: {}" \
+                .format(marker_file, len(missing_nodes), missing_nodes[0:5])
             self.reports.append(message)
-            # log.error(message)
+
+    def get_header(self):
+        return "=== Dendrogram Node Checks :"
+
+
+class TaxonomyNodeIdChecker(StrictChecker):
+    """
+    - Taxonomy_node_ID must be valid (exists in the dendrogram).
+    """
+
+    def __init__(self):
+        self.reports = []
+
+    def check(self):
+        files = [f for f in os.listdir(MARKERS_FOLDER) if isfile(join(MARKERS_FOLDER, f))]
+        for marker_file in files:
+            if not is_whitelist_file(marker_file):
+                dendrogram_path = join(DENDROGRAMS_FOLDER, get_taxonomy_file_name(marker_file))
+                if os.path.exists(dendrogram_path):
+                    marker_records = read_tsv(join(MARKERS_FOLDER, marker_file))
+                    dend = dend_json_2_nodes_n_edges(join(DENDROGRAMS_FOLDER, dendrogram_path))
+                    dend_dict = index_dendrogram(dend)
+                    self.check_all_node_ids_valid(dend_dict, marker_records, marker_file)
 
     def check_all_node_ids_valid(self, dend_dict, marker_records, marker_file):
         marker_ids = list(marker_records.keys())
@@ -150,16 +175,60 @@ class MarkerContentChecker(BaseChecker):
                 self.reports.append(message)
                 # log.error(message)
 
+    def get_header(self):
+        return "=== Marker Nodes' Dendrogram Existence Checks :"
+
+
+class ClusterNameChecker(SoftChecker):
+    """
+    - clusterName must(?) match clusterName in dendrogram
+    """
+
+    def __init__(self):
+        self.reports = []
+
+    def check(self):
+        files = [f for f in os.listdir(MARKERS_FOLDER) if isfile(join(MARKERS_FOLDER, f))]
+        for marker_file in files:
+            if not is_whitelist_file(marker_file):
+                dendrogram_path = join(DENDROGRAMS_FOLDER, get_taxonomy_file_name(marker_file))
+                if os.path.exists(dendrogram_path):
+                    marker_records = read_tsv(join(MARKERS_FOLDER, marker_file))
+                    dend = dend_json_2_nodes_n_edges(join(DENDROGRAMS_FOLDER, dendrogram_path))
+                    dend_dict = index_dendrogram(dend)
+                    self.check_cluster_name(dend_dict, marker_records, marker_file)
+
     def check_cluster_name(self, dend_dict, marker_records, marker_file):
         marker_ids = list(marker_records.keys())
         marker_ids.pop(0)  # pop header row
         for _id in marker_ids:
             if _id in dend_dict:
-                if marker_records[_id][1] != dend_dict[_id]["label"]:
+                if marker_records[_id][1] != dend_dict[_id]["label"] and \
+                        marker_records[_id][1] != dend_dict[_id]["label"].replace("/", "-"):
                     message = "clusterName '{}' of {} in {} does not match label '{}' in the dendrogram." \
                         .format(marker_records[_id][1], _id, marker_file, dend_dict[_id]["label"])
                     self.reports.append(message)
-                    # log.error(message)
+
+    def get_header(self):
+        return "=== Cluster Name Checks :"
+
+
+class MarkerNameChecker(StrictChecker):
+    """
+    - Markers must match regex ^\\\w+:\\\w+$ with multiple entries delimited by |
+    """
+
+    def __init__(self):
+        self.reports = []
+
+    def check(self):
+        files = [f for f in os.listdir(MARKERS_FOLDER) if isfile(join(MARKERS_FOLDER, f))]
+        for marker_file in files:
+            if not is_whitelist_file(marker_file):
+                dendrogram_path = join(DENDROGRAMS_FOLDER, get_taxonomy_file_name(marker_file))
+                if os.path.exists(dendrogram_path):
+                    marker_records = read_tsv(join(MARKERS_FOLDER, marker_file))
+                    self.check_marker_names(marker_records, marker_file)
 
     def check_marker_names(self, marker_records, marker_file):
         marker_ids = list(marker_records.keys())
@@ -174,20 +243,26 @@ class MarkerContentChecker(BaseChecker):
                     # log.error(message)
 
     def get_header(self):
-        return "=== Marker Content Checks :"
+        return "=== Marker Name Checks :"
 
 
 class MarkerValidator(object):
 
-    rules = [FileNameChecker(), TableStructureChecker(), MarkerContentChecker()]
-    reports = []
+    rules = [FileNameChecker(), TableStructureChecker(), DendrogramCrossChecker(), TaxonomyNodeIdChecker(),
+             ClusterNameChecker(), MarkerNameChecker()]
+    errors = []
+    warnings = []
 
     def validate(self):
         for checker in self.rules:
             checker.check()
             if checker.reports:
-                self.reports.append(checker.get_header())
-                self.reports.extend(checker.reports)
+                if isinstance(checker, StrictChecker):
+                    self.errors.append("\n"+checker.get_header())
+                    self.errors.extend(checker.reports)
+                else:
+                    self.warnings.append("\n"+checker.get_header())
+                    self.warnings.extend(checker.reports)
 
 
 class ValidationError(Exception):
@@ -202,15 +277,24 @@ def main(silent):
     log.info("Marker validation started.")
     validator = MarkerValidator()
     validator.validate()
-    if not validator.reports:
+    if not validator.errors and not validator.warnings:
         log.info("Marker validation successful.")
-    else:
-        for rep in validator.reports:
+    elif not validator.errors:
+        log.warning("Warnings:")
+        for rep in validator.warnings:
             print(rep)
-        # save_report()
+        log.warning("Marker validation completed with warnings.")
+    else:
+        log.warning("\nErrors:")
+        for rep in validator.errors:
+            print(rep)
+        if validator.warnings:
+            log.warning("\nWarnings:")
+            for rep in validator.warnings:
+                print(rep)
         log.error("Marker validation completed with errors.")
         if not silent:
-            raise ValidationError("Marker validation completed with errors.", validator.reports)
+            raise ValidationError("Marker validation completed with errors.", validator.errors)
 
 
 if __name__ == '__main__':
