@@ -50,7 +50,8 @@ jobs:
           # email body as text
           body: ${{steps.marker-report.outputs.validation-report}}
           # comma-separated string, send email to
-          to: ${{secrets.MAIL_TO}}
-          cc: ${{secrets.MAIL_CC}}
+          #to: ${{secrets.MAIL_TO}}
+          #cc: ${{secrets.MAIL_CC}}
+          to: hkir@ebi.ac.uk
           # from email name
           from: BDS Build Robot
