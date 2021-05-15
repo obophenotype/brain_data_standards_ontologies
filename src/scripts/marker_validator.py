@@ -278,12 +278,12 @@ def main(silent):
     validator = MarkerValidator()
     validator.validate()
     if not validator.errors and not validator.warnings:
-        print("Marker validation successful.")
+        print("\nMarker validation successful.")
     elif not validator.errors:
         print("Warnings:")
         for rep in validator.warnings:
             print(rep)
-        print("Marker validation completed with warnings.")
+        print("\nMarker validation completed with warnings.")
     else:
         print("\nErrors:")
         for rep in validator.errors:
@@ -292,7 +292,7 @@ def main(silent):
             print("\nWarnings:")
             for rep in validator.warnings:
                 print(rep)
-        print("Marker validation completed with errors.")
+        print("\nMarker validation completed with errors.")
         if not silent:
             raise ValidationError("Marker validation completed with errors.", validator.errors)
 
