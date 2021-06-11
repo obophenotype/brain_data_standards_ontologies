@@ -16,9 +16,9 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bdscratch/imports/ro_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bdscratch/releases/2021-04-29/imports/ro_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bdscratch/releases/2021-06-11/imports/ro_import.owl"/>
         <dc:source rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2021-03-08/ro.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-04-29</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-06-11</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1796,6 +1796,20 @@ For example, A and B may be gene products and binding of B by A positively regul
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002472 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002472">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002616"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002558"/>
+        <obo:IAO_0000115>A relationship between a piece of evidence a and some entity b, where b is  an information content entity, material entity or process, and 
+the a supports either the existence of b, or the truth value of b.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+        <rdfs:label>is evidence for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002479 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002479">
@@ -1870,6 +1884,21 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
         <obo:IAO_0000232>Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect.</obo:IAO_0000232>
         <rdfs:label>causal relation between entities</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002558 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002558">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002616"/>
+        <obo:IAO_0000115>inverse of is evidence for</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/25052702"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/RO_0002259"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
+        <rdfs:comment>x has evidence y iff , x is  an information content entity, material entity or process, and y supports either the existence of x, or the truth value of x.</rdfs:comment>
+        <rdfs:label>has evidence</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -2039,6 +2068,15 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000115>Inverse of &apos;causal agent in process&apos;</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
         <rdfs:label>process has causal agent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002616 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002616">
+        <obo:IAO_0000232>Do not use this relation directly. It is a grouping relation.</obo:IAO_0000232>
+        <rdfs:label>related via evidence or inference to</rdfs:label>
     </owl:ObjectProperty>
     
 

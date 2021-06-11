@@ -9,6 +9,7 @@ ENSMUSG_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../temp
 
 MARKERS_PATH = "../markers/{}_markers.tsv"
 MARKERS_DENORMALIZED_PATH = "../markers/{}_markers_denormalized.tsv"
+ALLEN_MARKERS_PATH = "../markers/{}_Allen_markers.tsv"
 
 ALLEN_DEND_ = 'AllenDendClass:'
 
@@ -61,7 +62,9 @@ def generate_pattern_table_reification(dend_json_path, output_filepath):
 
     if taxonomy_config:
         subtrees = get_subtrees(dend_tree, taxonomy_config)
-        minimal_markers = get_minimal_markers(taxon, read_ensmusg())
+        ensmusg_names = read_ensmusg()
+        minimal_markers = get_minimal_markers(taxon, ensmusg_names)
+        allen_markers = get_allen_markers(taxon, ensmusg_names)
 
         dl = []
         for o in dend['nodes']:
@@ -82,6 +85,11 @@ def generate_pattern_table_reification(dend_json_path, output_filepath):
                 else:
                     d['minimal_markers'] = ''
 
+                if o['cell_set_accession'] in allen_markers:
+                    d['allen_markers'] = allen_markers[o['cell_set_accession']]
+                else:
+                    d['allen_markers'] = ''
+
                 dl.append(d)
 
     robot_template = pd.DataFrame.from_records(dl)
@@ -94,6 +102,11 @@ def get_gross_cell_type(_id, subtrees, taxonomy_config):
         if _id in subtree:
             gross_cell_type = taxonomy_config['Root_nodes'][index]['Cell_type']
     return gross_cell_type
+
+
+def get_allen_markers(taxon, ensmusg_names):
+    allen_marker_path = ALLEN_MARKERS_PATH.format(taxon).replace("CCN", "CS")
+    return read_markers(allen_marker_path, ensmusg_names)
 
 
 def get_denorm_markers(taxon, ensmusg_names):
@@ -120,10 +133,11 @@ def read_markers(marker_path, ensmusg_names):
             names = []
             if row[2]:
                 for marker in row[2].split("|"):
-                    if marker in ensmusg_names:
-                        names.append(ensmusg_names[marker])
+                    marker_name = marker.strip()
+                    if marker_name in ensmusg_names:
+                        names.append(ensmusg_names[marker_name])
                     else:
-                        print(marker + " couldn't find in ensmusg.tsv")
+                        print(marker_name + " couldn't find in ensmusg.tsv")
                 markers[_id] = ",".join(sorted(names))
     return markers
 
