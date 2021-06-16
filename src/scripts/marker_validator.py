@@ -2,6 +2,7 @@ import os
 import re
 import logging
 import argparse
+import csv
 
 from dendrogram_tools import dend_json_2_nodes_n_edges
 from template_generation_utils import read_tsv, index_dendrogram
@@ -149,6 +150,7 @@ class DendrogramCrossChecker(SoftChecker):
 class TaxonomyNodeIdChecker(StrictChecker):
     """
     - Taxonomy_node_ID must be valid (exists in the dendrogram).
+    - Taxonomy_node_ID's must be unique
     """
 
     def __init__(self):
@@ -164,6 +166,7 @@ class TaxonomyNodeIdChecker(StrictChecker):
                     dend = dend_json_2_nodes_n_edges(join(DENDROGRAMS_FOLDER, dendrogram_path))
                     dend_dict = index_dendrogram(dend)
                     self.check_all_node_ids_valid(dend_dict, marker_records, marker_file)
+                    self.check_all_node_ids_unique(marker_file)
 
     def check_all_node_ids_valid(self, dend_dict, marker_records, marker_file):
         marker_ids = list(marker_records.keys())
@@ -174,6 +177,18 @@ class TaxonomyNodeIdChecker(StrictChecker):
                     .format(_id, marker_file)
                 self.reports.append(message)
                 # log.error(message)
+
+    def check_all_node_ids_unique(self, marker_file):
+        taxonomy_node_ids = list()
+        with open(join(MARKERS_FOLDER, marker_file)) as fd:
+            rd = csv.reader(fd, delimiter="\t", quotechar='"')
+            for row in rd:
+                _id = row[0]
+                if _id in taxonomy_node_ids:
+                    self.reports.append("Redundant Taxonomy_node_ID '{}' in the marker file ({})."
+                                        .format(_id, marker_file))
+                else:
+                    taxonomy_node_ids.append(_id)
 
     def get_header(self):
         return "=== Marker Nodes' Dendrogram Existence Checks :"
