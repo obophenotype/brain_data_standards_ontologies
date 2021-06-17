@@ -90,6 +90,9 @@ def generate_pattern_table_reification(dend_json_path, output_filepath):
                 else:
                     d['allen_markers'] = ''
 
+                d['projection_type'] = ''
+                d['layers'] = ''
+
                 dl.append(d)
 
     robot_template = pd.DataFrame.from_records(dl)
@@ -135,10 +138,10 @@ def read_markers(marker_path, ensmusg_names):
                 for marker in row[2].split("|"):
                     marker_name = marker.strip()
                     if marker_name in ensmusg_names:
-                        names.append(ensmusg_names[marker_name])
+                        names.append(marker_name)
                     else:
                         print(marker_name + " couldn't find in ensmusg.tsv")
-                markers[_id] = ",".join(sorted(names))
+                markers[_id] = "|".join(sorted(names))
     return markers
 
 
@@ -157,4 +160,4 @@ def read_ensmusg():
 # ec_denormalised markers branch
 # generate_pattern_table_denormalised_markers("../dendrograms/CCN202002013.json", "../patterns/data/default/brainCellRegionMarker.tsv")
 # ec_individuals branch
-# generate_pattern_table_reification("../dendrograms/CCN202002013.json", "../patterns/data/default/brainCellRegionMinimalMarkers.tsv")
+generate_pattern_table_reification("../dendrograms/CCN202002013.json", "../patterns/data/default/brainCellRegionMinimalMarkers.tsv")
