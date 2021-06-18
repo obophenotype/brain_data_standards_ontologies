@@ -97,8 +97,7 @@ logical_axioms:
      text: "%s"
      vars:
        - gross_cell_type
-
-  - axiom_type: subClassOf
-    text: "'bearer_of' some %s"
-    vars:
-      - projection_type
+   - axiom_type: subClassOf
+     text: "'bearer_of' some %s"
+     vars:
+       - projection_type
