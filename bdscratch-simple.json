@@ -28,11 +28,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-04-29"
+            "val": "2021-06-22"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/bdscratch/releases/2021-04-29/bdscratch-simple.json",
+        "version": "http://purl.obolibrary.org/obo/bdscratch/releases/2021-06-22/bdscratch-simple.json",
         "xrefs": []
       },
       "nodes": [
@@ -151,6 +151,19 @@
             "xrefs": [
               {
                 "val": "BFO:0000050"
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000115",
+          "lbl": "definition",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
+                "val": "http://purl.obolibrary.org/obo/IAO_0000122"
               }
             ]
           },
@@ -324,6 +337,34 @@
               "val": "Inverse of 'expressed in'",
               "xrefs": []
             }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0002558",
+          "lbl": "has evidence",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Chris Mungall"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://www.ncbi.nlm.nih.gov/pubmed/25052702"
+              }
+            ],
+            "comments": [
+              "x has evidence y iff , x is  an information content entity, material entity or process, and y supports either the existence of x, or the truth value of x."
+            ],
+            "definition": {
+              "val": "inverse of is evidence for",
+              "xrefs": []
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/RO_0002259",
+              "http://purl.obolibrary.org/obo/ro/subsets#ro-eco"
+            ]
           },
           "type": "PROPERTY"
         },

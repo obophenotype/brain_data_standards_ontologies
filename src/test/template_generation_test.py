@@ -118,6 +118,9 @@ class TemplateGenerationTest(unittest.TestCase):
     # def test_migrate(self):
     #     curated_class_migrate()
 
+    # def test_migrate_dosdp(self):
+    #     curated_dosdp_migrate()
+
 
 def curated_class_migrate():
     migrate_columns = [5, 6, 7, 8, 9, 10]
@@ -125,6 +128,11 @@ def curated_class_migrate():
     curation_table_migrate_manual_edits("../templates/CCN202002013_class_old.tsv",
                                         "../templates/CCN202002013_class.tsv", migrate_columns)
 
+
+def curated_dosdp_migrate():
+    migrate_columns = [7, 8]
+    curation_table_migrate_manual_edits("../patterns/data/default/brainCellRegionMinimalMarkers_backup.tsv",
+                                        "../patterns/data/default/brainCellRegionMinimalMarkers.tsv", migrate_columns)
 
 def curation_table_migrate_manual_edits(source_path, target_path, migrate_columns):
     source = read_tsv(source_path)
