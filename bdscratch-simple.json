@@ -341,34 +341,6 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/RO_0002558",
-          "lbl": "has evidence",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Chris Mungall"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "http://www.ncbi.nlm.nih.gov/pubmed/25052702"
-              }
-            ],
-            "comments": [
-              "x has evidence y iff , x is  an information content entity, material entity or process, and y supports either the existence of x, or the truth value of x."
-            ],
-            "definition": {
-              "val": "inverse of is evidence for",
-              "xrefs": []
-            },
-            "subsets": [
-              "http://purl.obolibrary.org/obo/RO_0002259",
-              "http://purl.obolibrary.org/obo/ro/subsets#ro-eco"
-            ]
-          },
-          "type": "PROPERTY"
-        },
-        {
           "id": "http://purl.org/dc/elements/1.1/description",
           "lbl": "description",
           "meta": {

@@ -731,7 +731,6 @@ synonym: "n66" EXACT []
 synonym: "RNAseq 058-069" EXACT []
 is_a: CL:4023008 {xref="DOI:10.1101/2020.02.29.970558"} ! intratelencephalic-projecting glutamatergic cortical neuron
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
-relationship: in_taxon PATO:0070034 ! intratelencephalic projecting
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036264 ! expresses Fstl4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038331 ! expresses Satb2
@@ -837,7 +836,6 @@ synonym: "Npr3, Gm2164 expressing glutamatergic neuron of primary motor cortex (
 synonym: "RNAseq 070-073" EXACT []
 is_a: CL:4023041 {xref="DOI:10.1101/2020.02.29.970558"} ! L5 extratelencephalic projecting glutamatergic cortical neuron
 relationship: in_taxon NCBITaxon:10090 ! Mus musculus
-relationship: in_taxon PATO:0070028 ! extratelencephalic projecting
 relationship: RO:0002100 UBERON:0001384 ! has soma location primary motor cortex
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022206 ! expresses Npr3
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098760 ! expresses Gm2164
@@ -855,7 +853,6 @@ synonym: "n81" EXACT []
 synonym: "RNAseq 074-080" EXACT []
 synonym: "VAL/VM Projecting" EXACT []
 is_a: CL:4023055 {xref="DOI:10.1101/2020.02.29.970558"} ! corticothalamic VAL/VM projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
-relationship: in_taxon PATO:0070029 ! corticothalamic projecting
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029563 ! expresses Foxp2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000078591 ! expresses Hs3st4
 property_value: prefLabel "L6 CT" xsd:string
@@ -916,7 +913,6 @@ synonym: "n91" EXACT []
 synonym: "Near-projecting" EXACT []
 synonym: "RNAseq 086-088" EXACT []
 is_a: CL:4023043 {xref="DOI:10.1101/2020.02.29.970558"} ! L5/6 near-projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
-relationship: in_taxon PATO:0070030 ! near projecting
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004151 ! expresses Etv1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047907 ! expresses Tshz2
 property_value: prefLabel "L5/6 NP" xsd:string
@@ -33409,11 +33405,6 @@ name: Cadps2
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000018417
-name: Myo1b
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000019772
 name: Vip
 is_a: SO:0000704 ! gene
@@ -33459,16 +33450,6 @@ name: Unc5b
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000020140
-name: Lgr5
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000020422
-name: Tns3
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000020902
 name: Ntn1
 is_a: SO:0000704 ! gene
@@ -33504,18 +33485,8 @@ name: Cartpt
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000021662
-name: Arhgef28
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000021665
 name: Hexb
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000021680
-name: Crhbp
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -33589,11 +33560,6 @@ name: Nectin3
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000022790
-name: Igsf11
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000022860
 name: Chodl
 is_a: SO:0000704 ! gene
@@ -33611,11 +33577,6 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000023800
 name: Tiam2
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000023945
-name: Slc5a7
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -33819,11 +33780,6 @@ name: Dkk2
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000028121
-name: Bcar3
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000028222
 name: Calb1
 is_a: SO:0000704 ! gene
@@ -33834,18 +33790,8 @@ name: Pdlim5
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000028364
-name: Tnc
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000028370
 name: Pappa
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000028487
-name: Bnc2
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -33911,16 +33857,6 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000030074
 name: Gxylt2
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000030108
-name: Slc6a13
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000030170
-name: Wnt5b
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -34039,18 +33975,8 @@ name: Prr5l
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000033063
-name: Cntnap3
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000033208
 name: S100b
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000033308
-name: Dpyd
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -34076,11 +34002,6 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000034402
 name: Kcnh5
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000034687
-name: Fras1
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -34234,18 +34155,8 @@ name: Cyp7b1
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000039579
-name: Grin3a
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000039620
 name: Trmt9b
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000039706
-name: Ldb2
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -34404,23 +34315,8 @@ name: Tshz2
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000048424
-name: Ranbp3l
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000048776
-name: Pthlh
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000048967
 name: Yjefn3
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000048988
-name: Elfn1
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -34461,16 +34357,6 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000050783
 name: Htr1f
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000050830
-name: Vwc2
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000051111
-name: Sv2c
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -34539,11 +34425,6 @@ name: Gpc3
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000055761
-name: Nkain3
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000055775
 name: Myh8
 is_a: SO:0000704 ! gene
@@ -34554,11 +34435,6 @@ name: Slit3
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000057378
-name: Ryr3
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000058897
 name: Col25a1
 is_a: SO:0000704 ! gene
@@ -34566,11 +34442,6 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000059049
 name: Frem1
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000059173
-name: Pde1a
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -34624,11 +34495,6 @@ name: Egfem1
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000063626
-name: Unc5d
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000063661
 name: Krt73
 is_a: SO:0000704 ! gene
@@ -34649,11 +34515,6 @@ name: Cntnap5b
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000068196
-name: Col8a1
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000068220
 name: Lgals1
 is_a: SO:0000704 ! gene
@@ -34666,16 +34527,6 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000069378
 name: Prdm6
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000069911
-name: Insyn2b
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000070366
-name: Plpp4
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -34704,28 +34555,8 @@ name: A830036E02Rik
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000084908
-name: C79798
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000087301
-name: Gm13629
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000087516
 name: Tbx3os1
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000090125
-name: Pou3f1
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000091002
-name: Tcerg1l
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -34839,18 +34670,8 @@ name: Gm30624
 is_a: SO:0000704 ! gene
 
 [Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000114028
-name: 9630002D21Rik
-is_a: SO:0000704 ! gene
-
-[Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000115529
 name: 9630013A20Rik
-is_a: SO:0000704 ! gene
-
-[Term]
-id: http://identifiers.org/ensembl/ENSMUSG00000116029
-name: Gm41414
 is_a: SO:0000704 ! gene
 
 [Term]
@@ -35981,15 +35802,6 @@ property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000232 "This property or its subproperties is not to be used directly. These properties exist as helper properties that are used to support OWL reasoning." xsd:string
 
 [Typedef]
-id: RO:0002472
-name: is evidence for
-def: "A relationship between a piece of evidence a and some entity b, where b is  an information content entity, material entity or process, and \nthe a supports either the existence of b, or the truth value of b." []
-subset: ro-eco
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-is_a: RO:0002616 ! related via evidence or inference to
-inverse_of: RO:0002558 ! has evidence
-
-[Typedef]
 id: RO:0002479
 name: has part that occurs in
 def: "p has part that occurs in c if and only if there exists some p1, such that p has_part p1, and p1 occurs in c." []
@@ -36040,17 +35852,6 @@ property_value: IAO:0000232 "Do not use this relation directly. It is intended a
 domain: BFO:0000002 ! continuant
 range: BFO:0000002 ! continuant
 is_a: RO:0002410 ! causally related to
-
-[Typedef]
-id: RO:0002558
-name: has evidence
-def: "inverse of is evidence for" []
-comment: x has evidence y iff , x is  an information content entity, material entity or process, and y supports either the existence of x, or the truth value of x.
-subset: ro-eco
-subset: RO:0002259
-property_value: IAO:0000117 "Chris Mungall" xsd:string
-property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/25052702
-is_a: RO:0002616 ! related via evidence or inference to
 
 [Typedef]
 id: RO:0002559
@@ -36154,11 +35955,6 @@ name: process has causal agent
 def: "Inverse of 'causal agent in process'" []
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
 is_a: RO:0002410 ! causally related to
-
-[Typedef]
-id: RO:0002616
-name: related via evidence or inference to
-property_value: IAO:0000232 "Do not use this relation directly. It is a grouping relation." xsd:string
 
 [Typedef]
 id: RO:0002629

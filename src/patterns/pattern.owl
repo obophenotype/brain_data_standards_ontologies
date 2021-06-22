@@ -10,10 +10,11 @@ Ontology(<urn:unnamed:ontology#ont1>
 
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_7742>))
-Declaration(Class(<http://purl.obolibrary.org/obo/PATO_...>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0070033>))
 Declaration(Class(<http://purl.obolibrary.org/obo/odk/brainCellRegionMinimalMarkers.yaml>))
 Declaration(Class(<http://purl.obolibrary.org/obo/odk/example.yaml>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000053>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002162>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
@@ -32,8 +33,8 @@ AnnotationAssertion(<http://purl.org/dc/terms/title> <http://purl.obolibrary.org
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/odk/brainCellRegionMinimalMarkers.yaml> "'sequence_feature' expressing 'cell' of 'regional part of brain' ('Vertebrata <vertebrates>')"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/odk/brainCellRegionMinimalMarkers.yaml> "xsd:string 'regional part of brain' 'cell' ('Vertebrata <vertebrates>')"^^xsd:string)
 SubClassOf(<http://purl.obolibrary.org/obo/odk/brainCellRegionMinimalMarkers.yaml> <http://purl.obolibrary.org/obo/CL_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/odk/brainCellRegionMinimalMarkers.yaml> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070033>))
 SubClassOf(<http://purl.obolibrary.org/obo/odk/brainCellRegionMinimalMarkers.yaml> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7742>))
-SubClassOf(<http://purl.obolibrary.org/obo/odk/brainCellRegionMinimalMarkers.yaml> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_...>))
 
 # Class: <http://purl.obolibrary.org/obo/odk/example.yaml> (Part of 'example')
 

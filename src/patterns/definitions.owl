@@ -169,6 +169,7 @@ Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClas
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_97>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_98>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_99>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000053>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002162>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
@@ -529,8 +530,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_182> "Fstl4, Satb2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_182> "IT projecting primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_182> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_182> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070034>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_182> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_182> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070034>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_183> (L2/3 IT primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -538,8 +539,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_183> "Rasgrf2, Calb1 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_183> "L2/3 IT primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_183> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_183> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070034>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_183> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_183> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070034>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_188> (L4 primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -555,8 +556,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_189> "Pdzrn3, St6galnac5, Cdh12 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_189> "L5 IT primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_189> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_189> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070034>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_189> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_189> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070034>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_19> (Vip Gpc3 primary motor cortex GABAergic interneuron (Mus musculus))
 
@@ -572,8 +573,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_190> "Deptor, Il1rapl2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_190> "L5 IT_2 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_190> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_190> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070034>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_190> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_190> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070034>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_192> (L6 IT primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -581,8 +582,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_192> "Sulf1, Bmpr1b, Il1rapl2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_192> "L6 IT primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_192> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_192> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070034>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_192> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_192> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070034>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_193> (L5 ET primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -590,8 +591,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_193> "Npr3, Gm2164 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_193> "L5 ET primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_193> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_193> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070028>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_193> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_193> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070028>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_197> (L6 CT primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -599,8 +600,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_197> "Foxp2, Hs3st4 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_197> "L6 CT primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_197> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_197> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070029>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_197> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_197> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070029>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_2> (Lamp5 Egln3_1 primary motor cortex GABAergic interneuron (Mus musculus))
 
@@ -632,8 +633,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_207> "Etv1, Tshz2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_207> "L5/6 NP primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_207> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_207> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070030>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_207> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_207> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070030>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_21> (Vip Mybpc1_2 primary motor cortex GABAergic interneuron (Mus musculus))
 
@@ -969,8 +970,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_58> "Met, Adamts2, 6530403H02Rik expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_58> "L2/3 IT_1 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_58> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_58> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070034>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_58> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_58> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070034>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_59> (L2/3 IT_2 primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -978,8 +979,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_59> "Ccdc3, Meis2, Cux1, Otof expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_59> "L2/3 IT_2 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_59> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_59> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070034>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_59> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_59> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070034>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_6> (Lamp5 Pdlim5_2 primary motor cortex GABAergic interneuron (Mus musculus))
 
@@ -995,8 +996,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_60> "Stard8, Cux2, Slit3 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_60> "L2/3 IT_3 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_60> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_60> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070034>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_60> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_60> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070034>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_61> (L4/5 IT_1 primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -1004,8 +1005,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_61> "Cadps2, Rorb, Prr16 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_61> "L4/5 IT_1 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_61> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_61> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070034>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_61> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_61> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070034>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_62> (L4/5 IT_2 primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -1013,15 +1014,15 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_62> "Col26a1, Cpne4, Il1rapl2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_62> "L4/5 IT_2 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_62> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_62> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070034>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_62> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_62> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070034>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_63> (L5 IT_1 primary motor cortex glutamatergic neuron (Mus musculus))
 
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_63> "L5 IT_1 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_63> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_63> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070034>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_63> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_63> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070034>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_64> (L5 IT_2 primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -1029,8 +1030,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_64> "Man1a, Deptor, Adamts18, Gm49678 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_64> "L5 IT_2 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_64> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_64> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070034>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_64> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_64> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070034>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_65> (L5 IT_3 primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -1038,8 +1039,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_65> "Ptprk, Pld5, Rxfp1, Enpp2, Cadps2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_65> "L5 IT_3 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_65> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_65> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070034>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_65> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_65> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070034>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_66> (L5 IT_4 primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -1047,8 +1048,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_66> "Cwh43, Chrm2, Pld5 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_66> "L5 IT_4 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_66> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_66> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070034>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_66> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_66> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070034>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_67> (L6 IT_1 primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -1056,8 +1057,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_67> "Fst, Bmpr1b, Ntng1 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_67> "L6 IT_1 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_67> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_67> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070034>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_67> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_67> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070034>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_68> (L6 IT_2 primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -1065,8 +1066,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_68> "Ptpru, C1ql3, Bmpr1b expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_68> "L6 IT_2 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_68> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_68> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070034>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_68> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_68> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070034>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_69> (L6 IT Car3 primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -1074,8 +1075,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_69> "Nr4a2, Tfap2d expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_69> "L6 IT Car3 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_69> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_69> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070034>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_69> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_69> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070034>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_7> (Lamp5 Slc35d3 primary motor cortex GABAergic interneuron (Mus musculus))
 
@@ -1091,8 +1092,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_70> "Npr3, Crym, Gm2164 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_70> "L5 PT_1 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_70> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_70> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070028>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_70> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_70> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070028>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_71> (L5 PT_2 primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -1100,8 +1101,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_71> "Trpc7, Gpc5, Erg expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_71> "L5 PT_2 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_71> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_71> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070028>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_71> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_71> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070028>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_72> (L5 PT_3 primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -1109,8 +1110,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_72> "Trpc7, Gpc5, Trmt9b, Reln expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_72> "L5 PT_3 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_72> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_72> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070028>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_72> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_72> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070028>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73> (L5 PT_4 primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -1118,8 +1119,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73> "Npsr1, Gm2164 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73> "L5 PT_4 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070028>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070028>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_74> (L5/6 NP CT primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -1127,8 +1128,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_74> "Grp, Rxfp1, Tshz2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_74> "L5/6 NP CT primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_74> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_74> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070029>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_74> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_74> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070029>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_75> (L6 CT Gpr139 primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -1136,8 +1137,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_75> "Acaa1b, Col23a1, Gpr139 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_75> "L6 CT Gpr139 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_75> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_75> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070029>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_75> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_75> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070029>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_76> (L6 CT Cpa6 primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -1145,8 +1146,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_76> "Zfpm2, Foxp2, Hs3st4 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_76> "L6 CT Cpa6 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_76> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_76> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070029>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_76> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_76> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070029>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_77> (L6 CT Grp primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -1154,8 +1155,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_77> "Grp, Meis2, Pdzrn4, Plcxd3 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_77> "L6 CT Grp primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_77> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_77> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070029>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_77> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_77> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070029>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_78> (L6 CT Pou3f2 primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -1163,8 +1164,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_78> "Satb2, Cdh18, Gm10635 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_78> "L6 CT Pou3f2 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_78> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_78> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070029>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_78> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_78> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070029>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_79> (L6 CT Kit_1 primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -1172,8 +1173,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_79> "Ikzf2, Gm10635 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_79> "L6 CT Kit_1 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_79> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_79> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070029>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_79> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_79> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070029>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_8> (Lamp5 Lhx6 primary motor cortex GABAergic interneuron (Mus musculus))
 
@@ -1189,8 +1190,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_80> "Nr4a2, Rxfp1, Tshz2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_80> "L6 CT Kit_2 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_80> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_80> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070029>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_80> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_80> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070029>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_81> (L6b Col6a1 primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -1238,8 +1239,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_86> "Dkk2, Cyp7b1, Vwc2l expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_86> "L5/6 NP_1 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_86> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_86> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070030>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_86> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_86> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070030>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87> (L5/6 NP_2 primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -1247,8 +1248,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87> "Slc17a8, Abi3bp expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87> "L5/6 NP_2 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070030>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070030>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88> (L5/6 NP_3 primary motor cortex glutamatergic neuron (Mus musculus))
 
@@ -1256,8 +1257,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.sem
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88> "Lypd1, Tshz2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)"^^xsd:string)
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88> "L5/6 NP_3 primary motor cortex glutamatergic neuron (Mus musculus)"^^xsd:string)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88> <http://purl.obolibrary.org/obo/CL_0000679>)
+SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070030>))
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/PATO_0070030>))
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_89> (Meis2 primary motor cortex meis2 expressing cortical GABAergic cell (Mus musculus) (Mus musculus))
 
