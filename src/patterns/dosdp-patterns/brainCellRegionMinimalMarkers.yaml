@@ -36,12 +36,12 @@ internal_vars:
     input: minimal_markers
     apply:
       join:
-        sep: ','
+        sep: ', '
   - var_name: allen_markers_cat
     input: allen_markers
     apply:
       join:
-        sep: ','
+        sep: ', '
   - var_name: cortical_layer_cat
     input: layers
     apply:
