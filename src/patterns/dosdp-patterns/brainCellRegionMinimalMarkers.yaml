@@ -9,13 +9,13 @@ classes:
   "cell": "CL:0000000"
   "sequence_feature": "SO:0000110"
   "layer of neocortex": "UBERON:0002301"
-  "projection type": "PATO:..."
+  "projection type": "PATO:0070033" # neuron projection quality
 
 relations:
   part_of: "BFO:0000050"
   in_taxon: "RO:0002162"
   has_soma_location: "RO:0002100"
-  bearer_of: "RO:0002162"
+  bearer_of: "RO:0000053"
 
 vars:
   gross_cell_type: "'cell'"
