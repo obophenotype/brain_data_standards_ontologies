@@ -11,7 +11,6 @@ Ontology(<http://www.semanticweb.org/brain_data_standards/components/CCN20200201
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000125>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000881>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023007>))
-Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023017>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023018>))
 Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023027>))
@@ -73,21 +72,6 @@ Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClas
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_71>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_72>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73>))
-Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_74>))
-Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_75>))
-Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_76>))
-Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_77>))
-Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_78>))
-Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_79>))
-Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_80>))
-Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_81>))
-Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_82>))
-Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_83>))
-Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_84>))
-Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_85>))
-Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_86>))
-Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87>))
-Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_91>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_92>))
 Declaration(Class(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_93>))
@@ -317,83 +301,19 @@ SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_70> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_70>)
 
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_70> <http://purl.obolibrary.org/obo/CL_4023008>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_70> <http://purl.obolibrary.org/obo/CL_4023045>)
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_71> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_71>)
 
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_71> <http://purl.obolibrary.org/obo/CL_4023008>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_71> <http://purl.obolibrary.org/obo/CL_4023045>)
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_72> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_72>)
 
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_72> <http://purl.obolibrary.org/obo/CL_4023008>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_72> <http://purl.obolibrary.org/obo/CL_4023044>)
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73>)
 
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73> <http://purl.obolibrary.org/obo/CL_4023008>)
 SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_73> <http://purl.obolibrary.org/obo/CL_4023044>)
-
-# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_74> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_74>)
-
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_74> <http://purl.obolibrary.org/obo/CL_4023008>)
-
-# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_75> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_75>)
-
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_75> <http://purl.obolibrary.org/obo/CL_4023008>)
-
-# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_76> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_76>)
-
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_76> <http://purl.obolibrary.org/obo/CL_4023008>)
-
-# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_77> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_77>)
-
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_77> <http://purl.obolibrary.org/obo/CL_4023008>)
-
-# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_78> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_78>)
-
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_78> <http://purl.obolibrary.org/obo/CL_4023008>)
-
-# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_79> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_79>)
-
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_79> <http://purl.obolibrary.org/obo/CL_4023008>)
-
-# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_80> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_80>)
-
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_80> <http://purl.obolibrary.org/obo/CL_4023008>)
-
-# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_81> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_81>)
-
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_81> <http://purl.obolibrary.org/obo/CL_4023008>)
-
-# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_82> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_82>)
-
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_82> <http://purl.obolibrary.org/obo/CL_4023008>)
-
-# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_83> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_83>)
-
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_83> <http://purl.obolibrary.org/obo/CL_4023008>)
-
-# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_84> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_84>)
-
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_84> <http://purl.obolibrary.org/obo/CL_4023008>)
-
-# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_85> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_85>)
-
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_85> <http://purl.obolibrary.org/obo/CL_4023008>)
-
-# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_86> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_86>)
-
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_86> <http://purl.obolibrary.org/obo/CL_4023008>)
-
-# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87>)
-
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_87> <http://purl.obolibrary.org/obo/CL_4023008>)
-
-# Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88>)
-
-SubClassOf(<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_88> <http://purl.obolibrary.org/obo/CL_4023008>)
 
 # Class: <http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_91> (<http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS202002013_91>)
 
