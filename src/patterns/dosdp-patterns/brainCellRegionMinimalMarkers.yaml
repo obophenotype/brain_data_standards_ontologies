@@ -25,6 +25,9 @@ vars:
 
 data_vars:
   cell_set_preferred_alias: "xsd:string"
+  
+data_list_vars:
+   def_xrefs: "xsd:string"
 
 list_vars:
   minimal_markers: "'sequence_feature'"
@@ -57,6 +60,7 @@ name:
       - taxon
 
 def:
+  xrefs: def_xrefs # Populate from cell_set_alias_citation all entries should be prefixed with DOI:
   multi_clause:
     sep: " "
     clauses:
