@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: bdscratch/releases/2021-06-22/bdscratch-simple.owl
+data-version: bdscratch/releases/2021-06-23/bdscratch-simple.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -9,7 +9,7 @@ ontology: bdscratch/bdscratch-simple
 property_value: dc-description "None" xsd:string
 property_value: dc-title "Brain Data Standards Cell Ontology" xsd:string
 property_value: dcterms-license https://creativecommons.org/licenses/unspecified
-property_value: owl:versionInfo "2021-06-22" xsd:string
+property_value: owl:versionInfo "2021-06-23" xsd:string
 
 [Typedef]
 id: RO:0002100
@@ -27,6 +27,20 @@ name: expresses
 def: "Inverse of 'expressed in'" []
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "Chris Mungall" xsd:string
+
+[Typedef]
+id: bearer_of
+name: bearer of
+namespace: uberon
+def: "a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence" []
+xref: RO:0000053
+property_value: IAO:0000111 "bearer of" xsd:string
+property_value: IAO:0000112 "this apple is bearer of this red color" xsd:string
+property_value: IAO:0000112 "this vase is bearer of this fragility" xsd:string
+property_value: IAO:0000116 "A bearer can have many dependents, and its dependents can exist for different periods of time, but none of its dependents can exist when the bearer does not exist." xsd:string
+property_value: IAO:0000118 "bearer_of" xsd:string
+property_value: IAO:0000118 "is bearer of" xsd:string
+property_value: RO:0001900 RO:0001901
 
 [Typedef]
 id: capable_of

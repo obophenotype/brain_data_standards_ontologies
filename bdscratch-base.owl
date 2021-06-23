@@ -14,12 +14,12 @@
      xmlns:helper="http://www.semanticweb.org/brain_data_standards/helper.owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bdscratch/bdscratch-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bdscratch/releases/2021-06-22/bdscratch-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bdscratch/releases/2021-06-23/bdscratch-base.owl"/>
         <dc:description>None</dc:description>
         <dc:title>Brain Data Standards Cell Ontology</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-06-22</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-06-23</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2195,7 +2195,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_10"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Slc17a8, Yjefn3. These cells also express Slc17a8.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Slc17a8, Yjefn3. These cells also express Slc17a8, Sncg.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 010</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Slc17a8, Yjefn3 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sncg Slc17a8</oboInOwl:hasExactSynonym>
@@ -2829,7 +2829,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_11"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Syt6, Sln, Krt73. These cells also express Calb1.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Syt6, Sln, Krt73. These cells also express Sncg, Calb1.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 011</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sncg Calb1_1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Syt6, Sln, Krt73 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -3167,7 +3167,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_12"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Epb41l4a, Syt6, Calb1. These cells also express Calb1.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Epb41l4a, Syt6, Calb1. These cells also express Sncg, Calb1.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Epb41l4a, Syt6, Calb1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 012</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sncg Calb1_2</oboInOwl:hasExactSynonym>
@@ -3418,7 +3418,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_13"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Npy2r, Rgs12. These cells also express Npy2r.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Npy2r, Rgs12. These cells also express Sncg, Npy2r.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Npy2r, Rgs12 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 013</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sncg Npy2r</oboInOwl:hasExactSynonym>
@@ -3810,7 +3810,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_14"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Unc5b, Nectin3, Crh. These cells also express Sncg.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Unc5b, Nectin3, Crh. These cells also express Vip, Sncg.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 014</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Small CCK basket cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unc5b, Nectin3, Crh expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -4013,7 +4013,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_15"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Rgs16, Sfrp2. These cells also express Serpinf1.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Rgs16, Sfrp2. These cells also express Serpinf1, Vip.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 015</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rgs16, Sfrp2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip Serpinf1_1</oboInOwl:hasExactSynonym>
@@ -4276,7 +4276,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_16"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Col14a1, Ccn3, Pbx3. These cells also express Serpinf1.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Col14a1, Ccn3, Pbx3. These cells also express Serpinf1, Vip.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Col14a1, Ccn3, Pbx3 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 016</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip Serpinf1_2</oboInOwl:hasExactSynonym>
@@ -4817,7 +4817,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_18"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Vip, Ccn3, Vwc2l. These cells also express Htr1f.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Vip, Ccn3, Vwc2l. These cells also express Vip, Htr1f.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 018</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip Htr1f</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip, Ccn3, Vwc2l expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -5175,7 +5175,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_19"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Vip, Pbx3, Pde3a. These cells also express Gpc3.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Vip, Pbx3, Pde3a. These cells also express Vip, Gpc3.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 019</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip Gpc3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip, Pbx3, Pde3a expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -5612,7 +5612,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_20"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Vip, Btbd11, Bmper, Crh. These cells also express C1ql1.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Vip, Btbd11, Bmper, Crh. These cells also express Vip, C1ql1.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 020</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip C1ql1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip, Btbd11, Bmper, Crh expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -5822,7 +5822,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_21"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Htr3a, 5033421B08Rik. These cells also express Mybpc1.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Htr3a, 5033421B08Rik. These cells also express Vip, Mybpc1.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Htr3a, 5033421B08Rik expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 021</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip Mybpc1_2</oboInOwl:hasExactSynonym>
@@ -5953,7 +5953,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_22"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Calb2, Gm2516. These cells also express Mybpc1.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Calb2, Gm2516. These cells also express Vip, Mybpc1.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calb2, Gm2516 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 022</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip Mybpc1_1</oboInOwl:hasExactSynonym>
@@ -6027,7 +6027,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_23"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Chat, Npy2r. These cells also express Chat.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Chat, Npy2r. These cells also express Vip, Chat.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chat, Npy2r expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 023</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip Chat_1</oboInOwl:hasExactSynonym>
@@ -6101,7 +6101,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_24"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Grm8, Caln1. These cells also express Mybpc1.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Grm8, Caln1. These cells also express Vip, Mybpc1.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grm8, Caln1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 024</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip Mybpc1_3</oboInOwl:hasExactSynonym>
@@ -6175,7 +6175,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_25"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Htr4, Grik4. These cells also express Chat.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Htr4, Grik4. These cells also express Vip, Chat.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Htr4, Grik4 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 025</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip Chat_2</oboInOwl:hasExactSynonym>
@@ -6322,7 +6322,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_27"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Thsd7b, Crh. These cells also express Igfbp6.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Thsd7b, Crh. These cells also express Vip, Igfbp6.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 027</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thsd7b, Crh expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vip Igfbp6_2</oboInOwl:hasExactSynonym>
@@ -6397,7 +6397,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_28"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Chodl, Nos1. These cells also express Chodl.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Chodl, Nos1. These cells also express Sst, Chodl.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chodl, Nos1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Long-projecting SST cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 028</oboInOwl:hasExactSynonym>
@@ -6484,7 +6484,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_29"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cartpt, Il1rapl2, 9530026P05Rik. These cells also express Penk.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cartpt, Il1rapl2, 9530026P05Rik. These cells also express Sst, Penk.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cartpt, Il1rapl2, 9530026P05Rik expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 029</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Penk</oboInOwl:hasExactSynonym>
@@ -6558,7 +6558,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_3"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Crim1, Zfp804b. These cells also express Egln3.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Crim1, Zfp804b. These cells also express Lamp5, Egln3.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Canopy cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crim1, Zfp804b expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamp5 Egln3_2</oboInOwl:hasExactSynonym>
@@ -6640,7 +6640,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_30"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Reln, Il1rapl2. These cells also express Myh8.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Reln, Il1rapl2. These cells also express Sst, Myh8.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 030</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reln, Il1rapl2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Myh8_1</oboInOwl:hasExactSynonym>
@@ -6721,7 +6721,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_31"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cdh13, Sox6, Pld5. These cells also express Myh8.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cdh13, Sox6, Pld5. These cells also express Sst, Myh8.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cdh13, Sox6, Pld5 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 031</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Myh8_2</oboInOwl:hasExactSynonym>
@@ -6796,7 +6796,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_32"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Grm1, Cdh9. These cells also express Myh8.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Grm1, Cdh9. These cells also express Sst, Myh8.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grm1, Cdh9 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 032</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Myh8_3</oboInOwl:hasExactSynonym>
@@ -6870,7 +6870,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_33"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Pdyn, Gm30835. These cells also express Htr1a.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Pdyn, Gm30835. These cells also express Sst, Htr1a.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pdyn, Gm30835 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 033</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Htr1a</oboInOwl:hasExactSynonym>
@@ -6950,7 +6950,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_34"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Fbn2, Col19a1, Trpc6. These cells also express Etv1.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Fbn2, Col19a1, Trpc6. These cells also express Etv1, Sst.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fbn2, Col19a1, Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 034</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Etv1</oboInOwl:hasExactSynonym>
@@ -7129,7 +7129,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_36"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Eya4, Nek7, Trpc6. These cells also express Crhr2.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Eya4, Nek7, Trpc6. These cells also express Crhr2, Sst.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eya4, Nek7, Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 036</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Crhr2_1</oboInOwl:hasExactSynonym>
@@ -7203,7 +7203,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_37"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Lypd6b, Trpc6. These cells also express Crhr2.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Lypd6b, Trpc6. These cells also express Crhr2, Sst.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lypd6b, Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 037</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Crhr2_2</oboInOwl:hasExactSynonym>
@@ -7279,7 +7279,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_38"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Rerg, Hpse. These cells also express Hpse.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Rerg, Hpse. These cells also express Sst, Hpse.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L4 SST cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 038</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rerg, Hpse expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -7360,7 +7360,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_39"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Sst, Olfm3. These cells also express Calb2.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Sst, Olfm3. These cells also express Calb2, Sst.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 039</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Calb2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst, Olfm3 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -7439,7 +7439,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_4"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Ntn1, Cxcl14, Reln. These cells also express Egln3.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Ntn1, Cxcl14, Reln. These cells also express Lamp5, Egln3.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamp5 Egln3_3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ntn1, Cxcl14, Reln expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 004</oboInOwl:hasExactSynonym>
@@ -7513,7 +7513,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_40"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Trpc6, Gm49678. These cells also express Pappa.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Trpc6, Gm49678. These cells also express Sst, Pappa.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 040</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Pappa</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trpc6, Gm49678 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -7688,7 +7688,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_42"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Pard3b, Gm48893. These cells also express C1ql3.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Pard3b, Gm48893. These cells also express Sst, C1ql3.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pard3b, Gm48893 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 042</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst C1ql3_1</oboInOwl:hasExactSynonym>
@@ -7769,7 +7769,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_43"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Gxylt2, Brinp3, Ndnf. These cells also express C1ql3.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Gxylt2, Brinp3, Ndnf. These cells also express Sst, C1ql3.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gxylt2, Brinp3, Ndnf expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 043</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst C1ql3_2</oboInOwl:hasExactSynonym>
@@ -7849,7 +7849,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_44"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Tac2, Cdh13, Tmtc2. These cells also express Tac2.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Tac2, Cdh13, Tmtc2. These cells also express Sst, Tac2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 044</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Tac2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tac2, Cdh13, Tmtc2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -7929,7 +7929,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_45"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Zfpm2, St6galnac5, St8sia4. These cells also express Th.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Zfpm2, St6galnac5, St8sia4. These cells also express Th, Sst.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 045</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Th_1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zfpm2, St6galnac5, St8sia4 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -8009,7 +8009,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_46"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Sst, Pnoc, Pard3b. These cells also express Th.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Sst, Pnoc, Pard3b. These cells also express Th, Sst.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 046</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Th_2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst, Pnoc, Pard3b expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -8083,7 +8083,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_47"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Th, Cort. These cells also express Th.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Th, Cort. These cells also express Th, Sst.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 047</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst Th_3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sst_7</oboInOwl:hasExactSynonym>
@@ -8158,7 +8158,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_48"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Th, Gabrg1. These cells also express Gabrg1.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Th, Gabrg1. These cells also express Gabrg1, Pvalb.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L6 FS cell w/ large sag</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pvalb Gabrg1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 048</oboInOwl:hasExactSynonym>
@@ -8239,7 +8239,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_49"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Plch1, Tac1, 9330158H04Rik. These cells also express Egfem1.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Plch1, Tac1, 9330158H04Rik. These cells also express Pvalb, Egfem1.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plch1, Tac1, 9330158H04Rik expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pvalb Egfem1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 049</oboInOwl:hasExactSynonym>
@@ -8318,7 +8318,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_5"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Ndst4, Dock5, Ndnf. These cells also express Pdlim5.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Ndst4, Dock5, Ndnf. These cells also express Lamp5, Pdlim5.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamp5 Pdlim5_1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamp5_1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ndst4, Dock5, Ndnf expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -8399,7 +8399,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_50"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Fzd6, Syt2, Slit2. These cells also express Gpr149.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Fzd6, Syt2, Slit2. These cells also express Pvalb, Gpr149.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fzd6, Syt2, Slit2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pvalb Gpr149</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 050</oboInOwl:hasExactSynonym>
@@ -8485,7 +8485,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_51"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cacna2d2, Syt2, Tmem132d, Sema3e. These cells also express Kank4.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cacna2d2, Syt2, Tmem132d, Sema3e. These cells also express Pvalb, Kank4.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cacna2d2, Syt2, Tmem132d, Sema3e expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pvalb Kank4</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 051</oboInOwl:hasExactSynonym>
@@ -8565,7 +8565,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_52"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cort, Nxph2, Gm28807. These cells also express Calb1.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cort, Nxph2, Gm28807. These cells also express Pvalb, Calb1.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cort, Nxph2, Gm28807 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pvalb Calb1_1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 052</oboInOwl:hasExactSynonym>
@@ -8645,7 +8645,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_53"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Tmem132c, Cntnap5c, Tac1. These cells also express Calb1.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Tmem132c, Cntnap5c, Tac1. These cells also express Pvalb, Calb1.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pvalb Calb1_2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 053</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tmem132c, Cntnap5c, Tac1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -8719,7 +8719,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_54"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cntnap4, Gm46102. These cells also express Reln.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cntnap4, Gm46102. These cells also express Pvalb, Reln.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cntnap4, Gm46102 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pvalb Reln</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 054</oboInOwl:hasExactSynonym>
@@ -8793,7 +8793,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_55"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Eya4, Il1rapl2. These cells also express Il1rapl2.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Eya4, Il1rapl2. These cells also express Pvalb, Il1rapl2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eya4, Il1rapl2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pvalb Il1rapl2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 055</oboInOwl:hasExactSynonym>
@@ -8867,7 +8867,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_56"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Nkx2-1, Lamb1.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Nkx2-1, Lamb1. These cells also express Pvalb.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nkx2-1, Lamb1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pvalb Vipr2_1</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 056</oboInOwl:hasExactSynonym>
@@ -8941,7 +8941,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_57"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Unc5b, Cntnap5b. These cells also express Vipr2.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Unc5b, Cntnap5b. These cells also express Pvalb, Vipr2.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pvalb Vipr2_2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 057</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unc5b, Cntnap5b expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -9156,7 +9156,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_6"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Ndnf, Pde11a. These cells also express Pdlim5.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Ndnf, Pde11a. These cells also express Lamp5, Pdlim5.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamp5 Pdlim5_2</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ndnf, Pde11a expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 006</oboInOwl:hasExactSynonym>
@@ -9912,7 +9912,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_7"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Sema5a, Alk. These cells also express Slc35d3.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Sema5a, Alk. These cells also express Lamp5, Slc35d3.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamp5 Slc35d3</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 007</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sema5a, Alk expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
@@ -10676,7 +10676,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_8"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Nos1, Gm45680. These cells also express Lhx6.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Nos1, Gm45680. These cells also express Lhx6, Lamp5.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L5/6 neurogliaform cell</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamp5 Lhx6</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lamp5_3</oboInOwl:hasExactSynonym>
@@ -11389,7 +11389,7 @@
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_9"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Eps8, Cdh6, Col25a1. These cells also express Col14a1.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Eps8, Cdh6, Col25a1. These cells also express Col14a1, Sncg.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eps8, Cdh6, Col25a1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RNAseq 009</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sncg Col14a1</oboInOwl:hasExactSynonym>

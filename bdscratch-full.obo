@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: bdscratch/releases/2021-06-22/bdscratch-full.owl
+data-version: bdscratch/releases/2021-06-23/bdscratch-full.owl
 subsetdef: 3_STAR ""
 subsetdef: added_for_HCA ""
 subsetdef: attribute_slim ""
@@ -53,7 +53,7 @@ ontology: bdscratch/bdscratch-full
 property_value: dc-description "None" xsd:string
 property_value: dc-title "Brain Data Standards Cell Ontology" xsd:string
 property_value: dcterms-license https://creativecommons.org/licenses/unspecified
-property_value: owl:versionInfo "2021-06-22" xsd:string
+property_value: owl:versionInfo "2021-06-23" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:1
@@ -72,7 +72,7 @@ property_value: prefLabel "Lamp5 Pax6" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:10
 name: Sncg Slc17a8 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Slc17a8, Yjefn3. These cells also express Slc17a8." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Slc17a8, Yjefn3. These cells also express Slc17a8, Sncg." []
 comment: cell_set_preferred_alias:Sncg Slc17a8 ; original_label:Sncg Slc17a8 ; cell_set_label:RNAseq 010 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "RNAseq 010" EXACT []
 synonym: "Slc17a8, Yjefn3 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
@@ -251,7 +251,7 @@ property_value: prefLabel "VLMC_6" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:11
 name: Sncg Calb1_1 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Syt6, Sln, Krt73. These cells also express Calb1." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Syt6, Sln, Krt73. These cells also express Sncg, Calb1." []
 comment: cell_set_preferred_alias:Sncg Calb1_1 ; original_label:Sncg Calb1_1 ; cell_set_label:RNAseq 011 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "RNAseq 011" EXACT []
 synonym: "Sncg Calb1_1" EXACT []
@@ -344,7 +344,7 @@ is_a: CL:0000881 ! perivascular macrophage
 [Term]
 id: AllenDendClass_CS202002013:12
 name: Sncg Calb1_2 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Epb41l4a, Syt6, Calb1. These cells also express Calb1." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Epb41l4a, Syt6, Calb1. These cells also express Sncg, Calb1." []
 comment: cell_set_preferred_alias:Sncg Calb1_2 ; original_label:Sncg Calb1_2 ; cell_set_label:RNAseq 012 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Epb41l4a, Syt6, Calb1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 012" EXACT []
@@ -403,7 +403,7 @@ property_value: prefLabel "Lamp5_5" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:13
 name: Sncg Npy2r primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Npy2r, Rgs12. These cells also express Npy2r." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Npy2r, Rgs12. These cells also express Sncg, Npy2r." []
 comment: cell_set_preferred_alias:Sncg Npy2r ; original_label:Sncg Npy2r ; cell_set_label:RNAseq 013 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Npy2r, Rgs12 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 013" EXACT []
@@ -489,7 +489,7 @@ property_value: prefLabel "L5/6 CCK cell" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:14
 name: Vip Sncg primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Unc5b, Nectin3, Crh. These cells also express Sncg." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Unc5b, Nectin3, Crh. These cells also express Vip, Sncg." []
 comment: cell_set_preferred_alias:Vip Sncg ; original_label:Vip Sncg ; cell_set_label:RNAseq 014 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:Small CCK basket cell
 synonym: "RNAseq 014" EXACT []
 synonym: "Small CCK basket cell" EXACT []
@@ -535,7 +535,7 @@ property_value: prefLabel "Vip_4" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:15
 name: Vip Serpinf1_1 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Rgs16, Sfrp2. These cells also express Serpinf1." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Rgs16, Sfrp2. These cells also express Serpinf1, Vip." []
 comment: cell_set_preferred_alias:Vip Serpinf1_1 ; original_label:Vip Serpinf1_1 ; cell_set_label:RNAseq 015 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Rgs16, Sfrp2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 015" EXACT []
@@ -594,7 +594,7 @@ property_value: prefLabel "L5 T Martinotti cell" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:16
 name: Vip Serpinf1_2 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Col14a1, Ccn3, Pbx3. These cells also express Serpinf1." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Col14a1, Ccn3, Pbx3. These cells also express Serpinf1, Vip." []
 comment: cell_set_preferred_alias:Vip Serpinf1_2 ; original_label:Vip Serpinf1_2 ; cell_set_label:RNAseq 016 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Col14a1, Ccn3, Pbx3 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 016" EXACT []
@@ -710,7 +710,7 @@ property_value: prefLabel "Chandelier" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:18
 name: Vip Htr1f primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Vip, Ccn3, Vwc2l. These cells also express Htr1f." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Vip, Ccn3, Vwc2l. These cells also express Vip, Htr1f." []
 comment: cell_set_preferred_alias:Vip Htr1f ; original_label:Vip Htr1f ; cell_set_label:RNAseq 018 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "RNAseq 018" EXACT []
 synonym: "Vip Htr1f" EXACT []
@@ -785,7 +785,7 @@ property_value: prefLabel "L5 IT" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:19
 name: Vip Gpc3 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Vip, Pbx3, Pde3a. These cells also express Gpc3." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Vip, Pbx3, Pde3a. These cells also express Vip, Gpc3." []
 comment: cell_set_preferred_alias:Vip Gpc3 ; original_label:Vip Gpc3 ; cell_set_label:RNAseq 019 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "RNAseq 019" EXACT []
 synonym: "Vip Gpc3" EXACT []
@@ -877,7 +877,7 @@ property_value: prefLabel "Lamp5 Egln3_1" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:20
 name: Vip C1ql1 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Vip, Btbd11, Bmper, Crh. These cells also express C1ql1." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Vip, Btbd11, Bmper, Crh. These cells also express Vip, C1ql1." []
 comment: cell_set_preferred_alias:Vip C1ql1 ; original_label:Vip C1ql1 ; cell_set_label:RNAseq 020 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "RNAseq 020" EXACT []
 synonym: "Vip C1ql1" EXACT []
@@ -920,7 +920,7 @@ property_value: prefLabel "L5/6 NP" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:21
 name: Vip Mybpc1_2 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Htr3a, 5033421B08Rik. These cells also express Mybpc1." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Htr3a, 5033421B08Rik. These cells also express Vip, Mybpc1." []
 comment: cell_set_preferred_alias:Vip Mybpc1_2 ; original_label:Vip Mybpc1_2 ; cell_set_label:RNAseq 021 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Htr3a, 5033421B08Rik expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 021" EXACT []
@@ -950,7 +950,7 @@ property_value: prefLabel "Astro_1" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:22
 name: Vip Mybpc1_1 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Calb2, Gm2516. These cells also express Mybpc1." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Calb2, Gm2516. These cells also express Vip, Mybpc1." []
 comment: cell_set_preferred_alias:Vip Mybpc1_1 ; original_label:Vip Mybpc1_1 ; cell_set_label:RNAseq 022 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Calb2, Gm2516 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 022" EXACT []
@@ -964,7 +964,7 @@ property_value: prefLabel "Vip Mybpc1_1" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:23
 name: Vip Chat_1 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Chat, Npy2r. These cells also express Chat." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Chat, Npy2r. These cells also express Vip, Chat." []
 comment: cell_set_preferred_alias:Vip Chat_1 ; original_label:Vip Chat_1 ; cell_set_label:RNAseq 023 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Chat, Npy2r expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 023" EXACT []
@@ -978,7 +978,7 @@ property_value: prefLabel "Vip Chat_1" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:24
 name: Vip Mybpc1_3 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Grm8, Caln1. These cells also express Mybpc1." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Grm8, Caln1. These cells also express Vip, Mybpc1." []
 comment: cell_set_preferred_alias:Vip Mybpc1_3 ; original_label:Vip Mybpc1_3 ; cell_set_label:RNAseq 024 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Grm8, Caln1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 024" EXACT []
@@ -992,7 +992,7 @@ property_value: prefLabel "Vip Mybpc1_3" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:25
 name: Vip Chat_2 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Htr4, Grik4. These cells also express Chat." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Htr4, Grik4. These cells also express Vip, Chat." []
 comment: cell_set_preferred_alias:Vip Chat_2 ; original_label:Vip Chat_2 ; cell_set_label:RNAseq 025 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Htr4, Grik4 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 025" EXACT []
@@ -1018,7 +1018,7 @@ property_value: prefLabel "Vip Igfbp6_1" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:27
 name: Vip Igfbp6_2 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Thsd7b, Crh. These cells also express Igfbp6." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Thsd7b, Crh. These cells also express Vip, Igfbp6." []
 comment: cell_set_preferred_alias:Vip Igfbp6_2 ; original_label:Vip Igfbp6_2 ; cell_set_label:RNAseq 027 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "RNAseq 027" EXACT []
 synonym: "Thsd7b, Crh expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
@@ -1030,7 +1030,7 @@ property_value: prefLabel "Vip Igfbp6_2" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:28
 name: Sst Chodl primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Chodl, Nos1. These cells also express Chodl." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Chodl, Nos1. These cells also express Sst, Chodl." []
 comment: cell_set_preferred_alias:Sst Chodl ; original_label:Sst Chodl ; cell_set_label:RNAseq 028 ; cell_set_aligned_alias:Sst Chodl ; cell_set_additional_aliases:Sst Chodl|Long-projecting SST cell
 synonym: "Chodl, Nos1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Long-projecting SST cell" EXACT []
@@ -1045,7 +1045,7 @@ property_value: prefLabel "Sst Chodl" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:29
 name: Sst Penk primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cartpt, Il1rapl2, 9530026P05Rik. These cells also express Penk." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cartpt, Il1rapl2, 9530026P05Rik. These cells also express Sst, Penk." []
 comment: cell_set_preferred_alias:Sst Penk ; original_label:Sst Penk ; cell_set_label:RNAseq 029 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Cartpt, Il1rapl2, 9530026P05Rik expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 029" EXACT []
@@ -1060,7 +1060,7 @@ property_value: prefLabel "Sst Penk" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:3
 name: Lamp5 Egln3_2 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Crim1, Zfp804b. These cells also express Egln3." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Crim1, Zfp804b. These cells also express Lamp5, Egln3." []
 comment: cell_set_preferred_alias:Lamp5 Egln3_2 ; original_label:Lamp5 Egln3_2 ; cell_set_label:RNAseq 003 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:Canopy cell
 synonym: "Canopy cell" EXACT []
 synonym: "Crim1, Zfp804b expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
@@ -1075,7 +1075,7 @@ property_value: prefLabel "Lamp5 Egln3_2" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:30
 name: Sst Myh8_1 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Reln, Il1rapl2. These cells also express Myh8." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Reln, Il1rapl2. These cells also express Sst, Myh8." []
 comment: cell_set_preferred_alias:Sst Myh8_1 ; original_label:Sst Myh8_1 ; cell_set_label:RNAseq 030 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Reln, Il1rapl2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 030" EXACT []
@@ -1089,7 +1089,7 @@ property_value: prefLabel "Sst Myh8_1" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:31
 name: Sst Myh8_2 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cdh13, Sox6, Pld5. These cells also express Myh8." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cdh13, Sox6, Pld5. These cells also express Sst, Myh8." []
 comment: cell_set_preferred_alias:Sst Myh8_2 ; original_label:Sst Myh8_2 ; cell_set_label:RNAseq 031 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Cdh13, Sox6, Pld5 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 031" EXACT []
@@ -1104,7 +1104,7 @@ property_value: prefLabel "Sst Myh8_2" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:32
 name: Sst Myh8_3 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Grm1, Cdh9. These cells also express Myh8." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Grm1, Cdh9. These cells also express Sst, Myh8." []
 comment: cell_set_preferred_alias:Sst Myh8_3 ; original_label:Sst Myh8_3 ; cell_set_label:RNAseq 032 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Grm1, Cdh9 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 032" EXACT []
@@ -1118,7 +1118,7 @@ property_value: prefLabel "Sst Myh8_3" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:33
 name: Sst Htr1a primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Pdyn, Gm30835. These cells also express Htr1a." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Pdyn, Gm30835. These cells also express Sst, Htr1a." []
 comment: cell_set_preferred_alias:Sst Htr1a ; original_label:Sst Htr1a ; cell_set_label:RNAseq 033 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Pdyn, Gm30835 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 033" EXACT []
@@ -1131,7 +1131,7 @@ property_value: prefLabel "Sst Htr1a" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:34
 name: Sst Etv1 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Fbn2, Col19a1, Trpc6. These cells also express Etv1." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Fbn2, Col19a1, Trpc6. These cells also express Etv1, Sst." []
 comment: cell_set_preferred_alias:Sst Etv1 ; original_label:Sst Etv1 ; cell_set_label:RNAseq 034 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Fbn2, Col19a1, Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 034" EXACT []
@@ -1157,7 +1157,7 @@ property_value: prefLabel "Sst Pvalb Etv1" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:36
 name: Sst Crhr2_1 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Eya4, Nek7, Trpc6. These cells also express Crhr2." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Eya4, Nek7, Trpc6. These cells also express Crhr2, Sst." []
 comment: cell_set_preferred_alias:Sst Crhr2_1 ; original_label:Sst Crhr2_1 ; cell_set_label:RNAseq 036 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Eya4, Nek7, Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 036" EXACT []
@@ -1170,7 +1170,7 @@ property_value: prefLabel "Sst Crhr2_1" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:37
 name: Sst Crhr2_2 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Lypd6b, Trpc6. These cells also express Crhr2." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Lypd6b, Trpc6. These cells also express Crhr2, Sst." []
 comment: cell_set_preferred_alias:Sst Crhr2_2 ; original_label:Sst Crhr2_2 ; cell_set_label:RNAseq 037 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:Sst_4
 synonym: "Lypd6b, Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 037" EXACT []
@@ -1183,7 +1183,7 @@ property_value: prefLabel "Sst Crhr2_2" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:38
 name: Sst Hpse primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Rerg, Hpse. These cells also express Hpse." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Rerg, Hpse. These cells also express Sst, Hpse." []
 comment: cell_set_preferred_alias:Sst Hpse ; original_label:Sst Hpse ; cell_set_label:RNAseq 038 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:L4 SST cell
 synonym: "L4 SST cell" EXACT []
 synonym: "Rerg, Hpse expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
@@ -1198,7 +1198,7 @@ property_value: prefLabel "Sst Hpse" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:39
 name: Sst Calb2 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Sst, Olfm3. These cells also express Calb2." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Sst, Olfm3. These cells also express Calb2, Sst." []
 comment: cell_set_preferred_alias:Sst Calb2 ; original_label:Sst Calb2 ; cell_set_label:RNAseq 039 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "RNAseq 039" EXACT []
 synonym: "Sst Calb2" EXACT []
@@ -1209,7 +1209,7 @@ property_value: prefLabel "Sst Calb2" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:4
 name: Lamp5 Egln3_3 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Ntn1, Cxcl14, Reln. These cells also express Egln3." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Ntn1, Cxcl14, Reln. These cells also express Lamp5, Egln3." []
 comment: cell_set_preferred_alias:Lamp5 Egln3_3 ; original_label:Lamp5 Egln3_3 ; cell_set_label:RNAseq 004 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Lamp5 Egln3_3" EXACT []
 synonym: "Ntn1, Cxcl14, Reln expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
@@ -1222,7 +1222,7 @@ property_value: prefLabel "Lamp5 Egln3_3" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:40
 name: Sst Pappa primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Trpc6, Gm49678. These cells also express Pappa." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Trpc6, Gm49678. These cells also express Sst, Pappa." []
 comment: cell_set_preferred_alias:Sst Pappa ; original_label:Sst Pappa ; cell_set_label:RNAseq 040 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "RNAseq 040" EXACT []
 synonym: "Sst Pappa" EXACT []
@@ -1251,7 +1251,7 @@ property_value: prefLabel "Sst Pvalb Calb2" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:42
 name: Sst C1ql3_1 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Pard3b, Gm48893. These cells also express C1ql3." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Pard3b, Gm48893. These cells also express Sst, C1ql3." []
 comment: cell_set_preferred_alias:Sst C1ql3_1 ; original_label:Sst C1ql3_1 ; cell_set_label:RNAseq 042 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:Sst_5
 synonym: "Pard3b, Gm48893 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 042" EXACT []
@@ -1266,7 +1266,7 @@ property_value: prefLabel "Sst C1ql3_1" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:43
 name: Sst C1ql3_2 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Gxylt2, Brinp3, Ndnf. These cells also express C1ql3." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Gxylt2, Brinp3, Ndnf. These cells also express Sst, C1ql3." []
 comment: cell_set_preferred_alias:Sst C1ql3_2 ; original_label:Sst C1ql3_2 ; cell_set_label:RNAseq 043 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Gxylt2, Brinp3, Ndnf expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 043" EXACT []
@@ -1281,7 +1281,7 @@ property_value: prefLabel "Sst C1ql3_2" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:44
 name: Sst Tac2 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Tac2, Cdh13, Tmtc2. These cells also express Tac2." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Tac2, Cdh13, Tmtc2. These cells also express Sst, Tac2." []
 comment: cell_set_preferred_alias:Sst Tac2 ; original_label:Sst Tac2 ; cell_set_label:RNAseq 044 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "RNAseq 044" EXACT []
 synonym: "Sst Tac2" EXACT []
@@ -1294,7 +1294,7 @@ property_value: prefLabel "Sst Tac2" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:45
 name: Sst Th_1 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Zfpm2, St6galnac5, St8sia4. These cells also express Th." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Zfpm2, St6galnac5, St8sia4. These cells also express Th, Sst." []
 comment: cell_set_preferred_alias:Sst Th_1 ; original_label:Sst Th_1 ; cell_set_label:RNAseq 045 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "RNAseq 045" EXACT []
 synonym: "Sst Th_1" EXACT []
@@ -1309,7 +1309,7 @@ property_value: prefLabel "Sst Th_1" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:46
 name: Sst Th_2 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Sst, Pnoc, Pard3b. These cells also express Th." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Sst, Pnoc, Pard3b. These cells also express Th, Sst." []
 comment: cell_set_preferred_alias:Sst Th_2 ; original_label:Sst Th_2 ; cell_set_label:RNAseq 046 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "RNAseq 046" EXACT []
 synonym: "Sst Th_2" EXACT []
@@ -1324,7 +1324,7 @@ property_value: prefLabel "Sst Th_2" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:47
 name: Sst Th_3 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Th, Cort. These cells also express Th." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Th, Cort. These cells also express Th, Sst." []
 comment: cell_set_preferred_alias:Sst Th_3 ; original_label:Sst Th_3 ; cell_set_label:RNAseq 047 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:Sst_7
 synonym: "RNAseq 047" EXACT []
 synonym: "Sst Th_3" EXACT []
@@ -1337,7 +1337,7 @@ property_value: prefLabel "Sst Th_3" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:48
 name: Pvalb Gabrg1 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Th, Gabrg1. These cells also express Gabrg1." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Th, Gabrg1. These cells also express Gabrg1, Pvalb." []
 comment: cell_set_preferred_alias:Pvalb Gabrg1 ; original_label:Pvalb Gabrg1 ; cell_set_label:RNAseq 048 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:L6 FS cell w/ large sag
 synonym: "L6 FS cell w/ large sag" EXACT []
 synonym: "Pvalb Gabrg1" EXACT []
@@ -1352,7 +1352,7 @@ property_value: prefLabel "Pvalb Gabrg1" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:49
 name: Pvalb Egfem1 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Plch1, Tac1, 9330158H04Rik. These cells also express Egfem1." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Plch1, Tac1, 9330158H04Rik. These cells also express Pvalb, Egfem1." []
 comment: cell_set_preferred_alias:Pvalb Egfem1 ; original_label:Pvalb Egfem1 ; cell_set_label:RNAseq 049 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Plch1, Tac1, 9330158H04Rik expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Pvalb Egfem1" EXACT []
@@ -1367,7 +1367,7 @@ property_value: prefLabel "Pvalb Egfem1" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:5
 name: Lamp5 Pdlim5_1 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Ndst4, Dock5, Ndnf. These cells also express Pdlim5." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Ndst4, Dock5, Ndnf. These cells also express Lamp5, Pdlim5." []
 comment: cell_set_preferred_alias:Lamp5 Pdlim5_1 ; original_label:Lamp5 Pdlim5_1 ; cell_set_label:RNAseq 005 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:Lamp5_1
 synonym: "Lamp5 Pdlim5_1" EXACT []
 synonym: "Lamp5_1" EXACT []
@@ -1382,7 +1382,7 @@ property_value: prefLabel "Lamp5 Pdlim5_1" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:50
 name: Pvalb Gpr149 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Fzd6, Syt2, Slit2. These cells also express Gpr149." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Fzd6, Syt2, Slit2. These cells also express Pvalb, Gpr149." []
 comment: cell_set_preferred_alias:Pvalb Gpr149 ; original_label:Pvalb Gpr149 ; cell_set_label:RNAseq 050 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Fzd6, Syt2, Slit2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Pvalb Gpr149" EXACT []
@@ -1397,7 +1397,7 @@ property_value: prefLabel "Pvalb Gpr149" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:51
 name: Pvalb Kank4 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cacna2d2, Syt2, Tmem132d, Sema3e. These cells also express Kank4." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cacna2d2, Syt2, Tmem132d, Sema3e. These cells also express Pvalb, Kank4." []
 comment: cell_set_preferred_alias:Pvalb Kank4 ; original_label:Pvalb Kank4 ; cell_set_label:RNAseq 051 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Cacna2d2, Syt2, Tmem132d, Sema3e expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Pvalb Kank4" EXACT []
@@ -1413,7 +1413,7 @@ property_value: prefLabel "Pvalb Kank4" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:52
 name: Pvalb Calb1_1 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cort, Nxph2, Gm28807. These cells also express Calb1." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cort, Nxph2, Gm28807. These cells also express Pvalb, Calb1." []
 comment: cell_set_preferred_alias:Pvalb Calb1_1 ; original_label:Pvalb Calb1_1 ; cell_set_label:RNAseq 052 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Cort, Nxph2, Gm28807 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Pvalb Calb1_1" EXACT []
@@ -1428,7 +1428,7 @@ property_value: prefLabel "Pvalb Calb1_1" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:53
 name: Pvalb Calb1_2 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Tmem132c, Cntnap5c, Tac1. These cells also express Calb1." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Tmem132c, Cntnap5c, Tac1. These cells also express Pvalb, Calb1." []
 comment: cell_set_preferred_alias:Pvalb Calb1_2 ; original_label:Pvalb Calb1_2 ; cell_set_label:RNAseq 053 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Pvalb Calb1_2" EXACT []
 synonym: "RNAseq 053" EXACT []
@@ -1443,7 +1443,7 @@ property_value: prefLabel "Pvalb Calb1_2" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:54
 name: Pvalb Reln primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cntnap4, Gm46102. These cells also express Reln." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cntnap4, Gm46102. These cells also express Pvalb, Reln." []
 comment: cell_set_preferred_alias:Pvalb Reln ; original_label:Pvalb Reln ; cell_set_label:RNAseq 054 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Cntnap4, Gm46102 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Pvalb Reln" EXACT []
@@ -1457,7 +1457,7 @@ property_value: prefLabel "Pvalb Reln" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:55
 name: Pvalb Il1rapl2 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Eya4, Il1rapl2. These cells also express Il1rapl2." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Eya4, Il1rapl2. These cells also express Pvalb, Il1rapl2." []
 comment: cell_set_preferred_alias:Pvalb Il1rapl2 ; original_label:Pvalb Il1rapl2 ; cell_set_label:RNAseq 055 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Eya4, Il1rapl2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Pvalb Il1rapl2" EXACT []
@@ -1470,7 +1470,7 @@ property_value: prefLabel "Pvalb Il1rapl2" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:56
 name: Pvalb Vipr2_1 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Nkx2-1, Lamb1." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Nkx2-1, Lamb1. These cells also express Pvalb." []
 comment: cell_set_preferred_alias:Pvalb Vipr2_1 ; original_label:Pvalb Vipr2_1 ; cell_set_label:RNAseq 056 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Nkx2-1, Lamb1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Pvalb Vipr2_1" EXACT []
@@ -1483,7 +1483,7 @@ property_value: prefLabel "Pvalb Vipr2_1" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:57
 name: Pvalb Vipr2_2 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Unc5b, Cntnap5b. These cells also express Vipr2." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Unc5b, Cntnap5b. These cells also express Pvalb, Vipr2." []
 comment: cell_set_preferred_alias:Pvalb Vipr2_2 ; original_label:Pvalb Vipr2_2 ; cell_set_label:RNAseq 057 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Pvalb Vipr2_2" EXACT []
 synonym: "RNAseq 057" EXACT []
@@ -1523,7 +1523,7 @@ property_value: prefLabel "L2/3 IT_2" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:6
 name: Lamp5 Pdlim5_2 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Ndnf, Pde11a. These cells also express Pdlim5." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Ndnf, Pde11a. These cells also express Lamp5, Pdlim5." []
 comment: cell_set_preferred_alias:Lamp5 Pdlim5_2 ; original_label:Lamp5 Pdlim5_2 ; cell_set_label:RNAseq 006 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Lamp5 Pdlim5_2" EXACT []
 synonym: "Ndnf, Pde11a expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
@@ -1673,7 +1673,7 @@ property_value: prefLabel "L6 IT Car3" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:7
 name: Lamp5 Slc35d3 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Sema5a, Alk. These cells also express Slc35d3." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Sema5a, Alk. These cells also express Lamp5, Slc35d3." []
 comment: cell_set_preferred_alias:Lamp5 Slc35d3 ; original_label:Lamp5 Slc35d3 ; cell_set_label:RNAseq 007 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Lamp5 Slc35d3" EXACT []
 synonym: "RNAseq 007" EXACT []
@@ -1831,7 +1831,7 @@ property_value: prefLabel "L6 CT Kit_1" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:8
 name: Lamp5 Lhx6 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Nos1, Gm45680. These cells also express Lhx6." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Nos1, Gm45680. These cells also express Lhx6, Lamp5." []
 comment: cell_set_preferred_alias:Lamp5 Lhx6 ; original_label:Lamp5 Lhx6 ; cell_set_label:RNAseq 008 ; cell_set_aligned_alias:Lamp5 Lhx6 ; cell_set_additional_aliases:Lamp5_3|L5/6 neurogliaform cell
 synonym: "L5/6 neurogliaform cell" EXACT []
 synonym: "Lamp5 Lhx6" EXACT []
@@ -1979,7 +1979,7 @@ property_value: prefLabel "Meis2" xsd:string
 [Term]
 id: AllenDendClass_CS202002013:9
 name: Sncg Col14a1 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Eps8, Cdh6, Col25a1. These cells also express Col14a1." []
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Eps8, Cdh6, Col25a1. These cells also express Col14a1, Sncg." []
 comment: cell_set_preferred_alias:Sncg Col14a1 ; original_label:Sncg Col14a1 ; cell_set_label:RNAseq 009 ; cell_set_aligned_alias:'' ; cell_set_additional_aliases:''
 synonym: "Eps8, Cdh6, Col25a1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 009" EXACT []
@@ -33737,6 +33737,11 @@ is_a: SO:0000704 ! gene
 [Term]
 id: http://identifiers.org/ensembl/ENSMUSG00000027210
 name: Meis2
+is_a: SO:0000704 ! gene
+
+[Term]
+id: http://identifiers.org/ensembl/ENSMUSG00000027270
+name: Lamp5
 is_a: SO:0000704 ! gene
 
 [Term]
