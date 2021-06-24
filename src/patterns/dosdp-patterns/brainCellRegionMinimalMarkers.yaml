@@ -31,6 +31,9 @@ list_vars:
   allen_markers: "'sequence_feature'"
   layers: "'layer of neocortex'"
 
+data_list_vars:
+  alias_citations: "xsd:string"
+
 internal_vars:
   - var_name: minimal_markers_cat
     input: minimal_markers
@@ -57,6 +60,7 @@ name:
       - taxon
 
 def:
+  xrefs: alias_citations
   multi_clause:
     sep: " "
     clauses:
