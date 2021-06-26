@@ -78,7 +78,7 @@ def generate_pattern_table_reification(dend_json_path, output_filepath):
                 if o['cell_set_preferred_alias']:
                     d['cell_set_preferred_alias'] = o['cell_set_preferred_alias']
                 elif o['cell_set_additional_aliases']:
-                    d['cell_set_preferred_alias'] = o['cell_set_additional_aliases']
+                    d['cell_set_preferred_alias'] = str(o['cell_set_additional_aliases']).split("|")[0]
 
                 if o['cell_set_accession'] in minimal_markers:
                     d['minimal_markers'] = minimal_markers[o['cell_set_accession']]
@@ -92,6 +92,16 @@ def generate_pattern_table_reification(dend_json_path, output_filepath):
 
                 d['projection_type'] = ''
                 d['layers'] = ''
+
+                if 'Brain_region_abbv' in taxonomy_config:
+                    d['brain_region_abbv'] = taxonomy_config['Brain_region_abbv'][0]
+                else:
+                    d['brain_region_abbv'] = ''
+
+                if 'Species_abbv' in taxonomy_config:
+                    d['species_abbv'] = taxonomy_config['Species_abbv'][0]
+                else:
+                    d['species_abbv'] = ''
 
                 dl.append(d)
 
@@ -160,4 +170,4 @@ def read_ensmusg():
 # ec_denormalised markers branch
 # generate_pattern_table_denormalised_markers("../dendrograms/CCN202002013.json", "../patterns/data/default/brainCellRegionMarker.tsv")
 # ec_individuals branch
-# generate_pattern_table_reification("../dendrograms/CCN202002013.json", "../patterns/data/default/brainCellRegionMinimalMarkers.tsv")
+generate_pattern_table_reification("../dendrograms/CCN202002013.json", "../patterns/data/default/brainCellRegionMinimalMarkers.tsv")
