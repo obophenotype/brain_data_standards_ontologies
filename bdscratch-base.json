@@ -7162,11 +7162,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-06-23"
+            "val": "2021-06-28"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/bdscratch/releases/2021-06-23/bdscratch-base.json",
+        "version": "http://purl.obolibrary.org/obo/bdscratch/releases/2021-06-28/bdscratch-base.json",
         "xrefs": []
       },
       "nodes": [
@@ -7175,6 +7175,10 @@
           "lbl": "Lamp5 Pax6 primary motor cortex GABAergic interneuron (Mus musculus)",
           "meta": {
             "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Lamp5 Pax6 MOp (Mouse)"
+              },
               {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Lamp5 Pax6"
@@ -7185,7 +7189,10 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Pip5k1b, Pax6. These cells also express Pax6.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558",
+                "DOI:10.1101/2020.03.31.016972"
+              ]
             },
             "synonyms": [
               {
@@ -7218,6 +7225,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sncg Slc17a8 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sncg Slc17a8"
               }
@@ -7227,7 +7238,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Slc17a8, Yjefn3. These cells also express Slc17a8, Sncg.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -7255,6 +7268,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Oligo Opalin_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Oligo Opalin_2"
               }
@@ -7264,7 +7281,9 @@
             ],
             "definition": {
               "val": "A oligodendrocyte of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Il33, Prr5l. These cells also express Opalin.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -7292,6 +7311,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Oligo Opalin_3 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Oligo Opalin_3"
               }
@@ -7301,7 +7324,9 @@
             ],
             "definition": {
               "val": "A oligodendrocyte of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Mobp, Cacna2d4, Nckap5. These cells also express Opalin.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -7329,6 +7354,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Oligo Opalin_4 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Oligo Opalin_4"
               }
@@ -7338,7 +7367,9 @@
             ],
             "definition": {
               "val": "A oligodendrocyte of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Prom1, Sytl2, Kank1. These cells also express Opalin.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -7366,6 +7397,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Endo MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Endo"
               }
@@ -7375,7 +7410,9 @@
             ],
             "definition": {
               "val": "A endothelial cell of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Slco1a4, Adgrl4.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -7408,6 +7445,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "VLMC_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "VLMC_1"
               }
@@ -7417,7 +7458,9 @@
             ],
             "definition": {
               "val": "A vascular leptomeningeal cell of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Itih5, Col4a6, Gm30624.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -7445,6 +7488,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "VLMC_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "VLMC_2"
               }
@@ -7454,7 +7501,9 @@
             ],
             "definition": {
               "val": "A vascular leptomeningeal cell of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Lama1, Aox3.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -7482,6 +7531,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "VLMC_3 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "VLMC_3"
               }
@@ -7491,7 +7544,9 @@
             ],
             "definition": {
               "val": "A vascular leptomeningeal cell of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Pkhd1.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -7519,6 +7574,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "VLMC_4 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "VLMC_4"
               }
@@ -7528,7 +7587,9 @@
             ],
             "definition": {
               "val": "A vascular leptomeningeal cell of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Slc6a20a, Prdm6.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -7556,6 +7617,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "VLMC_5 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "VLMC_5"
               }
@@ -7565,7 +7630,9 @@
             ],
             "definition": {
               "val": "A vascular leptomeningeal cell of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Slc47a1.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -7593,6 +7660,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "VLMC_6 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "VLMC_6"
               }
@@ -7602,7 +7673,9 @@
             ],
             "definition": {
               "val": "A vascular leptomeningeal cell of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Prg4, Dapl1, Slc26a7.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -7630,6 +7703,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sncg Calb1_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sncg Calb1_1"
               }
@@ -7639,7 +7716,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Syt6, Sln, Krt73. These cells also express Sncg, Calb1.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -7667,6 +7746,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "VLMC_7 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "VLMC_7"
               }
@@ -7676,7 +7759,9 @@
             ],
             "definition": {
               "val": "A vascular leptomeningeal cell of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Dapl1, Tspan8.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -7704,6 +7789,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "SMC MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "SMC"
               }
@@ -7713,7 +7802,9 @@
             ],
             "definition": {
               "val": "A vascular associated smooth muscle cell of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Acta2.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -7741,6 +7832,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Peri MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Peri"
               }
@@ -7750,7 +7845,9 @@
             ],
             "definition": {
               "val": "A pericyte cell of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Abcc9, Tbx3os1.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -7783,6 +7880,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Micro MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Micro"
               }
@@ -7792,7 +7893,9 @@
             ],
             "definition": {
               "val": "A microglial cell of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Hexb.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -7825,6 +7928,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sncg Calb1_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sncg Calb1_2"
               }
@@ -7834,7 +7941,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Epb41l4a, Syt6, Calb1. These cells also express Sncg, Calb1.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -7862,6 +7971,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "CGE/PoA MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "CGE/PoA"
               }
@@ -7871,7 +7984,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Prox1, Adarb2.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -7904,6 +8019,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Lamp5 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Lamp5"
               }
@@ -7913,7 +8032,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Npy, Pde11a.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -7946,6 +8067,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Lamp5_5 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Lamp5_5"
               }
@@ -7955,7 +8080,10 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cxcl14, Ndnf.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558",
+                "DOI:10.1101/2020.03.31.016972"
+              ]
             },
             "synonyms": [
               {
@@ -7988,6 +8116,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sncg Npy2r MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sncg Npy2r"
               }
@@ -7997,7 +8129,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Npy2r, Rgs12. These cells also express Sncg, Npy2r.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -8025,6 +8159,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Neurogliaform cell MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Neurogliaform cell"
               }
@@ -8034,7 +8172,10 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Kit, Pde11a.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.03.929158",
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -8067,6 +8208,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sncg MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sncg"
               }
@@ -8076,7 +8221,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cnr1, Col25a1.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -8109,6 +8256,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sncg_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sncg_2"
               }
@@ -8118,7 +8269,10 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Yjefn3, Frem1.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558",
+                "DOI:10.1101/2020.03.31.016972"
+              ]
             },
             "synonyms": [
               {
@@ -8151,6 +8305,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Vip MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Vip"
               }
@@ -8160,7 +8318,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Vip.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -8193,6 +8353,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L5/6 CCK cell MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L5/6 CCK cell"
               }
@@ -8202,7 +8366,10 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Col14a1, Enpp2, Pbx3.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.03.929158",
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -8235,6 +8402,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Vip Sncg MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Vip Sncg"
               }
@@ -8244,7 +8415,10 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Unc5b, Nectin3, Crh. These cells also express Vip, Sncg.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.03.929158",
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -8277,6 +8451,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L5 VIP cell MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L5 VIP cell"
               }
@@ -8286,7 +8464,10 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Car4, Vip, Crh.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.03.929158",
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -8319,6 +8500,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Vip_4 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Vip_4"
               }
@@ -8328,7 +8513,11 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Thsd7b, Gm39185.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.03.929158",
+                "DOI:10.1101/2020.02.29.970558",
+                "DOI:10.1101/2020.03.31.016972"
+              ]
             },
             "synonyms": [
               {
@@ -8366,6 +8555,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Vip Serpinf1_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Vip Serpinf1_1"
               }
@@ -8375,7 +8568,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Rgs16, Sfrp2. These cells also express Serpinf1, Vip.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -8403,6 +8598,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "MGE MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "MGE"
               }
@@ -8412,7 +8611,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Nxph1, Gm1604b.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -8445,6 +8646,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sst_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst_1"
               }
@@ -8454,7 +8659,10 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Pdyn, Unc13c.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558",
+                "DOI:10.1101/2020.03.31.016972"
+              ]
             },
             "synonyms": [
               {
@@ -8487,6 +8695,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L5 T Martinotti cell MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L5 T Martinotti cell"
               }
@@ -8496,7 +8708,10 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Fbn2, Trpc6, Spon1.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.03.929158",
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -8529,6 +8744,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Vip Serpinf1_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Vip Serpinf1_2"
               }
@@ -8538,7 +8757,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Col14a1, Ccn3, Pbx3. These cells also express Serpinf1, Vip.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -8566,6 +8787,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L5 non-Martinotti cell MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L5 non-Martinotti cell"
               }
@@ -8575,7 +8800,10 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Rbp4, Trpc6, Lgals1.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.03.929158",
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -8608,6 +8836,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L2/3/5 fan Martinotti cell MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L2/3/5 fan Martinotti cell"
               }
@@ -8617,7 +8849,10 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Sst, Olfm3.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.03.929158",
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -8650,6 +8885,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L5/6 non-Martinotti cell MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L5/6 non-Martinotti cell"
               }
@@ -8659,7 +8898,10 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cdh13, Tmtc2, Crh.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.03.929158",
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -8692,6 +8934,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Vip Serpinf1_3 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Vip Serpinf1_3"
               }
@@ -8701,7 +8947,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Enpp2, Homer2, Ccn3, Plekhg1. These cells also express Serpinf1.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -8729,6 +8977,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L6 Th+ SST/PV cell MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L6 Th+ SST/PV cell"
               }
@@ -8738,7 +8990,10 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Th, Cort.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.03.929158",
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -8771,6 +9026,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Upper FS Basket cell MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Upper FS Basket cell"
               }
@@ -8780,7 +9039,10 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Eya4, Cemip.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.03.929158",
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -8813,6 +9075,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Chandelier MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Chandelier"
               }
@@ -8822,7 +9088,11 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Unc5b, Cntnap5b.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:",
+                "DOI:10.1101/2020.02.03.929158",
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -8860,6 +9130,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Vip Htr1f MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Vip Htr1f"
               }
@@ -8869,7 +9143,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Vip, Ccn3, Vwc2l. These cells also express Vip, Htr1f.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -8897,6 +9173,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "IT projecting MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "IT projecting"
               }
@@ -8906,7 +9186,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Fstl4, Satb2. These cells have projection type intratelencephalic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -8939,6 +9221,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L2/3 IT MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L2/3 IT"
               }
@@ -8948,7 +9234,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Rasgrf2, Calb1. These cells have projection type intratelencephalic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -8981,6 +9269,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L4 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L4"
               }
@@ -8990,7 +9282,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Kcnh5, Rorb, A830036E02Rik.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -9023,6 +9317,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L5 IT MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L5 IT"
               }
@@ -9032,7 +9330,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Pdzrn3, St6galnac5, Cdh12. These cells have projection type intratelencephalic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -9065,6 +9365,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Vip Gpc3 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Vip Gpc3"
               }
@@ -9074,7 +9378,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Vip, Pbx3, Pde3a. These cells also express Vip, Gpc3.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -9102,6 +9408,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L5 IT_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L5 IT_2"
               }
@@ -9111,7 +9421,10 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Deptor, Il1rapl2. These cells have projection type intratelencephalic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558",
+                "DOI:10.1101/2020.03.31.016972"
+              ]
             },
             "synonyms": [
               {
@@ -9144,6 +9457,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L6 IT MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L6 IT"
               }
@@ -9153,7 +9470,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Sulf1, Bmpr1b, Il1rapl2. These cells have projection type intratelencephalic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -9186,6 +9505,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L5 ET MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L5 ET"
               }
@@ -9195,7 +9518,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Npr3, Gm2164. These cells have projection type extratelencephalic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -9228,6 +9553,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L6 CT MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L6 CT"
               }
@@ -9237,7 +9566,11 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Foxp2, Hs3st4. These cells have projection type corticothalamic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:",
+                "DOI:10.1101/2020.02.03.929158",
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -9280,6 +9613,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Lamp5 Egln3_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Lamp5 Egln3_1"
               }
@@ -9289,7 +9626,11 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Fbn2, Chrna7, Tafa1. These cells also express Egln3.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.03.929158",
+                "DOI:10.1101/2020.02.29.970558",
+                "DOI:10.1101/2020.03.31.016972"
+              ]
             },
             "synonyms": [
               {
@@ -9327,6 +9668,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Vip C1ql1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Vip C1ql1"
               }
@@ -9336,7 +9681,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Vip, Btbd11, Bmper, Crh. These cells also express Vip, C1ql1.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -9364,6 +9711,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L6b MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L6b"
               }
@@ -9373,7 +9724,12 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Ccn2, Cplx3.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:",
+                "DOI:10.1101/2020.02.03.929158",
+                "DOI:10.1101/2020.02.29.970558",
+                "DOI:10.1101/2020.03.31.016972"
+              ]
             },
             "synonyms": [
               {
@@ -9411,6 +9767,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L5/6 NP MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L5/6 NP"
               }
@@ -9420,7 +9780,12 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Etv1, Tshz2. These cells have projection type near projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:",
+                "DOI:10.1101/2020.02.03.929158",
+                "DOI:10.1101/2020.02.29.970558",
+                "DOI:10.1101/2020.03.31.016972"
+              ]
             },
             "synonyms": [
               {
@@ -9458,6 +9823,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Vip Mybpc1_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Vip Mybpc1_2"
               }
@@ -9467,7 +9836,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Htr3a, 5033421B08Rik. These cells also express Vip, Mybpc1.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -9495,6 +9866,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Astro_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Astro_1"
               }
@@ -9504,7 +9879,10 @@
             ],
             "definition": {
               "val": "A astrocyte of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Gli3, Slc39a12.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558",
+                "DOI:10.1101/2020.03.31.016972"
+              ]
             },
             "synonyms": [
               {
@@ -9537,6 +9915,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Vip Mybpc1_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Vip Mybpc1_1"
               }
@@ -9546,7 +9928,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Calb2, Gm2516. These cells also express Vip, Mybpc1.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -9574,6 +9958,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Vip Chat_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Vip Chat_1"
               }
@@ -9583,7 +9971,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Chat, Npy2r. These cells also express Vip, Chat.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -9611,6 +10001,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Vip Mybpc1_3 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Vip Mybpc1_3"
               }
@@ -9620,7 +10014,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Grm8, Caln1. These cells also express Vip, Mybpc1.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -9648,6 +10044,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Vip Chat_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Vip Chat_2"
               }
@@ -9657,7 +10057,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Htr4, Grik4. These cells also express Vip, Chat.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -9685,6 +10087,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Vip Igfbp6_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Vip Igfbp6_1"
               }
@@ -9694,7 +10100,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Thsd7a, Gm39185. These cells also express Igfbp6.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -9722,6 +10130,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Vip Igfbp6_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Vip Igfbp6_2"
               }
@@ -9731,7 +10143,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Thsd7b, Crh. These cells also express Vip, Igfbp6.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -9759,6 +10173,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sst Chodl MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Chodl"
               }
@@ -9768,7 +10186,12 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Chodl, Nos1. These cells also express Sst, Chodl.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:",
+                "DOI:10.1101/2020.02.03.929158",
+                "DOI:10.1101/2020.02.29.970558",
+                "DOI:10.1101/2020.03.31.016972"
+              ]
             },
             "synonyms": [
               {
@@ -9801,6 +10224,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sst Penk MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Penk"
               }
@@ -9810,7 +10237,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cartpt, Il1rapl2, 9530026P05Rik. These cells also express Sst, Penk.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -9838,6 +10267,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Lamp5 Egln3_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Lamp5 Egln3_2"
               }
@@ -9847,7 +10280,10 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Crim1, Zfp804b. These cells also express Lamp5, Egln3.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.03.929158",
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -9880,6 +10316,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sst Myh8_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Myh8_1"
               }
@@ -9889,7 +10329,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Reln, Il1rapl2. These cells also express Sst, Myh8.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -9917,6 +10359,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sst Myh8_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Myh8_2"
               }
@@ -9926,7 +10372,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cdh13, Sox6, Pld5. These cells also express Sst, Myh8.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -9954,6 +10402,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sst Myh8_3 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Myh8_3"
               }
@@ -9963,7 +10415,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Grm1, Cdh9. These cells also express Sst, Myh8.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -9991,6 +10445,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sst Htr1a MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Htr1a"
               }
@@ -10000,7 +10458,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Pdyn, Gm30835. These cells also express Sst, Htr1a.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -10028,6 +10488,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sst Etv1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Etv1"
               }
@@ -10037,7 +10501,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Fbn2, Col19a1, Trpc6. These cells also express Etv1, Sst.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -10065,6 +10531,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sst Pvalb Etv1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Pvalb Etv1"
               }
@@ -10074,7 +10544,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Spon1, Whrn, Edaradd. These cells also express Etv1, Pvalb.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -10102,6 +10574,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sst Crhr2_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Crhr2_1"
               }
@@ -10111,7 +10587,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Eya4, Nek7, Trpc6. These cells also express Crhr2, Sst.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -10139,6 +10617,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sst Crhr2_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Crhr2_2"
               }
@@ -10148,7 +10630,10 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Lypd6b, Trpc6. These cells also express Crhr2, Sst.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558",
+                "DOI:10.1101/2020.03.31.016972"
+              ]
             },
             "synonyms": [
               {
@@ -10181,6 +10666,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sst Hpse MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Hpse"
               }
@@ -10190,7 +10679,10 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Rerg, Hpse. These cells also express Sst, Hpse.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.03.929158",
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -10223,6 +10715,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sst Calb2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Calb2"
               }
@@ -10232,7 +10728,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Sst, Olfm3. These cells also express Calb2, Sst.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -10260,6 +10758,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Lamp5 Egln3_3 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Lamp5 Egln3_3"
               }
@@ -10269,7 +10771,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Ntn1, Cxcl14, Reln. These cells also express Lamp5, Egln3.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -10297,6 +10801,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sst Pappa MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Pappa"
               }
@@ -10306,7 +10814,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Trpc6, Gm49678. These cells also express Sst, Pappa.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -10334,6 +10844,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sst Pvalb Calb2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Pvalb Calb2"
               }
@@ -10343,7 +10857,10 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Moxd1, Prkg2. These cells also express Calb2, Pvalb.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.03.929158",
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -10376,6 +10893,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sst C1ql3_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst C1ql3_1"
               }
@@ -10385,7 +10906,10 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Pard3b, Gm48893. These cells also express Sst, C1ql3.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558",
+                "DOI:10.1101/2020.03.31.016972"
+              ]
             },
             "synonyms": [
               {
@@ -10418,6 +10942,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sst C1ql3_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst C1ql3_2"
               }
@@ -10427,7 +10955,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Gxylt2, Brinp3, Ndnf. These cells also express Sst, C1ql3.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -10455,6 +10985,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sst Tac2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Tac2"
               }
@@ -10464,7 +10998,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Tac2, Cdh13, Tmtc2. These cells also express Sst, Tac2.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -10492,6 +11028,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sst Th_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Th_1"
               }
@@ -10501,7 +11041,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Zfpm2, St6galnac5, St8sia4. These cells also express Th, Sst.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -10529,6 +11071,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sst Th_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Th_2"
               }
@@ -10538,7 +11084,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Sst, Pnoc, Pard3b. These cells also express Th, Sst.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -10566,6 +11114,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sst Th_3 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sst Th_3"
               }
@@ -10575,7 +11127,10 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Th, Cort. These cells also express Th, Sst.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558",
+                "DOI:10.1101/2020.03.31.016972"
+              ]
             },
             "synonyms": [
               {
@@ -10608,6 +11163,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Pvalb Gabrg1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Pvalb Gabrg1"
               }
@@ -10617,7 +11176,10 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Th, Gabrg1. These cells also express Gabrg1, Pvalb.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.03.929158",
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -10650,6 +11212,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Pvalb Egfem1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Pvalb Egfem1"
               }
@@ -10659,7 +11225,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Plch1, Tac1, 9330158H04Rik. These cells also express Pvalb, Egfem1.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -10687,6 +11255,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Lamp5 Pdlim5_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Lamp5 Pdlim5_1"
               }
@@ -10696,7 +11268,10 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Ndst4, Dock5, Ndnf. These cells also express Lamp5, Pdlim5.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558",
+                "DOI:10.1101/2020.03.31.016972"
+              ]
             },
             "synonyms": [
               {
@@ -10729,6 +11304,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Pvalb Gpr149 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Pvalb Gpr149"
               }
@@ -10738,7 +11317,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Fzd6, Syt2, Slit2. These cells also express Pvalb, Gpr149.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -10766,6 +11347,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Pvalb Kank4 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Pvalb Kank4"
               }
@@ -10775,7 +11360,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cacna2d2, Syt2, Tmem132d, Sema3e. These cells also express Pvalb, Kank4.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -10803,6 +11390,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Pvalb Calb1_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Pvalb Calb1_1"
               }
@@ -10812,7 +11403,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cort, Nxph2, Gm28807. These cells also express Pvalb, Calb1.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -10840,6 +11433,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Pvalb Calb1_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Pvalb Calb1_2"
               }
@@ -10849,7 +11446,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Tmem132c, Cntnap5c, Tac1. These cells also express Pvalb, Calb1.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -10877,6 +11476,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Pvalb Reln MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Pvalb Reln"
               }
@@ -10886,7 +11489,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cntnap4, Gm46102. These cells also express Pvalb, Reln.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -10914,6 +11519,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Pvalb Il1rapl2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Pvalb Il1rapl2"
               }
@@ -10923,7 +11532,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Eya4, Il1rapl2. These cells also express Pvalb, Il1rapl2.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -10951,6 +11562,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Pvalb Vipr2_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Pvalb Vipr2_1"
               }
@@ -10960,7 +11575,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Nkx2-1, Lamb1. These cells also express Pvalb.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -10988,6 +11605,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Pvalb Vipr2_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Pvalb Vipr2_2"
               }
@@ -10997,7 +11618,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Unc5b, Cntnap5b. These cells also express Pvalb, Vipr2.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -11025,6 +11648,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L2/3 IT_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L2/3 IT_1"
               }
@@ -11034,7 +11661,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Met, Adamts2, 6530403H02Rik. These cells have projection type intratelencephalic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -11062,6 +11691,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L2/3 IT_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L2/3 IT_2"
               }
@@ -11071,7 +11704,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Ccdc3, Meis2, Cux1, Otof. These cells have projection type intratelencephalic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -11099,6 +11734,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Lamp5 Pdlim5_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Lamp5 Pdlim5_2"
               }
@@ -11108,7 +11747,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Ndnf, Pde11a. These cells also express Lamp5, Pdlim5.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -11136,6 +11777,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L2/3 IT_3 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L2/3 IT_3"
               }
@@ -11145,7 +11790,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Stard8, Cux2, Slit3. These cells have projection type intratelencephalic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -11173,6 +11820,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L4/5 IT_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L4/5 IT_1"
               }
@@ -11182,7 +11833,10 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cadps2, Rorb, Prr16. These cells also express Rspo1. These cells have projection type intratelencephalic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558",
+                "DOI:10.1101/2020.03.31.016972"
+              ]
             },
             "synonyms": [
               {
@@ -11215,6 +11869,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L4/5 IT_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L4/5 IT_2"
               }
@@ -11224,7 +11882,10 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Col26a1, Cpne4, Il1rapl2. These cells also express Rspo1. These cells have projection type intratelencephalic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558",
+                "DOI:10.1101/2020.03.31.016972"
+              ]
             },
             "synonyms": [
               {
@@ -11257,6 +11918,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L5 IT_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L5 IT_1"
               }
@@ -11285,6 +11950,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L5 IT_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L5 IT_2"
               }
@@ -11294,7 +11963,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Man1a, Deptor, Adamts18, Gm49678. These cells also express S100b. These cells have projection type intratelencephalic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -11322,6 +11993,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L5 IT_3 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L5 IT_3"
               }
@@ -11331,7 +12006,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Ptprk, Pld5, Rxfp1, Enpp2, Cadps2. These cells also express Pld5. These cells have projection type intratelencephalic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -11359,6 +12036,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L5 IT_4 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L5 IT_4"
               }
@@ -11368,7 +12049,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cwh43, Chrm2, Pld5. These cells also express Pld5. These cells have projection type intratelencephalic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -11396,6 +12079,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L6 IT_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L6 IT_1"
               }
@@ -11405,7 +12092,10 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Fst, Bmpr1b, Ntng1. These cells have projection type intratelencephalic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558",
+                "DOI:10.1101/2020.03.31.016972"
+              ]
             },
             "synonyms": [
               {
@@ -11433,6 +12123,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L6 IT_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L6 IT_2"
               }
@@ -11442,7 +12136,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Ptpru, C1ql3, Bmpr1b. These cells have projection type intratelencephalic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -11470,6 +12166,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L6 IT Car3 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L6 IT Car3"
               }
@@ -11479,7 +12179,12 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Nr4a2, Tfap2d. These cells also express Car3. These cells have projection type intratelencephalic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:",
+                "DOI:10.1101/2020.02.03.929158",
+                "DOI:10.1101/2020.02.29.970558",
+                "DOI:10.1101/2020.03.31.016972"
+              ]
             },
             "synonyms": [
               {
@@ -11517,6 +12222,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Lamp5 Slc35d3 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Lamp5 Slc35d3"
               }
@@ -11526,7 +12235,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Sema5a, Alk. These cells also express Lamp5, Slc35d3.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -11554,6 +12265,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L5 PT_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L5 PT_1"
               }
@@ -11563,7 +12278,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Npr3, Crym, Gm2164. These cells have projection type extratelencephalic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -11596,6 +12313,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L5 PT_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L5 PT_2"
               }
@@ -11605,7 +12326,10 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Trpc7, Gpc5, Erg. These cells have projection type extratelencephalic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558",
+                "DOI:10.1101/2020.03.31.016972"
+              ]
             },
             "synonyms": [
               {
@@ -11638,6 +12362,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L5 PT_3 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L5 PT_3"
               }
@@ -11647,7 +12375,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Trpc7, Gpc5, Trmt9b, Reln. These cells have projection type extratelencephalic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -11680,6 +12410,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L5 PT_4 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L5 PT_4"
               }
@@ -11689,7 +12423,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Npsr1, Gm2164. These cells have projection type extratelencephalic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -11722,6 +12458,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L5/6 NP CT MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L5/6 NP CT"
               }
@@ -11731,7 +12471,10 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Grp, Rxfp1, Tshz2. These cells have projection type corticothalamic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558",
+                "DOI:10.1101/2020.03.31.016972"
+              ]
             },
             "synonyms": [
               {
@@ -11764,6 +12507,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L6 CT Gpr139 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L6 CT Gpr139"
               }
@@ -11773,7 +12520,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Acaa1b, Col23a1, Gpr139. These cells also express Gpr139. These cells have projection type corticothalamic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -11801,6 +12550,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L6 CT Cpa6 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L6 CT Cpa6"
               }
@@ -11810,7 +12563,10 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Zfpm2, Foxp2, Hs3st4. These cells also express Cpa6. These cells have projection type corticothalamic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558",
+                "DOI:10.1101/2020.03.31.016972"
+              ]
             },
             "synonyms": [
               {
@@ -11843,6 +12599,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L6 CT Grp MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L6 CT Grp"
               }
@@ -11852,7 +12612,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Grp, Meis2, Pdzrn4, Plcxd3. These cells also express Grp. These cells have projection type corticothalamic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -11880,6 +12642,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L6 CT Pou3f2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L6 CT Pou3f2"
               }
@@ -11889,7 +12655,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Satb2, Cdh18, Gm10635. These cells also express Pou3f2. These cells have projection type corticothalamic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -11917,6 +12685,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L6 CT Kit_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L6 CT Kit_1"
               }
@@ -11926,7 +12698,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Ikzf2, Gm10635. These cells also express Kit. These cells have projection type corticothalamic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -11954,6 +12728,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Lamp5 Lhx6 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Lamp5 Lhx6"
               }
@@ -11963,7 +12741,12 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Nos1, Gm45680. These cells also express Lhx6, Lamp5.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:",
+                "DOI:10.1101/2020.02.03.929158",
+                "DOI:10.1101/2020.02.29.970558",
+                "DOI:10.1101/2020.03.31.016972"
+              ]
             },
             "synonyms": [
               {
@@ -12001,6 +12784,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L6 CT Kit_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L6 CT Kit_2"
               }
@@ -12010,7 +12797,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Nr4a2, Rxfp1, Tshz2. These cells also express Kit. These cells have projection type corticothalamic projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -12038,6 +12827,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L6b Col6a1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L6b Col6a1"
               }
@@ -12047,7 +12840,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Ccn2, Hs3st2, Bmpr1b. These cells also express Col6a1.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -12075,6 +12870,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L6b Shisa6_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L6b Shisa6_1"
               }
@@ -12084,7 +12883,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Ly6g6e, Svil, Cplx3. These cells also express Shisa6.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -12112,6 +12913,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L6b Shisa6_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L6b Shisa6_2"
               }
@@ -12121,7 +12926,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Moxd1, Nr4a2. These cells also express Shisa6.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -12149,6 +12956,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L6b Ror1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L6b Ror1"
               }
@@ -12158,7 +12969,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Ccn2, Cplx3, Fbxl7. These cells also express Ror1.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -12186,6 +12999,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L6b Kcnip1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L6b Kcnip1"
               }
@@ -12195,7 +13012,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Olfr112, Rxfp2, Gm42557. These cells also express Kcnip1.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -12223,6 +13042,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L5/6 NP_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L5/6 NP_1"
               }
@@ -12232,7 +13055,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Dkk2, Cyp7b1, Vwc2l. These cells have projection type near projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -12260,6 +13085,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L5/6 NP_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L5/6 NP_2"
               }
@@ -12269,7 +13098,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Slc17a8, Abi3bp. These cells have projection type near projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -12297,6 +13128,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "L5/6 NP_3 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "L5/6 NP_3"
               }
@@ -12306,7 +13141,9 @@
             ],
             "definition": {
               "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Lypd1, Tshz2. These cells have projection type near projecting.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -12334,6 +13171,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Meis2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Meis2"
               }
@@ -12343,7 +13184,9 @@
             ],
             "definition": {
               "val": "A meis2 expressing cortical GABAergic cell (Mus musculus) of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Tiam2, Meis2.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -12371,6 +13214,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Sncg Col14a1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Sncg Col14a1"
               }
@@ -12380,7 +13227,9 @@
             ],
             "definition": {
               "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Eps8, Cdh6, Col25a1. These cells also express Col14a1, Sncg.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -12408,6 +13257,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Meis2_Top2a MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Meis2_Top2a"
               }
@@ -12417,7 +13270,9 @@
             ],
             "definition": {
               "val": "A meis2 expressing cortical GABAergic cell (Mus musculus) of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Igfbpl1, Gm17750, Gm29260. These cells also express Top2a.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -12445,6 +13300,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "OPC Pdgfra MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "OPC Pdgfra"
               }
@@ -12454,7 +13313,9 @@
             ],
             "definition": {
               "val": "A oligodendrocyte precursor cell of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Pdgfra, Stk32a. These cells also express Pdgfra.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -12487,6 +13348,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Astro_Top2a MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Astro_Top2a"
               }
@@ -12496,7 +13361,9 @@
             ],
             "definition": {
               "val": "A astrocyte of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Clspn, Lockd. These cells also express Top2a.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -12524,6 +13391,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Astro Aqp4_Gfap MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Astro Aqp4_Gfap"
               }
@@ -12533,7 +13404,9 @@
             ],
             "definition": {
               "val": "A astrocyte of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Myoc. These cells also express Gfap.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -12561,6 +13434,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Astro Aqp4_Slc7a10 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Astro Aqp4_Slc7a10"
               }
@@ -12570,7 +13447,9 @@
             ],
             "definition": {
               "val": "A astrocyte of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Phkg1, Slco1c1. These cells also express Slc7a10.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -12598,6 +13477,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Oligo Enpp6_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Oligo Enpp6_1"
               }
@@ -12607,7 +13490,9 @@
             ],
             "definition": {
               "val": "A oligodendrocyte of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Bcas1, Tcf7l2. These cells also express Enpp6.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -12635,6 +13520,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Oligo Enpp6_2 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Oligo Enpp6_2"
               }
@@ -12644,7 +13533,9 @@
             ],
             "definition": {
               "val": "A oligodendrocyte of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Bmp4, 9630013A20Rik. These cells also express Enpp6.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -12672,6 +13563,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Oligo Enpp6_3 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Oligo Enpp6_3"
               }
@@ -12681,7 +13576,9 @@
             ],
             "definition": {
               "val": "A oligodendrocyte of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cnksr3, Tmem163, Mpzl1, Nckap5. These cells also express Enpp6.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -12709,6 +13606,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Oligo Enpp6_4 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Oligo Enpp6_4"
               }
@@ -12718,7 +13619,9 @@
             ],
             "definition": {
               "val": "A oligodendrocyte of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Cnksr3, 9630013A20Rik. These cells also express Enpp6.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558"
+              ]
             },
             "synonyms": [
               {
@@ -12746,6 +13649,10 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000028",
+                "val": "Oligo Opalin_1 MOp (Mouse)"
+              },
+              {
                 "pred": "http://www.w3.org/2004/02/skos/core#prefLabel",
                 "val": "Oligo Opalin_1"
               }
@@ -12755,7 +13662,10 @@
             ],
             "definition": {
               "val": "A oligodendrocyte of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their expression of Anln, Rftn1, A330049N07Rik. These cells also express Opalin.",
-              "xrefs": []
+              "xrefs": [
+                "DOI:10.1101/2020.02.29.970558",
+                "DOI:10.1101/2020.03.31.016972"
+              ]
             },
             "synonyms": [
               {
