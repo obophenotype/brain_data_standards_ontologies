@@ -14,15 +14,13 @@ OWL_EQUIVALENT_CLASS_FILES = $(patsubst %, components/%_equivalent_class.owl, $(
 GENE_FILES = $(patsubst %, mirror/%.owl, $(JOBS))
 OWL_MIN_MARKER_FILES = $(patsubst %, components/%_minimal_markers.owl, $(JOBS))
 OWL_NOMENCLATURE_FILES = $(patsubst %, components/%_non_taxonomy_classification.owl, $(JOBS))
+# temporarily skipping pattern building since multi_clause is not officially released
+PAT = false
 
 #DEND_FILES = $(patsubst %, ../dendrograms/%.json, $(JOBS))
 #TEMPLATE_FILES = $(patsubst %, ../templates/%.tsv, $(JOBS))
 #TEMPLATE_CLASS_FILES = $(patsubst %, ../templates/_%class.tsv, $(JOBS))
 
-# temporarily skipping tests since multi_clause is not officially released
-.PHONY: pattern_schema_checks
-pattern_schema_checks: update_patterns
-	if [ $(PAT) = "skip" ]; then $(PATTERN_TESTER) $(PATTERNDIR)/dosdp-patterns/; fi
 
 $(PATTERNDIR)/pattern.owl: pattern_schema_checks update_patterns
 	if [ $(PAT) = true ]; then $(DOSDPT) prototype --prefixes=template_prefixes.yaml --obo-prefixes true --template=$(PATTERNDIR)/dosdp-patterns --outfile=$@; fi
