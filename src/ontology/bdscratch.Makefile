@@ -19,6 +19,10 @@ OWL_NOMENCLATURE_FILES = $(patsubst %, components/%_non_taxonomy_classification.
 #TEMPLATE_FILES = $(patsubst %, ../templates/%.tsv, $(JOBS))
 #TEMPLATE_CLASS_FILES = $(patsubst %, ../templates/_%class.tsv, $(JOBS))
 
+# temporarily skipping tests since multi_clause is not officially released
+pattern_schema_checks: update_patterns
+	if [ $(PAT) = "skip" ]; then $(PATTERN_TESTER) $(PATTERNDIR)/dosdp-patterns/; fi
+
 $(PATTERNDIR)/pattern.owl: pattern_schema_checks update_patterns
 	if [ $(PAT) = true ]; then $(DOSDPT) prototype --prefixes=template_prefixes.yaml --obo-prefixes true --template=$(PATTERNDIR)/dosdp-patterns --outfile=$@; fi
 
