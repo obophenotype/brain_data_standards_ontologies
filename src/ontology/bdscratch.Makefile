@@ -20,6 +20,7 @@ OWL_NOMENCLATURE_FILES = $(patsubst %, components/%_non_taxonomy_classification.
 #TEMPLATE_CLASS_FILES = $(patsubst %, ../templates/_%class.tsv, $(JOBS))
 
 # temporarily skipping tests since multi_clause is not officially released
+.PHONY: pattern_schema_checks
 pattern_schema_checks: update_patterns
 	if [ $(PAT) = "skip" ]; then $(PATTERN_TESTER) $(PATTERNDIR)/dosdp-patterns/; fi
 
