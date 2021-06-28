@@ -35,11 +35,25 @@
             "description": "Ontology ID (NCBI curie) of species used in analysis."
           }
         },
+        "Species_abbv": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "Species abbreviation."
+          }
+        },
         "Brain_region": {
           "type": "array",
           "items": {
             "type": "string",
             "description": "Ontology ID (curie) of brain region used in analysis."
+          }
+        },
+        "Brain_region_abbv": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "Brain region abbreviation."
           }
         },
         "Root_nodes": {

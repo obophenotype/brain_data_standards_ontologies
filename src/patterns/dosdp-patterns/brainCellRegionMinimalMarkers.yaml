@@ -17,6 +17,9 @@ relations:
   has_soma_location: "RO:0002100"
   bearer_of: "RO:0000053"
 
+annotationProperties:
+  symbol: "IAO:0000028"
+
 vars:
   gross_cell_type: "'cell'"
   taxon: "'Vertebrata <vertebrates>'"
@@ -25,7 +28,9 @@ vars:
 
 data_vars:
   cell_set_preferred_alias: "xsd:string"
-
+  brain_region_abbv: "xsd:string"
+  species_abbv: "xsd:string"
+  
 list_vars:
   minimal_markers: "'sequence_feature'"
   allen_markers: "'sequence_feature'"
@@ -101,3 +106,11 @@ logical_axioms:
      text: "'bearer_of' some %s"
      vars:
        - projection_type
+       
+annotations:
+  - annotationProperty: symbol
+    text: "%s %s (%s)"
+    vars:
+      - cell_set_preferred_alias
+      - brain_region_abbv
+      - species_abbv
