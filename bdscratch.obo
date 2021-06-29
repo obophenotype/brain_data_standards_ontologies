@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2021-06-28
+data-version: releases/2021-06-29
 subsetdef: 3_STAR ""
 subsetdef: added_for_HCA ""
 subsetdef: attribute_slim ""
@@ -53,7 +53,7 @@ ontology: bdscratch
 property_value: dc-description "None" xsd:string
 property_value: dc-title "Brain Data Standards Cell Ontology" xsd:string
 property_value: dcterms-license https://creativecommons.org/licenses/unspecified
-property_value: owl:versionInfo "2021-06-28" xsd:string
+property_value: owl:versionInfo "2021-06-29" xsd:string
 
 [Term]
 id: AllenDendClass_CS202002013:1
@@ -506,7 +506,7 @@ synonym: "L5/6 CCK cell" EXACT []
 synonym: "n23" EXACT []
 synonym: "RNAseq 015-017" EXACT []
 is_a: AllenDendClass_CS202002013:138 ! Vip primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023019 {xref="DOI:10.1101/2020.02.29.970558"} ! L5/6 CCK and Vip expressing cortical GABAergic interneuron (Mus musculus)
+is_a: CL:4023019 {xref="DOI:10.1101/2020.02.29.970558"} ! L5/6 CCK, Vip cortical GABAergic interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022371 ! expresses Col14a1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022425 ! expresses Enpp2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038718 ! expresses Pbx3
@@ -540,7 +540,7 @@ synonym: "L5 VIP cell" EXACT []
 synonym: "n27" EXACT []
 synonym: "RNAseq 018-020" EXACT []
 is_a: AllenDendClass_CS202002013:138 ! Vip primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023014 {xref="DOI:10.1101/2020.02.29.970558"} ! L5 Vip expressing cortical GABAergic interneuron (Mus musculus)
+is_a: CL:4023014 {xref="DOI:10.1101/2020.02.29.970558"} ! L5 Vip cortical GABAergic interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000000805 ! expresses Car4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049796 ! expresses Crh
 property_value: IAO:0000028 "L5 VIP cell MOp (Mouse)" xsd:string
@@ -618,7 +618,7 @@ synonym: "L5 T Martinotti cell" EXACT []
 synonym: "n43" EXACT []
 synonym: "RNAseq 034-035" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023027 {xref="DOI:10.1101/2020.02.29.970558"} ! L5 ‘T-shaped’ Martinotti Sst GABAergic cortical interneuron (Mus musculus)
+is_a: CL:4023027 {xref="DOI:10.1101/2020.02.29.970558"} ! L5 T-Martinotti Sst GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024598 ! expresses Fbn2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! expresses Trpc6
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038156 ! expresses Spon1
@@ -982,7 +982,7 @@ synonym: "Htr3a, 5033421B08Rik expressing GABAergic interneuron of primary motor
 synonym: "RNAseq 021" EXACT []
 synonym: "Vip Mybpc1_2" EXACT []
 is_a: AllenDendClass_CS202002013:138 ! Vip primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023007 ! L2/3 bipolar Vip expressing GABAergic cortical interneuron (Mus musculus)
+is_a: CL:4023007 ! L2/3 bipolar Vip GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032269 ! expresses Htr3a
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000112276 ! expresses 5033421B08Rik
 property_value: IAO:0000028 "Vip Mybpc1_2 MOp (Mouse)" xsd:string
@@ -1014,7 +1014,7 @@ synonym: "Calb2, Gm2516 expressing GABAergic interneuron of primary motor cortex
 synonym: "RNAseq 022" EXACT []
 synonym: "Vip Mybpc1_1" EXACT []
 is_a: AllenDendClass_CS202002013:138 ! Vip primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023007 ! L2/3 bipolar Vip expressing GABAergic cortical interneuron (Mus musculus)
+is_a: CL:4023007 ! L2/3 bipolar Vip GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000003657 ! expresses Calb2
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000110281 ! expresses Gm2516
 property_value: IAO:0000028 "Vip Mybpc1_1 MOp (Mouse)" xsd:string
@@ -1029,7 +1029,7 @@ synonym: "Chat, Npy2r expressing GABAergic interneuron of primary motor cortex (
 synonym: "RNAseq 023" EXACT []
 synonym: "Vip Chat_1" EXACT []
 is_a: AllenDendClass_CS202002013:138 ! Vip primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023007 ! L2/3 bipolar Vip expressing GABAergic cortical interneuron (Mus musculus)
+is_a: CL:4023007 ! L2/3 bipolar Vip GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021919 ! expresses Chat
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028004 ! expresses Npy2r
 property_value: IAO:0000028 "Vip Chat_1 MOp (Mouse)" xsd:string
@@ -1044,7 +1044,7 @@ synonym: "Grm8, Caln1 expressing GABAergic interneuron of primary motor cortex (
 synonym: "RNAseq 024" EXACT []
 synonym: "Vip Mybpc1_3" EXACT []
 is_a: AllenDendClass_CS202002013:138 ! Vip primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023007 ! L2/3 bipolar Vip expressing GABAergic cortical interneuron (Mus musculus)
+is_a: CL:4023007 ! L2/3 bipolar Vip GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024211 ! expresses Grm8
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000060371 ! expresses Caln1
 property_value: IAO:0000028 "Vip Mybpc1_3 MOp (Mouse)" xsd:string
@@ -1059,7 +1059,7 @@ synonym: "Htr4, Grik4 expressing GABAergic interneuron of primary motor cortex (
 synonym: "RNAseq 025" EXACT []
 synonym: "Vip Chat_2" EXACT []
 is_a: AllenDendClass_CS202002013:138 ! Vip primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023007 ! L2/3 bipolar Vip expressing GABAergic cortical interneuron (Mus musculus)
+is_a: CL:4023007 ! L2/3 bipolar Vip GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026322 ! expresses Htr4
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032017 ! expresses Grik4
 property_value: IAO:0000028 "Vip Chat_2 MOp (Mouse)" xsd:string
@@ -1148,7 +1148,7 @@ synonym: "Reln, Il1rapl2 expressing GABAergic interneuron of primary motor corte
 synonym: "RNAseq 030" EXACT []
 synonym: "Sst Myh8_1" EXACT []
 is_a: AllenDendClass_CS202002013:150 ! MGE primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023027 ! L5 ‘T-shaped’ Martinotti Sst GABAergic cortical interneuron (Mus musculus)
+is_a: CL:4023027 ! L5 T-Martinotti Sst GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042453 ! expresses Reln
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses Il1rapl2
 property_value: IAO:0000028 "Sst Myh8_1 MOp (Mouse)" xsd:string
@@ -1163,7 +1163,7 @@ synonym: "Cdh13, Sox6, Pld5 expressing GABAergic interneuron of primary motor co
 synonym: "RNAseq 031" EXACT []
 synonym: "Sst Myh8_2" EXACT []
 is_a: AllenDendClass_CS202002013:156 ! Sst_1 primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023027 ! L5 ‘T-shaped’ Martinotti Sst GABAergic cortical interneuron (Mus musculus)
+is_a: CL:4023027 ! L5 T-Martinotti Sst GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031841 ! expresses Cdh13
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000051910 ! expresses Sox6
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000055214 ! expresses Pld5
@@ -1179,7 +1179,7 @@ synonym: "Grm1, Cdh9 expressing GABAergic interneuron of primary motor cortex (M
 synonym: "RNAseq 032" EXACT []
 synonym: "Sst Myh8_3" EXACT []
 is_a: AllenDendClass_CS202002013:156 ! Sst_1 primary motor cortex GABAergic interneuron (Mus musculus)
-is_a: CL:4023027 ! L5 ‘T-shaped’ Martinotti Sst GABAergic cortical interneuron (Mus musculus)
+is_a: CL:4023027 ! L5 T-Martinotti Sst GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019828 ! expresses Grm1
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000025370 ! expresses Cdh9
 property_value: IAO:0000028 "Sst Myh8_3 MOp (Mouse)" xsd:string
@@ -1804,7 +1804,7 @@ synonym: "L5 PT_1" EXACT []
 synonym: "Npr3, Crym, Gm2164 expressing glutamatergic neuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 070" EXACT []
 is_a: AllenDendClass_CS202002013:193 ! L5 ET primary motor cortex glutamatergic neuron (Mus musculus)
-is_a: CL:4023045 ! medulla-projecting extratelencephalic-projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
+is_a: CL:4023045 ! medulla-projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030905 ! expresses Crym
 property_value: IAO:0000028 "L5 PT_1 MOp (Mouse)" xsd:string
 property_value: prefLabel "L5 PT_1" xsd:string
@@ -1819,7 +1819,7 @@ synonym: "L5 PT_2" EXACT []
 synonym: "RNAseq 071" EXACT []
 synonym: "Trpc7, Gpc5, Erg expressing glutamatergic neuron of primary motor cortex (Mus musculus)" EXACT []
 is_a: AllenDendClass_CS202002013:193 ! L5 ET primary motor cortex glutamatergic neuron (Mus musculus)
-is_a: CL:4023045 ! medulla-projecting extratelencephalic-projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
+is_a: CL:4023045 ! medulla-projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021541 ! expresses Trpc7
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022112 ! expresses Gpc5
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040732 ! expresses Erg
@@ -1836,7 +1836,7 @@ synonym: "L5 PT_3" EXACT []
 synonym: "RNAseq 072" EXACT []
 synonym: "Trpc7, Gpc5, Trmt9b, Reln expressing glutamatergic neuron of primary motor cortex (Mus musculus)" EXACT []
 is_a: AllenDendClass_CS202002013:193 ! L5 ET primary motor cortex glutamatergic neuron (Mus musculus)
-is_a: CL:4023044 ! non-medulla-projecting extratelencephalic-projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
+is_a: CL:4023044 ! non-medulla, extratelencephalic-projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021541 ! expresses Trpc7
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022112 ! expresses Gpc5
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039620 ! expresses Trmt9b
@@ -1854,7 +1854,7 @@ synonym: "L5 PT_4" EXACT []
 synonym: "Npsr1, Gm2164 expressing glutamatergic neuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 073" EXACT []
 is_a: AllenDendClass_CS202002013:193 ! L5 ET primary motor cortex glutamatergic neuron (Mus musculus)
-is_a: CL:4023044 ! non-medulla-projecting extratelencephalic-projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
+is_a: CL:4023044 ! non-medulla, extratelencephalic-projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000043659 ! expresses Npsr1
 property_value: IAO:0000028 "L5 PT_4 MOp (Mouse)" xsd:string
 property_value: prefLabel "L5 PT_4" xsd:string
@@ -2516,6 +2516,16 @@ def: "Cell that is part of the migratory cranial neural crest population. Migrat
 is_a: CL:0000333 ! migratory neural crest cell
 
 [Term]
+id: CL:0000014
+name: germ line stem cell
+namespace: cell
+synonym: "germline stem cell" EXACT []
+is_a: CL:0000034 {is_inferred="true"} ! stem cell
+is_a: CL:0000039 {is_inferred="true"} ! germ line cell
+intersection_of: CL:0000039 ! germ line cell
+intersection_of: capable_of GO:0017145 ! stem cell division
+
+[Term]
 id: CL:0000027
 name: smooth muscle cell neural crest derived
 namespace: cell
@@ -2628,6 +2638,17 @@ relationship: lacks_plasma_membrane_part PR:000001839 ! T-cell surface glycoprot
 relationship: lacks_plasma_membrane_part PR:000001889 ! CD14 molecule
 relationship: lacks_plasma_membrane_part PR:000002978 ! lymphocyte antigen 6G
 relationship: lacks_plasma_membrane_part PR:000002981 ! lymphocyte antigen 76 (mouse)
+
+[Term]
+id: CL:0000039
+name: germ line cell
+namespace: cell
+def: "A cell that is within the developmental lineage of gametes and is able to pass along its genetic material to offspring." [GOC:tfm, ISBN:0721662544]
+comment: Originally this term had some plant germ line cell children.
+subset: ubprop:upper_level
+is_a: CL:0000003 ! native cell
+disjoint_from: CL:0002371 ! somatic cell
+relationship: capable_of GO:0022414 ! reproductive process
 
 [Term]
 id: CL:0000040
@@ -2866,6 +2887,7 @@ id: CL:0000103
 name: bipolar neuron
 namespace: cell
 def: "A type of interneuron that has two neurites, usually an axon and a dendrite, extending from opposite poles of an ovoid cell body." [GOC:tfm, ISBN:0444009442]
+subset: BDS_subset
 xref: FMA:67282
 is_a: CL:0000099 ! interneuron
 intersection_of: CL:0000099 ! interneuron
@@ -2877,6 +2899,7 @@ id: CL:0000104
 name: multipolar neuron
 namespace: cell
 def: "Neuron with an axon and two or more dendrites." [FMA:67287, GOC:tfm]
+subset: BDS_subset
 xref: FMA:67287
 is_a: CL:0000540 ! neuron
 intersection_of: CL:0000540 ! neuron
@@ -3541,6 +3564,7 @@ id: CL:0000598
 name: pyramidal neuron
 namespace: cell
 def: "Pyramidal neurons have a pyramid-shaped soma with a single axon, a large apical dendrite and multiple basal dendrites. The apex and an apical dendrite typically point toward the pial surface and other dendrites and an axon emerging from the base. The axons may have local collaterals but also project outside their region. Pyramidal neurons are found in the cerebral cortex, the hippocampus, and the amygdala." [GOC:tfm, MESH:A08.186.211.577.405.700]
+subset: BDS_subset
 synonym: "projection neuron" EXACT []
 synonym: "pyramidal cell" EXACT []
 synonym: "pyramidal neuron" EXACT []
@@ -3597,6 +3621,21 @@ is_a: CL:0002320 ! connective tissue cell
 is_a: CL:0008034 ! mural cell
 
 [Term]
+id: CL:0000670
+name: primordial germ cell
+namespace: cell
+def: "A primordial germ cell is a diploid germ cell precursors that transiently exist in the embryo before they enter into close association with the somatic cells of the gonad and become irreversibly committed as germ cells." [GOC:tfm, PMID:1381289]
+synonym: "gonocyte" EXACT []
+synonym: "primitive germ cell" EXACT []
+xref: FMA:70567
+is_a: CL:0000039 {is_inferred="true"} ! germ line cell
+is_a: CL:0000219 {is_inferred="true"} ! motile cell
+intersection_of: CL:0000039 ! germ line cell
+intersection_of: capable_of GO:0048870 ! cell motility
+intersection_of: part_of UBERON:0000922 ! embryo
+relationship: part_of UBERON:0000922 ! embryo
+
+[Term]
 id: CL:0000679
 name: glutamatergic neuron
 namespace: cell
@@ -3624,6 +3663,7 @@ id: CL:0000693
 name: neurogliaform cell
 namespace: cell
 def: "An interneuron that has spider-like appearance with a small round soma, a large number (7-10) of short, smooth, or slightly beaded primary dendrites that give rise to only a few secondary branches, and a branched axon that establishes a dense axonal mesh with thin shafts." [JB:jb, PMID:17122314]
+subset: BDS_subset
 synonym: "neuroglioform cell" EXACT [PMID:3235828]
 synonym: "NGF cell" EXACT [PMID:18568015]
 synonym: "spiderweb cell" EXACT []
@@ -5344,7 +5384,7 @@ creation_date: 2014-10-07T18:50:43Z
 
 [Term]
 id: CL:4023007
-name: L2/3 bipolar Vip expressing GABAergic cortical interneuron (Mus musculus)
+name: L2/3 bipolar Vip GABAergic cortical interneuron (Mus musculus)
 def: "A Vip GABAergic cortical interneuron with bipolar morphology, with a soma found in L2/3. L2/3 bipolar Vip Cells have extending axons across all layers (with preferences for layers II/III and Va) and a dendritic tree that is vertically more restricted than deeper layer VIP cells and extend fewer dendrites into the layers outside their home layer (location of soma). L2/3 Bipolar Vip Cells have great variability in firing patterns, though most are continuous adapting. L2/3 Bipolar Vip Cells are more depolarized in their resting state, had less fast rectification, and had smaller after hyperpolarization than deeper Vip cells." [PMID:26420784]
 subset: BDS_subset
 synonym: "L2/3 bipolar Vip (Mus)" EXACT []
@@ -5442,7 +5482,7 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 
 [Term]
 id: CL:4023014
-name: L5 Vip expressing cortical GABAergic interneuron (Mus musculus)
+name: L5 Vip cortical GABAergic interneuron (Mus musculus)
 def: "A Vip GABAergic cortical interneuron with a soma found in L5. L5 Vip cells have mostly local morphology with some deep-projecting axons. They show only moderate resistance, comparable to that of Sst subclass and unlike typical Vip subclass cells that tend to show high input resistance. L5 Vip cells show particularly low resting membrane potential." [PMID:26420784, PMID:26612957]
 subset: BDS_subset
 synonym: "L5 VIP (Mus)" EXACT []
@@ -5509,12 +5549,12 @@ created_by: http://orcid.org/0000-0001-7258-9596
 
 [Term]
 id: CL:4023019
-name: L5/6 CCK and Vip expressing cortical GABAergic interneuron (Mus musculus)
+name: L5/6 CCK, Vip cortical GABAergic interneuron (Mus musculus)
 def: "A Vip GABAergic cortical interneuron that expresses CCK. L5/6 CCK cells have soma found mainly in L5 and L6 and have large axonal arborization." [PMID:33184512]
 subset: BDS_subset
 synonym: "L5/6 CCK Vip (Mus)" EXACT []
 is_a: CL:4023016 ! Vip GABAergic cortical interneuron
-is_a: CL:4023071 ! L5/6 CCK expressing cortical GABAergic interneuron (Mus musculus)
+is_a: CL:4023071 ! L5/6 CCK cortical GABAergic interneuron (Mus musculus)
 relationship: RO:0002292 PR:P32648 ! expresses VIP peptides (mouse)
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
 
@@ -5565,7 +5605,7 @@ created_by: http://orcid.org/0000-0001-7258-9596
 
 [Term]
 id: CL:4023027
-name: L5 ‘T-shaped’ Martinotti Sst GABAergic cortical interneuron (Mus musculus)
+name: L5 T-Martinotti Sst GABAergic cortical interneuron (Mus musculus)
 def: "A Sst GABAergic cortical interneuron with a soma found in L5 and possesses 'T-shaped' martinotti morphologies with local axonal plexus in L5a and translaminar axons restricted to the uppermost part of L1. They show low-threshold spiking patterns with strong rebound firing, and inhibit the L1 apical tuft of nearby pyramidal cells." [PMID:28254942, PMID:29326172]
 subset: BDS_subset
 synonym: "L5 T Martinotti SST (Mus)" EXACT []
@@ -5664,7 +5704,9 @@ synonym: "L5b neuron" EXACT []
 synonym: "pyramidal tract (PT) neuron" EXACT []
 synonym: "subcerebral projection (SCPN) neuron" EXACT []
 synonym: "thick-tufted layer 5 pyramidal neuron" EXACT []
+is_a: CL:0000104 ! multipolar neuron
 is_a: CL:4023009 ! extratelencephalic-projecting glutamatergic cortical neuron
+relationship: bearer_of PATO:0070015 ! pyramidal family morphology
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0001-7258-9596
 
 [Term]
@@ -5691,7 +5733,7 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 
 [Term]
 id: CL:4023044
-name: non-medulla-projecting extratelencephalic-projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
+name: non-medulla, extratelencephalic-projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
 def: "An extratelencephalic-projecting glutamatergic neuron located in layer 5b of the primary motor cortex that does not project to the medulla. Non-MY ET cells are large, big-tufted cells with the apical dendrite often bifurcating close to the soma, suggesting they are corticospinal cells. Non-MY ET cells have bigger hyperpolarization sag, lower input resistance, and smaller AP width, compared to L5 IT neurons." [DOI:10.1101/2020.10.19.343129, PMID:24137110, PMID:9236245]
 subset: BDS_subset
 synonym: "non-MY ET MOp (Mus)" EXACT []
@@ -5702,9 +5744,10 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 
 [Term]
 id: CL:4023045
-name: medulla-projecting extratelencephalic-projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
+name: medulla-projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
 def: "An extratelencephalic-projecting glutamatergic neuron located in layer 5b of the primary motor cortex that projects to the medulla. MY ET cells are large, big-tufted cells with the apical dendrite often bifurcating close to the soma, suggesting they are corticospinal cells. MY ET cells have bigger hyperpolarization sag, lower input resistance, and smaller AP width, compared to L5 IT neurons." [DOI:10.1101/2020.10.19.343129, PMID:24137110, PMID:9236245]
 subset: BDS_subset
+synonym: "medulla-projecting extratelencephalic-projecting glutamatergic neuron of the primary motor cortex (Mus musculus)" EXACT []
 synonym: "MY ET MOp (Mus)" EXACT []
 is_a: CL:4023041 ! L5 extratelencephalic projecting glutamatergic cortical neuron
 relationship: bearer_of PATO:0070031 ! corticomedulla projecting
@@ -5794,7 +5837,7 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 [Term]
 id: CL:4023055
 name: corticothalamic VAL/VM projecting glutamatergic neuron of the primary motor cortex (Mus musculus)
-def: "A corticothalamic-projecting glutamatergic neuron that is located in L6 and lower L5 of the primary motor cortex, with a pyramidal morphology and mostly untufted apical dendrites terminating in midcortical layers. CT VAL/VM cells have a near tonic firing pattern and are distinguished from L6 IT neurons by a lower inter-spike interval adaptation index." [PMID:20556241, PMID:9236245]
+def: "A corticothalamic-projecting glutamatergic neuron that is located in L6 and lower L5 of the primary motor cortex, with a pyramidal morphology and mostly untufted apical dendrites terminating in midcortical layers. CT VAL/VM (ventroanterior-ventrolateral complex/ventromedial nucleus) cells have a near tonic firing pattern and are distinguished from L6 IT neurons by a lower inter-spike interval adaptation index." [PMID:20556241, PMID:9236245]
 subset: BDS_subset
 synonym: "CT VAL/VM MOp (Mus)" EXACT []
 is_a: CL:0000104 ! multipolar neuron
@@ -5828,7 +5871,7 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 
 [Term]
 id: CL:4023071
-name: L5/6 CCK expressing cortical GABAergic interneuron (Mus musculus)
+name: L5/6 CCK cortical GABAergic interneuron (Mus musculus)
 def: "A GABAergic cortical interneuron that expresses CCK. L5/6 CCK cells have soma found mainly in L5 and L6 and have large axonal arborization." [PMID:33184512]
 subset: BDS_subset
 synonym: "L5/6 CCK (Mus)" EXACT []
@@ -5841,6 +5884,7 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 id: CL:4023076
 name: Martinotti neuron
 def: "An interneuron that has Martinotti morphology. These interneurons are scattered throughout various layers of the cerebral cortex, sending their axons up to the cortical layer I where they form axonal arborization." [WikipediaVersioned:Martinotti_cell&oldid=9947732]
+subset: BDS_subset
 xref: ILX:0107375
 xref: nifext_55
 is_a: CL:0000104 ! multipolar neuron
@@ -5855,6 +5899,7 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 id: CL:4023083
 name: chandelier cell
 def: "An interneuron that selectively innervates the axon initial segment of pyramidal cells. Their local axonal clusters are formed by high-frequency branching at shallow angles, often ramifying around, above or below their somata with a high bouton density. The characteristic terminal portions of the axon form short vertical rows of boutons, resembling a chandelier. Chandelier cells can be multipolar or bitufted." [PMID:15378039] {def="PMID:27199673"}
+subset: BDS_subset
 synonym: "ChC" EXACT [PMID:15378039]
 xref: ILX:0777213 {http://purl.obolibrary.org/obo/IAO_0000116="Interlex cross reference refers specifically to Markram 2015 rat chandelier cell."}
 is_a: CL:0000099 ! interneuron
@@ -5893,6 +5938,7 @@ property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-00
 id: CL:4023095
 name: untufted pyramidal neuron
 def: "A pyramidal neuron which lacks a clear tuft formation but extends to large radial distances." [PMID:30715238]
+subset: BDS_subset
 is_a: CL:0000598 ! pyramidal neuron
 intersection_of: CL:0000117 ! CNS neuron (sensu Vertebrata)
 intersection_of: bearer_of PATO:0070019 ! untufted pyramidal morphology
@@ -5910,6 +5956,23 @@ intersection_of: bearer_of PATO:0002094 ! basophilic
 relationship: bearer_of PATO:0002094 ! basophilic
 created_by: tmeehan
 creation_date: 2009-12-22T04:24:54Z
+
+[Term]
+id: GO:0000003
+name: reproduction
+namespace: biological_process
+alt_id: GO:0019952
+alt_id: GO:0050876
+def: "The production of new individuals that contain some portion of genetic material inherited from one or more parent organisms." [GOC:go_curators, GOC:isa_complete, GOC:jl, ISBN:0198506732]
+subset: goslim_agr
+subset: goslim_chembl
+subset: goslim_flybase_ribbon
+subset: goslim_generic
+subset: goslim_pir
+subset: goslim_plant
+synonym: "reproductive physiological process" EXACT []
+xref: Wikipedia:Reproduction
+is_a: GO:0008150 ! biological_process
 
 [Term]
 id: GO:0000228
@@ -6484,6 +6547,18 @@ is_a: GO:0048584 ! positive regulation of response to stimulus
 intersection_of: GO:0065007 ! biological regulation
 intersection_of: positively_regulates GO:0009607 ! response to biotic stimulus
 relationship: positively_regulates GO:0009607 ! response to biotic stimulus
+
+[Term]
+id: GO:0003006
+name: developmental process involved in reproduction
+namespace: biological_process
+def: "A developmental process in which a progressive change in the state of some part of an organism, germline or somatic, specifically contributes to its ability to form offspring." [GOC:dph, GOC:isa_complete]
+synonym: "puberty" NARROW [GOC:dph]
+synonym: "reproductive developmental process" RELATED [GOC:dph, GOC:tb]
+is_a: GO:0022414 ! reproductive process
+is_a: GO:0032502 ! developmental process
+intersection_of: GO:0032502 ! developmental process
+intersection_of: part_of GO:0000003 ! reproduction
 
 [Term]
 id: GO:0003008
@@ -7506,6 +7581,20 @@ synonym: "antigen presentation" EXACT []
 synonym: "antigen processing" EXACT []
 xref: Wikipedia:Antigen_presentation
 is_a: GO:0002376 ! immune system process
+
+[Term]
+id: GO:0022414
+name: reproductive process
+namespace: biological_process
+alt_id: GO:0044702
+def: "A biological process that directly contributes to the process of producing new individuals by one or two organisms. The new individuals inherit some proportion of their genetic material from the parent or parents." [GOC:dph, GOC:isa_complete]
+synonym: "single organism reproductive process" RELATED []
+is_a: GO:0008150 ! biological_process
+intersection_of: GO:0008150 ! biological_process
+intersection_of: part_of GO:0000003 ! reproduction
+relationship: part_of GO:0000003 ! reproduction
+created_by: jl
+creation_date: 2012-09-19T15:56:06Z
 
 [Term]
 id: GO:0023051
@@ -11361,6 +11450,44 @@ created_by: mah
 creation_date: 2010-10-01T09:41:30Z
 
 [Term]
+id: GO:2000241
+name: regulation of reproductive process
+namespace: biological_process
+def: "Any process that modulates the frequency, rate or extent of reproductive process." [GOC:mah]
+is_a: GO:0050789 ! regulation of biological process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: regulates GO:0022414 ! reproductive process
+relationship: regulates GO:0022414 ! reproductive process
+created_by: mah
+creation_date: 2010-11-10T02:44:02Z
+
+[Term]
+id: GO:2000242
+name: negative regulation of reproductive process
+namespace: biological_process
+def: "Any process that stops, prevents, or reduces the frequency, rate or extent of reproductive process." [GOC:mah]
+is_a: GO:0048519 ! negative regulation of biological process
+is_a: GO:2000241 ! regulation of reproductive process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: negatively_regulates GO:0022414 ! reproductive process
+relationship: negatively_regulates GO:0022414 ! reproductive process
+created_by: mah
+creation_date: 2010-11-10T02:44:05Z
+
+[Term]
+id: GO:2000243
+name: positive regulation of reproductive process
+namespace: biological_process
+def: "Any process that activates or increases the frequency, rate or extent of reproductive process." [GOC:mah]
+is_a: GO:0048518 ! positive regulation of biological process
+is_a: GO:2000241 ! regulation of reproductive process
+intersection_of: GO:0065007 ! biological regulation
+intersection_of: positively_regulates GO:0022414 ! reproductive process
+relationship: positively_regulates GO:0022414 ! reproductive process
+created_by: mah
+creation_date: 2010-11-10T02:44:08Z
+
+[Term]
 id: GO:2000463
 name: positive regulation of excitatory postsynaptic potential
 namespace: biological_process
@@ -11428,6 +11555,7 @@ xref: GC_ID:1
 xref: PMID:15371245
 is_a: NCBITaxon:337687 ! Muroidea
 property_value: has_rank NCBITaxon:family
+property_value: has_rank NCBITaxon:family
 
 [Term]
 id: NCBITaxon:10088
@@ -11438,6 +11566,7 @@ synonym: "mouse" EXACT common_name []
 synonym: "Mus" EXACT scientific_name []
 xref: GC_ID:1
 is_a: NCBITaxon:39107 ! Murinae
+property_value: has_rank NCBITaxon:genus
 property_value: has_rank NCBITaxon:genus
 
 [Term]
@@ -11451,6 +11580,7 @@ synonym: "mouse" EXACT common_name []
 synonym: "mouse" RELATED PRO-common-name []
 xref: GC_ID:1
 is_a: NCBITaxon:862507 ! Mus <subgenus>
+property_value: has_rank NCBITaxon:species
 property_value: has_rank NCBITaxon:species
 
 [Term]
@@ -11507,6 +11637,7 @@ synonym: "Sciurognathi" RELATED in_part []
 xref: GC_ID:1
 is_a: NCBITaxon:9989 ! Rodentia
 property_value: has_rank NCBITaxon:suborder
+property_value: has_rank NCBITaxon:suborder
 
 [Term]
 id: NCBITaxon:2759
@@ -11526,6 +11657,7 @@ xref: PMID:30257078
 is_a: NCBITaxon:131567 ! cellular organisms
 is_a: OBI:0100026 ! organism
 property_value: has_rank NCBITaxon:superkingdom
+property_value: has_rank NCBITaxon:superkingdom
 
 [Term]
 id: NCBITaxon:314146
@@ -11537,6 +11669,7 @@ xref: PMID:12082125
 xref: PMID:12878460
 xref: PMID:15522813
 is_a: NCBITaxon:1437010 ! Boreoeutheria
+property_value: has_rank NCBITaxon:superorder
 property_value: has_rank NCBITaxon:superorder
 
 [Term]
@@ -11600,6 +11733,7 @@ synonym: "multicellular animals" EXACT common_name []
 xref: GC_ID:1
 is_a: NCBITaxon:33154 ! Opisthokonta
 property_value: has_rank NCBITaxon:kingdom
+property_value: has_rank NCBITaxon:kingdom
 
 [Term]
 id: NCBITaxon:33213
@@ -11636,6 +11770,7 @@ alt_id: NCBITaxon:109679
 xref: GC_ID:1
 is_a: NCBITaxon:10066 ! Muridae
 property_value: has_rank NCBITaxon:subfamily
+property_value: has_rank NCBITaxon:subfamily
 
 [Term]
 id: NCBITaxon:40674
@@ -11647,6 +11782,7 @@ synonym: "mammals" EXACT genbank_common_name []
 synonym: "mammals" RELATED blast_name []
 xref: GC_ID:1
 is_a: NCBITaxon:32524 ! Amniota
+property_value: has_rank NCBITaxon:class
 property_value: has_rank NCBITaxon:class
 
 [Term]
@@ -11665,6 +11801,7 @@ synonym: "chordates" EXACT genbank_common_name []
 synonym: "chordates" RELATED blast_name []
 xref: GC_ID:1
 is_a: NCBITaxon:33511 ! Deuterostomia
+property_value: has_rank NCBITaxon:phylum
 property_value: has_rank NCBITaxon:phylum
 
 [Term]
@@ -11695,6 +11832,7 @@ namespace: ncbi_taxonomy
 xref: GC_ID:1
 is_a: NCBITaxon:117571 ! Euteleostomi
 property_value: has_rank NCBITaxon:superclass
+property_value: has_rank NCBITaxon:superclass
 
 [Term]
 id: NCBITaxon:862507
@@ -11704,6 +11842,7 @@ synonym: "Mus" EXACT scientific_name []
 xref: GC_ID:1
 is_a: NCBITaxon:10088 ! Mus <genus>
 property_value: has_rank NCBITaxon:subgenus
+property_value: has_rank NCBITaxon:subgenus
 
 [Term]
 id: NCBITaxon:89593
@@ -11712,6 +11851,7 @@ namespace: ncbi_taxonomy
 synonym: "Craniata" EXACT scientific_name []
 xref: GC_ID:1
 is_a: NCBITaxon:7711 ! Chordata
+property_value: has_rank NCBITaxon:subphylum
 property_value: has_rank NCBITaxon:subphylum
 
 [Term]
@@ -11736,6 +11876,7 @@ synonym: "rodent" EXACT PRO-common-name []
 synonym: "rodents" RELATED blast_name []
 xref: GC_ID:1
 is_a: NCBITaxon:314147 ! Glires
+property_value: has_rank NCBITaxon:order
 property_value: has_rank NCBITaxon:order
 
 [Term]
@@ -35307,7 +35448,7 @@ property_value: IAO:0000112 "this investigator role is a role of this person" xs
 property_value: IAO:0000118 "is role of" xsd:string
 property_value: IAO:0000118 "role_of" xsd:string
 is_a: RO:0000052 ! inheres in
-inverse_of: RO:0000087 ! has role
+inverse_of: has_role ! has role
 
 [Typedef]
 id: RO:0000085
@@ -35318,17 +35459,6 @@ property_value: IAO:0000112 "this enzyme has function this catalysis function (m
 property_value: IAO:0000118 "has_function" xsd:string
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000034 ! function
-is_a: bearer_of ! bearer of
-
-[Typedef]
-id: RO:0000087
-name: has role
-def: "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence" []
-property_value: editor_note "A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists." xsd:string
-property_value: IAO:0000112 "this person has role this investigator role (more colloquially: this person has this role of investigator)" xsd:string
-property_value: IAO:0000118 "has_role" xsd:string
-domain: BFO:0000004 ! independent continuant
-range: BFO:0000023 ! role
 is_a: bearer_of ! bearer of
 
 [Typedef]
@@ -35366,6 +35496,7 @@ inverse_of: contains ! contains
 [Typedef]
 id: RO:0002006
 name: has synaptic terminal of
+property_value: http://purl.org/spar/cito/citesAsAuthority http://www.ncbi.nlm.nih.gov/pubmed/22402613
 property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
 is_a: RO:0002131 ! overlaps
 inverse_of: RO:0002130 ! has synaptic terminal in
@@ -35583,12 +35714,12 @@ name: spatially disjoint from
 def: "A is spatially_disjoint_from B if and only if they have no parts in common" []
 subset: ro-eco
 property_value: editor_note "There are two ways to encode this as a shortcut relation. The other possibility to use an annotation assertion between two classes, and expand this to a disjointness axiom. " xsd:string
-property_value: http://xmlns.com/foaf/0.1/page https://github.com/obophenotype/uberon/wiki/Part-disjointness-Design-Pattern xsd:anyURI
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/22293552
 property_value: IAO:0000232 "Note that it would be possible to use the relation to label the relationship between a near infinite number of structures - between the rings of saturn and my left earlobe. The intent is that this is used for parsiomoniously for disambiguation purposes - for example, between siblings in a jointly exhaustive pairwise disjointness hierarchy" xsd:string
 property_value: RO:0001900 RO:0001901
+property_value: seeAlso https://github.com/obophenotype/uberon/wiki/Part-disjointness-Design-Pattern xsd:anyURI
 is_a: RO:0002323 ! mereotopologically related to
 expand_expression_to: "BFO_0000051 exactly 0 (BFO_0000050 some ?Y)" []
 
@@ -36506,10 +36637,10 @@ def: "a is connected to b if and only if a and b are discrete structure, and the
 def: "Binary relationship: x connected_to y if and only if there exists some z such that z connects x and y in a ternary connected_to(x,y,z) relationship." [http://purl.obolibrary.org/obo/uberon/docs/Connectivity-Design-Pattern]
 comment: Connection does not imply overlaps.
 xref: RO:0002170
-property_value: http://xmlns.com/foaf/0.1/page https://github.com/obophenotype/uberon/wiki/Connectivity-Design-Pattern xsd:anyURI
-property_value: http://xmlns.com/foaf/0.1/page https://github.com/obophenotype/uberon/wiki/Modeling-articulations-Design-Pattern xsd:anyURI
 property_value: IAO:0000112 "a 'toe distal phalanx bone' that is connected to a 'toe medial phalanx bone' (an interphalangeal joint *connects* these two bones)." xsd:string
 property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/22293552
+property_value: seeAlso https://github.com/obophenotype/uberon/wiki/Connectivity-Design-Pattern xsd:anyURI
+property_value: seeAlso https://github.com/obophenotype/uberon/wiki/Modeling-articulations-Design-Pattern xsd:anyURI
 property_value: seeAlso SIO:000652
 is_a: RO:0002323 ! mereotopologically related to
 is_a: transitively_connected_to ! transitively_connected to
@@ -36902,6 +37033,21 @@ is_transitive: false
 is_a: bearer_of ! bearer of
 
 [Typedef]
+id: has_role
+name: has role
+namespace: chebi_ontology
+def: "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence" []
+xref: RO:0000087
+property_value: editor_note "A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists." xsd:string
+property_value: IAO:0000112 "this person has role this investigator role (more colloquially: this person has this role of investigator)" xsd:string
+property_value: IAO:0000118 "has_role" xsd:string
+domain: BFO:0000004 ! independent continuant
+range: BFO:0000023 ! role
+is_cyclic: false
+is_transitive: false
+is_a: bearer_of ! bearer of
+
+[Typedef]
 id: has_skeleton
 name: has skeleton
 namespace: uberon
@@ -37051,7 +37197,7 @@ def: "a relation between two independent continuants, the target and the locatio
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 xref: RO:0001025
 property_value: editor_note "Location as a relation between instances: The primitive instance-level relation c located_in r at t reflects the fact that each continuant is at any given time associated with exactly one spatial region, namely its exact location. Following we can use this relation to define a further instance-level location relation - not between a continuant and the region which it exactly occupies, but rather between one continuant and another. c is located in c1, in this sense, whenever the spatial region occupied by c is part_of the spatial region occupied by c1.    Note that this relation comprehends both the relation of exact location between one continuant and another which obtains when r and r1 are identical (for example, when a portion of fluid exactly fills a cavity), as well as those sorts of inexact location relations which obtain, for example, between brain and head or between ovum and uterus" xsd:string
-property_value: editor_note "Most location relations will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
+property_value: editor_note "Most location relations will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/" xsd:string
 property_value: http://purl.org/dc/elements/1.1/source http://www.obofoundry.org/ro/#OBO_REL:located_in xsd:string
 property_value: IAO:0000111 "located in" xsd:string
 property_value: IAO:0000112 "my brain is located in my head" xsd:string
@@ -37070,7 +37216,7 @@ name: location_of
 namespace: uberon
 def: "a relation between two independent continuants, the location and the target, in which the target is entirely within the location" []
 xref: RO:0001015
-property_value: editor_note "Most location relations will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
+property_value: editor_note "Most location relations will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/" xsd:string
 property_value: IAO:0000111 "is location of" xsd:string
 property_value: IAO:0000112 "my head is the location of my brain" xsd:string
 property_value: IAO:0000112 "this cage is the location of this rat" xsd:string

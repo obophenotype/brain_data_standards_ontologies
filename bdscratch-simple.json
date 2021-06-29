@@ -28,11 +28,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-06-28"
+            "val": "2021-06-29"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/bdscratch/releases/2021-06-28/bdscratch-simple.json",
+        "version": "http://purl.obolibrary.org/obo/bdscratch/releases/2021-06-29/bdscratch-simple.json",
         "xrefs": []
       },
       "nodes": [
@@ -459,6 +459,11 @@
               }
             ]
           },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000028",
+          "lbl": "symbol",
           "type": "PROPERTY"
         },
         {
