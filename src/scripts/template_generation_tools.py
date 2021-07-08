@@ -101,7 +101,7 @@ def generate_curated_class_template(dend_json_path, output_filepath):
                 if o['cell_set_preferred_alias']:
                     d['prefLabel'] = o['cell_set_preferred_alias']
                 elif o['cell_set_additional_aliases']:
-                    d['prefLabel'] = o['cell_set_additional_aliases']
+                    d['prefLabel'] = str(o['cell_set_additional_aliases']).split(EXPRESSION_SEPARATOR)[0]
                 d['Synonyms_from_taxonomy'] = get_synonyms_from_taxonomy(o)
                 d['Comment'] = get_synonym_pairs(o)
                 for k in robot_class_curation_seed.keys():
