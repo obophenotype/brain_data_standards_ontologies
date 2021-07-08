@@ -8,7 +8,7 @@ from dendrogram_tools import dend_json_2_nodes_n_edges
 from template_generation_utils import read_dendrogram_tree, index_dendrogram
 from marker_tools import read_marker_file
 
-NODE_LABEL_DISPLACEMENT = 700
+NODE_LABEL_DISPLACEMENT = 800
 
 NODE_Y_DISPLACEMENT = 300
 
@@ -95,7 +95,8 @@ def decorate_nodes(marker_expressions, tree):
     node_sizes = []
     for node in tree.nodes(data=True):
         if tree.out_degree(node[0]) == 0 and tree.in_degree(node[0]) == 1:
-            labels[node[0]] = node[1]["label"]
+            node_id = str(node[0]).replace("CS202002013_", "")
+            labels[node[0]] = node[1]["label"] + " (" + node_id + ")"
             node_sizes.append(LEAF_NODE_SIZE)
         else:
             labels[node[0]] = str(node[0]).replace("CS202002013", "")
@@ -171,4 +172,4 @@ def get_min_depth(all_leafs, pos):
 
 #visualise_tree()
 #visualise_tree("CS202002013_123")
-#visualise_tree("CS202002013_179")
+visualise_tree("CS202002013_179")
