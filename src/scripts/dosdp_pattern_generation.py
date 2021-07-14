@@ -83,7 +83,8 @@ def generate_pattern_table_reification(dend_json_path, output_filepath):
                 if o['cell_set_alias_citation']:
                     alias_citations = list()
                     for citation in str(o['cell_set_alias_citation']).split("|"):
-                        alias_citations.append("DOI:" + citation)
+                        if citation and citation.strip():
+                            alias_citations.append("DOI:" + citation)
                     d["alias_citations"] = "|".join(alias_citations)
 
                 if o['cell_set_accession'] in minimal_markers:
