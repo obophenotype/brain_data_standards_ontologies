@@ -1,12 +1,8 @@
 import unittest
 import networkx as nx
 import os
-# import matplotlib.pyplot as plt
-from networkx.drawing.nx_agraph import graphviz_layout
 from template_generation_utils import read_dendrogram_tree
-from marker_tools import generate_denormalised_marker, read_marker_file, \
-    extend_expressions
-
+from marker_tools import read_marker_file, extend_expressions
 
 PATH_DEND_JSON = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/CCN202002013.json")
 
@@ -21,30 +17,6 @@ EXPRESSIONS = "expressions"
 def delete_file(path_to_file):
     if os.path.exists(path_to_file):
         os.remove(path_to_file)
-
-
-# def visualise_tree():
-#     tree = read_dendrogram_tree(PATH_DEND_JSON)
-#     marker_expressions = read_marker_file(PATH_MARKERS)
-#
-#     labels = {}
-#     color_map = []
-#     for node in tree.nodes():
-#         labels[node] = str(node).replace("CS202002013", "")
-#         # nodes that also exist in the marker file will be displayed as red, others as blue
-#         if str(node) in marker_expressions.keys():
-#             # light red
-#             color_map.append('#F08080')
-#         else:
-#             # sky blue
-#             color_map.append('#00BFFF')
-#
-#     plt.title('CCN202002013')
-#     pos = graphviz_layout(tree, prog='dot')
-#     nx.draw(tree, pos, node_color=color_map, with_labels=False, arrows=False)
-#     nx.draw_networkx_labels(tree, pos, labels, font_size=7)
-#
-#     plt.show()
 
 
 class DenormalisedMarkerTest(unittest.TestCase):
