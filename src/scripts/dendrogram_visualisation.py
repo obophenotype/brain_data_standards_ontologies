@@ -20,8 +20,6 @@ LEAF_NODE_SIZE = 50
 
 PATH_DEND_JSON = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/CCN202002013.json")
 
-LEAF_ORDER_FILE = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../test/test_data/visualisation_order.txt")
-
 PATH_MARKERS = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../markers/CS202002013_markers.tsv")
 
 CLUSTER_ORDER = ["Lamp5", "Sncg", "Vip", "Sst", "Pvalb", "L2", "L4", "L5", "L6", "Meis", "OPC", "Astro", "Oligo",
@@ -51,18 +49,23 @@ def visualise_tree(root=None, exact_order=True):
     plt.show()
 
 
-def position_leaf_nodes(all_leafs, exact_order, pos):
+def position_leaf_nodes(all_leaves, exact_order, pos):
     if exact_order:
-        with open(LEAF_ORDER_FILE) as f:
-            content = f.readlines()
-        leaf_order = [x.strip() for x in content]
+        # sort by accession_id increasing
+        leaves = list(all_leaves)
+        list.sort(leaves, key=lambda node: int(str(node[0]).replace("CS202002013_", "")))
+        leaf_order = list()
+        for node in leaves:
+            leaf_order.append(node[1]["label"])
+
+        print(leaf_order)
     else:
         leaf_order = CLUSTER_ORDER
 
-    min_depth = get_min_depth(all_leafs, pos)
+    min_depth = get_min_depth(all_leaves, pos)
     last_x = 0
     for cluster in leaf_order:
-        last_x = position_cluster_leafs(cluster, pos, all_leafs, min_depth, last_x)
+        last_x = position_cluster_leafs(cluster, pos, all_leaves, min_depth, last_x)
 
 
 def position_cluster_leafs(cluster, pos, all_leafs, min_depth, last_x=2):
@@ -170,6 +173,6 @@ def get_min_depth(all_leafs, pos):
     return min_depth
 
 
-#visualise_tree()
+visualise_tree()
 #visualise_tree("CS202002013_123")
-visualise_tree("CS202002013_179")
+#visualise_tree("CS202002013_179")
