@@ -1,0 +1,24 @@
+pattern_name: brainCellEquivalentClasses
+pattern_iri: http://purl.obolibrary.org/obo/odk/brainCellEquivalentClasses.yaml
+description: "Equivalent class template for BDS."
+
+classes:
+  "thing": "owl:Thing"
+  "native_cell": "CL:0000003"
+
+relations:
+  has_exemplar: "http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"
+
+vars:
+  Exemplar_SC: "'thing'"
+  Exemplar: "'thing'"
+
+logical_axioms:
+   - axiom_type: subClassOf
+     text: "'has_exemplar' value %s"
+     vars:
+        - Exemplar_SC
+   - axiom_type: subClassOf
+     text: "'native_cell' and 'has_exemplar' value %s"
+     vars:
+        - Exemplar
