@@ -18,7 +18,7 @@ logical_axioms:
      text: "'has_exemplar' value %s"
      vars:
         - Exemplar_SC
-   - axiom_type: subClassOf
+   - axiom_type: equivalentTo
      text: "'native_cell' and 'has_exemplar' value %s"
      vars:
         - Exemplar

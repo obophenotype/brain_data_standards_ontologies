@@ -31,11 +31,10 @@ $(PATTERNDIR)/data/default/%.txt: $(PATTERNDIR)/dosdp-patterns/%.yaml $(PATTERND
 	if [ $(PAT) = true ]; then $(DOSDPT) terms --prefixes=template_prefixes.yaml --infile=$(word 2, $^) --template=$< --obo-prefixes=true --outfile=$@; fi
 
 # hard wiring for now.  Work on patsubst later
-mirror/ensmusg.owl: ../templates/ensmusg.tsv
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) template --input bdscratch-edit.owl --template $< \
-      --add-prefixes template_prefixes.json \
-      annotate --ontology-iri ${BDS_BASE}$@ \
-      convert --format ofn --output $@; fi
+mirror/ensmusg.owl: ../patterns/data/bds/ensmusg_data.tsv ../patterns/dosdp-patterns/ensmusg.yaml bdscratch-edit.owl
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
+        --infile=$< --template=../patterns/dosdp-patterns/ensmusg.yaml \
+        --ontology=bdscratch-edit.owl --obo-prefixes=true --outfile=$@; fi
 
 components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_EQUIVALENT_CLASS_FILES) $(OWL_MIN_MARKER_FILES) $(OWL_NOMENCLATURE_FILES)
 	$(ROBOT) merge $(patsubst %, -i %, $^) \
@@ -52,27 +51,23 @@ components/%.owl: ../templates/%.tsv bdscratch-edit.owl
     		annotate --ontology-iri ${BDS_BASE}$@ \
     		convert --format ofn --output $@
 
-components/%_class.owl: ../templates/%_class.tsv bdscratch-edit.owl
-	$(ROBOT) template --input bdscratch-edit.owl --template $< \
-    		--add-prefixes template_prefixes.json \
-    		annotate --ontology-iri ${BDS_BASE}$@ \
-    		convert --format ofn --output $@
+components/%_class.owl: ../patterns/data/bds/%_class.tsv bdscratch-edit.owl ../patterns/dosdp-patterns/taxonomy_class.yaml bdscratch-edit.owl
+	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
+        --infile=$< --template=../patterns/dosdp-patterns/taxonomy_class.yaml \
+        --ontology=bdscratch-edit.owl --obo-prefixes=true --outfile=$@
 
-components/%_equivalent_class.owl: ../templates/%_equivalent_reification.tsv bdscratch-edit.owl
-	$(ROBOT) template --input bdscratch-edit.owl --template $< \
-	        --add-prefixes template_prefixes.json \
-    		annotate --ontology-iri ${BDS_BASE}$@ \
-    		convert --format ofn --output $@
+components/%_equivalent_class.owl: ../patterns/data/bds/%_equivalent_reification.tsv ../patterns/dosdp-patterns/taxonomy_equivalent_class.yaml bdscratch-edit.owl
+	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
+        --infile=$< --template=../patterns/dosdp-patterns/taxonomy_equivalent_class.yaml \
+        --ontology=bdscratch-edit.owl --obo-prefixes=true --outfile=$@
 
-components/%_minimal_markers.owl: ../templates/%_minimal_markers.tsv bdscratch-edit.owl
-	$(ROBOT) template --input bdscratch-edit.owl --template $< \
-    		--add-prefixes template_prefixes.json \
-    		annotate --ontology-iri ${BDS_BASE}$@ \
-    		convert --format ofn --output $@
+components/%_minimal_markers.owl: ../patterns/data/bds/%_minimal_markers.tsv ../patterns/dosdp-patterns/taxonomy_minimal_markers.yaml bdscratch-edit.owl
+	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
+        --infile=$< --template=../patterns/dosdp-patterns/taxonomy_minimal_markers.yaml \
+        --ontology=bdscratch-edit.owl --obo-prefixes=true --outfile=$@
 
-components/%_non_taxonomy_classification.owl: ../templates/%_non_taxonomy_classification.tsv bdscratch-edit.owl
-	$(ROBOT) template --input bdscratch-edit.owl --template $< \
-    		--add-prefixes template_prefixes.json \
-    		annotate --ontology-iri ${BDS_BASE}$@ \
-    		convert --format ofn --output $@
+components/%_non_taxonomy_classification.owl: ../patterns/data/bds/%_non_taxonomy_classification.tsv ../patterns/dosdp-patterns/taxonomy_non_taxonomy_classification.yaml bdscratch-edit.owl
+	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
+        --infile=$< --template=../patterns/dosdp-patterns/taxonomy_non_taxonomy_classification.yaml \
+        --ontology=bdscratch-edit.owl --obo-prefixes=true --outfile=$@
 

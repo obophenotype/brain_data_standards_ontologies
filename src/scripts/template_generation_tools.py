@@ -79,32 +79,31 @@ def generate_curated_class_template(dend_json_path, output_filepath):
 
     if taxonomy_config:
         subtrees = get_subtrees(dend_tree, taxonomy_config)
-        robot_class_curation_seed = {'ID': 'ID',
-                                     'prefLabel': 'A skos:prefLabel',
-                                     'Synonyms_from_taxonomy': "A oboInOwl:hasExactSynonym SPLIT=|",
-                                     'Curated_synonyms': "A oboInOwl:hasExactSynonym SPLIT=|",
-                                     'Comment': 'A rdfs:comment',
-                                     'Classification': 'SC %',
-                                     'Classification_comment': ">A rdfs:comment",
-                                     'Classification_pub': ">A oboInOwl:hasDbXref SPLIT=|",
-                                     'Expresses': "SC 'expresses' some % SPLIT=|",
-                                     'Expresses_comment': ">A rdfs:comment",
-                                     'Expresses_pub': ">A oboInOwl:hasDbXref SPLIT=|"
-                                     }
-        class_template = [robot_class_curation_seed]
+        robot_class_curation_seed = ['defined_class',
+                                     'prefLabel',
+                                     'Synonyms_from_taxonomy',
+                                     'Curated_synonyms',
+                                     'Comment',
+                                     'Classification',
+                                     'Classification_comment',
+                                     'Classification_pub',
+                                     'Expresses',
+                                     'Expresses_comment',
+                                     'Expresses_pub']
+        class_template = []
 
         for o in dend['nodes']:
             if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or
                                                                     o['cell_set_additional_aliases']):
                 d = dict()
-                d['ID'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
+                d['defined_class'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
                 if o['cell_set_preferred_alias']:
                     d['prefLabel'] = o['cell_set_preferred_alias']
                 elif o['cell_set_additional_aliases']:
                     d['prefLabel'] = str(o['cell_set_additional_aliases']).split(EXPRESSION_SEPARATOR)[0]
                 d['Synonyms_from_taxonomy'] = get_synonyms_from_taxonomy(o)
                 d['Comment'] = get_synonym_pairs(o)
-                for k in robot_class_curation_seed.keys():
+                for k in robot_class_curation_seed:
                     if not (k in d.keys()):
                         d[k] = ''
                 class_template.append(d)
@@ -123,18 +122,13 @@ def generate_equivalent_class_reification_template(dend_json_path, output_filepa
 
     subtrees = get_subtrees(dend_tree, config_yaml)
 
-    robot_class_equivalent_seed = {'ID': 'ID',
-                                   'Exemplar': "EC CL:0000003 and 'has_exemplar' value %",
-                                   'Exemplar_SC': "SC 'has_exemplar' value %"
-                                   }
-
-    equivalent_template = [robot_class_equivalent_seed]
+    equivalent_template = []
 
     for o in dend['nodes']:
         if o['cell_set_accession'] in set().union(*subtrees) and (o['cell_set_preferred_alias'] or
                                                                   o['cell_set_additional_aliases']):
             d = dict()
-            d['ID'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
+            d['defined_class'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
             d['Exemplar'] = 'AllenDend:' + o['cell_set_accession']
             d['Exemplar_SC'] = 'AllenDend:' + o['cell_set_accession']
             equivalent_template.append(d)
@@ -174,7 +168,7 @@ def generate_equivalent_class_marker_template(dend_json_path, marker_path, outpu
     for o in dend['nodes']:
         if o['cell_set_accession'] in set().union(*subtrees) and o['cell_set_accession'] in denormalized_markers.keys():
             d = dict()
-            d['ID'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
+            d['defined_class'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
             d['CLASS_TYPE'] = 'equivalent'
             d['Evidence'] = 'http://www.semanticweb.org/brain_data_standards/AllenDend_' + o['cell_set_accession']
 
@@ -209,18 +203,13 @@ def generate_minimal_marker_template(dend_json_path, flat_marker_path, output_ma
 
     if taxonomy_config:
         subtrees = get_subtrees(dend_tree, taxonomy_config)
-        robot_min_marker_seed = {'ID': "ID",
-                                 'Markers': "SC 'expresses' some % SPLIT=|",
-                                 'part_of': "SC 'part of' some %",
-                                 'has_soma_location': "SC 'has soma location' some %"
-                                 }
-        min_marker_template = [robot_min_marker_seed]
+        min_marker_template = []
 
         for o in dend['nodes']:
             if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or
                                                                     o['cell_set_additional_aliases']):
                 d = dict()
-                d['ID'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
+                d['defined_class'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
 
                 if o['cell_set_accession'] in marker_expressions:
                     d['Markers'] = EXPRESSION_SEPARATOR.join(marker_expressions[o['cell_set_accession']][EXPRESSIONS])
@@ -257,11 +246,7 @@ def generate_non_taxonomy_classification_template(dend_json_path, output_filepat
 
     if taxonomy_config and os.path.exists(nomenclature_path):
         nomenclature_records = read_csv(nomenclature_path, id_column=cell_set_accession)
-
-        nomenclature_table_seed = {'ID': "ID",
-                                   'Classification': "SC %"
-                                   }
-        nomenclature_template = [nomenclature_table_seed]
+        nomenclature_template = []
 
         non_taxo_roots = {}
         for root in taxonomy_config['non_taxonomy_roots']:
@@ -278,7 +263,7 @@ def generate_non_taxonomy_classification_template(dend_json_path, output_filepat
                     # child of root with cell_set_preferred_alias
                     if child not in non_taxo_roots and nomenclature_records[child][0]:
                         d = dict()
-                        d['ID'] = ALLEN_DEND_CLASS + child
+                        d['defined_class'] = ALLEN_DEND_CLASS + child
                         d['Classification'] = non_taxo_roots[columns[cell_set_accession]]
                         nomenclature_template.append(d)
 

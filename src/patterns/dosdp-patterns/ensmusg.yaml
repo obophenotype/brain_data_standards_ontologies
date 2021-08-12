@@ -1,0 +1,27 @@
+pattern_name: bdsEnsmusg
+pattern_iri: http://purl.obolibrary.org/obo/odk/bdsEnsmusg.yaml
+description: "Ensmusg template for BDS."
+
+classes:
+  "thing": "owl:Thing"
+
+vars:
+  TYPE: "'thing'"
+
+data_vars:
+  NAME: "xsd:string"
+
+annotationProperties:
+  rdfsLabel: "rdfs:label"
+
+logical_axioms:
+   - axiom_type: subClassOf
+     text: "%s"
+     vars:
+        - TYPE
+
+annotations:
+  - annotationProperty: rdfsLabel
+    text: "%s"
+    vars:
+      - NAME
