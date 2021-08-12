@@ -5,7 +5,7 @@ import csv
 from dendrogram_tools import dend_json_2_nodes_n_edges
 from template_generation_utils import read_taxonomy_config, get_subtrees, read_dendrogram_tree
 
-ENSMUSG_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../templates/ensmusg.tsv")
+ENSMUSG_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../patterns/data/bds/ensmusg_data.tsv")
 
 MARKERS_PATH = "../markers/{}_markers.tsv"
 MARKERS_DENORMALIZED_PATH = "../markers/{}_markers_denormalized.tsv"
