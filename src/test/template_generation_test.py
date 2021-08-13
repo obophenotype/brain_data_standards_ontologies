@@ -99,10 +99,10 @@ class TemplateGenerationTest(unittest.TestCase):
         self.assertFalse(ALLEN_CLASS + "CS202002013_232" in output)  # root
         self.assertFalse(ALLEN_CLASS + "CS202002013_261" in output)  # root
 
-        self.assertTrue(ALLEN_CLASS + "CS202002013_28" in output)  # child of CS202002013_232
-        self.assertEqual("CL:4023017", output[ALLEN_CLASS + "CS202002013_28"][1])
-        self.assertTrue(ALLEN_CLASS + "CS202002013_32" in output)  # child of CS202002013_232 and CS202002013_235
-        self.assertEqual("CL:4023027", output[ALLEN_CLASS + "CS202002013_32"][1])
+        self.assertTrue(ALLEN_CLASS + "CS202002013_29" in output)  # child of CS202002013_232
+        self.assertEqual("CL:4023017", output[ALLEN_CLASS + "CS202002013_29"][1])
+        self.assertTrue(ALLEN_CLASS + "CS202002013_32" in output)  # child of CS202002013_232
+        self.assertEqual("CL:4023017", output[ALLEN_CLASS + "CS202002013_32"][1])
         self.assertTrue(ALLEN_CLASS + "CS202002013_40" in output)  # child of CS202002013_232
         self.assertEqual("CL:4023017", output[ALLEN_CLASS + "CS202002013_40"][1])
         self.assertTrue(ALLEN_CLASS + "CS202002013_47" in output)  # child of CS202002013_232
