@@ -249,7 +249,7 @@ def generate_non_taxonomy_classification_template(dend_json_path, output_filepat
     taxon = path_parts[len(path_parts) - 1].split(".")[0]
 
     cell_set_accession = 3
-    child_cell_set_accessions = 13
+    child_cell_set_accessions = 14
     nomenclature_path = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                      '../dendrograms/nomenclature_table_{}.csv'.format(taxon))
 
