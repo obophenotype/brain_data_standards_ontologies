@@ -133,7 +133,7 @@
 -
   Taxonomy_id: CCN201912131
   Description: Human M1 transcriptomics taxonomy
-  Reference: (Nikolas Jorstad et al., 2020)
+  Reference: (Bakken et al., 2020)
   DOI:
     - doi:10.1101/2020.03.31.016972
   Species:
@@ -194,6 +194,77 @@
       Cell_type: CL:0002453
       Location_relation: part_of
       #OPC
+    - Node: CS201912131_151
+      Cell_type: CL:0000125
+      # non-neuronal currently mapped as glial cell
+-
+  Taxonomy_id: CCN201912132
+  Description: Marmoset M1 taxonomy using 10X data
+  Reference: (Bakken et al., 2020)
+  DOI:
+    - doi:10.1101/2020.03.31.016972
+  Species:
+    - NCBITaxon:9483
+  Brain_region:
+    - UBERON:0001384
+  Root_nodes:
+    - Node: CS201912132_116
+      Cell_type: CL:0011005 
+      Location_relation: has_soma_location
+      #GABAergic interneuron
+    - Node: CS201912132_117
+      Cell_type: CL:0000679
+      Location_relation: has_soma_location
+      #glutamatergic neuron
+    - Node: CS201912132_107
+      Cell_type: CL:0000115
+      Location_relation: part_of
+      #Endothelial 
+    - Node: CS201912132_107
+      Cell_type: CL:2000043
+      Location_relation: part_of
+      #Pericyte
+    - Node: CS201912132_109
+      Cell_type: CL:4023051
+      Location_relation: part_of
+      #VLMC
+    - Node: CS201912132_94
+      Cell_type: CL:0000129
+      Location_relation: part_of
+      #Microglia-PVM currently mapped as microglia
+    - Node: CS201912132_106
+      Cell_type: CL:0000127
+      Location_relation: part_of
+      #Astrocyte
+    - Node: CS201912132_78
+      Cell_type: CL:0002453
+      Location_relation: part_of
+      #OPC
+  non_taxonomy_roots:  
+    - Node: CS201912132_105
+      Cell_type: CL:0000128
+      Location_relation: part_of
+      #Oligodendrocyte
+    - Node: CS201912132_95
+      Cell_type: CL:4023011
+      Location_relation: has_soma_location
+      #Lamp5
+    - Node: CS201912132_96
+      Cell_type: CL:4023015
+      Location_relation: has_soma_location
+      #Sncg
+    - Node: CS201912132_97
+      Cell_type: CL:4023016
+      Location_relation: has_soma_location
+      #Vip
+    - Node: CS201912132_98
+      Cell_type: CL:4023017
+      Location_relation: has_soma_location
+      #Sst
+    - Node: CS201912132_99
+      Cell_type: CL:4023018
+      Location_relation: part_of
+      #Pvalb
     - Node: CS201912131_151
       Cell_type: CL:0000125
       # non-neuronal currently mapped as glial cell
