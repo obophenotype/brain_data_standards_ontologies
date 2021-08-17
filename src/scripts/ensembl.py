@@ -75,7 +75,7 @@ def normalize_raw_markers(raw_marker):
                 for name in marker_names:
                     if name:
                         if name.lower() in marker_db:
-                            marker_ids.append(marker_db[name.lower()][0])
+                            marker_ids.append("ensembl:" + str(marker_db[name.lower()][0]))
                         else:
                             unmatched_markers.add(name)
 
@@ -93,5 +93,5 @@ def normalize_raw_markers(raw_marker):
     log.error("Following markers could not be found in the db: " + str(unmatched_markers))
 
 
-# normalize_raw_markers("../markers/raw/AIBS_M1_NSForest_v2_marmoset_ALL_Results.csv")
-# normalize_raw_markers("../markers/raw/AIBS_M1_NSForest_v2_human_ALL_Results.csv")
+normalize_raw_markers("../markers/raw/AIBS_M1_NSForest_v2_marmoset_ALL_Results.csv")
+normalize_raw_markers("../markers/raw/AIBS_M1_NSForest_v2_human_ALL_Results.csv")
