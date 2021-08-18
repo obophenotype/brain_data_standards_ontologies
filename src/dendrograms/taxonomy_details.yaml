@@ -164,10 +164,6 @@
       Cell_type: CL:0000129
       Location_relation: part_of
       #Microglia-PVM currently mapped as microglia
-    - Node: CS201912131_140
-      Cell_type: CL:0000128
-      Location_relation: part_of
-      #Oligodendrocyte
     - Node: CS201912131_142
       Cell_type: CL:0000127
       Location_relation: part_of
@@ -200,6 +196,10 @@
     - Node: CS201912131_151
       Cell_type: CL:0000125
       # non-neuronal currently mapped as glial cell
+    - Node: CS201912131_140
+      Cell_type: CL:0000128
+      Location_relation: part_of
+      #Oligodendrocyte
 -
   Taxonomy_id: CCN201912132
   Description: Marmoset M1 taxonomy using 10X data
