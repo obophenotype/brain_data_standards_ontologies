@@ -187,13 +187,14 @@ def read_tsv(tsv_path, id_column=0):
     return read_csv(tsv_path, id_column=id_column, delimiter="\t")
 
 
-def read_csv(csv_path, id_column=0, delimiter=","):
+def read_csv(csv_path, id_column=0, delimiter=",", id_to_lower=False):
     """
     Reads tsv file content into a dict. Key is the id column value and the value is list of row values
     Args:
         csv_path: Path of the CSV file
         id_column: Id column becomes the key of the dict. This column should be unique. Default is the first column.
         delimiter: Value delimiter. Default is comma.
+        id_to_lower: applies string lowercase operation to the key
 
     Returns:
         CSV content dict. Key is the first column value and the value is list of row values.
@@ -203,6 +204,8 @@ def read_csv(csv_path, id_column=0, delimiter=","):
         rd = csv.reader(fd, delimiter=delimiter, quotechar='"')
         for row in rd:
             _id = row[id_column]
+            if id_to_lower:
+                _id = str(_id).lower()
             records[_id] = row
 
     return records
