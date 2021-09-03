@@ -29,14 +29,13 @@ args = parser.parse_args()
 if args.c:
     generate_curated_class_template(args.input, args.output)
 elif args.md:
-    generate_denormalised_marker_template(args.input, '../markers/CS202002013_markers.tsv',
-                                          '../dendrograms/taxonomy_details.yaml', args.output)
+    generate_denormalised_marker_template(args.input, args.output)
 elif args.mm:
-    generate_minimal_marker_template(args.input, '../markers/CS202002013_markers.tsv', args.output)
+    generate_minimal_marker_template(args.input, args.output)
 elif args.er:
     generate_equivalent_class_reification_template(args.input, args.output)
 elif args.em:
-    generate_equivalent_class_marker_template(args.input, '../markers/CS202002013_markers.tsv', args.output)
+    generate_equivalent_class_marker_template(args.input, args.output)
 elif args.n:
     generate_non_taxonomy_classification_template(args.input, args.output)
 else:

@@ -14,6 +14,7 @@ from marker_tools import read_dendrogram_tree, read_marker_file, extend_expressi
 log = logging.getLogger(__name__)
 
 ALLEN_DEND_CLASS = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_'
+MARKER_PATH = '../markers/CS{}_markers.tsv'
 
 
 def generate_ind_template(dend_json_path, output_filepath):
@@ -137,7 +138,7 @@ def generate_equivalent_class_reification_template(dend_json_path, output_filepa
     equivalent_robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
-def generate_equivalent_class_marker_template(dend_json_path, marker_path, output_filepath):
+def generate_equivalent_class_marker_template(dend_json_path, output_filepath):
     dend = dend_json_2_nodes_n_edges(dend_json_path)
     dend_tree = read_dendrogram_tree(dend_json_path)
 
@@ -148,6 +149,7 @@ def generate_equivalent_class_marker_template(dend_json_path, marker_path, outpu
     subtrees = get_subtrees(dend_tree, config_yaml)
     root_nodes = get_root_nodes(config_yaml)
 
+    marker_path = MARKER_PATH.format(str(taxon).replace("CCN", ""))
     denormalized_markers = extend_expressions(dend_tree, read_marker_file(marker_path), root_nodes)
 
     robot_class_equivalent_seed = {'ID': 'ID',
@@ -190,14 +192,14 @@ def generate_equivalent_class_marker_template(dend_json_path, marker_path, outpu
     equivalent_robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
-def generate_minimal_marker_template(dend_json_path, flat_marker_path, output_marker_path):
+def generate_minimal_marker_template(dend_json_path, output_marker_path):
+    path_parts = dend_json_path.split(os.path.sep)
+    taxon = path_parts[len(path_parts) - 1].split(".")[0]
+    flat_marker_path = MARKER_PATH.format(str(taxon).replace("CCN", ""))
     marker_expressions = read_marker_file(flat_marker_path)
 
     dend = dend_json_2_nodes_n_edges(dend_json_path)
     dend_tree = read_dendrogram_tree(dend_json_path)
-
-    path_parts = dend_json_path.split(os.path.sep)
-    taxon = path_parts[len(path_parts) - 1].split(".")[0]
 
     taxonomy_config = read_taxonomy_config(taxon)
 

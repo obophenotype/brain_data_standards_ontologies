@@ -10,19 +10,18 @@ CLUSTER = "cluster"
 EXPRESSIONS = "expressions"
 ALLEN_ID_PREFIX = "AllenDend:"
 EXPRESSION_SEPARATOR = "|"
+MARKER_PATH = '../markers/CS{}_markers.tsv'
 
 log = logging.getLogger(__name__)
 
 
-def generate_denormalised_marker_template(dend_json_path, flat_marker_path, config_path, output_marker_path):
+def generate_denormalised_marker_template(dend_json_path, output_marker_path):
     """
     Enriches existing marker file based on inheritance relations extracted from dendrogram file.
     New maker table, following the same format as the input marker table, with each node associated with a
     non-redundant list of all markers associated with the term in the input + all markers associated with parent terms.
     Args:
         dend_json_path: Path of the dendrogram file
-        flat_marker_path: Path of the marker file that is compatible with the dendrogram file
-        config_path: Taxonomy details config file to get root terms
         output_marker_path: Path of the new marker file
 
     """
@@ -32,7 +31,8 @@ def generate_denormalised_marker_template(dend_json_path, flat_marker_path, conf
 
     root_nodes = get_root_nodes(config_yaml)
 
-    generate_denormalised_marker(dend_json_path, flat_marker_path, output_marker_path, root_nodes)
+    marker_path = MARKER_PATH.format(str(taxon).replace("CCN", ""))
+    generate_denormalised_marker(dend_json_path, marker_path, output_marker_path, root_nodes)
 
 
 def generate_denormalised_marker(dend_json_path, flat_marker_path, output_marker_path, root_terms=None):

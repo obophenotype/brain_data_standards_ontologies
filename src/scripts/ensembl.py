@@ -11,7 +11,7 @@ raw_markers_taxonomies = {"../markers/raw/AIBS_M1_NSForest_v2_marmoset_ALL_Resul
                           "../markers/raw/AIBS_M1_NSForest_v2_human_ALL_Results.csv": "201912131"}
 
 marker_dbs = {"201912132": "../markers/raw/Marmoset genes ASM275486v1.csv",
-              "201912131": "../markers/raw/Human genes GRCh38.p13.csv"}
+              "201912131": "../markers/raw/Human genes GRCh38.p2.csv"}
 
 species_mapping = {"201912132": "marmoset",
                    "201912131": "human"}
