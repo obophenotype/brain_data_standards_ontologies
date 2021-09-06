@@ -69,7 +69,7 @@ def:
   multi_clause:
     sep: " "
     clauses:
-      - text: 'A %s of the %s %s. This cell type expresses genes %s more frequently or at a higher level than most other cell types within the same brain area.'
+      - text: 'A %s of the %s %s. This cell type selectively expresses genes %s more frequently or at a higher level than most other cell types within the same brain area.'
         vars:
           - gross_cell_type
           - taxon
