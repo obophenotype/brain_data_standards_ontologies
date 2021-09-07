@@ -12,6 +12,7 @@
     - UBERON:0001384
   Brain_region_abbv:
     - MOp
+  Ensemble_data: Ensmusg
   Root_nodes:
     - Node: CS202002013_123
       Cell_type: CL:0011005 
@@ -143,6 +144,7 @@
     - NCBITaxon:9606
   Brain_region:
     - UBERON:0001384
+  Ensemble_data: Ensg
   Root_nodes:
     - Node: CS201912131_149
       Cell_type: CL:0011005 
@@ -210,9 +212,10 @@
     - NCBITaxon:9483
   Brain_region:
     - UBERON:0001384
+  Ensemble_data: Enscjag
   Root_nodes:
     - Node: CS201912132_116
-      Cell_type: CL:0011005 
+      Cell_type: CL:0011005
       Location_relation: has_soma_location
       #GABAergic interneuron
     - Node: CS201912132_117

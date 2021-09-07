@@ -216,3 +216,47 @@ def index_dendrogram(dend):
     for o in dend['nodes']:
         dend_dict[o['cell_set_accession']] = o
     return dend_dict
+
+
+def read_ensemble_data(ensemble_path):
+    ensemble = {}
+    with open(ensemble_path) as fd:
+        rd = csv.reader(fd, delimiter="\t", quotechar='"')
+        # skip first 2 rows
+        next(rd)
+        next(rd)
+        for row in rd:
+            _id = row[0]
+            ensemble[_id] = row[2]
+    return ensemble
+
+
+def read_markers(marker_path, ensmusg_names):
+    path = os.path.join(os.path.dirname(os.path.realpath(__file__)), marker_path)
+    markers = {}
+
+    with open(path) as fd:
+        rd = csv.reader(fd, delimiter="\t", quotechar='"')
+        # skip first row
+        next(rd)
+        for row in rd:
+            _id = row[0]
+
+            names = []
+            if row[2]:
+                for marker in row[2].split("|"):
+                    marker_name = marker.strip()
+                    if marker_name in ensmusg_names:
+                        names.append(marker_name)
+                    else:
+                        print(marker_name + " couldn't find in ensmusg.tsv")
+                markers[_id] = "|".join(sorted(names))
+    return markers
+
+
+def get_gross_cell_type(_id, subtrees, taxonomy_config):
+    gross_cell_type = ''
+    for index, subtree in enumerate(subtrees):
+        if _id in subtree:
+            gross_cell_type = taxonomy_config['Root_nodes'][index]['Cell_type']
+    return gross_cell_type

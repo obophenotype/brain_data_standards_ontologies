@@ -5,8 +5,9 @@ import logging
 
 from dendrogram_tools import dend_json_2_nodes_n_edges
 from template_generation_utils import get_synonyms_from_taxonomy, get_synonym_pairs, get_root_nodes, \
-    get_max_marker_count, read_taxonomy_config, get_subtrees, read_dendrogram_tree, get_dend_subtrees, index_dendrogram, read_csv
-from marker_tools import read_dendrogram_tree, read_marker_file, extend_expressions, EXPRESSIONS, EXPRESSION_SEPARATOR
+    get_max_marker_count, read_taxonomy_config, get_subtrees, read_dendrogram_tree, get_dend_subtrees, index_dendrogram,\
+    read_csv, read_ensemble_data, read_markers, get_gross_cell_type
+from marker_tools import read_marker_file, extend_expressions, EXPRESSIONS, EXPRESSION_SEPARATOR
 
 
 # TODO - refactor with generic template generation function
@@ -14,7 +15,12 @@ from marker_tools import read_dendrogram_tree, read_marker_file, extend_expressi
 log = logging.getLogger(__name__)
 
 ALLEN_DEND_CLASS = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_'
+ALLEN_DEND_INDV = 'http://www.semanticweb.org/brain_data_standards/AllenDend_'
+
 MARKER_PATH = '../markers/CS{}_markers.tsv'
+ALLEN_MARKER_PATH = "../markers/CS{}_Allen_markers.tsv"
+NOMENCLATURE_TABLE_PATH = '../dendrograms/nomenclature_table_{}.csv'
+ENSEMBLE_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../patterns/data/bds/{}_data.tsv")
 
 
 def generate_ind_template(dend_json_path, output_filepath):
@@ -60,8 +66,7 @@ def generate_ind_template(dend_json_path, output_filepath):
             d[prop] = o[prop] if prop in o.keys() else ''
 
         if o['cell_set_accession'] in set().union(*get_dend_subtrees(dend_json_path)) and o['cell_set_preferred_alias']:
-            d['Exemplar_of'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + \
-                               o['cell_set_accession']
+            d['Exemplar_of'] = ALLEN_DEND_CLASS + o['cell_set_accession']
 
         # There should only be one!
         dl.append(d)
@@ -78,32 +83,69 @@ def generate_curated_class_template(dend_json_path, output_filepath):
 
     taxonomy_config = read_taxonomy_config(taxon)
 
+    marker_path = MARKER_PATH.format(str(taxon).replace("CCN", ""))
+    allen_marker_path = ALLEN_MARKER_PATH.format(str(taxon).replace("CCN", ""))
+    ensemble_path = ENSEMBLE_PATH.format(str(taxonomy_config["Ensemble_data"]).strip().lower())
+
     if taxonomy_config:
         subtrees = get_subtrees(dend_tree, taxonomy_config)
+        ensmusg_names = read_ensemble_data(ensemble_path)
+        minimal_markers = read_markers(marker_path, ensmusg_names)
+        allen_markers = read_markers(allen_marker_path, ensmusg_names)
+
         robot_class_curation_seed = ['defined_class',
                                      'prefLabel',
+                                     'Alias_citations',
                                      'Synonyms_from_taxonomy',
                                      'Curated_synonyms',
                                      'Comment',
+                                     'Gross_cell_type',
+                                     'Taxon',
+                                     'Brain_region',
                                      'Classification',
                                      'Classification_comment',
                                      'Classification_pub',
                                      'Expresses',
                                      'Expresses_comment',
-                                     'Expresses_pub']
+                                     'Expresses_pub',
+                                     'Minimal_markers',
+                                     'Allen_markers',
+                                     'Projection_type',
+                                     'Layers',
+                                     'Brain_region_abbv',
+                                     'Species_abbv'
+                                     ]
         class_template = []
 
         for o in dend['nodes']:
             if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or
                                                                     o['cell_set_additional_aliases']):
                 d = dict()
-                d['defined_class'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
+                d['defined_class'] = ALLEN_DEND_CLASS + o['cell_set_accession']
                 if o['cell_set_preferred_alias']:
                     d['prefLabel'] = o['cell_set_preferred_alias']
                 elif o['cell_set_additional_aliases']:
                     d['prefLabel'] = str(o['cell_set_additional_aliases']).split(EXPRESSION_SEPARATOR)[0]
                 d['Synonyms_from_taxonomy'] = get_synonyms_from_taxonomy(o)
                 d['Comment'] = get_synonym_pairs(o)
+                d['Gross_cell_type'] = get_gross_cell_type(o['cell_set_accession'], subtrees, taxonomy_config)
+                d['Taxon'] = taxonomy_config['Species'][0]
+                d['Brain_region'] = taxonomy_config['Brain_region'][0]
+                if o['cell_set_alias_citation']:
+                    alias_citations = list()
+                    for citation in str(o['cell_set_alias_citation']).split("|"):
+                        if citation and citation.strip():
+                            alias_citations.append("DOI:" + citation)
+                    d["Alias_citations"] = "|".join(alias_citations)
+                if o['cell_set_accession'] in minimal_markers:
+                    d['Minimal_markers'] = minimal_markers[o['cell_set_accession']]
+                if o['cell_set_accession'] in allen_markers:
+                    d['Allen_markers'] = allen_markers[o['cell_set_accession']]
+                if 'Brain_region_abbv' in taxonomy_config:
+                    d['Brain_region_abbv'] = taxonomy_config['Brain_region_abbv'][0]
+                if 'Species_abbv' in taxonomy_config:
+                    d['Species_abbv'] = taxonomy_config['Species_abbv'][0]
+
                 for k in robot_class_curation_seed:
                     if not (k in d.keys()):
                         d[k] = ''
@@ -129,7 +171,7 @@ def generate_equivalent_class_reification_template(dend_json_path, output_filepa
         if o['cell_set_accession'] in set().union(*subtrees) and (o['cell_set_preferred_alias'] or
                                                                   o['cell_set_additional_aliases']):
             d = dict()
-            d['defined_class'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
+            d['defined_class'] = ALLEN_DEND_CLASS + o['cell_set_accession']
             d['Exemplar'] = 'AllenDend:' + o['cell_set_accession']
             d['Exemplar_SC'] = 'AllenDend:' + o['cell_set_accession']
             equivalent_template.append(d)
@@ -170,9 +212,9 @@ def generate_equivalent_class_marker_template(dend_json_path, output_filepath):
     for o in dend['nodes']:
         if o['cell_set_accession'] in set().union(*subtrees) and o['cell_set_accession'] in denormalized_markers.keys():
             d = dict()
-            d['defined_class'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
+            d['defined_class'] = ALLEN_DEND_CLASS + o['cell_set_accession']
             d['CLASS_TYPE'] = 'equivalent'
-            d['Evidence'] = 'http://www.semanticweb.org/brain_data_standards/AllenDend_' + o['cell_set_accession']
+            d['Evidence'] = ALLEN_DEND_INDV + o['cell_set_accession']
 
             for index, subtree in enumerate(subtrees):
                 if o['cell_set_accession'] in subtree:
@@ -211,7 +253,7 @@ def generate_minimal_marker_template(dend_json_path, output_marker_path):
             if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or
                                                                     o['cell_set_additional_aliases']):
                 d = dict()
-                d['defined_class'] = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_' + o['cell_set_accession']
+                d['defined_class'] = ALLEN_DEND_CLASS + o['cell_set_accession']
 
                 if o['cell_set_accession'] in marker_expressions:
                     d['Markers'] = EXPRESSION_SEPARATOR.join(marker_expressions[o['cell_set_accession']][EXPRESSIONS])
@@ -242,7 +284,7 @@ def generate_non_taxonomy_classification_template(dend_json_path, output_filepat
     cell_set_accession = 3
     child_cell_set_accessions = 14
     nomenclature_path = os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                                     '../dendrograms/nomenclature_table_{}.csv'.format(taxon))
+                                     NOMENCLATURE_TABLE_PATH.format(taxon))
 
     taxonomy_config = read_taxonomy_config(taxon)
 

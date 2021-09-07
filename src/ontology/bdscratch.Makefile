@@ -37,11 +37,23 @@ imports/%_import.owl: mirror/%.owl imports/%_terms_combined.txt
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
+# disable automatic pattern management. Manually managed below
+dosdp_patterns_default: $(SRC) all_imports .FORCE
+	if [ $(PAT) = "skip" ] && [ "${individual_patterns_names_default}" ]; then $(DOSDPT) generate --catalog=catalog-v001.xml --infile=$(PATTERNDIR)/data/default/ --template=$(PATTERNDIR)/dosdp-patterns --batch-patterns="$(individual_patterns_names_default)" --ontology=$< --obo-prefixes=true --outfile=$(PATTERNDIR)/data/default; fi
+
+# extract pattern terms even template name is different
+$(PATTERNDIR)/data/default/%.txt: $(PATTERNDIR)/data/default/%.tsv .FORCE
+	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$(PATTERNDIR)/data/default/CCN202002013_class.tsv --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$(PATTERNDIR)/data/default/CCN202002013_class.txt; fi
+	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$(PATTERNDIR)/data/default/CCN202002013_equivalent_reification.tsv --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_equivalent_class.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$(PATTERNDIR)/data/default/CCN202002013_equivalent_reification.txt; fi
+	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$(PATTERNDIR)/data/default/CCN202002013_minimal_markers.tsv --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_minimal_markers.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$(PATTERNDIR)/data/default/CCN202002013_minimal_markers.txt; fi
+	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$(PATTERNDIR)/data/default/CCN202002013_non_taxonomy_classification.tsv --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_non_taxonomy_classification.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=CCN202002013_non_taxonomy_classification.txt; fi
+
 # hard wiring for now.  Work on patsubst later
-mirror/ensmusg.owl: ../patterns/data/bds/ensmusg_data.tsv ../patterns/dosdp-patterns/ensmusg.yaml bdscratch-edit.owl
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
-        --infile=$< --template=../patterns/dosdp-patterns/ensmusg.yaml \
-        --ontology=bdscratch-edit.owl --obo-prefixes=true --outfile=$@; fi
+mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) template --input bdscratch-edit.owl --template $< \
+      --add-prefixes template_prefixes.json \
+      annotate --ontology-iri ${BDS_BASE}$@ \
+      convert --format ofn --output $@; fi
 
 components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_EQUIVALENT_CLASS_FILES) $(OWL_MIN_MARKER_FILES) $(OWL_NOMENCLATURE_FILES)
 	$(ROBOT) merge $(patsubst %, -i %, $^) \
@@ -58,23 +70,23 @@ components/%.owl: ../templates/%.tsv bdscratch-edit.owl
     		annotate --ontology-iri ${BDS_BASE}$@ \
     		convert --format ofn --output $@
 
-components/%_class.owl: ../patterns/data/bds/%_class.tsv bdscratch-edit.owl ../patterns/dosdp-patterns/taxonomy_class.yaml bdscratch-edit.owl
+components/%_class.owl: ../patterns/data/default/%_class.tsv bdscratch-edit.owl ../patterns/dosdp-patterns/taxonomy_class.yaml $(SRC) all_imports .FORCE
 	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
         --infile=$< --template=../patterns/dosdp-patterns/taxonomy_class.yaml \
-        --ontology=bdscratch-edit.owl --obo-prefixes=true --outfile=$@
+        --ontology=$(SRC) --obo-prefixes=true --outfile=$@
 
-components/%_equivalent_class.owl: ../patterns/data/bds/%_equivalent_reification.tsv ../patterns/dosdp-patterns/taxonomy_equivalent_class.yaml bdscratch-edit.owl
+components/%_equivalent_class.owl: ../patterns/data/default/%_equivalent_reification.tsv ../patterns/dosdp-patterns/taxonomy_equivalent_class.yaml $(SRC) all_imports .FORCE
 	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
         --infile=$< --template=../patterns/dosdp-patterns/taxonomy_equivalent_class.yaml \
-        --ontology=bdscratch-edit.owl --obo-prefixes=true --outfile=$@
+        --ontology=$(SRC) --obo-prefixes=true --outfile=$@
 
-components/%_minimal_markers.owl: ../patterns/data/bds/%_minimal_markers.tsv ../patterns/dosdp-patterns/taxonomy_minimal_markers.yaml bdscratch-edit.owl
+components/%_minimal_markers.owl: ../patterns/data/default/%_minimal_markers.tsv ../patterns/dosdp-patterns/taxonomy_minimal_markers.yaml $(SRC) all_imports .FORCE
 	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
         --infile=$< --template=../patterns/dosdp-patterns/taxonomy_minimal_markers.yaml \
-        --ontology=bdscratch-edit.owl --obo-prefixes=true --outfile=$@
+        --ontology=$(SRC) --obo-prefixes=true --outfile=$@
 
-components/%_non_taxonomy_classification.owl: ../patterns/data/bds/%_non_taxonomy_classification.tsv ../patterns/dosdp-patterns/taxonomy_non_taxonomy_classification.yaml bdscratch-edit.owl
+components/%_non_taxonomy_classification.owl: ../patterns/data/default/%_non_taxonomy_classification.tsv ../patterns/dosdp-patterns/taxonomy_non_taxonomy_classification.yaml $(SRC) all_imports .FORCE
 	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
         --infile=$< --template=../patterns/dosdp-patterns/taxonomy_non_taxonomy_classification.yaml \
-        --ontology=bdscratch-edit.owl --obo-prefixes=true --outfile=$@
+        --ontology=$(SRC) --obo-prefixes=true --outfile=$@
 

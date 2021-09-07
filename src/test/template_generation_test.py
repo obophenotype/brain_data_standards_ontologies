@@ -114,32 +114,66 @@ class TemplateGenerationTest(unittest.TestCase):
 
 
 def curated_class_migrate():
-    migrate_columns = [5, 6, 7, 8, 9, 10]
+    migrate_columns = ["Curated_synonyms", "Classification", "Classification_comment", "Classification_pub",
+                       "Expresses", "Expresses_comment", "Expresses_pub", "Projection_type", "Layers"]
     curation_table_migrate_manual_edits("../patterns/data/bds/CCN202002013_class_old.tsv",
                                         "../patterns/data/bds/CCN202002013_class.tsv", migrate_columns)
 
 
-def curated_dosdp_migrate():
-    migrate_columns = [8, 9]
-    curation_table_migrate_manual_edits("../patterns/data/default/brainCellRegionMinimalMarkers_backup.tsv",
-                                        "../patterns/data/default/brainCellRegionMinimalMarkers.tsv", migrate_columns)
+# def curated_dosdp_migrate():
+#     migrate_columns = ["Projection_type", "Layers"]
+#     curation_table_migrate_manual_edits("../patterns/data/default/brainCellRegionMinimalMarkers.tsv",
+#                                         "../patterns/data/bds/CCN202002013_class.tsv", migrate_columns)
+
 
 def curation_table_migrate_manual_edits(source_path, target_path, migrate_columns):
-    source = read_tsv(source_path)
-    target = read_tsv(target_path)
+    source_headers, source = read_tsv_to_dict(source_path)
+    target_headers, target = read_tsv_to_dict(target_path)
 
     new_target_path = target_path.replace(".tsv", "_migrate.tsv")
 
     with open(new_target_path, mode='w') as out:
         writer = csv.writer(out, delimiter="\t", quotechar='"')
+        writer.writerow(target_headers)
 
-        for key, row in target.items():
+        for key, row_data in target.items():
             if key in source:
                 # copy migrate columns
                 for migrate_column in migrate_columns:
-                    if len(source.get(key)) > migrate_column:
-                        row[migrate_column] = source.get(key)[migrate_column]
-                    else:
-                        row[migrate_column] = ""
+                    if migrate_column in source[key]:
+                        row_data[migrate_column] = source[key][migrate_column]
+
+            row = list()
+            for column in target_headers:
+                row.append(row_data[column])
 
             writer.writerow(row)
+
+
+def read_tsv_to_dict(tsv_path, id_column=0):
+    return read_csv_to_dict(tsv_path, id_column=id_column, delimiter="\t")
+
+
+def read_csv_to_dict(csv_path, id_column=0, delimiter=",", id_to_lower=False):
+    records = dict()
+
+    headers = []
+    with open(csv_path) as fd:
+        rd = csv.reader(fd, delimiter=delimiter, quotechar='"')
+        row_count = 0
+        for row in rd:
+            _id = row[id_column]
+            if id_to_lower:
+                _id = str(_id).lower()
+
+            if row_count == 0:
+                headers = row
+            else:
+                row_object = dict()
+                for column_num, column_value in enumerate(row):
+                    row_object[headers[column_num]] = column_value
+                records[_id] = row_object
+
+            row_count += 1
+
+    return headers, records
