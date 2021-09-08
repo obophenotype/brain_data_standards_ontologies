@@ -20,7 +20,7 @@ ALLEN_DEND_INDV = 'http://www.semanticweb.org/brain_data_standards/AllenDend_'
 MARKER_PATH = '../markers/CS{}_markers.tsv'
 ALLEN_MARKER_PATH = "../markers/CS{}_Allen_markers.tsv"
 NOMENCLATURE_TABLE_PATH = '../dendrograms/nomenclature_table_{}.csv'
-ENSEMBLE_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../patterns/data/bds/{}_data.tsv")
+ENSEMBLE_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../templates/{}.tsv")
 
 
 def generate_ind_template(dend_json_path, output_filepath):
@@ -113,7 +113,9 @@ def generate_curated_class_template(dend_json_path, output_filepath):
                                      'Projection_type',
                                      'Layers',
                                      'Brain_region_abbv',
-                                     'Species_abbv'
+                                     'Species_abbv',
+                                     'part_of',
+                                     'has_soma_location'
                                      ]
         class_template = []
 
@@ -141,10 +143,22 @@ def generate_curated_class_template(dend_json_path, output_filepath):
                     d['Minimal_markers'] = minimal_markers[o['cell_set_accession']]
                 if o['cell_set_accession'] in allen_markers:
                     d['Allen_markers'] = allen_markers[o['cell_set_accession']]
+                else:
+                    d['Allen_markers'] = ''
                 if 'Brain_region_abbv' in taxonomy_config:
                     d['Brain_region_abbv'] = taxonomy_config['Brain_region_abbv'][0]
                 if 'Species_abbv' in taxonomy_config:
                     d['Species_abbv'] = taxonomy_config['Species_abbv'][0]
+
+                for index, subtree in enumerate(subtrees):
+                    if o['cell_set_accession'] in subtree:
+                        location_rel = taxonomy_config['Root_nodes'][index]['Location_relation']
+                        if location_rel == "part_of":
+                            d['part_of'] = taxonomy_config['Brain_region'][0]
+                            d['has_soma_location'] = ''
+                        elif location_rel == "has_soma_location":
+                            d['part_of'] = ''
+                            d['has_soma_location'] = taxonomy_config['Brain_region'][0]
 
                 for k in robot_class_curation_seed:
                     if not (k in d.keys()):
@@ -232,46 +246,6 @@ def generate_equivalent_class_marker_template(dend_json_path, output_filepath):
 
     equivalent_robot_template = pd.DataFrame.from_records(equivalent_template)
     equivalent_robot_template.to_csv(output_filepath, sep="\t", index=False)
-
-
-def generate_minimal_marker_template(dend_json_path, output_marker_path):
-    path_parts = dend_json_path.split(os.path.sep)
-    taxon = path_parts[len(path_parts) - 1].split(".")[0]
-    flat_marker_path = MARKER_PATH.format(str(taxon).replace("CCN", ""))
-    marker_expressions = read_marker_file(flat_marker_path)
-
-    dend = dend_json_2_nodes_n_edges(dend_json_path)
-    dend_tree = read_dendrogram_tree(dend_json_path)
-
-    taxonomy_config = read_taxonomy_config(taxon)
-
-    if taxonomy_config:
-        subtrees = get_subtrees(dend_tree, taxonomy_config)
-        min_marker_template = []
-
-        for o in dend['nodes']:
-            if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or
-                                                                    o['cell_set_additional_aliases']):
-                d = dict()
-                d['defined_class'] = ALLEN_DEND_CLASS + o['cell_set_accession']
-
-                if o['cell_set_accession'] in marker_expressions:
-                    d['Markers'] = EXPRESSION_SEPARATOR.join(marker_expressions[o['cell_set_accession']][EXPRESSIONS])
-
-                for index, subtree in enumerate(subtrees):
-                    if o['cell_set_accession'] in subtree:
-                        location_rel = taxonomy_config['Root_nodes'][index]['Location_relation']
-                        if location_rel == "part_of":
-                            d['part_of'] = taxonomy_config['Brain_region'][0]
-                            d['has_soma_location'] = ''
-                        elif location_rel == "has_soma_location":
-                            d['part_of'] = ''
-                            d['has_soma_location'] = taxonomy_config['Brain_region'][0]
-
-                min_marker_template.append(d)
-
-        class_robot_template = pd.DataFrame.from_records(min_marker_template)
-        class_robot_template.to_csv(output_marker_path, sep="\t", index=False)
 
 
 def generate_non_taxonomy_classification_template(dend_json_path, output_filepath):

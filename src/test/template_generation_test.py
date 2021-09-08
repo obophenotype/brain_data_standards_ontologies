@@ -109,21 +109,12 @@ class TemplateGenerationTest(unittest.TestCase):
     # def test_migrate(self):
     #     curated_class_migrate()
 
-    # def test_migrate_dosdp(self):
-    #     curated_dosdp_migrate()
-
 
 def curated_class_migrate():
     migrate_columns = ["Curated_synonyms", "Classification", "Classification_comment", "Classification_pub",
                        "Expresses", "Expresses_comment", "Expresses_pub", "Projection_type", "Layers"]
-    curation_table_migrate_manual_edits("../patterns/data/bds/CCN202002013_class_old.tsv",
-                                        "../patterns/data/bds/CCN202002013_class.tsv", migrate_columns)
-
-
-# def curated_dosdp_migrate():
-#     migrate_columns = ["Projection_type", "Layers"]
-#     curation_table_migrate_manual_edits("../patterns/data/default/brainCellRegionMinimalMarkers.tsv",
-#                                         "../patterns/data/bds/CCN202002013_class.tsv", migrate_columns)
+    curation_table_migrate_manual_edits("../patterns/data/default/CCN202002013_class_old.tsv",
+                                        "../patterns/data/default/CCN202002013_class.tsv", migrate_columns)
 
 
 def curation_table_migrate_manual_edits(source_path, target_path, migrate_columns):

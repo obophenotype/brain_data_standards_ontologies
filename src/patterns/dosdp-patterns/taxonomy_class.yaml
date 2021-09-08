@@ -38,6 +38,8 @@ vars:
   Taxon: "'Vertebrata <vertebrates>'"
   Brain_region: "'regional part of brain'"
   Projection_type: "'projection type'"
+  part_of: "'thing'"
+  has_soma_location: "'thing'"
 
 data_list_vars:
   Synonyms_from_taxonomy: "xsd:string"
@@ -165,6 +167,21 @@ logical_axioms:
      text: "'bearer_of' some %s"
      vars:
        - Projection_type
+   - axiom_type: subClassOf
+     multi_clause:
+      sep: " and "
+      clauses:
+        - text: "'expresses' some %s"
+          vars:
+            - Minimal_markers
+   - axiom_type: subClassOf
+     text: "'part_of' some %s"
+     vars:
+       - part_of
+   - axiom_type: subClassOf
+     text: "'has_soma_location' some %s"
+     vars:
+       - has_soma_location
 
 annotations:
   - annotationProperty: skosPrefLabel

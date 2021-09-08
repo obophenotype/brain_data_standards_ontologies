@@ -1,6 +1,6 @@
 from template_generation_tools import generate_curated_class_template, generate_ind_template, \
     generate_equivalent_class_reification_template, generate_equivalent_class_marker_template, \
-    generate_minimal_marker_template, generate_non_taxonomy_classification_template
+    generate_non_taxonomy_classification_template
 from marker_tools import generate_denormalised_marker_template
 import argparse
 
@@ -30,8 +30,6 @@ if args.c:
     generate_curated_class_template(args.input, args.output)
 elif args.md:
     generate_denormalised_marker_template(args.input, args.output)
-elif args.mm:
-    generate_minimal_marker_template(args.input, args.output)
 elif args.er:
     generate_equivalent_class_reification_template(args.input, args.output)
 elif args.em:

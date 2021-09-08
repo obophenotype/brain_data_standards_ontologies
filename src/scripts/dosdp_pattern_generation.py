@@ -5,12 +5,10 @@ from dendrogram_tools import dend_json_2_nodes_n_edges
 from template_generation_utils import read_taxonomy_config, get_subtrees, read_dendrogram_tree, read_ensemble_data, \
     read_markers, get_gross_cell_type
 
-ENSMUSG_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../patterns/data/bds/ensmusg_data.tsv")
-
 MARKER_PATH = '../markers/CS{}_markers.tsv'
 MARKERS_DENORMALIZED_PATH = "../markers/{}_markers_denormalized.tsv"
 ALLEN_MARKER_PATH = "../markers/CS{}_Allen_markers.tsv"
-ENSEMBLE_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../patterns/data/bds/{}_data.tsv")
+ENSEMBLE_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../templates/{}.tsv")
 
 ALLEN_DEND_ = 'AllenDendClass:'
 

@@ -12,7 +12,6 @@ OWL_FILES = $(patsubst %, components/%.owl, $(JOBS))
 OWL_CLASS_FILES = $(patsubst %, components/%_class.owl, $(JOBS))
 OWL_EQUIVALENT_CLASS_FILES = $(patsubst %, components/%_equivalent_class.owl, $(JOBS))
 GENE_FILES = $(patsubst %, mirror/%.owl, $(JOBS))
-OWL_MIN_MARKER_FILES = $(patsubst %, components/%_minimal_markers.owl, $(JOBS))
 OWL_NOMENCLATURE_FILES = $(patsubst %, components/%_non_taxonomy_classification.owl, $(JOBS))
 
 #DEND_FILES = $(patsubst %, ../dendrograms/%.json, $(JOBS))
@@ -45,8 +44,7 @@ dosdp_patterns_default: $(SRC) all_imports .FORCE
 $(PATTERNDIR)/data/default/%.txt: $(PATTERNDIR)/data/default/%.tsv .FORCE
 	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$(PATTERNDIR)/data/default/CCN202002013_class.tsv --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$(PATTERNDIR)/data/default/CCN202002013_class.txt; fi
 	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$(PATTERNDIR)/data/default/CCN202002013_equivalent_reification.tsv --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_equivalent_class.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$(PATTERNDIR)/data/default/CCN202002013_equivalent_reification.txt; fi
-	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$(PATTERNDIR)/data/default/CCN202002013_minimal_markers.tsv --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_minimal_markers.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$(PATTERNDIR)/data/default/CCN202002013_minimal_markers.txt; fi
-	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$(PATTERNDIR)/data/default/CCN202002013_non_taxonomy_classification.tsv --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_non_taxonomy_classification.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=CCN202002013_non_taxonomy_classification.txt; fi
+	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$(PATTERNDIR)/data/default/CCN202002013_non_taxonomy_classification.tsv --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_non_taxonomy_classification.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$(PATTERNDIR)/CCN202002013_non_taxonomy_classification.txt; fi
 
 # hard wiring for now.  Work on patsubst later
 mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
@@ -78,11 +76,6 @@ components/%_class.owl: ../patterns/data/default/%_class.tsv bdscratch-edit.owl 
 components/%_equivalent_class.owl: ../patterns/data/default/%_equivalent_reification.tsv ../patterns/dosdp-patterns/taxonomy_equivalent_class.yaml $(SRC) all_imports .FORCE
 	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
         --infile=$< --template=../patterns/dosdp-patterns/taxonomy_equivalent_class.yaml \
-        --ontology=$(SRC) --obo-prefixes=true --outfile=$@
-
-components/%_minimal_markers.owl: ../patterns/data/default/%_minimal_markers.tsv ../patterns/dosdp-patterns/taxonomy_minimal_markers.yaml $(SRC) all_imports .FORCE
-	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
-        --infile=$< --template=../patterns/dosdp-patterns/taxonomy_minimal_markers.yaml \
         --ontology=$(SRC) --obo-prefixes=true --outfile=$@
 
 components/%_non_taxonomy_classification.owl: ../patterns/data/default/%_non_taxonomy_classification.tsv ../patterns/dosdp-patterns/taxonomy_non_taxonomy_classification.yaml $(SRC) all_imports .FORCE
