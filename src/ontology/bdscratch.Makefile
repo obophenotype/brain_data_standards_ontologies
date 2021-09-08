@@ -10,7 +10,6 @@ BDS_BASE = http://www.semanticweb.org/brain_data_standards/
 
 OWL_FILES = $(patsubst %, components/%.owl, $(JOBS))
 OWL_CLASS_FILES = $(patsubst %, components/%_class.owl, $(JOBS))
-OWL_EQUIVALENT_CLASS_FILES = $(patsubst %, components/%_equivalent_class.owl, $(JOBS))
 GENE_FILES = $(patsubst %, mirror/%.owl, $(JOBS))
 OWL_NOMENCLATURE_FILES = $(patsubst %, components/%_non_taxonomy_classification.owl, $(JOBS))
 
@@ -43,8 +42,7 @@ dosdp_patterns_default: $(SRC) all_imports .FORCE
 # extract pattern terms even template name is different
 $(PATTERNDIR)/data/default/%.txt: $(PATTERNDIR)/data/default/%.tsv .FORCE
 	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$(PATTERNDIR)/data/default/CCN202002013_class.tsv --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$(PATTERNDIR)/data/default/CCN202002013_class.txt; fi
-	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$(PATTERNDIR)/data/default/CCN202002013_equivalent_reification.tsv --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_equivalent_class.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$(PATTERNDIR)/data/default/CCN202002013_equivalent_reification.txt; fi
-	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$(PATTERNDIR)/data/default/CCN202002013_non_taxonomy_classification.tsv --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_non_taxonomy_classification.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$(PATTERNDIR)/CCN202002013_non_taxonomy_classification.txt; fi
+	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$(PATTERNDIR)/data/default/CCN202002013_non_taxonomy_classification.tsv --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_non_taxonomy_classification.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$(PATTERNDIR)/data/default/CCN202002013_non_taxonomy_classification.txt; fi
 
 # hard wiring for now.  Work on patsubst later
 mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
@@ -53,7 +51,7 @@ mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
       annotate --ontology-iri ${BDS_BASE}$@ \
       convert --format ofn --output $@; fi
 
-components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_EQUIVALENT_CLASS_FILES) $(OWL_MIN_MARKER_FILES) $(OWL_NOMENCLATURE_FILES)
+components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MIN_MARKER_FILES) $(OWL_NOMENCLATURE_FILES)
 	$(ROBOT) merge $(patsubst %, -i %, $^) \
 	 --collapse-import-closure false \
 	 annotate --ontology-iri ${BDS_BASE}$@  \
@@ -71,11 +69,6 @@ components/%.owl: ../templates/%.tsv bdscratch-edit.owl
 components/%_class.owl: ../patterns/data/default/%_class.tsv bdscratch-edit.owl ../patterns/dosdp-patterns/taxonomy_class.yaml $(SRC) all_imports .FORCE
 	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
         --infile=$< --template=../patterns/dosdp-patterns/taxonomy_class.yaml \
-        --ontology=$(SRC) --obo-prefixes=true --outfile=$@
-
-components/%_equivalent_class.owl: ../patterns/data/default/%_equivalent_reification.tsv ../patterns/dosdp-patterns/taxonomy_equivalent_class.yaml $(SRC) all_imports .FORCE
-	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
-        --infile=$< --template=../patterns/dosdp-patterns/taxonomy_equivalent_class.yaml \
         --ontology=$(SRC) --obo-prefixes=true --outfile=$@
 
 components/%_non_taxonomy_classification.owl: ../patterns/data/default/%_non_taxonomy_classification.tsv ../patterns/dosdp-patterns/taxonomy_non_taxonomy_classification.yaml $(SRC) all_imports .FORCE

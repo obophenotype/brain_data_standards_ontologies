@@ -6,6 +6,7 @@ classes:
   "cell": "CL:0000000"
   "thing": "owl:Thing"
   "animal cell": "CL:0000548"
+  "native_cell": "CL:0000003"
   "Vertebrata <vertebrates>": "NCBITaxon:7742"
   "regional part of brain": "UBERON:0002616"
   "sequence_feature": "SO:0000110"
@@ -18,6 +19,7 @@ relations:
   in_taxon: "RO:0002162"
   has_soma_location: "RO:0002100"
   bearer_of: "RO:0000053"
+  has_exemplar: "http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"
 
 annotationProperties:
   skosPrefLabel: "skos:prefLabel"
@@ -40,6 +42,7 @@ vars:
   Projection_type: "'projection type'"
   part_of: "'thing'"
   has_soma_location: "'thing'"
+  Individual: "'thing'"
 
 data_list_vars:
   Synonyms_from_taxonomy: "xsd:string"
@@ -182,6 +185,14 @@ logical_axioms:
      text: "'has_soma_location' some %s"
      vars:
        - has_soma_location
+   - axiom_type: subClassOf
+     text: "'has_exemplar' value %s"
+     vars:
+        - Individual
+   - axiom_type: equivalentTo
+     text: "'native_cell' and 'has_exemplar' value %s"
+     vars:
+        - Individual
 
 annotations:
   - annotationProperty: skosPrefLabel

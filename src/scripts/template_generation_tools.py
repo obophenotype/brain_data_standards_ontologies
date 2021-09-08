@@ -10,12 +10,11 @@ from template_generation_utils import get_synonyms_from_taxonomy, get_synonym_pa
 from marker_tools import read_marker_file, extend_expressions, EXPRESSIONS, EXPRESSION_SEPARATOR
 
 
-# TODO - refactor with generic template generation function
-
 log = logging.getLogger(__name__)
 
 ALLEN_DEND_CLASS = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_'
 ALLEN_DEND_INDV = 'http://www.semanticweb.org/brain_data_standards/AllenDend_'
+ALLEN_DEND_INDV_PREFIX = 'AllenDend:'
 
 MARKER_PATH = '../markers/CS{}_markers.tsv'
 ALLEN_MARKER_PATH = "../markers/CS{}_Allen_markers.tsv"
@@ -110,6 +109,7 @@ def generate_curated_class_template(dend_json_path, output_filepath):
                                      'Expresses_pub',
                                      'Minimal_markers',
                                      'Allen_markers',
+                                     'Individual',
                                      'Projection_type',
                                      'Layers',
                                      'Brain_region_abbv',
@@ -149,6 +149,7 @@ def generate_curated_class_template(dend_json_path, output_filepath):
                     d['Brain_region_abbv'] = taxonomy_config['Brain_region_abbv'][0]
                 if 'Species_abbv' in taxonomy_config:
                     d['Species_abbv'] = taxonomy_config['Species_abbv'][0]
+                d['Individual'] = ALLEN_DEND_INDV_PREFIX + o['cell_set_accession']
 
                 for index, subtree in enumerate(subtrees):
                     if o['cell_set_accession'] in subtree:
@@ -167,31 +168,6 @@ def generate_curated_class_template(dend_json_path, output_filepath):
 
         class_robot_template = pd.DataFrame.from_records(class_template)
         class_robot_template.to_csv(output_filepath, sep="\t", index=False)
-
-
-def generate_equivalent_class_reification_template(dend_json_path, output_filepath):
-    dend = dend_json_2_nodes_n_edges(dend_json_path)
-    dend_tree = read_dendrogram_tree(dend_json_path)
-
-    path_parts = dend_json_path.split(os.path.sep)
-    taxon = path_parts[len(path_parts) - 1].split(".")[0]
-    config_yaml = read_taxonomy_config(taxon)
-
-    subtrees = get_subtrees(dend_tree, config_yaml)
-
-    equivalent_template = []
-
-    for o in dend['nodes']:
-        if o['cell_set_accession'] in set().union(*subtrees) and (o['cell_set_preferred_alias'] or
-                                                                  o['cell_set_additional_aliases']):
-            d = dict()
-            d['defined_class'] = ALLEN_DEND_CLASS + o['cell_set_accession']
-            d['Exemplar'] = 'AllenDend:' + o['cell_set_accession']
-            d['Exemplar_SC'] = 'AllenDend:' + o['cell_set_accession']
-            equivalent_template.append(d)
-
-    equivalent_robot_template = pd.DataFrame.from_records(equivalent_template)
-    equivalent_robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
 def generate_equivalent_class_marker_template(dend_json_path, output_filepath):
