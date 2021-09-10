@@ -8,6 +8,8 @@ JOBS = CCN202002013 #CCN201912131 CCN201810310 CCN201908211 CCN201908210
 GENE_FILES = ensmusg
 BDS_BASE = http://www.semanticweb.org/brain_data_standards/
 
+TSV_CLASS_FILES = $(patsubst %, ../patterns/data/default/%_class.tsv, $(JOBS))
+
 OWL_FILES = $(patsubst %, components/%.owl, $(JOBS))
 OWL_CLASS_FILES = $(patsubst %, components/%_class.owl, $(JOBS))
 GENE_FILES = $(patsubst %, mirror/%.owl, $(JOBS))
@@ -39,10 +41,21 @@ imports/%_import.owl: mirror/%.owl imports/%_terms_combined.txt
 dosdp_patterns_default: $(SRC) all_imports .FORCE
 	if [ $(PAT) = "skip" ] && [ "${individual_patterns_names_default}" ]; then $(DOSDPT) generate --catalog=catalog-v001.xml --infile=$(PATTERNDIR)/data/default/ --template=$(PATTERNDIR)/dosdp-patterns --batch-patterns="$(individual_patterns_names_default)" --ontology=$< --obo-prefixes=true --outfile=$(PATTERNDIR)/data/default; fi
 
-# extract pattern terms even template name is different
-$(PATTERNDIR)/data/default/%.txt: $(PATTERNDIR)/data/default/%.tsv .FORCE
-	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$(PATTERNDIR)/data/default/CCN202002013_class.tsv --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$(PATTERNDIR)/data/default/CCN202002013_class.txt; fi
-	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$(PATTERNDIR)/data/default/CCN202002013_non_taxonomy_classification.tsv --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_non_taxonomy_classification.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$(PATTERNDIR)/data/default/CCN202002013_non_taxonomy_classification.txt; fi
+# disable automatic term management and manually manage below
+$(PATTERNDIR)/data/default/%.txt: $(PATTERNDIR)/dosdp-patterns/%.yaml $(PATTERNDIR)/data/default/%.tsv .FORCE
+	if [ $(PAT) = 'skip' ]; then $(DOSDPT) terms --infile=$(word 2, $^) --template=$< --obo-prefixes=true --outfile=$@; fi
+
+$(PATTERNDIR)/data/default/%_class_base.txt: $(PATTERNDIR)/data/default/%_class_base.tsv $(TSV_CLASS_FILES) .FORCE
+	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$@; fi
+
+$(PATTERNDIR)/data/default/%_class_curation.txt: $(PATTERNDIR)/data/default/%_class_curation.tsv $(TSV_CLASS_FILES) .FORCE
+	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$@; fi
+
+$(PATTERNDIR)/data/default/%_non_taxonomy_classification.txt: $(PATTERNDIR)/data/default/%_non_taxonomy_classification.tsv .FORCE
+	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_non_taxonomy_classification.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$@; fi
+
+$(PATTERNDIR)/data/default/%_class.tsv: $(PATTERNDIR)/data/default/%_class_base.tsv $(PATTERNDIR)/data/default/%_class_curation.tsv
+	python ../scripts/template_runner.py modifier --merge -i=$< -i2=$(word 2, $^) -o=$@
 
 # hard wiring for now.  Work on patsubst later
 mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
@@ -66,13 +79,13 @@ components/%.owl: ../templates/%.tsv bdscratch-edit.owl
     		annotate --ontology-iri ${BDS_BASE}$@ \
     		convert --format ofn --output $@
 
-components/%_class.owl: ../patterns/data/default/%_class.tsv bdscratch-edit.owl ../patterns/dosdp-patterns/taxonomy_class.yaml $(SRC) all_imports .FORCE
+components/%_class.owl: $(PATTERNDIR)/data/default/%_class.tsv bdscratch-edit.owl $(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml $(SRC) all_imports .FORCE
 	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
-        --infile=$< --template=../patterns/dosdp-patterns/taxonomy_class.yaml \
+        --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml \
         --ontology=$(SRC) --obo-prefixes=true --outfile=$@
 
-components/%_non_taxonomy_classification.owl: ../patterns/data/default/%_non_taxonomy_classification.tsv ../patterns/dosdp-patterns/taxonomy_non_taxonomy_classification.yaml $(SRC) all_imports .FORCE
+components/%_non_taxonomy_classification.owl: $(PATTERNDIR)/data/default/%_non_taxonomy_classification.tsv $(PATTERNDIR)/dosdp-patterns/taxonomy_non_taxonomy_classification.yaml $(SRC) all_imports .FORCE
 	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
-        --infile=$< --template=../patterns/dosdp-patterns/taxonomy_non_taxonomy_classification.yaml \
+        --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_non_taxonomy_classification.yaml \
         --ontology=$(SRC) --obo-prefixes=true --outfile=$@
 

@@ -192,7 +192,7 @@ def read_csv(csv_path, id_column=0, delimiter=",", id_to_lower=False):
     Reads tsv file content into a dict. Key is the id column value and the value is list of row values
     Args:
         csv_path: Path of the CSV file
-        id_column: Id column becomes the key of the dict. This column should be unique. Default is the first column.
+        id_column: Id column becomes the keys of the dict. This column should be unique. Default is the first column.
         delimiter: Value delimiter. Default is comma.
         id_to_lower: applies string lowercase operation to the key
 
@@ -209,6 +209,58 @@ def read_csv(csv_path, id_column=0, delimiter=",", id_to_lower=False):
             records[_id] = row
 
     return records
+
+
+def read_tsv_to_dict(tsv_path, id_column=0):
+    """
+    Reads tsv file content into a dict. Key is the first column value and the value is dict representation of the
+    row values (each header is a key and column value is the value).
+    Args:
+        tsv_path: Path of the TSV file
+        id_column: Id column becomes the key of the dict. This column should be unique. Default value is first column.
+    Returns:
+        Function provides two return values: first; headers of the table and second; the TSV content dict. Key of the
+        content is the first column value and the values are dict of row values.
+    """
+    return read_csv_to_dict(tsv_path, id_column=id_column, delimiter="\t")
+
+
+def read_csv_to_dict(csv_path, id_column=0, delimiter=",", id_to_lower=False):
+    """
+    Reads tsv file content into a dict. Key is the first column value and the value is dict representation of the
+    row values (each header is a key and column value is the value).
+    Args:
+        csv_path: Path of the CSV file
+        id_column: Id column becomes the keys of the dict. This column should be unique. Default is the first column.
+        delimiter: Value delimiter. Default is comma.
+        id_to_lower: applies string lowercase operation to the key
+
+    Returns:
+        Function provides two return values: first; headers of the table and second; the CSV content dict. Key of the
+        content is the first column value and the values are dict of row values.
+    """
+    records = dict()
+
+    headers = []
+    with open(csv_path) as fd:
+        rd = csv.reader(fd, delimiter=delimiter, quotechar='"')
+        row_count = 0
+        for row in rd:
+            _id = row[id_column]
+            if id_to_lower:
+                _id = str(_id).lower()
+
+            if row_count == 0:
+                headers = row
+            else:
+                row_object = dict()
+                for column_num, column_value in enumerate(row):
+                    row_object[headers[column_num]] = column_value
+                records[_id] = row_object
+
+            row_count += 1
+
+    return headers, records
 
 
 def index_dendrogram(dend):
@@ -260,3 +312,36 @@ def get_gross_cell_type(_id, subtrees, taxonomy_config):
         if _id in subtree:
             gross_cell_type = taxonomy_config['Root_nodes'][index]['Cell_type']
     return gross_cell_type
+
+
+def merge_tables(base_tsv, extension_tsv, output_filepath):
+    """
+    Applies all columns of the extension_tsv to the base tsv and generates a new table in the output_filepath.
+    Args:
+        base_tsv: Base table to add new columns.
+        extension_tsv: Extension table
+        output_filepath: Output file path
+    """
+    base_headers, base = read_tsv_to_dict(base_tsv)
+    extension_headers, extension = read_tsv_to_dict(extension_tsv)
+
+    migrate_columns = [x for x in extension_headers if x not in base_headers]
+    merged_headers = base_headers + (list(migrate_columns))
+
+    with open(output_filepath, mode='w') as out:
+        writer = csv.writer(out, delimiter="\t", quotechar='"')
+        writer.writerow(merged_headers)
+
+        for key, row_data in base.items():
+            if key in extension:
+                for migrate_column in migrate_columns:
+                    row_data[migrate_column] = extension[key][migrate_column]
+            else:
+                for migrate_column in migrate_columns:
+                    row_data[migrate_column] = ''
+
+            row = list()
+            for column in merged_headers:
+                row.append(row_data[column])
+
+            writer.writerow(row)

@@ -4,10 +4,9 @@ import os
 import logging
 
 from dendrogram_tools import dend_json_2_nodes_n_edges
-from template_generation_utils import get_synonyms_from_taxonomy, get_synonym_pairs, get_root_nodes, \
-    get_max_marker_count, read_taxonomy_config, get_subtrees, read_dendrogram_tree, get_dend_subtrees, index_dendrogram,\
-    read_csv, read_ensemble_data, read_markers, get_gross_cell_type
-from marker_tools import read_marker_file, extend_expressions, EXPRESSIONS, EXPRESSION_SEPARATOR
+from template_generation_utils import get_synonyms_from_taxonomy, get_synonym_pairs, read_taxonomy_config, \
+    get_subtrees, read_dendrogram_tree, get_dend_subtrees, index_dendrogram,\
+    read_csv, read_ensemble_data, read_markers, get_gross_cell_type, merge_tables
 
 
 log = logging.getLogger(__name__)
@@ -20,6 +19,8 @@ MARKER_PATH = '../markers/CS{}_markers.tsv'
 ALLEN_MARKER_PATH = "../markers/CS{}_Allen_markers.tsv"
 NOMENCLATURE_TABLE_PATH = '../dendrograms/nomenclature_table_{}.csv'
 ENSEMBLE_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../templates/{}.tsv")
+
+EXPRESSION_SEPARATOR = "|"
 
 
 def generate_ind_template(dend_json_path, output_filepath):
@@ -73,7 +74,7 @@ def generate_ind_template(dend_json_path, output_filepath):
     robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
-def generate_curated_class_template(dend_json_path, output_filepath):
+def generate_base_class_template(dend_json_path, output_filepath):
     dend = dend_json_2_nodes_n_edges(dend_json_path)
     dend_tree = read_dendrogram_tree(dend_json_path)
 
@@ -96,22 +97,13 @@ def generate_curated_class_template(dend_json_path, output_filepath):
                                      'prefLabel',
                                      'Alias_citations',
                                      'Synonyms_from_taxonomy',
-                                     'Curated_synonyms',
                                      'Comment',
                                      'Gross_cell_type',
                                      'Taxon',
                                      'Brain_region',
-                                     'Classification',
-                                     'Classification_comment',
-                                     'Classification_pub',
-                                     'Expresses',
-                                     'Expresses_comment',
-                                     'Expresses_pub',
                                      'Minimal_markers',
                                      'Allen_markers',
                                      'Individual',
-                                     'Projection_type',
-                                     'Layers',
                                      'Brain_region_abbv',
                                      'Species_abbv',
                                      'part_of',
@@ -170,58 +162,43 @@ def generate_curated_class_template(dend_json_path, output_filepath):
         class_robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
-def generate_equivalent_class_marker_template(dend_json_path, output_filepath):
+def generate_curated_class_template(dend_json_path, output_filepath):
     dend = dend_json_2_nodes_n_edges(dend_json_path)
     dend_tree = read_dendrogram_tree(dend_json_path)
 
     path_parts = dend_json_path.split(os.path.sep)
     taxon = path_parts[len(path_parts) - 1].split(".")[0]
-    config_yaml = read_taxonomy_config(taxon)
 
-    subtrees = get_subtrees(dend_tree, config_yaml)
-    root_nodes = get_root_nodes(config_yaml)
+    taxonomy_config = read_taxonomy_config(taxon)
 
-    marker_path = MARKER_PATH.format(str(taxon).replace("CCN", ""))
-    denormalized_markers = extend_expressions(dend_tree, read_marker_file(marker_path), root_nodes)
+    if taxonomy_config:
+        subtrees = get_subtrees(dend_tree, taxonomy_config)
+        robot_class_curation_seed = ['defined_class',
+                                     'Curated_synonyms',
+                                     'Classification',
+                                     'Classification_comment',
+                                     'Classification_pub',
+                                     'Expresses',
+                                     'Expresses_comment',
+                                     'Expresses_pub',
+                                     'Projection_type',
+                                     'Layers'
+                                     ]
+        class_template = []
 
-    robot_class_equivalent_seed = {'ID': 'ID',
-                                   'CLASS_TYPE': 'CLASS_TYPE',
-                                   # 'Definition': 'A IAO:0000115',
-                                   'Evidence': 'AI RO:0002558',
-                                   'Gross_cell_type': 'C %',
-                                   'Brain_region': "C 'has soma location' some %"
-                                   # 'Brain_region': "C {} some %".format(config_yaml
-                                   #                                      ['Root_nodes'][0]['Location_relation'])
-                                   }
+        for o in dend['nodes']:
+            if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or
+                                                                    o['cell_set_additional_aliases']):
+                d = dict()
+                d['defined_class'] = ALLEN_DEND_CLASS + o['cell_set_accession']
 
-    for i in range(get_max_marker_count(denormalized_markers)):
-        robot_class_equivalent_seed['Marker' + str(i+1)] = "C expresses some %"
+                for k in robot_class_curation_seed:
+                    if not (k in d.keys()):
+                        d[k] = ''
+                class_template.append(d)
 
-    equivalent_template = [robot_class_equivalent_seed]
-
-    for o in dend['nodes']:
-        if o['cell_set_accession'] in set().union(*subtrees) and o['cell_set_accession'] in denormalized_markers.keys():
-            d = dict()
-            d['defined_class'] = ALLEN_DEND_CLASS + o['cell_set_accession']
-            d['CLASS_TYPE'] = 'equivalent'
-            d['Evidence'] = ALLEN_DEND_INDV + o['cell_set_accession']
-
-            for index, subtree in enumerate(subtrees):
-                if o['cell_set_accession'] in subtree:
-                    d['Gross_cell_type'] = config_yaml['Root_nodes'][index]['Cell_type']
-
-            d['Brain_region'] = config_yaml['Brain_region'][0]
-            # d['Definition'] = "A {Gross_cell_type} with a soma in the {Brain_region}, which expresses: " \
-            #                   "".format(Gross_cell_type=d['Gross_cell_type'], Brain_region=d['Brain_region']) \
-            #                   + ' and '.join(denormalized_markers[o['cell_set_accession']][EXPRESSIONS])
-
-            for index, marker in enumerate(denormalized_markers[o['cell_set_accession']][EXPRESSIONS], start=1):
-                d['Marker' + str(index)] = marker
-
-            equivalent_template.append(d)
-
-    equivalent_robot_template = pd.DataFrame.from_records(equivalent_template)
-    equivalent_robot_template.to_csv(output_filepath, sep="\t", index=False)
+        class_robot_template = pd.DataFrame.from_records(class_template)
+        class_robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
 def generate_non_taxonomy_classification_template(dend_json_path, output_filepath):
@@ -265,3 +242,13 @@ def generate_non_taxonomy_classification_template(dend_json_path, output_filepat
         class_robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
+def merge_class_templates(base_tsv, curation_tsv, output_filepath):
+    """
+    Applies all columns of the curation_tsv to the base_tsv and generates a new merged class template in the
+    output_filepath.
+    Args:
+        base_tsv: Path of the base table to add new columns.
+        curation_tsv: Path of the manual curations' table
+        output_filepath: Output file path
+    """
+    merge_tables(base_tsv, curation_tsv, output_filepath)
