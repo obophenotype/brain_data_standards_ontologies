@@ -175,7 +175,7 @@ def generate_marker_table(marker_data, output_filepath):
         d = dict()
         d['Taxonomy_node_ID'] = o
         d['clusterName'] = marker_data[o][CLUSTER]
-        d['Markers'] = EXPRESSION_SEPARATOR.join(marker_data[o][EXPRESSIONS])
+        d['Markers'] = EXPRESSION_SEPARATOR.join(sorted(marker_data[o][EXPRESSIONS]))
         for k in robot_marker_template_seed.keys():
             if not (k in d.keys()):
                 d[k] = ''

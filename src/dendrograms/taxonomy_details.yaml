@@ -12,7 +12,8 @@
     - UBERON:0001384
   Brain_region_abbv:
     - MOp
-  Ensemble_data: Ensmusg
+  Reference_gene_list:
+    - Ensmusg
   Root_nodes:
     - Node: CS202002013_123
       Cell_type: CL:0011005 
@@ -144,7 +145,8 @@
     - NCBITaxon:9606
   Brain_region:
     - UBERON:0001384
-  Ensemble_data: Ensg
+  Reference_gene_list:
+    - Ensg
   Root_nodes:
     - Node: CS201912131_149
       Cell_type: CL:0011005 
@@ -173,34 +175,27 @@
   non_taxonomy_roots:      
     - Node: CS201912131_128
       Cell_type: CL:4023011
-      Location_relation: has_soma_location
       #Lamp5
     - Node: CS201912131_129
       Cell_type: CL:4023015
-      Location_relation: has_soma_location
       #Sncg
     - Node: CS201912131_130
       Cell_type: CL:4023016
-      Location_relation: has_soma_location
       #Vip
     - Node: CS201912131_131
       Cell_type: CL:4023017
-      Location_relation: has_soma_location
       #Sst
     - Node: CS201912131_132
       Cell_type: CL:4023018
-      Location_relation: part_of
       #Pvalb
     - Node: CS201912131_147
       Cell_type: CL:0002453
-      Location_relation: part_of
       #OPC
     - Node: CS201912131_151
       Cell_type: CL:0000125
       # non-neuronal currently mapped as glial cell
     - Node: CS201912131_140
       Cell_type: CL:0000128
-      Location_relation: part_of
       #Oligodendrocyte
 -
   Taxonomy_id: CCN201912132
@@ -212,7 +207,8 @@
     - NCBITaxon:9483
   Brain_region:
     - UBERON:0001384
-  Ensemble_data: Enscjag
+  Reference_gene_list:
+    - Enscjag
   Root_nodes:
     - Node: CS201912132_116
       Cell_type: CL:0011005
@@ -249,27 +245,21 @@
   non_taxonomy_roots:  
     - Node: CS201912132_105
       Cell_type: CL:0000128
-      Location_relation: part_of
       #Oligodendrocyte
     - Node: CS201912132_95
       Cell_type: CL:4023011
-      Location_relation: has_soma_location
       #Lamp5
     - Node: CS201912132_96
       Cell_type: CL:4023015
-      Location_relation: has_soma_location
       #Sncg
     - Node: CS201912132_97
       Cell_type: CL:4023016
-      Location_relation: has_soma_location
       #Vip
     - Node: CS201912132_98
       Cell_type: CL:4023017
-      Location_relation: has_soma_location
       #Sst
     - Node: CS201912132_99
       Cell_type: CL:4023018
-      Location_relation: part_of
       #Pvalb
     - Node: CS201912131_151
       Cell_type: CL:0000125

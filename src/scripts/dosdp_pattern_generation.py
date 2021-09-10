@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 from dendrogram_tools import dend_json_2_nodes_n_edges
-from template_generation_utils import read_taxonomy_config, get_subtrees, read_dendrogram_tree, read_ensemble_data, \
+from template_generation_utils import read_taxonomy_config, get_subtrees, read_dendrogram_tree, read_gene_data, \
     read_markers, get_gross_cell_type
 
 MARKER_PATH = '../markers/CS{}_markers.tsv'
@@ -23,13 +23,13 @@ def generate_pattern_table_denormalised_markers(dend_json_path, output_filepath)
     dend_tree = read_dendrogram_tree(dend_json_path)
 
     marker_path = MARKER_PATH.format(str(taxon).replace("CCN", ""))
-    ensemble_path = ENSEMBLE_PATH.format(str(taxonomy_config["Ensemble_data"]).strip().lower())
+    gene_db_path = ENSEMBLE_PATH.format(str(taxonomy_config["Reference_gene_list"][0]).strip().lower())
 
     if taxonomy_config:
         subtrees = get_subtrees(dend_tree, taxonomy_config)
-        ensmusg_names = read_ensemble_data(ensemble_path)
-        denorm_markers = get_denorm_markers(taxon, ensmusg_names)
-        minimal_markers = read_markers(marker_path, ensmusg_names)
+        gene_names = read_gene_data(gene_db_path)
+        denorm_markers = get_denorm_markers(taxon, gene_names)
+        minimal_markers = read_markers(marker_path, gene_names)
 
         dl = []
         for o in dend['nodes']:

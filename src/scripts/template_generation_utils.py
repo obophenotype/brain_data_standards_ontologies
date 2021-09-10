@@ -27,8 +27,9 @@ def get_synonyms_from_taxonomy(node):
     """
     synonym_properties = ['cell_set_preferred_alias', 'original_label', 'cell_set_label', 'cell_set_aligned_alias',
                           'cell_set_additional_aliases']
+    synonyms = {node[prop] for prop in synonym_properties if prop in node.keys() and node[prop]}
 
-    return OR_SEPARATOR.join({node[prop] for prop in synonym_properties if prop in node.keys() and node[prop]})
+    return OR_SEPARATOR.join(sorted(synonyms))
 
 
 def get_synonym_pairs(node):
@@ -270,17 +271,17 @@ def index_dendrogram(dend):
     return dend_dict
 
 
-def read_ensemble_data(ensemble_path):
-    ensemble = {}
-    with open(ensemble_path) as fd:
+def read_gene_data(gene_db_path):
+    genes = {}
+    with open(gene_db_path) as fd:
         rd = csv.reader(fd, delimiter="\t", quotechar='"')
-        # skip first 2 rows
+        # skip first 2 header rows
         next(rd)
         next(rd)
         for row in rd:
             _id = row[0]
-            ensemble[_id] = row[2]
-    return ensemble
+            genes[_id] = row[2]
+    return genes
 
 
 def read_markers(marker_path, ensmusg_names):

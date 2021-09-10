@@ -6,7 +6,7 @@ import logging
 from dendrogram_tools import dend_json_2_nodes_n_edges
 from template_generation_utils import get_synonyms_from_taxonomy, get_synonym_pairs, read_taxonomy_config, \
     get_subtrees, read_dendrogram_tree, get_dend_subtrees, index_dendrogram,\
-    read_csv, read_ensemble_data, read_markers, get_gross_cell_type, merge_tables
+    read_csv, read_gene_data, read_markers, get_gross_cell_type, merge_tables
 
 
 log = logging.getLogger(__name__)
@@ -85,13 +85,13 @@ def generate_base_class_template(dend_json_path, output_filepath):
 
     marker_path = MARKER_PATH.format(str(taxon).replace("CCN", ""))
     allen_marker_path = ALLEN_MARKER_PATH.format(str(taxon).replace("CCN", ""))
-    ensemble_path = ENSEMBLE_PATH.format(str(taxonomy_config["Ensemble_data"]).strip().lower())
+    gene_db_path = ENSEMBLE_PATH.format(str(taxonomy_config["Reference_gene_list"][0]).strip().lower())
 
     if taxonomy_config:
         subtrees = get_subtrees(dend_tree, taxonomy_config)
-        ensmusg_names = read_ensemble_data(ensemble_path)
-        minimal_markers = read_markers(marker_path, ensmusg_names)
-        allen_markers = read_markers(allen_marker_path, ensmusg_names)
+        gene_names = read_gene_data(gene_db_path)
+        minimal_markers = read_markers(marker_path, gene_names)
+        allen_markers = read_markers(allen_marker_path, gene_names)
 
         robot_class_curation_seed = ['defined_class',
                                      'prefLabel',
