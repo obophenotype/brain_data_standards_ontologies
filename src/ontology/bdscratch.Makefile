@@ -3,16 +3,17 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
+IMPORTS += ensg
 
-JOBS = CCN202002013 #CCN201912131 CCN201810310 CCN201908211 CCN201908210
-GENE_FILES = ensmusg
+JOBS = CCN201912131 #CCN202002013 CCN201810310 CCN201908211 CCN201908210
+GENE_LIST = ensmusg ensg
 BDS_BASE = http://www.semanticweb.org/brain_data_standards/
 
 TSV_CLASS_FILES = $(patsubst %, ../patterns/data/default/%_class.tsv, $(JOBS))
 
 OWL_FILES = $(patsubst %, components/%.owl, $(JOBS))
 OWL_CLASS_FILES = $(patsubst %, components/%_class.owl, $(JOBS))
-GENE_FILES = $(patsubst %, mirror/%.owl, $(JOBS))
+GENE_FILES = $(patsubst %, mirror/%.owl, $(GENE_LIST))
 OWL_NOMENCLATURE_FILES = $(patsubst %, components/%_non_taxonomy_classification.owl, $(JOBS))
 
 #DEND_FILES = $(patsubst %, ../dendrograms/%.json, $(JOBS))
@@ -54,6 +55,7 @@ $(PATTERNDIR)/data/default/%_class_curation.txt: $(PATTERNDIR)/data/default/%_cl
 $(PATTERNDIR)/data/default/%_non_taxonomy_classification.txt: $(PATTERNDIR)/data/default/%_non_taxonomy_classification.tsv .FORCE
 	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_non_taxonomy_classification.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$@; fi
 
+# merge class template data
 $(PATTERNDIR)/data/default/%_class.tsv: $(PATTERNDIR)/data/default/%_class_base.tsv $(PATTERNDIR)/data/default/%_class_curation.tsv
 	python ../scripts/template_runner.py modifier --merge -i=$< -i2=$(word 2, $^) -o=$@
 
@@ -63,6 +65,13 @@ mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
       --add-prefixes template_prefixes.json \
       annotate --ontology-iri ${BDS_BASE}$@ \
       convert --format ofn --output $@; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) template --input bdscratch-edit.owl --template ../templates/ensg.tsv \
+      --add-prefixes template_prefixes.json \
+      annotate --ontology-iri ${BDS_BASE}mirror/ensg.owl \
+      convert --format ofn --output mirror/ensg.owl; fi
+
+.PRECIOUS: mirror/ensg.owl
+.PRECIOUS: imports/ensg_import.owl
 
 components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MIN_MARKER_FILES) $(OWL_NOMENCLATURE_FILES)
 	$(ROBOT) merge $(patsubst %, -i %, $^) \

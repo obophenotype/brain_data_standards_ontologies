@@ -191,6 +191,10 @@ def generate_curated_class_template(dend_json_path, output_filepath):
                                                                     o['cell_set_additional_aliases']):
                 d = dict()
                 d['defined_class'] = ALLEN_DEND_CLASS + o['cell_set_accession']
+                if o['cell_set_preferred_alias']:
+                    d['prefLabel'] = o['cell_set_preferred_alias']
+                elif o['cell_set_additional_aliases']:
+                    d['prefLabel'] = str(o['cell_set_additional_aliases']).split(EXPRESSION_SEPARATOR)[0]
 
                 for k in robot_class_curation_seed:
                     if not (k in d.keys()):
