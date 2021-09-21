@@ -28,9 +28,9 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002215> "capa
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002292> "expresses")
 
 
-# Object Property: :has_exemplar (has_exemplar)
+# Object Property: :has_exemplar (has_exemplar_data)
 
-AnnotationAssertion(rdfs:label :has_exemplar "has_exemplar")
+AnnotationAssertion(rdfs:label :has_exemplar "has_exemplar_data")
 
 # Object Property: :has_subexemplar (:has_subexemplar)
 
@@ -40,9 +40,9 @@ SubObjectPropertyOf(:has_subexemplar :has_exemplar)
 
 TransitiveObjectProperty(:subcluster_of)
 
-# Object Property: :exemplar_of (exemplar_of)
+# Object Property: :exemplar_of (exemplar_data_of)
 
-AnnotationAssertion(rdfs:label :exemplar_of "exemplar_of")
+AnnotationAssertion(rdfs:label :exemplar_of "exemplar_data_of")
 
 
 

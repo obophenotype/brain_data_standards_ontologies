@@ -56,6 +56,13 @@
             "description": "Brain region abbreviation."
           }
         },
+        "Reference_gene_list": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "Reference gene list."
+          }
+        },
         "Root_nodes": {
           "type": "array",
           "items": {

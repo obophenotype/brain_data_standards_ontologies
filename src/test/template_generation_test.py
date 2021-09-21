@@ -2,8 +2,7 @@ import unittest
 import os
 import csv
 
-from template_generation_tools import generate_curated_class_template, generate_equivalent_class_marker_template\
-    , generate_non_taxonomy_classification_template
+from template_generation_tools import generate_curated_class_template, generate_non_taxonomy_classification_template
 from template_generation_utils import read_tsv
 
 PATH_DENDROGRAM_JSON = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/CCN202002013.json")
@@ -105,41 +104,3 @@ class TemplateGenerationTest(unittest.TestCase):
         self.assertEqual("CL:0000881", output[ALLEN_CLASS + "CS202002013_115"][1])
         self.assertTrue(ALLEN_CLASS + "CS202002013_116" in output)  # child of CS202002013_237
         self.assertEqual("CL:0000881", output[ALLEN_CLASS + "CS202002013_116"][1])
-
-    # def test_migrate(self):
-    #     curated_class_migrate()
-
-    # def test_migrate_dosdp(self):
-    #     curated_dosdp_migrate()
-
-
-def curated_class_migrate():
-    migrate_columns = [5, 6, 7, 8, 9, 10]
-    curation_table_migrate_manual_edits("../patterns/data/bds/CCN202002013_class_old.tsv",
-                                        "../patterns/data/bds/CCN202002013_class.tsv", migrate_columns)
-
-
-def curated_dosdp_migrate():
-    migrate_columns = [8, 9]
-    curation_table_migrate_manual_edits("../patterns/data/default/brainCellRegionMinimalMarkers_backup.tsv",
-                                        "../patterns/data/default/brainCellRegionMinimalMarkers.tsv", migrate_columns)
-
-def curation_table_migrate_manual_edits(source_path, target_path, migrate_columns):
-    source = read_tsv(source_path)
-    target = read_tsv(target_path)
-
-    new_target_path = target_path.replace(".tsv", "_migrate.tsv")
-
-    with open(new_target_path, mode='w') as out:
-        writer = csv.writer(out, delimiter="\t", quotechar='"')
-
-        for key, row in target.items():
-            if key in source:
-                # copy migrate columns
-                for migrate_column in migrate_columns:
-                    if len(source.get(key)) > migrate_column:
-                        row[migrate_column] = source.get(key)[migrate_column]
-                    else:
-                        row[migrate_column] = ""
-
-            writer.writerow(row)
