@@ -24,8 +24,21 @@ ENSEMBLE_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../te
 EXPRESSION_SEPARATOR = "|"
 
 
-def generate_ind_template(dend_json_path, output_filepath):
-    dend = dend_json_2_nodes_n_edges(dend_json_path)
+def generate_ind_template(taxonomy_file_path, output_filepath):
+    path_parts = taxonomy_file_path.split(os.path.sep)
+    taxon = path_parts[len(path_parts) - 1].split(".")[0]
+
+    if str(taxonomy_file_path).endswith(".json"):
+        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+    else:
+        dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
+        taxon = path_parts[len(path_parts) - 1].split(".")[0].replace("nomenclature_table_", "")
+
+    dend_tree = generate_dendrogram_tree(dend)
+    taxonomy_config = read_taxonomy_config(taxon)
+
+    subtrees = get_subtrees(dend_tree, taxonomy_config)
+
     robot_template_seed = {'ID': 'ID',
                            'Label': 'LABEL',
                            'PrefLabel': 'A skos:prefLabel',
@@ -66,7 +79,7 @@ def generate_ind_template(dend_json_path, output_filepath):
         for prop in meta_properties:
             d[prop] = o[prop] if prop in o.keys() else ''
 
-        if o['cell_set_accession'] in set().union(*get_dend_subtrees(dend_json_path)) and o['cell_set_preferred_alias']:
+        if o['cell_set_accession'] in set().union(*subtrees) and o['cell_set_preferred_alias']:
             d['Exemplar_of'] = ALLEN_DEND_CLASS + o['cell_set_accession']
 
         # There should only be one!
@@ -214,12 +227,17 @@ def generate_curated_class_template(taxonomy_file_path, output_filepath):
         class_robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
-def generate_non_taxonomy_classification_template(dend_json_path, output_filepath):
-    dend = dend_json_2_nodes_n_edges(dend_json_path)
-    dend_nodes = index_dendrogram(dend)
-
-    path_parts = dend_json_path.split(os.path.sep)
+def generate_non_taxonomy_classification_template(taxonomy_file_path, output_filepath):
+    path_parts = taxonomy_file_path.split(os.path.sep)
     taxon = path_parts[len(path_parts) - 1].split(".")[0]
+
+    if str(taxonomy_file_path).endswith(".json"):
+        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+    else:
+        dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
+        taxon = path_parts[len(path_parts) - 1].split(".")[0].replace("nomenclature_table_", "")
+
+    # dend_nodes = index_dendrogram(dend)
 
     cell_set_accession = 3
     child_cell_set_accessions = 14
@@ -239,9 +257,10 @@ def generate_non_taxonomy_classification_template(dend_json_path, output_filepat
         for record in nomenclature_records:
             columns = nomenclature_records[record]
             if columns[cell_set_accession] in non_taxo_roots:
-                if columns[cell_set_accession] in dend_nodes:
-                    raise Exception("Node {} exists both in dendrogram and nomenclature of the taxonomy: {}."
-                                    .format(columns[cell_set_accession], taxon))
+                # dendrogram is not mandatory for human & marmoset
+                # if columns[cell_set_accession] in dend_nodes:
+                #     raise Exception("Node {} exists both in dendrogram and nomenclature of the taxonomy: {}."
+                #                     .format(columns[cell_set_accession], taxon))
                 children = columns[child_cell_set_accessions].split("|")
                 for child in children:
                     # child of root with cell_set_preferred_alias

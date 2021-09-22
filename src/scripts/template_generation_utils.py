@@ -219,6 +219,8 @@ def read_csv(csv_path, id_column=0, delimiter=",", id_to_lower=False):
     records = dict()
     with open(csv_path) as fd:
         rd = csv.reader(fd, delimiter=delimiter, quotechar='"')
+        # skip first row
+        next(rd)
         for row in rd:
             _id = row[id_column]
             if id_to_lower:
