@@ -121,6 +121,22 @@ def read_dendrogram_tree(dend_json_path):
     return tree
 
 
+def generate_dendrogram_tree(dendrogram_data):
+    """
+    Generates a tree representation using the edges of the dendrogram data.
+    Args:
+        dendrogram_data: Parsed dendrogram file data
+
+    Returns: networkx directed graph that represents the taxonomy
+
+    """
+    tree = nx.DiGraph()
+    for edge in dendrogram_data['edges']:
+        tree.add_edge(edge[1], edge[0])
+
+    return tree
+
+
 def get_dend_subtrees(dend_json_path):
     """
     Reads both the dendrogram and the elated config file and returns subtrees defined in the config file through

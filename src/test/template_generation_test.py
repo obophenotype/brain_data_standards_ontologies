@@ -1,11 +1,12 @@
 import unittest
 import os
-import csv
 
-from template_generation_tools import generate_curated_class_template, generate_non_taxonomy_classification_template
+from template_generation_tools import generate_base_class_template, generate_curated_class_template, generate_non_taxonomy_classification_template
 from template_generation_utils import read_tsv
 
 PATH_DENDROGRAM_JSON = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/CCN202002013.json")
+PATH_NOMENCLATURE_TABLE = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                                       "./test_data/nomenclature_table_CCN201912131.csv")
 PATH_MARKER = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/CS202002013_markers.tsv")
 PATH_OUTPUT_CLASS_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/output_class.tsv")
 PATH_OUTPUT_EC_MARKER_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)),
@@ -33,7 +34,7 @@ class TemplateGenerationTest(unittest.TestCase):
         delete_file(PATH_OUTPUT_NOMENCLATURE_TSV)
 
     def test_curated_class_template_generation(self):
-        generate_curated_class_template(PATH_DENDROGRAM_JSON, PATH_OUTPUT_CLASS_TSV)
+        generate_base_class_template(PATH_DENDROGRAM_JSON, PATH_OUTPUT_CLASS_TSV)
         output = read_tsv(PATH_OUTPUT_CLASS_TSV)
 
         # assert only descendants of the root nodes (except root nodes itself) exist
@@ -59,34 +60,18 @@ class TemplateGenerationTest(unittest.TestCase):
         self.assertFalse(ALLEN_CLASS + "CS202002013_219" in output)  # parent
         self.assertFalse(ALLEN_CLASS + "CS202002013_220" in output)  # grand parent
 
-    # def test_equivalent_class_marker_template_generation(self):
-    #     generate_equivalent_class_marker_template(PATH_DENDROGRAM_JSON, PATH_MARKER, PATH_OUTPUT_EC_MARKER_TSV)
-    #     output = read_tsv(PATH_OUTPUT_EC_MARKER_TSV)
-    #
-    #     # assert only descendants of the root nodes (except root nodes itself) exist
-    #     self.assertFalse(ALLEN_CLASS + "CS202002013_117" in output)  # root
-    #
-    #     self.assertFalse(ALLEN_CLASS+"CS202002013_123" in output) # root
-    #     self.assertFalse(ALLEN_CLASS + "CS202002013_150" in output)  # child, no marker
-    #     self.assertFalse(ALLEN_CLASS + "CS202002013_124" in output)  # child, no marker
-    #     self.assertTrue(ALLEN_CLASS + "CS202002013_28" in output)  # grand child, with marker
-    #     self.assertFalse(ALLEN_CLASS + "CS202002013_158" in output)  # grand child, no marker
-    #     self.assertTrue(ALLEN_CLASS + "CS202002013_35" in output)  # grand child, with marker
-    #     self.assertTrue(ALLEN_CLASS + "CS202002013_3" in output)  # grand child, with marker
-    #     self.assertFalse(ALLEN_CLASS + "CS202002013_122" in output)  # parent
-    #     self.assertFalse(ALLEN_CLASS + "CS202002013_120" in output)  # grand parent
-    #
-    #     self.assertTrue(ALLEN_CLASS + "CS202002013_103" in output)  # root & leaf
-    #     self.assertFalse(ALLEN_CLASS + "CS202002013_220" in output)  # parent
-    #
-    #     self.assertFalse(ALLEN_CLASS + "CS202002013_179" in output)  # root
-    #     self.assertFalse(ALLEN_CLASS + "CS202002013_180" in output)  # child, no marker
-    #     self.assertTrue(ALLEN_CLASS + "CS202002013_207" in output)  # child, with marker
-    #     self.assertFalse(ALLEN_CLASS + "CS202002013_208" in output)  # grand child, no marker
-    #     self.assertTrue(ALLEN_CLASS + "CS202002013_83" in output)  # grand child, with marker
-    #
-    #     self.assertFalse(ALLEN_CLASS + "CS202002013_219" in output)  # parent
-    #     self.assertFalse(ALLEN_CLASS + "CS202002013_220" in output)  # grand parent
+    def test_curated_class_template_generation_with_nomenclature(self):
+        generate_base_class_template(PATH_NOMENCLATURE_TABLE, PATH_OUTPUT_CLASS_TSV)
+        output = read_tsv(PATH_OUTPUT_CLASS_TSV)
+
+        # assert only descendants of the root nodes (except root nodes itself) exist
+        self.assertFalse(ALLEN_CLASS + "CS201912131_149" in output)  # root
+
+        self.assertTrue(ALLEN_CLASS + "CS201912131_22" in output)  # child
+        self.assertTrue(ALLEN_CLASS + "CS201912131_70" in output)  # child
+
+        self.assertTrue(ALLEN_CLASS + "CS201912131_125" in output)  # root & leaf
+        self.assertFalse(ALLEN_CLASS + "CS201912131_148" in output)  # parent
 
     def test_non_taxonomy_classification_template_generation(self):
         generate_non_taxonomy_classification_template(PATH_DENDROGRAM_JSON, PATH_OUTPUT_EC_MARKER_TSV)

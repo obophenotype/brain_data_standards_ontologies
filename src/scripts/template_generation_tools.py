@@ -5,8 +5,9 @@ import logging
 
 from dendrogram_tools import dend_json_2_nodes_n_edges
 from template_generation_utils import get_synonyms_from_taxonomy, get_synonym_pairs, read_taxonomy_config, \
-    get_subtrees, read_dendrogram_tree, get_dend_subtrees, index_dendrogram,\
+    get_subtrees, generate_dendrogram_tree, get_dend_subtrees, index_dendrogram,\
     read_csv, read_gene_data, read_markers, get_gross_cell_type, merge_tables
+from nomenclature_tools import nomenclature_2_nodes_n_edges
 
 
 log = logging.getLogger(__name__)
@@ -74,13 +75,17 @@ def generate_ind_template(dend_json_path, output_filepath):
     robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
-def generate_base_class_template(dend_json_path, output_filepath):
-    dend = dend_json_2_nodes_n_edges(dend_json_path)
-    dend_tree = read_dendrogram_tree(dend_json_path)
-
-    path_parts = dend_json_path.split(os.path.sep)
+def generate_base_class_template(taxonomy_file_path, output_filepath):
+    path_parts = taxonomy_file_path.split(os.path.sep)
     taxon = path_parts[len(path_parts) - 1].split(".")[0]
 
+    if str(taxonomy_file_path).endswith(".json"):
+        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+    else:
+        dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
+        taxon = path_parts[len(path_parts) - 1].split(".")[0].replace("nomenclature_table_", "")
+
+    dend_tree = generate_dendrogram_tree(dend)
     taxonomy_config = read_taxonomy_config(taxon)
 
     marker_path = MARKER_PATH.format(str(taxon).replace("CCN", ""))
@@ -162,13 +167,17 @@ def generate_base_class_template(dend_json_path, output_filepath):
         class_robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
-def generate_curated_class_template(dend_json_path, output_filepath):
-    dend = dend_json_2_nodes_n_edges(dend_json_path)
-    dend_tree = read_dendrogram_tree(dend_json_path)
-
-    path_parts = dend_json_path.split(os.path.sep)
+def generate_curated_class_template(taxonomy_file_path, output_filepath):
+    path_parts = taxonomy_file_path.split(os.path.sep)
     taxon = path_parts[len(path_parts) - 1].split(".")[0]
 
+    if str(taxonomy_file_path).endswith(".json"):
+        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+    else:
+        dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
+        taxon = path_parts[len(path_parts) - 1].split(".")[0].replace("nomenclature_table_", "")
+
+    dend_tree = generate_dendrogram_tree(dend)
     taxonomy_config = read_taxonomy_config(taxon)
 
     if taxonomy_config:

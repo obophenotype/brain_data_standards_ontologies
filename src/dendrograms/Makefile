@@ -15,11 +15,15 @@ all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FI
 ../markers/%_markers_denormalized.tsv: %.json
 	python ../scripts/template_runner.py generator -md -i $< -o $@
 
-../patterns/data/default/%_class_base.tsv: %.json
-	python ../scripts/template_runner.py generator -cb -i $< -o $@
+../patterns/data/default/%_class_base.tsv: %.json nomenclature_table_%.csv
+	if [ $< = CCN201912131.json ]; then python ../scripts/template_runner.py generator -cb -i $(word 2, $^) -o $@ ;\
+	elif [ $< = CCN201912132.json ]; then python ../scripts/template_runner.py generator -cb -i $(word 2, $^) -o $@ ;\
+	else python ../scripts/template_runner.py generator -cb -i $< -o $@; fi
 
-../patterns/data/default/%_class_curation.tsv: %.json
-	python ../scripts/template_runner.py generator -cc -i $< -o $@
+../patterns/data/default/%_class_curation.tsv: %.json nomenclature_table_%.csv
+	if [ $< = CCN201912131.json ]; then python ../scripts/template_runner.py generator -cc -i $(word 2, $^) -o $@ ;\
+	elif [ $< = CCN201912132.json ]; then python ../scripts/template_runner.py generator -cc -i $(word 2, $^) -o $@ ;\
+	else python ../scripts/template_runner.py generator -cc -i $< -o $@; fi
 
 ../patterns/data/default/%_non_taxonomy_classification.tsv: %.json
 	python ../scripts/template_runner.py generator -n -i $< -o $@
