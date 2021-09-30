@@ -2,7 +2,7 @@ from template_generation_utils import read_csv
 
 
 NOMENCLATURE_COLUMNS = ['cell_set_preferred_alias', 'original_label', 'cell_set_label', 'cell_set_accession',
-                        'cell_set_aligned_alias', 'cell_set_additional_alias', 'cell_set_alias_assignee',
+                        'cell_set_aligned_alias', 'cell_set_additional_aliases', 'cell_set_alias_assignee',
                         'cell_set_alias_citation', 'cell_set_structure', 'cell_set_ontology_tag', 'taxonomy_id',
                         'species', 'modality', 'taxonomy_description', 'child_cell_set_accessions', 'cell_type_card']
 
@@ -31,7 +31,6 @@ def nomenclature_2_nodes_n_edges(taxonomy_file_path):
     for child_cell_sets in sorted_child_cell_sets:
         parent_node = find_next_inclusive_node(sorted_child_cell_sets, child_cell_sets)
         if parent_node:
-            print(child_cell_sets["node_cell_set_accession"] + " <-- " + parent_node["node_cell_set_accession"])
             out['edges'].add((child_cell_sets["node_cell_set_accession"], parent_node["node_cell_set_accession"]))
 
     return out

@@ -20,6 +20,8 @@ MARKER_PATH = '../markers/CS{}_markers.tsv'
 ALLEN_MARKER_PATH = "../markers/CS{}_Allen_markers.tsv"
 NOMENCLATURE_TABLE_PATH = '../dendrograms/nomenclature_table_{}.csv'
 ENSEMBLE_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../templates/{}.tsv")
+CROSS_SPECIES_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                                  "../dendrograms/nomenclature_table_CCN202002270.csv")
 
 EXPRESSION_SEPARATOR = "|"
 
@@ -111,22 +113,22 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
         minimal_markers = read_markers(marker_path, gene_names)
         allen_markers = read_markers(allen_marker_path, gene_names)
 
-        robot_class_curation_seed = ['defined_class',
-                                     'prefLabel',
-                                     'Alias_citations',
-                                     'Synonyms_from_taxonomy',
-                                     'Comment',
-                                     'Gross_cell_type',
-                                     'Taxon',
-                                     'Brain_region',
-                                     'Minimal_markers',
-                                     'Allen_markers',
-                                     'Individual',
-                                     'Brain_region_abbv',
-                                     'Species_abbv',
-                                     'part_of',
-                                     'has_soma_location'
-                                     ]
+        class_seed = ['defined_class',
+                      'prefLabel',
+                      'Alias_citations',
+                      'Synonyms_from_taxonomy',
+                      'Comment',
+                      'Gross_cell_type',
+                      'Taxon',
+                      'Brain_region',
+                      'Minimal_markers',
+                      'Allen_markers',
+                      'Individual',
+                      'Brain_region_abbv',
+                      'Species_abbv',
+                      'part_of',
+                      'has_soma_location'
+                      ]
         class_template = []
 
         for o in dend['nodes']:
@@ -171,7 +173,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                             d['part_of'] = ''
                             d['has_soma_location'] = taxonomy_config['Brain_region'][0]
 
-                for k in robot_class_curation_seed:
+                for k in class_seed:
                     if not (k in d.keys()):
                         d[k] = ''
                 class_template.append(d)
@@ -195,17 +197,17 @@ def generate_curated_class_template(taxonomy_file_path, output_filepath):
 
     if taxonomy_config:
         subtrees = get_subtrees(dend_tree, taxonomy_config)
-        robot_class_curation_seed = ['defined_class',
-                                     'Curated_synonyms',
-                                     'Classification',
-                                     'Classification_comment',
-                                     'Classification_pub',
-                                     'Expresses',
-                                     'Expresses_comment',
-                                     'Expresses_pub',
-                                     'Projection_type',
-                                     'Layers'
-                                     ]
+        class_curation_seed = ['defined_class',
+                               'Curated_synonyms',
+                               'Classification',
+                               'Classification_comment',
+                               'Classification_pub',
+                               'Expresses',
+                               'Expresses_comment',
+                               'Expresses_pub',
+                               'Projection_type',
+                               'Layers'
+                               ]
         class_template = []
 
         for o in dend['nodes']:
@@ -218,7 +220,7 @@ def generate_curated_class_template(taxonomy_file_path, output_filepath):
                 elif o['cell_set_additional_aliases']:
                     d['prefLabel'] = str(o['cell_set_additional_aliases']).split(EXPRESSION_SEPARATOR)[0]
 
-                for k in robot_class_curation_seed:
+                for k in class_curation_seed:
                     if not (k in d.keys()):
                         d[k] = ''
                 class_template.append(d)
@@ -271,6 +273,55 @@ def generate_non_taxonomy_classification_template(taxonomy_file_path, output_fil
                         nomenclature_template.append(d)
 
         class_robot_template = pd.DataFrame.from_records(nomenclature_template)
+        class_robot_template.to_csv(output_filepath, sep="\t", index=False)
+
+
+def generate_cross_species_template(taxonomy_file_path, output_filepath):
+    path_parts = taxonomy_file_path.split(os.path.sep)
+    taxon = path_parts[len(path_parts) - 1].split(".")[0]
+
+    if str(taxonomy_file_path).endswith(".json"):
+        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+    else:
+        dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
+        taxon = path_parts[len(path_parts) - 1].split(".")[0].replace("nomenclature_table_", "")
+
+    dend_tree = generate_dendrogram_tree(dend)
+    taxonomy_config = read_taxonomy_config(taxon)
+
+    if taxonomy_config:
+        subtrees = get_subtrees(dend_tree, taxonomy_config)
+        cross_species_template = []
+
+        cell_set_preferred_alias = 0
+        cell_set_accession = 3
+        cell_set_aligned_alias = 4
+        cs_by_preferred_alias = read_csv(CROSS_SPECIES_PATH, id_column=cell_set_preferred_alias, id_to_lower=True)
+        cs_by_aligned_alias = read_csv(CROSS_SPECIES_PATH, id_column=cell_set_aligned_alias, id_to_lower=True)
+
+        for o in dend['nodes']:
+            if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or
+                                                                    o['cell_set_additional_aliases']):
+                cross_species_classes = set()
+                if o["cell_set_aligned_alias"] and str(o["cell_set_aligned_alias"]).lower() in cs_by_aligned_alias:
+                    cross_species_classes.add(ALLEN_DEND_CLASS + cs_by_aligned_alias[str(o["cell_set_aligned_alias"])
+                                              .lower()][cell_set_accession])
+
+                if "cell_set_additional_aliases" in o and o["cell_set_additional_aliases"]:
+                    additional_aliases = str(o["cell_set_additional_aliases"]).lower().split(EXPRESSION_SEPARATOR)
+                    for additional_alias in additional_aliases:
+                        if additional_alias in cs_by_preferred_alias:
+                            cross_species_classes.add(ALLEN_DEND_CLASS +
+                                                      cs_by_preferred_alias[additional_alias][cell_set_accession])
+
+                if len(cross_species_classes):
+                    d = dict()
+                    d['defined_class'] = ALLEN_DEND_CLASS + o['cell_set_accession']
+                    d['cross_species_classes'] = EXPRESSION_SEPARATOR.join(cross_species_classes)
+
+                    cross_species_template.append(d)
+
+        class_robot_template = pd.DataFrame.from_records(cross_species_template)
         class_robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 

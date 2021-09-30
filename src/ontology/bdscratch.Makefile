@@ -3,10 +3,10 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
-IMPORTS += ensg
+IMPORTS += enscjag ensg
 
-JOBS = CCN201912131 #CCN202002013 CCN201810310 CCN201908211 CCN201908210
-GENE_LIST = ensmusg ensg
+JOBS = CCN202002013 CCN201912131 CCN201912132 #CCN202002013 CCN201810310 CCN201908211 CCN201908210
+GENE_LIST = ensmusg ensg enscjag
 BDS_BASE = http://www.semanticweb.org/brain_data_standards/
 
 TSV_CLASS_FILES = $(patsubst %, ../patterns/data/default/%_class.tsv, $(JOBS))
@@ -15,6 +15,7 @@ OWL_FILES = $(patsubst %, components/%.owl, $(JOBS))
 OWL_CLASS_FILES = $(patsubst %, components/%_class.owl, $(JOBS))
 GENE_FILES = $(patsubst %, mirror/%.owl, $(GENE_LIST))
 OWL_NOMENCLATURE_FILES = $(patsubst %, components/%_non_taxonomy_classification.owl, $(JOBS))
+OWL_CROSS_SPECIES_FILES = $(patsubst %, components/%_cross_species.owl, $(JOBS))
 
 #DEND_FILES = $(patsubst %, ../dendrograms/%.json, $(JOBS))
 #TEMPLATE_FILES = $(patsubst %, ../templates/%.tsv, $(JOBS))
@@ -55,9 +56,14 @@ $(PATTERNDIR)/data/default/%_class_curation.txt: $(PATTERNDIR)/data/default/%_cl
 $(PATTERNDIR)/data/default/%_non_taxonomy_classification.txt: $(PATTERNDIR)/data/default/%_non_taxonomy_classification.tsv .FORCE
 	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_non_taxonomy_classification.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$@; fi
 
+$(PATTERNDIR)/data/default/%_cross_species.txt: $(PATTERNDIR)/data/default/%_cross_species.tsv .FORCE
+	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_cross_species.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$@; fi
+
 # merge class template data
 $(PATTERNDIR)/data/default/%_class.tsv: $(PATTERNDIR)/data/default/%_class_base.tsv $(PATTERNDIR)/data/default/%_class_curation.tsv
 	python ../scripts/template_runner.py modifier --merge -i=$< -i2=$(word 2, $^) -o=$@
+
+all_imports: $(IMPORT_FILES)
 
 # hard wiring for now.  Work on patsubst later
 mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
@@ -69,11 +75,17 @@ mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
       --add-prefixes template_prefixes.json \
       annotate --ontology-iri ${BDS_BASE}mirror/ensg.owl \
       convert --format ofn --output mirror/ensg.owl; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) template --input bdscratch-edit.owl --template ../templates/enscjag.tsv \
+      --add-prefixes template_prefixes.json \
+      annotate --ontology-iri ${BDS_BASE}mirror/enscjag.owl \
+      convert --format ofn --output mirror/enscjag.owl; fi
 
 .PRECIOUS: mirror/ensg.owl
 .PRECIOUS: imports/ensg_import.owl
+.PRECIOUS: mirror/enscjag.owl
+.PRECIOUS: imports/enscjag_import.owl
 
-components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MIN_MARKER_FILES) $(OWL_NOMENCLATURE_FILES)
+components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MIN_MARKER_FILES) $(OWL_NOMENCLATURE_FILES) $(OWL_CROSS_SPECIES_FILES)
 	$(ROBOT) merge $(patsubst %, -i %, $^) \
 	 --collapse-import-closure false \
 	 annotate --ontology-iri ${BDS_BASE}$@  \
@@ -96,5 +108,10 @@ components/%_class.owl: $(PATTERNDIR)/data/default/%_class.tsv bdscratch-edit.ow
 components/%_non_taxonomy_classification.owl: $(PATTERNDIR)/data/default/%_non_taxonomy_classification.tsv $(PATTERNDIR)/dosdp-patterns/taxonomy_non_taxonomy_classification.yaml $(SRC) all_imports .FORCE
 	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
         --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_non_taxonomy_classification.yaml \
+        --ontology=$(SRC) --obo-prefixes=true --outfile=$@
+
+components/%_cross_species.owl: $(PATTERNDIR)/data/default/%_cross_species.tsv $(PATTERNDIR)/dosdp-patterns/taxonomy_cross_species.yaml $(SRC) all_imports .FORCE
+	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
+        --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_cross_species.yaml \
         --ontology=$(SRC) --obo-prefixes=true --outfile=$@
 

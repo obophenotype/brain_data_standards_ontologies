@@ -1,5 +1,6 @@
 from template_generation_tools import generate_base_class_template, generate_curated_class_template, \
-    generate_ind_template, generate_non_taxonomy_classification_template, merge_class_templates
+    generate_ind_template, generate_non_taxonomy_classification_template, merge_class_templates, \
+    generate_cross_species_template
 from marker_tools import generate_denormalised_marker_template
 import argparse
 import pathlib
@@ -18,6 +19,7 @@ parser_generator.add_argument('-cb', action='store_true', help="Generate a class
 parser_generator.add_argument('-cc', action='store_true', help="Generate a class curation template.")
 parser_generator.add_argument('-md', action='store_true', help="Generate a denormalized marker template.")
 parser_generator.add_argument('-n', action='store_true', help="Generate a nomenclature table template.")
+parser_generator.add_argument('-cs', action='store_true', help="Generate a cross species alignment template.")
 
 parser_modifier = subparsers.add_parser('modifier', description='Template modification interface')
 parser_modifier.add_argument('-i', '--input', action='store', type=pathlib.Path, help="Path to first input file")
@@ -39,5 +41,7 @@ else:
         generate_denormalised_marker_template(args.input, args.output)
     elif args.n:
         generate_non_taxonomy_classification_template(args.input, args.output)
+    elif args.cs:
+        generate_cross_species_template(args.input, args.output)
     else:
         generate_ind_template(args.input, args.output)

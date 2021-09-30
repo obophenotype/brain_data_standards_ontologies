@@ -1,7 +1,8 @@
 import unittest
 import os
 
-from template_generation_tools import generate_base_class_template, generate_curated_class_template, generate_non_taxonomy_classification_template
+from template_generation_tools import generate_base_class_template, generate_cross_species_template, \
+    generate_non_taxonomy_classification_template
 from template_generation_utils import read_tsv
 
 PATH_DENDROGRAM_JSON = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/CCN202002013.json")
@@ -9,9 +10,11 @@ PATH_NOMENCLATURE_TABLE = os.path.join(os.path.dirname(os.path.realpath(__file__
                                        "./test_data/nomenclature_table_CCN201912131.csv")
 PATH_MARKER = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/CS202002013_markers.tsv")
 PATH_OUTPUT_CLASS_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/output_class.tsv")
-PATH_OUTPUT_EC_MARKER_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                                         "./test_data/output_equivalent_marker.tsv")
+PATH_OUTPUT_NON_TAXON_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                                         "./test_data/output_non_taxon.tsv")
 PATH_OUTPUT_NOMENCLATURE_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/nomenclature.tsv")
+PATH_GENERIC_OUTPUT_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                                       "./test_data/output_generic.tsv")
 
 ALLEN_CLASS = "http://www.semanticweb.org/brain_data_standards/AllenDendClass_"
 
@@ -25,13 +28,15 @@ class TemplateGenerationTest(unittest.TestCase):
 
     def setUp(self):
         delete_file(PATH_OUTPUT_CLASS_TSV)
-        delete_file(PATH_OUTPUT_EC_MARKER_TSV)
+        delete_file(PATH_OUTPUT_NON_TAXON_TSV)
         delete_file(PATH_OUTPUT_NOMENCLATURE_TSV)
+        delete_file(PATH_GENERIC_OUTPUT_TSV)
 
     def tearDown(self):
         delete_file(PATH_OUTPUT_CLASS_TSV)
-        delete_file(PATH_OUTPUT_EC_MARKER_TSV)
+        delete_file(PATH_OUTPUT_NON_TAXON_TSV)
         delete_file(PATH_OUTPUT_NOMENCLATURE_TSV)
+        delete_file(PATH_GENERIC_OUTPUT_TSV)
 
     def test_curated_class_template_generation(self):
         generate_base_class_template(PATH_DENDROGRAM_JSON, PATH_OUTPUT_CLASS_TSV)
@@ -74,8 +79,8 @@ class TemplateGenerationTest(unittest.TestCase):
         self.assertFalse(ALLEN_CLASS + "CS201912131_148" in output)  # parent
 
     def test_non_taxonomy_classification_template_generation(self):
-        generate_non_taxonomy_classification_template(PATH_DENDROGRAM_JSON, PATH_OUTPUT_EC_MARKER_TSV)
-        output = read_tsv(PATH_OUTPUT_EC_MARKER_TSV)
+        generate_non_taxonomy_classification_template(PATH_DENDROGRAM_JSON, PATH_OUTPUT_NON_TAXON_TSV)
+        output = read_tsv(PATH_OUTPUT_NON_TAXON_TSV)
 
         # assert only descendants of the root nodes (except root nodes itself) exist
         self.assertFalse(ALLEN_CLASS + "CS202002013_258" in output)  # root
@@ -89,3 +94,37 @@ class TemplateGenerationTest(unittest.TestCase):
         self.assertEqual("CL:0000881", output[ALLEN_CLASS + "CS202002013_115"][1])
         self.assertTrue(ALLEN_CLASS + "CS202002013_116" in output)  # child of CS202002013_237
         self.assertEqual("CL:0000881", output[ALLEN_CLASS + "CS202002013_116"][1])
+
+    def test_cross_species_template_generation_json(self):
+        generate_cross_species_template(PATH_DENDROGRAM_JSON, PATH_GENERIC_OUTPUT_TSV)
+        output = read_tsv(PATH_GENERIC_OUTPUT_TSV)
+
+        # non matching nodes
+        self.assertFalse(ALLEN_CLASS + "CS202002013_94" in output)
+        self.assertFalse(ALLEN_CLASS + "CS202002013_212" in output)
+
+        # aligned alias matching
+        self.assertTrue(ALLEN_CLASS + "CS202002013_8" in output)
+        self.assertEqual(ALLEN_CLASS + "CS202002270_4", output[ALLEN_CLASS + "CS202002013_8"][1])
+        self.assertTrue(ALLEN_CLASS + "CS202002013_193" in output)
+        self.assertEqual(ALLEN_CLASS + "CS202002270_53", output[ALLEN_CLASS + "CS202002013_193"][1])
+
+        # taxon additional_aliases -> cross species preferred_alias
+        self.assertTrue(ALLEN_CLASS + "CS202002013_211" in output)
+        self.assertEqual(ALLEN_CLASS + "CS202002270_39", output[ALLEN_CLASS + "CS202002013_211"][1])
+
+    def test_cross_species_template_generation_nomenclature(self):
+        generate_cross_species_template(PATH_NOMENCLATURE_TABLE, PATH_GENERIC_OUTPUT_TSV)
+        output = read_tsv(PATH_GENERIC_OUTPUT_TSV)
+
+        # aligned alias matching
+        self.assertTrue(ALLEN_CLASS + "CS201912131_72" in output)
+        self.assertEqual(ALLEN_CLASS + "CS202002270_24", output[ALLEN_CLASS + "CS201912131_72"][1])
+        self.assertTrue(ALLEN_CLASS + "CS201912131_127" in output)
+        self.assertEqual(ALLEN_CLASS + "CS202002270_45", output[ALLEN_CLASS + "CS201912131_127"][1])
+
+        # taxon additional_aliases -> cross species preferred_alias
+        self.assertTrue(ALLEN_CLASS + "CS201912131_11" in output)
+        self.assertEqual(ALLEN_CLASS + "CS202002270_6", output[ALLEN_CLASS + "CS201912131_11"][1])
+        self.assertTrue(ALLEN_CLASS + "CS201912131_171" in output)
+        self.assertEqual(ALLEN_CLASS + "CS202002270_25", output[ALLEN_CLASS + "CS201912131_171"][1])
