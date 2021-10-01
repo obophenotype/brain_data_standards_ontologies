@@ -105,13 +105,19 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
 
     marker_path = MARKER_PATH.format(str(taxon).replace("CCN", ""))
     allen_marker_path = ALLEN_MARKER_PATH.format(str(taxon).replace("CCN", ""))
-    gene_db_path = ENSEMBLE_PATH.format(str(taxonomy_config["Reference_gene_list"][0]).strip().lower())
+
 
     if taxonomy_config:
         subtrees = get_subtrees(dend_tree, taxonomy_config)
-        gene_names = read_gene_data(gene_db_path)
-        minimal_markers = read_markers(marker_path, gene_names)
-        allen_markers = read_markers(allen_marker_path, gene_names)
+
+        if "Reference_gene_list" in taxonomy_config:
+            gene_db_path = ENSEMBLE_PATH.format(str(taxonomy_config["Reference_gene_list"][0]).strip().lower())
+            gene_names = read_gene_data(gene_db_path)
+            minimal_markers = read_markers(marker_path, gene_names)
+            allen_markers = read_markers(allen_marker_path, gene_names)
+        else:
+            minimal_markers = {}
+            allen_markers = {}
 
         class_seed = ['defined_class',
                       'prefLabel',

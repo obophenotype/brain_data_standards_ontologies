@@ -302,7 +302,7 @@ def read_gene_data(gene_db_path):
     return genes
 
 
-def read_markers(marker_path, ensmusg_names):
+def read_markers(marker_path, gene_names):
     path = os.path.join(os.path.dirname(os.path.realpath(__file__)), marker_path)
     markers = {}
 
@@ -317,7 +317,7 @@ def read_markers(marker_path, ensmusg_names):
             if row[2]:
                 for marker in row[2].split("|"):
                     marker_name = marker.strip()
-                    if marker_name in ensmusg_names:
+                    if marker_name in gene_names:
                         names.append(marker_name)
                     else:
                         print(marker_name + " couldn't find in ensmusg.tsv")

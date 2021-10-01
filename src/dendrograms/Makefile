@@ -1,4 +1,4 @@
-JOBS = CCN202002013 CCN201912131 CCN201912132 # CCN201908210 CCN201810310 CCN201908211
+JOBS = CCN202002013 CCN201912131 CCN201912132 CCN202002270 # CCN201908210 CCN201810310 CCN201908211
 
 TEMPLATE_FILES = $(patsubst %, ../templates/%.tsv, $(JOBS))
 MARKER_DENORMALIZED_FILES = $(patsubst %, ../markers/%_markers_denormalized.tsv, $(JOBS))
@@ -14,8 +14,9 @@ all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FI
 	if [ $< = CCN202002013.json ]; then python ../scripts/template_runner.py generator -i $< -o $@ ;\
 	else python ../scripts/template_runner.py generator -i $(word 2, $^) -o $@ ; fi
 
-../markers/%_markers_denormalized.tsv: %.json
-	python ../scripts/template_runner.py generator -md -i $< -o $@
+../markers/%_markers_denormalized.tsv: %.json nomenclature_table_%.csv
+	if [ $< = CCN202002013.json ]; then python ../scripts/template_runner.py generator -md -i $< -o $@ ;\
+	else  python ../scripts/template_runner.py generator -md -i $(word 2, $^) -o $@ ; fi
 
 ../patterns/data/default/%_class_base.tsv: %.json nomenclature_table_%.csv
 	if [ $< = CCN202002013.json ]; then python ../scripts/template_runner.py generator -cb -i $< -o $@ ;\
