@@ -364,3 +364,38 @@ def merge_tables(base_tsv, extension_tsv, output_filepath):
                 row.append(row_data[column])
 
             writer.writerow(row)
+
+
+def migrate_manual_curations(source_tsv, target_tsv, migrate_columns, output_filepath):
+    """
+    Copies manual curations (for the specified columns) from source file to the target file and generates a
+    new migration file.
+    Args:
+        source_tsv: Source table to read manual curations from.
+        target_tsv: Target table to append manual curations to.
+        migrate_columns: list of the columns to copy their values from source to target.
+        output_filepath: Output file path
+    """
+    base_headers, base = read_tsv_to_dict(source_tsv)
+    target_headers, target = read_tsv_to_dict(target_tsv)
+
+    # migrate_columns = [x for x in extension_headers if x not in base_headers]
+    # merged_headers = base_headers + (list(migrate_columns))
+
+    with open(output_filepath, mode='w') as out:
+        writer = csv.writer(out, delimiter="\t", quotechar='"')
+        writer.writerow(target_headers)
+
+        for key, row_data in target.items():
+            if key in base:
+                for migrate_column in migrate_columns:
+                    row_data[migrate_column] = base[key][migrate_column]
+            else:
+                for migrate_column in migrate_columns:
+                    row_data[migrate_column] = ''
+
+            row = list()
+            for column in target_headers:
+                row.append(row_data[column])
+
+            writer.writerow(row)

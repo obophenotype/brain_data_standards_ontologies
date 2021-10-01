@@ -3,7 +3,7 @@ import os
 
 from template_generation_tools import generate_base_class_template, generate_cross_species_template, \
     generate_non_taxonomy_classification_template
-from template_generation_utils import read_tsv
+from template_generation_utils import read_tsv, migrate_manual_curations
 
 PATH_DENDROGRAM_JSON = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/CCN202002013.json")
 PATH_NOMENCLATURE_TABLE = os.path.join(os.path.dirname(os.path.realpath(__file__)),
@@ -128,3 +128,14 @@ class TemplateGenerationTest(unittest.TestCase):
         self.assertEqual(ALLEN_CLASS + "CS202002270_6", output[ALLEN_CLASS + "CS201912131_11"][1])
         self.assertTrue(ALLEN_CLASS + "CS201912131_171" in output)
         self.assertEqual(ALLEN_CLASS + "CS202002270_25", output[ALLEN_CLASS + "CS201912131_171"][1])
+
+    # not test
+    # def test_curated_class_migrate(self):
+    #     migrate_columns = ["Curated_synonyms", "Classification", "Classification_comment", "Classification_pub",
+    #                        "Expresses", "Expresses_comment", "Expresses_pub", "Projection_type", "Layers"]
+    #     migrate_manual_curations("../patterns/data/default/CCN202002013_class_curation_old.tsv",
+    #                              "../patterns/data/default/CCN202002013_class_curation.tsv",
+    #                              migrate_columns,
+    #                              "../patterns/data/default/CCN202002013_class_curation_migrate.tsv")
+
+
