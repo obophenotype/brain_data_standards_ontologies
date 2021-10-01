@@ -153,6 +153,16 @@
       Cell_type: CL:0000127
       Location_relation: part_of
       #Astrocyte
+    - Node: CS201912131_147
+      Cell_type: CL:0002453
+      #OPC
+    - Node: CS201912131_151
+      Cell_type: CL:0000125
+      # non-neuronal currently mapped as glial cell
+    - Node: CS201912131_140
+      Cell_type: CL:0000128
+      #Oligodendrocyte
+-
   non_taxonomy_roots: []
  # non_taxonomy_roots:
  #   - Node: CS201912131_128
@@ -170,16 +180,7 @@
  #   - Node: CS201912131_132
  #     Cell_type: CL:4023018
  #     #Pvalb
- #   - Node: CS201912131_147
- #     Cell_type: CL:0002453
- #     #OPC
- #   - Node: CS201912131_151
- #     Cell_type: CL:0000125
- #     # non-neuronal currently mapped as glial cell
- #   - Node: CS201912131_140
- #     Cell_type: CL:0000128
- #     #Oligodendrocyte
--
+
   Taxonomy_id: CCN201912132
   Description: Marmoset M1 taxonomy using 10X data
   Reference: (Bakken et al., 2020)
@@ -224,11 +225,14 @@
       Cell_type: CL:0002453
       Location_relation: part_of
       #OPC
+    - Node: CS201912132_105
+      Cell_type: CL:0000128
+      #Oligodendrocyte
+    - Node: CS201912131_151
+      Cell_type: CL:0000125
+      # non-neuronal currently mapped as glial cell
   non_taxonomy_roots: []
   #non_taxonomy_roots:
-  #  - Node: CS201912132_105
-  #    Cell_type: CL:0000128
-  #    #Oligodendrocyte
   #  - Node: CS201912132_95
   #    Cell_type: CL:4023011
   #    #Lamp5
@@ -244,6 +248,4 @@
   #  - Node: CS201912132_99
   #    Cell_type: CL:4023018
   #    #Pvalb
-  #  - Node: CS201912131_151
-  #    Cell_type: CL:0000125
-  #    # non-neuronal currently mapped as glial cell
+
