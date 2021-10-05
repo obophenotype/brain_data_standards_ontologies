@@ -13,7 +13,7 @@ write.table(Human_gene_df, file='Desktop/Reference genomes/Reference gene files/
 write.table(marmoset_gene_df, file='Desktop/Reference genomes/Reference gene files/marmoset_genes.tsv', col.names = NA, sep="\t")
 
 #simplify tables
-simple_human <- Human_gene_df[ -c(1:5,8:9,11,13,16,19:22) ] #remove all columns except source,	type,	gene_id,	transcript_id,	gene_name,	gene_source,	transcript_name,	transcript_source
+simple_human <- Human_gene_df[ -c(1:5,8:9,11,13,16,19:22) ] #remove all columns except source, type, gene_id, transcript_id, gene_name, gene_source, transcript_name, transcript_source
 simple_marmoset <- marmoset_gene_df[ -c(1:5,7:9,12:19) ] #remove all columns except source, gene_id, & gene_name
 simple_marmoset <- simple_marmoset[!duplicated(simple_marmoset[,3]), ] #remove duplicate based on gene_name
 
