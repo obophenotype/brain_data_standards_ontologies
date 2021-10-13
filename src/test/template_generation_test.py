@@ -133,9 +133,24 @@ class TemplateGenerationTest(unittest.TestCase):
     # def test_curated_class_migrate(self):
     #     migrate_columns = ["Curated_synonyms", "Classification", "Classification_comment", "Classification_pub",
     #                        "Expresses", "Expresses_comment", "Expresses_pub", "Projection_type", "Layers"]
+    #     migrate_manual_curations("../patterns/data/default/CCN201912131_class_curation_old.tsv",
+    #                              "../patterns/data/default/CCN201912131_class_curation.tsv",
+    #                              migrate_columns,
+    #                              "../patterns/data/default/CCN201912131_class_curation_migrate.tsv")
+    #
     #     migrate_manual_curations("../patterns/data/default/CCN201912132_class_curation_old.tsv",
     #                              "../patterns/data/default/CCN201912132_class_curation.tsv",
     #                              migrate_columns,
     #                              "../patterns/data/default/CCN201912132_class_curation_migrate.tsv")
+    #
+    #     migrate_manual_curations("../patterns/data/default/CCN202002013_class_curation_old.tsv",
+    #                              "../patterns/data/default/CCN202002013_class_curation.tsv",
+    #                              migrate_columns,
+    #                              "../patterns/data/default/CCN202002013_class_curation_migrate.tsv")
+    #
+    #     migrate_manual_curations("../patterns/data/default/CCN202002270_class_curation_old.tsv",
+    #                              "../patterns/data/default/CCN202002270_class_curation.tsv",
+    #                              migrate_columns,
+    #                              "../patterns/data/default/CCN202002270_class_curation_migrate.tsv")
 
 
