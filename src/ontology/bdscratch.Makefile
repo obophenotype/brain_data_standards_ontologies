@@ -3,10 +3,10 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
-IMPORTS += enscjag ensg
+IMPORTS += simple_human simple_marmoset
 
 JOBS = CCN202002013 CCN201912131 CCN201912132 CCN202002270 #CCN202002013 CCN201810310 CCN201908211 CCN201908210
-GENE_LIST = ensmusg ensg enscjag
+GENE_LIST = ensmusg simple_human simple_marmoset
 BDS_BASE = http://www.semanticweb.org/brain_data_standards/
 
 TSV_CLASS_FILES = $(patsubst %, ../patterns/data/default/%_class.tsv, $(JOBS))
@@ -71,19 +71,19 @@ mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
       --add-prefixes template_prefixes.json \
       annotate --ontology-iri ${BDS_BASE}$@ \
       convert --format ofn --output $@; fi
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) template --input bdscratch-edit.owl --template ../templates/ensg.tsv \
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) template --input bdscratch-edit.owl --template ../templates/simple_human.tsv \
       --add-prefixes template_prefixes.json \
-      annotate --ontology-iri ${BDS_BASE}mirror/ensg.owl \
-      convert --format ofn --output mirror/ensg.owl; fi
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) template --input bdscratch-edit.owl --template ../templates/enscjag.tsv \
+      annotate --ontology-iri ${BDS_BASE}mirror/simple_human.owl \
+      convert --format ofn --output mirror/simple_human.owl; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) template --input bdscratch-edit.owl --template ../templates/simple_marmoset.tsv \
       --add-prefixes template_prefixes.json \
-      annotate --ontology-iri ${BDS_BASE}mirror/enscjag.owl \
-      convert --format ofn --output mirror/enscjag.owl; fi
+      annotate --ontology-iri ${BDS_BASE}mirror/simple_marmoset.owl \
+      convert --format ofn --output mirror/simple_marmoset.owl; fi
 
-.PRECIOUS: mirror/ensg.owl
-.PRECIOUS: imports/ensg_import.owl
-.PRECIOUS: mirror/enscjag.owl
-.PRECIOUS: imports/enscjag_import.owl
+.PRECIOUS: mirror/simple_human.owl
+.PRECIOUS: imports/simple_human_import.owl
+.PRECIOUS: mirror/simple_marmoset.owl
+.PRECIOUS: imports/simple_marmoset_import.owl
 
 components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MIN_MARKER_FILES) $(OWL_NOMENCLATURE_FILES) $(OWL_CROSS_SPECIES_FILES)
 	$(ROBOT) merge $(patsubst %, -i %, $^) \

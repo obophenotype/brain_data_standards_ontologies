@@ -354,7 +354,10 @@ def merge_tables(base_tsv, extension_tsv, output_filepath):
         for key, row_data in base.items():
             if key in extension:
                 for migrate_column in migrate_columns:
-                    row_data[migrate_column] = extension[key][migrate_column]
+                    if migrate_column in extension[key]:
+                        row_data[migrate_column] = extension[key][migrate_column]
+                    else:
+                        row_data[migrate_column] = ''
             else:
                 for migrate_column in migrate_columns:
                     row_data[migrate_column] = ''

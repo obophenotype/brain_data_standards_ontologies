@@ -78,22 +78,23 @@ class TemplateGenerationTest(unittest.TestCase):
         self.assertTrue(ALLEN_CLASS + "CS201912131_125" in output)  # root & leaf
         self.assertFalse(ALLEN_CLASS + "CS201912131_148" in output)  # parent
 
-    def test_non_taxonomy_classification_template_generation(self):
-        generate_non_taxonomy_classification_template(PATH_DENDROGRAM_JSON, PATH_OUTPUT_NON_TAXON_TSV)
-        output = read_tsv(PATH_OUTPUT_NON_TAXON_TSV)
-
-        # assert only descendants of the root nodes (except root nodes itself) exist
-        self.assertFalse(ALLEN_CLASS + "CS202002013_258" in output)  # root
-        self.assertFalse(ALLEN_CLASS + "CS202002013_237" in output)  # root
-        self.assertFalse(ALLEN_CLASS + "CS202002013_232" in output)  # root
-        self.assertFalse(ALLEN_CLASS + "CS202002013_261" in output)  # root
-
-        self.assertTrue(ALLEN_CLASS + "CS202002013_114" in output)  # child of CS202002013_237
-        self.assertEqual("CL:0000881", output[ALLEN_CLASS + "CS202002013_114"][1])
-        self.assertTrue(ALLEN_CLASS + "CS202002013_115" in output)  # child of CS202002013_237
-        self.assertEqual("CL:0000881", output[ALLEN_CLASS + "CS202002013_115"][1])
-        self.assertTrue(ALLEN_CLASS + "CS202002013_116" in output)  # child of CS202002013_237
-        self.assertEqual("CL:0000881", output[ALLEN_CLASS + "CS202002013_116"][1])
+    # non_taxonomy_roots are not used now
+    # def test_non_taxonomy_classification_template_generation(self):
+    #     generate_non_taxonomy_classification_template(PATH_DENDROGRAM_JSON, PATH_OUTPUT_NON_TAXON_TSV)
+    #     output = read_tsv(PATH_OUTPUT_NON_TAXON_TSV)
+    #
+    #     # assert only descendants of the root nodes (except root nodes itself) exist
+    #     self.assertFalse(ALLEN_CLASS + "CS202002013_258" in output)  # root
+    #     self.assertFalse(ALLEN_CLASS + "CS202002013_237" in output)  # root
+    #     self.assertFalse(ALLEN_CLASS + "CS202002013_232" in output)  # root
+    #     self.assertFalse(ALLEN_CLASS + "CS202002013_261" in output)  # root
+    #
+    #     self.assertTrue(ALLEN_CLASS + "CS202002013_114" in output)  # child of CS202002013_237
+    #     self.assertEqual("CL:0000881", output[ALLEN_CLASS + "CS202002013_114"][1])
+    #     self.assertTrue(ALLEN_CLASS + "CS202002013_115" in output)  # child of CS202002013_237
+    #     self.assertEqual("CL:0000881", output[ALLEN_CLASS + "CS202002013_115"][1])
+    #     self.assertTrue(ALLEN_CLASS + "CS202002013_116" in output)  # child of CS202002013_237
+    #     self.assertEqual("CL:0000881", output[ALLEN_CLASS + "CS202002013_116"][1])
 
     def test_cross_species_template_generation_json(self):
         generate_cross_species_template(PATH_DENDROGRAM_JSON, PATH_GENERIC_OUTPUT_TSV)
@@ -130,27 +131,27 @@ class TemplateGenerationTest(unittest.TestCase):
         self.assertEqual(ALLEN_CLASS + "CS202002270_25", output[ALLEN_CLASS + "CS201912131_171"][1])
 
     # not test
-    # def test_curated_class_migrate(self):
-    #     migrate_columns = ["Curated_synonyms", "Classification", "Classification_comment", "Classification_pub",
-    #                        "Expresses", "Expresses_comment", "Expresses_pub", "Projection_type", "Layers"]
-    #     migrate_manual_curations("../patterns/data/default/CCN201912131_class_curation_old.tsv",
-    #                              "../patterns/data/default/CCN201912131_class_curation.tsv",
-    #                              migrate_columns,
-    #                              "../patterns/data/default/CCN201912131_class_curation_migrate.tsv")
-    #
-    #     migrate_manual_curations("../patterns/data/default/CCN201912132_class_curation_old.tsv",
-    #                              "../patterns/data/default/CCN201912132_class_curation.tsv",
-    #                              migrate_columns,
-    #                              "../patterns/data/default/CCN201912132_class_curation_migrate.tsv")
-    #
-    #     migrate_manual_curations("../patterns/data/default/CCN202002013_class_curation_old.tsv",
-    #                              "../patterns/data/default/CCN202002013_class_curation.tsv",
-    #                              migrate_columns,
-    #                              "../patterns/data/default/CCN202002013_class_curation_migrate.tsv")
-    #
-    #     migrate_manual_curations("../patterns/data/default/CCN202002270_class_curation_old.tsv",
-    #                              "../patterns/data/default/CCN202002270_class_curation.tsv",
-    #                              migrate_columns,
-    #                              "../patterns/data/default/CCN202002270_class_curation_migrate.tsv")
+    def test_curated_class_migrate(self):
+        migrate_columns = ["Curated_synonyms", "Classification", "Classification_comment", "Classification_pub",
+                           "Expresses", "Expresses_comment", "Expresses_pub", "Projection_type", "Layers"]
+        migrate_manual_curations("../patterns/data/default/CCN201912131_class_curation_old.tsv",
+                                 "../patterns/data/default/CCN201912131_class_curation.tsv",
+                                 migrate_columns,
+                                 "../patterns/data/default/CCN201912131_class_curation_migrate.tsv")
+
+        migrate_manual_curations("../patterns/data/default/CCN201912132_class_curation_old.tsv",
+                                 "../patterns/data/default/CCN201912132_class_curation.tsv",
+                                 migrate_columns,
+                                 "../patterns/data/default/CCN201912132_class_curation_migrate.tsv")
+
+        migrate_manual_curations("../patterns/data/default/CCN202002013_class_curation_old.tsv",
+                                 "../patterns/data/default/CCN202002013_class_curation.tsv",
+                                 migrate_columns,
+                                 "../patterns/data/default/CCN202002013_class_curation_migrate.tsv")
+
+        migrate_manual_curations("../patterns/data/default/CCN202002270_class_curation_old.tsv",
+                                 "../patterns/data/default/CCN202002270_class_curation.tsv",
+                                 migrate_columns,
+                                 "../patterns/data/default/CCN202002270_class_curation_migrate.tsv")
 
 
