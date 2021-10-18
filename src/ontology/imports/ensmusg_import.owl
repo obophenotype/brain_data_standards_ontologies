@@ -7,8 +7,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bdscratch/imports/ensmusg_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bdscratch/releases/2021-06-29/imports/ensmusg_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-06-29</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bdscratch/releases/2021-10-18/imports/ensmusg_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-18</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -636,6 +636,15 @@
     
 
 
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000024411 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000024411">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Aqp4</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://identifiers.org/ensembl/ENSMUSG00000024517 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000024517">
@@ -1113,6 +1122,15 @@
     
 
 
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000030170 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000030170">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Wnt5b</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://identifiers.org/ensembl/ENSMUSG00000030222 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000030222">
@@ -1271,6 +1289,15 @@
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000032517">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>Mobp</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000032532 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000032532">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Cck</rdfs:label>
     </owl:Class>
     
 
@@ -1532,6 +1559,15 @@
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000036949">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>Slc39a12</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000037016 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000037016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Frem2</rdfs:label>
     </owl:Class>
     
 
@@ -2292,6 +2328,15 @@
     
 
 
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000068196 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000068196">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Col8a1</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://identifiers.org/ensembl/ENSMUSG00000068220 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000068220">
@@ -2337,6 +2382,15 @@
     
 
 
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000074852 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000074852">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Hpse2</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://identifiers.org/ensembl/ENSMUSG00000075270 -->
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000075270">
@@ -2369,6 +2423,15 @@
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000087516">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>Tbx3os1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000090125 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000090125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Pou3f1</rdfs:label>
     </owl:Class>
     
 
