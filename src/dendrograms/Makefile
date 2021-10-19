@@ -10,26 +10,20 @@ CROSS_SPECIES_TEMPLATE_FILES = $(patsubst %, ../patterns/data/default/%_cross_sp
 
 all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FILES) $(MARKER_DENORMALIZED_FILES) $(NOMENCLATURE_TEMPLATE_FILES) $(CROSS_SPECIES_TEMPLATE_FILES)
 
-../templates/%.tsv: %.json nomenclature_table_%.csv
-	if [ $< = CCN202002013.json ]; then python ../scripts/template_runner.py generator -i $< -o $@ ;\
-	else python ../scripts/template_runner.py generator -i $(word 2, $^) -o $@ ; fi
+../templates/%.tsv: nomenclature_table_%.csv
+	python ../scripts/template_runner.py generator -i $< -o $@
 
-../markers/%_markers_denormalized.tsv: %.json nomenclature_table_%.csv
-	if [ $< = CCN202002013.json ]; then python ../scripts/template_runner.py generator -md -i $< -o $@ ;\
-	else  python ../scripts/template_runner.py generator -md -i $(word 2, $^) -o $@ ; fi
+../markers/%_markers_denormalized.tsv: nomenclature_table_%.csv
+	python ../scripts/template_runner.py generator -md -i $< -o $@
 
-../patterns/data/default/%_class_base.tsv: %.json nomenclature_table_%.csv
-	if [ $< = CCN202002013.json ]; then python ../scripts/template_runner.py generator -cb -i $< -o $@ ;\
-	else  python ../scripts/template_runner.py generator -cb -i $(word 2, $^) -o $@ ; fi
+../patterns/data/default/%_class_base.tsv: nomenclature_table_%.csv
+	python ../scripts/template_runner.py generator -cb -i $< -o $@
 
-../patterns/data/default/%_class_curation.tsv: %.json nomenclature_table_%.csv
-	if [ $< = CCN202002013.json ]; then python ../scripts/template_runner.py generator -cc -i $< -o $@ ;\
-	else python ../scripts/template_runner.py generator -cc -i $(word 2, $^) -o $@ ; fi
+../patterns/data/default/%_class_curation.tsv: nomenclature_table_%.csv
+	python ../scripts/template_runner.py generator -cc -i $< -o $@
 
-../patterns/data/default/%_non_taxonomy_classification.tsv: %.json nomenclature_table_%.csv
-	if [ $< = CCN202002013.json ]; then python ../scripts/template_runner.py generator -n -i $< -o $@ ;\
-	else python ../scripts/template_runner.py generator -n -i $(word 2, $^) -o $@ ; fi
+../patterns/data/default/%_non_taxonomy_classification.tsv: nomenclature_table_%.csv
+	python ../scripts/template_runner.py generator -n -i $< -o $@
 
-../patterns/data/default/%_cross_species.tsv: %.json nomenclature_table_%.csv
-	if [ $< = CCN202002013.json ]; then python ../scripts/template_runner.py generator -cs -i $< -o $@ ;\
-	else python ../scripts/template_runner.py generator -cs -i $(word 2, $^) -o $@ ; fi
+../patterns/data/default/%_cross_species.tsv: nomenclature_table_%.csv
+	python ../scripts/template_runner.py generator -cs -i $< -o $@
