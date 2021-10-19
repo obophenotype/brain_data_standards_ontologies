@@ -59,6 +59,10 @@
       Cell_type: CL:0000129
       Location_relation: part_of
       #microglial
+    - Node: CS202002013_237
+      Cell_type: CL:0000881 
+      Location_relation: part_of
+      #PVM      
   non_taxonomy_roots: []
   #non_taxonomy_roots:
   #  - Node: CS202002013_235
@@ -133,7 +137,7 @@
   Brain_region:
     - UBERON:0001384
   Brain_region_abbv:
-    - MOp
+    - M1
   Reference_gene_list:
     - simple_human
   Root_nodes:
@@ -203,7 +207,7 @@
   Brain_region:
     - UBERON:0001384
   Brain_region_abbv:
-    - MOp
+    - M1
   Reference_gene_list:
     - simple_marmoset
   Root_nodes:
