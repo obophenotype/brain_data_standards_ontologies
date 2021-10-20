@@ -47,7 +47,7 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
                            'Entity Type': 'TI %',
                            'TYPE': 'TYPE',
                            'Property Assertions': "I BDSHELP:subcluster_of SPLIT=|",
-                           'Synonyms': 'A oboInOwl:hasExactSynonym',
+                           'Synonyms': 'A oboInOwl:hasExactSynonym SPLIT=|',
                            'Function': 'TI capable_of some %',
                            'cell_set_preferred_alias': "A n2o:cell_set_preferred_alias",
                            'original_label': "A n2o:original_label",

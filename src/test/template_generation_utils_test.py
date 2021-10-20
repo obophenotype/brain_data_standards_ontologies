@@ -144,6 +144,23 @@ class TemplateUtilsTest(unittest.TestCase):
         self.assertFalse(("CS202002013_38", "CS202002013_245") in edges)
         self.assertFalse(("CS202002013_163", "CS202002013_245") in edges)
 
+    def test_nomenclature_nodes_edges_multi_inheritance3(self):
+        tree = nomenclature_2_nodes_n_edges(PATH_NOMENCLATURE_CSV_MOUSE)
+        nodes = tree['nodes']
+
+        self.assertEqual(257, len(nodes))
+        self.assertTrue(any(node['cell_set_accession'] == 'CS202002013_114' for node in nodes))
+        self.assertTrue(any(node['cell_set_accession'] == 'CS202002013_115' for node in nodes))
+        self.assertTrue(any(node['cell_set_accession'] == 'CS202002013_116' for node in nodes))
+        self.assertTrue(any(node['cell_set_accession'] == 'CS202002013_237' for node in nodes))
+        self.assertTrue(any(node['cell_set_accession'] == 'CS202002013_231' for node in nodes))
+
+        edges = tree['edges']
+
+        self.assertTrue(("CS202002013_116", "CS202002013_237") in edges)
+        # multi-inheritance, 114 115 relations
+        self.assertTrue(("CS202002013_231", "CS202002013_237") in edges)
+
     # not test
     # def report_missing_alias(self):
     #     dend_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/CCN202002013.json")

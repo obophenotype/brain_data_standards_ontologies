@@ -1,4 +1,5 @@
-from template_generation_utils import read_csv
+import networkx as nx
+from template_generation_utils import read_csv, generate_dendrogram_tree
 
 
 NOMENCLATURE_COLUMNS = ['cell_set_preferred_alias', 'original_label', 'cell_set_label', 'cell_set_accession',
@@ -69,25 +70,39 @@ def fix_multi_inheritance_relations(out, sorted_child_cell_sets):
     Returns: updated taxonomy
     """
     leaf_nodes = find_leaf_nodes(out['edges'])
-    multi_inheritance_nodes = get_multi_inheritance_nodes(leaf_nodes, sorted_child_cell_sets)
+    multi_inheritance_nodes = get_multi_inheritance_nodes(out, leaf_nodes, sorted_child_cell_sets)
 
     for mi_node in multi_inheritance_nodes:
+        print("MI node:  " + mi_node["node_cell_set_accession"])
         is_consecutive = False
         children = mi_node["children"].copy()
         for child_cell_sets in reversed(sorted_child_cell_sets):
             if is_consecutive and child_cell_sets["children"].issubset(children):
-                print("create edge: " + child_cell_sets["node_cell_set_accession"] + "    " + mi_node["node_cell_set_accession"])
                 out['edges'].add((child_cell_sets["node_cell_set_accession"], mi_node["node_cell_set_accession"]))
                 children = children - child_cell_sets["children"]
             if child_cell_sets == mi_node:
                 is_consecutive = True
 
 
-def get_multi_inheritance_nodes(leaf_nodes, sorted_child_cell_sets):
+# def get_multi_inheritance_nodes(leaf_nodes, sorted_child_cell_sets):
+#     multi_inheritance_nodes = list()
+#     for node in sorted_child_cell_sets:
+#         if node["node_cell_set_accession"] in leaf_nodes and len(node["children"]) > 1:
+#             multi_inheritance_nodes.append(node)
+#     return multi_inheritance_nodes
+
+def get_multi_inheritance_nodes(out, leaf_nodes, sorted_child_cell_sets):
     multi_inheritance_nodes = list()
+    dend_tree = generate_dendrogram_tree(out)
+
     for node in sorted_child_cell_sets:
-        if node["node_cell_set_accession"] in leaf_nodes and len(node["children"]) > 1:
-            multi_inheritance_nodes.append(node)
+        descendants = nx.descendants(dend_tree, node["node_cell_set_accession"])
+        for child in node["children"]:
+            if child not in descendants and child != node["node_cell_set_accession"] \
+                    and node not in multi_inheritance_nodes:
+                print("Missing child : " + child + "  of  " + node["node_cell_set_accession"])
+                multi_inheritance_nodes.append(node)
+
     return multi_inheritance_nodes
 
 
