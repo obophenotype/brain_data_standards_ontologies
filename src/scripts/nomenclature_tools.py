@@ -33,6 +33,7 @@ def nomenclature_2_nodes_n_edges(taxonomy_file_path):
         if parent_node:
             out['edges'].add((child_cell_sets["node_cell_set_accession"], parent_node["node_cell_set_accession"]))
 
+    fix_multi_inheritance_relations(out, sorted_child_cell_sets)
     return out
 
 
@@ -53,3 +54,50 @@ def find_next_inclusive_node(sorted_child_cell_sets, current_node):
             is_consecutive = True
 
     return None
+
+
+def fix_multi_inheritance_relations(out, sorted_child_cell_sets):
+    """
+    Different from json dendrograms, (mouse) nomenclature tsv supports multi-inheritance. This function identifies
+    multi-inheritance cases and accordingly generates new edges.
+
+    There is multi-inheritance if a node is leaf but also has a children definition in the nomenclature.
+
+    Args:
+        out: single inheritance taxonomy
+        sorted_child_cell_sets: list of the nodes and their children
+    Returns: updated taxonomy
+    """
+    leaf_nodes = find_leaf_nodes(out['edges'])
+    multi_inheritance_nodes = get_multi_inheritance_nodes(leaf_nodes, sorted_child_cell_sets)
+
+    for mi_node in multi_inheritance_nodes:
+        is_consecutive = False
+        children = mi_node["children"].copy()
+        for child_cell_sets in reversed(sorted_child_cell_sets):
+            if is_consecutive and child_cell_sets["children"].issubset(children):
+                print("create edge: " + child_cell_sets["node_cell_set_accession"] + "    " + mi_node["node_cell_set_accession"])
+                out['edges'].add((child_cell_sets["node_cell_set_accession"], mi_node["node_cell_set_accession"]))
+                children = children - child_cell_sets["children"]
+            if child_cell_sets == mi_node:
+                is_consecutive = True
+
+
+def get_multi_inheritance_nodes(leaf_nodes, sorted_child_cell_sets):
+    multi_inheritance_nodes = list()
+    for node in sorted_child_cell_sets:
+        if node["node_cell_set_accession"] in leaf_nodes and len(node["children"]) > 1:
+            multi_inheritance_nodes.append(node)
+    return multi_inheritance_nodes
+
+
+def find_leaf_nodes(edges):
+    leaf_nodes = set()
+    for edge in edges:
+        leaf_nodes.add(edge[0])
+
+    for edge in edges:
+        if edge[1] in leaf_nodes:
+            leaf_nodes.remove(edge[1])
+
+    return leaf_nodes

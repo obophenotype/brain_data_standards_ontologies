@@ -5,7 +5,8 @@ from template_generation_tools import generate_base_class_template, generate_cro
     generate_non_taxonomy_classification_template
 from template_generation_utils import read_tsv, migrate_manual_curations
 
-PATH_DENDROGRAM_JSON = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/CCN202002013.json")
+PATH_MOUSE_NOMENCLATURE = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                                       "../dendrograms/nomenclature_table_CCN202002013.csv")
 PATH_NOMENCLATURE_TABLE = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                        "./test_data/nomenclature_table_CCN201912131.csv")
 PATH_MARKER = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/CS202002013_markers.tsv")
@@ -39,7 +40,7 @@ class TemplateGenerationTest(unittest.TestCase):
         delete_file(PATH_GENERIC_OUTPUT_TSV)
 
     def test_curated_class_template_generation(self):
-        generate_base_class_template(PATH_DENDROGRAM_JSON, PATH_OUTPUT_CLASS_TSV)
+        generate_base_class_template(PATH_MOUSE_NOMENCLATURE, PATH_OUTPUT_CLASS_TSV)
         output = read_tsv(PATH_OUTPUT_CLASS_TSV)
 
         # assert only descendants of the root nodes (except root nodes itself) exist
@@ -97,7 +98,7 @@ class TemplateGenerationTest(unittest.TestCase):
     #     self.assertEqual("CL:0000881", output[ALLEN_CLASS + "CS202002013_116"][1])
 
     def test_cross_species_template_generation_json(self):
-        generate_cross_species_template(PATH_DENDROGRAM_JSON, PATH_GENERIC_OUTPUT_TSV)
+        generate_cross_species_template(PATH_MOUSE_NOMENCLATURE, PATH_GENERIC_OUTPUT_TSV)
         output = read_tsv(PATH_GENERIC_OUTPUT_TSV)
 
         # non matching nodes
