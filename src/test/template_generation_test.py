@@ -2,7 +2,7 @@ import unittest
 import os
 
 from template_generation_tools import generate_base_class_template, generate_cross_species_template, \
-    generate_non_taxonomy_classification_template
+    generate_ind_template, generate_non_taxonomy_classification_template
 from template_generation_utils import read_tsv, migrate_manual_curations
 
 PATH_MOUSE_NOMENCLATURE = os.path.join(os.path.dirname(os.path.realpath(__file__)),
@@ -39,9 +39,37 @@ class TemplateGenerationTest(unittest.TestCase):
         delete_file(PATH_OUTPUT_NOMENCLATURE_TSV)
         delete_file(PATH_GENERIC_OUTPUT_TSV)
 
+    def test_generate_ind_template(self):
+        generate_ind_template(PATH_MOUSE_NOMENCLATURE, PATH_GENERIC_OUTPUT_TSV)
+        output = read_tsv(PATH_GENERIC_OUTPUT_TSV)
+
+        _label = 2
+        _description = 17
+        _aliases = 18
+        _rank = 19
+
+        self.assertTrue("AllenDend:CS202002013_123" in output)  # child
+        test_node = output["AllenDend:CS202002013_123"]
+        self.assertEqual("GABAergic - CS202002013_123", str(test_node[2]))
+        self.assertTrue(str(test_node[_description]).startswith("GABAergic is: Neurons that use GABA as a neurotransmitter"))
+        self.assertEqual("Neuronal: GABAergic|Inhibitory neurons", test_node[_aliases])
+        self.assertEqual("Class", test_node[_rank])
+
+        self.assertTrue("AllenDend:CS202002013_219" in output)  # child
+        test_node = output["AllenDend:CS202002013_219"]
+        self.assertEqual("Non-neural - CS202002013_219", str(test_node[2]))
+        self.assertTrue(
+            str(test_node[_description]).startswith("Non-Neural is: Cells of mesoderm"))
+        self.assertEqual("", test_node[_aliases])
+        self.assertEqual("Class", test_node[_rank])
+
+        self.assertEqual("Cell Type|Subclass", output["AllenDend:CS202002013_112"][_rank])
+
     def test_curated_class_template_generation(self):
         generate_base_class_template(PATH_MOUSE_NOMENCLATURE, PATH_OUTPUT_CLASS_TSV)
         output = read_tsv(PATH_OUTPUT_CLASS_TSV)
+
+        self.assertTrue(ALLEN_CLASS + "CS202002013_150" in output)  # child
 
         # assert only descendants of the root nodes (except root nodes itself) exist
         self.assertFalse(ALLEN_CLASS + "CS202002013_117" in output)  # root
