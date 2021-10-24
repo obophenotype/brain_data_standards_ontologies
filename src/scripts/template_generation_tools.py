@@ -6,7 +6,7 @@ import logging
 from dendrogram_tools import dend_json_2_nodes_n_edges
 from template_generation_utils import get_synonyms_from_taxonomy, get_synonym_pairs, read_taxonomy_config, \
     get_subtrees, generate_dendrogram_tree, get_dend_subtrees, index_dendrogram,\
-    read_csv, read_gene_data, read_markers, get_gross_cell_type, merge_tables
+    read_csv, read_gene_data, read_markers, get_gross_cell_type, merge_tables, read_allen_descriptions
 from nomenclature_tools import nomenclature_2_nodes_n_edges
 
 
@@ -22,6 +22,7 @@ NOMENCLATURE_TABLE_PATH = '../dendrograms/nomenclature_table_{}.csv'
 ENSEMBLE_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../templates/{}.tsv")
 CROSS_SPECIES_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                   "../dendrograms/nomenclature_table_CCN202002270.csv")
+ALLEN_DESCRIPTIONS_PATH = '../dendrograms/All Descriptions_{}.json'
 
 EXPRESSION_SEPARATOR = "|"
 
@@ -38,6 +39,7 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
 
     dend_tree = generate_dendrogram_tree(dend)
     taxonomy_config = read_taxonomy_config(taxon)
+    allen_descriptions = read_allen_descriptions(ALLEN_DESCRIPTIONS_PATH, taxonomy_config['Species_abbv'][0])
 
     subtrees = get_subtrees(dend_tree, taxonomy_config)
 
@@ -57,12 +59,14 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
                            'cell_set_alias_assignee': "A n2o:cell_set_alias_assignee SPLIT=|",
                            'cell_set_alias_citation': "A n2o:cell_set_alias_citation SPLIT=|",
                            'Metadata': "A n2o:node_metadata",
-                           'Exemplar_of': "TI exemplar_of some %"
+                           'Exemplar_of': "TI exemplar_of some %",
+                           'Comment': "A rdfs:comment",
+                           'Aliases': "A oboInOwl:hasExactSynonym SPLIT=|",
+                           'Rank': "A BDSHELP:cell_type_rank SPLIT=|"
                            }
     dl = [robot_template_seed]
 
-    synonym_properties = ['original_label',
-                          'cell_set_aligned_alias',
+    synonym_properties = ['cell_set_aligned_alias',
                           'cell_set_additional_aliases']
 
     for o in dend['nodes']:
@@ -79,10 +83,22 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
         meta_properties = ['cell_set_preferred_alias', 'original_label', 'cell_set_label', 'cell_set_aligned_alias',
                            'cell_set_additional_aliases', 'cell_set_alias_assignee', 'cell_set_alias_citation']
         for prop in meta_properties:
-            d[prop] = o[prop] if prop in o.keys() else ''
+            if prop in o.keys():
+                d[prop] = '|'.join([prop_val.strip() for prop_val in str(o[prop]).split("|") if prop_val])
+            else:
+                d[prop] = ''
 
         if o['cell_set_accession'] in set().union(*subtrees) and o['cell_set_preferred_alias']:
             d['Exemplar_of'] = ALLEN_DEND_CLASS + o['cell_set_accession']
+
+        d['Rank'] = '|'.join([cell_type.strip().replace("No", "None")
+                              for cell_type in str(o["cell_type_card"]).split(",")])
+
+        if o['cell_set_accession'] in allen_descriptions:
+            allen_data = allen_descriptions[o['cell_set_accession']]
+            d['Comment'] = allen_data["summary"][0]
+            if allen_data["aliases"][0]:
+                d['Aliases'] = '|'.join([alias.strip() for alias in str(allen_data["aliases"][0]).split("|")])
 
         # There should only be one!
         dl.append(d)
