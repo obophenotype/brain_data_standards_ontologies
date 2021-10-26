@@ -22,7 +22,8 @@ NOMENCLATURE_TABLE_PATH = '../dendrograms/nomenclature_table_{}.csv'
 ENSEMBLE_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../templates/{}.tsv")
 CROSS_SPECIES_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                   "../dendrograms/nomenclature_table_CCN202002270.csv")
-ALLEN_DESCRIPTIONS_PATH = '../dendrograms/All Descriptions_{}.json'
+ALLEN_DESCRIPTIONS_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                                       '../dendrograms/All Descriptions_{}.json')
 
 EXPRESSION_SEPARATOR = "|"
 
