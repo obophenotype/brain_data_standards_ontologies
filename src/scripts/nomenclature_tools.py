@@ -73,7 +73,6 @@ def fix_multi_inheritance_relations(out, sorted_child_cell_sets):
     multi_inheritance_nodes = get_multi_inheritance_nodes(out, leaf_nodes, sorted_child_cell_sets)
 
     for mi_node in multi_inheritance_nodes:
-        print("MI node:  " + mi_node["node_cell_set_accession"])
         is_consecutive = False
         children = mi_node["children"].copy()
         for child_cell_sets in reversed(sorted_child_cell_sets):
@@ -100,7 +99,6 @@ def get_multi_inheritance_nodes(out, leaf_nodes, sorted_child_cell_sets):
         for child in node["children"]:
             if child not in descendants and child != node["node_cell_set_accession"] \
                     and node not in multi_inheritance_nodes:
-                print("Missing child : " + child + "  of  " + node["node_cell_set_accession"])
                 multi_inheritance_nodes.append(node)
 
     return multi_inheritance_nodes

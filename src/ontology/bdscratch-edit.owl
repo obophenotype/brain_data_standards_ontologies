@@ -33,6 +33,7 @@ Declaration(ObjectProperty(<http://www.semanticweb.org/brain_data_standards/help
 Declaration(ObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar>))
 Declaration(ObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_subexemplar>))
 Declaration(ObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of>))
+Declaration(AnnotationProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#cell_type_rank>))
 Declaration(AnnotationProperty(dce:description))
 Declaration(AnnotationProperty(dce:title))
 Declaration(AnnotationProperty(dcterms:license))
@@ -69,7 +70,9 @@ SubObjectPropertyOf(<http://www.semanticweb.org/brain_data_standards/helper.owl#
 
 TransitiveObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of>)
 
+# Object Property: <http://www.semanticweb.org/brain_data_standards/helper.owl#cell_type_rank> (cell_type_rank)
 
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/helper.owl#cell_type_rank> "cell_type_rank")
 
 
 SubObjectPropertyOf(ObjectPropertyChain(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://purl.obolibrary.org/obo/RO_0002215>) <http://purl.obolibrary.org/obo/RO_0002215>)
