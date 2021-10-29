@@ -16,6 +16,7 @@ OWL_CLASS_FILES = $(patsubst %, components/%_class.owl, $(JOBS))
 GENE_FILES = $(patsubst %, mirror/%.owl, $(GENE_LIST))
 OWL_NOMENCLATURE_FILES = $(patsubst %, components/%_non_taxonomy_classification.owl, $(JOBS))
 OWL_CROSS_SPECIES_FILES = $(patsubst %, components/%_cross_species.owl, $(JOBS))
+OWL_TAXONOMY_FILE = components/taxonomies.owl
 
 #DEND_FILES = $(patsubst %, ../dendrograms/%.json, $(JOBS))
 #TEMPLATE_FILES = $(patsubst %, ../templates/%.tsv, $(JOBS))
@@ -85,7 +86,7 @@ mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
 .PRECIOUS: mirror/simple_marmoset.owl
 .PRECIOUS: imports/simple_marmoset_import.owl
 
-components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MIN_MARKER_FILES) $(OWL_NOMENCLATURE_FILES) $(OWL_CROSS_SPECIES_FILES)
+components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MIN_MARKER_FILES) $(OWL_NOMENCLATURE_FILES) $(OWL_CROSS_SPECIES_FILES) $(OWL_TAXONOMY_FILE)
 	$(ROBOT) merge $(patsubst %, -i %, $^) \
 	 --collapse-import-closure false \
 	 annotate --ontology-iri ${BDS_BASE}$@  \
@@ -114,4 +115,10 @@ components/%_cross_species.owl: $(PATTERNDIR)/data/default/%_cross_species.tsv $
 	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
         --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_cross_species.yaml \
         --ontology=$(SRC) --obo-prefixes=true --outfile=$@
+
+components/taxonomies.owl: ../templates/Taxonomies.tsv bdscratch-edit.owl
+	$(ROBOT) template --input bdscratch-edit.owl --template $< \
+    		--add-prefixes template_prefixes.json \
+    		annotate --ontology-iri ${BDS_BASE}$@ \
+    		convert --format ofn --output $@
 

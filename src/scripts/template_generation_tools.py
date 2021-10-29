@@ -5,7 +5,7 @@ import logging
 
 from dendrogram_tools import dend_json_2_nodes_n_edges
 from template_generation_utils import get_synonyms_from_taxonomy, get_synonym_pairs, read_taxonomy_config, \
-    get_subtrees, generate_dendrogram_tree, get_dend_subtrees, index_dendrogram,\
+    get_subtrees, generate_dendrogram_tree, read_taxonomy_details_yaml, read_csv_to_dict,\
     read_csv, read_gene_data, read_markers, get_gross_cell_type, merge_tables, read_allen_descriptions
 from nomenclature_tools import nomenclature_2_nodes_n_edges
 
@@ -122,7 +122,6 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
 
     marker_path = MARKER_PATH.format(str(taxon).replace("CCN", ""))
     allen_marker_path = ALLEN_MARKER_PATH.format(str(taxon).replace("CCN", ""))
-
 
     if taxonomy_config:
         subtrees = get_subtrees(dend_tree, taxonomy_config)
@@ -346,6 +345,47 @@ def generate_cross_species_template(taxonomy_file_path, output_filepath):
 
         class_robot_template = pd.DataFrame.from_records(cross_species_template)
         class_robot_template.to_csv(output_filepath, sep="\t", index=False)
+
+
+def generate_taxonomies_template(taxonomy_metadata_path, output_filepath):
+    taxon_configs = read_taxonomy_details_yaml()
+    headers, taxonomies_metadata = read_csv_to_dict(taxonomy_metadata_path)
+
+    robot_template_seed = {'ID': 'ID',
+                           'TYPE': 'TYPE',
+                           'Entity Type': 'TI %',
+                           'Label': 'LABEL',
+                           'Number of Cell Types': 'A BDSHELP:cell_types_count',
+                           'Number of Cell Subclasses': 'A BDSHELP:cell_subclasses_count',
+                           'Number of Cell Classes': 'A BDSHELP:cell_classes_count',
+                           'Anatomic Region': "A BDSHELP:has_brain_region",
+                           'Species Label': 'A skos:prefLabel',
+                           'Age': 'A BDSHELP:has_age',
+                           'Sex': 'A BDSHELP:has_sex',
+                           'Primary Citation': "A oboInOwl:hasDbXref"
+                           }
+    dl = [robot_template_seed]
+
+    for taxon_config in taxon_configs:
+        d = dict()
+        d['ID'] = 'AllenDend:' + taxon_config["Taxonomy_id"]
+        d['TYPE'] = 'owl:NamedIndividual'
+        d['Entity Type'] = 'BDSHELP:Taxonomy'
+        d['Label'] = taxon_config["Taxonomy_id"]
+        d['Anatomic Region'] = taxon_config['Brain_region'][0]
+        d['Primary Citation'] = taxon_config['DOI'][0]
+        if taxon_config["Taxonomy_id"] in taxonomies_metadata:
+            taxonomy_metadata = taxonomies_metadata[taxon_config["Taxonomy_id"]]
+            d['Number of Cell Types'] = taxonomy_metadata["Cell Types"]
+            d['Number of Cell Subclasses'] = taxonomy_metadata["Cell Subclasses"]
+            d['Number of Cell Classes'] = taxonomy_metadata["Cell Classes"]
+            d['Species Label'] = taxonomy_metadata["Species"]
+            d['Age'] = taxonomy_metadata["Age"]
+            d['Sex'] = taxonomy_metadata["Sex"]
+
+        dl.append(d)
+    robot_template = pd.DataFrame.from_records(dl)
+    robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
 def merge_class_templates(base_tsv, curation_tsv, output_filepath):

@@ -37,6 +37,13 @@ Declaration(AnnotationProperty(<http://www.semanticweb.org/brain_data_standards/
 Declaration(AnnotationProperty(dce:description))
 Declaration(AnnotationProperty(dce:title))
 Declaration(AnnotationProperty(dcterms:license))
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/helper.owl#Taxonomy>))
+Declaration(AnnotationProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#cell_types_count>))
+Declaration(AnnotationProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#cell_subclasses_count>))
+Declaration(AnnotationProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#cell_classes_count>))
+Declaration(AnnotationProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_age>))
+Declaration(AnnotationProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_brain_region>))
+Declaration(AnnotationProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_sex>))
 
 ############################
 #   Object Properties
