@@ -15,6 +15,7 @@ parser_generator = subparsers.add_parser('generator', description='Process some 
                                                                   'template.')
 parser_generator.add_argument('-i', '--input', help="Path to input JSON file")
 parser_generator.add_argument('-o', '--output', help="Path to output TSV file")
+parser_generator.add_argument('-j', '--jobs', help="List of all jobs")
 parser_generator.add_argument('-cb', action='store_true', help="Generate a class base template.")
 parser_generator.add_argument('-cc', action='store_true', help="Generate a class curation template.")
 parser_generator.add_argument('-md', action='store_true', help="Generate a denormalized marker template.")
@@ -35,7 +36,8 @@ if args.action == "modifier":
         merge_class_templates(args.input, args.input2, args.output)
 else:
     if args.cb:
-        generate_base_class_template(args.input, args.output)
+        all_jobs = [x.strip() for x in args.jobs.split(' ') if x.strip()]
+        generate_base_class_template(args.input, all_jobs, args.output)
     elif args.cc:
         generate_curated_class_template(args.input, args.output)
     elif args.md:

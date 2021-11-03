@@ -14,7 +14,7 @@ http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_12	In
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_13	Inh L1-2 VIP WNT4					ensembl:ENSG00000146469|ensembl:ENSG00000162552		DOI:10.1101/2020.02.29.970558		
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_14	Inh L1 LAMP5 BMP2					ensembl:ENSG00000125869|ensembl:ENSG00000125845		DOI:10.1101/2020.02.29.970558		
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_15	Inh L1 LAMP5 NMBR					ensembl:ENSG00000125869|ensembl:ENSG00000135577		DOI:10.1101/2020.02.29.970558		
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_16	Inh L1 PVALB SST ASIC4					ensembl:ENSG00000157005|ensembl:ENSG00000072182	PVALB not expressed higher than background	DOI:10.1101/2020.02.29.970558		
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_16	Inh L1 PVALB-like SST ASIC4					ensembl:ENSG00000157005|ensembl:ENSG00000072182	PVALB not expressed higher than background	DOI:10.1101/2020.02.29.970558		
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_17	Inh L1 SST P4HA3					ensembl:ENSG00000157005|ensembl:ENSG00000149380		DOI:10.1101/2020.02.29.970558		
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_18	Inh L1 SST DEFB108B					ensembl:ENSG00000157005|ensembl:ENSG00000184276		DOI:10.1101/2020.02.29.970558		
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_19	Inh L1-3 VIP CBLN1					ensembl:ENSG00000146469|ensembl:ENSG00000102924		DOI:10.1101/2020.02.29.970558		
@@ -117,7 +117,7 @@ http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_115	E
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_116	Exc L5-6 FEZF2 IFNG-AS1					ensembl:ENSG00000153266|ensembl:ENSG00000255733	IFNG expressed is antisense	DOI:10.1101/2020.02.29.970558		
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_117	Exc L5-6 FEZF2 LPO					ensembl:ENSG00000153266|ensembl:ENSG00000167419		DOI:10.1101/2020.02.29.970558		
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_118	OPC L1-6 PDGFRA COL20A1					ensembl:ENSG00000134853|ensembl:ENSG00000101203		DOI:10.1101/2020.02.29.970558		
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_119	Oligo L3-6 OPALIN ENPP6					ensembl:ENSG00000164303	Does not express OPALIN above baseline	DOI:10.1101/2020.02.29.970558		
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_119	Oligo L3-6 OPALIN-like ENPP6					ensembl:ENSG00000164303	Does not express OPALIN above baseline	DOI:10.1101/2020.02.29.970558		
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_120	Oligo L2-6 OPALIN FTH1P3					ensembl:ENSG00000197430|ensembl:ENSG00000213453		DOI:10.1101/2020.02.29.970558		
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_121	Oligo L5-6 OPALIN LDLRAP1					ensembl:ENSG00000197430|ensembl:ENSG00000157978		DOI:10.1101/2020.02.29.970558		
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_122	Astro L1-6 FGFR3 AQP1					ensembl:ENSG00000068078|ensembl:ENSG00000240583		DOI:10.1101/2020.02.29.970558		
@@ -126,47 +126,50 @@ http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_124	A
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_125	Endo L2-5 NOSTRIN SRGN					ensembl:ENSG00000163072|ensembl:ENSG00000122862		DOI:10.1101/2020.02.29.970558		
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_126	VLMC L1-5 PDGFRA COLEC12					ensembl:ENSG00000134853|ensembl:ENSG00000158270	Currently missing in fireplot, assumed to express all markers in name	DOI:10.1101/2020.02.29.970558		
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_127	Micro L1-6 TYROBP CD74					ensembl:ENSG00000011600|ensembl:ENSG00000019582		DOI:10.1101/2020.02.29.970558		
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_128	Lamp5									
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_129	Sncg									
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_133	L2/3 IT								PATO:0070034	
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_134	L5 IT								PATO:0070034	
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_135	L6 IT								PATO:0070034	
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_136	L6 CT								PATO:0070029	
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_137	L6b									
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_138	L5 ET								PATO:0070028	
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_139	L5/6 NP								PATO:0070030	
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_128	(Mouse Lamp5)-like									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_129	(Mouse Sncg)-like									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_130	(Mouse Vip)-like									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_131	(Mouse Sst)-like									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_132	(Mouse Pvalb)-like									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_133	(Mouse L2/3 IT)-like								PATO:0070034	
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_134	(Mouse L5 IT)-like								PATO:0070034	
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_135	(Mouse L6 IT)-like								PATO:0070034	
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_136	(Mouse L6 CT)-like								PATO:0070029	
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_137	(Mouse L6b)-like									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_138	(Mouse L5 ET)-like								PATO:0070028	
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_139	(Mouse L5/6 NP)-like								PATO:0070030	
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_140	Oligo									
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_142	Astro									
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_143	CGE/PoA		CL:4023070		DOI:10.1101/2020.02.29.970558					
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_144	MGE		CL:4023069		DOI:10.1101/2020.02.29.970558					
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_145	IT projecting		CL:4023008		DOI:10.1101/2020.02.29.970558				PATO:0070034	
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_146	Non-IT projecting									
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_152	Lamp5_C2									
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_153	Lamp5_C3									
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_154	Lamp5_C4									
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_155	Sncg_C1									
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_156	Sncg_C3									
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_157	Lamp5_C5									
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_158	Sncg_C4									
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_159	Vip_C1									
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_160	Vip_C2									
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_161	Vip_C3									
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_162	Vip_C4									
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_163	Sst_C1									
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_164	Sst_C2									
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_165	Sst_C3									
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_166	Sst_C4									
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_167	Sst_C5									
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_168	Sst_C6									
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_169	Pvalb_C1									
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_170	Pvalb_C2									
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_171	L2/3 IT(i)								PATO:0070034	
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_172	L5 IT_C1								PATO:0070034	
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_173	L5 IT_C2								PATO:0070034	
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_174	L6 IT_C2								PATO:0070034	
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_175	L5 IT_C3								PATO:0070034	
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_176	L6 IT_C1								PATO:0070034	
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_177	L6 CT_C1								PATO:0070029	
-http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_178	L5 ET_C1								PATO:0070028	
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_143	(Mouse CGE/PoA)-like		CL:4023070		DOI:10.1101/2020.02.29.970558					
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_144	(Mouse MGE)-like		CL:4023069		DOI:10.1101/2020.02.29.970558					
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_145	(Mouse IT projecting)-like		CL:4023008		DOI:10.1101/2020.02.29.970558				PATO:0070034	
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_146	(Mouse Non-IT projecting)-like									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_152	(Mouse Lamp5)-like_C2									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_153	(Mouse Lamp5)-like_C3									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_154	(Mouse Lamp5)-like_C4									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_155	(Mouse Sncg)-like_C1									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_156	(Mouse Sncg)-like_C3									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_157	(Mouse Lamp5)-like_C5									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_158	(Mouse Sncg)-like_C4									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_159	(Mouse Vip)-like_C1									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_160	(Mouse Vip)-like_C2									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_161	(Mouse Vip)-like_C3									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_162	(Mouse Vip)-like_C4									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_163	(Mouse Sst)-like_C1									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_164	(Mouse Sst)-like_C2									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_165	(Mouse Sst)-like_C3									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_166	(Mouse Sst)-like_C4									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_167	(Mouse Sst)-like_C5									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_168	(Mouse Sst)-like_C6									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_169	(Mouse Pvalb)-like_C1									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_170	(Mouse Pvalb)-like_C2									
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_171	(Mouse IT projecting)-like(i)								PATO:0070034	
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_172	(Mouse L5 IT)-like_C1								PATO:0070034	
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_173	(Mouse L5 IT)-like_C2								PATO:0070034	
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_174	(Mouse L6 IT)-like_C2								PATO:0070034	
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_175	(Mouse L5 IT)-like_C3								PATO:0070034	
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_176	(Mouse L6 IT)-like_C1								PATO:0070034	
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_177	(Mouse L6 CT)-like_C1								PATO:0070029	
+http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_178	(Mouse L5 ET)-like_C1								PATO:0070028	
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_179	Oligo_C2									
 http://www.semanticweb.org/brain_data_standards/AllenDendClass_CS201912131_180	Astro_C1									

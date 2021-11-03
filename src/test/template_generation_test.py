@@ -5,10 +5,14 @@ from template_generation_tools import generate_base_class_template, generate_cro
     generate_ind_template, generate_non_taxonomy_classification_template
 from template_generation_utils import read_tsv, migrate_manual_curations
 
+ALL_TAXONOMIES = ["CCN202002013", "CCN201912131", "CCN201912132"]
+
 PATH_MOUSE_NOMENCLATURE = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                        "../dendrograms/nomenclature_table_CCN202002013.csv")
+# PATH_NOMENCLATURE_TABLE = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+#                                        "./test_data/nomenclature_table_CCN201912131.csv")
 PATH_NOMENCLATURE_TABLE = os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                                       "./test_data/nomenclature_table_CCN201912131.csv")
+                                       "../dendrograms/nomenclature_table_CCN201912131.csv")
 PATH_MARKER = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/CS202002013_markers.tsv")
 PATH_OUTPUT_CLASS_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/output_class.tsv")
 PATH_OUTPUT_NON_TAXON_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)),
@@ -65,8 +69,8 @@ class TemplateGenerationTest(unittest.TestCase):
 
         self.assertEqual("Cell Type|Subclass", output["AllenDend:CS202002013_112"][_rank])
 
-    def test_curated_class_template_generation(self):
-        generate_base_class_template(PATH_MOUSE_NOMENCLATURE, PATH_OUTPUT_CLASS_TSV)
+    def test_base_class_template_generation(self):
+        generate_base_class_template(PATH_MOUSE_NOMENCLATURE, ALL_TAXONOMIES, PATH_OUTPUT_CLASS_TSV)
         output = read_tsv(PATH_OUTPUT_CLASS_TSV)
 
         self.assertTrue(ALLEN_CLASS + "CS202002013_150" in output)  # child
@@ -94,8 +98,8 @@ class TemplateGenerationTest(unittest.TestCase):
         self.assertFalse(ALLEN_CLASS + "CS202002013_219" in output)  # parent
         self.assertFalse(ALLEN_CLASS + "CS202002013_220" in output)  # grand parent
 
-    def test_curated_class_template_generation_with_nomenclature(self):
-        generate_base_class_template(PATH_NOMENCLATURE_TABLE, PATH_OUTPUT_CLASS_TSV)
+    def test_base_class_template_generation_with_nomenclature(self):
+        generate_base_class_template(PATH_NOMENCLATURE_TABLE, ALL_TAXONOMIES, PATH_OUTPUT_CLASS_TSV)
         output = read_tsv(PATH_OUTPUT_CLASS_TSV)
 
         # assert only descendants of the root nodes (except root nodes itself) exist
@@ -125,7 +129,7 @@ class TemplateGenerationTest(unittest.TestCase):
     #     self.assertTrue(ALLEN_CLASS + "CS202002013_116" in output)  # child of CS202002013_237
     #     self.assertEqual("CL:0000881", output[ALLEN_CLASS + "CS202002013_116"][1])
 
-    def test_cross_species_template_generation_json(self):
+    def test_cross_species_template_generation(self):
         generate_cross_species_template(PATH_MOUSE_NOMENCLATURE, PATH_GENERIC_OUTPUT_TSV)
         output = read_tsv(PATH_GENERIC_OUTPUT_TSV)
 
@@ -140,8 +144,9 @@ class TemplateGenerationTest(unittest.TestCase):
         self.assertEqual(ALLEN_CLASS + "CS202002270_53", output[ALLEN_CLASS + "CS202002013_193"][1])
 
         # taxon additional_aliases -> cross species preferred_alias
-        self.assertTrue(ALLEN_CLASS + "CS202002013_211" in output)
-        self.assertEqual(ALLEN_CLASS + "CS202002270_39", output[ALLEN_CLASS + "CS202002013_211"][1])
+        # not valid due to nomenclature change
+        # self.assertTrue(ALLEN_CLASS + "CS202002013_211" in output)
+        # self.assertEqual(ALLEN_CLASS + "CS202002270_39", output[ALLEN_CLASS + "CS202002013_211"][1])
 
     def test_cross_species_template_generation_nomenclature(self):
         generate_cross_species_template(PATH_NOMENCLATURE_TABLE, PATH_GENERIC_OUTPUT_TSV)
@@ -154,10 +159,11 @@ class TemplateGenerationTest(unittest.TestCase):
         self.assertEqual(ALLEN_CLASS + "CS202002270_45", output[ALLEN_CLASS + "CS201912131_127"][1])
 
         # taxon additional_aliases -> cross species preferred_alias
-        self.assertTrue(ALLEN_CLASS + "CS201912131_11" in output)
-        self.assertEqual(ALLEN_CLASS + "CS202002270_6", output[ALLEN_CLASS + "CS201912131_11"][1])
-        self.assertTrue(ALLEN_CLASS + "CS201912131_171" in output)
-        self.assertEqual(ALLEN_CLASS + "CS202002270_25", output[ALLEN_CLASS + "CS201912131_171"][1])
+        # not valid due to nomenclature change
+        # self.assertTrue(ALLEN_CLASS + "CS201912131_11" in output)
+        # self.assertEqual(ALLEN_CLASS + "CS202002270_6", output[ALLEN_CLASS + "CS201912131_11"][1])
+        # self.assertTrue(ALLEN_CLASS + "CS201912131_171" in output)
+        # self.assertEqual(ALLEN_CLASS + "CS202002270_25", output[ALLEN_CLASS + "CS201912131_171"][1])
 
     # not test
     # def test_curated_class_migrate(self):
@@ -177,10 +183,3 @@ class TemplateGenerationTest(unittest.TestCase):
     #                              "../patterns/data/default/CCN202002013_class_curation.tsv",
     #                              migrate_columns,
     #                              "../patterns/data/default/CCN202002013_class_curation_migrate.tsv")
-    #
-    #     migrate_manual_curations("../patterns/data/default/CCN202002270_class_curation_old.tsv",
-    #                              "../patterns/data/default/CCN202002270_class_curation.tsv",
-    #                              migrate_columns,
-    #                              "../patterns/data/default/CCN202002270_class_curation_migrate.tsv")
-
-

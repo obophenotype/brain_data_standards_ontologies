@@ -1,0 +1,66 @@
+Prefix(:=<http://www.semanticweb.org/brain_data_standards/components/taxonomies.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/brain_data_standards/components/taxonomies.owl>
+
+Declaration(Class(<http://www.semanticweb.org/brain_data_standards/helper.owl#Taxonomy>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CCN201912131>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CCN201912132>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CCN202002013>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CCN202002270>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
+Declaration(AnnotationProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#cell_classes_count>))
+Declaration(AnnotationProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#cell_subclasses_count>))
+Declaration(AnnotationProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#cell_types_count>))
+Declaration(AnnotationProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_age>))
+Declaration(AnnotationProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_brain_region>))
+Declaration(AnnotationProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_sex>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN201912131> (CCN201912131)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN201912131> "doi:10.1101/2020.03.31.016972"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_brain_region> <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN201912131> "UBERON:0001384"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN201912131> "CCN201912131"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Taxonomy> <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN201912131>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN201912132> (CCN201912132)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN201912132> "doi:10.1101/2020.03.31.016972"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_brain_region> <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN201912132> "UBERON:0001384"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN201912132> "CCN201912132"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Taxonomy> <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN201912132>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN202002013> (CCN202002013)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN202002013> "doi:10.1101/2020.02.29.970558"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#cell_classes_count> <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN202002013> "4"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#cell_subclasses_count> <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN202002013> "24"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#cell_types_count> <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN202002013> "116"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_age> <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN202002013> "Young Adult (P56-P63)"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_brain_region> <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN202002013> "UBERON:0001384"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_sex> <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN202002013> "Both"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN202002013> "CCN202002013"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN202002013> "Mus musculus"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Taxonomy> <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN202002013>)
+
+# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN202002270> (CCN202002270)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN202002270> "doi:10.1101/2020.03.31.016972"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_brain_region> <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN202002270> "UBERON:0001384"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN202002270> "CCN202002270"^^xsd:string)
+ClassAssertion(<http://www.semanticweb.org/brain_data_standards/helper.owl#Taxonomy> <http://www.semanticweb.org/brain_data_standards/AllenDend_CCN202002270>)
+
+
+)

@@ -62,7 +62,7 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
                            'Metadata': "A n2o:node_metadata",
                            'Exemplar_of': "TI exemplar_of some %",
                            'Comment': "A rdfs:comment",
-                           'Aliases': "A oboInOwl:hasExactSynonym SPLIT=|",
+                           'Aliases': "A oboInOwl:hasRelatedSynonym SPLIT=|",
                            'Rank': "A BDSHELP:cell_type_rank SPLIT=|"
                            }
     dl = [robot_template_seed]
@@ -107,7 +107,7 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
     robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
-def generate_base_class_template(taxonomy_file_path, output_filepath):
+def generate_base_class_template(taxonomy_file_path, all_taxonomies, output_filepath):
     path_parts = taxonomy_file_path.split(os.path.sep)
     taxon = path_parts[len(path_parts) - 1].split(".")[0]
 
@@ -122,6 +122,9 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
 
     marker_path = MARKER_PATH.format(str(taxon).replace("CCN", ""))
     allen_marker_path = ALLEN_MARKER_PATH.format(str(taxon).replace("CCN", ""))
+
+    all_taxonomies.remove(taxon)
+    other_taxonomy_aliases = index_taxonomies(all_taxonomies)
 
     if taxonomy_config:
         subtrees = get_subtrees(dend_tree, taxonomy_config)
@@ -149,7 +152,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                       'Brain_region_abbv',
                       'Species_abbv',
                       'part_of',
-                      'has_soma_location'
+                      'has_soma_location',
+                      'homologous_to'
                       ]
         class_template = []
 
@@ -194,6 +198,13 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                         elif location_rel == "has_soma_location":
                             d['part_of'] = ''
                             d['has_soma_location'] = taxonomy_config['Brain_region'][0]
+
+                homologous_to = list()
+                for other_aliases in other_taxonomy_aliases:
+                    if o["cell_set_aligned_alias"] and str(o["cell_set_aligned_alias"]).lower() in other_aliases:
+                        homologous_to.append(ALLEN_DEND_CLASS + other_aliases[str(o["cell_set_aligned_alias"])
+                                             .lower()]["cell_set_accession"])
+                d['homologous_to'] = "|".join(homologous_to)
 
                 for k in class_seed:
                     if not (k in d.keys()):
@@ -315,11 +326,10 @@ def generate_cross_species_template(taxonomy_file_path, output_filepath):
         subtrees = get_subtrees(dend_tree, taxonomy_config)
         cross_species_template = []
 
-        cell_set_preferred_alias = 0
-        cell_set_accession = 3
-        cell_set_aligned_alias = 4
-        cs_by_preferred_alias = read_csv(CROSS_SPECIES_PATH, id_column=cell_set_preferred_alias, id_to_lower=True)
-        cs_by_aligned_alias = read_csv(CROSS_SPECIES_PATH, id_column=cell_set_aligned_alias, id_to_lower=True)
+        headers, cs_by_preferred_alias = read_csv_to_dict(CROSS_SPECIES_PATH,
+                                                          id_column_name="cell_set_preferred_alias", id_to_lower=True)
+        headers, cs_by_aligned_alias = read_csv_to_dict(CROSS_SPECIES_PATH,
+                                                        id_column_name="cell_set_aligned_alias", id_to_lower=True)
 
         for o in dend['nodes']:
             if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or
@@ -327,14 +337,14 @@ def generate_cross_species_template(taxonomy_file_path, output_filepath):
                 cross_species_classes = set()
                 if o["cell_set_aligned_alias"] and str(o["cell_set_aligned_alias"]).lower() in cs_by_aligned_alias:
                     cross_species_classes.add(ALLEN_DEND_CLASS + cs_by_aligned_alias[str(o["cell_set_aligned_alias"])
-                                              .lower()][cell_set_accession])
+                                              .lower()]["cell_set_accession"])
 
                 if "cell_set_additional_aliases" in o and o["cell_set_additional_aliases"]:
                     additional_aliases = str(o["cell_set_additional_aliases"]).lower().split(EXPRESSION_SEPARATOR)
                     for additional_alias in additional_aliases:
                         if additional_alias in cs_by_preferred_alias:
                             cross_species_classes.add(ALLEN_DEND_CLASS +
-                                                      cs_by_preferred_alias[additional_alias][cell_set_accession])
+                                                      cs_by_preferred_alias[additional_alias]["cell_set_accession"])
 
                 if len(cross_species_classes):
                     d = dict()
@@ -386,6 +396,18 @@ def generate_taxonomies_template(taxonomy_metadata_path, output_filepath):
         dl.append(d)
     robot_template = pd.DataFrame.from_records(dl)
     robot_template.to_csv(output_filepath, sep="\t", index=False)
+
+
+def index_taxonomies(taxonomies):
+    index = list()
+    for taxonomy in taxonomies:
+        nomenclature_path = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                                         NOMENCLATURE_TABLE_PATH.format(taxonomy))
+        headers, records = read_csv_to_dict(nomenclature_path, id_column_name="cell_set_aligned_alias",
+                                            id_to_lower=True)
+        index.append(records)
+
+    return index
 
 
 def merge_class_templates(base_tsv, curation_tsv, output_filepath):
