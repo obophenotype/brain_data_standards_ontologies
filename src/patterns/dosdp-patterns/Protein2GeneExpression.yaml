@@ -18,5 +18,5 @@ logical_axioms:
    - axiom_type: GCI
      text: "'expresses' some %s SubClassOf 'expresses' some %s"
      vars:
-       - protein
        - gene
+       - protein
