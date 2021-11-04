@@ -19,7 +19,7 @@ relations:
   in_taxon: "RO:0002162"
   has_soma_location: "RO:0002100"
   bearer_of: "RO:0000053"
-  has_exemplar: "http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"
+  has_exemplar_data: "RO:0015001"
   homologous_to: "RO:HOM0000007"
 
 annotationProperties:
@@ -195,11 +195,11 @@ logical_axioms:
      vars:
        - has_soma_location
    - axiom_type: subClassOf
-     text: "'has_exemplar' value %s"
+     text: "'has_exemplar_data' value %s"
      vars:
         - Individual
    - axiom_type: equivalentTo
-     text: "'native_cell' and 'has_exemplar' value %s"
+     text: "'native_cell' and 'has_exemplar_data' value %s"
      vars:
         - Individual
 

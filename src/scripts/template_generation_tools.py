@@ -49,7 +49,7 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
                            'PrefLabel': 'A skos:prefLabel',
                            'Entity Type': 'TI %',
                            'TYPE': 'TYPE',
-                           'Property Assertions': "I BDSHELP:subcluster_of SPLIT=|",
+                           'Property Assertions': "I 'subcluster of' SPLIT=|",
                            'Synonyms': 'A oboInOwl:hasExactSynonym SPLIT=|',
                            'Function': 'TI capable_of some %',
                            'cell_set_preferred_alias': "A n2o:cell_set_preferred_alias",
@@ -60,7 +60,7 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
                            'cell_set_alias_assignee': "A n2o:cell_set_alias_assignee SPLIT=|",
                            'cell_set_alias_citation': "A n2o:cell_set_alias_citation SPLIT=|",
                            'Metadata': "A n2o:node_metadata",
-                           'Exemplar_of': "TI exemplar_of some %",
+                           'Exemplar_of': "TI 'exemplar data of' some %",
                            'Comment': "A rdfs:comment",
                            'Aliases': "A oboInOwl:hasRelatedSynonym SPLIT=|",
                            'Rank': "A BDSHELP:cell_type_rank SPLIT=|"
@@ -381,7 +381,7 @@ def generate_taxonomies_template(taxonomy_metadata_path, output_filepath):
         d['Entity Type'] = 'BDSHELP:Taxonomy'
         d['Label'] = taxon_config["Taxonomy_id"]
         d['Anatomic Region'] = taxon_config['Brain_region'][0]
-        d['Primary Citation'] = taxon_config['DOI'][0]
+        d['Primary Citation'] = taxon_config['PMID'][0]
         if taxon_config["Taxonomy_id"] in taxonomies_metadata:
             taxonomy_metadata = taxonomies_metadata[taxon_config["Taxonomy_id"]]
             d['Number of Cell Types'] = taxonomy_metadata["Cell Types"]

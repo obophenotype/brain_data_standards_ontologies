@@ -29,10 +29,6 @@ Declaration(Class(<http://www.semanticweb.org/brain_data_standards/helper.owl#Cl
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002100>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002215>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002292>))
-Declaration(ObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#exemplar_of>))
-Declaration(ObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar>))
-Declaration(ObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_subexemplar>))
-Declaration(ObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of>))
 Declaration(AnnotationProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#cell_type_rank>))
 Declaration(AnnotationProperty(dce:description))
 Declaration(AnnotationProperty(dce:title))
@@ -61,29 +57,16 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002215> "capa
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002292> "expresses")
 
-# Object Property: <http://www.semanticweb.org/brain_data_standards/helper.owl#exemplar_of> (exemplar_of)
-
-AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/helper.owl#exemplar_of> "exemplar_of")
-
-# Object Property: <http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> (has_exemplar)
-
-AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> "has_exemplar")
-
-# Object Property: <http://www.semanticweb.org/brain_data_standards/helper.owl#has_subexemplar> (<http://www.semanticweb.org/brain_data_standards/helper.owl#has_subexemplar>)
-
-SubObjectPropertyOf(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_subexemplar> <http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar>)
-
-# Object Property: <http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> (<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of>)
-
-TransitiveObjectProperty(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of>)
-
 # Object Property: <http://www.semanticweb.org/brain_data_standards/helper.owl#cell_type_rank> (cell_type_rank)
 
 AnnotationAssertion(rdfs:label <http://www.semanticweb.org/brain_data_standards/helper.owl#cell_type_rank> "cell_type_rank")
 
-
-SubObjectPropertyOf(ObjectPropertyChain(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://purl.obolibrary.org/obo/RO_0002215>) <http://purl.obolibrary.org/obo/RO_0002215>)
-SubObjectPropertyOf(ObjectPropertyChain(<http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar> <http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of>) <http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar>)
-SubObjectPropertyOf(ObjectPropertyChain(<http://www.semanticweb.org/brain_data_standards/helper.owl#subcluster_of> <http://purl.obolibrary.org/obo/RO_0002215>) <http://purl.obolibrary.org/obo/RO_0002215>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000028> "symbol")
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015001> "has exemplar data")
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015002> "exemplar data of")
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015003> "subcluster of")
+
 )

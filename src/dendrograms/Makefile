@@ -9,7 +9,7 @@ CROSS_SPECIES_TEMPLATE_FILES = $(patsubst %, ../patterns/data/default/%_cross_sp
 TAXONOMY_TEMPLATE_FILE = ../templates/Taxonomies.tsv
 
 
-all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FILES) $(MARKER_DENORMALIZED_FILES) $(NOMENCLATURE_TEMPLATE_FILES) $(CROSS_SPECIES_TEMPLATE_FILES) $(TAXONOMY_TEMPLATE_FILE)
+all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FILES) $(MARKER_DENORMALIZED_FILES) $(NOMENCLATURE_TEMPLATE_FILES) $(TAXONOMY_TEMPLATE_FILE)
 
 ../templates/%.tsv: nomenclature_table_%.csv
 	python ../scripts/template_runner.py generator -i $< -o $@
@@ -26,8 +26,8 @@ all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FI
 ../patterns/data/default/%_non_taxonomy_classification.tsv: nomenclature_table_%.csv
 	python ../scripts/template_runner.py generator -n -i $< -o $@
 
-#../patterns/data/default/%_cross_species.tsv: nomenclature_table_%.csv
-#	python ../scripts/template_runner.py generator -cs -i $< -o $@
-
 ../templates/Taxonomies.tsv: Taxonomy_Info_Panel.csv
 	python ../scripts/template_runner.py generator -tx -i $< -o $@
+
+#../patterns/data/default/%_cross_species.tsv: nomenclature_table_%.csv
+#	python ../scripts/template_runner.py generator -cs -i $< -o $@

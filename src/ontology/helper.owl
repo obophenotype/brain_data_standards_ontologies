@@ -10,10 +10,6 @@ Ontology(<http://www.semanticweb.org/brain_data_standards/helper.owl>
 
 Declaration(Class(:Cluster))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002215>))
-Declaration(ObjectProperty(:has_exemplar))
-Declaration(ObjectProperty(:has_subexemplar))
-Declaration(ObjectProperty(:subcluster_of))
-Declaration(ObjectProperty(:exemplar_of))
 
 ############################
 #   Object Properties
@@ -27,27 +23,4 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002215> "capa
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002292> "expresses")
 
-
-# Object Property: :has_exemplar (has_exemplar)
-
-AnnotationAssertion(rdfs:label :has_exemplar "has_exemplar")
-
-# Object Property: :has_subexemplar (:has_subexemplar)
-
-SubObjectPropertyOf(:has_subexemplar :has_exemplar)
-
-# Object Property: :subcluster_of (:subcluster_of)
-
-TransitiveObjectProperty(:subcluster_of)
-
-# Object Property: :exemplar_of (exemplar_of)
-
-AnnotationAssertion(rdfs:label :exemplar_of "exemplar_of")
-
-
-
-
-SubObjectPropertyOf(ObjectPropertyChain(:has_exemplar <http://purl.obolibrary.org/obo/RO_0002215>) <http://purl.obolibrary.org/obo/RO_0002215>)
-SubObjectPropertyOf(ObjectPropertyChain(:has_exemplar :subcluster_of) :has_exemplar)
-SubObjectPropertyOf(ObjectPropertyChain(:subcluster_of <http://purl.obolibrary.org/obo/RO_0002215>) <http://purl.obolibrary.org/obo/RO_0002215>)
 )

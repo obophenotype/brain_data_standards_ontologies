@@ -395,7 +395,10 @@ def migrate_manual_curations(source_tsv, target_tsv, migrate_columns, output_fil
         for key, row_data in target.items():
             if key in base:
                 for migrate_column in migrate_columns:
-                    row_data[migrate_column] = base[key][migrate_column]
+                    if migrate_column in base[key]:
+                        row_data[migrate_column] = base[key][migrate_column]
+                    else:
+                        row_data[migrate_column] = ''
             else:
                 for migrate_column in migrate_columns:
                     row_data[migrate_column] = ''
