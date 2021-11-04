@@ -169,10 +169,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                 d['Taxon'] = taxonomy_config['Species'][0]
                 d['Brain_region'] = taxonomy_config['Brain_region'][0]
                 if o['cell_set_alias_citation']:
-                    alias_citations = list()
-                    for citation in str(o['cell_set_alias_citation']).split("|"):
-                        if citation and citation.strip():
-                            alias_citations.append("DOI:" + citation)
+                    alias_citations = [citation.strip() for citation in str(o["cell_set_alias_citation"]).split("|")
+                                       if citation and citation.strip()]
                     d["Alias_citations"] = "|".join(alias_citations)
                 if o['cell_set_accession'] in minimal_markers:
                     d['Minimal_markers'] = minimal_markers[o['cell_set_accession']]
