@@ -5,7 +5,7 @@
 
 IMPORTS += simple_human simple_marmoset
 
-JOBS = CCN202002013 CCN201912131 CCN201912132 CCN202002270 #CCN202002013 CCN201810310 CCN201908211 CCN201908210
+JOBS = CCN202002013 CCN201912131 CCN201912132 #CCN202002270 CCN202002013 CCN201810310 CCN201908211 CCN201908210
 GENE_LIST = ensmusg simple_human simple_marmoset
 BDS_BASE = http://www.semanticweb.org/brain_data_standards/
 
@@ -17,6 +17,7 @@ GENE_FILES = $(patsubst %, mirror/%.owl, $(GENE_LIST))
 OWL_NOMENCLATURE_FILES = $(patsubst %, components/%_non_taxonomy_classification.owl, $(JOBS))
 OWL_CROSS_SPECIES_FILES = $(patsubst %, components/%_cross_species.owl, $(JOBS))
 OWL_TAXONOMY_FILE = components/taxonomies.owl
+OWL_PROTEIN2GENE_FILE = components/Protein2GeneExpression.owl
 
 #DEND_FILES = $(patsubst %, ../dendrograms/%.json, $(JOBS))
 #TEMPLATE_FILES = $(patsubst %, ../templates/%.tsv, $(JOBS))
@@ -60,6 +61,10 @@ $(PATTERNDIR)/data/default/%_non_taxonomy_classification.txt: $(PATTERNDIR)/data
 $(PATTERNDIR)/data/default/%_cross_species.txt: $(PATTERNDIR)/data/default/%_cross_species.tsv .FORCE
 	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_cross_species.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$@; fi
 
+$(PATTERNDIR)/data/default/Protein2GeneExpression.txt: $(PATTERNDIR)/data/default/Protein2GeneExpression.tsv .FORCE
+	if [ $(PAT) = true ]; then $(DOSDPT) terms --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/Protein2GeneExpression.yaml --obo-prefixes=true --prefixes=template_prefixes.yaml --outfile=$@; fi
+
+
 # merge class template data
 $(PATTERNDIR)/data/default/%_class.tsv: $(PATTERNDIR)/data/default/%_class_base.tsv $(PATTERNDIR)/data/default/%_class_curation.tsv
 	python ../scripts/template_runner.py modifier --merge -i=$< -i2=$(word 2, $^) -o=$@
@@ -86,7 +91,7 @@ mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
 .PRECIOUS: mirror/simple_marmoset.owl
 .PRECIOUS: imports/simple_marmoset_import.owl
 
-components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MIN_MARKER_FILES) $(OWL_NOMENCLATURE_FILES) $(OWL_CROSS_SPECIES_FILES) $(OWL_TAXONOMY_FILE)
+components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MIN_MARKER_FILES) $(OWL_NOMENCLATURE_FILES) $(OWL_CROSS_SPECIES_FILES) $(OWL_TAXONOMY_FILE) $(OWL_PROTEIN2GENE_FILE)
 	$(ROBOT) merge $(patsubst %, -i %, $^) \
 	 --collapse-import-closure false \
 	 annotate --ontology-iri ${BDS_BASE}$@  \
@@ -121,4 +126,9 @@ components/taxonomies.owl: ../templates/Taxonomies.tsv bdscratch-edit.owl
     		--add-prefixes template_prefixes.json \
     		annotate --ontology-iri ${BDS_BASE}$@ \
     		convert --format ofn --output $@
+
+components/Protein2GeneExpression.owl: $(PATTERNDIR)/data/default/Protein2GeneExpression.tsv $(PATTERNDIR)/dosdp-patterns/Protein2GeneExpression.yaml $(SRC) all_imports .FORCE
+	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
+        --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/Protein2GeneExpression.yaml \
+        --ontology=$(SRC) --obo-prefixes=true --outfile=$@
 

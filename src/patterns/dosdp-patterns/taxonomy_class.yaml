@@ -20,6 +20,7 @@ relations:
   has_soma_location: "RO:0002100"
   bearer_of: "RO:0000053"
   has_exemplar: "http://www.semanticweb.org/brain_data_standards/helper.owl#has_exemplar"
+  homologous_to: "RO:HOM0000007"
 
 annotationProperties:
   skosPrefLabel: "skos:prefLabel"
@@ -33,6 +34,7 @@ list_vars:
   Minimal_markers: "'sequence_feature'"
   Allen_markers: "'sequence_feature'"
   Layers: "'layer of neocortex'"
+  homologous_to: "'cell'"
 
 vars:
   Classification: "'cell'"
@@ -177,6 +179,13 @@ logical_axioms:
         - text: "'expresses' some %s"
           vars:
             - Minimal_markers
+   - axiom_type: subClassOf
+     multi_clause:
+       sep: " and "
+       clauses:
+         - text: "'homologous_to' some %s"
+           vars:
+             - homologous_to
    - axiom_type: subClassOf
      text: "'part_of' some %s"
      vars:
