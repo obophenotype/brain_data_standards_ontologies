@@ -4,19 +4,19 @@ description: "Expressing a gene is equivalent to expressing the protein product 
 
 
 relations:
-    expresses: "RO:0002292"
+  expresses: "RO:0002292"
     
- classes:
-   gene_class: "SO:0000704"
-   protein_class: "PR:000000001"
+classes:
+  gene_class: "SO:0000704"
+  protein_class: "PR:000000001"
     
- vars: 
-    protein: "'protein_class'"
-    gene: "'gene_class'"
+vars:
+  protein: "'protein_class'"
+  gene: "'gene_class'"
     
 logical_axioms:
-    axiom_type: GCI
-    text: "'expresses' some %s SubClass_of 'expresses' some %s"
-    vars:
-        - protein
-        - gene
+   - axiom_type: GCI
+     text: "'expresses' some %s SubClassOf 'expresses' some %s"
+     vars:
+       - gene
+       - protein

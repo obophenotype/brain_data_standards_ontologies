@@ -1,6 +1,6 @@
 from template_generation_tools import generate_base_class_template, generate_curated_class_template, \
     generate_ind_template, generate_non_taxonomy_classification_template, merge_class_templates, \
-    generate_cross_species_template
+    generate_cross_species_template, generate_taxonomies_template
 from marker_tools import generate_denormalised_marker_template
 import argparse
 import pathlib
@@ -15,11 +15,13 @@ parser_generator = subparsers.add_parser('generator', description='Process some 
                                                                   'template.')
 parser_generator.add_argument('-i', '--input', help="Path to input JSON file")
 parser_generator.add_argument('-o', '--output', help="Path to output TSV file")
+parser_generator.add_argument('-j', '--jobs', help="List of all jobs")
 parser_generator.add_argument('-cb', action='store_true', help="Generate a class base template.")
 parser_generator.add_argument('-cc', action='store_true', help="Generate a class curation template.")
 parser_generator.add_argument('-md', action='store_true', help="Generate a denormalized marker template.")
 parser_generator.add_argument('-n', action='store_true', help="Generate a nomenclature table template.")
 parser_generator.add_argument('-cs', action='store_true', help="Generate a cross species alignment template.")
+parser_generator.add_argument('-tx', action='store_true', help="Generate a taxonomies template.")
 
 parser_modifier = subparsers.add_parser('modifier', description='Template modification interface')
 parser_modifier.add_argument('-i', '--input', action='store', type=pathlib.Path, help="Path to first input file")
@@ -34,7 +36,8 @@ if args.action == "modifier":
         merge_class_templates(args.input, args.input2, args.output)
 else:
     if args.cb:
-        generate_base_class_template(args.input, args.output)
+        all_jobs = [x.strip() for x in args.jobs.split(' ') if x.strip()]
+        generate_base_class_template(args.input, all_jobs, args.output)
     elif args.cc:
         generate_curated_class_template(args.input, args.output)
     elif args.md:
@@ -43,5 +46,7 @@ else:
         generate_non_taxonomy_classification_template(args.input, args.output)
     elif args.cs:
         generate_cross_species_template(args.input, args.output)
+    elif args.tx:
+        generate_taxonomies_template(args.input, args.output)
     else:
         generate_ind_template(args.input, args.output)

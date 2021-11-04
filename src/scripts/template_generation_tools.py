@@ -5,7 +5,7 @@ import logging
 
 from dendrogram_tools import dend_json_2_nodes_n_edges
 from template_generation_utils import get_synonyms_from_taxonomy, get_synonym_pairs, read_taxonomy_config, \
-    get_subtrees, generate_dendrogram_tree, get_dend_subtrees, index_dendrogram,\
+    get_subtrees, generate_dendrogram_tree, read_taxonomy_details_yaml, read_csv_to_dict,\
     read_csv, read_gene_data, read_markers, get_gross_cell_type, merge_tables, read_allen_descriptions
 from nomenclature_tools import nomenclature_2_nodes_n_edges
 
@@ -62,7 +62,7 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
                            'Metadata': "A n2o:node_metadata",
                            'Exemplar_of': "TI exemplar_of some %",
                            'Comment': "A rdfs:comment",
-                           'Aliases': "A oboInOwl:hasExactSynonym SPLIT=|",
+                           'Aliases': "A oboInOwl:hasRelatedSynonym SPLIT=|",
                            'Rank': "A BDSHELP:cell_type_rank SPLIT=|"
                            }
     dl = [robot_template_seed]
@@ -107,7 +107,7 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
     robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
-def generate_base_class_template(taxonomy_file_path, output_filepath):
+def generate_base_class_template(taxonomy_file_path, all_taxonomies, output_filepath):
     path_parts = taxonomy_file_path.split(os.path.sep)
     taxon = path_parts[len(path_parts) - 1].split(".")[0]
 
@@ -123,6 +123,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
     marker_path = MARKER_PATH.format(str(taxon).replace("CCN", ""))
     allen_marker_path = ALLEN_MARKER_PATH.format(str(taxon).replace("CCN", ""))
 
+    all_taxonomies.remove(taxon)
+    other_taxonomy_aliases = index_taxonomies(all_taxonomies)
 
     if taxonomy_config:
         subtrees = get_subtrees(dend_tree, taxonomy_config)
@@ -150,7 +152,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                       'Brain_region_abbv',
                       'Species_abbv',
                       'part_of',
-                      'has_soma_location'
+                      'has_soma_location',
+                      'homologous_to'
                       ]
         class_template = []
 
@@ -193,6 +196,13 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                         elif location_rel == "has_soma_location":
                             d['part_of'] = ''
                             d['has_soma_location'] = taxonomy_config['Brain_region'][0]
+
+                homologous_to = list()
+                for other_aliases in other_taxonomy_aliases:
+                    if o["cell_set_aligned_alias"] and str(o["cell_set_aligned_alias"]).lower() in other_aliases:
+                        homologous_to.append(ALLEN_DEND_CLASS + other_aliases[str(o["cell_set_aligned_alias"])
+                                             .lower()]["cell_set_accession"])
+                d['homologous_to'] = "|".join(homologous_to)
 
                 for k in class_seed:
                     if not (k in d.keys()):
@@ -314,11 +324,10 @@ def generate_cross_species_template(taxonomy_file_path, output_filepath):
         subtrees = get_subtrees(dend_tree, taxonomy_config)
         cross_species_template = []
 
-        cell_set_preferred_alias = 0
-        cell_set_accession = 3
-        cell_set_aligned_alias = 4
-        cs_by_preferred_alias = read_csv(CROSS_SPECIES_PATH, id_column=cell_set_preferred_alias, id_to_lower=True)
-        cs_by_aligned_alias = read_csv(CROSS_SPECIES_PATH, id_column=cell_set_aligned_alias, id_to_lower=True)
+        headers, cs_by_preferred_alias = read_csv_to_dict(CROSS_SPECIES_PATH,
+                                                          id_column_name="cell_set_preferred_alias", id_to_lower=True)
+        headers, cs_by_aligned_alias = read_csv_to_dict(CROSS_SPECIES_PATH,
+                                                        id_column_name="cell_set_aligned_alias", id_to_lower=True)
 
         for o in dend['nodes']:
             if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or
@@ -326,14 +335,14 @@ def generate_cross_species_template(taxonomy_file_path, output_filepath):
                 cross_species_classes = set()
                 if o["cell_set_aligned_alias"] and str(o["cell_set_aligned_alias"]).lower() in cs_by_aligned_alias:
                     cross_species_classes.add(ALLEN_DEND_CLASS + cs_by_aligned_alias[str(o["cell_set_aligned_alias"])
-                                              .lower()][cell_set_accession])
+                                              .lower()]["cell_set_accession"])
 
                 if "cell_set_additional_aliases" in o and o["cell_set_additional_aliases"]:
                     additional_aliases = str(o["cell_set_additional_aliases"]).lower().split(EXPRESSION_SEPARATOR)
                     for additional_alias in additional_aliases:
                         if additional_alias in cs_by_preferred_alias:
                             cross_species_classes.add(ALLEN_DEND_CLASS +
-                                                      cs_by_preferred_alias[additional_alias][cell_set_accession])
+                                                      cs_by_preferred_alias[additional_alias]["cell_set_accession"])
 
                 if len(cross_species_classes):
                     d = dict()
@@ -344,6 +353,59 @@ def generate_cross_species_template(taxonomy_file_path, output_filepath):
 
         class_robot_template = pd.DataFrame.from_records(cross_species_template)
         class_robot_template.to_csv(output_filepath, sep="\t", index=False)
+
+
+def generate_taxonomies_template(taxonomy_metadata_path, output_filepath):
+    taxon_configs = read_taxonomy_details_yaml()
+    headers, taxonomies_metadata = read_csv_to_dict(taxonomy_metadata_path)
+
+    robot_template_seed = {'ID': 'ID',
+                           'TYPE': 'TYPE',
+                           'Entity Type': 'TI %',
+                           'Label': 'LABEL',
+                           'Number of Cell Types': 'A BDSHELP:cell_types_count',
+                           'Number of Cell Subclasses': 'A BDSHELP:cell_subclasses_count',
+                           'Number of Cell Classes': 'A BDSHELP:cell_classes_count',
+                           'Anatomic Region': "A BDSHELP:has_brain_region",
+                           'Species Label': 'A skos:prefLabel',
+                           'Age': 'A BDSHELP:has_age',
+                           'Sex': 'A BDSHELP:has_sex',
+                           'Primary Citation': "A oboInOwl:hasDbXref"
+                           }
+    dl = [robot_template_seed]
+
+    for taxon_config in taxon_configs:
+        d = dict()
+        d['ID'] = 'AllenDend:' + taxon_config["Taxonomy_id"]
+        d['TYPE'] = 'owl:NamedIndividual'
+        d['Entity Type'] = 'BDSHELP:Taxonomy'
+        d['Label'] = taxon_config["Taxonomy_id"]
+        d['Anatomic Region'] = taxon_config['Brain_region'][0]
+        d['Primary Citation'] = taxon_config['DOI'][0]
+        if taxon_config["Taxonomy_id"] in taxonomies_metadata:
+            taxonomy_metadata = taxonomies_metadata[taxon_config["Taxonomy_id"]]
+            d['Number of Cell Types'] = taxonomy_metadata["Cell Types"]
+            d['Number of Cell Subclasses'] = taxonomy_metadata["Cell Subclasses"]
+            d['Number of Cell Classes'] = taxonomy_metadata["Cell Classes"]
+            d['Species Label'] = taxonomy_metadata["Species"]
+            d['Age'] = taxonomy_metadata["Age"]
+            d['Sex'] = taxonomy_metadata["Sex"]
+
+        dl.append(d)
+    robot_template = pd.DataFrame.from_records(dl)
+    robot_template.to_csv(output_filepath, sep="\t", index=False)
+
+
+def index_taxonomies(taxonomies):
+    index = list()
+    for taxonomy in taxonomies:
+        nomenclature_path = os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                                         NOMENCLATURE_TABLE_PATH.format(taxonomy))
+        headers, records = read_csv_to_dict(nomenclature_path, id_column_name="cell_set_aligned_alias",
+                                            id_to_lower=True)
+        index.append(records)
+
+    return index
 
 
 def merge_class_templates(base_tsv, curation_tsv, output_filepath):
