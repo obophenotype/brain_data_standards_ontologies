@@ -194,6 +194,9 @@ def get_root_nodes(config_yaml):
 
 def read_tsv(tsv_path, id_column=0):
     """
+    @DEPRECATED: Please use read_tsv_to_dict. Dictionary based approach deals better with changing column orders and
+    missing columns that occur in nomenclature tables.
+
     Reads tsv file content into a dict. Key is the first column value and the value is list of row values
     Args:
         tsv_path: Path of the TSV file
@@ -206,6 +209,9 @@ def read_tsv(tsv_path, id_column=0):
 
 def read_csv(csv_path, id_column=0, delimiter=",", id_to_lower=False):
     """
+    @DEPRECATED: Please use read_csv_to_dict. Dictionary based approach deals better with changing column orders and
+    missing columns that occur in nomenclature tables.
+
     Reads tsv file content into a dict. Key is the id column value and the value is list of row values
     Args:
         csv_path: Path of the CSV file
@@ -323,7 +329,7 @@ def read_markers(marker_path, gene_names):
                     if marker_name in gene_names:
                         names.append(marker_name)
                     else:
-                        print(marker_name + " couldn't find in ensmusg.tsv")
+                        print(marker_name + " couldn't find in gene names database.")
                 markers[_id] = "|".join(sorted(names))
     return markers
 

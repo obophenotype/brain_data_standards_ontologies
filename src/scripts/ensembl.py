@@ -1,38 +1,17 @@
+import os
 import logging
-import csv
-import requests
+from pathlib import Path
 import pandas as pd
+from template_generation_utils import read_csv, read_csv_to_dict, read_taxonomy_details_yaml, read_gene_data
 
-from template_generation_utils import read_csv
 
-ENSEMBLE_SERVICE = "https://rest.ensembl.org/xrefs/symbol/{}/{}?content-type=application/json"
+GENE_DB_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../templates/{}.tsv")
 
-raw_markers_taxonomies = {"../markers/raw/AIBS_M1_NSForest_v2_marmoset_ALL_Results.csv": "201912132",
-                          "../markers/raw/AIBS_M1_NSForest_v2_human_ALL_Results.csv": "201912131"}
+NOMENCLATURE = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/nomenclature_table_{}.csv")
 
-marker_dbs = {"201912132": "../markers/raw/Marmoset genes ASM275486v1.csv",
-              "201912131": "../markers/raw/Human genes GRCh38.p2.csv"}
-
-species_mapping = {"201912132": "marmoset",
-                   "201912131": "human"}
-
-NOMENCLATURE = "../dendrograms/nomenclature_table_CCN{}.csv"
-
-OUTPUT_MARKER = "../markers/CS{}_markers.tsv"
+OUTPUT_MARKER = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../markers/CS{}_markers2.tsv")
 
 log = logging.getLogger(__name__)
-
-
-def get_marker_db_by_name(taxonomy):
-    return read_csv(marker_dbs[taxonomy], id_column=3, delimiter=",", id_to_lower=True)
-
-
-def get_marker_db_by_synonyms(taxonomy):
-    return read_csv(marker_dbs[taxonomy], id_column=4, delimiter=",", id_to_lower=True)
-
-
-def get_marker_db_by_id(taxonomy):
-    return read_csv(marker_dbs[taxonomy], id_column=0, delimiter=",")
 
 
 def search_nomenclature_with_alias(nomenclature, cluster_name):
@@ -49,19 +28,7 @@ def search_terms_in_index(term_variants, indexes):
     for term in term_variants:
         for index in indexes:
             if term in index:
-                return index[term][3]
-    return None
-
-
-def lookup_marker(taxonomy, symbol):
-    # specie = species_mapping[taxonomy]
-    # response = requests.get(ENSEMBLE_SERVICE.format(specie, symbol))
-    # data = response.json()
-    #
-    # _id = None
-    # if len(data) == 1:
-    #     _id = "ensembl:" + data[0]["id"]
-    # return _id
+                return index[term]
     return None
 
 
@@ -70,89 +37,114 @@ def normalize_raw_markers(raw_marker):
     Raw marker files has different structure than the expected. Needs these modifications:
         - Extract Taxonomy_node_ID: clusterName matches cell_set_aligned_alias of the dendrogram.
         - Resolve markers: convert marker names to ensemble IDs from local DBs
-        - Lookup missing markers from rest service
     Args:
         raw_marker:
     """
-    taxonomy = raw_markers_taxonomies[raw_marker]
+    taxonomy_config = get_taxonomy_config(raw_marker)
+    taxonomy_id = taxonomy_config["Taxonomy_id"]
 
-    # indexes with preferred_alias, aligned_alias and additional_alias
-    nomenclature_indexes = [read_csv(NOMENCLATURE.format(taxonomy), id_column=0, id_to_lower=True),
-                            read_csv(NOMENCLATURE.format(taxonomy), id_column=4, id_to_lower=True),
-                            read_csv(NOMENCLATURE.format(taxonomy), id_column=5, id_to_lower=True)]
+    print("Taxonomy ID: " + taxonomy_id)
+    nomenclature_indexes = [read_csv_to_dict(NOMENCLATURE.format(taxonomy_id),
+                                             id_column_name="cell_set_preferred_alias", id_to_lower=True)[1],
+                            read_csv_to_dict(NOMENCLATURE.format(taxonomy_id),
+                                             id_column_name="cell_set_aligned_alias", id_to_lower=True)[1],
+                            read_csv_to_dict(NOMENCLATURE.format(taxonomy_id),
+                                             id_column_name="cell_set_accession", id_to_lower=True)[1],
+                            read_csv_to_dict(NOMENCLATURE.format(taxonomy_id),
+                                             id_column_name="original_label", id_to_lower=True)[1],
+                            read_csv_to_dict(NOMENCLATURE.format(taxonomy_id),
+                                             id_column_name="cell_set_additional_aliases", id_to_lower=True)[1],
+                            ]
 
-    marker_db = get_marker_db_by_name(taxonomy)
-    marker_db_synonyms = get_marker_db_by_synonyms(taxonomy)
+    gene_db_path = GENE_DB_PATH.format(str(taxonomy_config["Reference_gene_list"][0]).strip().lower())
+    headers, genes_by_name = read_csv_to_dict(gene_db_path, id_column=2, delimiter="\t", id_to_lower=True)
 
     unmatched_markers = set()
     normalized_markers = []
-    with open(raw_marker) as fd:
-        rd = csv.reader(fd, delimiter=",", quotechar='"')
-        next(rd)  # skip first row
-        for row in rd:
-            normalized_data = {}
-            cluster_name = row[0]
-            cluster_name_variants = [cluster_name.lower(), cluster_name.lower().replace("-", "/"),
-                                     cluster_name.replace("Micro", "Microglia").lower()]
 
-            node_id = search_terms_in_index(cluster_name_variants, nomenclature_indexes)
-            if node_id:
-                marker_names = [row[7], row[8], row[9], row[10], row[11]]
-                marker_ids = []
-                for name in marker_names:
-                    if name:
-                        if name.lower() in marker_db:
-                            marker_ids.append("ensembl:" + str(marker_db[name.lower()][0]))
-                        elif name.lower() in marker_db_synonyms:
-                            marker_ids.append("ensembl:" + str(marker_db_synonyms[name.lower()][0]))
-                        else:
-                            marker = lookup_marker(taxonomy, name)
-                            if marker:
-                                marker_ids.append(marker)
-                            else:
-                                unmatched_markers.add(name)
+    headers, raw_marker_data = read_csv_to_dict(raw_marker)
+    for cluster_name in raw_marker_data:
+        normalized_data = {}
+        row = raw_marker_data[cluster_name]
+        cluster_name_variants = [cluster_name.lower(), cluster_name.lower().replace("-", "/"),
+                                 cluster_name.replace("Micro", "Microglia").lower()]
 
-                normalized_data["Taxonomy_node_ID"] = node_id
-                normalized_data["clusterName"] = cluster_name
-                normalized_data["Markers"] = "|".join(marker_ids)
+        nomenclature_node = search_terms_in_index(cluster_name_variants, nomenclature_indexes)
+        if nomenclature_node:
+            node_id = nomenclature_node["cell_set_accession"]
+            marker_names = [row["Marker1"], row["Marker2"], row["Marker3"], row["Marker4"]]
+            if "Marker5" in row:  # some don't have marker 5
+                marker_names.append(row["Marker5"])
+            marker_ids = []
+            for name in marker_names:
+                if name:
+                    if name.lower() in genes_by_name:
+                        marker_ids.append(str(genes_by_name[name.lower()]["ID"]))
+                    elif name.lower().replace("_", "-") in genes_by_name:
+                        marker_ids.append(str(genes_by_name[name.lower().replace("_", "-")]["ID"]))
+                    else:
+                        unmatched_markers.add(name)
 
-                normalized_markers.append(normalized_data)
-            else:
-                log.error("Node with cluster name '{}' couldn't be found in the nomenclature.".format(cluster_name))
-                # raise Exception("Node with cluster name {} couldn't be found in the nomenclature.".format(cluster_name))
+            normalized_data["Taxonomy_node_ID"] = node_id
+            normalized_data["clusterName"] = nomenclature_node["cell_set_preferred_alias"]
+            normalized_data["Markers"] = "|".join(marker_ids)
+
+            normalized_markers.append(normalized_data)
+        else:
+            log.error("Node with cluster name '{}' couldn't be found in the nomenclature.".format(cluster_name))
+            # raise Exception("Node with cluster name {} couldn't be found in the nomenclature.".format(cluster_name))
 
     class_robot_template = pd.DataFrame.from_records(normalized_markers)
-    class_robot_template.to_csv(OUTPUT_MARKER.format(taxonomy), sep="\t", index=False)
+    class_robot_template.to_csv(OUTPUT_MARKER.format(taxonomy_id.replace("CCN", "")), sep="\t", index=False)
     log.error("Following markers could not be found in the db ({}): {}".format(len(unmatched_markers),
                                                                                str(unmatched_markers)))
 
 
-def generate_marker_template(taxon, output_file):
-    marker_db = get_marker_db_by_id(taxon)
+def get_taxonomy_config(raw_marker_path):
+    species_name = Path(raw_marker_path).stem.split("_")[0]
+    taxonomy_configs = read_taxonomy_details_yaml()
 
-    markers = set()
-    with open(OUTPUT_MARKER.format(taxon)) as fd:
-        rd = csv.reader(fd, delimiter="\t", quotechar='"')
-        next(rd)  # skip first row
-        for row in rd:
-            markers.update(row[2].split("|"))
+    taxonomy_config = None
+    for config in taxonomy_configs:
+        if species_name in config["Species_abbv"]:
+            taxonomy_config = config
 
-    marker_records = []
-    for marker in markers:
-        record = {}
+    if taxonomy_config:
+        return taxonomy_config
+    else:
+        raise ValueError("Species abbreviation '" + species_name + "' couldn't be found in the taxonomy configurations.")
 
-        if marker:
-            record["defined_class"] = marker
-            record["TYPE"] = "SO:0000704"
-            record["NAME"] = marker_db[marker.replace("ensembl:", "")][3]
 
-            marker_records.append(record)
-
-    class_robot_template = pd.DataFrame.from_records(marker_records)
-    class_robot_template.to_csv(output_file, sep="\t", index=False)
+# def generate_marker_template(taxon, output_file):
+#     marker_db = get_marker_db_by_id(taxon)
+#
+#     markers = set()
+#     with open(OUTPUT_MARKER.format(taxon)) as fd:
+#         rd = csv.reader(fd, delimiter="\t", quotechar='"')
+#         next(rd)  # skip first row
+#         for row in rd:
+#             markers.update(row[2].split("|"))
+#
+#     marker_records = []
+#     for marker in markers:
+#         record = {}
+#
+#         if marker:
+#             record["defined_class"] = marker
+#             record["TYPE"] = "SO:0000704"
+#             record["NAME"] = marker_db[marker.replace("ensembl:", "")][3]
+#
+#             marker_records.append(record)
+#
+#     class_robot_template = pd.DataFrame.from_records(marker_records)
+#     class_robot_template.to_csv(output_file, sep="\t", index=False)
 
 
 # generates marker files
+normalize_raw_markers("../markers/raw/Marmoset_NSForest_Markers.csv")
+# normalize_raw_markers("../markers/raw/Human_NSForest_Markers.csv")
+# normalize_raw_markers("../markers/raw/Mouse_NSForest_Markers.csv")
+
 # normalize_raw_markers("../markers/raw/AIBS_M1_NSForest_v2_marmoset_ALL_Results.csv")
 # normalize_raw_markers("../markers/raw/AIBS_M1_NSForest_v2_human_ALL_Results.csv")
 
