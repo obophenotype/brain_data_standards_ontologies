@@ -396,6 +396,30 @@ def generate_taxonomies_template(taxonomy_metadata_path, output_filepath):
     robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
+def generate_app_specific_template(taxonomy_file_path, output_filepath):
+    if str(taxonomy_file_path).endswith(".json"):
+        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+    else:
+        dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
+
+    robot_template_seed = {'ID': 'ID',
+                           'TYPE': 'TYPE',
+                           'cell_set_color': "A ALLENHELP:cell_set_color"
+                           }
+    dl = [robot_template_seed]
+
+    for o in dend['nodes']:
+        if o["cell_set_color"]:
+            d = dict()
+            d['ID'] = 'AllenDend:' + o['cell_set_accession']
+            d['TYPE'] = 'owl:NamedIndividual'
+            d['cell_set_color'] = str(o["cell_set_color"]).strip()
+            dl.append(d)
+
+    robot_template = pd.DataFrame.from_records(dl)
+    robot_template.to_csv(output_filepath, sep="\t", index=False)
+
+
 def index_taxonomies(taxonomies):
     index = list()
     for taxonomy in taxonomies:
