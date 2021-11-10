@@ -5,6 +5,9 @@ A repository for building ontologies for the Brain Data Standards Project.
 
 Status: Draft
 
+### Cite:
+[BioRxiv Preprint](https://www.biorxiv.org/content/10.1101/2021.10.10.463703)
+
 ### Overview:
 
 The main purpose of this repo is to automate data driven cell-type ontology development for the Brain Data Standards initiative.  The main inputs are:
