@@ -16,6 +16,7 @@ OWL_CLASS_FILES = $(patsubst %, components/%_class.owl, $(JOBS))
 GENE_FILES = $(patsubst %, mirror/%.owl, $(GENE_LIST))
 OWL_NOMENCLATURE_FILES = $(patsubst %, components/%_non_taxonomy_classification.owl, $(JOBS))
 OWL_CROSS_SPECIES_FILES = $(patsubst %, components/%_cross_species.owl, $(JOBS))
+OWL_APP_SPECIFIC_FILES = $(patsubst %, components/%_app_specific.owl, $(JOBS))
 OWL_TAXONOMY_FILE = components/taxonomies.owl
 OWL_PROTEIN2GENE_FILE = components/Protein2GeneExpression.owl
 
@@ -91,8 +92,9 @@ mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
 .PRECIOUS: mirror/simple_marmoset.owl
 .PRECIOUS: imports/simple_marmoset_import.owl
 
-components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MIN_MARKER_FILES) $(OWL_NOMENCLATURE_FILES) $(OWL_CROSS_SPECIES_FILES) $(OWL_TAXONOMY_FILE) $(OWL_PROTEIN2GENE_FILE)
-	$(ROBOT) merge $(patsubst %, -i %, $^) \
+# merge all templates except application specific ones
+components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MIN_MARKER_FILES) $(OWL_NOMENCLATURE_FILES) $(OWL_CROSS_SPECIES_FILES) $(OWL_TAXONOMY_FILE) $(OWL_PROTEIN2GENE_FILE) $(OWL_APP_SPECIFIC_FILES)
+	$(ROBOT) merge $(patsubst %, -i %, $(filter-out $(OWL_APP_SPECIFIC_FILES), $^)) \
 	 --collapse-import-closure false \
 	 annotate --ontology-iri ${BDS_BASE}$@  \
 	 convert -f ofn	 -o $@
@@ -104,7 +106,7 @@ components/%.owl: ../templates/%.tsv bdscratch-edit.owl
 	$(ROBOT) template --input bdscratch-edit.owl --template $< \
     		--add-prefixes template_prefixes.json \
     		annotate --ontology-iri ${BDS_BASE}$@ \
-    		convert --format ofn --output $@
+    		convert --format ofn --output $@ \
 
 components/%_class.owl: $(PATTERNDIR)/data/default/%_class.tsv bdscratch-edit.owl $(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml $(SRC) all_imports .FORCE
 	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
@@ -132,3 +134,19 @@ components/Protein2GeneExpression.owl: $(PATTERNDIR)/data/default/Protein2GeneEx
         --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/Protein2GeneExpression.yaml \
         --ontology=$(SRC) --obo-prefixes=true --outfile=$@
 
+components/%_app_specific.owl: ../templates/%_app_specific.tsv allen_helper.owl
+	$(ROBOT) template --input allen_helper.owl --template $< \
+    		--add-prefixes template_prefixes.json \
+    		annotate --ontology-iri ${BDS_BASE}$@ \
+    		convert --format ofn --output $@ \
+
+
+# Also release Allen application specific ontology
+$(ONT).owl: $(ONT)-full.owl $(ONT)-allen.owl
+	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		convert -o $@.tmp.owl && mv $@.tmp.owl $@
+
+$(ONT)-allen.owl: $(ONT)-full.owl allen_helper.owl
+	$(ROBOT) merge -i $< -i allen_helper.owl $(patsubst %, -i %, $(OWL_APP_SPECIFIC_FILES)) \
+			 annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		 	 --output $(RELEASEDIR)/$@
