@@ -60,6 +60,7 @@ data_vars:
   Classification_comment: "xsd:string"
   Brain_region_abbv: "xsd:string"
   Species_abbv: "xsd:string"
+  Definition: "xsd:string"
 
 internal_vars:
   - var_name: Minimal_markers_cat
@@ -110,6 +111,9 @@ def:
               - text: 'The soma of these cells in located in: %s.'
                 vars:
                   - Cortical_layer_cat
+      - text: "%s"
+        vars:
+          - Definition
 
 comment:
    text: "%s"

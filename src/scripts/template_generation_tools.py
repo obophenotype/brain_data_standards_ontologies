@@ -237,7 +237,8 @@ def generate_curated_class_template(taxonomy_file_path, output_filepath):
                                'Expresses_comment',
                                'Expresses_pub',
                                'Projection_type',
-                               'Layers'
+                               'Layers',
+                               'Definition'
                                ]
         class_template = []
 
