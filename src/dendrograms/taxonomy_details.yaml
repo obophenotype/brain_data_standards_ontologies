@@ -265,3 +265,52 @@
   #    Cell_type: CL:4023018
   #    #Pvalb
 
+-
+  Taxonomy_id: CS1908210
+  Description: Human MTG transcriptomics
+  Reference: (Hodge et al., 2019)
+  PMID:
+    - PMID:31435019
+  Species:
+    - NCBITaxon:9606
+  Species_abbv:
+    - Human
+  Brain_region:
+    - UBERON:0002771
+  Brain_region_abbv:
+    - MTG
+  Reference_gene_list:
+    - simple_human
+  Root_nodes:
+    - Node: CS1908210
+      Cell_type: CL:0011005
+      Location_relation: has_soma_location
+      #GABAergic interneuron
+    - Node: CS1908210
+      Cell_type: CL:0000679
+      Location_relation: has_soma_location
+      #glutamatergic neuron
+    - Node: CS1908210
+      Cell_type: CL:0000115
+      Location_relation: part_of
+      #Endothelial
+    - Node: CS1908210
+      Cell_type: CL:0000129
+      Location_relation: part_of
+      #Microglia
+    - Node: CS1908210
+      Cell_type: CL:0000127
+      Location_relation: part_of
+      #Astrocyte
+    - Node: CS1908210
+      Cell_type: CL:0002453
+      Location_relation: part_of
+      #OPC
+    - Node: CS1908210
+      Cell_type: CL:0000125
+      Location_relation: part_of
+      # non-neuronal currently mapped as glial cell
+    - Node: CS1908210
+      Cell_type: CL:0000128
+      Location_relation: part_of
+      #Oligodendrocyte
