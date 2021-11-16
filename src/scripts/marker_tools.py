@@ -39,7 +39,7 @@ def generate_denormalised_marker_template(taxonomy_file_path, output_marker_path
 
     root_nodes = get_root_nodes(taxonomy_config)
 
-    marker_path = MARKER_PATH.format(str(taxon).replace("CCN", ""))
+    marker_path = MARKER_PATH.format(str(taxon).replace("CCN", "").replace("CS", ""))
     generate_denormalised_marker(dend, marker_path, output_marker_path, root_nodes)
 
 
