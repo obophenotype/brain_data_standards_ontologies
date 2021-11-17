@@ -183,3 +183,10 @@ class TemplateGenerationTest(unittest.TestCase):
     #                              "../patterns/data/default/CCN202002013_class_curation.tsv",
     #                              migrate_columns,
     #                              "../patterns/data/default/CCN202002013_class_curation_migrate.tsv")
+
+    # def test_allen_markers_migrate(self):
+    #     migrate_columns = ["Markers"]
+    #     migrate_manual_curations("../patterns/data/default/CS1908210_class_curation_old.tsv",
+    #                              "../markers/CS1908210_Allen_markers.tsv",
+    #                              migrate_columns,
+    #                              "../markers/CS1908210_Allen_markers2.tsv")

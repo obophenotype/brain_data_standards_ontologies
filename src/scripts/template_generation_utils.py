@@ -290,11 +290,31 @@ def read_csv_to_dict(csv_path, id_column=0, id_column_name="", delimiter=",", id
 
     return headers, records
 
+# DEPRECATED: use index_dendrogram(dend, id_field_name=, id_to_lower) instead
+# def index_dendrogram(dend):
+#     dend_dict = dict()
+#     for o in dend['nodes']:
+#         dend_dict[o['cell_set_accession']] = o
+#     return dend_dict
 
-def index_dendrogram(dend):
+
+def index_dendrogram(dend, id_field_name="cell_set_accession", id_to_lower=False):
+    """
+    Indexes the given dendrogram by the given id_field. Returns a dictionary whose key is id_field value and value is
+    dendrogram node.
+    Args:
+        dend: Dendrogram content
+        id_field_name: Name of the filed to use as index key. Default value is 'cell_set_accession'
+        id_to_lower: applies string lowercase operation to the key
+
+    Returns: a dictionary whose key is id_field value and value is dendrogram node.
+    """
     dend_dict = dict()
     for o in dend['nodes']:
-        dend_dict[o['cell_set_accession']] = o
+        _id = o[id_field_name]
+        if id_to_lower:
+            _id = str(_id).lower()
+        dend_dict[_id] = o
     return dend_dict
 
 
