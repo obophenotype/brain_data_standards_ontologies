@@ -2,14 +2,21 @@ import os
 import logging
 from pathlib import Path
 import pandas as pd
-from template_generation_utils import read_csv, read_csv_to_dict, read_taxonomy_details_yaml, read_gene_data
+from template_generation_utils import read_csv, read_csv_to_dict, read_taxonomy_details_yaml, index_dendrogram
+from dendrogram_tools import dend_json_2_nodes_n_edges
 
 
 GENE_DB_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../templates/{}.tsv")
 
 NOMENCLATURE = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/nomenclature_table_{}.csv")
 
+DENDROGRAM = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms/{}.json")
+
 OUTPUT_MARKER = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../markers/CS{}_markers2.tsv")
+
+MARKER_COLUMNS = ["Marker1", "Marker2", "Marker3", "Marker4"]
+
+MARKER_COLUMNS_OPTIONAL = ["Marker5"]
 
 log = logging.getLogger(__name__)
 
@@ -44,17 +51,29 @@ def normalize_raw_markers(raw_marker):
     taxonomy_id = taxonomy_config["Taxonomy_id"]
 
     print("Taxonomy ID: " + taxonomy_id)
-    nomenclature_indexes = [read_csv_to_dict(NOMENCLATURE.format(taxonomy_id),
-                                             id_column_name="cell_set_preferred_alias", id_to_lower=True)[1],
-                            read_csv_to_dict(NOMENCLATURE.format(taxonomy_id),
-                                             id_column_name="cell_set_aligned_alias", id_to_lower=True)[1],
-                            read_csv_to_dict(NOMENCLATURE.format(taxonomy_id),
-                                             id_column_name="cell_set_accession", id_to_lower=True)[1],
-                            read_csv_to_dict(NOMENCLATURE.format(taxonomy_id),
-                                             id_column_name="original_label", id_to_lower=True)[1],
-                            read_csv_to_dict(NOMENCLATURE.format(taxonomy_id),
-                                             id_column_name="cell_set_additional_aliases", id_to_lower=True)[1],
-                            ]
+    if taxonomy_id == "CS1908210":
+        print("Read dendrogram: " + taxonomy_id)
+        dend = dend_json_2_nodes_n_edges(DENDROGRAM.format(taxonomy_id))
+        nomenclature_indexes = [
+                                index_dendrogram(dend, id_field_name="cell_set_preferred_alias", id_to_lower=True),
+                                # index_dendrogram(dend, id_field_name="cell_set_aligned_alias", id_to_lower=True),
+                                index_dendrogram(dend, id_field_name="cell_set_accession", id_to_lower=True),
+                                index_dendrogram(dend, id_field_name="original_label", id_to_lower=True),
+                                index_dendrogram(dend, id_field_name="cell_set_additional_aliases", id_to_lower=True)
+                                ]
+    else:
+        print("Read nomenclature table: " + taxonomy_id)
+        nomenclature_indexes = [read_csv_to_dict(NOMENCLATURE.format(taxonomy_id),
+                                                 id_column_name="cell_set_preferred_alias", id_to_lower=True)[1],
+                                read_csv_to_dict(NOMENCLATURE.format(taxonomy_id),
+                                                 id_column_name="cell_set_aligned_alias", id_to_lower=True)[1],
+                                read_csv_to_dict(NOMENCLATURE.format(taxonomy_id),
+                                                 id_column_name="cell_set_accession", id_to_lower=True)[1],
+                                read_csv_to_dict(NOMENCLATURE.format(taxonomy_id),
+                                                 id_column_name="original_label", id_to_lower=True)[1],
+                                read_csv_to_dict(NOMENCLATURE.format(taxonomy_id),
+                                                 id_column_name="cell_set_additional_aliases", id_to_lower=True)[1],
+                                ]
 
     gene_db_path = GENE_DB_PATH.format(str(taxonomy_config["Reference_gene_list"][0]).strip().lower())
     headers, genes_by_name = read_csv_to_dict(gene_db_path, id_column=2, delimiter="\t", id_to_lower=True)
@@ -62,7 +81,11 @@ def normalize_raw_markers(raw_marker):
     unmatched_markers = set()
     normalized_markers = []
 
-    headers, raw_marker_data = read_csv_to_dict(raw_marker)
+    if raw_marker.endswith(".csv"):
+        headers, raw_marker_data = read_csv_to_dict(raw_marker, id_column_name="clusterName")
+    else:
+        headers, raw_marker_data = read_csv_to_dict(raw_marker, id_column_name="clusterName", delimiter="\t")
+
     for cluster_name in raw_marker_data:
         normalized_data = {}
         row = raw_marker_data[cluster_name]
@@ -72,9 +95,7 @@ def normalize_raw_markers(raw_marker):
         nomenclature_node = search_terms_in_index(cluster_name_variants, nomenclature_indexes)
         if nomenclature_node:
             node_id = nomenclature_node["cell_set_accession"]
-            marker_names = [row["Marker1"], row["Marker2"], row["Marker3"], row["Marker4"]]
-            if "Marker5" in row:  # some don't have marker 5
-                marker_names.append(row["Marker5"])
+            marker_names = get_marker_names(row)
             marker_ids = []
             for name in marker_names:
                 if name:
@@ -95,18 +116,40 @@ def normalize_raw_markers(raw_marker):
             # raise Exception("Node with cluster name {} couldn't be found in the nomenclature.".format(cluster_name))
 
     class_robot_template = pd.DataFrame.from_records(normalized_markers)
-    class_robot_template.to_csv(OUTPUT_MARKER.format(taxonomy_id.replace("CCN", "")), sep="\t", index=False)
+    class_robot_template.to_csv(OUTPUT_MARKER.format(taxonomy_id.replace("CCN", "").replace("CS", "")), sep="\t", index=False)
     log.error("Following markers could not be found in the db ({}): {}".format(len(unmatched_markers),
                                                                                str(unmatched_markers)))
 
 
+def get_marker_names(row):
+    marker_names = list()
+    for column in MARKER_COLUMNS:
+        marker_names.append(row[column].split("|")[0].strip())
+
+    for column in MARKER_COLUMNS_OPTIONAL:
+        if column in row:  # don't want hard fail
+            marker_names.append(row[column].split("|")[0].strip())
+
+    return marker_names
+
+
 def get_taxonomy_config(raw_marker_path):
     species_name = Path(raw_marker_path).stem.split("_")[0]
+    nsforest_name = Path(raw_marker_path).stem.split("_NSForest")[0]
+    brain_region = None
+
+    # handles Human_MTG
+    if species_name is not nsforest_name:
+        brain_region = nsforest_name.strip("_")[1].strip()
+
     taxonomy_configs = read_taxonomy_details_yaml()
 
     taxonomy_config = None
     for config in taxonomy_configs:
-        if species_name in config["Species_abbv"]:
+        if brain_region and brain_region in config["Brain_region_abbv"]:
+            if species_name in config["Species_abbv"]:
+                taxonomy_config = config
+        elif species_name in config["Species_abbv"]:
             taxonomy_config = config
 
     if taxonomy_config:
@@ -141,12 +184,11 @@ def get_taxonomy_config(raw_marker_path):
 
 
 # generates marker files
-normalize_raw_markers("../markers/raw/Marmoset_NSForest_Markers.csv")
+# normalize_raw_markers("../markers/raw/Marmoset_NSForest_Markers.csv")
 # normalize_raw_markers("../markers/raw/Human_NSForest_Markers.csv")
+normalize_raw_markers("../markers/raw/Human_MTG_NSForest_Markers.tsv")
 # normalize_raw_markers("../markers/raw/Mouse_NSForest_Markers.csv")
 
-# normalize_raw_markers("../markers/raw/AIBS_M1_NSForest_v2_marmoset_ALL_Results.csv")
-# normalize_raw_markers("../markers/raw/AIBS_M1_NSForest_v2_human_ALL_Results.csv")
 
 # generates marker dosdp templates
 # generate_marker_template("201912131", "../patterns/data/bds/ensg_data.tsv")

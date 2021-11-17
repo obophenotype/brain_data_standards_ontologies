@@ -92,8 +92,9 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
         if o['cell_set_accession'] in set().union(*subtrees) and o['cell_set_preferred_alias']:
             d['Exemplar_of'] = ALLEN_DEND_CLASS + o['cell_set_accession']
 
-        d['Rank'] = '|'.join([cell_type.strip().replace("No", "None")
-                              for cell_type in str(o["cell_type_card"]).split(",")])
+        if "cell_type_card" in o:
+            d['Rank'] = '|'.join([cell_type.strip().replace("No", "None")
+                                  for cell_type in str(o["cell_type_card"]).split(",")])
 
         if o['cell_set_accession'] in allen_descriptions:
             allen_data = allen_descriptions[o['cell_set_accession']]
@@ -120,8 +121,8 @@ def generate_base_class_template(taxonomy_file_path, all_taxonomies, output_file
     dend_tree = generate_dendrogram_tree(dend)
     taxonomy_config = read_taxonomy_config(taxon)
 
-    marker_path = MARKER_PATH.format(str(taxon).replace("CCN", ""))
-    allen_marker_path = ALLEN_MARKER_PATH.format(str(taxon).replace("CCN", ""))
+    marker_path = MARKER_PATH.format(str(taxon).replace("CCN", "").replace("CS", ""))
+    allen_marker_path = ALLEN_MARKER_PATH.format(str(taxon).replace("CCN", "").replace("CS", ""))
 
     all_taxonomies.remove(taxon)
     other_taxonomy_aliases = index_taxonomies(all_taxonomies)
@@ -171,7 +172,7 @@ def generate_base_class_template(taxonomy_file_path, all_taxonomies, output_file
                 d['Gross_cell_type'] = get_gross_cell_type(o['cell_set_accession'], subtrees, taxonomy_config)
                 d['Taxon'] = taxonomy_config['Species'][0]
                 d['Brain_region'] = taxonomy_config['Brain_region'][0]
-                if o['cell_set_alias_citation']:
+                if 'cell_set_alias_citation' in o and o['cell_set_alias_citation']:
                     alias_citations = [citation.strip() for citation in str(o["cell_set_alias_citation"]).split("|")
                                        if citation and citation.strip()]
                     d["Alias_citations"] = "|".join(alias_citations)
@@ -199,7 +200,8 @@ def generate_base_class_template(taxonomy_file_path, all_taxonomies, output_file
 
                 homologous_to = list()
                 for other_aliases in other_taxonomy_aliases:
-                    if o["cell_set_aligned_alias"] and str(o["cell_set_aligned_alias"]).lower() in other_aliases:
+                    if "cell_set_aligned_alias" in o and o["cell_set_aligned_alias"] \
+                            and str(o["cell_set_aligned_alias"]).lower() in other_aliases:
                         homologous_to.append(ALLEN_DEND_CLASS + other_aliases[str(o["cell_set_aligned_alias"])
                                              .lower()]["cell_set_accession"])
                 d['homologous_to'] = "|".join(homologous_to)
@@ -410,7 +412,7 @@ def generate_app_specific_template(taxonomy_file_path, output_filepath):
     dl = [robot_template_seed]
 
     for o in dend['nodes']:
-        if o["cell_set_color"]:
+        if "cell_set_color" in o and o["cell_set_color"]:
             d = dict()
             d['ID'] = 'AllenDend:' + o['cell_set_accession']
             d['TYPE'] = 'owl:NamedIndividual'
