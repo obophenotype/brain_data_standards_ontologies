@@ -114,6 +114,15 @@ def:
       - text: "%s"
         vars:
           - Definition
+        sub_clauses:
+          - sep: ' '
+          - clauses:
+              - text: 'These cells have projection type %s.'
+                vars:
+                  - Projection_type
+              - text: 'The soma of these cells in located in: %s.'
+                vars:
+                  - Cortical_layer_cat
 
 comment:
    text: "%s"
