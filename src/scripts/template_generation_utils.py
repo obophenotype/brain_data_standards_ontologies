@@ -278,7 +278,7 @@ def read_csv_to_dict(csv_path, id_column=0, id_column_name="", delimiter=",", id
 
             if row_count == 0:
                 headers = row
-                if id_column_name:
+                if id_column_name and id_column_name in headers:
                     id_column = headers.index(id_column_name)
             else:
                 row_object = dict()
