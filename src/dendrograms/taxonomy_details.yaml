@@ -76,54 +76,54 @@
   #  - Node: CS202002013_256
   #    Cell_type: CL:4023027
   #    #L5 T Martinotti
--
-  Taxonomy_id: CCN202002270
-  Description: Cross species (integrated) transcriptomics taxonomy
-  Reference: (Bakken et al., 2020)
-  PMID:
-    - PMID:34616062
-  Species:
-    - NCBITaxon:314146
-  Species_abbv:
-    - Euarchontoglires
-  Brain_region:
-    - UBERON:0001384
-  Brain_region_abbv:
-    - MOp/M1
-  non_taxonomy_roots: []
-  Root_nodes:
-    - Node: CS202002270_63
-      Cell_type: CL:0011005
-      Location_relation: has_soma_location
-      #GABAergic interneuron
-    - Node: CS202002270_64
-      Cell_type: CL:0000679
-      Location_relation: has_soma_location
-      #glutamatergic neuron
-    - Node: CS202002270_43
-      Cell_type: CL:0000115
-      Location_relation: part_of
-      #Endothelial
-    - Node: CS202002270_44
-      Cell_type: CL:4023051
-      Location_relation: part_of
-      #VLMC
-    - Node: CS202002270_45
-      Cell_type: CL:0000129
-      Location_relation: part_of
-      #Microglia-PVM currently mapped as microglia
-    - Node: CS202002270_38
-      Cell_type: CL:0002453
-      Location_relation: part_of
-      #OPC
-    - Node: CS202002270_56
-      Cell_type: CL:0000128
-      Location_relation: part_of
-      #Oligodendrocyte
-    - Node: CS202002270_55
-      Cell_type: CL:0000127
-      Location_relation: part_of
-      #Astrocyte
+#-
+#  Taxonomy_id: CCN202002270
+#  Description: Cross species (integrated) transcriptomics taxonomy
+#  Reference: (Bakken et al., 2020)
+#  PMID:
+#    - PMID:34616062
+#  Species:
+#    - NCBITaxon:314146
+#  Species_abbv:
+#    - Euarchontoglires
+#  Brain_region:
+#    - UBERON:0001384
+#  Brain_region_abbv:
+#    - MOp/M1
+#  non_taxonomy_roots: []
+#  Root_nodes:
+#    - Node: CS202002270_63
+#      Cell_type: CL:0011005
+#      Location_relation: has_soma_location
+#      #GABAergic interneuron
+#    - Node: CS202002270_64
+#      Cell_type: CL:0000679
+#      Location_relation: has_soma_location
+#      #glutamatergic neuron
+#    - Node: CS202002270_43
+#      Cell_type: CL:0000115
+#      Location_relation: part_of
+#      #Endothelial
+#    - Node: CS202002270_44
+#      Cell_type: CL:4023051
+#      Location_relation: part_of
+#      #VLMC
+#    - Node: CS202002270_45
+#      Cell_type: CL:0000129
+#      Location_relation: part_of
+#      #Microglia-PVM currently mapped as microglia
+#    - Node: CS202002270_38
+#      Cell_type: CL:0002453
+#      Location_relation: part_of
+#      #OPC
+#    - Node: CS202002270_56
+#      Cell_type: CL:0000128
+#      Location_relation: part_of
+#      #Oligodendrocyte
+#    - Node: CS202002270_55
+#      Cell_type: CL:0000127
+#      Location_relation: part_of
+#      #Astrocyte
 -
   Taxonomy_id: CCN201912131
   Description: Human M1 transcriptomics taxonomy
