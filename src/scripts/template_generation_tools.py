@@ -143,7 +143,6 @@ def generate_base_class_template(taxonomy_file_path, all_taxonomies, output_file
                       'prefLabel',
                       'Alias_citations',
                       'Synonyms_from_taxonomy',
-                      'Comment',
                       'Gross_cell_type',
                       'Taxon',
                       'Brain_region',
@@ -152,6 +151,7 @@ def generate_base_class_template(taxonomy_file_path, all_taxonomies, output_file
                       'Individual',
                       'Brain_region_abbv',
                       'Species_abbv',
+                      'Cluster_ID',
                       'part_of',
                       'has_soma_location',
                       'homologous_to'
@@ -168,10 +168,10 @@ def generate_base_class_template(taxonomy_file_path, all_taxonomies, output_file
                 elif o['cell_set_additional_aliases']:
                     d['prefLabel'] = str(o['cell_set_additional_aliases']).split(EXPRESSION_SEPARATOR)[0]
                 d['Synonyms_from_taxonomy'] = get_synonyms_from_taxonomy(o)
-                d['Comment'] = get_synonym_pairs(o)
                 d['Gross_cell_type'] = get_gross_cell_type(o['cell_set_accession'], subtrees, taxonomy_config)
                 d['Taxon'] = taxonomy_config['Species'][0]
                 d['Brain_region'] = taxonomy_config['Brain_region'][0]
+                d['Cluster_ID'] = o['cell_set_accession']
                 if 'cell_set_alias_citation' in o and o['cell_set_alias_citation']:
                     alias_citations = [citation.strip() for citation in str(o["cell_set_alias_citation"]).split("|")
                                        if citation and citation.strip()]
@@ -240,7 +240,8 @@ def generate_curated_class_template(taxonomy_file_path, output_filepath):
                                'Expresses_pub',
                                'Projection_type',
                                'Layers',
-                               'Definition'
+                               'Cross_species_text',
+                               'Comment'
                                ]
         class_template = []
 

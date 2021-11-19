@@ -168,7 +168,8 @@ class TemplateGenerationTest(unittest.TestCase):
     # not test
     # def test_curated_class_migrate(self):
     #     migrate_columns = ["Curated_synonyms", "Classification", "Classification_comment", "Classification_pub",
-    #                        "Expresses", "Expresses_comment", "Expresses_pub", "Projection_type", "Layers"]
+    #                        "Expresses", "Expresses_comment", "Expresses_pub", "Projection_type", "Layers",
+    #                        "Cross_species_text", "Comment"]
     #     migrate_manual_curations("../patterns/data/default/CCN201912131_class_curation_old.tsv",
     #                              "../patterns/data/default/CCN201912131_class_curation.tsv",
     #                              migrate_columns,
@@ -183,6 +184,11 @@ class TemplateGenerationTest(unittest.TestCase):
     #                              "../patterns/data/default/CCN202002013_class_curation.tsv",
     #                              migrate_columns,
     #                              "../patterns/data/default/CCN202002013_class_curation_migrate.tsv")
+    #
+    #     migrate_manual_curations("../patterns/data/default/CS1908210_class_curation_old.tsv",
+    #                              "../patterns/data/default/CS1908210_class_curation.tsv",
+    #                              migrate_columns,
+    #                              "../patterns/data/default/CS1908210_class_curation_migrate.tsv")
 
     # def test_allen_markers_migrate(self):
     #     migrate_columns = ["Markers"]
