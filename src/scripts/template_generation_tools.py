@@ -80,7 +80,7 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
         d['Metadata'] = json.dumps(o)
         d['Synonyms'] = '|'.join([o[prop] for prop in synonym_properties if prop in o.keys() and o[prop]])
         d['Property Assertions'] = '|'.join(
-            ['AllenDend:' + e[1] for e in dend['edges'] if e[0] == o['cell_set_accession']])
+            sorted(['AllenDend:' + e[1] for e in dend['edges'] if e[0] == o['cell_set_accession']]))
         meta_properties = ['cell_set_preferred_alias', 'original_label', 'cell_set_label', 'cell_set_aligned_alias',
                            'cell_set_additional_aliases', 'cell_set_alias_assignee', 'cell_set_alias_citation']
         for prop in meta_properties:
