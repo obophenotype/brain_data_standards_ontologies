@@ -1,4 +1,4 @@
-Prefix(:=<http://www.semanticweb.org/brain_data_standards/helper.owl#>)
+Prefix(:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -6,9 +6,13 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<http://www.semanticweb.org/brain_data_standards/helper.owl>
+Ontology(<http://purl.obolibrary.org/obo/helper.owl>
 
-Declaration(Class(:Cluster))
+Declaration(Class(:PCL_0010001))
+AnnotationAssertion(rdfs:label :PCL_0010001 "Cluster")
+Declaration(Class(:PCL_0010002))
+AnnotationAssertion(rdfs:label :PCL_0010002 "Taxonomy")
+
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002215>))
 
 ############################

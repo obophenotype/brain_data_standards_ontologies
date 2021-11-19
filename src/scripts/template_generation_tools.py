@@ -4,17 +4,18 @@ import os
 import logging
 
 from dendrogram_tools import dend_json_2_nodes_n_edges
-from template_generation_utils import get_synonyms_from_taxonomy, get_synonym_pairs, read_taxonomy_config, \
+from template_generation_utils import get_synonyms_from_taxonomy, read_taxonomy_config, \
     get_subtrees, generate_dendrogram_tree, read_taxonomy_details_yaml, read_csv_to_dict,\
     read_csv, read_gene_data, read_markers, get_gross_cell_type, merge_tables, read_allen_descriptions
 from nomenclature_tools import nomenclature_2_nodes_n_edges
+from pcl_id_factory import get_class_id, get_individual_id, get_taxonomy_id
 
 
 log = logging.getLogger(__name__)
 
-ALLEN_DEND_CLASS = 'http://www.semanticweb.org/brain_data_standards/AllenDendClass_'
-ALLEN_DEND_INDV = 'http://www.semanticweb.org/brain_data_standards/AllenDend_'
-ALLEN_DEND_INDV_PREFIX = 'AllenDend:'
+PCL_BASE = 'http://purl.obolibrary.org/obo/PCL_'
+
+PCL_PREFIX = 'PCL:'
 
 MARKER_PATH = '../markers/CS{}_markers.tsv'
 ALLEN_MARKER_PATH = "../markers/CS{}_Allen_markers.tsv"
@@ -63,7 +64,7 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
                            'Exemplar_of': "TI 'exemplar data of' some %",
                            'Comment': "A rdfs:comment",
                            'Aliases': "A oboInOwl:hasRelatedSynonym SPLIT=|",
-                           'Rank': "A BDSHELP:cell_type_rank SPLIT=|"
+                           'Rank': "A 'cell_type_rank' SPLIT=|"
                            }
     dl = [robot_template_seed]
 
@@ -72,15 +73,15 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
 
     for o in dend['nodes']:
         d = dict()
-        d['ID'] = 'AllenDend:' + o['cell_set_accession']
+        d['ID'] = 'PCL:' + get_individual_id(o['cell_set_accession'])
         d['TYPE'] = 'owl:NamedIndividual'
         d['Label'] = o['cell_set_label'] + ' - ' + o['cell_set_accession']
         d['PrefLabel'] = o['cell_set_preferred_alias'] + ' - ' + o['cell_set_accession']
-        d['Entity Type'] = 'BDSHELP:Cluster'
+        d['Entity Type'] = 'PCL:0010001'  # Cluster
         d['Metadata'] = json.dumps(o)
         d['Synonyms'] = '|'.join([o[prop] for prop in synonym_properties if prop in o.keys() and o[prop]])
         d['Property Assertions'] = '|'.join(
-            sorted(['AllenDend:' + e[1] for e in dend['edges'] if e[0] == o['cell_set_accession']]))
+            sorted(['PCL:' + get_individual_id(e[1]) for e in dend['edges'] if e[0] == o['cell_set_accession']]))
         meta_properties = ['cell_set_preferred_alias', 'original_label', 'cell_set_label', 'cell_set_aligned_alias',
                            'cell_set_additional_aliases', 'cell_set_alias_assignee', 'cell_set_alias_citation']
         for prop in meta_properties:
@@ -90,7 +91,7 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
                 d[prop] = ''
 
         if o['cell_set_accession'] in set().union(*subtrees) and o['cell_set_preferred_alias']:
-            d['Exemplar_of'] = ALLEN_DEND_CLASS + o['cell_set_accession']
+            d['Exemplar_of'] = PCL_BASE + get_class_id(o['cell_set_accession'])
 
         if "cell_type_card" in o:
             d['Rank'] = '|'.join([cell_type.strip().replace("No", "None")
@@ -162,7 +163,7 @@ def generate_base_class_template(taxonomy_file_path, all_taxonomies, output_file
             if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or
                                                                     o['cell_set_additional_aliases']):
                 d = dict()
-                d['defined_class'] = ALLEN_DEND_CLASS + o['cell_set_accession']
+                d['defined_class'] = PCL_BASE + get_class_id(o['cell_set_accession'])
                 if o['cell_set_preferred_alias']:
                     d['prefLabel'] = o['cell_set_preferred_alias']
                 elif o['cell_set_additional_aliases']:
@@ -186,7 +187,7 @@ def generate_base_class_template(taxonomy_file_path, all_taxonomies, output_file
                     d['Brain_region_abbv'] = taxonomy_config['Brain_region_abbv'][0]
                 if 'Species_abbv' in taxonomy_config:
                     d['Species_abbv'] = taxonomy_config['Species_abbv'][0]
-                d['Individual'] = ALLEN_DEND_INDV_PREFIX + o['cell_set_accession']
+                d['Individual'] = PCL_BASE + get_individual_id(o['cell_set_accession'])
 
                 for index, subtree in enumerate(subtrees):
                     if o['cell_set_accession'] in subtree:
@@ -202,8 +203,8 @@ def generate_base_class_template(taxonomy_file_path, all_taxonomies, output_file
                 for other_aliases in other_taxonomy_aliases:
                     if "cell_set_aligned_alias" in o and o["cell_set_aligned_alias"] \
                             and str(o["cell_set_aligned_alias"]).lower() in other_aliases:
-                        homologous_to.append(ALLEN_DEND_CLASS + other_aliases[str(o["cell_set_aligned_alias"])
-                                             .lower()]["cell_set_accession"])
+                        homologous_to.append(PCL_BASE + get_class_id(other_aliases[str(o["cell_set_aligned_alias"])
+                                             .lower()]["cell_set_accession"]))
                 d['homologous_to'] = "|".join(homologous_to)
 
                 for k in class_seed:
@@ -249,7 +250,7 @@ def generate_curated_class_template(taxonomy_file_path, output_filepath):
             if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or
                                                                     o['cell_set_additional_aliases']):
                 d = dict()
-                d['defined_class'] = ALLEN_DEND_CLASS + o['cell_set_accession']
+                d['defined_class'] = PCL_BASE + get_class_id(o['cell_set_accession'])
                 if o['cell_set_preferred_alias']:
                     d['prefLabel'] = o['cell_set_preferred_alias']
                 elif o['cell_set_additional_aliases']:
@@ -303,7 +304,7 @@ def generate_non_taxonomy_classification_template(taxonomy_file_path, output_fil
                     # child of root with cell_set_preferred_alias
                     if child not in non_taxo_roots and nomenclature_records[child][0]:
                         d = dict()
-                        d['defined_class'] = ALLEN_DEND_CLASS + child
+                        d['defined_class'] = PCL_BASE + get_class_id(child)
                         d['Classification'] = non_taxo_roots[columns[cell_set_accession]]
                         nomenclature_template.append(d)
 
@@ -338,19 +339,19 @@ def generate_cross_species_template(taxonomy_file_path, output_filepath):
                                                                     o['cell_set_additional_aliases']):
                 cross_species_classes = set()
                 if o["cell_set_aligned_alias"] and str(o["cell_set_aligned_alias"]).lower() in cs_by_aligned_alias:
-                    cross_species_classes.add(ALLEN_DEND_CLASS + cs_by_aligned_alias[str(o["cell_set_aligned_alias"])
-                                              .lower()]["cell_set_accession"])
+                    cross_species_classes.add(PCL_BASE + get_class_id(cs_by_aligned_alias[str(o["cell_set_aligned_alias"])
+                                              .lower()]["cell_set_accession"]))
 
                 if "cell_set_additional_aliases" in o and o["cell_set_additional_aliases"]:
                     additional_aliases = str(o["cell_set_additional_aliases"]).lower().split(EXPRESSION_SEPARATOR)
                     for additional_alias in additional_aliases:
                         if additional_alias in cs_by_preferred_alias:
-                            cross_species_classes.add(ALLEN_DEND_CLASS +
-                                                      cs_by_preferred_alias[additional_alias]["cell_set_accession"])
+                            cross_species_classes.add(PCL_BASE + get_class_id(
+                                                      cs_by_preferred_alias[additional_alias]["cell_set_accession"]))
 
                 if len(cross_species_classes):
                     d = dict()
-                    d['defined_class'] = ALLEN_DEND_CLASS + o['cell_set_accession']
+                    d['defined_class'] = PCL_BASE + get_class_id(o['cell_set_accession'])
                     d['cross_species_classes'] = EXPRESSION_SEPARATOR.join(cross_species_classes)
 
                     cross_species_template.append(d)
@@ -367,22 +368,22 @@ def generate_taxonomies_template(taxonomy_metadata_path, output_filepath):
                            'TYPE': 'TYPE',
                            'Entity Type': 'TI %',
                            'Label': 'LABEL',
-                           'Number of Cell Types': 'A BDSHELP:cell_types_count',
-                           'Number of Cell Subclasses': 'A BDSHELP:cell_subclasses_count',
-                           'Number of Cell Classes': 'A BDSHELP:cell_classes_count',
-                           'Anatomic Region': "A BDSHELP:has_brain_region",
-                           'Species Label': 'A skos:prefLabel',
-                           'Age': 'A BDSHELP:has_age',
-                           'Sex': 'A BDSHELP:has_sex',
+                           'Number of Cell Types': "A 'cell_types_count'",
+                           'Number of Cell Subclasses': "A 'cell_subclasses_count'",
+                           'Number of Cell Classes': "A 'cell_classes_count'",
+                           'Anatomic Region': "A 'has_brain_region'",
+                           'Species Label': "A skos:prefLabel",
+                           'Age': "A 'has_age'",
+                           'Sex': "A 'has_sex'",
                            'Primary Citation': "A oboInOwl:hasDbXref"
                            }
     dl = [robot_template_seed]
 
     for taxon_config in taxon_configs:
         d = dict()
-        d['ID'] = 'AllenDend:' + taxon_config["Taxonomy_id"]
+        d['ID'] = 'PCL:' + get_taxonomy_id(taxon_config["Taxonomy_id"])
         d['TYPE'] = 'owl:NamedIndividual'
-        d['Entity Type'] = 'BDSHELP:Taxonomy'
+        d['Entity Type'] = 'PCL:0010002'  # Taxonomy
         d['Label'] = taxon_config["Taxonomy_id"]
         d['Anatomic Region'] = taxon_config['Brain_region'][0]
         d['Primary Citation'] = taxon_config['PMID'][0]
@@ -415,7 +416,7 @@ def generate_app_specific_template(taxonomy_file_path, output_filepath):
     for o in dend['nodes']:
         if "cell_set_color" in o and o["cell_set_color"]:
             d = dict()
-            d['ID'] = 'AllenDend:' + o['cell_set_accession']
+            d['ID'] = 'PCL:' + get_individual_id(o['cell_set_accession'])
             d['TYPE'] = 'owl:NamedIndividual'
             d['cell_set_color'] = str(o["cell_set_color"]).strip()
             dl.append(d)

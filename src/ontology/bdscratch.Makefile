@@ -7,7 +7,7 @@ IMPORTS += simple_human simple_marmoset
 
 JOBS = CCN202002013 CCN201912131 CCN201912132 CS1908210 #CCN202002270 CCN202002013 CCN201810310 CCN201908211 CCN201908210
 GENE_LIST = ensmusg simple_human simple_marmoset
-BDS_BASE = http://www.semanticweb.org/brain_data_standards/
+BDS_BASE = http://purl.obolibrary.org/obo/
 
 TSV_CLASS_FILES = $(patsubst %, ../patterns/data/default/%_class.tsv, $(JOBS))
 
