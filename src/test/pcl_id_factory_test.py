@@ -1,5 +1,6 @@
 import unittest
 from pcl_id_factory import get_class_id, get_individual_id, taxonomy_ids, get_taxonomy_id
+from template_generation_utils import migrate_manual_curations
 
 
 class PCLIdFactoryTestCase(unittest.TestCase):
@@ -50,6 +51,14 @@ class PCLIdFactoryTestCase(unittest.TestCase):
         self.assertEqual(get_taxonomy_id("CCN201912132"), "0013000")
 
         self.assertEqual(get_taxonomy_id("CS1908210"), "0014000")
+
+    # not test
+    # def test_allen_markers_migrate(self):
+    #     migrate_columns = ["Obsoleted By"]
+    #     migrate_manual_curations("../templates/pCL_mapping_old.tsv",
+    #                              "../templates/pCL_mapping.tsv",
+    #                              migrate_columns,
+    #                              "../templates/pCL_mapping_merged.tsv")
 
 
 if __name__ == '__main__':

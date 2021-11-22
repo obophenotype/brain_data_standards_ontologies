@@ -141,8 +141,8 @@ components/%_app_specific.owl: ../templates/%_app_specific.tsv allen_helper.owl
     		convert --format ofn --output $@ \
 
 
-# Also release Allen application specific ontology
-$(ONT).owl: $(ONT)-full.owl $(ONT)-allen.owl
+# Also release Allen application specific ontology and legacy (PCL older version) support ontology
+$(ONT).owl: $(ONT)-full.owl $(ONT)-allen.owl $(ONT)-allen.owl $(ONT)-legacy.owl
 	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
@@ -150,3 +150,21 @@ $(ONT)-allen.owl: $(ONT)-full.owl allen_helper.owl
 	$(ROBOT) merge -i $< -i allen_helper.owl $(patsubst %, -i %, $(OWL_APP_SPECIFIC_FILES)) \
 			 annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		 	 --output $(RELEASEDIR)/$@
+
+# release a legacy ontology to support older versions of the PCL
+$(ONT)-legacy.owl: $(ONT)-full.owl ../resources/pCL_4.1.0.owl components/pCL_mapping.owl
+	$(ROBOT) query --input ../resources/pCL_4.1.0.owl --update ../sparql/delete-legacy-properties.ru \
+			query --update ../sparql/postprocess-module.ru \
+			remove --select ontology \
+			merge --input $< \
+			merge --input components/pCL_mapping.owl \
+			annotate --ontology-iri $(ONTBASE)/pcl.owl  \
+			--link-annotation dc:license http://creativecommons.org/licenses/by/4.0/ \
+			--annotation owl:versionInfo $(VERSION) \
+			--annotation dc:title "Provisional Cell Ontology" \
+			--output $(RELEASEDIR)/$@
+
+components/pCL_mapping.owl: ../templates/pCL_mapping.tsv ../resources/pCL_4.1.0.owl
+	$(ROBOT) template --input ../resources/pCL_4.1.0.owl --template $< \
+    		--add-prefixes template_prefixes.json \
+    		convert --format ofn --output $@
