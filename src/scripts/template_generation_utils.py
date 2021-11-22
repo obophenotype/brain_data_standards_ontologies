@@ -235,6 +235,8 @@ def read_csv(csv_path, id_column=0, delimiter=",", id_to_lower=False):
 
     return records
 
+def read_old_tsv_to_dict(tsv_path, id_column=0):
+    return read_old_csv_to_dict(tsv_path, id_column=id_column, delimiter="\t")
 
 def read_tsv_to_dict(tsv_path, id_column=0):
     """
@@ -273,6 +275,100 @@ def read_csv_to_dict(csv_path, id_column=0, id_column_name="", delimiter=",", id
         row_count = 0
         for row in rd:
             _id = row[id_column]
+            if id_to_lower:
+                _id = str(_id).lower()
+
+            if row_count == 0:
+                headers = row
+                if id_column_name and id_column_name in headers:
+                    id_column = headers.index(id_column_name)
+            else:
+                row_object = dict()
+                for column_num, column_value in enumerate(row):
+                    row_object[headers[column_num]] = column_value
+                records[_id] = row_object
+
+            row_count += 1
+
+    return headers, records
+
+# Allocate IDs starting from PCL_0010000
+ID_RANGE_BASE = 11000
+
+taxonomies = read_taxonomy_details_yaml()
+taxonomy_ids = [taxon["Taxonomy_id"] for taxon in taxonomies]
+
+def get_class_id(accession_id):
+    """
+    Generates a PCL id for the given accession id. Parses taxonomy id from accession id and based on taxonomy's order
+    in the 'taxonomy_details.yaml' finds the allocated id range for the taxonomy. Generates a PCL id displaced by the
+    node_id.
+    Args:
+        accession_id: cell set accession id
+
+    Returns: seven digit PCL id as string
+    """
+    node_id, taxonomy_index = parse_accession_id(accession_id)
+
+    pcl_id = ID_RANGE_BASE + (1000 * taxonomy_index) + node_id
+    return str(pcl_id).zfill(7)
+
+def parse_accession_id(accession_id):
+    """
+    Parses taxonomy id and node id from the accession id and returns taxonomy index and the node id.
+    Args:
+        accession_id: cell set accession id
+
+    Returns: tuple of node_id and taxonomy's index in the 'taxonomy_details.yaml' config file.
+    """
+    if "_" in accession_id:
+        accession_parts = str(accession_id).split("_")
+        node_id = int(accession_parts[1].strip())
+        taxonomy_id = accession_parts[0]
+        taxonomy_index = get_taxonomy_index(taxonomy_id)
+    else:
+        # assume last 3 is node id
+        node_id = int(accession_id[len(accession_id)-3:])
+        taxonomy_id = accession_id[:len(accession_id)-3]
+        taxonomy_index = get_taxonomy_index(taxonomy_id)
+
+    return node_id, taxonomy_index
+
+def get_taxonomy_index(taxonomy_id):
+    if taxonomy_id in taxonomy_ids:
+        taxonomy_index = taxonomy_ids.index(taxonomy_id)
+    elif taxonomy_id.replace("CS", "CCN") in taxonomy_ids:
+        taxonomy_index = taxonomy_ids.index(taxonomy_id.replace("CS", "CCN"))
+    else:
+        raise ValueError("Cannot find '{}' in the taxonomy config.".format(taxonomy_id))
+    return taxonomy_index
+
+def read_old_csv_to_dict(csv_path, id_column=0, id_column_name="", delimiter=",", id_to_lower=False):
+    """
+    Reads tsv file content into a dict. Key is the first column value and the value is dict representation of the
+    row values (each header is a key and column value is the value).
+    Args:
+        csv_path: Path of the CSV file
+        id_column: Id column becomes the keys of the dict. This column should be unique. Default is the first column.
+        id_column_name: Alternative to the numeric id_column, id_column_name specifies id_column by its header string.
+        delimiter: Value delimiter. Default is comma.
+        id_to_lower: applies string lowercase operation to the key
+
+    Returns:
+        Function provides two return values: first; headers of the table and second; the CSV content dict. Key of the
+        content is the first column value and the values are dict of row values.
+    """
+    records = dict()
+
+    headers = []
+    with open(csv_path) as fd:
+        rd = csv.reader(fd, delimiter=delimiter, quotechar='"')
+        row_count = 0
+        for row in rd:
+            _id = row[id_column]
+            if "http://www.semanticweb.org/brain_data_standards/AllenDendClass_" in _id:
+                _id = _id.replace("http://www.semanticweb.org/brain_data_standards/AllenDendClass_", "")
+                _id = 'http://purl.obolibrary.org/obo/PCL_' + get_class_id(_id)
             if id_to_lower:
                 _id = str(_id).lower()
 
@@ -408,7 +504,7 @@ def migrate_manual_curations(source_tsv, target_tsv, migrate_columns, output_fil
         migrate_columns: list of the columns to copy their values from source to target.
         output_filepath: Output file path
     """
-    base_headers, base = read_tsv_to_dict(source_tsv)
+    base_headers, base = read_old_tsv_to_dict(source_tsv)
     target_headers, target = read_tsv_to_dict(target_tsv)
 
     # migrate_columns = [x for x in extension_headers if x not in base_headers]

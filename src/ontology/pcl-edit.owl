@@ -1,0 +1,91 @@
+Prefix(:=<http://purl.obolibrary.org/obo/PCL_>)
+Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/PCL.owl>
+Import(<http://purl.obolibrary.org/obo/bdscratch/imports/cl_import.owl>)
+Import(<http://purl.obolibrary.org/obo/bdscratch/imports/ensmusg_import.owl>)
+Import(<http://purl.obolibrary.org/obo/bdscratch/imports/simple_marmoset_import.owl>)
+Import(<http://purl.obolibrary.org/obo/bdscratch/imports/simple_human_import.owl>)
+Import(<http://purl.obolibrary.org/obo/bdscratch/imports/ncbitaxon_import.owl>)
+Import(<http://purl.obolibrary.org/obo/bdscratch/imports/pato_import.owl>)
+Import(<http://purl.obolibrary.org/obo/bdscratch/imports/ro_import.owl>)
+Import(<http://purl.obolibrary.org/obo/bdscratch/imports/uberon_import.owl>)
+Import(<http://purl.obolibrary.org/obo/bdscratch/patterns/definitions.owl>)
+Import(<http://purl.obolibrary.org/obo/helper.owl>)
+Import(<http://purl.obolibrary.org/obo/components/all_templates.owl>)
+
+# Annotation(dce:description "None")
+Annotation(dce:title "Brain Data Standards Cell Ontology")
+Annotation(dcterms:license <http://creativecommons.org/licenses/by/4.0/>)
+
+Declaration(Class(<http://purl.obolibrary.org/obo/PCL_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PCL_0010001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PCL_0010002>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002100>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002215>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002292>))
+Declaration(AnnotationProperty(dce:description))
+Declaration(AnnotationProperty(dce:title))
+Declaration(AnnotationProperty(dcterms:license))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010051>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010052>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010053>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010054>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010055>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010056>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010057>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002100> (has soma location)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002100> "has soma location")
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002215> (capable of)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002215> "capable of")
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002292> (expresses)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002292> "expresses")
+
+# Object Property: <http://purl.obolibrary.org/obo/IAO_0000028> (symbol)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000028> "symbol")
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0015001> (has exemplar data)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015001> "has exemplar data")
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0015002> (exemplar data of)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015002> "exemplar data of")
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0015003> (subcluster of)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015003> "subcluster of")
+
+# Object Property: <http://purl.obolibrary.org/obo/PCL_0010051> (cell_type_rank)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010051> "cell_type_rank")
+
+# Object Property: <http://purl.obolibrary.org/obo/PCL_0010052> (cell_types_count)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010052> "cell_types_count")
+
+# Object Property: <http://purl.obolibrary.org/obo/PCL_0010053> (cell_subclasses_count)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010053> "cell_subclasses_count")
+
+# Object Property: <http://purl.obolibrary.org/obo/PCL_0010054> (cell_classes_count)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010054> "cell_classes_count")
+
+# Object Property: <http://purl.obolibrary.org/obo/PCL_0010055> (has_age)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010055> "has_age")
+
+# Object Property: <http://purl.obolibrary.org/obo/PCL_0010056> (has_sex)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010056> "has_sex")
+
+# Object Property: <http://purl.obolibrary.org/obo/PCL_0010057> (has_brain_region)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010057> "has_brain_region")
+
+)

@@ -74,15 +74,15 @@ all_imports: $(IMPORT_FILES)
 
 # hard wiring for now.  Work on patsubst later
 mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) template --input bdscratch-edit.owl --template $< \
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) template --input $(SRC) --template $< \
       --add-prefixes template_prefixes.json \
       annotate --ontology-iri ${BDS_BASE}$@ \
       convert --format ofn --output $@; fi
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) template --input bdscratch-edit.owl --template ../templates/simple_human.tsv \
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) template --input $(SRC) --template ../templates/simple_human.tsv \
       --add-prefixes template_prefixes.json \
       annotate --ontology-iri ${BDS_BASE}mirror/simple_human.owl \
       convert --format ofn --output mirror/simple_human.owl; fi
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) template --input bdscratch-edit.owl --template ../templates/simple_marmoset.tsv \
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) template --input $(SRC) --template ../templates/simple_marmoset.tsv \
       --add-prefixes template_prefixes.json \
       annotate --ontology-iri ${BDS_BASE}mirror/simple_marmoset.owl \
       convert --format ofn --output mirror/simple_marmoset.owl; fi
@@ -102,13 +102,13 @@ components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MIN_MARKER_F
 #(SRC): $(OWL_FILES)
 #	$(ROBOT) merge -i pcl-template.owl $(patsubst %, -i %, $^) --collapse-import-closure false -o $@
 
-components/%.owl: ../templates/%.tsv bdscratch-edit.owl
-	$(ROBOT) template --input bdscratch-edit.owl --template $< \
+components/%.owl: ../templates/%.tsv $(SRC)
+	$(ROBOT) template --input $(SRC) --template $< \
     		--add-prefixes template_prefixes.json \
     		annotate --ontology-iri ${BDS_BASE}$@ \
     		convert --format ofn --output $@ \
 
-components/%_class.owl: $(PATTERNDIR)/data/default/%_class.tsv bdscratch-edit.owl $(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml $(SRC) all_imports .FORCE
+components/%_class.owl: $(PATTERNDIR)/data/default/%_class.tsv $(SRC) $(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml $(SRC) all_imports .FORCE
 	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
         --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml \
         --ontology=$(SRC) --obo-prefixes=true --outfile=$@
@@ -123,8 +123,8 @@ components/%_cross_species.owl: $(PATTERNDIR)/data/default/%_cross_species.tsv $
         --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_cross_species.yaml \
         --ontology=$(SRC) --obo-prefixes=true --outfile=$@
 
-components/taxonomies.owl: ../templates/Taxonomies.tsv bdscratch-edit.owl
-	$(ROBOT) template --input bdscratch-edit.owl --template $< \
+components/taxonomies.owl: ../templates/Taxonomies.tsv $(SRC)
+	$(ROBOT) template --input $(SRC) --template $< \
     		--add-prefixes template_prefixes.json \
     		annotate --ontology-iri ${BDS_BASE}$@ \
     		convert --format ofn --output $@

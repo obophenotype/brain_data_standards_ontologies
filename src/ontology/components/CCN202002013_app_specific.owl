@@ -1,4 +1,4 @@
-Prefix(:=<http://www.semanticweb.org/brain_data_standards/components/CCN202002013_app_specific.owl#>)
+Prefix(:=<http://purl.obolibrary.org/obo/components/CCN202002013_app_specific.owl#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -6,149 +6,149 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<http://www.semanticweb.org/brain_data_standards/components/CCN202002013_app_specific.owl>
+Ontology(<http://purl.obolibrary.org/obo/components/CCN202002013_app_specific.owl>
 
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_1>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_10>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_100>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_101>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_102>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_103>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_104>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_105>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_106>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_107>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_108>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_109>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_11>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_110>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_111>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_112>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_113>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_114>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_115>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_116>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_12>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_123>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_124>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_125>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_13>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_133>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_138>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_14>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_15>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_150>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_16>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_17>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_179>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_18>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_183>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_188>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_189>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_19>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_192>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_193>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_197>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_2>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_20>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_203>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_207>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_209>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_21>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_210>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_212>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_219>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_22>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_222>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_229>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_23>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_232>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_233>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_235>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_236>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_24>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_25>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_26>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_27>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_28>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_29>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_3>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_30>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_31>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_32>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_33>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_34>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_35>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_36>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_37>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_38>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_39>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_4>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_40>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_41>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_42>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_43>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_44>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_45>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_46>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_47>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_48>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_49>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_5>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_50>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_51>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_52>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_53>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_54>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_55>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_56>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_57>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_58>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_59>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_6>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_60>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_61>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_62>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_63>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_64>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_65>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_66>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_67>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_68>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_69>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_7>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_70>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_71>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_72>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_73>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_74>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_75>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_76>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_77>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_78>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_79>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_8>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_80>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_81>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_82>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_83>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_84>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_85>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_86>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_87>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_88>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_89>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_9>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_90>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_91>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_92>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_93>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_94>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_95>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_96>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_97>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_98>))
-Declaration(NamedIndividual(<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_99>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011401>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011402>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011403>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011404>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011405>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011406>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011407>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011408>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011409>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011410>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011411>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011412>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011413>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011414>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011415>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011416>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011417>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011418>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011419>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011420>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011421>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011422>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011423>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011424>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011425>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011426>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011427>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011428>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011429>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011430>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011431>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011432>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011433>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011434>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011435>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011436>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011437>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011438>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011439>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011440>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011441>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011442>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011443>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011444>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011445>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011446>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011447>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011448>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011449>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011450>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011451>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011452>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011453>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011454>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011455>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011456>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011457>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011458>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011459>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011460>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011461>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011462>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011463>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011464>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011465>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011466>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011467>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011468>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011469>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011470>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011471>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011472>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011473>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011474>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011475>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011476>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011477>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011478>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011479>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011480>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011481>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011482>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011483>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011484>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011485>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011486>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011487>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011488>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011489>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011490>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011491>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011492>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011493>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011494>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011495>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011496>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011497>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011498>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011499>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011500>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011501>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011502>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011503>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011504>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011505>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011506>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011507>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011508>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011509>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011510>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011511>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011512>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011513>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011514>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011515>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011516>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011523>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011524>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011525>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011533>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011538>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011550>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011579>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011583>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011588>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011589>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011592>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011593>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011597>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011603>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011607>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011609>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011610>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011612>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011619>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011622>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011629>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011632>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011633>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011635>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011636>))
 Declaration(AnnotationProperty(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color>))
 
 
@@ -156,569 +156,569 @@ Declaration(AnnotationProperty(<http://www.semanticweb.org/brain_data_standards/
 #   Named Individuals
 ############################
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_1> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_1>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011401> (<http://purl.obolibrary.org/obo/PCL_0011401>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_1> "#DDACC9"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011401> "#DDACC9"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_10> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_10>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011402> (<http://purl.obolibrary.org/obo/PCL_0011402>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_10> "#9440F3"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011402> "#FF88AD"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_100> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_100>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011403> (<http://purl.obolibrary.org/obo/PCL_0011403>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_100> "#6CA491"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011403> "#DD8091"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_101> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_101>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011404> (<http://purl.obolibrary.org/obo/PCL_0011404>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_101> "#4F7165"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011404> "#F08E98"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_102> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_102>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011405> (<http://purl.obolibrary.org/obo/PCL_0011405>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_102> "#72B09C"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011405> "#FF7290"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_103> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_103>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011406> (<http://purl.obolibrary.org/obo/PCL_0011406>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_103> "#8D6A62"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011406> "#FF8C97"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_104> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_104>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011407> (<http://purl.obolibrary.org/obo/PCL_0011407>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_104> "#3B3F32"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011407> "#FFA388"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_105> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_105>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011408> (<http://purl.obolibrary.org/obo/PCL_0011408>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_105> "#697255"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011408> "#C77963"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_106> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_106>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011409> (<http://purl.obolibrary.org/obo/PCL_0011409>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_106> "#535944"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011409> "#7E0ACB"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_107> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_107>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011410> (<http://purl.obolibrary.org/obo/PCL_0011410>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_107> "#535945"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011410> "#9440F3"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_108> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_108>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011411> (<http://purl.obolibrary.org/obo/PCL_0011411>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_108> "#535946"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011411> "#9611B6"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_109> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_109>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011412> (<http://purl.obolibrary.org/obo/PCL_0011412>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_109> "#535947"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011412> "#9900B3"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_11> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_11>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011413> (<http://purl.obolibrary.org/obo/PCL_0011413>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_11> "#9611B6"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011413> "#7A0099"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_110> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_110>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011414> (<http://purl.obolibrary.org/obo/PCL_0011414>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_110> "#535948"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011414> "#AA4DB5"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_111> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_111>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011415> (<http://purl.obolibrary.org/obo/PCL_0011415>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_111> "#A6906F"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011415> "#A720FF"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_112> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_112>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011416> (<http://purl.obolibrary.org/obo/PCL_0011416>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_112> "#A77C70"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011416> "#AB1DFF"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_113> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_113>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011417> (<http://purl.obolibrary.org/obo/PCL_0011417>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_113> "#6E7C6F"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011417> "#FF5FCD"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_114> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_114>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011418> (<http://purl.obolibrary.org/obo/PCL_0011418>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_114> "#8BA38D"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011418> "#FF4DC1"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_115> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_115>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011419> (<http://purl.obolibrary.org/obo/PCL_0011419>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_115> "#73967F"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011419> "#B09FFF"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_116> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_116>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011420> (<http://purl.obolibrary.org/obo/PCL_0011420>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_116> "#709F6D"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011420> "#BD3D9A"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_12> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_12>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011421> (<http://purl.obolibrary.org/obo/PCL_0011421>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_12> "#9900B3"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011421> "#992E81"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_123> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_123>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011422> (<http://purl.obolibrary.org/obo/PCL_0011422>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_123> "#F05A28"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011422> "#F70CF3"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_124> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_124>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011423> (<http://purl.obolibrary.org/obo/PCL_0011423>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_124> "#C456AA"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011423> "#FF00FF"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_125> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_125>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011424> (<http://purl.obolibrary.org/obo/PCL_0011424>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_125> "#DA808C"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011424> "#AB379C"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_13> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_13>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011425> (<http://purl.obolibrary.org/obo/PCL_0011425>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_13> "#7A0099"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011425> "#B3128A"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_133> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_133>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011426> (<http://purl.obolibrary.org/obo/PCL_0011426>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_133> "#D633FF"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011426> "#7779BF"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_138> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_138>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011427> (<http://purl.obolibrary.org/obo/PCL_0011427>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_138> "#B864CC"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011427> "#626EB8"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_14> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_14>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011428> (<http://purl.obolibrary.org/obo/PCL_0011428>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_14> "#AA4DB5"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011428> "#FFFF00"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_15> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_15>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011429> (<http://purl.obolibrary.org/obo/PCL_0011429>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_15> "#A720FF"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011429> "#FF8011"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_150> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_150>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011430> (<http://purl.obolibrary.org/obo/PCL_0011430>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_150> "#ED892E"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011430> "#FF9F2C"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_16> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_16>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011431> (<http://purl.obolibrary.org/obo/PCL_0011431>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_16> "#AB1DFF"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011431> "#FFB307"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_17> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_17>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011432> (<http://purl.obolibrary.org/obo/PCL_0011432>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_17> "#FF5FCD"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011432> "#FFBF09"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_179> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_179>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011433> (<http://purl.obolibrary.org/obo/PCL_0011433>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_179> "#00ADEE"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011433> "#BFAF00"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_18> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_18>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011434> (<http://purl.obolibrary.org/obo/PCL_0011434>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_18> "#FF4DC1"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011434> "#FFB22B"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_183> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_183>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011435> (<http://purl.obolibrary.org/obo/PCL_0011435>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_183> "#C4EC04"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011435> "#D9C566"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_188> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_188>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011436> (<http://purl.obolibrary.org/obo/PCL_0011436>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_188> "#09CCC6"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011436> "#BE8652"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_189> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_189>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011437> (<http://purl.obolibrary.org/obo/PCL_0011437>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_189> "#50B2AD"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011437> "#B0993C"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_19> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_19>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011438> (<http://purl.obolibrary.org/obo/PCL_0011438>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_19> "#B09FFF"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011438> "#CDB115"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_192> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_192>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011439> (<http://purl.obolibrary.org/obo/PCL_0011439>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_192> "#A19922"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011439> "#D2A328"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_193> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_193>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011440> (<http://purl.obolibrary.org/obo/PCL_0011440>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_193> "#0D5B78"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011440> "#635821"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_197> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_197>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011441> (<http://purl.obolibrary.org/obo/PCL_0011441>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_197> "#2D8CB8"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011441> "#784F14"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_2> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_2>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011442> (<http://purl.obolibrary.org/obo/PCL_0011442>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_2> "#FF88AD"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011442> "#802600"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_20> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_20>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011443> (<http://purl.obolibrary.org/obo/PCL_0011443>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_20> "#BD3D9A"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011443> "#8A2B1A"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_203> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_203>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011444> (<http://purl.obolibrary.org/obo/PCL_0011444>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_203> "#53377D"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011444> "#804600"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_207> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_207>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011445> (<http://purl.obolibrary.org/obo/PCL_0011445>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_207> "#3E9E64"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011445> "#8C6012"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_209> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_209>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011446> (<http://purl.obolibrary.org/obo/PCL_0011446>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_209> "#C60C0F"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011446> "#A81111"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_21> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_21>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011447> (<http://purl.obolibrary.org/obo/PCL_0011447>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_21> "#992E81"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011447> "#9B211B"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_210> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_210>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011448> (<http://purl.obolibrary.org/obo/PCL_0011448>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_210> "#665C47"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011448> "#ED4C50"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_212> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_212>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011449> (<http://purl.obolibrary.org/obo/PCL_0011449>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_212> "#2E3E39"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011449> "#C05661"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_219> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_219>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011450> (<http://purl.obolibrary.org/obo/PCL_0011450>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_219> "#6C7557"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011450> "#E62A5D"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_22> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_22>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011451> (<http://purl.obolibrary.org/obo/PCL_0011451>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_22> "#F70CF3"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011451> "#BC4B11"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_222> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_222>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011452> (<http://purl.obolibrary.org/obo/PCL_0011452>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_222> "#697255"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011452> "#B6411E"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_229> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_229>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011453> (<http://purl.obolibrary.org/obo/PCL_0011453>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_229> "#94AF97"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011453> "#BC2D71"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_23> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_23>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011454> (<http://purl.obolibrary.org/obo/PCL_0011454>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_23> "#FF00FF"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011454> "#9C4165"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_232> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_232>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011455> (<http://purl.obolibrary.org/obo/PCL_0011455>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_232> "#FF9900"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011455> "#BC2C41"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_233> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_233>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011456> (<http://purl.obolibrary.org/obo/PCL_0011456>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_233> "#D93137"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011456> "#FF197F"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_235> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_235>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011457> (<http://purl.obolibrary.org/obo/PCL_0011457>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_235> "#808080"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011457> "#F4358B"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_236> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_236>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011458> (<http://purl.obolibrary.org/obo/PCL_0011458>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_236> "#598077"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011458> "#00FF34"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_24> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_24>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011459> (<http://purl.obolibrary.org/obo/PCL_0011459>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_24> "#AB379C"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011459> "#07D945"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_25> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_25>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011460> (<http://purl.obolibrary.org/obo/PCL_0011460>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_25> "#B3128A"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011460> "#2EB934"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_26> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_26>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011461> (<http://purl.obolibrary.org/obo/PCL_0011461>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_26> "#7779BF"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011461> "#09CCC6"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_27> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_27>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011462> (<http://purl.obolibrary.org/obo/PCL_0011462>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_27> "#626EB8"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011462> "#52B8AA"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_28> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_28>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011463> (<http://purl.obolibrary.org/obo/PCL_0011463>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_28> "#FFFF00"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011463> "#58D2C1"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_29> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_29>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011464> (<http://purl.obolibrary.org/obo/PCL_0011464>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_29> "#FF8011"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011464> "#4A9F93"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_3> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_3>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011465> (<http://purl.obolibrary.org/obo/PCL_0011465>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_3> "#DD8091"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011465> "#4EAC9C"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_30> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_30>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011466> (<http://purl.obolibrary.org/obo/PCL_0011466>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_30> "#FF9F2C"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011466> "#52B4B8"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_31> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_31>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011467> (<http://purl.obolibrary.org/obo/PCL_0011467>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_31> "#FFB307"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011467> "#B2AD23"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_32> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_32>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011468> (<http://purl.obolibrary.org/obo/PCL_0011468>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_32> "#FFBF09"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011468> "#81791F"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_33> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_33>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011469> (<http://purl.obolibrary.org/obo/PCL_0011469>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_33> "#BFAF00"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011469> "#5100FF"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_34> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_34>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011470> (<http://purl.obolibrary.org/obo/PCL_0011470>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_34> "#FFB22B"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011470> "#0D5D7E"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_35> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_35>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011471> (<http://purl.obolibrary.org/obo/PCL_0011471>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_35> "#D9C566"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011471> "#0B77A5"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_36> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_36>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011472> (<http://purl.obolibrary.org/obo/PCL_0011472>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_36> "#BE8652"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011472> "#0B8AA5"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_37> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_37>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011473> (<http://purl.obolibrary.org/obo/PCL_0011473>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_37> "#B0993C"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011473> "#0A75B1"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_38> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_38>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011474> (<http://purl.obolibrary.org/obo/PCL_0011474>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_38> "#CDB115"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011474> "#1AAB99"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_39> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_39>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011475> (<http://purl.obolibrary.org/obo/PCL_0011475>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_39> "#D2A328"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011475> "#168577"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_4> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_4>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011476> (<http://purl.obolibrary.org/obo/PCL_0011476>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_4> "#F08E98"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011476> "#338C5E"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_40> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_40>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011477> (<http://purl.obolibrary.org/obo/PCL_0011477>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_40> "#635821"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011477> "#2FBCE5"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_41> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_41>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011478> (<http://purl.obolibrary.org/obo/PCL_0011478>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_41> "#784F14"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011478> "#3E766C"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_42> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_42>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011479> (<http://purl.obolibrary.org/obo/PCL_0011479>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_42> "#802600"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011479> "#516B78"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_43> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_43>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011480> (<http://purl.obolibrary.org/obo/PCL_0011480>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_43> "#8A2B1A"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011480> "#557361"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_44> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_44>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011481> (<http://purl.obolibrary.org/obo/PCL_0011481>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_44> "#804600"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011481> "#69419D"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_45> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_45>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011482> (<http://purl.obolibrary.org/obo/PCL_0011482>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_45> "#8C6012"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011482> "#46306A"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_46> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_46>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011483> (<http://purl.obolibrary.org/obo/PCL_0011483>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_46> "#A81111"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011483> "#464576"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_47> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_47>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011484> (<http://purl.obolibrary.org/obo/PCL_0011484>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_47> "#9B211B"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011484> "#7044AA"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_48> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_48>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011485> (<http://purl.obolibrary.org/obo/PCL_0011485>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_48> "#ED4C50"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011485> "#573D90"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_49> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_49>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011486> (<http://purl.obolibrary.org/obo/PCL_0011486>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_49> "#C05661"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011486> "#48CB80"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_5> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_5>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011487> (<http://purl.obolibrary.org/obo/PCL_0011487>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_5> "#FF7290"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011487> "#3C78BC"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_50> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_50>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011488> (<http://purl.obolibrary.org/obo/PCL_0011488>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_50> "#E62A5D"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011488> "#47867A"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_51> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_51>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011489> (<http://purl.obolibrary.org/obo/PCL_0011489>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_51> "#BC4B11"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011489> "#C60C0F"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_52> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_52>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011490> (<http://purl.obolibrary.org/obo/PCL_0011490>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_52> "#B6411E"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011490> "#931010"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_53> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_53>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011491> (<http://purl.obolibrary.org/obo/PCL_0011491>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_53> "#BC2D71"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011491> "#2E3E39"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_54> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_54>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011492> (<http://purl.obolibrary.org/obo/PCL_0011492>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_54> "#9C4165"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011492> "#332F26"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_55> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_55>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011493> (<http://purl.obolibrary.org/obo/PCL_0011493>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_55> "#BC2C41"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011493> "#5A503F"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_56> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_56>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011494> (<http://purl.obolibrary.org/obo/PCL_0011494>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_56> "#FF197F"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011494> "#8D7C5D"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_57> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_57>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011495> (<http://purl.obolibrary.org/obo/PCL_0011495>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_57> "#F4358B"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011495> "#374A45"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_58> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_58>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011496> (<http://purl.obolibrary.org/obo/PCL_0011496>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_58> "#00FF34"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011496> "#5E8A79"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_59> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_59>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011497> (<http://purl.obolibrary.org/obo/PCL_0011497>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_59> "#07D945"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011497> "#3F574E"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_6> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_6>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011498> (<http://purl.obolibrary.org/obo/PCL_0011498>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_6> "#FF8C97"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011498> "#65978A"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_60> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_60>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011499> (<http://purl.obolibrary.org/obo/PCL_0011499>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_60> "#2EB934"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011499> "#474662"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_61> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_61>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011500> (<http://purl.obolibrary.org/obo/PCL_0011500>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_61> "#09CCC6"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011500> "#6CA491"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_62> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_62>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011501> (<http://purl.obolibrary.org/obo/PCL_0011501>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_62> "#52B8AA"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011501> "#4F7165"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_63> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_63>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011502> (<http://purl.obolibrary.org/obo/PCL_0011502>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_63> "#58D2C1"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011502> "#72B09C"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_64> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_64>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011503> (<http://purl.obolibrary.org/obo/PCL_0011503>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_64> "#4A9F93"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011503> "#8D6A62"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_65> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_65>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011504> (<http://purl.obolibrary.org/obo/PCL_0011504>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_65> "#4EAC9C"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011504> "#3B3F32"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_66> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_66>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011505> (<http://purl.obolibrary.org/obo/PCL_0011505>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_66> "#52B4B8"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011505> "#697255"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_67> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_67>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011506> (<http://purl.obolibrary.org/obo/PCL_0011506>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_67> "#B2AD23"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011506> "#535944"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_68> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_68>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011507> (<http://purl.obolibrary.org/obo/PCL_0011507>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_68> "#81791F"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011507> "#535945"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_69> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_69>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011508> (<http://purl.obolibrary.org/obo/PCL_0011508>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_69> "#5100FF"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011508> "#535946"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_7> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_7>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011509> (<http://purl.obolibrary.org/obo/PCL_0011509>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_7> "#FFA388"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011509> "#535947"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_70> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_70>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011510> (<http://purl.obolibrary.org/obo/PCL_0011510>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_70> "#0D5D7E"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011510> "#535948"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_71> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_71>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011511> (<http://purl.obolibrary.org/obo/PCL_0011511>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_71> "#0B77A5"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011511> "#A6906F"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_72> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_72>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011512> (<http://purl.obolibrary.org/obo/PCL_0011512>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_72> "#0B8AA5"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011512> "#A77C70"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_73> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_73>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011513> (<http://purl.obolibrary.org/obo/PCL_0011513>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_73> "#0A75B1"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011513> "#6E7C6F"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_74> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_74>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011514> (<http://purl.obolibrary.org/obo/PCL_0011514>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_74> "#1AAB99"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011514> "#8BA38D"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_75> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_75>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011515> (<http://purl.obolibrary.org/obo/PCL_0011515>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_75> "#168577"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011515> "#73967F"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_76> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_76>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011516> (<http://purl.obolibrary.org/obo/PCL_0011516>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_76> "#338C5E"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011516> "#709F6D"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_77> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_77>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011523> (<http://purl.obolibrary.org/obo/PCL_0011523>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_77> "#2FBCE5"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011523> "#F05A28"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_78> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_78>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011524> (<http://purl.obolibrary.org/obo/PCL_0011524>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_78> "#3E766C"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011524> "#C456AA"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_79> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_79>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011525> (<http://purl.obolibrary.org/obo/PCL_0011525>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_79> "#516B78"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011525> "#DA808C"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_8> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_8>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011533> (<http://purl.obolibrary.org/obo/PCL_0011533>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_8> "#C77963"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011533> "#D633FF"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_80> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_80>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011538> (<http://purl.obolibrary.org/obo/PCL_0011538>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_80> "#557361"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011538> "#B864CC"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_81> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_81>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011550> (<http://purl.obolibrary.org/obo/PCL_0011550>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_81> "#69419D"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011550> "#ED892E"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_82> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_82>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011579> (<http://purl.obolibrary.org/obo/PCL_0011579>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_82> "#46306A"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011579> "#00ADEE"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_83> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_83>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011583> (<http://purl.obolibrary.org/obo/PCL_0011583>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_83> "#464576"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011583> "#C4EC04"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_84> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_84>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011588> (<http://purl.obolibrary.org/obo/PCL_0011588>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_84> "#7044AA"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011588> "#09CCC6"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_85> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_85>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011589> (<http://purl.obolibrary.org/obo/PCL_0011589>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_85> "#573D90"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011589> "#50B2AD"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_86> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_86>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011592> (<http://purl.obolibrary.org/obo/PCL_0011592>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_86> "#48CB80"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011592> "#A19922"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_87> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_87>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011593> (<http://purl.obolibrary.org/obo/PCL_0011593>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_87> "#3C78BC"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011593> "#0D5B78"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_88> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_88>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011597> (<http://purl.obolibrary.org/obo/PCL_0011597>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_88> "#47867A"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011597> "#2D8CB8"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_89> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_89>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011603> (<http://purl.obolibrary.org/obo/PCL_0011603>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_89> "#C60C0F"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011603> "#53377D"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_9> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_9>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011607> (<http://purl.obolibrary.org/obo/PCL_0011607>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_9> "#7E0ACB"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011607> "#3E9E64"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_90> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_90>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011609> (<http://purl.obolibrary.org/obo/PCL_0011609>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_90> "#931010"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011609> "#C60C0F"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_91> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_91>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011610> (<http://purl.obolibrary.org/obo/PCL_0011610>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_91> "#2E3E39"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011610> "#665C47"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_92> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_92>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011612> (<http://purl.obolibrary.org/obo/PCL_0011612>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_92> "#332F26"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011612> "#2E3E39"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_93> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_93>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011619> (<http://purl.obolibrary.org/obo/PCL_0011619>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_93> "#5A503F"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011619> "#6C7557"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_94> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_94>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011622> (<http://purl.obolibrary.org/obo/PCL_0011622>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_94> "#8D7C5D"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011622> "#697255"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_95> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_95>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011629> (<http://purl.obolibrary.org/obo/PCL_0011629>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_95> "#374A45"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011629> "#94AF97"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_96> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_96>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011632> (<http://purl.obolibrary.org/obo/PCL_0011632>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_96> "#5E8A79"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011632> "#FF9900"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_97> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_97>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011633> (<http://purl.obolibrary.org/obo/PCL_0011633>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_97> "#3F574E"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011633> "#D93137"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_98> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_98>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011635> (<http://purl.obolibrary.org/obo/PCL_0011635>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_98> "#65978A"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011635> "#808080"^^xsd:string)
 
-# Individual: <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_99> (<http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_99>)
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011636> (<http://purl.obolibrary.org/obo/PCL_0011636>)
 
-AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://www.semanticweb.org/brain_data_standards/AllenDend_CS202002013_99> "#474662"^^xsd:string)
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0011636> "#598077"^^xsd:string)
 
 
 )
