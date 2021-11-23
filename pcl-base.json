@@ -479,6 +479,11 @@
           "sub": "http://purl.obolibrary.org/obo/PCL_0013087"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/CL_0000115",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/PCL_0014074"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/CL_0000125",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/PCL_0012118"
@@ -692,6 +697,11 @@
           "obj": "http://purl.obolibrary.org/obo/CL_0000129",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/PCL_0013094"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_0000129",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/PCL_0014075"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CL_0000679",
@@ -3254,6 +3264,16 @@
           "sub": "http://purl.obolibrary.org/obo/PCL_0011178"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/CL_4023036",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/PCL_0012072"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_4023036",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/PCL_0013052"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/CL_4023038",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/PCL_0014142"
@@ -3299,6 +3319,11 @@
           "sub": "http://purl.obolibrary.org/obo/PCL_0011183"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/CL_4023047",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/PCL_0014127"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/CL_4023048",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/PCL_0011062"
@@ -3307,6 +3332,16 @@
           "obj": "http://purl.obolibrary.org/obo/CL_4023049",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/PCL_0011189"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_4023049",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/PCL_0014134"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_4023050",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/PCL_0014138"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CL_4023051",
@@ -3394,6 +3429,11 @@
           "sub": "http://purl.obolibrary.org/obo/PCL_0011090"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/CL_4023065",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/PCL_0013026"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/CL_4023069",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/PCL_0011150"
@@ -3409,6 +3449,11 @@
           "sub": "http://purl.obolibrary.org/obo/PCL_0013110"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/CL_4023069",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/PCL_0014105"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/CL_4023070",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/PCL_0011124"
@@ -3422,6 +3467,11 @@
           "obj": "http://purl.obolibrary.org/obo/CL_4023070",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/PCL_0013111"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/CL_4023070",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/PCL_0014079"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/CL_4023071",
@@ -21483,7 +21533,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Met, Adamts2, 6530403H02Rik. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS202002013_58.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Met, Adamts2, 6530403H02Rik. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer II/III. The reference data for this cell type is CS202002013_58.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -21523,7 +21573,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Ccdc3, Meis2, Cux1, Otof. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS202002013_59.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Ccdc3, Meis2, Cux1, Otof. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer II/III. The reference data for this cell type is CS202002013_59.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -21563,7 +21613,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Stard8, Cux2, Slit3. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS202002013_60.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Stard8, Cux2, Slit3. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer II/III. The reference data for this cell type is CS202002013_60.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -21606,7 +21656,7 @@
               "Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping."
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Cadps2, Rorb, Prr16. These cells also express Rspo1. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS202002013_61. This class represents a cross-species homology grouping.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Cadps2, Rorb, Prr16. These cells also express Rspo1. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer IV/V. The reference data for this cell type is CS202002013_61. This class represents a cross-species homology grouping.",
               "xrefs": [
                 "PMID:34616062",
                 "PMID:34616066"
@@ -21655,7 +21705,7 @@
               "Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping."
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Col26a1, Cpne4, Il1rapl2. These cells also express Rspo1. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS202002013_62. This class represents a cross-species homology grouping.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Col26a1, Cpne4, Il1rapl2. These cells also express Rspo1. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer IV/V. The reference data for this cell type is CS202002013_62. This class represents a cross-species homology grouping.",
               "xrefs": [
                 "PMID:34616062",
                 "PMID:34616066"
@@ -21701,7 +21751,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS202002013_63.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_63.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -21736,7 +21786,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Man1a, Deptor, Adamts18, Gm49678. These cells also express S100b. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS202002013_64.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Man1a, Deptor, Adamts18, Gm49678. These cells also express S100b. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_64.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -21776,7 +21826,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Ptprk, Pld5, Rxfp1, Enpp2, Cadps2. These cells also express Pld5. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS202002013_65.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Ptprk, Pld5, Rxfp1, Enpp2, Cadps2. These cells also express Pld5. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_65.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -21816,7 +21866,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Cwh43, Chrm2, Pld5. These cells also express Pld5. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS202002013_66.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Cwh43, Chrm2, Pld5. These cells also express Pld5. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_66.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -21859,7 +21909,7 @@
               "Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping."
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Fst, Bmpr1b, Ntng1. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS202002013_67. This class represents a cross-species homology grouping.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Fst, Bmpr1b, Ntng1. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_67. This class represents a cross-species homology grouping.",
               "xrefs": [
                 "PMID:34616062",
                 "PMID:34616066"
@@ -21900,7 +21950,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Ptpru, C1ql3, Bmpr1b. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS202002013_68.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Ptpru, C1ql3, Bmpr1b. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_68.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -21943,7 +21993,7 @@
               "Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping."
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Nr4a2, Tfap2d. These cells also express Car3. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS202002013_69. This class represents a cross-species homology grouping.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Nr4a2, Tfap2d. These cells also express Car3. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_69. This class represents a cross-species homology grouping.",
               "xrefs": [
                 "PMID:33184512",
                 "PMID:34616062",
@@ -21995,7 +22045,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Npr3, Crym, Gm2164. These cells have projection type extratelencephalic projecting. The reference data for this cell type is CS202002013_70.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Npr3, Crym, Gm2164. These cells have projection type extratelencephalic projecting. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_70.",
               "xrefs": [
                 "PMID:30382198",
                 "PMID:33184512",
@@ -22055,7 +22105,7 @@
               "Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping."
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Trpc7, Gpc5, Erg. These cells have projection type extratelencephalic projecting. The reference data for this cell type is CS202002013_71. This class represents a cross-species homology grouping.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Trpc7, Gpc5, Erg. These cells have projection type extratelencephalic projecting. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_71. This class represents a cross-species homology grouping.",
               "xrefs": [
                 "PMID:34616062",
                 "PMID:34616066"
@@ -22101,7 +22151,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Trpc7, Gpc5, Trmt9b, Reln. These cells have projection type extratelencephalic projecting. The reference data for this cell type is CS202002013_72.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Trpc7, Gpc5, Trmt9b, Reln. These cells have projection type extratelencephalic projecting. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_72.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -22146,7 +22196,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Npsr1, Gm2164. These cells have projection type extratelencephalic projecting. The reference data for this cell type is CS202002013_73.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Npsr1, Gm2164. These cells have projection type extratelencephalic projecting. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_73.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -22194,7 +22244,7 @@
               "Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping."
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Grp, Rxfp1, Tshz2. These cells have projection type corticothalamic projecting. The reference data for this cell type is CS202002013_74. This class represents a cross-species homology grouping.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Grp, Rxfp1, Tshz2. These cells have projection type corticothalamic projecting. The soma of these cells in located in: cortical layer V/VI. The reference data for this cell type is CS202002013_74. This class represents a cross-species homology grouping.",
               "xrefs": [
                 "PMID:34616062",
                 "PMID:34616066"
@@ -22240,7 +22290,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Acaa1b, Col23a1, Gpr139. These cells also express Gpr139. These cells have projection type corticothalamic projecting. The reference data for this cell type is CS202002013_75.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Acaa1b, Col23a1, Gpr139. These cells also express Gpr139. These cells have projection type corticothalamic projecting. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_75.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -22283,7 +22333,7 @@
               "Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping."
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Zfpm2, Foxp2, Hs3st4. These cells also express Cpa6. These cells have projection type corticothalamic projecting. The reference data for this cell type is CS202002013_76. This class represents a cross-species homology grouping.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Zfpm2, Foxp2, Hs3st4. These cells also express Cpa6. These cells have projection type corticothalamic projecting. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_76. This class represents a cross-species homology grouping.",
               "xrefs": [
                 "PMID:34616062",
                 "PMID:34616066"
@@ -22329,7 +22379,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Grp, Meis2, Pdzrn4, Plcxd3. These cells also express Grp. These cells have projection type corticothalamic projecting. The reference data for this cell type is CS202002013_77.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Grp, Meis2, Pdzrn4, Plcxd3. These cells also express Grp. These cells have projection type corticothalamic projecting. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_77.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -22369,7 +22419,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Satb2, Cdh18, Gm10635. These cells also express Pou3f2. These cells have projection type corticothalamic projecting. The reference data for this cell type is CS202002013_78.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Satb2, Cdh18, Gm10635. These cells also express Pou3f2. These cells have projection type corticothalamic projecting. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_78.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -22409,7 +22459,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Ikzf2, Gm10635. These cells also express Kit. These cells have projection type corticothalamic projecting. The reference data for this cell type is CS202002013_79.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Ikzf2, Gm10635. These cells also express Kit. These cells have projection type corticothalamic projecting. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_79.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -22449,7 +22499,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Nr4a2, Rxfp1, Tshz2. These cells also express Kit. These cells have projection type corticothalamic projecting. The reference data for this cell type is CS202002013_80.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Nr4a2, Rxfp1, Tshz2. These cells also express Kit. These cells have projection type corticothalamic projecting. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_80.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -22489,7 +22539,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Ccn2, Hs3st2, Bmpr1b. These cells also express Col6a1. The reference data for this cell type is CS202002013_81.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Ccn2, Hs3st2, Bmpr1b. These cells also express Col6a1. The soma of these cells in located in: cortical layer VIb. The reference data for this cell type is CS202002013_81.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -22529,7 +22579,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Ly6g6e, Svil, Cplx3. These cells also express Shisa6. The reference data for this cell type is CS202002013_82.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Ly6g6e, Svil, Cplx3. These cells also express Shisa6. The soma of these cells in located in: cortical layer VIb. The reference data for this cell type is CS202002013_82.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -22569,7 +22619,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Moxd1, Nr4a2. These cells also express Shisa6. The reference data for this cell type is CS202002013_83.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Moxd1, Nr4a2. These cells also express Shisa6. The soma of these cells in located in: cortical layer VIb. The reference data for this cell type is CS202002013_83.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -22609,7 +22659,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Ccn2, Cplx3, Fbxl7. These cells also express Ror1. The reference data for this cell type is CS202002013_84.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Ccn2, Cplx3, Fbxl7. These cells also express Ror1. The soma of these cells in located in: cortical layer VIb. The reference data for this cell type is CS202002013_84.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -22649,7 +22699,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Olfr112, Rxfp2, Gm42557. These cells also express Kcnip1. The reference data for this cell type is CS202002013_85.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Olfr112, Rxfp2, Gm42557. These cells also express Kcnip1. The soma of these cells in located in: cortical layer VIb. The reference data for this cell type is CS202002013_85.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -22689,7 +22739,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Dkk2, Cyp7b1, Vwc2l. These cells have projection type near projecting. The reference data for this cell type is CS202002013_86.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Dkk2, Cyp7b1, Vwc2l. These cells have projection type near projecting. The soma of these cells in located in: cortical layer V/VI. The reference data for this cell type is CS202002013_86.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -22729,7 +22779,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Slc17a8, Abi3bp. These cells have projection type near projecting. The reference data for this cell type is CS202002013_87.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Slc17a8, Abi3bp. These cells have projection type near projecting. The soma of these cells in located in: cortical layer V/VI. The reference data for this cell type is CS202002013_87.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -22769,7 +22819,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Lypd1, Tshz2. These cells have projection type near projecting. The reference data for this cell type is CS202002013_88.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Lypd1, Tshz2. These cells have projection type near projecting. The soma of these cells in located in: cortical layer V/VI. The reference data for this cell type is CS202002013_88.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -24293,7 +24343,7 @@
               }
             ],
             "definition": {
-              "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Col14a1, Enpp2, Pbx3. These cells also express Cck. The reference data for this cell type is CS202002013_139.",
+              "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Col14a1, Enpp2, Pbx3. These cells also express Cck. The soma of these cells in located in: cortical layer V/VI. The reference data for this cell type is CS202002013_139.",
               "xrefs": [
                 "PMID:33184512",
                 "PMID:34616066"
@@ -24339,7 +24389,7 @@
               }
             ],
             "definition": {
-              "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Car4, Vip, Crh. These cells also express Vip. The reference data for this cell type is CS202002013_143.",
+              "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Car4, Vip, Crh. These cells also express Vip. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_143.",
               "xrefs": [
                 "PMID:33184512",
                 "PMID:34616066"
@@ -24385,7 +24435,7 @@
               }
             ],
             "definition": {
-              "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Vip, Wnt5b. The reference data for this cell type is CS202002013_145.",
+              "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Vip, Wnt5b. The soma of these cells in located in: cortical layer II/III. The reference data for this cell type is CS202002013_145.",
               "xrefs": [
                 "PMID:33184512",
                 "PMID:34616066"
@@ -24593,7 +24643,7 @@
               }
             ],
             "definition": {
-              "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Rbp4, Trpc6, Lgals1. The reference data for this cell type is CS202002013_161.",
+              "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Rbp4, Trpc6, Lgals1. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_161.",
               "xrefs": [
                 "PMID:33184512",
                 "PMID:34616066"
@@ -24685,7 +24735,7 @@
               }
             ],
             "definition": {
-              "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Cdh13, Tmtc2, Crh. The reference data for this cell type is CS202002013_165.",
+              "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Cdh13, Tmtc2, Crh. The soma of these cells in located in: cortical layer V/VI. The reference data for this cell type is CS202002013_165.",
               "xrefs": [
                 "PMID:33184512",
                 "PMID:34616066"
@@ -24731,7 +24781,7 @@
               }
             ],
             "definition": {
-              "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Th, Cort. These cells also express Th, Sst. The reference data for this cell type is CS202002013_170.",
+              "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Th, Cort. These cells also express Th, Sst. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_170.",
               "xrefs": [
                 "PMID:33184512",
                 "PMID:34616066"
@@ -24928,7 +24978,7 @@
               "Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping."
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Rasgrf2, Calb1. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS202002013_183. This class represents a cross-species homology grouping.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Rasgrf2, Calb1. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer II/III. The reference data for this cell type is CS202002013_183. This class represents a cross-species homology grouping.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -24976,7 +25026,7 @@
               "Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping."
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Kcnh5, Rorb, A830036E02Rik. The reference data for this cell type is CS202002013_188. This class represents a cross-species homology grouping.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Kcnh5, Rorb, A830036E02Rik. The soma of these cells in located in: cortical layer IV. The reference data for this cell type is CS202002013_188. This class represents a cross-species homology grouping.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -25029,7 +25079,7 @@
               "Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping."
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Pdzrn3, St6galnac5, Cdh12. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS202002013_189. This class represents a cross-species homology grouping.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Pdzrn3, St6galnac5, Cdh12. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_189. This class represents a cross-species homology grouping.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -25077,7 +25127,7 @@
               "Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping."
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Deptor, Il1rapl2. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS202002013_190. This class represents a cross-species homology grouping.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Deptor, Il1rapl2. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_190. This class represents a cross-species homology grouping.",
               "xrefs": [
                 "PMID:34616062",
                 "PMID:34616066"
@@ -25131,7 +25181,7 @@
               "Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping."
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Sulf1, Bmpr1b, Il1rapl2. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS202002013_192. This class represents a cross-species homology grouping.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Sulf1, Bmpr1b, Il1rapl2. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_192. This class represents a cross-species homology grouping.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -25179,7 +25229,7 @@
               "Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping."
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Npr3, Gm2164. These cells have projection type extratelencephalic projecting. The reference data for this cell type is CS202002013_193. This class represents a cross-species homology grouping.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Npr3, Gm2164. These cells have projection type extratelencephalic projecting. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_193. This class represents a cross-species homology grouping.",
               "xrefs": [
                 "PMID:34616066"
               ]
@@ -25224,7 +25274,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Trpc7, Col8a1, Pou3f1. These cells have projection type extratelencephalic projecting. The reference data for this cell type is CS202002013_194.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Trpc7, Col8a1, Pou3f1. These cells have projection type extratelencephalic projecting. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_194.",
               "xrefs": [
                 "PMID:30382198",
                 "PMID:33184512",
@@ -25279,7 +25329,7 @@
               "Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping."
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Foxp2, Hs3st4. These cells have projection type corticothalamic projecting. The reference data for this cell type is CS202002013_197. This class represents a cross-species homology grouping.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Foxp2, Hs3st4. These cells have projection type corticothalamic projecting. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_197. This class represents a cross-species homology grouping.",
               "xrefs": [
                 "PMID:33184512",
                 "PMID:34616066"
@@ -25338,7 +25388,7 @@
               "Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping."
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Ccn2, Cplx3. The reference data for this cell type is CS202002013_203. This class represents a cross-species homology grouping.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Ccn2, Cplx3. The soma of these cells in located in: cortical layer VIb. The reference data for this cell type is CS202002013_203. This class represents a cross-species homology grouping.",
               "xrefs": [
                 "PMID:33184512",
                 "PMID:34616062",
@@ -25393,7 +25443,7 @@
               "Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping."
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Etv1, Tshz2. These cells have projection type near projecting. The reference data for this cell type is CS202002013_207. This class represents a cross-species homology grouping.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Etv1, Tshz2. These cells have projection type near projecting. The soma of these cells in located in: cortical layer V/VI. The reference data for this cell type is CS202002013_207. This class represents a cross-species homology grouping.",
               "xrefs": [
                 "PMID:33184512",
                 "PMID:34616062",
@@ -26157,7 +26207,7 @@
               "Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping."
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_249. This class represents a cross-species homology grouping.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_249. This class represents a cross-species homology grouping.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -26200,7 +26250,7 @@
               "Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping."
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Deptor, Il1rapl2. These cells also express S100b. The reference data for this cell type is CS202002013_250. This class represents a cross-species homology grouping.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Deptor, Il1rapl2. These cells also express S100b. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_250. This class represents a cross-species homology grouping.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -26248,7 +26298,7 @@
               "Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping."
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_251. This class represents a cross-species homology grouping.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_251. This class represents a cross-species homology grouping.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -26291,7 +26341,7 @@
               "Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping."
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_252. This class represents a cross-species homology grouping.",
+              "val": "A glutamatergic neuron of the Mus musculus primary motor cortex. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_252. This class represents a cross-species homology grouping.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -26447,7 +26497,7 @@
               }
             ],
             "definition": {
-              "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_256.",
+              "val": "A GABAergic interneuron of the Mus musculus primary motor cortex. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_256.",
               "xrefs": [
                 "PMID:33184512"
               ]
@@ -39688,7 +39738,7 @@
               "Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping."
             ],
             "definition": {
-              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CBLN4, TRPC3, RELN, HS3ST5. These cells also express LAMP5, NECTIN2. The reference data for this cell type is CS201912131_1. This class represents a cross-species homology grouping.",
+              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CBLN4, TRPC3, RELN, HS3ST5. These cells also express LAMP5, NECTIN2. The soma of these cells in located in: cortical layer I. The reference data for this cell type is CS201912131_1. This class represents a cross-species homology grouping.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -39733,7 +39783,7 @@
               }
             ],
             "definition": {
-              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of MYH11, FREM1, ADAMTS20. These cells also express LAMP5, RAB11FIP1. The reference data for this cell type is CS201912131_2.",
+              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of MYH11, FREM1, ADAMTS20. These cells also express LAMP5, RAB11FIP1. The soma of these cells in located in: cortical layer I. The reference data for this cell type is CS201912131_2.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -39973,7 +40023,7 @@
               }
             ],
             "definition": {
-              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of TGFBR2, RELN. These cells also express PAX6, MIR101-1. The reference data for this cell type is CS201912131_8.",
+              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of TGFBR2, RELN. These cells also express PAX6, MIR101-1. The soma of these cells in located in: cortical layer I. The reference data for this cell type is CS201912131_8.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -40013,7 +40063,7 @@
               }
             ],
             "definition": {
-              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CNR1, CHRNA7, LINC01539. These cells also express PAX6, CHRFAM7A. The reference data for this cell type is CS201912131_9.",
+              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CNR1, CHRNA7, LINC01539. These cells also express PAX6, CHRFAM7A. The soma of these cells in located in: cortical layer I. The reference data for this cell type is CS201912131_9.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -40096,7 +40146,7 @@
               "Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping."
             ],
             "definition": {
-              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CILP2, IGFBP7. These cells also express PAX6, FREM2. The reference data for this cell type is CS201912131_11. This class represents a cross-species homology grouping.",
+              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CILP2, IGFBP7. These cells also express PAX6, FREM2. The soma of these cells in located in: cortical layer II. The reference data for this cell type is CS201912131_11. This class represents a cross-species homology grouping.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -40221,7 +40271,7 @@
               }
             ],
             "definition": {
-              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of FREM1, COL5A2. These cells also express BMP2, LAMP5. The reference data for this cell type is CS201912131_14.",
+              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of FREM1, COL5A2. These cells also express BMP2, LAMP5. The soma of these cells in located in: cortical layer I. The reference data for this cell type is CS201912131_14.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -40261,7 +40311,7 @@
               }
             ],
             "definition": {
-              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of RELN, PCDH18. These cells also express LAMP5, NMBR. The reference data for this cell type is CS201912131_15.",
+              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of RELN, PCDH18. These cells also express LAMP5, NMBR. The soma of these cells in located in: cortical layer I. The reference data for this cell type is CS201912131_15.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -40301,7 +40351,7 @@
               }
             ],
             "definition": {
-              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of ADAM33, NCKAP5, PRELID2. These cells also express ASIC4, PVALB, SST. The reference data for this cell type is CS201912131_16.",
+              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of ADAM33, NCKAP5, PRELID2. These cells also express ASIC4, PVALB, SST. The soma of these cells in located in: cortical layer I. The reference data for this cell type is CS201912131_16.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -40346,7 +40396,7 @@
               }
             ],
             "definition": {
-              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of ST8SIA6, FOXO1, ARHGAP42. These cells also express P4HA3, SST. The reference data for this cell type is CS201912131_17.",
+              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of ST8SIA6, FOXO1, ARHGAP42. These cells also express P4HA3, SST. The soma of these cells in located in: cortical layer I. The reference data for this cell type is CS201912131_17.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -40386,7 +40436,7 @@
               }
             ],
             "definition": {
-              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of SYT10, NDST4. These cells also express SST, DEFB108B. The reference data for this cell type is CS201912131_18.",
+              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of SYT10, NDST4. These cells also express SST, DEFB108B. The soma of these cells in located in: cortical layer I. The reference data for this cell type is CS201912131_18.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -40706,7 +40756,7 @@
               }
             ],
             "definition": {
-              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of KCNT2. These cells also express SLC6A16, VIP. The reference data for this cell type is CS201912131_26.",
+              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of KCNT2. These cells also express SLC6A16, VIP. The soma of these cells in located in: cortical layer II. The reference data for this cell type is CS201912131_26.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -40746,7 +40796,7 @@
               }
             ],
             "definition": {
-              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of SLITRK4, ITGBL1. These cells also express VIP, KLHDC8B. The reference data for this cell type is CS201912131_27.",
+              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of SLITRK4, ITGBL1. These cells also express VIP, KLHDC8B. The soma of these cells in located in: cortical layer I. The reference data for this cell type is CS201912131_27.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -41354,7 +41404,7 @@
               }
             ],
             "definition": {
-              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of TRHDE, EDNRA, FREM1. These cells also express SST, RPL35AP11. The reference data for this cell type is CS201912131_42.",
+              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of TRHDE, EDNRA, FREM1. These cells also express SST, RPL35AP11. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS201912131_42.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -41992,7 +42042,7 @@
               "Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping."
             ],
             "definition": {
-              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of TH. These cells also express SST, TH. The reference data for this cell type is CS201912131_58. This class represents a cross-species homology grouping.",
+              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of TH. These cells also express SST, TH. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS201912131_58. This class represents a cross-species homology grouping.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -42157,7 +42207,7 @@
               }
             ],
             "definition": {
-              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CDH6, PLCE1, GPC5. These cells also express PVALB, LRIG3. The reference data for this cell type is CS201912131_62.",
+              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CDH6, PLCE1, GPC5. These cells also express PVALB, LRIG3. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS201912131_62.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -42357,7 +42407,7 @@
               }
             ],
             "definition": {
-              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CBLN4, RGS5, SLC9A9. These cells also express PVALB, FRZB. The reference data for this cell type is CS201912131_67.",
+              "val": "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CBLN4, RGS5, SLC9A9. These cells also express PVALB, FRZB. The soma of these cells in located in: cortical layer II. The reference data for this cell type is CS201912131_67.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -42610,7 +42660,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of FAM163A, SAMD3. These cells also express LAMP5, KCNG3. The reference data for this cell type is CS201912131_73.",
+              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of FAM163A, SAMD3. These cells also express LAMP5, KCNG3. The soma of these cells in located in: cortical layer II. The reference data for this cell type is CS201912131_73.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -42650,7 +42700,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of ACVR1C. These cells also express ATP7B, LINC00507. The reference data for this cell type is CS201912131_74.",
+              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of ACVR1C. These cells also express ATP7B, LINC00507. The soma of these cells in located in: cortical layer II. The reference data for this cell type is CS201912131_74.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -42690,7 +42740,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of SERPINE2, LINC01378. These cells also express GLRA3, LINC00507. The reference data for this cell type is CS201912131_75.",
+              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of SERPINE2, LINC01378. These cells also express GLRA3, LINC00507. The soma of these cells in located in: cortical layer II. The reference data for this cell type is CS201912131_75.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -42810,7 +42860,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of SV2C, EPB41L4A, SYT2. These cells also express LAMP5, CARM1P1. The reference data for this cell type is CS201912131_78.",
+              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of SV2C, EPB41L4A, SYT2. These cells also express LAMP5, CARM1P1. The soma of these cells in located in: cortical layer III. The reference data for this cell type is CS201912131_78.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -42970,7 +43020,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of FAP, LAMA2. These cells also express ENPEP, THEMIS. The reference data for this cell type is CS201912131_82.",
+              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of FAP, LAMA2. These cells also express ENPEP, THEMIS. The soma of these cells in located in: cortical layer III. The reference data for this cell type is CS201912131_82.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -43090,7 +43140,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of TNC, DACH1. These cells also express VILL, THEMIS. The reference data for this cell type is CS201912131_85.",
+              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of TNC, DACH1. These cells also express VILL, THEMIS. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS201912131_85.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -43130,7 +43180,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of COL22A1. These cells also express OTOGL, RORB. The reference data for this cell type is CS201912131_86.",
+              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of COL22A1. These cells also express OTOGL, RORB. The soma of these cells in located in: cortical layer III. The reference data for this cell type is CS201912131_86.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -43205,7 +43255,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of SLC7A11, BTNL9, CCBE1. These cells also express SLC22A18, THEMIS. The reference data for this cell type is CS201912131_88.",
+              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of SLC7A11, BTNL9, CCBE1. These cells also express SLC22A18, THEMIS. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS201912131_88.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -43365,7 +43415,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of NPFFR2, COL22A1. These cells also express MED8, RORB. The reference data for this cell type is CS201912131_92.",
+              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of NPFFR2, COL22A1. These cells also express MED8, RORB. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS201912131_92.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -43405,7 +43455,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of NPFFR2, CRH, BDNF. These cells also express FGF10, THEMIS. The reference data for this cell type is CS201912131_93.",
+              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of NPFFR2, CRH, BDNF. These cells also express FGF10, THEMIS. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS201912131_93.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -43445,7 +43495,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of ANKRD30B, LINC00343, LINC00299. These cells also express THEMIS, LINC00343. The reference data for this cell type is CS201912131_94.",
+              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of ANKRD30B, LINC00343, LINC00299. These cells also express THEMIS, LINC00343. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS201912131_94.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -43485,7 +43535,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of FAM163A. These cells also express SLN, THEMIS. The reference data for this cell type is CS201912131_95.",
+              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of FAM163A. These cells also express SLN, THEMIS. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS201912131_95.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -43525,7 +43575,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells also express SNTG2, THEMIS. The reference data for this cell type is CS201912131_96.",
+              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells also express SNTG2, THEMIS. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS201912131_96.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -43653,7 +43703,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells also express LINC01116, THEMIS. The reference data for this cell type is CS201912131_99.",
+              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells also express LINC01116, THEMIS. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS201912131_99.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -43688,7 +43738,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of DDR2, THEMIS. These cells also express THEMIS, RGPD6. The reference data for this cell type is CS201912131_100.",
+              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of DDR2, THEMIS. These cells also express THEMIS, RGPD6. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS201912131_100.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -43856,7 +43906,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of PDYN, GBP2. These cells also express PDYN, FEZF2. The reference data for this cell type is CS201912131_104.",
+              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of PDYN, GBP2. These cells also express PDYN, FEZF2. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS201912131_104.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -43896,7 +43946,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells also express FEZF2, FFAR4. The reference data for this cell type is CS201912131_105.",
+              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells also express FEZF2, FFAR4. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS201912131_105.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -43931,7 +43981,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of SLITRK6. These cells also express PROKR2, FEZF2. The reference data for this cell type is CS201912131_106.",
+              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of SLITRK6. These cells also express PROKR2, FEZF2. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS201912131_106.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -44011,7 +44061,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of MDFIC. These cells also express FEZF2, KLK7. The reference data for this cell type is CS201912131_108.",
+              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of MDFIC. These cells also express FEZF2, KLK7. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS201912131_108.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -44051,7 +44101,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of PCOLCE2. These cells also express POGK, FEZF2. The reference data for this cell type is CS201912131_109.",
+              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of PCOLCE2. These cells also express POGK, FEZF2. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS201912131_109.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -44219,7 +44269,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of VGLL3. These cells also express PKD2L1, FEZF2. The reference data for this cell type is CS201912131_113.",
+              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of VGLL3. These cells also express PKD2L1, FEZF2. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS201912131_113.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -44259,7 +44309,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CD36, ADAMTS12. These cells also express FEZF2, NREP-AS1. The reference data for this cell type is CS201912131_114.",
+              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CD36, ADAMTS12. These cells also express FEZF2, NREP-AS1. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS201912131_114.",
               "xrefs": [
                 "PMID:34616062"
               ]
@@ -44299,7 +44349,7 @@
               }
             ],
             "definition": {
-              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CD36. These cells also express FEZF2, RNF144A-AS1. The reference data for this cell type is CS201912131_115.",
+              "val": "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CD36. These cells also express FEZF2, RNF144A-AS1. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS201912131_115.",
               "xrefs": [
                 "PMID:34616062"
               ]
