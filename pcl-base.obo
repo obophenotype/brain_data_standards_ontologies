@@ -1058,6 +1058,7 @@ synonym: "RNAseq 058" EXACT []
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:8440000 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000009376 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036545 ! expresses
@@ -1075,6 +1076,7 @@ synonym: "RNAseq 059" EXACT []
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:8440000 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026676 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027210 ! expresses
@@ -1093,6 +1095,7 @@ synonym: "Stard8, Cux2, Slit3 expressing glutamatergic neuron of primary motor c
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:8440000 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031216 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042589 ! expresses
@@ -1112,6 +1115,7 @@ synonym: "RNAseq 061" EXACT []
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:8440001 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000017978 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036192 ! expresses
@@ -1132,6 +1136,7 @@ is_a: CL:0000679
 is_a: CL:4023048 {xref="PMID:34616066"}
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:8440001 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004415 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000032564 ! expresses
@@ -1148,6 +1153,7 @@ synonym: "RNAseq 063" EXACT []
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 property_value: IAO:0000028 "L5 IT_1 MOp (Mouse)" xsd:string
 property_value: prefLabel "L5 IT_1" xsd:string
@@ -1162,6 +1168,7 @@ synonym: "RNAseq 064" EXACT []
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000003746 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022419 ! expresses
@@ -1180,6 +1187,7 @@ synonym: "RNAseq 065" EXACT []
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000017978 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019889 ! expresses
@@ -1199,6 +1207,7 @@ synonym: "RNAseq 066" EXACT []
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029154 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000045613 ! expresses
@@ -1217,6 +1226,7 @@ synonym: "RNAseq 067" EXACT []
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021765 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052430 ! expresses
@@ -1236,6 +1246,7 @@ synonym: "RNAseq 068" EXACT []
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028909 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049630 ! expresses
@@ -1256,6 +1267,7 @@ synonym: "RNAseq 069" EXACT []
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026826 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027559 {xref="PMID:34616062"} ! expresses
@@ -1279,6 +1291,7 @@ is_a: CL:0000679
 is_a: CL:4023045 {xref="PMID:34616066"}
 relationship: RO:0000053 PATO:0070028
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022206 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030905 ! expresses
@@ -1298,6 +1311,7 @@ synonym: "Trpc7, Gpc5, Erg expressing glutamatergic neuron of primary motor cort
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070028
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021541 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022112 ! expresses
@@ -1318,6 +1332,7 @@ synonym: "Trpc7, Gpc5, Trmt9b, Reln expressing glutamatergic neuron of primary m
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070028
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021541 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022112 ! expresses
@@ -1337,6 +1352,7 @@ synonym: "RNAseq 073" EXACT []
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070028
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000043659 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098760 ! expresses
@@ -1355,6 +1371,7 @@ synonym: "RNAseq 074" EXACT []
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070029
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:8440002 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024517 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000034009 ! expresses
@@ -1374,6 +1391,7 @@ synonym: "RNAseq 075" EXACT []
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070029
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000010651 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000063564 ! expresses
@@ -1394,6 +1412,7 @@ synonym: "Zfpm2, Foxp2, Hs3st4 expressing glutamatergic neuron of primary motor 
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070029
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022306 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029563 ! expresses
@@ -1414,6 +1433,7 @@ synonym: "RNAseq 077" EXACT []
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070029
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024517 {xref="PMID:34616062"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024517 ! expresses
@@ -1433,6 +1453,7 @@ synonym: "Satb2, Cdh18, Gm10635 expressing glutamatergic neuron of primary motor
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070029
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000038331 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040420 ! expresses
@@ -1451,6 +1472,7 @@ synonym: "RNAseq 079" EXACT []
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070029
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000005672 {xref="PMID:34616062"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000025997 ! expresses
@@ -1468,6 +1490,7 @@ synonym: "RNAseq 080" EXACT []
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070029
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000005672 {xref="PMID:34616062"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026826 ! expresses
@@ -1485,6 +1508,7 @@ synonym: "L6b Col6a1" EXACT []
 synonym: "RNAseq 081" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:8440003 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000001119 {xref="PMID:34616062"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019997 ! expresses
@@ -1502,6 +1526,7 @@ synonym: "Ly6g6e, Svil, Cplx3 expressing glutamatergic neuron of primary motor c
 synonym: "RNAseq 082" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:8440003 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000013766 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024236 ! expresses
@@ -1519,6 +1544,7 @@ synonym: "Moxd1, Nr4a2 expressing glutamatergic neuron of primary motor cortex (
 synonym: "RNAseq 083" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:8440003 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000020000 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026826 ! expresses
@@ -1535,6 +1561,7 @@ synonym: "L6b Ror1" EXACT []
 synonym: "RNAseq 084" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:8440003 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019997 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035305 {xref="PMID:34616062"} ! expresses
@@ -1552,6 +1579,7 @@ synonym: "Olfr112, Rxfp2, Gm42557 expressing glutamatergic neuron of primary mot
 synonym: "RNAseq 085" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:8440003 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000051611 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000053368 ! expresses
@@ -1570,6 +1598,7 @@ synonym: "RNAseq 086" EXACT []
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070030
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:8440002 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028031 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039519 ! expresses
@@ -1587,6 +1616,7 @@ synonym: "Slc17a8, Abi3bp expressing glutamatergic neuron of primary motor corte
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070030
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:8440002 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019935 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035258 ! expresses
@@ -1603,6 +1633,7 @@ synonym: "RNAseq 088" EXACT []
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070030
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:8440002 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026344 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047907 ! expresses
@@ -2188,6 +2219,7 @@ synonym: "RNAseq 015-017" EXACT []
 is_a: CL:0011005
 is_a: CL:4023071 {xref="PMID:34616066"}
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:8440002 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000000753 {xref="PMID:34616062"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022371 ! expresses
@@ -2208,6 +2240,7 @@ synonym: "RNAseq 018-020" EXACT []
 is_a: CL:0011005
 is_a: CL:4023014 {xref="PMID:34616066"}
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000000805 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019772 ! expresses
@@ -2226,6 +2259,7 @@ synonym: "Vip, Wnt5b expressing GABAergic interneuron of primary motor cortex (M
 is_a: CL:0011005
 is_a: CL:4023007 {xref="PMID:34616066"}
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:8440000 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019772 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030170 ! expresses
@@ -2304,6 +2338,7 @@ synonym: "RNAseq 036-037" EXACT []
 is_a: CL:0011005
 is_a: CL:4023028 {xref="PMID:34616066"}
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000024990 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! expresses
@@ -2339,6 +2374,7 @@ synonym: "RNAseq 042-045" EXACT []
 is_a: CL:0011005
 is_a: CL:4023118 {xref="PMID:34616066"}
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:8440002 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031841 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036019 ! expresses
@@ -2356,6 +2392,7 @@ synonym: "RNAseq 046-047" EXACT []
 synonym: "Th, Cort expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 is_a: CL:0011005
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000000214 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028971 ! expresses
@@ -2433,6 +2470,7 @@ is_a: CL:0000679
 is_a: CL:4023047 {xref="PMID:34616066"}
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:8440000 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021708 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028222 ! expresses
@@ -2453,6 +2491,7 @@ synonym: "n72" EXACT []
 synonym: "RNAseq 061-062" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005393 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000034402 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000036192 ! expresses
@@ -2473,6 +2512,7 @@ is_a: CL:0000679
 is_a: CL:4023049 {xref="PMID:34616066"}
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000035357 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039037 ! expresses
@@ -2495,6 +2535,7 @@ synonym: "RNAseq 063-064" EXACT []
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022419 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses
@@ -2515,6 +2556,7 @@ synonym: "Sulf1, Bmpr1b, Il1rapl2 expressing glutamatergic neuron of primary mot
 is_a: CL:0000679
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000016918 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052430 ! expresses
@@ -2537,6 +2579,7 @@ is_a: CL:0000679
 is_a: CL:4023041 {xref="PMID:34616066"}
 relationship: RO:0000053 PATO:0070028
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022206 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000098760 ! expresses
@@ -2558,6 +2601,7 @@ is_a: CL:0000679
 is_a: CL:4023044 {xref="PMID:34616066"}
 relationship: RO:0000053 PATO:0070028
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021541 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000068196 ! expresses
@@ -2580,6 +2624,7 @@ is_a: CL:0000679
 is_a: CL:4023055 {xref="PMID:34616066"}
 relationship: RO:0000053 PATO:0070029
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029563 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000078591 ! expresses
@@ -2601,6 +2646,7 @@ synonym: "RNAseq 081-085" EXACT []
 is_a: CL:0000679
 is_a: CL:4023046 {xref="PMID:34616066"}
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:8440003 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000019997 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039714 ! expresses
@@ -2623,6 +2669,7 @@ is_a: CL:0000679
 is_a: CL:4023043 {xref="PMID:34616066"}
 relationship: RO:0000053 PATO:0070030
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:8440002 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004151 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047907 ! expresses
@@ -2908,6 +2955,7 @@ synonym: "L5 IT_C1" EXACT []
 synonym: "RNAseq 061-062, 065" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:HOM0000007 PCL:0012172 ! (Mouse L5 IT)-like_C1 primary motor cortex glutamatergic neuron (Homo sapiens)
 relationship: RO:HOM0000007 PCL:0013130 ! (Mouse L5 IT)-like_C1 primary motor cortex glutamatergic neuron (Callithrix jacchus)
@@ -2925,6 +2973,7 @@ synonym: "L6 IT_C2" EXACT []
 synonym: "RNAseq 066, 068" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022419 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses
@@ -2943,6 +2992,7 @@ synonym: "L5 ET_C1" EXACT []
 synonym: "RNAseq 070, 072-073" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:HOM0000007 PCL:0012178 ! (Mouse L5 ET)-like_C1 primary motor cortex glutamatergic neuron (Homo sapiens)
 relationship: RO:HOM0000007 PCL:0013132 ! (Mouse L5 ET)-like_C1 primary motor cortex glutamatergic neuron (Callithrix jacchus)
@@ -2959,6 +3009,7 @@ synonym: "L6 CT_C1" EXACT []
 synonym: "RNAseq 075, 077-081" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:HOM0000007 PCL:0012177 ! (Mouse L6 CT)-like_C1 primary motor cortex glutamatergic neuron (Homo sapiens)
 relationship: RO:HOM0000007 PCL:0013073 ! Exc FEZF2 RGS4 primary motor cortex glutamatergic neuron (Callithrix jacchus)
@@ -3014,6 +3065,7 @@ synonym: "RNAseq 030-032, 034-035" EXACT []
 is_a: CL:0011005
 is_a: CL:4023027
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 property_value: IAO:0000028 "L5 T Martinotti cell MOp (Mouse)" xsd:string
 property_value: prefLabel "L5 T Martinotti cell" xsd:string
@@ -3041,6 +3093,7 @@ synonym: "Lamp5_1" EXACT []
 synonym: "RNAseq 001" EXACT []
 is_a: CL:0011005
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005390 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000054803 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000125869 {xref="PMID:34616066"} ! expresses
@@ -3062,6 +3115,7 @@ synonym: "MYH11, FREM1, ADAMTS20 expressing GABAergic interneuron of primary mot
 synonym: "RNAseq 002" EXACT []
 is_a: CL:0011005
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005390 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000125869 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000133392 ! expresses
@@ -3169,6 +3223,7 @@ synonym: "RNAseq 008" EXACT []
 synonym: "TGFBR2, RELN expressing GABAergic interneuron of primary motor cortex (Homo sapiens)" EXACT []
 is_a: CL:0011005
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005390 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000007372 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000163513 ! expresses
@@ -3186,6 +3241,7 @@ synonym: "Inh L1 PAX6 CHRFAM7A" EXACT []
 synonym: "RNAseq 009" EXACT []
 is_a: CL:0011005
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005390 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000007372 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000118432 ! expresses
@@ -3223,6 +3279,7 @@ synonym: "RNAseq 011" EXACT []
 synonym: "Sncg_2" EXACT []
 is_a: CL:0011005
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005391 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000007372 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000160161 ! expresses
@@ -3274,6 +3331,7 @@ synonym: "Inh L1 LAMP5 BMP2" EXACT []
 synonym: "RNAseq 014" EXACT []
 is_a: CL:0011005
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005390 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000125845 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000125869 {xref="PMID:34616066"} ! expresses
@@ -3291,6 +3349,7 @@ synonym: "RELN, PCDH18 expressing GABAergic interneuron of primary motor cortex 
 synonym: "RNAseq 015" EXACT []
 is_a: CL:0011005
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005390 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000125869 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000135577 {xref="PMID:34616066"} ! expresses
@@ -3309,6 +3368,7 @@ synonym: "Inh L1 PVALB-like SST ASIC4" EXACT []
 synonym: "RNAseq 016" EXACT []
 is_a: CL:0011005
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005390 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000072182 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000149451 ! expresses
@@ -3327,6 +3387,7 @@ synonym: "RNAseq 017" EXACT []
 synonym: "ST8SIA6, FOXO1, ARHGAP42 expressing GABAergic interneuron of primary motor cortex (Homo sapiens)" EXACT []
 is_a: CL:0011005
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005390 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000148488 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000149380 {xref="PMID:34616066"} ! expresses
@@ -3345,6 +3406,7 @@ synonym: "RNAseq 018" EXACT []
 synonym: "SYT10, NDST4 expressing GABAergic interneuron of primary motor cortex (Homo sapiens)" EXACT []
 is_a: CL:0011005
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005390 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000110975 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000138653 ! expresses
@@ -3481,6 +3543,7 @@ synonym: "KCNT2 expressing GABAergic interneuron of primary motor cortex (Homo s
 synonym: "RNAseq 026" EXACT []
 is_a: CL:0011005
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005391 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000063127 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000146469 {xref="PMID:34616066"} ! expresses
@@ -3497,6 +3560,7 @@ synonym: "RNAseq 027" EXACT []
 synonym: "SLITRK4, ITGBL1 expressing GABAergic interneuron of primary motor cortex (Homo sapiens)" EXACT []
 is_a: CL:0011005
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005390 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000146469 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000179542 ! expresses
@@ -3761,6 +3825,7 @@ synonym: "RNAseq 042" EXACT []
 synonym: "TRHDE, EDNRA, FREM1 expressing GABAergic interneuron of primary motor cortex (Homo sapiens)" EXACT []
 is_a: CL:0011005
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000072657 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000151617 ! expresses
@@ -4043,6 +4108,7 @@ synonym: "Sst_7" EXACT []
 synonym: "TH expressing GABAergic interneuron of primary motor cortex (Homo sapiens)" EXACT []
 is_a: CL:0011005
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000157005 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000180176 {xref="PMID:34616066"} ! expresses
@@ -4112,6 +4178,7 @@ synonym: "Inh L5 PVALB LRIG3" EXACT []
 synonym: "RNAseq 062" EXACT []
 is_a: CL:0011005
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000100362 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000113361 ! expresses
@@ -4201,6 +4268,7 @@ synonym: "Inh L2 PVALB FRZB" EXACT []
 synonym: "RNAseq 067" EXACT []
 is_a: CL:0011005
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005391 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000054803 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000100362 {xref="PMID:34616066"} ! expresses
@@ -4314,6 +4382,7 @@ synonym: "FAM163A, SAMD3 expressing glutamatergic neuron of primary motor cortex
 synonym: "RNAseq 073" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005391 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000125869 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000143340 ! expresses
@@ -4331,6 +4400,7 @@ synonym: "Exc L2 LINC00507 ATP7B" EXACT []
 synonym: "RNAseq 074" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005391 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000123191 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000123612 ! expresses
@@ -4347,6 +4417,7 @@ synonym: "RNAseq 075" EXACT []
 synonym: "SERPINE2, LINC01378 expressing glutamatergic neuron of primary motor cortex (Homo sapiens)" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005391 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000135919 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000145451 {xref="PMID:34616066"} ! expresses
@@ -4397,6 +4468,7 @@ synonym: "RNAseq 078" EXACT []
 synonym: "SV2C, EPB41L4A, SYT2 expressing glutamatergic neuron of primary motor cortex (Homo sapiens)" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005392 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000122012 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000125869 {xref="PMID:34616066"} ! expresses
@@ -4469,6 +4541,7 @@ synonym: "FAP, LAMA2 expressing glutamatergic neuron of primary motor cortex (Ho
 synonym: "RNAseq 081" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005392 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000078098 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000138792 {xref="PMID:34616066"} ! expresses
@@ -4519,6 +4592,7 @@ synonym: "RNAseq 084" EXACT []
 synonym: "TNC, DACH1 expressing glutamatergic neuron of primary motor cortex (Homo sapiens)" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000041982 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000136059 {xref="PMID:34616066"} ! expresses
@@ -4536,6 +4610,7 @@ synonym: "Exc L3 RORB OTOGL" EXACT []
 synonym: "RNAseq 085" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005392 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000165899 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000169436 ! expresses
@@ -4566,6 +4641,7 @@ synonym: "RNAseq 087" EXACT []
 synonym: "SLC7A11, BTNL9, CCBE1 expressing glutamatergic neuron of primary motor cortex (Homo sapiens)" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000110628 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000151012 ! expresses
@@ -4633,6 +4709,7 @@ synonym: "NPFFR2, COL22A1 expressing glutamatergic neuron of primary motor corte
 synonym: "RNAseq 091" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000056291 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000159479 {xref="PMID:34616066"} ! expresses
@@ -4650,6 +4727,7 @@ synonym: "NPFFR2, CRH, BDNF expressing glutamatergic neuron of primary motor cor
 synonym: "RNAseq 092" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000056291 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000070193 {xref="PMID:34616066"} ! expresses
@@ -4668,6 +4746,7 @@ synonym: "Exc L6 THEMIS LINC00343" EXACT []
 synonym: "RNAseq 093" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000172673 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000180777 ! expresses
@@ -4686,6 +4765,7 @@ synonym: "FAM163A expressing glutamatergic neuron of primary motor cortex (Homo 
 synonym: "RNAseq 094" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000143340 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000170290 {xref="PMID:34616066"} ! expresses
@@ -4701,6 +4781,7 @@ synonym: "Exc L6 THEMIS SNTG2" EXACT []
 synonym: "RNAseq 095" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000172554 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000172673 {xref="PMID:34616066"} ! expresses
@@ -4753,6 +4834,7 @@ synonym: "Exc L5 THEMIS LINC01116" EXACT []
 synonym: "RNAseq 098" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000163364 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000172673 {xref="PMID:34616066"} ! expresses
@@ -4768,6 +4850,7 @@ synonym: "Exc L5 THEMIS RGPD6" EXACT []
 synonym: "RNAseq 099" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000162733 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000172673 {xref="PMID:34616066"} ! expresses
@@ -4843,6 +4926,7 @@ synonym: "PDYN, GBP2 expressing glutamatergic neuron of primary motor cortex (Ho
 synonym: "RNAseq 103" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000101327 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000101327 {xref="PMID:34616066"} ! expresses
@@ -4859,6 +4943,7 @@ synonym: "Exc L6 FEZF2 FFAR4" EXACT []
 synonym: "RNAseq 104" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000153266 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000186188 {xref="PMID:34616066"} ! expresses
@@ -4874,6 +4959,7 @@ synonym: "RNAseq 105" EXACT []
 synonym: "SLITRK6 expressing glutamatergic neuron of primary motor cortex (Homo sapiens)" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000101292 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000153266 {xref="PMID:34616066"} ! expresses
@@ -4907,6 +4993,7 @@ synonym: "MDFIC expressing glutamatergic neuron of primary motor cortex (Homo sa
 synonym: "RNAseq 107" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000135272 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000153266 {xref="PMID:34616066"} ! expresses
@@ -4923,6 +5010,7 @@ synonym: "PCOLCE2 expressing glutamatergic neuron of primary motor cortex (Homo 
 synonym: "RNAseq 108" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000143157 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000153266 {xref="PMID:34616066"} ! expresses
@@ -4993,6 +5081,7 @@ synonym: "RNAseq 112" EXACT []
 synonym: "VGLL3 expressing glutamatergic neuron of primary motor cortex (Homo sapiens)" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000107593 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000153266 {xref="PMID:34616066"} ! expresses
@@ -5009,6 +5098,7 @@ synonym: "Exc L5 FEZF2 NREP-AS1" EXACT []
 synonym: "RNAseq 113" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000135218 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000151388 ! expresses
@@ -5026,6 +5116,7 @@ synonym: "Exc L5 FEZF2 RNF144A-AS1" EXACT []
 synonym: "RNAseq 114" EXACT []
 is_a: CL:0000679
 relationship: RO:0002100 UBERON:0001384 ! has soma location
+relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000135218 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSG00000153266 {xref="PMID:34616066"} ! expresses

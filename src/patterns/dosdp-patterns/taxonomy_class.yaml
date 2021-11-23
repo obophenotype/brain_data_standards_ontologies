@@ -212,6 +212,13 @@ logical_axioms:
      text: "'native_cell' and 'has_exemplar_data' value %s"
      vars:
         - Individual
+   - axiom_type: subClassOf
+     multi_clause:
+       sep: " or "
+       clauses:
+         - text: "'has_soma_location' some %s"
+           vars:
+             - Layers
 
 annotations:
   - annotationProperty: skosPrefLabel
