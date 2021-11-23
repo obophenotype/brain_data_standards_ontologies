@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: pcl/releases/2021-11-22/pcl-base.owl
+data-version: pcl/releases/2021-11-23/pcl-base.owl
 ontology: pcl/pcl-base
 property_value: http://purl.org/dc/elements/1.1/title "Brain Data Standards Cell Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2021-11-22" xsd:string
+property_value: owl:versionInfo "2021-11-23" xsd:string
 
 [Term]
 id: PCL:0011001
@@ -1611,12 +1611,12 @@ property_value: prefLabel "L5/6 NP_3" xsd:string
 
 [Term]
 id: PCL:0011089
-name: Meis2 (cluster) primary motor cortex meis2 expressing cortical GABAergic cell (Mus musculus) (Mus musculus)
-def: "A meis2 expressing cortical GABAergic cell (Mus musculus) of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Tiam2, Meis2. The reference data for this cell type is CS202002013_89." [PMID:34616066]
+name: Meis2 (cluster) primary motor cortex meis2 expressing cortical GABAergic cellmeis2 expressing cortical GABAergic cell (Mus musculus) (Mus musculus)
+def: "A meis2 expressing cortical GABAergic cellmeis2 expressing cortical GABAergic cell (Mus musculus) of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Tiam2, Meis2. The reference data for this cell type is CS202002013_89." [PMID:34616066]
 synonym: "Meis2" EXACT []
 synonym: "Meis2 (cluster)" EXACT []
 synonym: "RNAseq 089" EXACT []
-synonym: "Tiam2, Meis2 expressing meis2 expressing cortical GABAergic cell (Mus musculus) of primary motor cortex (Mus musculus)" EXACT []
+synonym: "Tiam2, Meis2 expressing meis2 expressing cortical GABAergic cellmeis2 expressing cortical GABAergic cell (Mus musculus) of primary motor cortex (Mus musculus)" EXACT []
 is_a: CL:4023065
 relationship: RO:0002100 UBERON:0001384 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
@@ -1628,9 +1628,9 @@ property_value: prefLabel "Meis2 (cluster)" xsd:string
 
 [Term]
 id: PCL:0011090
-name: Meis2_Top2a primary motor cortex meis2 expressing cortical GABAergic cell (Mus musculus) (Mus musculus)
-def: "A meis2 expressing cortical GABAergic cell (Mus musculus) of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Igfbpl1, Gm17750, Gm29260. These cells also express Top2a. The reference data for this cell type is CS202002013_90." [PMID:34616066]
-synonym: "Igfbpl1, Gm17750, Gm29260 expressing meis2 expressing cortical GABAergic cell (Mus musculus) of primary motor cortex (Mus musculus)" EXACT []
+name: Meis2_Top2a primary motor cortex meis2 expressing cortical GABAergic cellmeis2 expressing cortical GABAergic cell (Mus musculus) (Mus musculus)
+def: "A meis2 expressing cortical GABAergic cellmeis2 expressing cortical GABAergic cell (Mus musculus) of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Igfbpl1, Gm17750, Gm29260. These cells also express Top2a. The reference data for this cell type is CS202002013_90." [PMID:34616066]
+synonym: "Igfbpl1, Gm17750, Gm29260 expressing meis2 expressing cortical GABAergic cellmeis2 expressing cortical GABAergic cell (Mus musculus) of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Meis2_Top2a" EXACT []
 synonym: "RNAseq 090" EXACT []
 is_a: CL:4023065
