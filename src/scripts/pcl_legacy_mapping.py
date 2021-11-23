@@ -4,7 +4,7 @@ from rdflib import Graph
 
 BDSO_ONT = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../../pcl-full.owl")
 PCL_ONT = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../resources/pCL_4.1.0.owl")
-PCL_MAPPING_OUTPUT = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../templates/pCL_mapping2.tsv")
+PCL_MAPPING_OUTPUT = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../templates/pCL_mapping.tsv")
 
 
 def map_pcl_2_bdso():
@@ -49,9 +49,9 @@ def map_pcl_2_bdso():
         d["Comment"] = "This term has been obsoleted and replaced with updated by an updated term from the " \
                        "Brain Data Standards ontology, please see 'term replaced by' axiom to for new term."
         if row.label:
-            d["Label"] = "OBSOLETE. " + row.label
+            d["Label"] = "obsolete " + row.label
         else:
-            d["Label"] = "OBSOLETE"
+            d["Label"] = "obsolete"
         if row.definition:
             d["Definition"] = "OBSOLETE. " + row.definition
         else:
