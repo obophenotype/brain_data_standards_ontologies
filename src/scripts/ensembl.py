@@ -1,5 +1,6 @@
 import os
 import logging
+import csv
 from pathlib import Path
 import pandas as pd
 from template_generation_utils import read_csv, read_csv_to_dict, read_taxonomy_details_yaml, index_dendrogram
@@ -136,20 +137,18 @@ def get_marker_names(row):
 def get_taxonomy_config(raw_marker_path):
     species_name = Path(raw_marker_path).stem.split("_")[0]
     nsforest_name = Path(raw_marker_path).stem.split("_NSForest")[0]
-    brain_region = None
+    brain_region = "M1"  # default
 
     # handles Human_MTG
-    if species_name is not nsforest_name:
-        brain_region = nsforest_name.strip("_")[1].strip()
+    if species_name != nsforest_name:
+        brain_region = nsforest_name.split("_")[1].strip()
 
     taxonomy_configs = read_taxonomy_details_yaml()
 
     taxonomy_config = None
     for config in taxonomy_configs:
-        if brain_region and brain_region in config["Brain_region_abbv"]:
-            if species_name in config["Species_abbv"]:
-                taxonomy_config = config
-        elif species_name in config["Species_abbv"]:
+        print(brain_region)
+        if species_name in config["Species_abbv"] and brain_region in config["Brain_region_abbv"]:
             taxonomy_config = config
 
     if taxonomy_config:
@@ -157,6 +156,18 @@ def get_taxonomy_config(raw_marker_path):
     else:
         raise ValueError("Species abbreviation '" + species_name + "' couldn't be found in the taxonomy configurations.")
 
+
+def fix_gene_database(gene_db_path):
+    headers, genes_by_name = read_csv_to_dict(gene_db_path, id_column=1, delimiter="\t")
+
+    with open(gene_db_path.replace(".tsv", "_2.tsv"), mode='w') as out:
+        writer = csv.writer(out, delimiter="\t", quotechar='"')
+        writer.writerow(["ID", "TYPE", "NAME"])
+        writer.writerow(["ID", "SC %", "A rdfs:label"])
+
+        print(headers)
+        for gene in genes_by_name:
+            writer.writerow(["entrez:" + gene.replace("\"", ""), "SO:0000704", genes_by_name[gene]["gene_name"]])
 
 # def generate_marker_template(taxon, output_file):
 #     marker_db = get_marker_db_by_id(taxon)
@@ -193,3 +204,5 @@ normalize_raw_markers("../markers/raw/Human_MTG_NSForest_Markers.tsv")
 # generates marker dosdp templates
 # generate_marker_template("201912131", "../patterns/data/bds/ensg_data.tsv")
 # generate_marker_template("201912132", "../patterns/data/bds/enscjag_data.tsv")
+
+# fix_gene_database(GENE_DB_PATH.format("simple_human"))

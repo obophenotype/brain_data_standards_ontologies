@@ -194,8 +194,13 @@ class TemplateGenerationTest(unittest.TestCase):
                                  "../patterns/data/default/CS1908210_class_curation_migrate.tsv")
 
     # def test_allen_markers_migrate(self):
+    #     # in the curation table change Expresses column name to Markers
     #     migrate_columns = ["Markers"]
     #     migrate_manual_curations("../patterns/data/default/CS1908210_class_curation_old.tsv",
-    #                              "../markers/CS1908210_Allen_markers.tsv",
+    #                              "../markers/CS1908210_Allen_markers_old.tsv",
     #                              migrate_columns,
-    #                              "../markers/CS1908210_Allen_markers2.tsv")
+    #                              "../markers/CS1908210_Allen_markers.tsv", use_accession_ids=True)
+    #     # migrate_manual_curations("../patterns/data/default/CCN201912131_class_curation_old.tsv",
+    #     #                          "../markers/CS201912131_Allen_markers_old.tsv",
+    #     #                          migrate_columns,
+    #     #                          "../markers/CS201912131_Allen_markers.tsv", use_accession_ids=True)

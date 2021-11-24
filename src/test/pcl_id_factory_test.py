@@ -1,5 +1,5 @@
 import unittest
-from pcl_id_factory import get_class_id, get_individual_id, taxonomy_ids, get_taxonomy_id
+from pcl_id_factory import get_class_id, get_individual_id, taxonomy_ids, get_taxonomy_id, get_reverse_id
 from template_generation_utils import migrate_manual_curations
 
 
@@ -51,6 +51,18 @@ class PCLIdFactoryTestCase(unittest.TestCase):
         self.assertEqual(get_taxonomy_id("CCN201912132"), "0013000")
 
         self.assertEqual(get_taxonomy_id("CS1908210"), "0014000")
+
+    def test_reverse_id(self):
+        self.assertEqual(get_reverse_id("0011001"), "CS202002013_1")
+        self.assertEqual(get_reverse_id("PCL_0011001"), "CS202002013_1")
+        self.assertEqual(get_reverse_id("PCL:0011001"), "CS202002013_1")
+        self.assertEqual(get_reverse_id("http://purl.obolibrary.org/obo/PCL_0011001"), "CS202002013_1")
+
+        self.assertEqual(get_reverse_id("0011521"), "CS202002013_121")
+        self.assertEqual(get_reverse_id("0012121"), "CS201912131_121")
+        self.assertEqual(get_reverse_id("0013401"), "CS201912132_1")
+        self.assertEqual(get_reverse_id("0014548"), "CS1908210148")
+        self.assertEqual(get_reverse_id("0014001"), "CS1908210001")
 
     # not test
     # def test_allen_markers_migrate(self):
