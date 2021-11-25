@@ -161,7 +161,7 @@ components/%_app_specific.owl: ../templates/%_app_specific.tsv allen_helper.owl
 
 
 # Also release Allen application specific ontology
-$(ONT).owl: $(ONT)-full.owl $(ONT)-allen.owl $(ONT)-allen.owl
+$(ONT).owl: $(ONT)-full.owl $(ONT)-allen.owl $(ONT)-base-ext.owl $(ONT)-base-ext.obo $(ONT)-base-ext.json
 	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
@@ -169,3 +169,15 @@ $(ONT)-allen.owl: $(ONT)-full.owl allen_helper.owl
 	$(ROBOT) merge -i $< -i allen_helper.owl $(patsubst %, -i %, $(OWL_APP_SPECIFIC_FILES)) \
 			 annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		 	 --output $(RELEASEDIR)/$@
+
+# Artifact that extends base with gene ontologies
+$(ONT)-base-ext.owl:  $(ONT)-base.owl $(GENE_FILES)
+	$(ROBOT) merge -i $< $(patsubst %, -i %, $(GENE_FILES)) \
+			 annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		 	 --output $(RELEASEDIR)/$@
+$(ONT)-base-ext.obo: $(RELEASEDIR)/$(ONT)-base-ext.owl
+	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $(RELEASEDIR)/$@ && rm $@.tmp.obo
+$(ONT)-base-ext.json: $(RELEASEDIR)/$(ONT)-base-ext.owl
+	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
+		convert --check false -f json -o $@.tmp.json &&\
+	jq -S 'walk(if type == "array" then sort else . end)' $@.tmp.json > $(RELEASEDIR)/$@ && rm $@.tmp.json
