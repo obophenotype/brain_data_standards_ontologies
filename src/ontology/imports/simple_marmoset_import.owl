@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/bdscratch/imports/simple_marmoset_import.owl#"
-     xml:base="http://purl.obolibrary.org/obo/bdscratch/imports/simple_marmoset_import.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/pcl/imports/simple_marmoset_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/pcl/imports/simple_marmoset_import.owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bdscratch/imports/simple_marmoset_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bdscratch/releases/2021-10-18/imports/simple_marmoset_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-10-18</owl:versionInfo>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pcl/imports/simple_marmoset_import.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pcl/releases/2021-11-25/imports/simple_marmoset_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-11-25</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -30,6 +30,15 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100384959 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100384959">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>LOC100384959</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100385052 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100385052">
@@ -48,11 +57,38 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100385404 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100385404">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>SLIT3</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100385471 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100385471">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>NPY</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100385663 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100385663">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>HMCN1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100386317 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100386317">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>CCDC129</rdfs:label>
     </owl:Class>
     
 
@@ -66,6 +102,51 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100386462 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100386462">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>TRPM3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100386530 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100386530">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>PCDH11X</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100386670 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100386670">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>SEMA3C</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100386721 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100386721">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>PLCH1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100386839 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100386839">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>EPB41L4A</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100386986 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100386986">
@@ -75,11 +156,74 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100386999 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100386999">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>PLXDC1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100387382 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100387382">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>ANLN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100387459 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100387459">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>EYA4</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100387605 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100387605">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>SLC13A3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100387876 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100387876">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>RGS6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100387951 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100387951">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>MAN1A1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100388016 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100388016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>PRKG1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100388051 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100388051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>CLSTN2</rdfs:label>
     </owl:Class>
     
 
@@ -102,11 +246,38 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100388718 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100388718">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>TAC1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100388729 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100388729">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>KCNK13</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100388738 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100388738">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>CRYM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100388823 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100388823">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>COL4A3</rdfs:label>
     </owl:Class>
     
 
@@ -120,11 +291,83 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100389059 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100389059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>B3GLCT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100389466 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100389466">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>SYT9</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100389848 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100389848">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>FAM19A1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100389893 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100389893">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>ARHGAP6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100389991 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100389991">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>FILIP1</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100390046 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100390046">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>OTOGL</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100390058 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100390058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>AMOTL1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100390091 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100390091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>CALN1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100390165 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100390165">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>VAV3</rdfs:label>
     </owl:Class>
     
 
@@ -147,11 +390,29 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100390807 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100390807">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>DGKG</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100390875 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100390875">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>FIGN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100390937 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100390937">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>SULF1</rdfs:label>
     </owl:Class>
     
 
@@ -174,6 +435,42 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100391273 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100391273">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>PBX3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100391304 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100391304">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>ARHGAP24</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100391501 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100391501">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>SLC1A2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100391703 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100391703">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>CCDC141</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100392144 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100392144">
@@ -183,11 +480,29 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100392165 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100392165">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>FABP7</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100392515 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100392515">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>PPA2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100392579 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100392579">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>CREB5</rdfs:label>
     </owl:Class>
     
 
@@ -219,11 +534,56 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100392881 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100392881">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>GPRIN3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100392984 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100392984">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>LOC100392984</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100393107 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100393107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>FAM179A</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100393458 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100393458">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>P4HA1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100393503 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100393503">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>SPACA1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100393601 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100393601">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>FBN2</rdfs:label>
     </owl:Class>
     
 
@@ -255,6 +615,15 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100393865 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100393865">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>CNR1</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100393945 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100393945">
@@ -269,6 +638,24 @@
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100393956">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>ABI3BP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100393976 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100393976">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>NPFFR2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100394114 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100394114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>PTPRK</rdfs:label>
     </owl:Class>
     
 
@@ -327,6 +714,24 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100395233 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100395233">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>NTNG1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100395294 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100395294">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>VEGFC</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100395510 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100395510">
@@ -336,11 +741,47 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100395775 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100395775">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>ETNPPL</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100396102 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100396102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>TACR1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100396139 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100396139">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>CALB2</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100396249 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100396249">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>KCTD16</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100396272 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100396272">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>ERG</rdfs:label>
     </owl:Class>
     
 
@@ -363,11 +804,47 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100396765 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100396765">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>SKAP1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100396908 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100396908">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>NCKAP5</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100397008 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100397008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>CBLN4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100397114 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100397114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>COL12A1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100397165 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100397165">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>TMEM132C</rdfs:label>
     </owl:Class>
     
 
@@ -390,11 +867,74 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100397539 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100397539">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>UNC13C</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100397590 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100397590">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>GLRA3</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100397592 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100397592">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>ARSJ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100397643 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100397643">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>KIAA2012</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100397656 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100397656">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>POU6F2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100397724 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100397724">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>BMPR1B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100397812 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100397812">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>SLC9A2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100397952 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100397952">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>SEPP1</rdfs:label>
     </owl:Class>
     
 
@@ -426,11 +966,47 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100398854 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100398854">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>ABCB4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100398934 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100398934">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>PTPRT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100399010 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100399010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>FREM1</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100399056 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100399056">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>SLC47A1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100399252 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100399252">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>ALK</rdfs:label>
     </owl:Class>
     
 
@@ -462,11 +1038,65 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100400056 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100400056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>THSD7A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100400232 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100400232">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>CARD11</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100400367 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100400367">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>RNF144B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100400400 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100400400">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>MOG</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100400454 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100400454">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>MYO16</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100400473 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100400473">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>WWP1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100400564 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100400564">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>SPON1</rdfs:label>
     </owl:Class>
     
 
@@ -489,6 +1119,51 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100400927 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100400927">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>PCDH15</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100400958 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100400958">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>IQGAP2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100401180 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100401180">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>HTR2A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100401328 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100401328">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>LOC100401328</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100401449 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100401449">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>TOX</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100401551 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100401551">
@@ -498,11 +1173,47 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100401590 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100401590">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>SNTB2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100401702 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100401702">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>SV2C</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100401749 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100401749">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>EPSTI1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100402133 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100402133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>NXPH1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100402439 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100402439">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>PLA2G4A</rdfs:label>
     </owl:Class>
     
 
@@ -525,11 +1236,47 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100402683 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100402683">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>CHODL</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100402689 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100402689">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>HS3ST5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100402719 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100402719">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>ADARB2</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100402813 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100402813">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>PCP4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100402879 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100402879">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>SLC5A11</rdfs:label>
     </owl:Class>
     
 
@@ -561,6 +1308,24 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100403193 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100403193">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>LOC100403193</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100403212 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100403212">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>RELN</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100403214 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100403214">
@@ -575,6 +1340,42 @@
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100403341">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>CIT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100403389 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100403389">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>KCTD8</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100403440 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100403440">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>NFIA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100403979 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100403979">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>ALCAM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100403987 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100403987">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>MECOM</rdfs:label>
     </owl:Class>
     
 
@@ -597,6 +1398,24 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100404533 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100404533">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>VWC2L</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100404865 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100404865">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>ADGRG6</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100404923 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100404923">
@@ -615,6 +1434,15 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100405129 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100405129">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>PCSK6</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100405312 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100405312">
@@ -624,11 +1452,47 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100405319 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100405319">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>LOC100405319</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100405391 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100405391">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>DCN</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100405410 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100405410">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>RORB</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100405584 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100405584">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>PDE7B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100405831 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100405831">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>LAMA2</rdfs:label>
     </owl:Class>
     
 
@@ -651,11 +1515,38 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100406302 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100406302">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>SERPINI1</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100406444 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100406444">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>AIM1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100406508 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100406508">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>MYO5B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100406528 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100406528">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>GRAMD1C</rdfs:label>
     </owl:Class>
     
 
@@ -687,6 +1578,51 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100406856 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100406856">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>LOC100406856</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100407007 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100407007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>CSGALNACT1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100407043 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100407043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>ARHGAP10</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100407174 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100407174">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>ARHGAP18</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100407531 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100407531">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>BMP5</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100407617 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100407617">
@@ -714,6 +1650,123 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100408417 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100408417">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>PTPRU</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100408455 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100408455">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>SORCS3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100408486 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100408486">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>LOC100408486</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100408527 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100408527">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>POSTN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100408669 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100408669">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>BTBD11</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100408865 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100408865">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>TOX3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100408892 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100408892">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>TRPC4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100408994 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100408994">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>NOTCH3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100409063 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100409063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>GLIS3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100409152 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100409152">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>PATJ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100409658 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100409658">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>NRG1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100409827 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100409827">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>CHST8</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100410040 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100410040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>CRH</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100410437 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100410437">
@@ -723,11 +1776,92 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100410597 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100410597">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>CPM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100410743 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100410743">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>CHST9</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100410777 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100410777">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>RGS4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100410860 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100410860">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>HS3ST4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100410965 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100410965">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>THSD4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100411083 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100411083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>CHRM2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100411307 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100411307">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>FOXP2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100411367 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100411367">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>FYB</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100411377 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100411377">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>RCSD1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100411439 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100411439">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>SEMA3E</rdfs:label>
     </owl:Class>
     
 
@@ -759,11 +1893,29 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100411615 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100411615">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>KIT</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100412026 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100412026">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>PDZRN4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100412158 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100412158">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>EGFR</rdfs:label>
     </owl:Class>
     
 
@@ -795,11 +1947,56 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100412634 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100412634">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>NELL1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100412882 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100412882">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>ANO1</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100412902 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100412902">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>SST</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100413043 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100413043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>GABRG1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100413159 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100413159">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>SLIT2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100413173 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100413173">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>MOXD1</rdfs:label>
     </owl:Class>
     
 
@@ -813,11 +2010,110 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100413446 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100413446">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>PLXDC2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100413817 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100413817">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>CPNE8</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100414003 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100414003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>SLC7A5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100414159 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100414159">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>TMEM163</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100414317 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100414317">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>LUZP2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100414890 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100414890">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>LRRC38</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100414899 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100414899">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>SYT10</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100414966 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100414966">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>VAT1L</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100415065 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100415065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>ANKRD55</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100415258 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100415258">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>TRHDE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100415377 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100415377">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>COL24A1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100415632 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100415632">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>PLEKHA7</rdfs:label>
     </owl:Class>
     
 
@@ -831,11 +2127,47 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/100894622 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100894622">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>COL25A1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100894919 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100894919">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>CMTM8</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/100895459 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100895459">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>NWD1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100895717 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100895717">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>NOS1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103787232 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103787232">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>LOC103787232</rdfs:label>
     </owl:Class>
     
 
@@ -858,6 +2190,15 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/103788553 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103788553">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>LOC103788553</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/103788660 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/103788660">
@@ -876,11 +2217,38 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/103788721 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103788721">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>LOC103788721</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103789268 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103789268">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>LOC103789268</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/103789439 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/103789439">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>LOC103789439</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103789461 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103789461">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>LOC103789461</rdfs:label>
     </owl:Class>
     
 
@@ -903,6 +2271,33 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/103791648 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103791648">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>PDZD2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103791740 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103791740">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>LOC103791740</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103792490 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103792490">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>COL19A1</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/103793418 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/103793418">
@@ -912,11 +2307,56 @@
     
 
 
+    <!-- https://identifiers.org/ncbigene/103793569 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103793569">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>LOC103793569</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103793609 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103793609">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>LOC103793609</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://identifiers.org/ncbigene/103794860 -->
 
     <owl:Class rdf:about="https://identifiers.org/ncbigene/103794860">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>C8H7orf62</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103795407 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103795407">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>LOC103795407</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103795617 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103795617">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>LOC103795617</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/108587679 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/108587679">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>LOC108587679</rdfs:label>
     </owl:Class>
     
 
@@ -962,6 +2402,15 @@
     <owl:Class rdf:about="https://identifiers.org/ncbigene/108588801">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>LOC108588801</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/108588895 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/108588895">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>LOC108588895</rdfs:label>
     </owl:Class>
     
 

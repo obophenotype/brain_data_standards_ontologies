@@ -8,6 +8,7 @@ IMPORTS += simple_human simple_marmoset
 JOBS = CCN202002013 CCN201912131 CCN201912132 CS1908210 #CCN202002270 CCN202002013 CCN201810310 CCN201908211 CCN201908210
 GENE_LIST = ensmusg simple_human simple_marmoset
 BDS_BASE = http://purl.obolibrary.org/obo/
+ONTBASE=                    $(URIBASE)/pcl
 
 TSV_CLASS_FILES = $(patsubst %, ../patterns/data/default/%_class.tsv, $(JOBS))
 
@@ -142,7 +143,7 @@ components/%_app_specific.owl: ../templates/%_app_specific.tsv allen_helper.owl
 
 
 # Also release Allen application specific ontology and legacy (PCL older version) support ontology
-$(ONT).owl: $(ONT)-full.owl $(ONT)-allen.owl $(ONT)-allen.owl $(ONT)-legacy.owl
+$(ONT).owl: $(ONT)-full.owl $(ONT)-allen.owl $(ONT)-allen.owl pcl-legacy.owl
 	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
@@ -152,7 +153,7 @@ $(ONT)-allen.owl: $(ONT)-full.owl allen_helper.owl
 		 	 --output $(RELEASEDIR)/$@
 
 # release a legacy ontology to support older versions of the PCL
-$(ONT)-legacy.owl: $(ONT)-full.owl ../resources/pCL_4.1.0.owl components/pCL_mapping.owl
+pcl-legacy.owl: $(ONT)-full.owl ../resources/pCL_4.1.0.owl components/pCL_mapping.owl
 	$(ROBOT) query --input ../resources/pCL_4.1.0.owl --update ../sparql/delete-legacy-properties.ru \
 			query --update ../sparql/postprocess-module.ru \
 			remove --select ontology \
