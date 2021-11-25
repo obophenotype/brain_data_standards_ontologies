@@ -20,6 +20,7 @@ OWL_CROSS_SPECIES_FILES = $(patsubst %, components/%_cross_species.owl, $(JOBS))
 OWL_APP_SPECIFIC_FILES = $(patsubst %, components/%_app_specific.owl, $(JOBS))
 OWL_TAXONOMY_FILE = components/taxonomies.owl
 OWL_PROTEIN2GENE_FILE = components/Protein2GeneExpression.owl
+PCL_LEGACY_FILE = components/pcl-legacy.owl
 
 #DEND_FILES = $(patsubst %, ../dendrograms/%.json, $(JOBS))
 #TEMPLATE_FILES = $(patsubst %, ../templates/%.tsv, $(JOBS))
@@ -94,7 +95,7 @@ mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
 .PRECIOUS: imports/simple_marmoset_import.owl
 
 # merge all templates except application specific ones
-components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MIN_MARKER_FILES) $(OWL_NOMENCLATURE_FILES) $(OWL_CROSS_SPECIES_FILES) $(OWL_TAXONOMY_FILE) $(OWL_PROTEIN2GENE_FILE) $(OWL_APP_SPECIFIC_FILES)
+components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MIN_MARKER_FILES) $(OWL_NOMENCLATURE_FILES) $(OWL_CROSS_SPECIES_FILES) $(OWL_TAXONOMY_FILE) $(OWL_PROTEIN2GENE_FILE) $(OWL_APP_SPECIFIC_FILES) $(PCL_LEGACY_FILE)
 	$(ROBOT) merge $(patsubst %, -i %, $(filter-out $(OWL_APP_SPECIFIC_FILES), $^)) \
 	 --collapse-import-closure false \
 	 annotate --ontology-iri ${BDS_BASE}$@  \
@@ -135,6 +136,23 @@ components/Protein2GeneExpression.owl: $(PATTERNDIR)/data/default/Protein2GeneEx
         --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/Protein2GeneExpression.yaml \
         --ontology=$(SRC) --obo-prefixes=true --outfile=$@
 
+# release a legacy ontology to support older versions of the PCL
+components/pcl-legacy.owl: ../resources/pCL_4.1.0.owl components/pCL_mapping.owl
+	$(ROBOT) query --input ../resources/pCL_4.1.0.owl --update ../sparql/delete-legacy-properties.ru \
+			query --update ../sparql/postprocess-module.ru \
+			remove --select ontology \
+			merge --input components/pCL_mapping.owl \
+			annotate --ontology-iri $(ONTBASE)/pcl.owl  \
+			--link-annotation dc:license http://creativecommons.org/licenses/by/4.0/ \
+			--annotation owl:versionInfo $(VERSION) \
+			--annotation dc:title "Provisional Cell Ontology" \
+			--output $@
+
+components/pCL_mapping.owl: ../templates/pCL_mapping.tsv ../resources/pCL_4.1.0.owl
+	$(ROBOT) template --input ../resources/pCL_4.1.0.owl --template $< \
+    		--add-prefixes template_prefixes.json \
+    		convert --format ofn --output $@
+
 components/%_app_specific.owl: ../templates/%_app_specific.tsv allen_helper.owl
 	$(ROBOT) template --input allen_helper.owl --template $< \
     		--add-prefixes template_prefixes.json \
@@ -142,8 +160,8 @@ components/%_app_specific.owl: ../templates/%_app_specific.tsv allen_helper.owl
     		convert --format ofn --output $@ \
 
 
-# Also release Allen application specific ontology and legacy (PCL older version) support ontology
-$(ONT).owl: $(ONT)-full.owl $(ONT)-allen.owl $(ONT)-allen.owl pcl-legacy.owl
+# Also release Allen application specific ontology
+$(ONT).owl: $(ONT)-full.owl $(ONT)-allen.owl $(ONT)-allen.owl
 	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
@@ -151,21 +169,3 @@ $(ONT)-allen.owl: $(ONT)-full.owl allen_helper.owl
 	$(ROBOT) merge -i $< -i allen_helper.owl $(patsubst %, -i %, $(OWL_APP_SPECIFIC_FILES)) \
 			 annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		 	 --output $(RELEASEDIR)/$@
-
-# release a legacy ontology to support older versions of the PCL
-pcl-legacy.owl: $(ONT)-full.owl ../resources/pCL_4.1.0.owl components/pCL_mapping.owl
-	$(ROBOT) query --input ../resources/pCL_4.1.0.owl --update ../sparql/delete-legacy-properties.ru \
-			query --update ../sparql/postprocess-module.ru \
-			remove --select ontology \
-			merge --input $< \
-			merge --input components/pCL_mapping.owl \
-			annotate --ontology-iri $(ONTBASE)/pcl.owl  \
-			--link-annotation dc:license http://creativecommons.org/licenses/by/4.0/ \
-			--annotation owl:versionInfo $(VERSION) \
-			--annotation dc:title "Provisional Cell Ontology" \
-			--output $(RELEASEDIR)/$@
-
-components/pCL_mapping.owl: ../templates/pCL_mapping.tsv ../resources/pCL_4.1.0.owl
-	$(ROBOT) template --input ../resources/pCL_4.1.0.owl --template $< \
-    		--add-prefixes template_prefixes.json \
-    		convert --format ofn --output $@
