@@ -160,17 +160,18 @@ components/%_app_specific.owl: ../templates/%_app_specific.tsv allen_helper.owl
     		convert --format ofn --output $@ \
 
 
-# Also release Allen application specific ontology
+# Release additional artifacts
 $(ONT).owl: $(ONT)-full.owl $(ONT)-allen.owl $(ONT)-base-ext.owl $(ONT)-base-ext.obo $(ONT)-base-ext.json
 	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 
+# Allen app specific ontology (with color information etc.) (Used for Solr dump)
 $(ONT)-allen.owl: $(ONT)-full.owl allen_helper.owl
 	$(ROBOT) merge -i $< -i allen_helper.owl $(patsubst %, -i %, $(OWL_APP_SPECIFIC_FILES)) \
 			 annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		 	 --output $(RELEASEDIR)/$@
 
-# Artifact that extends base with gene ontologies
+# Artifact that extends base with gene ontologies (used by PCL)
 $(ONT)-base-ext.owl:  $(ONT)-base.owl $(GENE_FILES)
 	$(ROBOT) merge -i $< $(patsubst %, -i %, $(GENE_FILES)) \
 			 annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
