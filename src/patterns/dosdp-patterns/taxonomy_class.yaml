@@ -21,7 +21,6 @@ relations:
   bearer_of: "RO:0000053"
   has_exemplar_data: "RO:0015001"
   homologous_to: "RO:HOM0000007"
-  'has nsforest marker': "PCL:0010058"
 
 annotationProperties:
   skosPrefLabel: "skos:prefLabel"
@@ -29,6 +28,7 @@ annotationProperties:
   rdfsComment: "rdfs:comment"
   hasDbXref: "oboInOwl:hasDbXref"
   symbol: "IAO:0000028"
+  'has nsforest marker': "PCL:0010058"
 
 list_vars:
   Expresses: "'thing'"
@@ -194,13 +194,6 @@ logical_axioms:
      multi_clause:
        sep: " and "
        clauses:
-         - text: "'has nsforest marker' some %s"
-           vars:
-             - Minimal_markers
-   - axiom_type: subClassOf
-     multi_clause:
-       sep: " and "
-       clauses:
          - text: "'homologous_to' some %s"
            vars:
              - homologous_to
@@ -253,3 +246,10 @@ annotations:
       - prefLabel
       - Brain_region_abbv
       - Species_abbv
+  - annotationProperty: 'has nsforest marker'
+    multi_clause:
+      sep: " "
+      clauses:
+        - text: "%s"
+          vars:
+            - Minimal_markers

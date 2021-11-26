@@ -27,9 +27,11 @@ Annotation(dcterms:license <http://creativecommons.org/licenses/by/4.0/>)
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PCL_0010001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PCL_0010002>))
+
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002100>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002215>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002292>))
+
 Declaration(AnnotationProperty(dce:description))
 Declaration(AnnotationProperty(dce:title))
 Declaration(AnnotationProperty(dcterms:license))
@@ -55,9 +57,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002215> "capa
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002292> (expresses)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002292> "expresses")
 
-# Object Property: <http://purl.obolibrary.org/obo/IAO_0000028> (symbol)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000028> "symbol")
-
 # Object Property: <http://purl.obolibrary.org/obo/RO_0015001> (has exemplar data)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015001> "has exemplar data")
 
@@ -67,28 +66,35 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015002> "exem
 # Object Property: <http://purl.obolibrary.org/obo/RO_0015003> (subcluster of)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015003> "subcluster of")
 
-# Object Property: <http://purl.obolibrary.org/obo/PCL_0010051> (cell_type_rank)
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000028> (symbol)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000028> "symbol")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010051> (cell_type_rank)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010051> "cell_type_rank")
 
-# Object Property: <http://purl.obolibrary.org/obo/PCL_0010052> (cell_types_count)
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010052> (cell_types_count)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010052> "cell_types_count")
 
-# Object Property: <http://purl.obolibrary.org/obo/PCL_0010053> (cell_subclasses_count)
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010053> (cell_subclasses_count)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010053> "cell_subclasses_count")
 
-# Object Property: <http://purl.obolibrary.org/obo/PCL_0010054> (cell_classes_count)
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010054> (cell_classes_count)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010054> "cell_classes_count")
 
-# Object Property: <http://purl.obolibrary.org/obo/PCL_0010055> (has_age)
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010055> (has_age)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010055> "has_age")
 
-# Object Property: <http://purl.obolibrary.org/obo/PCL_0010056> (has_sex)
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010056> (has_sex)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010056> "has_sex")
 
-# Object Property: <http://purl.obolibrary.org/obo/PCL_0010057> (has_brain_region)
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010057> (has_brain_region)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010057> "has_brain_region")
 
-# Object Property: <http://purl.obolibrary.org/obo/PCL_0010058> (has nsforest marker)
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010058> (has nsforest marker)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010058> "has nsforest marker")
 
 )
