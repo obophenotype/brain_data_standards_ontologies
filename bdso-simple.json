@@ -29,11 +29,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-11-25"
+            "val": "2021-11-26"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/pcl/releases/2021-11-25/bdso-simple.json",
+        "version": "http://purl.obolibrary.org/obo/pcl/releases/2021-11-26/bdso-simple.json",
         "xrefs": []
       },
       "nodes": [
@@ -201,6 +201,19 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
                 "val": "http://purl.obolibrary.org/obo/IAO_0000122"
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0100001",
+          "lbl": "term replaced by",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
+                "val": "http://purl.obolibrary.org/obo/IAO_0000125"
               }
             ]
           },
@@ -664,6 +677,11 @@
         {
           "id": "http://purl.obolibrary.org/obo/IAO_0000028",
           "lbl": "symbol",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/PCL_0000100",
+          "lbl": "synonym",
           "type": "PROPERTY"
         },
         {

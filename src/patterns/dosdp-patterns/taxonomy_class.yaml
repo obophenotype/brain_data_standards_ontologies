@@ -21,6 +21,7 @@ relations:
   bearer_of: "RO:0000053"
   has_exemplar_data: "RO:0015001"
   homologous_to: "RO:HOM0000007"
+  'has nsforest marker': "PCL:0010058"
 
 annotationProperties:
   skosPrefLabel: "skos:prefLabel"
@@ -189,6 +190,13 @@ logical_axioms:
         - text: "'expresses' some %s"
           vars:
             - Minimal_markers
+   - axiom_type: subClassOf
+     multi_clause:
+       sep: " and "
+       clauses:
+         - text: "'has nsforest marker' some %s"
+           vars:
+             - Minimal_markers
    - axiom_type: subClassOf
      multi_clause:
        sep: " and "

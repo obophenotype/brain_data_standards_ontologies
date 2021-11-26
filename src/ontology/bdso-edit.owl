@@ -40,6 +40,7 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010054>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010055>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010056>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010057>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010058>))
 
 ############################
 #   Object Properties
@@ -86,5 +87,8 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010056> "has
 
 # Object Property: <http://purl.obolibrary.org/obo/PCL_0010057> (has_brain_region)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010057> "has_brain_region")
+
+# Object Property: <http://purl.obolibrary.org/obo/PCL_0010058> (has nsforest marker)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010058> "has nsforest marker")
 
 )

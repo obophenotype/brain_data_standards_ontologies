@@ -13,12 +13,13 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:custom="http://n2o.neo/custom/"
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:nsf2_full_mtg="http://www.jcvi.org/framework/nsf2_full_mtg#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pcl/bdso-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pcl/releases/2021-11-25/bdso-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pcl/releases/2021-11-26/bdso-simple.owl"/>
         <dc:title>Brain Data Standards Cell Ontology</dc:title>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-11-25</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-11-26</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -150,6 +151,24 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000424 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000424"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <rdfs:label>term replaced by</rdfs:label>
+        <rdfs:label xml:lang="en">term replaced by</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCL_0000100 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/PCL_0000100">
+        <rdfs:label>synonym</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -392,6 +411,66 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand"/>
+    
+
+
+    <!-- http://www.jcvi.org/framework/nsf2_full_mtg#has_soma_location_in -->
+
+    <owl:AnnotationProperty rdf:about="http://www.jcvi.org/framework/nsf2_full_mtg#has_soma_location_in"/>
+    
+
+
+    <!-- http://www.jcvi.org/framework/nsf2_full_mtg#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.jcvi.org/framework/nsf2_full_mtg#id"/>
+    
+
+
+    <!-- http://www.jcvi.org/framework/nsf2_full_mtg#neuron_type -->
+
+    <owl:AnnotationProperty rdf:about="http://www.jcvi.org/framework/nsf2_full_mtg#neuron_type"/>
+    
+
+
+    <!-- http://www.jcvi.org/framework/nsf2_full_mtg#part_of -->
+
+    <owl:AnnotationProperty rdf:about="http://www.jcvi.org/framework/nsf2_full_mtg#part_of"/>
+    
+
+
+    <!-- http://www.jcvi.org/framework/nsf2_full_mtg#preferred_name -->
+
+    <owl:AnnotationProperty rdf:about="http://www.jcvi.org/framework/nsf2_full_mtg#preferred_name"/>
+    
+
+
+    <!-- http://www.jcvi.org/framework/nsf2_full_mtg#prefixIRI -->
+
+    <owl:AnnotationProperty rdf:about="http://www.jcvi.org/framework/nsf2_full_mtg#prefixIRI"/>
+    
+
+
+    <!-- http://www.jcvi.org/framework/nsf2_full_mtg#species_id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.jcvi.org/framework/nsf2_full_mtg#species_id"/>
+    
+
+
+    <!-- http://www.jcvi.org/framework/nsf2_full_mtg#species_source -->
+
+    <owl:AnnotationProperty rdf:about="http://www.jcvi.org/framework/nsf2_full_mtg#species_source"/>
+    
+
+
+    <!-- http://www.jcvi.org/framework/nsf2_full_mtg#tdc_id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.jcvi.org/framework/nsf2_full_mtg#tdc_id"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
     
 
 
