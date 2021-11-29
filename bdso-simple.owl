@@ -16,10 +16,10 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:nsf2_full_mtg="http://www.jcvi.org/framework/nsf2_full_mtg#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pcl/bdso-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pcl/releases/2021-11-26/bdso-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pcl/releases/2021-11-29/bdso-simple.owl"/>
         <dc:title>Brain Data Standards Cell Ontology</dc:title>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-11-26</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-11-29</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -113,7 +113,9 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label>definition</rdfs:label>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -236,6 +238,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCL_0010059 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/PCL_0010059">
+        <rdfs:label>cluster id</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900"/>
@@ -306,7 +316,6 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
         <oboInOwl:hasDbXref rdf:resource="http://purl.org/dc/elements/1.1/description"/>
-        <oboInOwl:hasDbXref>http://purl.org/dc/elements/1.1/description</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>dc-description</oboInOwl:id>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
@@ -326,7 +335,6 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
         <oboInOwl:hasDbXref rdf:resource="http://purl.org/dc/elements/1.1/title"/>
-        <oboInOwl:hasDbXref>http://purl.org/dc/elements/1.1/title</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>dc-title</oboInOwl:id>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
@@ -340,7 +348,6 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
         <oboInOwl:hasDbXref rdf:resource="http://purl.org/dc/terms/license"/>
-        <oboInOwl:hasDbXref>http://purl.org/dc/terms/license</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>dcterms-license</oboInOwl:id>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>

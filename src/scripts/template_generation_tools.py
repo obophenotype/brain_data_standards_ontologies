@@ -52,6 +52,7 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
                            'TYPE': 'TYPE',
                            'Property Assertions': "I 'subcluster of' SPLIT=|",
                            'Synonyms': 'A oboInOwl:hasExactSynonym SPLIT=|',
+                           'Cluster_ID': "A 'cluster id'",
                            'Function': 'TI capable_of some %',
                            'cell_set_preferred_alias': "A n2o:cell_set_preferred_alias",
                            'original_label': "A n2o:original_label",
@@ -89,7 +90,7 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
                 d[prop] = '|'.join([prop_val.strip() for prop_val in str(o[prop]).split("|") if prop_val])
             else:
                 d[prop] = ''
-
+        d['Cluster_ID'] = o['cell_set_accession']
         if o['cell_set_accession'] in set().union(*subtrees) and o['cell_set_preferred_alias']:
             d['Exemplar_of'] = PCL_BASE + get_class_id(o['cell_set_accession'])
 

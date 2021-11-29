@@ -43,6 +43,7 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010055>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010056>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010057>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010058>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010059>))
 
 ############################
 #   Object Properties
@@ -96,5 +97,8 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010057> "has
 
 # Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010058> (has nsforest marker)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010058> "has nsforest marker")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010059> (cluster id)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010059> "cluster id")
 
 )
