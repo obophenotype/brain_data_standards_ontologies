@@ -118,14 +118,6 @@ def:
               - text: 'The reference data for this cell type is %s.'
                 vars:
                   - Cluster_ID
-              - text: '%s'
-                vars:
-                  - Cross_species_text
-
-comment:
-   text: "%s"
-   vars:
-      - Comment
 
 generated_synonyms:
    - text: "%s expressing %s of %s (%s)"
