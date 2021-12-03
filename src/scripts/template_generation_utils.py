@@ -456,3 +456,22 @@ def read_allen_descriptions(path, species):
     else:
         allen_descriptions = {}
     return allen_descriptions
+
+
+def extract_taxonomy_name_from_path(taxonomy_file_path):
+    """
+    Extracts name of the taxonomy from the taxonomy file path. CSV and json file types are supported for taxonomy files.
+    Args:
+        taxonomy_file_path: relative path of the taxonomy file
+
+    Returns: name of the taxonomy
+    """
+    path_parts = taxonomy_file_path.split(os.path.sep)
+    if str(taxonomy_file_path).endswith(".json"):
+        taxon = path_parts[len(path_parts) - 1].split(".")[0]
+    elif str(taxonomy_file_path).endswith(".csv"):
+        taxon = path_parts[len(path_parts) - 1].split(".")[0].replace("nomenclature_table_", "")
+    else:
+        raise ValueError("Unsupported taxonomy file extension. Should be csv or json, but was: " +
+                         path_parts[len(path_parts) - 1].split(".")[1])
+    return str(taxon)

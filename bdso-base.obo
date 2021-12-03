@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: pcl/releases/2021-11-30/bdso-base.owl
+data-version: pcl/releases/2021-12-03/bdso-base.owl
 ontology: pcl/bdso-base
 property_value: http://purl.org/dc/elements/1.1/title "Brain Data Standards Cell Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2021-11-30" xsd:string
+property_value: owl:versionInfo "2021-12-03" xsd:string
 
 [Term]
 id: CL:0000881
@@ -6180,8 +6180,7 @@ replaced_by: PCL:0011074
 [Term]
 id: PCL:0011001
 name: Lamp5-like Pax6 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Pip5k1b, Pax6. These cells also express Pax6. The reference data for this cell type is CS202002013_1. This class represents a cross-species homology grouping." [PMID:34616062, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Pip5k1b, Pax6. These cells also express Pax6. The reference data for this cell type is CS202002013_1." [PMID:34616062, PMID:34616066]
 synonym: "Lamp5 Pax6" EXACT []
 synonym: "Lamp5-like Pax6" EXACT []
 synonym: "Lamp5_4" EXACT []
@@ -6203,8 +6202,7 @@ property_value: prefLabel "Lamp5-like Pax6" xsd:string
 [Term]
 id: PCL:0011002
 name: Lamp5-like Egln3_1 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Fbn2, Chrna7, Tafa1. These cells also express Egln3. The reference data for this cell type is CS202002013_2. This class represents a cross-species homology grouping." [PMID:33184512, PMID:34616062, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Fbn2, Chrna7, Tafa1. These cells also express Egln3. The reference data for this cell type is CS202002013_2." [PMID:33184512, PMID:34616062, PMID:34616066]
 synonym: "Alpha7 cell" EXACT []
 synonym: "Fbn2, Chrna7, Tafa1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Lamp5 Egln3_1" EXACT []
@@ -6272,8 +6270,7 @@ property_value: prefLabel "Lamp5 Egln3_3" xsd:string
 [Term]
 id: PCL:0011005
 name: Lamp5 Pdlim5_1 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Ndst4, Dock5, Ndnf. These cells also express Lamp5, Pdlim5. The reference data for this cell type is CS202002013_5. This class represents a cross-species homology grouping." [PMID:34616062, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Ndst4, Dock5, Ndnf. These cells also express Lamp5, Pdlim5. The reference data for this cell type is CS202002013_5." [PMID:34616062, PMID:34616066]
 synonym: "Lamp5 Pdlim5_1" EXACT []
 synonym: "Lamp5_1" EXACT []
 synonym: "Ndst4, Dock5, Ndnf expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
@@ -6335,8 +6332,7 @@ property_value: prefLabel "Lamp5 Slc35d3" xsd:string
 [Term]
 id: PCL:0011008
 name: Lamp5 Lhx6 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Nos1, Gm45680. These cells also express Lhx6, Lamp5. The reference data for this cell type is CS202002013_8. This class represents a cross-species homology grouping." [PMID:33184512, PMID:34616062, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Nos1, Gm45680. These cells also express Lhx6, Lamp5. The reference data for this cell type is CS202002013_8." [PMID:33184512, PMID:34616062, PMID:34616066]
 synonym: "L5/6 neurogliaform cell" EXACT []
 synonym: "Lamp5 Lhx6" EXACT []
 synonym: "Lamp5_3" EXACT []
@@ -6743,8 +6739,7 @@ property_value: prefLabel "Vip Igfbp6_2" xsd:string
 [Term]
 id: PCL:0011028
 name: Sst Chodl primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Chodl, Nos1. These cells also express Sst, Chodl. The reference data for this cell type is CS202002013_28. This class represents a cross-species homology grouping." [PMID:33184512, PMID:34616062, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Chodl, Nos1. These cells also express Sst, Chodl. The reference data for this cell type is CS202002013_28." [PMID:33184512, PMID:34616062, PMID:34616066]
 synonym: "Chodl, Nos1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Long-projecting SST cell" EXACT []
 synonym: "RNAseq 028" EXACT []
@@ -6929,8 +6924,7 @@ property_value: prefLabel "Sst Crhr2_1" xsd:string
 [Term]
 id: PCL:0011037
 name: Sst Crhr2_2 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Lypd6b, Trpc6. These cells also express Crhr2, Sst. The reference data for this cell type is CS202002013_37. This class represents a cross-species homology grouping." [PMID:34616062, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Lypd6b, Trpc6. These cells also express Crhr2, Sst. The reference data for this cell type is CS202002013_37." [PMID:34616062, PMID:34616066]
 synonym: "Lypd6b, Trpc6 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 037" EXACT []
 synonym: "Sst Crhr2_2" EXACT []
@@ -7032,8 +7026,7 @@ property_value: prefLabel "Sst Pvalb Calb2" xsd:string
 [Term]
 id: PCL:0011042
 name: Sst C1ql3_1 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Pard3b, Gm48893. These cells also express Sst, C1ql3. The reference data for this cell type is CS202002013_42. This class represents a cross-species homology grouping." [PMID:34616062, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Pard3b, Gm48893. These cells also express Sst, C1ql3. The reference data for this cell type is CS202002013_42." [PMID:34616062, PMID:34616066]
 synonym: "Pard3b, Gm48893 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 042" EXACT []
 synonym: "Sst C1ql3_1" EXACT []
@@ -7139,8 +7132,7 @@ property_value: prefLabel "Sst Th_2" xsd:string
 [Term]
 id: PCL:0011047
 name: Sst Th_3 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Th, Cort. These cells also express Th, Sst. The reference data for this cell type is CS202002013_47. This class represents a cross-species homology grouping." [PMID:34616062, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Th, Cort. These cells also express Th, Sst. The reference data for this cell type is CS202002013_47." [PMID:34616062, PMID:34616066]
 synonym: "RNAseq 047" EXACT []
 synonym: "Sst Th_3" EXACT []
 synonym: "Sst_7" EXACT []
@@ -7430,8 +7422,7 @@ property_value: prefLabel "L2/3 IT_3" xsd:string
 [Term]
 id: PCL:0011061
 name: L4/5 IT_1 primary motor cortex glutamatergic neuron (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Cadps2, Rorb, Prr16. These cells also express Rspo1. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer IV/V. The reference data for this cell type is CS202002013_61. This class represents a cross-species homology grouping." [PMID:34616062, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Cadps2, Rorb, Prr16. These cells also express Rspo1. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer IV/V. The reference data for this cell type is CS202002013_61." [PMID:34616062, PMID:34616066]
 synonym: "Cadps2, Rorb, Prr16 expressing glutamatergic neuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "L4 IT" EXACT []
 synonym: "L4/5 IT_1" EXACT []
@@ -7453,8 +7444,7 @@ property_value: prefLabel "L4/5 IT_1" xsd:string
 [Term]
 id: PCL:0011062
 name: L4/5 IT_2 primary motor cortex glutamatergic neuron (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Col26a1, Cpne4, Il1rapl2. These cells also express Rspo1. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer IV/V. The reference data for this cell type is CS202002013_62. This class represents a cross-species homology grouping." [PMID:34616062, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Col26a1, Cpne4, Il1rapl2. These cells also express Rspo1. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer IV/V. The reference data for this cell type is CS202002013_62." [PMID:34616062, PMID:34616066]
 synonym: "Col26a1, Cpne4, Il1rapl2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "L4/5 IT" EXACT []
 synonym: "L4/5 IT_2" EXACT []
@@ -7560,8 +7550,7 @@ property_value: prefLabel "L5 IT_4" xsd:string
 [Term]
 id: PCL:0011067
 name: L6 IT_1 primary motor cortex glutamatergic neuron (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Fst, Bmpr1b, Ntng1. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_67. This class represents a cross-species homology grouping." [PMID:34616062, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Fst, Bmpr1b, Ntng1. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_67." [PMID:34616062, PMID:34616066]
 synonym: "Fst, Bmpr1b, Ntng1 expressing glutamatergic neuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "L6 IT_1" EXACT []
 synonym: "RNAseq 067" EXACT []
@@ -7605,8 +7594,7 @@ property_value: prefLabel "L6 IT_2" xsd:string
 [Term]
 id: PCL:0011069
 name: L6 IT Car3 primary motor cortex glutamatergic neuron (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Nr4a2, Tfap2d. These cells also express Car3. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_69. This class represents a cross-species homology grouping." [PMID:33184512, PMID:34616062, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Nr4a2, Tfap2d. These cells also express Car3. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_69." [PMID:33184512, PMID:34616062, PMID:34616066]
 synonym: "Claustrum-like IT" EXACT []
 synonym: "L6 IT Car3" EXACT []
 synonym: "L6 IT_3" EXACT []
@@ -7655,8 +7643,7 @@ property_value: prefLabel "L5 ET_1" xsd:string
 [Term]
 id: PCL:0011071
 name: L5 ET_2 primary motor cortex glutamatergic neuron (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Trpc7, Gpc5, Erg. These cells have projection type extratelencephalic projecting. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_71. This class represents a cross-species homology grouping." [PMID:34616062, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Trpc7, Gpc5, Erg. These cells have projection type extratelencephalic projecting. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_71." [PMID:34616062, PMID:34616066]
 synonym: "L5 ET_2" EXACT []
 synonym: "L5 PT_2" EXACT []
 synonym: "RNAseq 071" EXACT []
@@ -7724,8 +7711,7 @@ property_value: prefLabel "L5 ET_4" xsd:string
 [Term]
 id: PCL:0011074
 name: L5/6 NP CT primary motor cortex glutamatergic neuron (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Grp, Rxfp1, Tshz2. These cells have projection type corticothalamic projecting. The soma of these cells in located in: cortical layer V/VI. The reference data for this cell type is CS202002013_74. This class represents a cross-species homology grouping." [PMID:34616062, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Grp, Rxfp1, Tshz2. These cells have projection type corticothalamic projecting. The soma of these cells in located in: cortical layer V/VI. The reference data for this cell type is CS202002013_74." [PMID:34616062, PMID:34616066]
 synonym: "Grp, Rxfp1, Tshz2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "L5 IT_3" EXACT []
 synonym: "L5/6 NP CT" EXACT []
@@ -7771,8 +7757,7 @@ property_value: prefLabel "L6 CT Gpr139" xsd:string
 [Term]
 id: PCL:0011076
 name: L6 CT Cpa6 primary motor cortex glutamatergic neuron (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Zfpm2, Foxp2, Hs3st4. These cells also express Cpa6. These cells have projection type corticothalamic projecting. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_76. This class represents a cross-species homology grouping." [PMID:34616062, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Zfpm2, Foxp2, Hs3st4. These cells also express Cpa6. These cells have projection type corticothalamic projecting. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_76." [PMID:34616062, PMID:34616066]
 synonym: "L6 CT Cpa6" EXACT []
 synonym: "L6 CT_2" EXACT []
 synonym: "RNAseq 076" EXACT []
@@ -8087,8 +8072,7 @@ property_value: prefLabel "Meis2_Top2a" xsd:string
 [Term]
 id: PCL:0011091
 name: OPC Pdgfra primary motor cortex oligodendrocyte precursor cell (Mus musculus)
-def: "A oligodendrocyte precursor cell of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Pdgfra, Stk32a. These cells also express Pdgfra. The reference data for this cell type is CS202002013_91. This class represents a cross-species homology grouping." [PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A oligodendrocyte precursor cell of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Pdgfra, Stk32a. These cells also express Pdgfra. The reference data for this cell type is CS202002013_91." [PMID:34616066]
 synonym: "OPC" EXACT []
 synonym: "OPC Pdgfra" EXACT []
 synonym: "Pdgfra, Stk32a expressing oligodendrocyte precursor cell of primary motor cortex (Mus musculus)" EXACT []
@@ -8239,8 +8223,7 @@ property_value: prefLabel "Oligo Enpp6_4" xsd:string
 [Term]
 id: PCL:0011099
 name: Oligo Opalin_1 primary motor cortex oligodendrocyte (Mus musculus)
-def: "A oligodendrocyte of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Anln, Rftn1, A330049N07Rik. These cells also express Opalin. The reference data for this cell type is CS202002013_99. This class represents a cross-species homology grouping." [PMID:34616062, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A oligodendrocyte of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Anln, Rftn1, A330049N07Rik. These cells also express Opalin. The reference data for this cell type is CS202002013_99." [PMID:34616062, PMID:34616066]
 synonym: "Anln, Rftn1, A330049N07Rik expressing oligodendrocyte of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Oligo Opalin_1" EXACT []
 synonym: "Oligo_1" EXACT []
@@ -8321,8 +8304,7 @@ property_value: prefLabel "Oligo Opalin_4" xsd:string
 [Term]
 id: PCL:0011103
 name: Endo primary motor cortex endothelial cell (Mus musculus)
-def: "A endothelial cell of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Slco1a4, Adgrl4. The reference data for this cell type is CS202002013_103. This class represents a cross-species homology grouping." [PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A endothelial cell of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Slco1a4, Adgrl4. The reference data for this cell type is CS202002013_103." [PMID:34616066]
 synonym: "Endo" EXACT []
 synonym: "Endothelial" EXACT []
 synonym: "RNAseq 103" EXACT []
@@ -8334,7 +8316,6 @@ relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030237 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039167 ! expresses
 relationship: RO:HOM0000007 PCL:0012125 ! Endo L2-5 NOSTRIN SRGN primary motor cortex endothelial cell (Homo sapiens)
-relationship: RO:HOM0000007 PCL:0013107
 property_value: IAO:0000028 "Endo MOp (Mouse)" xsd:string
 property_value: PCL:0010058 "Adgrl4" xsd:string
 property_value: PCL:0010058 "Slco1a4" xsd:string
@@ -8455,8 +8436,7 @@ property_value: prefLabel "VLMC_7" xsd:string
 [Term]
 id: PCL:0011111
 name: SMC primary motor cortex smooth muscle cell of the brain vasculature (Mus musculus)
-def: "A smooth muscle cell of the brain vasculature of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Acta2. The reference data for this cell type is CS202002013_111. This class represents a cross-species homology grouping." [PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A smooth muscle cell of the brain vasculature of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Acta2. The reference data for this cell type is CS202002013_111." [PMID:34616066]
 synonym: "Acta2 expressing smooth muscle cell of the brain vasculature of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 111" EXACT []
 synonym: "SMC" EXACT []
@@ -8471,8 +8451,7 @@ property_value: prefLabel "SMC" xsd:string
 [Term]
 id: PCL:0011112
 name: Peri primary motor cortex brain pericyte (Mus musculus)
-def: "A brain pericyte of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Abcc9, Tbx3os1. The reference data for this cell type is CS202002013_112. This class represents a cross-species homology grouping." [PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A brain pericyte of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Abcc9, Tbx3os1. The reference data for this cell type is CS202002013_112." [PMID:34616066]
 synonym: "Abcc9, Tbx3os1 expressing brain pericyte of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Peri" EXACT []
 synonym: "Pericyte" EXACT []
@@ -8482,7 +8461,6 @@ relationship: BFO:0000050 UBERON:0001384
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030249 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000087516 ! expresses
-relationship: RO:HOM0000007 PCL:0013108
 property_value: IAO:0000028 "Peri MOp (Mouse)" xsd:string
 property_value: PCL:0010058 "Abcc9" xsd:string
 property_value: PCL:0010058 "Tbx3os1" xsd:string
@@ -8491,8 +8469,7 @@ property_value: prefLabel "Peri" xsd:string
 [Term]
 id: PCL:0011113
 name: Micro primary motor cortex microglial cell (Mus musculus)
-def: "A microglial cell of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Hexb. The reference data for this cell type is CS202002013_113. This class represents a cross-species homology grouping." [PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A microglial cell of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Hexb. The reference data for this cell type is CS202002013_113." [PMID:34616066]
 synonym: "Hexb expressing microglial cell of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Micro" EXACT []
 synonym: "Microglia" EXACT []
@@ -8555,8 +8532,7 @@ property_value: prefLabel "PVM_3" xsd:string
 [Term]
 id: PCL:0011124
 name: CGE/PoA primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Prox1, Adarb2. The reference data for this cell type is CS202002013_124. This class represents a cross-species homology grouping." [PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Prox1, Adarb2. The reference data for this cell type is CS202002013_124." [PMID:34616066]
 synonym: "CGE/PoA" EXACT []
 synonym: "n8" EXACT []
 synonym: "Prox1, Adarb2 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
@@ -8577,8 +8553,7 @@ property_value: prefLabel "CGE/PoA" xsd:string
 [Term]
 id: PCL:0011125
 name: Lamp5-like primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Npy, Pde11a. The reference data for this cell type is CS202002013_125. This class represents a cross-species homology grouping." [PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Npy, Pde11a. The reference data for this cell type is CS202002013_125." [PMID:34616066]
 synonym: "Lamp5" EXACT []
 synonym: "Lamp5-like" EXACT []
 synonym: "n9" EXACT []
@@ -8599,8 +8574,7 @@ property_value: prefLabel "Lamp5-like" xsd:string
 [Term]
 id: PCL:0011128
 name: Lamp5-like_C5 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Cxcl14, Ndnf. These cells also express Lamp5. The reference data for this cell type is CS202002013_128. This class represents a cross-species homology grouping." [PMID:34616062, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Cxcl14, Ndnf. These cells also express Lamp5. The reference data for this cell type is CS202002013_128." [PMID:34616062, PMID:34616066]
 synonym: "Cxcl14, Ndnf expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Lamp5-like_C5" EXACT []
 synonym: "Lamp5_5" EXACT []
@@ -8619,8 +8593,7 @@ property_value: prefLabel "Lamp5-like_C5" xsd:string
 [Term]
 id: PCL:0011133
 name: Sncg-like primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Cnr1, Col25a1. The reference data for this cell type is CS202002013_133. This class represents a cross-species homology grouping." [PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Cnr1, Col25a1. The reference data for this cell type is CS202002013_133." [PMID:34616066]
 synonym: "Cnr1, Col25a1 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "n17" EXACT []
 synonym: "RNAseq 009-014" EXACT []
@@ -8641,8 +8614,7 @@ property_value: prefLabel "Sncg-like" xsd:string
 [Term]
 id: PCL:0011134
 name: Sncg-like_C2 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Yjefn3, Frem1. These cells also express Sncg. The reference data for this cell type is CS202002013_134. This class represents a cross-species homology grouping." [PMID:34616062, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Yjefn3, Frem1. These cells also express Sncg. The reference data for this cell type is CS202002013_134." [PMID:34616062, PMID:34616066]
 synonym: "n18" EXACT []
 synonym: "RNAseq 009-010" EXACT []
 synonym: "Sncg-like_C2" EXACT []
@@ -8663,8 +8635,7 @@ property_value: prefLabel "Sncg-like_C2" xsd:string
 [Term]
 id: PCL:0011138
 name: Vip-like primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Vip. The reference data for this cell type is CS202002013_138. This class represents a cross-species homology grouping." [PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Vip. The reference data for this cell type is CS202002013_138." [PMID:34616066]
 synonym: "n22" EXACT []
 synonym: "RNAseq 015-027" EXACT []
 synonym: "Vip" EXACT []
@@ -8749,8 +8720,7 @@ property_value: prefLabel "L2/3 Bipolar VIP cell" xsd:string
 [Term]
 id: PCL:0011149
 name: Vip-like_C4 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Thsd7b, Gm39185. The reference data for this cell type is CS202002013_149. This class represents a cross-species homology grouping." [PMID:33184512, PMID:34616062, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Thsd7b, Gm39185. The reference data for this cell type is CS202002013_149." [PMID:33184512, PMID:34616062, PMID:34616066]
 synonym: "n33" EXACT []
 synonym: "RNAseq 026-027" EXACT []
 synonym: "Thsd7b, Gm39185 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
@@ -8772,8 +8742,7 @@ property_value: prefLabel "Vip-like_C4" xsd:string
 [Term]
 id: PCL:0011150
 name: MGE primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Nxph1, Gm1604b. The reference data for this cell type is CS202002013_150. This class represents a cross-species homology grouping." [PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Nxph1, Gm1604b. The reference data for this cell type is CS202002013_150." [PMID:34616066]
 synonym: "MGE" EXACT []
 synonym: "n34" EXACT []
 synonym: "Nxph1, Gm1604b expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
@@ -8794,8 +8763,7 @@ property_value: prefLabel "MGE" xsd:string
 [Term]
 id: PCL:0011156
 name: Sst-like_C1 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Pdyn, Unc13c. These cells also express Sst. The reference data for this cell type is CS202002013_156. This class represents a cross-species homology grouping." [PMID:34616062, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Pdyn, Unc13c. These cells also express Sst. The reference data for this cell type is CS202002013_156." [PMID:34616062, PMID:34616066]
 synonym: "n40" EXACT []
 synonym: "Pdyn, Unc13c expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 031-033" EXACT []
@@ -8916,8 +8884,7 @@ property_value: prefLabel "Upper FS Basket cell" xsd:string
 [Term]
 id: PCL:0011178
 name: Chandelier primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Unc5b, Cntnap5b. The reference data for this cell type is CS202002013_178. This class represents a cross-species homology grouping." [PMID:33184512, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Unc5b, Cntnap5b. The reference data for this cell type is CS202002013_178." [PMID:33184512, PMID:34616066]
 synonym: "Chandelier" EXACT []
 synonym: "Chandelier cell" EXACT []
 synonym: "n62" EXACT []
@@ -8939,8 +8906,7 @@ property_value: prefLabel "Chandelier" xsd:string
 [Term]
 id: PCL:0011182
 name: IT projecting primary motor cortex glutamatergic neuron (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Fstl4, Satb2. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS202002013_182. This class represents a cross-species homology grouping." [PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Fstl4, Satb2. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS202002013_182." [PMID:34616066]
 synonym: "Fstl4, Satb2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "IT projecting" EXACT []
 synonym: "n66" EXACT []
@@ -8962,8 +8928,7 @@ property_value: prefLabel "IT projecting" xsd:string
 [Term]
 id: PCL:0011183
 name: L2/3 IT primary motor cortex glutamatergic neuron (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Rasgrf2, Calb1. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer II/III. The reference data for this cell type is CS202002013_183. This class represents a cross-species homology grouping." [PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Rasgrf2, Calb1. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer II/III. The reference data for this cell type is CS202002013_183." [PMID:34616066]
 synonym: "L2/3 IT" EXACT []
 synonym: "n67" EXACT []
 synonym: "Rasgrf2, Calb1 expressing glutamatergic neuron of primary motor cortex (Mus musculus)" EXACT []
@@ -8986,8 +8951,7 @@ property_value: prefLabel "L2/3 IT" xsd:string
 [Term]
 id: PCL:0011188
 name: L4 primary motor cortex glutamatergic neuron (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Kcnh5, Rorb, A830036E02Rik. The soma of these cells in located in: cortical layer IV. The reference data for this cell type is CS202002013_188. This class represents a cross-species homology grouping." [PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Kcnh5, Rorb, A830036E02Rik. The soma of these cells in located in: cortical layer IV. The reference data for this cell type is CS202002013_188." [PMID:34616066]
 synonym: "Kcnh5, Rorb, A830036E02Rik expressing glutamatergic neuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "L4" EXACT []
 synonym: "L4/5 IT" EXACT []
@@ -9009,8 +8973,7 @@ property_value: prefLabel "L4" xsd:string
 [Term]
 id: PCL:0011189
 name: L5 IT primary motor cortex glutamatergic neuron (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Pdzrn3, St6galnac5, Cdh12. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_189. This class represents a cross-species homology grouping." [PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Pdzrn3, St6galnac5, Cdh12. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_189." [PMID:34616066]
 synonym: "L5 IT" EXACT []
 synonym: "n73" EXACT []
 synonym: "Pdzrn3, St6galnac5, Cdh12 expressing glutamatergic neuron of primary motor cortex (Mus musculus)" EXACT []
@@ -9035,8 +8998,7 @@ property_value: prefLabel "L5 IT" xsd:string
 [Term]
 id: PCL:0011190
 name: L5 IT_C2 primary motor cortex glutamatergic neuron (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Deptor, Il1rapl2. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_190. This class represents a cross-species homology grouping." [PMID:34616062, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Deptor, Il1rapl2. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_190." [PMID:34616062, PMID:34616066]
 synonym: "Deptor, Il1rapl2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "L5 IT_2" EXACT []
 synonym: "L5 IT_C2" EXACT []
@@ -9059,8 +9021,7 @@ property_value: prefLabel "L5 IT_C2" xsd:string
 [Term]
 id: PCL:0011192
 name: L6 IT primary motor cortex glutamatergic neuron (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Sulf1, Bmpr1b, Il1rapl2. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_192. This class represents a cross-species homology grouping." [PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Sulf1, Bmpr1b, Il1rapl2. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_192." [PMID:34616066]
 synonym: "L6 IT" EXACT []
 synonym: "n76" EXACT []
 synonym: "RNAseq 067-068" EXACT []
@@ -9084,8 +9045,7 @@ property_value: prefLabel "L6 IT" xsd:string
 [Term]
 id: PCL:0011193
 name: L5 ET primary motor cortex glutamatergic neuron (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Npr3, Gm2164. These cells have projection type extratelencephalic projecting. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_193. This class represents a cross-species homology grouping." [PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Npr3, Gm2164. These cells have projection type extratelencephalic projecting. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_193." [PMID:34616066]
 synonym: "L5 ET" EXACT []
 synonym: "n77" EXACT []
 synonym: "Npr3, Gm2164 expressing glutamatergic neuron of primary motor cortex (Mus musculus)" EXACT []
@@ -9132,8 +9092,7 @@ property_value: prefLabel "L5 ET (Non-MY-projecting)" xsd:string
 [Term]
 id: PCL:0011197
 name: L6 CT primary motor cortex glutamatergic neuron (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Foxp2, Hs3st4. These cells have projection type corticothalamic projecting. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_197. This class represents a cross-species homology grouping." [PMID:33184512, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Foxp2, Hs3st4. These cells have projection type corticothalamic projecting. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_197." [PMID:33184512, PMID:34616066]
 synonym: "Corticothalamic" EXACT []
 synonym: "Foxp2, Hs3st4 expressing glutamatergic neuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "L6 CT" EXACT []
@@ -9158,8 +9117,7 @@ property_value: prefLabel "L6 CT" xsd:string
 [Term]
 id: PCL:0011203
 name: L6b primary motor cortex glutamatergic neuron (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Ccn2, Cplx3. The soma of these cells in located in: cortical layer VIb. The reference data for this cell type is CS202002013_203. This class represents a cross-species homology grouping." [PMID:33184512, PMID:34616062, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Ccn2, Cplx3. The soma of these cells in located in: cortical layer VIb. The reference data for this cell type is CS202002013_203." [PMID:33184512, PMID:34616062, PMID:34616066]
 synonym: "Ccn2, Cplx3 expressing glutamatergic neuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "L6b" EXACT []
 synonym: "L6b subplate" EXACT []
@@ -9182,8 +9140,7 @@ property_value: prefLabel "L6b" xsd:string
 [Term]
 id: PCL:0011207
 name: L5/6 NP primary motor cortex glutamatergic neuron (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Etv1, Tshz2. These cells have projection type near projecting. The soma of these cells in located in: cortical layer V/VI. The reference data for this cell type is CS202002013_207. This class represents a cross-species homology grouping." [PMID:33184512, PMID:34616062, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Etv1, Tshz2. These cells have projection type near projecting. The soma of these cells in located in: cortical layer V/VI. The reference data for this cell type is CS202002013_207." [PMID:33184512, PMID:34616062, PMID:34616066]
 synonym: "Etv1, Tshz2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "L5/6 NP" EXACT []
 synonym: "n91" EXACT []
@@ -9207,8 +9164,7 @@ property_value: prefLabel "L5/6 NP" xsd:string
 [Term]
 id: PCL:0011209
 name: Meis2 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Tiam2, Igfbpl1. The reference data for this cell type is CS202002013_209. This class represents a cross-species homology grouping." [PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Tiam2, Igfbpl1. The reference data for this cell type is CS202002013_209." [PMID:34616066]
 synonym: "Meis2" EXACT []
 synonym: "n93" EXACT []
 synonym: "RNAseq 089-090" EXACT []
@@ -9227,8 +9183,7 @@ property_value: prefLabel "Meis2" xsd:string
 [Term]
 id: PCL:0011211
 name: Astro_C1 primary motor cortex astrocyte (Mus musculus)
-def: "A astrocyte of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Gli3, Slc39a12. The reference data for this cell type is CS202002013_211. This class represents a cross-species homology grouping." [PMID:34616062, PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A astrocyte of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Gli3, Slc39a12. The reference data for this cell type is CS202002013_211." [PMID:34616062, PMID:34616066]
 synonym: "Astro_1" EXACT []
 synonym: "Astro_C1" EXACT []
 synonym: "Gli3, Slc39a12 expressing astrocyte of primary motor cortex (Mus musculus)" EXACT []
@@ -9249,8 +9204,7 @@ property_value: prefLabel "Astro_C1" xsd:string
 [Term]
 id: PCL:0011232
 name: Sst-like primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Sst, Reln. The reference data for this cell type is CS202002013_232. This class represents a cross-species homology grouping." [PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Sst, Reln. The reference data for this cell type is CS202002013_232." [PMID:34616066]
 synonym: "RNAseq 029-047" EXACT []
 synonym: "Sst" EXACT []
 synonym: "Sst, Reln expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
@@ -9270,8 +9224,7 @@ property_value: prefLabel "Sst-like" xsd:string
 [Term]
 id: PCL:0011233
 name: Pvalb-like primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Pvalb, Cntnap4. The reference data for this cell type is CS202002013_233. This class represents a cross-species homology grouping." [PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Pvalb, Cntnap4. The reference data for this cell type is CS202002013_233." [PMID:34616066]
 synonym: "Pvalb" EXACT []
 synonym: "Pvalb, Cntnap4 expressing GABAergic interneuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "Pvalb-like" EXACT []
@@ -9291,8 +9244,7 @@ property_value: prefLabel "Pvalb-like" xsd:string
 [Term]
 id: PCL:0011234
 name: Non-IT projecting primary motor cortex glutamatergic neuron (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_234. This class represents a cross-species homology grouping." [PMID:34616066]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_234." [PMID:34616066]
 synonym: "Non-IT projecting" EXACT []
 synonym: "RNAseq 070-088" EXACT []
 is_a: CL:0000679
@@ -9306,8 +9258,7 @@ property_value: prefLabel "Non-IT projecting" xsd:string
 [Term]
 id: PCL:0011238
 name: Lamp5-like_C2 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_238. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_238." [PMID:34616062]
 synonym: "Lamp5-like_C2" EXACT []
 synonym: "Lamp5_2" EXACT []
 synonym: "RNAseq 006-007" EXACT []
@@ -9322,8 +9273,7 @@ property_value: prefLabel "Lamp5-like_C2" xsd:string
 [Term]
 id: PCL:0011239
 name: Sncg-like_C3 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_239. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_239." [PMID:34616062]
 synonym: "RNAseq 011-013" EXACT []
 synonym: "Sncg-like_C3" EXACT []
 synonym: "Sncg_3" EXACT []
@@ -9338,8 +9288,7 @@ property_value: prefLabel "Sncg-like_C3" xsd:string
 [Term]
 id: PCL:0011240
 name: Sncg-like_C1 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_240. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_240." [PMID:34616062]
 synonym: "RNAseq 014, 016" EXACT []
 synonym: "Sncg-like_C1" EXACT []
 synonym: "Sncg_1" EXACT []
@@ -9354,8 +9303,7 @@ property_value: prefLabel "Sncg-like_C1" xsd:string
 [Term]
 id: PCL:0011241
 name: Vip-like_C3 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_241. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_241." [PMID:34616062]
 synonym: "RNAseq 015, 019, 022" EXACT []
 synonym: "Vip-like_C3" EXACT []
 synonym: "Vip_3" EXACT []
@@ -9370,8 +9318,7 @@ property_value: prefLabel "Vip-like_C3" xsd:string
 [Term]
 id: PCL:0011242
 name: Vip-like_C2 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_242. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_242." [PMID:34616062]
 synonym: "RNAseq 017-018, 020-021" EXACT []
 synonym: "Vip-like_C2" EXACT []
 synonym: "Vip_2" EXACT []
@@ -9386,8 +9333,7 @@ property_value: prefLabel "Vip-like_C2" xsd:string
 [Term]
 id: PCL:0011243
 name: Vip-like_C1 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_243. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_243." [PMID:34616062]
 synonym: "RNAseq 023-025" EXACT []
 synonym: "Vip-like_C1" EXACT []
 synonym: "Vip_1" EXACT []
@@ -9402,8 +9348,7 @@ property_value: prefLabel "Vip-like_C1" xsd:string
 [Term]
 id: PCL:0011244
 name: Sst-like_C2 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_244. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_244." [PMID:34616062]
 synonym: "RNAseq 029-030, 034" EXACT []
 synonym: "Sst-like_C2" EXACT []
 synonym: "Sst_2" EXACT []
@@ -9418,8 +9363,7 @@ property_value: prefLabel "Sst-like_C2" xsd:string
 [Term]
 id: PCL:0011245
 name: Sst-like_C3 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_245. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_245." [PMID:34616062]
 synonym: "RNAseq 035-036, 038-041" EXACT []
 synonym: "Sst-like_C3" EXACT []
 synonym: "Sst_3" EXACT []
@@ -9434,8 +9378,7 @@ property_value: prefLabel "Sst-like_C3" xsd:string
 [Term]
 id: PCL:0011246
 name: Sst-like_C6 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_246. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_246." [PMID:34616062]
 synonym: "RNAseq 043-045" EXACT []
 synonym: "Sst-like_C6" EXACT []
 synonym: "Sst_6" EXACT []
@@ -9450,8 +9393,7 @@ property_value: prefLabel "Sst-like_C6" xsd:string
 [Term]
 id: PCL:0011247
 name: Pvalb-like_C1 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_247. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_247." [PMID:34616062]
 synonym: "Pvalb-like_C1" EXACT []
 synonym: "Pvalb_1" EXACT []
 synonym: "RNAseq 046, 050-055" EXACT []
@@ -9466,8 +9408,7 @@ property_value: prefLabel "Pvalb-like_C1" xsd:string
 [Term]
 id: PCL:0011248
 name: Pvalb-like_C2 primary motor cortex GABAergic interneuron (Mus musculus)
-def: "A GABAergic interneuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_248. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_248." [PMID:34616062]
 synonym: "Pvalb-like_C2" EXACT []
 synonym: "Pvalb_2" EXACT []
 synonym: "RNAseq 048-049" EXACT []
@@ -9482,8 +9423,7 @@ property_value: prefLabel "Pvalb-like_C2" xsd:string
 [Term]
 id: PCL:0011249
 name: L5 IT_C1 primary motor cortex glutamatergic neuron (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_249. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_249." [PMID:34616062]
 synonym: "L5 IT_1" EXACT []
 synonym: "L5 IT_C1" EXACT []
 synonym: "RNAseq 061-062, 065" EXACT []
@@ -9499,8 +9439,7 @@ property_value: prefLabel "L5 IT_C1" xsd:string
 [Term]
 id: PCL:0011250
 name: L6 IT_C2 primary motor cortex glutamatergic neuron (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Deptor, Il1rapl2. These cells also express S100b. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_250. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Deptor, Il1rapl2. These cells also express S100b. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_250." [PMID:34616062]
 synonym: "Deptor, Il1rapl2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "L6 IT_2" EXACT []
 synonym: "L6 IT_C2" EXACT []
@@ -9521,8 +9460,7 @@ property_value: prefLabel "L6 IT_C2" xsd:string
 [Term]
 id: PCL:0011251
 name: L5 ET_C1 primary motor cortex glutamatergic neuron (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_251. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_251." [PMID:34616062]
 synonym: "L5 ET_1" EXACT []
 synonym: "L5 ET_C1" EXACT []
 synonym: "RNAseq 070, 072-073" EXACT []
@@ -9538,8 +9476,7 @@ property_value: prefLabel "L5 ET_C1" xsd:string
 [Term]
 id: PCL:0011252
 name: L6 CT_C1 primary motor cortex glutamatergic neuron (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_252. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_252." [PMID:34616062]
 synonym: "L6 CT_1" EXACT []
 synonym: "L6 CT_C1" EXACT []
 synonym: "RNAseq 075, 077-081" EXACT []
@@ -9555,8 +9492,7 @@ property_value: prefLabel "L6 CT_C1" xsd:string
 [Term]
 id: PCL:0011253
 name: Oligo_C2 primary motor cortex oligodendrocyte (Mus musculus)
-def: "A oligodendrocyte of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_253. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A oligodendrocyte of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_253." [PMID:34616062]
 synonym: "Oligo_2" EXACT []
 synonym: "Oligo_C2" EXACT []
 synonym: "RNAseq 098, 100-102" EXACT []
@@ -9571,8 +9507,7 @@ property_value: prefLabel "Oligo_C2" xsd:string
 [Term]
 id: PCL:0011254
 name: VLMC(i) primary motor cortex vascular leptomeningeal cell (Mus musculus)
-def: "A vascular leptomeningeal cell of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_254. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A vascular leptomeningeal cell of the Mus musculus primary motor cortex. The reference data for this cell type is CS202002013_254." [PMID:34616062]
 synonym: "RNAseq 104-107, 110" EXACT []
 synonym: "VLMC(i)" EXACT []
 is_a: CL:4023051
@@ -9621,8 +9556,7 @@ property_value: prefLabel "Lower FS Basket cell" xsd:string
 [Term]
 id: PCL:0012001
 name: Inh L1 LAMP5 PVRL2 primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CBLN4, HS3ST5, RELN, TRPC3. These cells also express LAMP5, PVRL2. The soma of these cells in located in: cortical layer I. The reference data for this cell type is CS201912131_1. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CBLN4, HS3ST5, RELN, TRPC3. These cells also express LAMP5, PVRL2. The soma of these cells in located in: cortical layer I. The reference data for this cell type is CS201912131_1." [PMID:34616062]
 synonym: "CBLN4, HS3ST5, RELN, TRPC3 expressing GABAergic interneuron of primary motor cortex (Homo sapiens)" EXACT []
 synonym: "Inh L1 LAMP5 PVRL2" EXACT []
 synonym: "Lamp5_1" EXACT []
@@ -9837,8 +9771,7 @@ property_value: prefLabel "Inh L1-6 VIP SLC7A6OS" xsd:string
 [Term]
 id: PCL:0012011
 name: Inh L2 PAX6 FREM2 primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CILP2, IGFBP7. These cells also express FREM2, PAX6. The soma of these cells in located in: cortical layer II. The reference data for this cell type is CS201912131_11. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CILP2, IGFBP7. These cells also express FREM2, PAX6. The soma of these cells in located in: cortical layer II. The reference data for this cell type is CS201912131_11." [PMID:34616062]
 synonym: "CILP2, IGFBP7 expressing GABAergic interneuron of primary motor cortex (Homo sapiens)" EXACT []
 synonym: "Inh L2 PAX6 FREM2" EXACT []
 synonym: "RNAseq 011" EXACT []
@@ -10433,8 +10366,7 @@ property_value: prefLabel "Inh L3-5 VIP TAC3" xsd:string
 [Term]
 id: PCL:0012040
 name: Inh L1-6 SST NPY primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of NPY. These cells also express NPY, SST. The reference data for this cell type is CS201912131_40. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of NPY. These cells also express NPY, SST. The reference data for this cell type is CS201912131_40." [PMID:34616062]
 synonym: "Inh L1-6 SST NPY" EXACT []
 synonym: "NPY expressing GABAergic interneuron of primary motor cortex (Homo sapiens)" EXACT []
 synonym: "RNAseq 040" EXACT []
@@ -10803,8 +10735,7 @@ property_value: prefLabel "Inh L5-6 SST KLHL1" xsd:string
 [Term]
 id: PCL:0012058
 name: Inh L6 SST TH primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of LOC100128108, TH. These cells also express SST, TH. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS201912131_58. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of LOC100128108, TH. These cells also express SST, TH. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS201912131_58." [PMID:34616062]
 synonym: "Inh L6 SST TH" EXACT []
 synonym: "LOC100128108, TH expressing GABAergic interneuron of primary motor cortex (Homo sapiens)" EXACT []
 synonym: "RNAseq 058" EXACT []
@@ -11102,8 +11033,7 @@ property_value: prefLabel "Inh L5-6 PVALB MEPE" xsd:string
 [Term]
 id: PCL:0012072
 name: Inh L1-6 PVALB COL15A1 primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of COL15A1, NPNT. These cells also express COL15A1, PVALB. The reference data for this cell type is CS201912131_72. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of COL15A1, NPNT. These cells also express COL15A1, PVALB. The reference data for this cell type is CS201912131_72." [PMID:34616062]
 synonym: "Chandelier" EXACT []
 synonym: "Chandelier cell" EXACT []
 synonym: "COL15A1, NPNT expressing GABAergic interneuron of primary motor cortex (Homo sapiens)" EXACT []
@@ -11656,8 +11586,7 @@ property_value: prefLabel "Exc L6 THEMIS SNTG2" xsd:string
 [Term]
 id: PCL:0012097
 name: Exc L5-6 THEMIS SMYD1 primary motor cortex glutamatergic neuron (Homo sapiens)
-def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of ATP10A, TRPC5. These cells also express SMYD1, THEMIS. The reference data for this cell type is CS201912131_97. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of ATP10A, TRPC5. These cells also express SMYD1, THEMIS. The reference data for this cell type is CS201912131_97." [PMID:34616062]
 synonym: "ATP10A, TRPC5 expressing glutamatergic neuron of primary motor cortex (Homo sapiens)" EXACT []
 synonym: "Exc L5-6 THEMIS SMYD1" EXACT []
 synonym: "L6 IT Car3" EXACT []
@@ -11745,8 +11674,7 @@ property_value: prefLabel "Exc L5 THEMIS RGPD6" xsd:string
 [Term]
 id: PCL:0012101
 name: Exc L5-6 FEZF2 C9orf135-AS1 primary motor cortex glutamatergic neuron (Homo sapiens)
-def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of SEMA5A, EGFEM1P, FOXP2. These cells also express C9orf135-AS1, FEZF2. The reference data for this cell type is CS201912131_101. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of SEMA5A, EGFEM1P, FOXP2. These cells also express C9orf135-AS1, FEZF2. The reference data for this cell type is CS201912131_101." [PMID:34616062]
 synonym: "Exc L5-6 FEZF2 C9orf135-AS1" EXACT []
 synonym: "L6 CT_2" EXACT []
 synonym: "RNAseq 100" EXACT []
@@ -11979,8 +11907,7 @@ property_value: prefLabel "Exc L3-5 FEZF2 ASGR2" xsd:string
 [Term]
 id: PCL:0012112
 name: Exc L3-5 FEZF2 LINC01107 primary motor cortex glutamatergic neuron (Homo sapiens)
-def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of BTNL9, EDNRB. These cells also express LINC01107, FEZF2. The reference data for this cell type is CS201912131_112. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of BTNL9, EDNRB. These cells also express LINC01107, FEZF2. The reference data for this cell type is CS201912131_112." [PMID:34616062]
 synonym: "BTNL9, EDNRB expressing glutamatergic neuron of primary motor cortex (Homo sapiens)" EXACT []
 synonym: "Exc L3-5 FEZF2 LINC01107" EXACT []
 synonym: "L5 ET_2" EXACT []
@@ -12104,8 +12031,7 @@ property_value: prefLabel "Exc L5-6 FEZF2 LPO" xsd:string
 [Term]
 id: PCL:0012118
 name: OPC L1-6 PDGFRA COL20A1 primary motor cortex glial cell (Homo sapiens)
-def: "A glial cell of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of VCAN, STK32A. These cells also express PDGFRA, COL20A1. The reference data for this cell type is CS201912131_118. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glial cell of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of VCAN, STK32A. These cells also express PDGFRA, COL20A1. The reference data for this cell type is CS201912131_118." [PMID:34616062]
 synonym: "OPC" EXACT []
 synonym: "OPC L1-6 PDGFRA COL20A1" EXACT []
 synonym: "RNAseq 118" EXACT []
@@ -12127,8 +12053,7 @@ property_value: prefLabel "OPC L1-6 PDGFRA COL20A1" xsd:string
 [Term]
 id: PCL:0012119
 name: Oligo L3-6 OPALIN-like ENPP6 primary motor cortex oligodendrocyte (Homo sapiens)
-def: "A oligodendrocyte of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of LOC101927199, ST18, LRRC63, S100B, CDK18. These cells also express ENPP6. The reference data for this cell type is CS201912131_119. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A oligodendrocyte of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of LOC101927199, ST18, LRRC63, S100B, CDK18. These cells also express ENPP6. The reference data for this cell type is CS201912131_119." [PMID:34616062]
 synonym: "LOC101927199, ST18, LRRC63, S100B, CDK18 expressing oligodendrocyte of primary motor cortex (Homo sapiens)" EXACT []
 synonym: "Oligo L3-6 OPALIN ENPP6" EXACT []
 synonym: "Oligo L3-6 OPALIN-like ENPP6" EXACT []
@@ -12232,8 +12157,7 @@ property_value: prefLabel "Astro L1 FGFR3 SERPINI2" xsd:string
 [Term]
 id: PCL:0012124
 name: Astro L1-6 FGFR3 PLCG1 primary motor cortex glial cell (Homo sapiens)
-def: "A glial cell of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of LOC105376917, COL5A3. These cells also express FGFR3, PLCG1. The reference data for this cell type is CS201912131_124. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glial cell of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of LOC105376917, COL5A3. These cells also express FGFR3, PLCG1. The reference data for this cell type is CS201912131_124." [PMID:34616062]
 synonym: "Astro L1-6 FGFR3 PLCG1" EXACT []
 synonym: "Astro_2" EXACT []
 synonym: "LOC105376917, COL5A3 expressing glial cell of primary motor cortex (Homo sapiens)" EXACT []
@@ -12254,8 +12178,7 @@ property_value: prefLabel "Astro L1-6 FGFR3 PLCG1" xsd:string
 [Term]
 id: PCL:0012125
 name: Endo L2-5 NOSTRIN SRGN primary motor cortex endothelial cell (Homo sapiens)
-def: "A endothelial cell of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CLDN5. These cells also express NOSTRIN, SRGN. The reference data for this cell type is CS201912131_125. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A endothelial cell of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CLDN5. These cells also express NOSTRIN, SRGN. The reference data for this cell type is CS201912131_125." [PMID:34616062]
 synonym: "CLDN5 expressing endothelial cell of primary motor cortex (Homo sapiens)" EXACT []
 synonym: "Endo" EXACT []
 synonym: "Endo L2-5 NOSTRIN SRGN" EXACT []
@@ -12268,7 +12191,6 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/115677 {xref="PMID:346
 relationship: RO:0002292 https://identifiers.org/ncbigene/5552 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/7122 ! expresses
 relationship: RO:HOM0000007 PCL:0011103 ! Endo primary motor cortex endothelial cell (Mus musculus)
-relationship: RO:HOM0000007 PCL:0013107
 property_value: IAO:0000028 "Endo L2-5 NOSTRIN SRGN M1 (Human)" xsd:string
 property_value: PCL:0010058 "CLDN5" xsd:string
 property_value: prefLabel "Endo L2-5 NOSTRIN SRGN" xsd:string
@@ -12276,8 +12198,7 @@ property_value: prefLabel "Endo L2-5 NOSTRIN SRGN" xsd:string
 [Term]
 id: PCL:0012126
 name: VLMC L1-5 PDGFRA COLEC12 primary motor cortex vascular leptomeningeal cell (Homo sapiens)
-def: "A vascular leptomeningeal cell of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of COL1A2, COLEC12. These cells also express PDGFRA, COLEC12. The reference data for this cell type is CS201912131_126. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A vascular leptomeningeal cell of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of COL1A2, COLEC12. These cells also express PDGFRA, COLEC12. The reference data for this cell type is CS201912131_126." [PMID:34616062]
 synonym: "COL1A2, COLEC12 expressing vascular leptomeningeal cell of primary motor cortex (Homo sapiens)" EXACT []
 synonym: "RNAseq 126" EXACT []
 synonym: "VLMC" EXACT []
@@ -12289,7 +12210,6 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/1278 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/5156 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/81035 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/81035 ! expresses
-relationship: RO:HOM0000007 PCL:0011222
 relationship: RO:HOM0000007 PCL:0013134 ! VLMC(i) primary motor cortex vascular leptomeningeal cell (Callithrix jacchus)
 property_value: IAO:0000028 "VLMC L1-5 PDGFRA COLEC12 M1 (Human)" xsd:string
 property_value: PCL:0010058 "COL1A2" xsd:string
@@ -12299,8 +12219,7 @@ property_value: prefLabel "VLMC L1-5 PDGFRA COLEC12" xsd:string
 [Term]
 id: PCL:0012127
 name: Micro L1-6 TYROBP CD74 primary motor cortex microglial cell (Homo sapiens)
-def: "A microglial cell of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of APBB1IP, P2RY12. These cells also express TYROBP, CD74. The reference data for this cell type is CS201912131_127. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A microglial cell of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of APBB1IP, P2RY12. These cells also express TYROBP, CD74. The reference data for this cell type is CS201912131_127." [PMID:34616062]
 synonym: "APBB1IP, P2RY12 expressing microglial cell of primary motor cortex (Homo sapiens)" EXACT []
 synonym: "Micro L1-6 TYROBP CD74" EXACT []
 synonym: "Microglia-PVM" EXACT []
@@ -12313,7 +12232,6 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/54518 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/64805 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/7305 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/972 {xref="PMID:34616066"} ! expresses
-relationship: RO:HOM0000007 PCL:0011229
 relationship: RO:HOM0000007 PCL:0013094 ! Micro TYROBP LOC103788313 primary motor cortex microglial cell (Callithrix jacchus)
 property_value: IAO:0000028 "Micro L1-6 TYROBP CD74 M1 (Human)" xsd:string
 property_value: PCL:0010058 "APBB1IP" xsd:string
@@ -12323,8 +12241,7 @@ property_value: prefLabel "Micro L1-6 TYROBP CD74" xsd:string
 [Term]
 id: PCL:0012128
 name: (Mouse Lamp5)-like primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of EYA4, MYO16. The reference data for this cell type is CS201912131_128. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of EYA4, MYO16. The reference data for this cell type is CS201912131_128." [PMID:34616062]
 synonym: "(Mouse Lamp5)-like" EXACT []
 synonym: "EYA4, MYO16 expressing GABAergic interneuron of primary motor cortex (Homo sapiens)" EXACT []
 synonym: "Lamp5" EXACT []
@@ -12344,8 +12261,7 @@ property_value: prefLabel "(Mouse Lamp5)-like" xsd:string
 [Term]
 id: PCL:0012129
 name: (Mouse Sncg)-like primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of ADARB2, CNR1, CXCL14. The reference data for this cell type is CS201912131_129. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of ADARB2, CNR1, CXCL14. The reference data for this cell type is CS201912131_129." [PMID:34616062]
 synonym: "(Mouse Sncg)-like" EXACT []
 synonym: "ADARB2, CNR1, CXCL14 expressing GABAergic interneuron of primary motor cortex (Homo sapiens)" EXACT []
 synonym: "RNAseq 009-013, 016-018" EXACT []
@@ -12367,8 +12283,7 @@ property_value: prefLabel "(Mouse Sncg)-like" xsd:string
 [Term]
 id: PCL:0012130
 name: (Mouse Vip)-like primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of VIP. The reference data for this cell type is CS201912131_130. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of VIP. The reference data for this cell type is CS201912131_130." [PMID:34616062]
 synonym: "(Mouse Vip)-like" EXACT []
 synonym: "n24" EXACT []
 synonym: "RNAseq 019-039" EXACT []
@@ -12387,8 +12302,7 @@ property_value: prefLabel "(Mouse Vip)-like" xsd:string
 [Term]
 id: PCL:0012131
 name: (Mouse Sst)-like primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of NXPH1, SOX6, SST. The reference data for this cell type is CS201912131_131. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of NXPH1, SOX6, SST. The reference data for this cell type is CS201912131_131." [PMID:34616062]
 synonym: "(Mouse Sst)-like" EXACT []
 synonym: "n46" EXACT []
 synonym: "NXPH1, SOX6, SST expressing GABAergic interneuron of primary motor cortex (Homo sapiens)" EXACT []
@@ -12411,8 +12325,7 @@ property_value: prefLabel "(Mouse Sst)-like" xsd:string
 [Term]
 id: PCL:0012132
 name: (Mouse Pvalb)-like primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of LOC101929680, ADAMTS17. The reference data for this cell type is CS201912131_132. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of LOC101929680, ADAMTS17. The reference data for this cell type is CS201912131_132." [PMID:34616062]
 synonym: "(Mouse Pvalb)-like" EXACT []
 synonym: "LOC101929680, ADAMTS17 expressing GABAergic interneuron of primary motor cortex (Homo sapiens)" EXACT []
 synonym: "n63" EXACT []
@@ -12433,8 +12346,7 @@ property_value: prefLabel "(Mouse Pvalb)-like" xsd:string
 [Term]
 id: PCL:0012133
 name: (Mouse L2/3 IT)-like primary motor cortex glutamatergic neuron (Homo sapiens)
-def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912131_133. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912131_133." [PMID:34616062]
 synonym: "(Mouse L2/3 IT)-like" EXACT []
 synonym: "L2/3 IT" EXACT []
 synonym: "RNAseq 073-080" EXACT []
@@ -12450,8 +12362,7 @@ property_value: prefLabel "(Mouse L2/3 IT)-like" xsd:string
 [Term]
 id: PCL:0012134
 name: (Mouse L5 IT)-like primary motor cortex glutamatergic neuron (Homo sapiens)
-def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of LOC105374971, RORB. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912131_134. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of LOC105374971, RORB. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912131_134." [PMID:34616062]
 synonym: "(Mouse L5 IT)-like" EXACT []
 synonym: "L5 IT" EXACT []
 synonym: "LOC105374971, RORB expressing glutamatergic neuron of primary motor cortex (Homo sapiens)" EXACT []
@@ -12472,8 +12383,7 @@ property_value: prefLabel "(Mouse L5 IT)-like" xsd:string
 [Term]
 id: PCL:0012135
 name: (Mouse L6 IT)-like primary motor cortex glutamatergic neuron (Homo sapiens)
-def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of LOC101928278, LINC00343, THEMIS. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912131_135. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of LOC101928278, LINC00343, THEMIS. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912131_135." [PMID:34616062]
 synonym: "(Mouse L6 IT)-like" EXACT []
 synonym: "L6 IT" EXACT []
 synonym: "LOC101928278, LINC00343, THEMIS expressing glutamatergic neuron of primary motor cortex (Homo sapiens)" EXACT []
@@ -12497,8 +12407,7 @@ property_value: prefLabel "(Mouse L6 IT)-like" xsd:string
 [Term]
 id: PCL:0012136
 name: (Mouse L6 CT)-like primary motor cortex glutamatergic neuron (Homo sapiens)
-def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of SEMA5A, EGFEM1P, HS3ST4. These cells have projection type corticothalamic projecting. The reference data for this cell type is CS201912131_136. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of SEMA5A, EGFEM1P, HS3ST4. These cells have projection type corticothalamic projecting. The reference data for this cell type is CS201912131_136." [PMID:34616062]
 synonym: "(Mouse L6 CT)-like" EXACT []
 synonym: "L6 CT" EXACT []
 synonym: "n104" EXACT []
@@ -12522,8 +12431,7 @@ property_value: prefLabel "(Mouse L6 CT)-like" xsd:string
 [Term]
 id: PCL:0012137
 name: (Mouse L6b)-like primary motor cortex glutamatergic neuron (Homo sapiens)
-def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of SEMA3D, MDFIC. The reference data for this cell type is CS201912131_137. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of SEMA3D, MDFIC. The reference data for this cell type is CS201912131_137." [PMID:34616062]
 synonym: "(Mouse L6b)-like" EXACT []
 synonym: "L6b" EXACT []
 synonym: "n109" EXACT []
@@ -12544,8 +12452,7 @@ property_value: prefLabel "(Mouse L6b)-like" xsd:string
 [Term]
 id: PCL:0012138
 name: (Mouse L5 ET)-like primary motor cortex glutamatergic neuron (Homo sapiens)
-def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of LOC105376457, OR51E2. These cells have projection type extratelencephalic projecting. The reference data for this cell type is CS201912131_138. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of LOC105376457, OR51E2. These cells have projection type extratelencephalic projecting. The reference data for this cell type is CS201912131_138." [PMID:34616062]
 synonym: "(Mouse L5 ET)-like" EXACT []
 synonym: "L5 ET" EXACT []
 synonym: "LOC105376457, OR51E2 expressing glutamatergic neuron of primary motor cortex (Homo sapiens)" EXACT []
@@ -12567,8 +12474,7 @@ property_value: prefLabel "(Mouse L5 ET)-like" xsd:string
 [Term]
 id: PCL:0012139
 name: (Mouse L5/6 NP)-like primary motor cortex glutamatergic neuron (Homo sapiens)
-def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of NPSR1-AS1. These cells have projection type near projecting. The reference data for this cell type is CS201912131_139. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of NPSR1-AS1. These cells have projection type near projecting. The reference data for this cell type is CS201912131_139." [PMID:34616062]
 synonym: "(Mouse L5/6 NP)-like" EXACT []
 synonym: "L5/6 NP" EXACT []
 synonym: "n116" EXACT []
@@ -12588,8 +12494,7 @@ property_value: prefLabel "(Mouse L5/6 NP)-like" xsd:string
 [Term]
 id: PCL:0012140
 name: Oligo primary motor cortex glial cell (Homo sapiens)
-def: "A glial cell of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of ST18. The reference data for this cell type is CS201912131_140. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glial cell of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of ST18. The reference data for this cell type is CS201912131_140." [PMID:34616062]
 synonym: "Oligo" EXACT []
 synonym: "Oligodendrocyte" EXACT []
 synonym: "RNAseq 117, 119-121" EXACT []
@@ -12598,8 +12503,6 @@ is_a: CL:0000125
 relationship: BFO:0000050 UBERON:0001384
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 https://identifiers.org/ncbigene/9705 ! expresses
-relationship: RO:HOM0000007 PCL:0011212
-relationship: RO:HOM0000007 PCL:0013105
 property_value: IAO:0000028 "Oligo M1 (Human)" xsd:string
 property_value: PCL:0010058 "ST18" xsd:string
 property_value: prefLabel "Oligo" xsd:string
@@ -12607,8 +12510,7 @@ property_value: prefLabel "Oligo" xsd:string
 [Term]
 id: PCL:0012142
 name: Astro primary motor cortex glial cell (Homo sapiens)
-def: "A glial cell of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of RNF219-AS1. The reference data for this cell type is CS201912131_142. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glial cell of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of RNF219-AS1. The reference data for this cell type is CS201912131_142." [PMID:34616062]
 synonym: "Astro" EXACT []
 synonym: "Astrocyte" EXACT []
 synonym: "n123" EXACT []
@@ -12618,8 +12520,6 @@ is_a: CL:0000125
 relationship: BFO:0000050 UBERON:0001384
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 https://identifiers.org/ncbigene/100874222 ! expresses
-relationship: RO:HOM0000007 PCL:0011210
-relationship: RO:HOM0000007 PCL:0013106
 property_value: IAO:0000028 "Astro M1 (Human)" xsd:string
 property_value: PCL:0010058 "RNF219-AS1" xsd:string
 property_value: prefLabel "Astro" xsd:string
@@ -12627,8 +12527,7 @@ property_value: prefLabel "Astro" xsd:string
 [Term]
 id: PCL:0012143
 name: (Mouse CGE/PoA)-like primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_143. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_143." [PMID:34616062]
 synonym: "(Mouse CGE/PoA)-like" EXACT []
 synonym: "CGE/PoA" EXACT []
 synonym: "RNAseq 001-039" EXACT []
@@ -12644,8 +12543,7 @@ property_value: prefLabel "(Mouse CGE/PoA)-like" xsd:string
 [Term]
 id: PCL:0012144
 name: (Mouse MGE)-like primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_144. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_144." [PMID:34616062]
 synonym: "(Mouse MGE)-like" EXACT []
 synonym: "MGE" EXACT []
 synonym: "n44" EXACT []
@@ -12662,8 +12560,7 @@ property_value: prefLabel "(Mouse MGE)-like" xsd:string
 [Term]
 id: PCL:0012145
 name: (Mouse IT projecting)-like primary motor cortex glutamatergic neuron (Homo sapiens)
-def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912131_145. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912131_145." [PMID:34616062]
 synonym: "(Mouse IT projecting)-like" EXACT []
 synonym: "IT projecting" EXACT []
 synonym: "n80" EXACT []
@@ -12681,8 +12578,7 @@ property_value: prefLabel "(Mouse IT projecting)-like" xsd:string
 [Term]
 id: PCL:0012146
 name: (Mouse Non-IT projecting)-like primary motor cortex glutamatergic neuron (Homo sapiens)
-def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_146. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_146." [PMID:34616062]
 synonym: "(Mouse Non-IT projecting)-like" EXACT []
 synonym: "Non-IT projecting" EXACT []
 synonym: "RNAseq 097-116" EXACT []
@@ -12697,8 +12593,7 @@ property_value: prefLabel "(Mouse Non-IT projecting)-like" xsd:string
 [Term]
 id: PCL:0012152
 name: (Mouse Lamp5)-like_C2 primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_152. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_152." [PMID:34616062]
 synonym: "(Mouse Lamp5)-like_C2" EXACT []
 synonym: "Lamp5_2" EXACT []
 synonym: "n8" EXACT []
@@ -12714,8 +12609,7 @@ property_value: prefLabel "(Mouse Lamp5)-like_C2" xsd:string
 [Term]
 id: PCL:0012153
 name: (Mouse Lamp5)-like_C3 primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_153. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_153." [PMID:34616062]
 synonym: "(Mouse Lamp5)-like_C3" EXACT []
 synonym: "Lamp5 Lhx6" EXACT []
 synonym: "Lamp5_3" EXACT []
@@ -12732,8 +12626,7 @@ property_value: prefLabel "(Mouse Lamp5)-like_C3" xsd:string
 [Term]
 id: PCL:0012154
 name: (Mouse Lamp5)-like_C4 primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_154. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_154." [PMID:34616062]
 synonym: "(Mouse Lamp5)-like_C4" EXACT []
 synonym: "Lamp5_4" EXACT []
 synonym: "RNAseq 007-008" EXACT []
@@ -12748,8 +12641,7 @@ property_value: prefLabel "(Mouse Lamp5)-like_C4" xsd:string
 [Term]
 id: PCL:0012155
 name: (Mouse Sncg)-like_C1 primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_155. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_155." [PMID:34616062]
 synonym: "(Mouse Sncg)-like_C1" EXACT []
 synonym: "RNAseq 009-010" EXACT []
 synonym: "Sncg_1" EXACT []
@@ -12764,8 +12656,7 @@ property_value: prefLabel "(Mouse Sncg)-like_C1" xsd:string
 [Term]
 id: PCL:0012156
 name: (Mouse Sncg)-like_C3 primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_156. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_156." [PMID:34616062]
 synonym: "(Mouse Sncg)-like_C3" EXACT []
 synonym: "n19" EXACT []
 synonym: "RNAseq 012-013" EXACT []
@@ -12781,8 +12672,7 @@ property_value: prefLabel "(Mouse Sncg)-like_C3" xsd:string
 [Term]
 id: PCL:0012157
 name: (Mouse Lamp5)-like_C5 primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_157. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_157." [PMID:34616062]
 synonym: "(Mouse Lamp5)-like_C5" EXACT []
 synonym: "Lamp5_5" EXACT []
 synonym: "n21" EXACT []
@@ -12797,8 +12687,7 @@ property_value: prefLabel "(Mouse Lamp5)-like_C5" xsd:string
 [Term]
 id: PCL:0012158
 name: (Mouse Sncg)-like_C4 primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_158. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_158." [PMID:34616062]
 synonym: "(Mouse Sncg)-like_C4" EXACT []
 synonym: "n22" EXACT []
 synonym: "RNAseq 016-018" EXACT []
@@ -12814,8 +12703,7 @@ property_value: prefLabel "(Mouse Sncg)-like_C4" xsd:string
 [Term]
 id: PCL:0012159
 name: (Mouse Vip)-like_C1 primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_159. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_159." [PMID:34616062]
 synonym: "(Mouse Vip)-like_C1" EXACT []
 synonym: "n26" EXACT []
 synonym: "RNAseq 019-021" EXACT []
@@ -12831,8 +12719,7 @@ property_value: prefLabel "(Mouse Vip)-like_C1" xsd:string
 [Term]
 id: PCL:0012160
 name: (Mouse Vip)-like_C2 primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_160. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_160." [PMID:34616062]
 synonym: "(Mouse Vip)-like_C2" EXACT []
 synonym: "RNAseq 022-028, 039" EXACT []
 synonym: "Vip_2" EXACT []
@@ -12847,8 +12734,7 @@ property_value: prefLabel "(Mouse Vip)-like_C2" xsd:string
 [Term]
 id: PCL:0012161
 name: (Mouse Vip)-like_C3 primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_161. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_161." [PMID:34616062]
 synonym: "(Mouse Vip)-like_C3" EXACT []
 synonym: "n35" EXACT []
 synonym: "RNAseq 029-033" EXACT []
@@ -12864,8 +12750,7 @@ property_value: prefLabel "(Mouse Vip)-like_C3" xsd:string
 [Term]
 id: PCL:0012162
 name: (Mouse Vip)-like_C4 primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_162. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_162." [PMID:34616062]
 synonym: "(Mouse Vip)-like_C4" EXACT []
 synonym: "RNAseq 034-038" EXACT []
 synonym: "Vip_4" EXACT []
@@ -12880,8 +12765,7 @@ property_value: prefLabel "(Mouse Vip)-like_C4" xsd:string
 [Term]
 id: PCL:0012163
 name: (Mouse Sst)-like_C1 primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_163. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_163." [PMID:34616062]
 synonym: "(Mouse Sst)-like_C1" EXACT []
 synonym: "RNAseq 041-042" EXACT []
 synonym: "Sst_1" EXACT []
@@ -12896,8 +12780,7 @@ property_value: prefLabel "(Mouse Sst)-like_C1" xsd:string
 [Term]
 id: PCL:0012164
 name: (Mouse Sst)-like_C2 primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_164. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_164." [PMID:34616062]
 synonym: "(Mouse Sst)-like_C2" EXACT []
 synonym: "RNAseq 043-045" EXACT []
 synonym: "Sst_2" EXACT []
@@ -12912,8 +12795,7 @@ property_value: prefLabel "(Mouse Sst)-like_C2" xsd:string
 [Term]
 id: PCL:0012165
 name: (Mouse Sst)-like_C3 primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_165. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_165." [PMID:34616062]
 synonym: "(Mouse Sst)-like_C3" EXACT []
 synonym: "RNAseq 046-047, 050-052" EXACT []
 synonym: "Sst_3" EXACT []
@@ -12928,8 +12810,7 @@ property_value: prefLabel "(Mouse Sst)-like_C3" xsd:string
 [Term]
 id: PCL:0012166
 name: (Mouse Sst)-like_C4 primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_166. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_166." [PMID:34616062]
 synonym: "(Mouse Sst)-like_C4" EXACT []
 synonym: "n55" EXACT []
 synonym: "RNAseq 048-049" EXACT []
@@ -12945,8 +12826,7 @@ property_value: prefLabel "(Mouse Sst)-like_C4" xsd:string
 [Term]
 id: PCL:0012167
 name: (Mouse Sst)-like_C5 primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_167. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_167." [PMID:34616062]
 synonym: "(Mouse Sst)-like_C5" EXACT []
 synonym: "n60" EXACT []
 synonym: "RNAseq 053-054" EXACT []
@@ -12962,8 +12842,7 @@ property_value: prefLabel "(Mouse Sst)-like_C5" xsd:string
 [Term]
 id: PCL:0012168
 name: (Mouse Sst)-like_C6 primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_168. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_168." [PMID:34616062]
 synonym: "(Mouse Sst)-like_C6" EXACT []
 synonym: "n61" EXACT []
 synonym: "RNAseq 055-057" EXACT []
@@ -12979,8 +12858,7 @@ property_value: prefLabel "(Mouse Sst)-like_C6" xsd:string
 [Term]
 id: PCL:0012169
 name: (Mouse Pvalb)-like_C1 primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_169. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_169." [PMID:34616062]
 synonym: "(Mouse Pvalb)-like_C1" EXACT []
 synonym: "n65" EXACT []
 synonym: "Pvalb_1" EXACT []
@@ -12996,8 +12874,7 @@ property_value: prefLabel "(Mouse Pvalb)-like_C1" xsd:string
 [Term]
 id: PCL:0012170
 name: (Mouse Pvalb)-like_C2 primary motor cortex GABAergic interneuron (Homo sapiens)
-def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_170. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_170." [PMID:34616062]
 synonym: "(Mouse Pvalb)-like_C2" EXACT []
 synonym: "n74" EXACT []
 synonym: "Pvalb_2" EXACT []
@@ -13013,8 +12890,7 @@ property_value: prefLabel "(Mouse Pvalb)-like_C2" xsd:string
 [Term]
 id: PCL:0012171
 name: (Mouse IT projecting)-like(i) primary motor cortex glutamatergic neuron (Homo sapiens)
-def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CUX2, FAM19A1. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912131_171. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CUX2, FAM19A1. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912131_171." [PMID:34616062]
 synonym: "(Mouse IT projecting)-like(i)" EXACT []
 synonym: "CUX2, FAM19A1 expressing glutamatergic neuron of primary motor cortex (Homo sapiens)" EXACT []
 synonym: "L2/3 IT" EXACT []
@@ -13036,8 +12912,7 @@ property_value: prefLabel "(Mouse IT projecting)-like(i)" xsd:string
 [Term]
 id: PCL:0012172
 name: (Mouse L5 IT)-like_C1 primary motor cortex glutamatergic neuron (Homo sapiens)
-def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912131_172. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912131_172." [PMID:34616062]
 synonym: "(Mouse L5 IT)-like_C1" EXACT []
 synonym: "L5 IT_1" EXACT []
 synonym: "RNAseq 079-086" EXACT []
@@ -13053,8 +12928,7 @@ property_value: prefLabel "(Mouse L5 IT)-like_C1" xsd:string
 [Term]
 id: PCL:0012173
 name: (Mouse L5 IT)-like_C2 primary motor cortex glutamatergic neuron (Homo sapiens)
-def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912131_173. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912131_173." [PMID:34616062]
 synonym: "(Mouse L5 IT)-like_C2" EXACT []
 synonym: "L5 IT_2" EXACT []
 synonym: "RNAseq 087, 089-090" EXACT []
@@ -13070,8 +12944,7 @@ property_value: prefLabel "(Mouse L5 IT)-like_C2" xsd:string
 [Term]
 id: PCL:0012174
 name: (Mouse L6 IT)-like_C2 primary motor cortex glutamatergic neuron (Homo sapiens)
-def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912131_174. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912131_174." [PMID:34616062]
 synonym: "(Mouse L6 IT)-like_C2" EXACT []
 synonym: "L6 IT_2" EXACT []
 synonym: "RNAseq 088, 095" EXACT []
@@ -13087,8 +12960,7 @@ property_value: prefLabel "(Mouse L6 IT)-like_C2" xsd:string
 [Term]
 id: PCL:0012175
 name: (Mouse L5 IT)-like_C3 primary motor cortex glutamatergic neuron (Homo sapiens)
-def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912131_175. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912131_175." [PMID:34616062]
 synonym: "(Mouse L5 IT)-like_C3" EXACT []
 synonym: "L5 IT_3" EXACT []
 synonym: "n100" EXACT []
@@ -13105,8 +12977,7 @@ property_value: prefLabel "(Mouse L5 IT)-like_C3" xsd:string
 [Term]
 id: PCL:0012176
 name: (Mouse L6 IT)-like_C1 primary motor cortex glutamatergic neuron (Homo sapiens)
-def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912131_176. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912131_176." [PMID:34616062]
 synonym: "(Mouse L6 IT)-like_C1" EXACT []
 synonym: "L6 IT_1" EXACT []
 synonym: "n102" EXACT []
@@ -13123,8 +12994,7 @@ property_value: prefLabel "(Mouse L6 IT)-like_C1" xsd:string
 [Term]
 id: PCL:0012177
 name: (Mouse L6 CT)-like_C1 primary motor cortex glutamatergic neuron (Homo sapiens)
-def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells have projection type corticothalamic projecting. The reference data for this cell type is CS201912131_177. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells have projection type corticothalamic projecting. The reference data for this cell type is CS201912131_177." [PMID:34616062]
 synonym: "(Mouse L6 CT)-like_C1" EXACT []
 synonym: "L6 CT_1" EXACT []
 synonym: "RNAseq 097-099, 101-102" EXACT []
@@ -13140,8 +13010,7 @@ property_value: prefLabel "(Mouse L6 CT)-like_C1" xsd:string
 [Term]
 id: PCL:0012178
 name: (Mouse L5 ET)-like_C1 primary motor cortex glutamatergic neuron (Homo sapiens)
-def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells have projection type extratelencephalic projecting. The reference data for this cell type is CS201912131_178. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Homo sapiens primary motor cortex. These cells have projection type extratelencephalic projecting. The reference data for this cell type is CS201912131_178." [PMID:34616062]
 synonym: "(Mouse L5 ET)-like_C1" EXACT []
 synonym: "L5 ET_1" EXACT []
 synonym: "RNAseq 109-110" EXACT []
@@ -13157,8 +13026,7 @@ property_value: prefLabel "(Mouse L5 ET)-like_C1" xsd:string
 [Term]
 id: PCL:0012179
 name: Oligo_C2 primary motor cortex oligodendrocyte (Homo sapiens)
-def: "A oligodendrocyte of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_179. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A oligodendrocyte of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_179." [PMID:34616062]
 synonym: "n122" EXACT []
 synonym: "Oligo_2" EXACT []
 synonym: "Oligo_C2" EXACT []
@@ -13174,8 +13042,7 @@ property_value: prefLabel "Oligo_C2" xsd:string
 [Term]
 id: PCL:0012180
 name: Astro_C1 primary motor cortex glial cell (Homo sapiens)
-def: "A glial cell of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_180. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glial cell of the Homo sapiens primary motor cortex. The reference data for this cell type is CS201912131_180." [PMID:34616062]
 synonym: "Astro_1" EXACT []
 synonym: "Astro_C1" EXACT []
 synonym: "RNAseq 122-123" EXACT []
@@ -13190,8 +13057,7 @@ property_value: prefLabel "Astro_C1" xsd:string
 [Term]
 id: PCL:0013001
 name: Inh SST NPY primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of NPY. These cells also express NPY, SST. The reference data for this cell type is CS201912132_1. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of NPY. These cells also express NPY, SST. The reference data for this cell type is CS201912132_1." [PMID:34616062]
 synonym: "Inh SST NPY" EXACT []
 synonym: "NPY expressing GABAergic interneuron of primary motor cortex (Callithrix jacchus)" EXACT []
 synonym: "RNAseq 01" EXACT []
@@ -13211,8 +13077,7 @@ property_value: prefLabel "Inh SST NPY" xsd:string
 [Term]
 id: PCL:0013002
 name: Inh LAMP5 COL5A2 primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of TOX3, GLIS3. These cells also express COL5A2, LAMP5. The reference data for this cell type is CS201912132_2. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of TOX3, GLIS3. These cells also express COL5A2, LAMP5. The reference data for this cell type is CS201912132_2." [PMID:34616062]
 synonym: "Inh LAMP5 COL5A2" EXACT []
 synonym: "Lamp5_5" EXACT []
 synonym: "RNAseq 02" EXACT []
@@ -13233,8 +13098,7 @@ property_value: prefLabel "Inh LAMP5 COL5A2" xsd:string
 [Term]
 id: PCL:0013003
 name: Inh LAMP5 TOX2 primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of ALK, TOX2, RELN. These cells also express TOX2, LAMP5. The reference data for this cell type is CS201912132_3. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of ALK, TOX2, RELN. These cells also express TOX2, LAMP5. The reference data for this cell type is CS201912132_3." [PMID:34616062]
 synonym: "ALK, TOX2, RELN expressing GABAergic interneuron of primary motor cortex (Callithrix jacchus)" EXACT []
 synonym: "Inh LAMP5 TOX2" EXACT []
 synonym: "Lamp5_1" EXACT []
@@ -13258,8 +13122,7 @@ property_value: prefLabel "Inh LAMP5 TOX2" xsd:string
 [Term]
 id: PCL:0013004
 name: Inh LAMP5 TRPC6 primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of TRPC6, TACR1. These cells also express TRPC6, LAMP5. The reference data for this cell type is CS201912132_4. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of TRPC6, TACR1. These cells also express TRPC6, LAMP5. The reference data for this cell type is CS201912132_4." [PMID:34616062]
 synonym: "Inh LAMP5 TRPC6" EXACT []
 synonym: "Lamp5 Lhx6" EXACT []
 synonym: "Lamp5_3" EXACT []
@@ -13320,8 +13183,7 @@ property_value: prefLabel "Inh LAMP5 LOC108591196" xsd:string
 [Term]
 id: PCL:0013007
 name: Inh PAX6 HMBOX1 primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of RELN, SORCS3. These cells also express HMBOX1, PAX6. The reference data for this cell type is CS201912132_7. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of RELN, SORCS3. These cells also express HMBOX1, PAX6. The reference data for this cell type is CS201912132_7." [PMID:34616062]
 synonym: "Inh PAX6 HMBOX1" EXACT []
 synonym: "Lamp5_4" EXACT []
 synonym: "RELN, SORCS3 expressing GABAergic interneuron of primary motor cortex (Callithrix jacchus)" EXACT []
@@ -13343,8 +13205,7 @@ property_value: prefLabel "Inh PAX6 HMBOX1" xsd:string
 [Term]
 id: PCL:0013008
 name: Inh SNCG PLPPR1 primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of TRPM3, CNR1. These cells also express PLPPR1, SNCG. The reference data for this cell type is CS201912132_8. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of TRPM3, CNR1. These cells also express PLPPR1, SNCG. The reference data for this cell type is CS201912132_8." [PMID:34616062]
 synonym: "Inh SNCG PLPPR1" EXACT []
 synonym: "RNAseq 08" EXACT []
 synonym: "Sncg_2" EXACT []
@@ -13705,8 +13566,7 @@ property_value: prefLabel "Inh VIP LOC108588539" xsd:string
 [Term]
 id: PCL:0013026
 name: Inh PAX6 MEIS2 primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of PBX3. These cells also express MEIS2, PAX6. The reference data for this cell type is CS201912132_26. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of PBX3. These cells also express MEIS2, PAX6. The reference data for this cell type is CS201912132_26." [PMID:34616062]
 synonym: "Inh PAX6 MEIS2" EXACT []
 synonym: "Meis2" EXACT []
 synonym: "PBX3 expressing GABAergic interneuron of primary motor cortex (Callithrix jacchus)" EXACT []
@@ -13726,8 +13586,7 @@ property_value: prefLabel "Inh PAX6 MEIS2" xsd:string
 [Term]
 id: PCL:0013027
 name: Inh SST LOC108589054 primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of SULF1, THSD7B. These cells also express SST, LOC108589054. The reference data for this cell type is CS201912132_27. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of SULF1, THSD7B. These cells also express SST, LOC108589054. The reference data for this cell type is CS201912132_27." [PMID:34616062]
 synonym: "Inh SST LOC108589054" EXACT []
 synonym: "RNAseq 27" EXACT []
 synonym: "Sst_5" EXACT []
@@ -13749,8 +13608,7 @@ property_value: prefLabel "Inh SST LOC108589054" xsd:string
 [Term]
 id: PCL:0013028
 name: Inh SST LOC108588801 primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of PCDH11X, COL25A1, LOC108588801. These cells also express SST, LOC108588801. The reference data for this cell type is CS201912132_28. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of PCDH11X, COL25A1, LOC108588801. These cells also express SST, LOC108588801. The reference data for this cell type is CS201912132_28." [PMID:34616062]
 synonym: "Inh SST LOC108588801" EXACT []
 synonym: "PCDH11X, COL25A1, LOC108588801 expressing GABAergic interneuron of primary motor cortex (Callithrix jacchus)" EXACT []
 synonym: "RNAseq 28" EXACT []
@@ -13774,8 +13632,7 @@ property_value: prefLabel "Inh SST LOC108588801" xsd:string
 [Term]
 id: PCL:0013029
 name: Inh SST LOC103788138 primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of GLRA3, ALK, TRHDE. These cells also express SST, LOC103788138. The reference data for this cell type is CS201912132_29. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of GLRA3, ALK, TRHDE. These cells also express SST, LOC103788138. The reference data for this cell type is CS201912132_29." [PMID:34616062]
 synonym: "GLRA3, ALK, TRHDE expressing GABAergic interneuron of primary motor cortex (Callithrix jacchus)" EXACT []
 synonym: "Inh SST LOC103788138" EXACT []
 synonym: "RNAseq 29" EXACT []
@@ -13942,8 +13799,7 @@ property_value: prefLabel "Inh SST P4HA1" xsd:string
 [Term]
 id: PCL:0013037
 name: Inh SST LTBP1 primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of COL12A1, TRHDE. These cells also express LTBP1, SST. The reference data for this cell type is CS201912132_37. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of COL12A1, TRHDE. These cells also express LTBP1, SST. The reference data for this cell type is CS201912132_37." [PMID:34616062]
 synonym: "COL12A1, TRHDE expressing GABAergic interneuron of primary motor cortex (Callithrix jacchus)" EXACT []
 synonym: "Inh SST LTBP1" EXACT []
 synonym: "RNAseq 37" EXACT []
@@ -13965,8 +13821,7 @@ property_value: prefLabel "Inh SST LTBP1" xsd:string
 [Term]
 id: PCL:0013038
 name: Inh SST AIM1 primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of NELL1, TRHDE. These cells also express AIM1, SST. The reference data for this cell type is CS201912132_38. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of NELL1, TRHDE. These cells also express AIM1, SST. The reference data for this cell type is CS201912132_38." [PMID:34616062]
 synonym: "Inh SST AIM1" EXACT []
 synonym: "NELL1, TRHDE expressing GABAergic interneuron of primary motor cortex (Callithrix jacchus)" EXACT []
 synonym: "RNAseq 38" EXACT []
@@ -13988,8 +13843,7 @@ property_value: prefLabel "Inh SST AIM1" xsd:string
 [Term]
 id: PCL:0013039
 name: Inh SST VAPA primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of EYS, LOC103793609. These cells also express VAPA, SST. The reference data for this cell type is CS201912132_39. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of EYS, LOC103793609. These cells also express VAPA, SST. The reference data for this cell type is CS201912132_39." [PMID:34616062]
 synonym: "EYS, LOC103793609 expressing GABAergic interneuron of primary motor cortex (Callithrix jacchus)" EXACT []
 synonym: "Inh SST VAPA" EXACT []
 synonym: "RNAseq 39" EXACT []
@@ -14250,8 +14104,7 @@ property_value: prefLabel "Inh PVALB PCDH19" xsd:string
 [Term]
 id: PCL:0013051
 name: Inh PVALB KLHL29 primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of ABCB4, RNF144B, SLIT2. These cells also express KLHL29, PVALB. The reference data for this cell type is CS201912132_51. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of ABCB4, RNF144B, SLIT2. These cells also express KLHL29, PVALB. The reference data for this cell type is CS201912132_51." [PMID:34616062]
 synonym: "ABCB4, RNF144B, SLIT2 expressing GABAergic interneuron of primary motor cortex (Callithrix jacchus)" EXACT []
 synonym: "Inh PVALB KLHL29" EXACT []
 synonym: "Pvalb_2" EXACT []
@@ -14275,8 +14128,7 @@ property_value: prefLabel "Inh PVALB KLHL29" xsd:string
 [Term]
 id: PCL:0013052
 name: Inh PVALB FAM19A4 primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of FAM19A1, POSTN. These cells also express PVALB, FAM19A4. The reference data for this cell type is CS201912132_52. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of FAM19A1, POSTN. These cells also express PVALB, FAM19A4. The reference data for this cell type is CS201912132_52." [PMID:34616062]
 synonym: "Chandelier" EXACT []
 synonym: "Chandelier cell" EXACT []
 synonym: "FAM19A1, POSTN expressing GABAergic interneuron of primary motor cortex (Callithrix jacchus)" EXACT []
@@ -14422,8 +14274,7 @@ property_value: prefLabel "Exc RORB CAV3" xsd:string
 [Term]
 id: PCL:0013059
 name: Exc THEMIS KCTD16 primary motor cortex glutamatergic neuron (Callithrix jacchus)
-def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of PTPRK, THEMIS, CSGALNACT1, PLXDC2. These cells also express KCTD16, THEMIS. The reference data for this cell type is CS201912132_59. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of PTPRK, THEMIS, CSGALNACT1, PLXDC2. These cells also express KCTD16, THEMIS. The reference data for this cell type is CS201912132_59." [PMID:34616062]
 synonym: "Exc THEMIS KCTD16" EXACT []
 synonym: "L6 IT_2" EXACT []
 synonym: "PTPRK, THEMIS, CSGALNACT1, PLXDC2 expressing glutamatergic neuron of primary motor cortex (Callithrix jacchus)" EXACT []
@@ -14449,8 +14300,7 @@ property_value: prefLabel "Exc THEMIS KCTD16" xsd:string
 [Term]
 id: PCL:0013060
 name: Exc THEMIS COBL primary motor cortex glutamatergic neuron (Callithrix jacchus)
-def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CNR1, IQGAP2, NFIA, GABRG1. These cells also express THEMIS, COBL. The reference data for this cell type is CS201912132_60. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CNR1, IQGAP2, NFIA, GABRG1. These cells also express THEMIS, COBL. The reference data for this cell type is CS201912132_60." [PMID:34616062]
 synonym: "CNR1, IQGAP2, NFIA, GABRG1 expressing glutamatergic neuron of primary motor cortex (Callithrix jacchus)" EXACT []
 synonym: "Exc THEMIS COBL" EXACT []
 synonym: "L6 IT_1" EXACT []
@@ -14558,8 +14408,7 @@ property_value: prefLabel "Exc RORB USH1C" xsd:string
 [Term]
 id: PCL:0013065
 name: Exc RORB SLC38A11 primary motor cortex glutamatergic neuron (Callithrix jacchus)
-def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of SLC38A11, TOX, FOXP2. These cells also express SLC38A11, RORB. The reference data for this cell type is CS201912132_65. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of SLC38A11, TOX, FOXP2. These cells also express SLC38A11, RORB. The reference data for this cell type is CS201912132_65." [PMID:34616062]
 synonym: "Exc RORB SLC38A11" EXACT []
 synonym: "L5 IT_3" EXACT []
 synonym: "RNAseq 65" EXACT []
@@ -14709,8 +14558,7 @@ property_value: prefLabel "Exc FEZF2 PIEZO2" xsd:string
 [Term]
 id: PCL:0013072
 name: Exc FEZF2 PDZRN4 primary motor cortex glutamatergic neuron (Callithrix jacchus)
-def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of ERG, PDZRN4. These cells also express FEZF2, PDZRN4. The reference data for this cell type is CS201912132_72. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of ERG, PDZRN4. These cells also express FEZF2, PDZRN4. The reference data for this cell type is CS201912132_72." [PMID:34616062]
 synonym: "ERG, PDZRN4 expressing glutamatergic neuron of primary motor cortex (Callithrix jacchus)" EXACT []
 synonym: "Exc FEZF2 PDZRN4" EXACT []
 synonym: "L5 ET_2" EXACT []
@@ -14732,8 +14580,7 @@ property_value: prefLabel "Exc FEZF2 PDZRN4" xsd:string
 [Term]
 id: PCL:0013073
 name: Exc FEZF2 RGS4 primary motor cortex glutamatergic neuron (Callithrix jacchus)
-def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of BMP5, HS3ST4. These cells also express FEZF2, RGS4. The reference data for this cell type is CS201912132_73. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of BMP5, HS3ST4. These cells also express FEZF2, RGS4. The reference data for this cell type is CS201912132_73." [PMID:34616062]
 synonym: "BMP5, HS3ST4 expressing glutamatergic neuron of primary motor cortex (Callithrix jacchus)" EXACT []
 synonym: "Exc FEZF2 RGS4" EXACT []
 synonym: "L6 CT_1" EXACT []
@@ -14755,8 +14602,7 @@ property_value: prefLabel "Exc FEZF2 RGS4" xsd:string
 [Term]
 id: PCL:0013074
 name: Exc FEZF2 NRP1 primary motor cortex glutamatergic neuron (Callithrix jacchus)
-def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of NRP1, HS3ST4. These cells also express NRP1, FEZF2. The reference data for this cell type is CS201912132_74. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of NRP1, HS3ST4. These cells also express NRP1, FEZF2. The reference data for this cell type is CS201912132_74." [PMID:34616062]
 synonym: "Exc FEZF2 NRP1" EXACT []
 synonym: "L6 CT_2" EXACT []
 synonym: "NRP1, HS3ST4 expressing glutamatergic neuron of primary motor cortex (Callithrix jacchus)" EXACT []
@@ -14778,8 +14624,7 @@ property_value: prefLabel "Exc FEZF2 NRP1" xsd:string
 [Term]
 id: PCL:0013075
 name: Exc FEZF2 ARSJ primary motor cortex glutamatergic neuron (Callithrix jacchus)
-def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of HS3ST4, THSD4. These cells also express ARSJ, FEZF2. The reference data for this cell type is CS201912132_75. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of HS3ST4, THSD4. These cells also express ARSJ, FEZF2. The reference data for this cell type is CS201912132_75." [PMID:34616062]
 synonym: "Exc FEZF2 ARSJ" EXACT []
 synonym: "HS3ST4, THSD4 expressing glutamatergic neuron of primary motor cortex (Callithrix jacchus)" EXACT []
 synonym: "L6b" EXACT []
@@ -14801,8 +14646,7 @@ property_value: prefLabel "Exc FEZF2 ARSJ" xsd:string
 [Term]
 id: PCL:0013076
 name: Exc THEMIS NTNG2 primary motor cortex glutamatergic neuron (Callithrix jacchus)
-def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of NTNG2, PTPRU. These cells also express THEMIS, NTNG2. The reference data for this cell type is CS201912132_76. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of NTNG2, PTPRU. These cells also express THEMIS, NTNG2. The reference data for this cell type is CS201912132_76." [PMID:34616062]
 synonym: "Exc THEMIS NTNG2" EXACT []
 synonym: "L6 IT Car3" EXACT []
 synonym: "L6 IT_3" EXACT []
@@ -14825,8 +14669,7 @@ property_value: prefLabel "Exc THEMIS NTNG2" xsd:string
 [Term]
 id: PCL:0013077
 name: Exc FEZF2 CRYM primary motor cortex glutamatergic neuron (Callithrix jacchus)
-def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of HMCN1, CHRM2. These cells also express CRYM, THEMIS. The reference data for this cell type is CS201912132_77. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of HMCN1, CHRM2. These cells also express CRYM, THEMIS. The reference data for this cell type is CS201912132_77." [PMID:34616062]
 synonym: "Exc FEZF2 CRYM" EXACT []
 synonym: "HMCN1, CHRM2 expressing glutamatergic neuron of primary motor cortex (Callithrix jacchus)" EXACT []
 synonym: "L5/6 NP" EXACT []
@@ -14848,8 +14691,7 @@ property_value: prefLabel "Exc FEZF2 CRYM" xsd:string
 [Term]
 id: PCL:0013078
 name: OPC PDGFRA VCAN primary motor cortex oligodendrocyte precursor cell (Callithrix jacchus)
-def: "A oligodendrocyte precursor cell of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of VCAN, PDGFRA. These cells also express VCAN, PDGFRA. The reference data for this cell type is CS201912132_78. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A oligodendrocyte precursor cell of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of VCAN, PDGFRA. These cells also express VCAN, PDGFRA. The reference data for this cell type is CS201912132_78." [PMID:34616062]
 synonym: "OPC" EXACT []
 synonym: "OPC PDGFRA VCAN" EXACT []
 synonym: "RNAseq 78" EXACT []
@@ -14938,8 +14780,7 @@ property_value: prefLabel "Astro FGFR3 RCN2" xsd:string
 [Term]
 id: PCL:0013082
 name: Astro FGFR3 GFAP primary motor cortex astrocyte (Callithrix jacchus)
-def: "A astrocyte of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of GFAP. These cells also express GFAP. The reference data for this cell type is CS201912132_82. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A astrocyte of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of GFAP. These cells also express GFAP. The reference data for this cell type is CS201912132_82." [PMID:34616062]
 synonym: "Astro FGFR3 GFAP" EXACT []
 synonym: "Astro_1" EXACT []
 synonym: "GFAP expressing astrocyte of primary motor cortex (Callithrix jacchus)" EXACT []
@@ -14959,8 +14800,7 @@ property_value: prefLabel "Astro FGFR3 GFAP" xsd:string
 [Term]
 id: PCL:0013083
 name: Oligo OPALIN LOC103790018 primary motor cortex oligodendrocyte (Callithrix jacchus)
-def: "A oligodendrocyte of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of MOG, LOC103789268. These cells also express OPALIN, LOC103790018. The reference data for this cell type is CS201912132_83. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A oligodendrocyte of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of MOG, LOC103789268. These cells also express OPALIN, LOC103790018. The reference data for this cell type is CS201912132_83." [PMID:34616062]
 synonym: "MOG, LOC103789268 expressing oligodendrocyte of primary motor cortex (Callithrix jacchus)" EXACT []
 synonym: "Oligo OPALIN LOC103790018" EXACT []
 synonym: "Oligo_2" EXACT []
@@ -14982,8 +14822,7 @@ property_value: prefLabel "Oligo OPALIN LOC103790018" xsd:string
 [Term]
 id: PCL:0013084
 name: Oligo OPALIN MOBP primary motor cortex oligodendrocyte (Callithrix jacchus)
-def: "A oligodendrocyte of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of ANLN, MOBP, SEPP1, SLC5A11. These cells also express MOBP, OPALIN. The reference data for this cell type is CS201912132_84. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A oligodendrocyte of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of ANLN, MOBP, SEPP1, SLC5A11. These cells also express MOBP, OPALIN. The reference data for this cell type is CS201912132_84." [PMID:34616062]
 synonym: "ANLN, MOBP, SEPP1, SLC5A11 expressing oligodendrocyte of primary motor cortex (Callithrix jacchus)" EXACT []
 synonym: "Oligo OPALIN MOBP" EXACT []
 synonym: "Oligo_1" EXACT []
@@ -15176,8 +15015,7 @@ property_value: prefLabel "VLMC SLC1A3-like SLC47A1" xsd:string
 [Term]
 id: PCL:0013094
 name: Micro TYROBP LOC103788313 primary motor cortex microglial cell (Callithrix jacchus)
-def: "A microglial cell of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of FYB, LOC103788313. These cells also express TYROBP, LOC103788313. The reference data for this cell type is CS201912132_94. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A microglial cell of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of FYB, LOC103788313. These cells also express TYROBP, LOC103788313. The reference data for this cell type is CS201912132_94." [PMID:34616062]
 synonym: "FYB, LOC103788313 expressing microglial cell of primary motor cortex (Callithrix jacchus)" EXACT []
 synonym: "Micro TYROBP LOC103788313" EXACT []
 synonym: "Microglia-PVM" EXACT []
@@ -15189,7 +15027,6 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/100393633 {xref="PMID:
 relationship: RO:0002292 https://identifiers.org/ncbigene/100411367 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/103788313 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/103788313 {xref="PMID:34616066"} ! expresses
-relationship: RO:HOM0000007 PCL:0011229
 relationship: RO:HOM0000007 PCL:0012127 ! Micro L1-6 TYROBP CD74 primary motor cortex microglial cell (Homo sapiens)
 property_value: IAO:0000028 "Micro TYROBP LOC103788313 M1 (Marmoset)" xsd:string
 property_value: PCL:0010058 "FYB" xsd:string
@@ -15199,8 +15036,7 @@ property_value: prefLabel "Micro TYROBP LOC103788313" xsd:string
 [Term]
 id: PCL:0013095
 name: (Mouse Lamp5)-like primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of KIT. The reference data for this cell type is CS201912132_95. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of KIT. The reference data for this cell type is CS201912132_95." [PMID:34616062]
 synonym: "(Mouse Lamp5)-like" EXACT []
 synonym: "KIT expressing GABAergic interneuron of primary motor cortex (Callithrix jacchus)" EXACT []
 synonym: "Lamp5" EXACT []
@@ -15218,8 +15054,7 @@ property_value: prefLabel "(Mouse Lamp5)-like" xsd:string
 [Term]
 id: PCL:0013096
 name: (Mouse Sncg)-like primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CNR1, ADARB2, LUZP2. The reference data for this cell type is CS201912132_96. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CNR1, ADARB2, LUZP2. The reference data for this cell type is CS201912132_96." [PMID:34616062]
 synonym: "(Mouse Sncg)-like" EXACT []
 synonym: "CNR1, ADARB2, LUZP2 expressing GABAergic interneuron of primary motor cortex (Callithrix jacchus)" EXACT []
 synonym: "RNAseq 08-14" EXACT []
@@ -15241,8 +15076,7 @@ property_value: prefLabel "(Mouse Sncg)-like" xsd:string
 [Term]
 id: PCL:0013097
 name: (Mouse Vip)-like primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of LOC103791740, LOC108588071. The reference data for this cell type is CS201912132_97. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of LOC103791740, LOC108588071. The reference data for this cell type is CS201912132_97." [PMID:34616062]
 synonym: "(Mouse Vip)-like" EXACT []
 synonym: "LOC103791740, LOC108588071 expressing GABAergic interneuron of primary motor cortex (Callithrix jacchus)" EXACT []
 synonym: "RNAseq 15-25" EXACT []
@@ -15262,8 +15096,7 @@ property_value: prefLabel "(Mouse Vip)-like" xsd:string
 [Term]
 id: PCL:0013098
 name: (Mouse Sst)-like primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of ABI3BP, NXPH1. The reference data for this cell type is CS201912132_98. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of ABI3BP, NXPH1. The reference data for this cell type is CS201912132_98." [PMID:34616062]
 synonym: "(Mouse Sst)-like" EXACT []
 synonym: "ABI3BP, NXPH1 expressing GABAergic interneuron of primary motor cortex (Callithrix jacchus)" EXACT []
 synonym: "RNAseq 27-40, 47" EXACT []
@@ -15283,8 +15116,7 @@ property_value: prefLabel "(Mouse Sst)-like" xsd:string
 [Term]
 id: PCL:0013099
 name: (Mouse Pvalb)-like primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of LOC100392984, BTBD11. The reference data for this cell type is CS201912132_99. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of LOC100392984, BTBD11. The reference data for this cell type is CS201912132_99." [PMID:34616062]
 synonym: "(Mouse Pvalb)-like" EXACT []
 synonym: "LOC100392984, BTBD11 expressing GABAergic interneuron of primary motor cortex (Callithrix jacchus)" EXACT []
 synonym: "Pvalb" EXACT []
@@ -15304,8 +15136,7 @@ property_value: prefLabel "(Mouse Pvalb)-like" xsd:string
 [Term]
 id: PCL:0013100
 name: (Mouse L2/3 IT)-like primary motor cortex glutamatergic neuron (Callithrix jacchus)
-def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of FAM19A1, CHST9. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912132_100. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of FAM19A1, CHST9. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912132_100." [PMID:34616062]
 synonym: "(Mouse L2/3 IT)-like" EXACT []
 synonym: "FAM19A1, CHST9 expressing glutamatergic neuron of primary motor cortex (Callithrix jacchus)" EXACT []
 synonym: "L2/3 IT" EXACT []
@@ -15327,8 +15158,7 @@ property_value: prefLabel "(Mouse L2/3 IT)-like" xsd:string
 [Term]
 id: PCL:0013101
 name: (Mouse L5 IT)-like primary motor cortex glutamatergic neuron (Callithrix jacchus)
-def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of POU6F2, HTR2A, RORB. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912132_101. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of POU6F2, HTR2A, RORB. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912132_101." [PMID:34616062]
 synonym: "(Mouse L5 IT)-like" EXACT []
 synonym: "L5 IT" EXACT []
 synonym: "POU6F2, HTR2A, RORB expressing glutamatergic neuron of primary motor cortex (Callithrix jacchus)" EXACT []
@@ -15351,8 +15181,7 @@ property_value: prefLabel "(Mouse L5 IT)-like" xsd:string
 [Term]
 id: PCL:0013102
 name: (Mouse L6 IT)-like primary motor cortex glutamatergic neuron (Callithrix jacchus)
-def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of SLIT3, CLSTN2, HS3ST5, PDE7B. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912132_102. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of SLIT3, CLSTN2, HS3ST5, PDE7B. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912132_102." [PMID:34616062]
 synonym: "(Mouse L6 IT)-like" EXACT []
 synonym: "L6 IT" EXACT []
 synonym: "n70" EXACT []
@@ -15378,8 +15207,7 @@ property_value: prefLabel "(Mouse L6 IT)-like" xsd:string
 [Term]
 id: PCL:0013103
 name: (Mouse L5 ET)-like primary motor cortex glutamatergic neuron (Callithrix jacchus)
-def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of PIEZO2, FBN2. These cells have projection type extratelencephalic projecting. The reference data for this cell type is CS201912132_103. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of PIEZO2, FBN2. These cells have projection type extratelencephalic projecting. The reference data for this cell type is CS201912132_103." [PMID:34616062]
 synonym: "(Mouse L5 ET)-like" EXACT []
 synonym: "L5 ET" EXACT []
 synonym: "n77" EXACT []
@@ -15401,8 +15229,7 @@ property_value: prefLabel "(Mouse L5 ET)-like" xsd:string
 [Term]
 id: PCL:0013104
 name: (Mouse L6 CT)-like primary motor cortex glutamatergic neuron (Callithrix jacchus)
-def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of HS3ST4, SEMA3E. These cells have projection type corticothalamic projecting. The reference data for this cell type is CS201912132_104. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of HS3ST4, SEMA3E. These cells have projection type corticothalamic projecting. The reference data for this cell type is CS201912132_104." [PMID:34616062]
 synonym: "(Mouse L6 CT)-like" EXACT []
 synonym: "HS3ST4, SEMA3E expressing glutamatergic neuron of primary motor cortex (Callithrix jacchus)" EXACT []
 synonym: "L6 CT" EXACT []
@@ -15424,8 +15251,7 @@ property_value: prefLabel "(Mouse L6 CT)-like" xsd:string
 [Term]
 id: PCL:0013110
 name: (Mouse MGE)-like primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_110. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_110." [PMID:34616062]
 synonym: "(Mouse MGE)-like" EXACT []
 synonym: "MGE" EXACT []
 synonym: "RNAseq 01, 27-52" EXACT []
@@ -15441,8 +15267,7 @@ property_value: prefLabel "(Mouse MGE)-like" xsd:string
 [Term]
 id: PCL:0013111
 name: (Mouse CGE/PoA)-like primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_111. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_111." [PMID:34616062]
 synonym: "(Mouse CGE/PoA)-like" EXACT []
 synonym: "CGE/PoA" EXACT []
 synonym: "RNAseq 02-26" EXACT []
@@ -15458,8 +15283,7 @@ property_value: prefLabel "(Mouse CGE/PoA)-like" xsd:string
 [Term]
 id: PCL:0013112
 name: (Mouse IT projecting)-like primary motor cortex glutamatergic neuron (Callithrix jacchus)
-def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_112. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_112." [PMID:34616062]
 synonym: "(Mouse IT projecting)-like" EXACT []
 synonym: "IT projecting" EXACT []
 synonym: "RNAseq 53-68, 75" EXACT []
@@ -15475,8 +15299,7 @@ property_value: prefLabel "(Mouse IT projecting)-like" xsd:string
 [Term]
 id: PCL:0013113
 name: (Mouse Non-IT projecting)-like primary motor cortex glutamatergic neuron (Callithrix jacchus)
-def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_113. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_113." [PMID:34616062]
 synonym: "(Mouse Non-IT projecting)-like" EXACT []
 synonym: "Non-IT projecting" EXACT []
 synonym: "RNAseq 69-76" EXACT []
@@ -15491,8 +15314,7 @@ property_value: prefLabel "(Mouse Non-IT projecting)-like" xsd:string
 [Term]
 id: PCL:0013119
 name: Sst Chodl(i) primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CHODL, NOS1. The reference data for this cell type is CS201912132_119. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of CHODL, NOS1. The reference data for this cell type is CS201912132_119." [PMID:34616062]
 synonym: "CHODL, NOS1 expressing GABAergic interneuron of primary motor cortex (Callithrix jacchus)" EXACT []
 synonym: "RNAseq 01, 30" EXACT []
 synonym: "Sst Chodl" EXACT []
@@ -15512,8 +15334,7 @@ property_value: prefLabel "Sst Chodl(i)" xsd:string
 [Term]
 id: PCL:0013120
 name: (Mouse Lamp5)-like_C2 primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_120. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_120." [PMID:34616062]
 synonym: "(Mouse Lamp5)-like_C2" EXACT []
 synonym: "Lamp5_2" EXACT []
 synonym: "n10" EXACT []
@@ -15529,8 +15350,7 @@ property_value: prefLabel "(Mouse Lamp5)-like_C2" xsd:string
 [Term]
 id: PCL:0013121
 name: (Mouse Sncg)-like_C1 primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_121. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_121." [PMID:34616062]
 synonym: "(Mouse Sncg)-like_C1" EXACT []
 synonym: "RNAseq 09, 12" EXACT []
 synonym: "Sncg_1" EXACT []
@@ -15545,8 +15365,7 @@ property_value: prefLabel "(Mouse Sncg)-like_C1" xsd:string
 [Term]
 id: PCL:0013122
 name: (Mouse Sncg)-like_C3 primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_122. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_122." [PMID:34616062]
 synonym: "(Mouse Sncg)-like_C3" EXACT []
 synonym: "n19" EXACT []
 synonym: "RNAseq 10-11" EXACT []
@@ -15562,8 +15381,7 @@ property_value: prefLabel "(Mouse Sncg)-like_C3" xsd:string
 [Term]
 id: PCL:0013123
 name: (Mouse Sncg)-like_C4 primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_123. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_123." [PMID:34616062]
 synonym: "(Mouse Sncg)-like_C4" EXACT []
 synonym: "n22" EXACT []
 synonym: "RNAseq 13-14" EXACT []
@@ -15579,8 +15397,7 @@ property_value: prefLabel "(Mouse Sncg)-like_C4" xsd:string
 [Term]
 id: PCL:0013124
 name: (Mouse Vip)-like_C4 primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_124. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_124." [PMID:34616062]
 synonym: "(Mouse Vip)-like_C4" EXACT []
 synonym: "RNAseq 15, 25" EXACT []
 synonym: "Vip_4" EXACT []
@@ -15595,8 +15412,7 @@ property_value: prefLabel "(Mouse Vip)-like_C4" xsd:string
 [Term]
 id: PCL:0013125
 name: (Mouse Vip)-like_C2 primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_125. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_125." [PMID:34616062]
 synonym: "(Mouse Vip)-like_C2" EXACT []
 synonym: "RNAseq 16-18, 24" EXACT []
 synonym: "Vip_2" EXACT []
@@ -15611,8 +15427,7 @@ property_value: prefLabel "(Mouse Vip)-like_C2" xsd:string
 [Term]
 id: PCL:0013126
 name: (Mouse Vip)-like_C1 primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_126. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_126." [PMID:34616062]
 synonym: "(Mouse Vip)-like_C1" EXACT []
 synonym: "n27" EXACT []
 synonym: "RNAseq 19-20" EXACT []
@@ -15628,8 +15443,7 @@ property_value: prefLabel "(Mouse Vip)-like_C1" xsd:string
 [Term]
 id: PCL:0013127
 name: (Mouse Vip)-like_C3 primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_127. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_127." [PMID:34616062]
 synonym: "(Mouse Vip)-like_C3" EXACT []
 synonym: "n29" EXACT []
 synonym: "RNAseq 21-23" EXACT []
@@ -15645,8 +15459,7 @@ property_value: prefLabel "(Mouse Vip)-like_C3" xsd:string
 [Term]
 id: PCL:0013128
 name: (Mouse Sst)-like_C3 primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_128. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_128." [PMID:34616062]
 synonym: "(Mouse Sst)-like_C3" EXACT []
 synonym: "RNAseq 31-36, 40, 47" EXACT []
 synonym: "Sst_3" EXACT []
@@ -15661,8 +15474,7 @@ property_value: prefLabel "(Mouse Sst)-like_C3" xsd:string
 [Term]
 id: PCL:0013129
 name: (Mouse Pvalb)-like_C1 primary motor cortex GABAergic interneuron (Callithrix jacchus)
-def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_129. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A GABAergic interneuron of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_129." [PMID:34616062]
 synonym: "(Mouse Pvalb)-like_C1" EXACT []
 synonym: "Pvalb_1" EXACT []
 synonym: "RNAseq 41-46, 48-50" EXACT []
@@ -15677,8 +15489,7 @@ property_value: prefLabel "(Mouse Pvalb)-like_C1" xsd:string
 [Term]
 id: PCL:0013130
 name: (Mouse L5 IT)-like_C1 primary motor cortex glutamatergic neuron (Callithrix jacchus)
-def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912132_130. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912132_130." [PMID:34616062]
 synonym: "(Mouse L5 IT)-like_C1" EXACT []
 synonym: "L5 IT_1" EXACT []
 synonym: "RNAseq 57-58, 61-64" EXACT []
@@ -15694,8 +15505,7 @@ property_value: prefLabel "(Mouse L5 IT)-like_C1" xsd:string
 [Term]
 id: PCL:0013131
 name: (Mouse L5 IT)-like_C2 primary motor cortex glutamatergic neuron (Callithrix jacchus)
-def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912132_131. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells have projection type intratelencephalic projecting. The reference data for this cell type is CS201912132_131." [PMID:34616062]
 synonym: "(Mouse L5 IT)-like_C2" EXACT []
 synonym: "L5 IT_2" EXACT []
 synonym: "n75" EXACT []
@@ -15712,8 +15522,7 @@ property_value: prefLabel "(Mouse L5 IT)-like_C2" xsd:string
 [Term]
 id: PCL:0013132
 name: (Mouse L5 ET)-like_C1 primary motor cortex glutamatergic neuron (Callithrix jacchus)
-def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells have projection type extratelencephalic projecting. The reference data for this cell type is CS201912132_132. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A glutamatergic neuron of the Callithrix jacchus primary motor cortex. These cells have projection type extratelencephalic projecting. The reference data for this cell type is CS201912132_132." [PMID:34616062]
 synonym: "(Mouse L5 ET)-like_C1" EXACT []
 synonym: "L5 ET_1" EXACT []
 synonym: "n78" EXACT []
@@ -15730,8 +15539,7 @@ property_value: prefLabel "(Mouse L5 ET)-like_C1" xsd:string
 [Term]
 id: PCL:0013133
 name: Astro_C2 primary motor cortex astrocyte (Callithrix jacchus)
-def: "A astrocyte of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_133. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A astrocyte of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_133." [PMID:34616062]
 synonym: "Astro_2" EXACT []
 synonym: "Astro_C2" EXACT []
 synonym: "n83" EXACT []
@@ -15746,8 +15554,7 @@ property_value: prefLabel "Astro_C2" xsd:string
 [Term]
 id: PCL:0013134
 name: VLMC(i) primary motor cortex vascular leptomeningeal cell (Callithrix jacchus)
-def: "A vascular leptomeningeal cell of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_134. This class represents a cross-species homology grouping." [PMID:34616062]
-comment: Cross-species clustering based on transcriptomic similarity supports the assertion that this class represents a homology grouping.
+def: "A vascular leptomeningeal cell of the Callithrix jacchus primary motor cortex. The reference data for this cell type is CS201912132_134." [PMID:34616062]
 synonym: "n92" EXACT []
 synonym: "RNAseq 90-92" EXACT []
 synonym: "VLMC" EXACT []
@@ -15755,7 +15562,6 @@ synonym: "VLMC(i)" EXACT []
 is_a: CL:4023051
 relationship: BFO:0000050 UBERON:0001384
 relationship: RO:0002162 NCBITaxon:9483
-relationship: RO:HOM0000007 PCL:0011222
 relationship: RO:HOM0000007 PCL:0012126 ! VLMC L1-5 PDGFRA COLEC12 primary motor cortex vascular leptomeningeal cell (Homo sapiens)
 property_value: IAO:0000028 "VLMC(i) M1 (Marmoset)" xsd:string
 property_value: prefLabel "VLMC(i)" xsd:string
