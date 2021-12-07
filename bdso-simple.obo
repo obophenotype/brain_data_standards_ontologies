@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: pcl/releases/2021-12-03/bdso-simple.owl
+data-version: pcl/releases/2021-12-06/bdso-simple.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -8,7 +8,7 @@ subsetdef: ro-eco ""
 ontology: pcl/bdso-simple
 property_value: dc-title "Brain Data Standards Cell Ontology" xsd:string
 property_value: dcterms-license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2021-12-03" xsd:string
+property_value: owl:versionInfo "2021-12-06" xsd:string
 
 [Typedef]
 id: RO:0002100
@@ -79,6 +79,7 @@ is_symmetric: true
 id: bearer_of
 name: bearer of
 name: has characteristic
+namespace: external
 namespace: uberon
 def: "Inverse of characteristic_of" []
 xref: RO:0000053
@@ -95,6 +96,7 @@ is_inverse_functional: true
 id: capable_of
 name: capable of
 name: capable_of
+namespace: external
 namespace: protein
 namespace: uberon
 def: "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. " []

@@ -9,7 +9,7 @@ from template_generation_utils import get_synonyms_from_taxonomy, read_taxonomy_
     read_csv, read_gene_data, read_markers, get_gross_cell_type, merge_tables, read_allen_descriptions, \
     extract_taxonomy_name_from_path
 from nomenclature_tools import nomenclature_2_nodes_n_edges
-from pcl_id_factory import get_class_id, get_individual_id, get_taxonomy_id
+from pcl_id_factory import get_class_id, get_individual_id, get_taxonomy_id, get_dataset_id
 
 
 log = logging.getLogger(__name__)
@@ -25,7 +25,7 @@ ENSEMBLE_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../te
 CROSS_SPECIES_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                   "../dendrograms/nomenclature_table_CCN202002270.csv")
 ALLEN_DESCRIPTIONS_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                                       '../dendrograms/All Descriptions_{}.json')
+                                       '../dendrograms/MOp_taxonomies_ontology/All Descriptions_{}.json')
 
 EXPRESSION_SEPARATOR = "|"
 
@@ -415,6 +415,48 @@ def generate_taxonomies_template(taxonomy_metadata_path, output_filepath):
             d['Age'] = taxonomy_metadata["Age"]
             d['Sex'] = taxonomy_metadata["Sex"]
 
+        dl.append(d)
+    robot_template = pd.DataFrame.from_records(dl)
+    robot_template.to_csv(output_filepath, sep="\t", index=False)
+
+
+def generate_datasets_template(dataset_metadata_path, output_filepath):
+    path_parts = dataset_metadata_path.split(os.path.sep)
+    taxonomy_id = path_parts[len(path_parts) - 1].split("_")[0]
+
+    headers, dataset_metadata = read_csv_to_dict(dataset_metadata_path, generated_ids=True)
+
+    robot_template_seed = {'ID': 'ID',
+                           'TYPE': 'TYPE',
+                           'Entity Type': 'TI %',
+                           'Label': 'LABEL',
+                           'Taxonomy': 'AI schema:includedInDataCatalog',
+                           'Cell Count': "AT 'cell_count'^^xsd:integer",
+                           'Nuclei Count': "AT 'nuclei_count'^^xsd:integer",
+                           'Description': "A rdfs:comment",
+                           'Download Link': "A schema:archivedAt",
+                           'Explore Link': "A schema:discussionUrl"
+                           }
+    dl = [robot_template_seed]
+
+    dataset_index = 0
+    for dataset in dataset_metadata:
+        d = dict()
+        d['ID'] = 'PCL:' + get_dataset_id(taxonomy_id, dataset_index)
+        d['TYPE'] = 'owl:NamedIndividual'
+        d['Entity Type'] = 'schema:Dataset'  # Taxonomy
+        d['Label'] = dataset_metadata[dataset]['Dataset']
+        d['Taxonomy'] = 'PCL:' + get_taxonomy_id(taxonomy_id)
+        cells_nuclei = dataset_metadata[dataset]['cells/nuclei']
+        if 'nuclei' in cells_nuclei:
+            d['Nuclei Count'] = int(''.join(c for c in cells_nuclei if c.isdigit()))
+        elif 'cells' in cells_nuclei:
+            d['Cell Count'] = int(''.join(c for c in cells_nuclei if c.isdigit()))
+        d['Description'] = dataset_metadata[dataset]['text']
+        d['Download Link'] = dataset_metadata[dataset]['download_link']
+        d['Explore Link'] = dataset_metadata[dataset]['explore_link']
+
+        dataset_index += 1
         dl.append(d)
     robot_template = pd.DataFrame.from_records(dl)
     robot_template.to_csv(output_filepath, sep="\t", index=False)

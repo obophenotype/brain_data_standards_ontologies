@@ -18,6 +18,7 @@ OWL_CLASS_FILES = $(patsubst %, components/%_class.owl, $(JOBS))
 OWL_CLASS_HOMOLOGOUS_FILES = $(patsubst %, components/%_class_homologous.owl, $(JOBS))
 GENE_FILES = $(patsubst %, mirror/%.owl, $(GENE_LIST))
 OWL_APP_SPECIFIC_FILES = $(patsubst %, components/%_app_specific.owl, $(JOBS))
+OWL_DATASET_FILES = $(patsubst %, components/%_dataset.owl, $(JOBS))
 OWL_TAXONOMY_FILE = components/taxonomies.owl
 OWL_PROTEIN2GENE_FILE = components/Protein2GeneExpression.owl
 PCL_LEGACY_FILE = components/pcl-legacy.owl
@@ -92,7 +93,7 @@ mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
 .PRECIOUS: imports/simple_marmoset_import.owl
 
 # merge all templates except application specific ones
-components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MIN_MARKER_FILES) $(OWL_TAXONOMY_FILE) $(OWL_PROTEIN2GENE_FILE) $(OWL_APP_SPECIFIC_FILES) $(PCL_LEGACY_FILE) $(OWL_CLASS_HOMOLOGOUS_FILES)
+components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MIN_MARKER_FILES) $(OWL_TAXONOMY_FILE) $(OWL_PROTEIN2GENE_FILE) $(OWL_APP_SPECIFIC_FILES) $(PCL_LEGACY_FILE) $(OWL_CLASS_HOMOLOGOUS_FILES) $(OWL_DATASET_FILES)
 	$(ROBOT) merge $(patsubst %, -i %, $(filter-out $(OWL_APP_SPECIFIC_FILES), $^)) \
 	 --collapse-import-closure false \
 	 annotate --ontology-iri ${BDS_BASE}$@  \
@@ -147,6 +148,12 @@ components/pCL_mapping.owl: ../templates/pCL_mapping.tsv ../resources/pCL_4.1.0.
 
 components/%_app_specific.owl: ../templates/%_app_specific.tsv allen_helper.owl
 	$(ROBOT) template --input allen_helper.owl --template $< \
+    		--add-prefixes template_prefixes.json \
+    		annotate --ontology-iri ${BDS_BASE}$@ \
+    		convert --format ofn --output $@ \
+
+components/%_dataset.owl: ../templates/%_dataset.tsv $(SRC)
+	$(ROBOT) template --input $(SRC) --template $< \
     		--add-prefixes template_prefixes.json \
     		annotate --ontology-iri ${BDS_BASE}$@ \
     		convert --format ofn --output $@ \

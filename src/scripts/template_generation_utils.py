@@ -252,7 +252,8 @@ def read_tsv_to_dict(tsv_path, id_column=0, use_accession_ids=False):
     return read_csv_to_dict(tsv_path, id_column=id_column, delimiter="\t", use_accession_ids=use_accession_ids)
 
 
-def read_csv_to_dict(csv_path, id_column=0, id_column_name="", delimiter=",", id_to_lower=False, use_accession_ids=False):
+def read_csv_to_dict(csv_path, id_column=0, id_column_name="", delimiter=",", id_to_lower=False, use_accession_ids=False
+                     , generated_ids=False):
     """
     Reads tsv file content into a dict. Key is the first column value and the value is dict representation of the
     row values (each header is a key and column value is the value).
@@ -263,6 +264,7 @@ def read_csv_to_dict(csv_path, id_column=0, id_column_name="", delimiter=",", id
         delimiter: Value delimiter. Default is comma.
         id_to_lower: applies string lowercase operation to the key
         use_accession_ids: If 'True' converts key of the table to cell set accession id.
+        generated_ids: If 'True', uses row number as the key of the dict. Initial key is 0.
 
     Returns:
         Function provides two return values: first; headers of the table and second; the CSV content dict. Key of the
@@ -280,6 +282,8 @@ def read_csv_to_dict(csv_path, id_column=0, id_column_name="", delimiter=",", id
                 _id = str(_id).lower()
             if use_accession_ids and pcl_id_factory.is_pcl_id(_id):
                 _id = pcl_id_factory.get_reverse_id(_id)
+            if generated_ids:
+                _id = row_count
 
             if row_count == 0:
                 headers = row
@@ -445,7 +449,7 @@ def read_allen_descriptions(path, species):
     """
     Reads Allen descriptions file from the given location for the given species.
     Args:
-        path: Path to the All Descriptions json file
+        path: Path to the 'All Descriptions' json file
         species: species to read file for
     Returns: parsed Allen descriptions json data
     """

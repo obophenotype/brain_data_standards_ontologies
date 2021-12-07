@@ -8,10 +8,13 @@ ID range allocation logic is as follows
     - 0010000 to 0010999  custom classes and properties (manually managed)
     - 0011000 taxonomy1 individual
     - 0011001 to 0011399 taxonomy1 classes
-    - 0011400 to 0011999 taxonomy1 individuals
+    - 0011400 to 0011950 taxonomy1 individuals
+    - 0011951 to 0011999 taxonomy1 datasets
+    -
     - 0012000 taxonomy2 individual
     - 0012001 to 0012399 taxonomy2 classes
     - 0012400 to 0012999 taxonomy2 individuals
+    - 0012951 to 0012999 taxonomy2 datasets
     - ...
 
 """
@@ -27,6 +30,7 @@ TAXONOMY_DETAILS_YAML = os.path.join(os.path.dirname(os.path.realpath(__file__))
 ID_RANGE_BASE = 11000
 TAXONOMY_ID_RANGE = 1000
 INDV_ID_DISPLACEMENT = 400
+DATASET_ID_DISPLACEMENT = 951
 
 
 def read_taxonomy_details_yaml():
@@ -50,8 +54,8 @@ def get_class_id(accession_id):
     Returns: seven digit PCL id as string
     """
     node_id, taxonomy_index = parse_accession_id(accession_id)
-
     pcl_id = ID_RANGE_BASE + (TAXONOMY_ID_RANGE * taxonomy_index) + node_id
+
     return str(pcl_id).zfill(7)
 
 
@@ -66,8 +70,8 @@ def get_individual_id(accession_id):
     Returns: seven digit PCL id as string
     """
     node_id, taxonomy_index = parse_accession_id(accession_id)
-
     pcl_id = ID_RANGE_BASE + (TAXONOMY_ID_RANGE * taxonomy_index) + INDV_ID_DISPLACEMENT + node_id
+
     return str(pcl_id).zfill(7)
 
 
@@ -80,8 +84,23 @@ def get_taxonomy_id(taxonomy_id):
     Returns: seven digit PCL id as string
     """
     taxonomy_index = get_taxonomy_index(taxonomy_id)
-
     pcl_id = ID_RANGE_BASE + (TAXONOMY_ID_RANGE * taxonomy_index)
+
+    return str(pcl_id).zfill(7)
+
+
+def get_dataset_id(taxonomy_id, dataset_index):
+    """
+    Generates a PCL id for the given dataset. Dataset id range is last 50 ids of the taxonomy id range.
+    Args:
+        taxonomy_id: taxonomy id
+        dataset_index: index of the dataset (0 to 48)
+
+    Returns: seven digit PCL id as string
+    """
+    taxonomy_index = get_taxonomy_index(taxonomy_id)
+    pcl_id = ID_RANGE_BASE + (TAXONOMY_ID_RANGE * taxonomy_index) + DATASET_ID_DISPLACEMENT + dataset_index
+
     return str(pcl_id).zfill(7)
 
 
@@ -154,4 +173,4 @@ def is_pcl_id(id_str):
     Returns: 'True' if given id is PCL id, 'False' otherwise
     """
     return str(id_str).startswith("http://purl.obolibrary.org/obo/PCL_") \
-           or str(id_str).startswith("PCL:") or str(id_str).startswith("PCL_")
+        or str(id_str).startswith("PCL:") or str(id_str).startswith("PCL_")

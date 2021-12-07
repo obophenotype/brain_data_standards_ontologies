@@ -1,7 +1,7 @@
 from template_generation_tools import generate_base_class_template, generate_curated_class_template, \
     generate_ind_template, merge_class_templates, \
     generate_cross_species_template, generate_taxonomies_template, generate_app_specific_template, \
-    generate_homologous_to_template
+    generate_homologous_to_template, generate_datasets_template
 from marker_tools import generate_denormalised_marker_template
 import argparse
 import pathlib
@@ -23,6 +23,7 @@ parser_generator.add_argument('-ch', action='store_true', help="Generate a class
 parser_generator.add_argument('-md', action='store_true', help="Generate a denormalized marker template.")
 parser_generator.add_argument('-cs', action='store_true', help="Generate a cross species alignment template.")
 parser_generator.add_argument('-a', action='store_true', help="Generate a app specific data template.")
+parser_generator.add_argument('-ds', action='store_true', help="Generate a datasets template.")
 parser_generator.add_argument('-tx', action='store_true', help="Generate a taxonomies template.")
 
 parser_modifier = subparsers.add_parser('modifier', description='Template modification interface')
@@ -50,6 +51,8 @@ else:
         generate_cross_species_template(args.input, args.output)
     elif args.a:
         generate_app_specific_template(args.input, args.output)
+    elif args.ds:
+        generate_datasets_template(args.input, args.output)
     elif args.tx:
         generate_taxonomies_template(args.input, args.output)
     else:

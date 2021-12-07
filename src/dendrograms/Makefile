@@ -6,10 +6,12 @@ TEMPLATE_CLASS_BASE_FILES = $(patsubst %, ../patterns/data/default/%_class_base.
 TEMPLATE_CLASS_CURATION_FILES = $(patsubst %, ../patterns/data/default/%_class_curation.tsv, $(JOBS))
 TEMPLATE_CLASS_HOMOLOGOUS_FILES = $(patsubst %, ../patterns/data/default/%_class_homologous.tsv, $(JOBS))
 APP_SPECIFIC_TEMPLATE_FILES = $(patsubst %, ../templates/%_app_specific.tsv, $(JOBS))
+DATASET_TEMPLATE_FILES = $(patsubst %, ../templates/%_dataset.tsv, $(JOBS))
 TAXONOMY_TEMPLATE_FILE = ../templates/Taxonomies.tsv
 
 
-all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FILES) $(MARKER_DENORMALIZED_FILES) $(TAXONOMY_TEMPLATE_FILE) $(APP_SPECIFIC_TEMPLATE_FILES) $(TEMPLATE_CLASS_HOMOLOGOUS_FILES)
+
+all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FILES) $(MARKER_DENORMALIZED_FILES) $(TAXONOMY_TEMPLATE_FILE) $(APP_SPECIFIC_TEMPLATE_FILES) $(TEMPLATE_CLASS_HOMOLOGOUS_FILES) $(DATASET_TEMPLATE_FILES)
 
 ../templates/%.tsv: %.json nomenclature_table_%.csv
 	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -i $< -o $@ ;\
@@ -35,6 +37,9 @@ all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FI
 	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -a -i $< -o $@ ;\
 	else python ../scripts/template_runner.py generator -a -i $(word 2, $^) -o $@ ; fi
 
-../templates/Taxonomies.tsv: Taxonomy_Info_Panel.csv
+../templates/%_dataset.tsv: MOp_taxonomies_ontology/%_landingpage_dataset_info.csv
+	python ../scripts/template_runner.py generator -ds -i $< -o $@
+
+../templates/Taxonomies.tsv: MOp_taxonomies_ontology/Taxonomy_Info_Panel.csv
 	python ../scripts/template_runner.py generator -tx -i $< -o $@
 

@@ -44,6 +44,8 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010056>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010057>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010058>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010059>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010060>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010061>))
 
 ############################
 #   Object Properties
@@ -100,5 +102,11 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010058> "has
 
 # Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010059> (cluster id)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010059> "cluster id")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010060> (cell_count)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010060> "cell_count")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010061> (nuclei_count)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010061> "nuclei_count")
 
 )
