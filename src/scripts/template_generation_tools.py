@@ -6,9 +6,10 @@ import logging
 from dendrogram_tools import dend_json_2_nodes_n_edges
 from template_generation_utils import get_synonyms_from_taxonomy, read_taxonomy_config, \
     get_subtrees, generate_dendrogram_tree, read_taxonomy_details_yaml, read_csv_to_dict,\
-    read_csv, read_gene_data, read_markers, get_gross_cell_type, merge_tables, read_allen_descriptions
+    read_csv, read_gene_data, read_markers, get_gross_cell_type, merge_tables, read_allen_descriptions, \
+    extract_taxonomy_name_from_path
 from nomenclature_tools import nomenclature_2_nodes_n_edges
-from pcl_id_factory import get_class_id, get_individual_id, get_taxonomy_id
+from pcl_id_factory import get_class_id, get_individual_id, get_taxonomy_id, get_dataset_id
 
 
 log = logging.getLogger(__name__)
@@ -24,7 +25,7 @@ ENSEMBLE_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../te
 CROSS_SPECIES_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                   "../dendrograms/nomenclature_table_CCN202002270.csv")
 ALLEN_DESCRIPTIONS_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                                       '../dendrograms/All Descriptions_{}.json')
+                                       '../dendrograms/MOp_taxonomies_ontology/All Descriptions_{}.json')
 
 EXPRESSION_SEPARATOR = "|"
 
@@ -77,7 +78,10 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
         d['ID'] = 'PCL:' + get_individual_id(o['cell_set_accession'])
         d['TYPE'] = 'owl:NamedIndividual'
         d['Label'] = o['cell_set_label'] + ' - ' + o['cell_set_accession']
-        d['PrefLabel'] = o['cell_set_preferred_alias'] + ' - ' + o['cell_set_accession']
+        if 'cell_set_preferred_alias' in o and o['cell_set_preferred_alias']:
+            d['PrefLabel'] = o['cell_set_preferred_alias']
+        else:
+            d['PrefLabel'] = o['cell_set_accession']
         d['Entity Type'] = 'PCL:0010001'  # Cluster
         d['Metadata'] = json.dumps(o)
         d['Synonyms'] = '|'.join([o[prop] for prop in synonym_properties if prop in o.keys() and o[prop]])
@@ -110,33 +114,23 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
     robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
-def generate_base_class_template(taxonomy_file_path, all_taxonomies, output_filepath):
-    path_parts = taxonomy_file_path.split(os.path.sep)
-    taxon = path_parts[len(path_parts) - 1].split(".")[0]
-
-    if str(taxonomy_file_path).endswith(".json"):
-        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
-    else:
-        dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
-        taxon = path_parts[len(path_parts) - 1].split(".")[0].replace("nomenclature_table_", "")
-
-    dend_tree = generate_dendrogram_tree(dend)
+def generate_base_class_template(taxonomy_file_path, output_filepath):
+    taxon = extract_taxonomy_name_from_path(taxonomy_file_path)
     taxonomy_config = read_taxonomy_config(taxon)
 
-    marker_path = MARKER_PATH.format(str(taxon).replace("CCN", "").replace("CS", ""))
-    allen_marker_path = ALLEN_MARKER_PATH.format(str(taxon).replace("CCN", "").replace("CS", ""))
-
-    all_taxonomies.remove(taxon)
-    other_taxonomy_aliases = index_taxonomies(all_taxonomies)
-
     if taxonomy_config:
+        if str(taxonomy_file_path).endswith(".json"):
+            dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+        else:
+            dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
+        dend_tree = generate_dendrogram_tree(dend)
         subtrees = get_subtrees(dend_tree, taxonomy_config)
 
         if "Reference_gene_list" in taxonomy_config:
             gene_db_path = ENSEMBLE_PATH.format(str(taxonomy_config["Reference_gene_list"][0]).strip().lower())
             gene_names = read_gene_data(gene_db_path)
-            minimal_markers = read_markers(marker_path, gene_names)
-            allen_markers = read_markers(allen_marker_path, gene_names)
+            minimal_markers = read_markers(MARKER_PATH.format(taxon.replace("CCN", "").replace("CS", "")), gene_names)
+            allen_markers = read_markers(ALLEN_MARKER_PATH.format(taxon.replace("CCN", "").replace("CS", "")), gene_names)
         else:
             minimal_markers = {}
             allen_markers = {}
@@ -156,7 +150,7 @@ def generate_base_class_template(taxonomy_file_path, all_taxonomies, output_file
                       'Cluster_ID',
                       'part_of',
                       'has_soma_location',
-                      'homologous_to'
+                      'aligned_alias'
                       ]
         class_template = []
 
@@ -200,13 +194,8 @@ def generate_base_class_template(taxonomy_file_path, all_taxonomies, output_file
                             d['part_of'] = ''
                             d['has_soma_location'] = taxonomy_config['Brain_region'][0]
 
-                homologous_to = list()
-                for other_aliases in other_taxonomy_aliases:
-                    if "cell_set_aligned_alias" in o and o["cell_set_aligned_alias"] \
-                            and str(o["cell_set_aligned_alias"]).lower() in other_aliases:
-                        homologous_to.append(PCL_BASE + get_class_id(other_aliases[str(o["cell_set_aligned_alias"])
-                                             .lower()]["cell_set_accession"]))
-                d['homologous_to'] = "|".join(homologous_to)
+                if "cell_set_aligned_alias" in o and o["cell_set_aligned_alias"]:
+                    d['aligned_alias'] = o["cell_set_aligned_alias"]
 
                 for k in class_seed:
                     if not (k in d.keys()):
@@ -218,20 +207,17 @@ def generate_base_class_template(taxonomy_file_path, all_taxonomies, output_file
 
 
 def generate_curated_class_template(taxonomy_file_path, output_filepath):
-    path_parts = taxonomy_file_path.split(os.path.sep)
-    taxon = path_parts[len(path_parts) - 1].split(".")[0]
-
-    if str(taxonomy_file_path).endswith(".json"):
-        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
-    else:
-        dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
-        taxon = path_parts[len(path_parts) - 1].split(".")[0].replace("nomenclature_table_", "")
-
-    dend_tree = generate_dendrogram_tree(dend)
+    taxon = extract_taxonomy_name_from_path(taxonomy_file_path)
     taxonomy_config = read_taxonomy_config(taxon)
 
     if taxonomy_config:
+        if str(taxonomy_file_path).endswith(".json"):
+            dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+        else:
+            dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
+        dend_tree = generate_dendrogram_tree(dend)
         subtrees = get_subtrees(dend_tree, taxonomy_config)
+
         class_curation_seed = ['defined_class',
                                'Curated_synonyms',
                                'Classification',
@@ -266,17 +252,53 @@ def generate_curated_class_template(taxonomy_file_path, output_filepath):
         class_robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
+def generate_homologous_to_template(taxonomy_file_path, all_base_files, output_filepath):
+    """
+    Homologous_to relations require a separate template. If this operation is driven by the nomenclature tables,
+    some dangling classes may be generated due to root classes that don't have a class and should not be aligned.
+    So, instead of nomenclature tables, base files are used for populating homologous to relations. This ensures all
+    alignments has a corresponding class.
+    Args:
+        taxonomy_file_path: path of the taxonomy file
+        all_base_files: paths of the all class template base files
+        output_filepath: template output file path
+    """
+    taxon = extract_taxonomy_name_from_path(taxonomy_file_path)
+    taxonomy_config = read_taxonomy_config(taxon)
+
+    other_taxonomy_aliases = index_base_files([t for t in all_base_files if taxon not in t])
+
+    if taxonomy_config:
+        if str(taxonomy_file_path).endswith(".json"):
+            dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+        else:
+            dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
+        dend_tree = generate_dendrogram_tree(dend)
+        subtrees = get_subtrees(dend_tree, taxonomy_config)
+
+        data_template = []
+
+        for o in dend['nodes']:
+            if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or
+                                                                    o['cell_set_additional_aliases']):
+                d = dict()
+                d['defined_class'] = PCL_BASE + get_class_id(o['cell_set_accession'])
+                homologous_to = list()
+                for other_aliases in other_taxonomy_aliases:
+                    if "cell_set_aligned_alias" in o and o["cell_set_aligned_alias"] \
+                            and str(o["cell_set_aligned_alias"]).lower() in other_aliases:
+                        homologous_to.append(other_aliases[str(o["cell_set_aligned_alias"])
+                                             .lower()]["defined_class"])
+                d['homologous_to'] = "|".join(homologous_to)
+
+                data_template.append(d)
+
+        robot_template = pd.DataFrame.from_records(data_template)
+        robot_template.to_csv(output_filepath, sep="\t", index=False)
+
+
 def generate_non_taxonomy_classification_template(taxonomy_file_path, output_filepath):
-    path_parts = taxonomy_file_path.split(os.path.sep)
-    taxon = path_parts[len(path_parts) - 1].split(".")[0]
-
-    if str(taxonomy_file_path).endswith(".json"):
-        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
-    else:
-        dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
-        taxon = path_parts[len(path_parts) - 1].split(".")[0].replace("nomenclature_table_", "")
-
-    # dend_nodes = index_dendrogram(dend)
+    taxon = extract_taxonomy_name_from_path(taxonomy_file_path)
 
     cell_set_accession = 3
     child_cell_set_accessions = 14
@@ -314,19 +336,15 @@ def generate_non_taxonomy_classification_template(taxonomy_file_path, output_fil
 
 
 def generate_cross_species_template(taxonomy_file_path, output_filepath):
-    path_parts = taxonomy_file_path.split(os.path.sep)
-    taxon = path_parts[len(path_parts) - 1].split(".")[0]
-
-    if str(taxonomy_file_path).endswith(".json"):
-        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
-    else:
-        dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
-        taxon = path_parts[len(path_parts) - 1].split(".")[0].replace("nomenclature_table_", "")
-
-    dend_tree = generate_dendrogram_tree(dend)
+    taxon = extract_taxonomy_name_from_path(taxonomy_file_path)
     taxonomy_config = read_taxonomy_config(taxon)
 
     if taxonomy_config:
+        if str(taxonomy_file_path).endswith(".json"):
+            dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+        else:
+            dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
+        dend_tree = generate_dendrogram_tree(dend)
         subtrees = get_subtrees(dend_tree, taxonomy_config)
         cross_species_template = []
 
@@ -402,6 +420,48 @@ def generate_taxonomies_template(taxonomy_metadata_path, output_filepath):
     robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
+def generate_datasets_template(dataset_metadata_path, output_filepath):
+    path_parts = dataset_metadata_path.split(os.path.sep)
+    taxonomy_id = path_parts[len(path_parts) - 1].split("_")[0]
+
+    headers, dataset_metadata = read_csv_to_dict(dataset_metadata_path, generated_ids=True)
+
+    robot_template_seed = {'ID': 'ID',
+                           'TYPE': 'TYPE',
+                           'Entity Type': 'TI %',
+                           'Label': 'LABEL',
+                           'Taxonomy': 'AI schema:includedInDataCatalog',
+                           'Cell Count': "AT 'cell_count'^^xsd:integer",
+                           'Nuclei Count': "AT 'nuclei_count'^^xsd:integer",
+                           'Description': "A rdfs:comment",
+                           'Download Link': "A schema:archivedAt",
+                           'Explore Link': "A schema:discussionUrl"
+                           }
+    dl = [robot_template_seed]
+
+    dataset_index = 0
+    for dataset in dataset_metadata:
+        d = dict()
+        d['ID'] = 'PCL:' + get_dataset_id(taxonomy_id, dataset_index)
+        d['TYPE'] = 'owl:NamedIndividual'
+        d['Entity Type'] = 'schema:Dataset'  # Taxonomy
+        d['Label'] = dataset_metadata[dataset]['Dataset']
+        d['Taxonomy'] = 'PCL:' + get_taxonomy_id(taxonomy_id)
+        cells_nuclei = dataset_metadata[dataset]['cells/nuclei']
+        if 'nuclei' in cells_nuclei:
+            d['Nuclei Count'] = int(''.join(c for c in cells_nuclei if c.isdigit()))
+        elif 'cells' in cells_nuclei:
+            d['Cell Count'] = int(''.join(c for c in cells_nuclei if c.isdigit()))
+        d['Description'] = dataset_metadata[dataset]['text']
+        d['Download Link'] = dataset_metadata[dataset]['download_link']
+        d['Explore Link'] = dataset_metadata[dataset]['explore_link']
+
+        dataset_index += 1
+        dl.append(d)
+    robot_template = pd.DataFrame.from_records(dl)
+    robot_template.to_csv(output_filepath, sep="\t", index=False)
+
+
 def generate_app_specific_template(taxonomy_file_path, output_filepath):
     if str(taxonomy_file_path).endswith(".json"):
         dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
@@ -426,12 +486,10 @@ def generate_app_specific_template(taxonomy_file_path, output_filepath):
     robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
-def index_taxonomies(taxonomies):
+def index_base_files(base_files):
     index = list()
-    for taxonomy in taxonomies:
-        nomenclature_path = os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                                         NOMENCLATURE_TABLE_PATH.format(taxonomy))
-        headers, records = read_csv_to_dict(nomenclature_path, id_column_name="cell_set_aligned_alias",
+    for base_file in base_files:
+        headers, records = read_csv_to_dict(base_file, delimiter="\t", id_column_name="aligned_alias",
                                             id_to_lower=True)
         index.append(records)
 

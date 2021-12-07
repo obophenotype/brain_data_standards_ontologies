@@ -1,26 +1,25 @@
 import unittest
 import os
 
-from template_generation_tools import generate_base_class_template, generate_cross_species_template, \
-    generate_ind_template, generate_non_taxonomy_classification_template
+from template_generation_tools import generate_base_class_template, \
+    generate_ind_template, generate_homologous_to_template
 from template_generation_utils import read_tsv, migrate_manual_curations
 from pcl_id_factory import get_class_id, get_taxonomy_id, get_individual_id
 
-ALL_TAXONOMIES = ["CCN202002013", "CCN201912131", "CCN201912132"]
+current_dir = os.path.dirname(os.path.realpath(__file__))
+ALL_BASE_FILES = [os.path.join(current_dir, "../patterns/data/default/CCN202002013_class_base.tsv"),
+                  os.path.join(current_dir, "../patterns/data/default/CCN201912131_class_base.tsv"),
+                  os.path.join(current_dir, "../patterns/data/default/CCN201912132_class_base.tsv"),
+                  os.path.join(current_dir, "../patterns/data/default/CS1908210_class_base.tsv")]
 
-PATH_MOUSE_NOMENCLATURE = os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                                       "../dendrograms/nomenclature_table_CCN202002013.csv")
-# PATH_NOMENCLATURE_TABLE = os.path.join(os.path.dirname(os.path.realpath(__file__)),
-#                                        "./test_data/nomenclature_table_CCN201912131.csv")
-PATH_NOMENCLATURE_TABLE = os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                                       "../dendrograms/nomenclature_table_CCN201912131.csv")
-PATH_MARKER = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/CS202002013_markers.tsv")
-PATH_OUTPUT_CLASS_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/output_class.tsv")
-PATH_OUTPUT_NON_TAXON_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                                         "./test_data/output_non_taxon.tsv")
-PATH_OUTPUT_NOMENCLATURE_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/nomenclature.tsv")
-PATH_GENERIC_OUTPUT_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                                       "./test_data/output_generic.tsv")
+PATH_MOUSE_NOMENCLATURE = os.path.join(current_dir, "../dendrograms/nomenclature_table_CCN202002013.csv")
+# PATH_NOMENCLATURE_TABLE = os.path.join(current_dir, "./test_data/nomenclature_table_CCN201912131.csv")
+PATH_NOMENCLATURE_TABLE = os.path.join(current_dir, "../dendrograms/nomenclature_table_CCN201912131.csv")
+PATH_MARKER = os.path.join(current_dir, "./test_data/CS202002013_markers.tsv")
+PATH_OUTPUT_CLASS_TSV = os.path.join(current_dir, "./test_data/output_class.tsv")
+PATH_OUTPUT_NON_TAXON_TSV = os.path.join(current_dir, "./test_data/output_non_taxon.tsv")
+PATH_OUTPUT_NOMENCLATURE_TSV = os.path.join(current_dir, "./test_data/nomenclature.tsv")
+PATH_GENERIC_OUTPUT_TSV = os.path.join(current_dir, "./test_data/output_generic.tsv")
 
 PCL_BASE = "http://purl.obolibrary.org/obo/PCL_"
 
@@ -49,20 +48,20 @@ class TemplateGenerationTest(unittest.TestCase):
         output = read_tsv(PATH_GENERIC_OUTPUT_TSV)
 
         _label = 2
-        _description = 17
-        _aliases = 18
-        _rank = 19
+        _description = 18
+        _aliases = 19
+        _rank = 20
 
         self.assertTrue("PCL:"+get_individual_id("CS202002013_123") in output)  # child
         test_node = output["PCL:"+get_individual_id("CS202002013_123")]
-        self.assertEqual("GABAergic - CS202002013_123", str(test_node[2]))
+        self.assertEqual("GABAergic", str(test_node[2]))
         self.assertTrue(str(test_node[_description]).startswith("GABAergic is: Neurons that use GABA as a neurotransmitter"))
         self.assertEqual("Neuronal: GABAergic|Inhibitory neurons", test_node[_aliases])
         self.assertEqual("Class", test_node[_rank])
 
         self.assertTrue("PCL:"+get_individual_id("CS202002013_219") in output)  # child
         test_node = output["PCL:"+get_individual_id("CS202002013_219")]
-        self.assertEqual("Non-neural - CS202002013_219", str(test_node[2]))
+        self.assertEqual("Non-neural", str(test_node[2]))
         self.assertTrue(
             str(test_node[_description]).startswith("Non-Neural is: Cells of mesoderm"))
         self.assertEqual("", test_node[_aliases])
@@ -71,7 +70,7 @@ class TemplateGenerationTest(unittest.TestCase):
         self.assertEqual("Cell Type|Subclass", output["PCL:"+get_individual_id("CS202002013_112")][_rank])
 
     def test_base_class_template_generation(self):
-        generate_base_class_template(PATH_MOUSE_NOMENCLATURE, ALL_TAXONOMIES, PATH_OUTPUT_CLASS_TSV)
+        generate_base_class_template(PATH_MOUSE_NOMENCLATURE, PATH_OUTPUT_CLASS_TSV)
         output = read_tsv(PATH_OUTPUT_CLASS_TSV)
 
         self.assertTrue(PCL_BASE + get_class_id("CS202002013_150") in output)  # child
@@ -100,7 +99,7 @@ class TemplateGenerationTest(unittest.TestCase):
         self.assertFalse(PCL_BASE + get_class_id("CS202002013_220") in output)  # grand parent
 
     def test_base_class_template_generation_with_nomenclature(self):
-        generate_base_class_template(PATH_NOMENCLATURE_TABLE, ALL_TAXONOMIES, PATH_OUTPUT_CLASS_TSV)
+        generate_base_class_template(PATH_NOMENCLATURE_TABLE, PATH_OUTPUT_CLASS_TSV)
         output = read_tsv(PATH_OUTPUT_CLASS_TSV)
 
         # assert only descendants of the root nodes (except root nodes itself) exist
@@ -112,86 +111,59 @@ class TemplateGenerationTest(unittest.TestCase):
         self.assertTrue(PCL_BASE + get_class_id("CS201912131_125") in output)  # root & leaf
         self.assertFalse(PCL_BASE + get_class_id("CS201912131_148") in output)  # parent
 
-    # non_taxonomy_roots are not used now
-    # def test_non_taxonomy_classification_template_generation(self):
-    #     generate_non_taxonomy_classification_template(PATH_DENDROGRAM_JSON, PATH_OUTPUT_NON_TAXON_TSV)
-    #     output = read_tsv(PATH_OUTPUT_NON_TAXON_TSV)
-    #
-    #     # assert only descendants of the root nodes (except root nodes itself) exist
-    #     self.assertFalse(PCL_BASE + get_class_id("CS202002013_258") in output)  # root
-    #     self.assertFalse(PCL_BASE + get_class_id("CS202002013_237") in output)  # root
-    #     self.assertFalse(PCL_BASE + get_class_id("CS202002013_232") in output)  # root
-    #     self.assertFalse(PCL_BASE + get_class_id("CS202002013_261") in output)  # root
-    #
-    #     self.assertTrue(PCL_BASE + get_class_id("CS202002013_114") in output)  # child of CS202002013_237
-    #     self.assertEqual("CL:0000881", output[PCL_BASE + get_class_id("CS202002013_114")][1])
-    #     self.assertTrue(PCL_BASE + get_class_id("CS202002013_115") in output)  # child of CS202002013_237
-    #     self.assertEqual("CL:0000881", output[PCL_BASE + get_class_id("CS202002013_115")][1])
-    #     self.assertTrue(PCL_BASE + get_class_id("CS202002013_116") in output)  # child of CS202002013_237
-    #     self.assertEqual("CL:0000881", output[PCL_BASE + get_class_id("CS202002013_116")][1])
+    def test_homologous_to_template_generation(self):
+        generate_homologous_to_template(PATH_NOMENCLATURE_TABLE, ALL_BASE_FILES, PATH_OUTPUT_CLASS_TSV)
+        output = read_tsv(PATH_OUTPUT_CLASS_TSV)
 
-    # cross species is not used any more, pairwise (homologous to) alignment is done
-    # def test_cross_species_template_generation(self):
-    #     generate_cross_species_template(PATH_MOUSE_NOMENCLATURE, PATH_GENERIC_OUTPUT_TSV)
-    #     output = read_tsv(PATH_GENERIC_OUTPUT_TSV)
-    #
-    #     # non matching nodes
-    #     self.assertFalse(PCL_BASE + get_class_id("CS202002013_94") in output)
-    #     self.assertFalse(PCL_BASE + get_class_id("CS202002013_212") in output)
-    #
-    #     # aligned alias matching
-    #     self.assertTrue(PCL_BASE + get_class_id("CS202002013_8") in output)
-    #     self.assertEqual(PCL_BASE + get_class_id("CS202002270_4"), output[PCL_BASE + get_class_id("CS202002013_8")][1])
-    #     self.assertTrue(PCL_BASE + get_class_id("CS202002013_193") in output)
-    #     self.assertEqual(PCL_BASE + get_class_id("CS202002270_53"), output[PCL_BASE + get_class_id("CS202002013_193")][1])
-    #
-    #     # taxon additional_aliases -> cross species preferred_alias
-    #     # not valid due to nomenclature change
-    #     # self.assertTrue(PCL_BASE + get_class_id("CS202002013_211") in output)
-    #     # self.assertEqual(PCL_BASE + get_class_id("CS202002270_39"), output[PCL_BASE + get_class_id("CS202002013_211")][1])
+        self.assertTrue(PCL_BASE + get_class_id("CS201912131_164") in output)
+        test_node = output[PCL_BASE + get_class_id("CS201912131_164")]
+        homologous_to = test_node[1].split("|")
+        self.assertEqual(2, len(homologous_to))
+        self.assertTrue(PCL_BASE + get_class_id("CS201912132_039") in homologous_to)
+        self.assertTrue(PCL_BASE + get_class_id("CS202002013_244") in homologous_to)
 
-    # cross species is not used any more, pairwise (homologous to) alignment is done
-    # def test_cross_species_template_generation_nomenclature(self):
-    #     generate_cross_species_template(PATH_NOMENCLATURE_TABLE, PATH_GENERIC_OUTPUT_TSV)
-    #     output = read_tsv(PATH_GENERIC_OUTPUT_TSV)
-    #
-    #     # aligned alias matching
-    #     self.assertTrue(PCL_BASE + get_class_id("CS201912131_72") in output)
-    #     self.assertEqual(PCL_BASE + get_class_id("CS202002270_24"), output[PCL_BASE + get_class_id("CS201912131_72")][1])
-    #     self.assertTrue(PCL_BASE + get_class_id("CS201912131_127") in output)
-    #     self.assertEqual(PCL_BASE + get_class_id("CS202002270_45"), output[PCL_BASE + get_class_id("CS201912131_127")][1])
-    #
-    #     # taxon additional_aliases -> cross species preferred_alias
-    #     # not valid due to nomenclature change
-    #     # self.assertTrue(PCL_BASE + get_class_id("CS201912131_11") in output)
-    #     # self.assertEqual(PCL_BASE + get_class_id("CS202002270_6"), output[PCL_BASE + get_class_id("CS201912131_11")][1])
-    #     # self.assertTrue(PCL_BASE + get_class_id("CS201912131_171") in output)
-    #     # self.assertEqual(PCL_BASE + get_class_id("CS202002270_25"), output[PCL_BASE + get_class_id("CS201912131_171")][1])
+        self.assertTrue(PCL_BASE + get_class_id("CS201912131_176") in output)
+        test_node = output[PCL_BASE + get_class_id("CS201912131_176")]
+        homologous_to = test_node[1].split("|")
+        self.assertEqual(2, len(homologous_to))
+        self.assertTrue(PCL_BASE + get_class_id("CS201912132_060") in homologous_to)
+        self.assertTrue(PCL_BASE + get_class_id("CS202002013_067") in homologous_to)
+
+        self.assertTrue(PCL_BASE + get_class_id("CS201912131_157") in output)
+        test_node = output[PCL_BASE + get_class_id("CS201912131_157")]
+        homologous_to = test_node[1].split("|")
+        self.assertEqual(1, len(homologous_to))
+        self.assertTrue(PCL_BASE + get_class_id("CS201912132_002") in homologous_to)
+
+        self.assertTrue(PCL_BASE + get_class_id("CS201912131_142") in output)  # human Astrocyte
+        test_node = output[PCL_BASE + get_class_id("CS201912131_142")]
+        homologous_to = test_node[1]
+        self.assertFalse(homologous_to)  # mouse and marmoset astro not exists
 
     # not test
-    def test_curated_class_migrate(self):
-        migrate_columns = ["Curated_synonyms", "Classification", "Classification_comment", "Classification_pub",
-                           "Expresses", "Expresses_comment", "Expresses_pub", "Projection_type", "Layers",
-                           "Cross_species_text", "Comment"]
-        migrate_manual_curations("../patterns/data/default/CCN201912131_class_curation_old.tsv",
-                                 "../patterns/data/default/CCN201912131_class_curation.tsv",
-                                 migrate_columns,
-                                 "../patterns/data/default/CCN201912131_class_curation_migrate.tsv")
-
-        migrate_manual_curations("../patterns/data/default/CCN201912132_class_curation_old.tsv",
-                                 "../patterns/data/default/CCN201912132_class_curation.tsv",
-                                 migrate_columns,
-                                 "../patterns/data/default/CCN201912132_class_curation_migrate.tsv")
-
-        migrate_manual_curations("../patterns/data/default/CCN202002013_class_curation_old.tsv",
-                                 "../patterns/data/default/CCN202002013_class_curation.tsv",
-                                 migrate_columns,
-                                 "../patterns/data/default/CCN202002013_class_curation_migrate.tsv")
-
-        migrate_manual_curations("../patterns/data/default/CS1908210_class_curation_old.tsv",
-                                 "../patterns/data/default/CS1908210_class_curation.tsv",
-                                 migrate_columns,
-                                 "../patterns/data/default/CS1908210_class_curation_migrate.tsv")
+    # def test_curated_class_migrate(self):
+    #     migrate_columns = ["Curated_synonyms", "Classification", "Classification_comment", "Classification_pub",
+    #                        "Expresses", "Expresses_comment", "Expresses_pub", "Projection_type", "Layers",
+    #                        "Cross_species_text", "Comment"]
+    #     migrate_manual_curations("../patterns/data/default/CCN201912131_class_curation_old.tsv",
+    #                              "../patterns/data/default/CCN201912131_class_curation.tsv",
+    #                              migrate_columns,
+    #                              "../patterns/data/default/CCN201912131_class_curation_migrate.tsv")
+    #
+    #     migrate_manual_curations("../patterns/data/default/CCN201912132_class_curation_old.tsv",
+    #                              "../patterns/data/default/CCN201912132_class_curation.tsv",
+    #                              migrate_columns,
+    #                              "../patterns/data/default/CCN201912132_class_curation_migrate.tsv")
+    #
+    #     migrate_manual_curations("../patterns/data/default/CCN202002013_class_curation_old.tsv",
+    #                              "../patterns/data/default/CCN202002013_class_curation.tsv",
+    #                              migrate_columns,
+    #                              "../patterns/data/default/CCN202002013_class_curation_migrate.tsv")
+    #
+    #     migrate_manual_curations("../patterns/data/default/CS1908210_class_curation_old.tsv",
+    #                              "../patterns/data/default/CS1908210_class_curation.tsv",
+    #                              migrate_columns,
+    #                              "../patterns/data/default/CS1908210_class_curation_migrate.tsv")
 
     # def test_allen_markers_migrate(self):
     #     # in the curation table change Expresses column name to Markers

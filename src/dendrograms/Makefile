@@ -4,13 +4,14 @@ TEMPLATE_FILES = $(patsubst %, ../templates/%.tsv, $(JOBS))
 MARKER_DENORMALIZED_FILES = $(patsubst %, ../markers/%_markers_denormalized.tsv, $(JOBS))
 TEMPLATE_CLASS_BASE_FILES = $(patsubst %, ../patterns/data/default/%_class_base.tsv, $(JOBS))
 TEMPLATE_CLASS_CURATION_FILES = $(patsubst %, ../patterns/data/default/%_class_curation.tsv, $(JOBS))
-NOMENCLATURE_TEMPLATE_FILES = $(patsubst %, ../patterns/data/default/%_non_taxonomy_classification.tsv, $(JOBS))
-CROSS_SPECIES_TEMPLATE_FILES = $(patsubst %, ../patterns/data/default/%_cross_species.tsv, $(JOBS))
+TEMPLATE_CLASS_HOMOLOGOUS_FILES = $(patsubst %, ../patterns/data/default/%_class_homologous.tsv, $(JOBS))
 APP_SPECIFIC_TEMPLATE_FILES = $(patsubst %, ../templates/%_app_specific.tsv, $(JOBS))
+DATASET_TEMPLATE_FILES = $(patsubst %, ../templates/%_dataset.tsv, $(JOBS))
 TAXONOMY_TEMPLATE_FILE = ../templates/Taxonomies.tsv
 
 
-all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FILES) $(MARKER_DENORMALIZED_FILES) $(NOMENCLATURE_TEMPLATE_FILES) $(TAXONOMY_TEMPLATE_FILE) $(APP_SPECIFIC_TEMPLATE_FILES)
+
+all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FILES) $(MARKER_DENORMALIZED_FILES) $(TAXONOMY_TEMPLATE_FILE) $(APP_SPECIFIC_TEMPLATE_FILES) $(TEMPLATE_CLASS_HOMOLOGOUS_FILES) $(DATASET_TEMPLATE_FILES)
 
 ../templates/%.tsv: %.json nomenclature_table_%.csv
 	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -i $< -o $@ ;\
@@ -21,23 +22,24 @@ all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FI
 	else python ../scripts/template_runner.py generator -md -i $(word 2, $^) -o $@ ; fi
 
 ../patterns/data/default/%_class_base.tsv: %.json nomenclature_table_%.csv
-	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -cb -i $< -j "$(JOBS)" -o $@ ;\
-	else python ../scripts/template_runner.py generator -cb -i $(word 2, $^) -j "$(JOBS)" -o $@ ; fi
+	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -cb -i $< -o $@ ;\
+	else python ../scripts/template_runner.py generator -cb -i $(word 2, $^) -o $@ ; fi
 
 ../patterns/data/default/%_class_curation.tsv: %.json nomenclature_table_%.csv
 	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -cc -i $< -o $@ ;\
 	else python ../scripts/template_runner.py generator -cc -i $(word 2, $^) -o $@ ; fi
 
-../patterns/data/default/%_non_taxonomy_classification.tsv: %.json nomenclature_table_%.csv
-	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -n -i $< -o $@ ;\
-	else python ../scripts/template_runner.py generator -n -i $(word 2, $^) -o $@ ; fi
+../patterns/data/default/%_class_homologous.tsv: %.json nomenclature_table_%.csv $(TEMPLATE_CLASS_BASE_FILES)
+	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -ch -i $< -b "$(TEMPLATE_CLASS_BASE_FILES)" -o $@ ;\
+	else python ../scripts/template_runner.py generator -ch -i $(word 2, $^) -b "$(TEMPLATE_CLASS_BASE_FILES)" -o $@ ; fi
 
 ../templates/%_app_specific.tsv: %.json nomenclature_table_%.csv
 	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -a -i $< -o $@ ;\
 	else python ../scripts/template_runner.py generator -a -i $(word 2, $^) -o $@ ; fi
 
-../templates/Taxonomies.tsv: Taxonomy_Info_Panel.csv
+../templates/%_dataset.tsv: MOp_taxonomies_ontology/%_landingpage_dataset_info.csv
+	python ../scripts/template_runner.py generator -ds -i $< -o $@
+
+../templates/Taxonomies.tsv: MOp_taxonomies_ontology/Taxonomy_Info_Panel.csv
 	python ../scripts/template_runner.py generator -tx -i $< -o $@
 
-#../patterns/data/default/%_cross_species.tsv: nomenclature_table_%.csv
-#	python ../scripts/template_runner.py generator -cs -i $< -o $@

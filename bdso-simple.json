@@ -29,11 +29,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-11-30"
+            "val": "2021-12-06"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/pcl/releases/2021-11-30/bdso-simple.json",
+        "version": "http://purl.obolibrary.org/obo/pcl/releases/2021-12-06/bdso-simple.json",
         "xrefs": []
       },
       "nodes": [
@@ -258,6 +258,10 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "external"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
                 "val": "uberon"
               },
               {
@@ -394,6 +398,10 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
                 "val": "For compatibility with BFO, this relation has a shortcut definition in which the expression \"capable of some P\" expands to \"bearer_of (some realized_by only P)\"."
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "external"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -716,6 +724,16 @@
         {
           "id": "http://purl.obolibrary.org/obo/PCL_0010059",
           "lbl": "cluster id",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/PCL_0010060",
+          "lbl": "cell_count",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/PCL_0010061",
+          "lbl": "nuclei_count",
           "type": "PROPERTY"
         },
         {

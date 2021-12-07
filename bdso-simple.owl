@@ -12,14 +12,15 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:custom="http://n2o.neo/custom/"
+     xmlns:schema="http://schema.org/"
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:nsf2_full_mtg="http://www.jcvi.org/framework/nsf2_full_mtg#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pcl/bdso-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pcl/releases/2021-11-30/bdso-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pcl/releases/2021-12-06/bdso-simple.owl"/>
         <dc:title>Brain Data Standards Cell Ontology</dc:title>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-11-30</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-06</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -246,6 +247,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PCL_0010060 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/PCL_0010060">
+        <rdfs:label>cell_count</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCL_0010061 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/PCL_0010061">
+        <rdfs:label>nuclei_count</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0001900"/>
@@ -354,6 +371,18 @@
         <oboInOwl:shorthand>dcterms-license</oboInOwl:shorthand>
         <rdfs:label>license</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://schema.org/archivedAt -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/archivedAt"/>
+    
+
+
+    <!-- http://schema.org/includedInDataCatalog -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/includedInDataCatalog"/>
     
 
 
@@ -575,6 +604,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000118 xml:lang="en">is bearer of</obo:IAO_0000118>
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <oboInOwl:hasDbXref>RO:0000053</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>bearer_of</oboInOwl:id>
         <oboInOwl:shorthand>bearer_of</oboInOwl:shorthand>
@@ -645,6 +675,7 @@ A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An
         <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/21208450"/>
         <obo:IAO_0000232>For compatibility with BFO, this relation has a shortcut definition in which the expression &quot;capable of some P&quot; expands to &quot;bearer_of (some realized_by only P)&quot;.</obo:IAO_0000232>
         <oboInOwl:hasDbXref>RO:0002215</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
         <oboInOwl:hasOBONamespace>protein</oboInOwl:hasOBONamespace>
         <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>capable_of</oboInOwl:id>

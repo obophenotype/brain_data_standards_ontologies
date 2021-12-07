@@ -442,6 +442,7 @@ Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0014542>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0014549>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000028>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010058>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))
@@ -456,6 +457,8 @@ Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014001> "Inh L1-2 PAX6 CDH12 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014001> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LOC101927870, TGFBR2. These cells also express CDH12, PAX6. The reference data for this cell type is CS1908210001."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014001> "LOC101927870"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014001> "TGFBR2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014001> "Inh L1-2 PAX6 CDH12"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014001> "LOC101927870, TGFBR2 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014001> "Neuron 001"^^xsd:string)
@@ -473,6 +476,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014001> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014002> "Inh L1-2 PAX6 TNFAIP8L3 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014002> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LINC01497, SP8. These cells also express TNFAIP8L3, PAX6. The reference data for this cell type is CS1908210002."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014002> "LINC01497"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014002> "SP8"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014002> "Inh L1-2 PAX6 TNFAIP8L3"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014002> "LINC01497, SP8 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014002> "Neuron 002"^^xsd:string)
@@ -490,6 +495,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014002> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014003> "Inh L1 LAMP5 NMBR MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014003> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of SV2C, NDNF. These cells also express LAMP5, NMBR. The reference data for this cell type is CS1908210003."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014003> "NDNF"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014003> "SV2C"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014003> "Inh L1 LAMP5 NMBR"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014003> "Neuron 003"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014003> "SV2C, NDNF expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
@@ -507,6 +514,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014003> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014004> "Inh L1-4 LAMP5 LCP2 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014004> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of KIT, CPLX3. These cells also express LAMP5, LCP2. The reference data for this cell type is CS1908210004."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014004> "CPLX3"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014004> "KIT"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014004> "Inh L1-4 LAMP5 LCP2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014004> "KIT, CPLX3 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014004> "Neuron 004"^^xsd:string)
@@ -526,6 +535,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014004> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014005> "Inh L1-2 LAMP5 DBP MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014005> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of CBLN4, CPLX3. These cells also express DBP, LAMP5. The reference data for this cell type is CS1908210005."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014005> "CBLN4"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014005> "CPLX3"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014005> "CBLN4, CPLX3 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014005> "Inh L1-2 LAMP5 DBP"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014005> "Neuron 005"^^xsd:string)
@@ -543,6 +554,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014005> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014006> "Inh L2-6 LAMP5 CA1 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014006> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of EYA4, TMEM255A. These cells also express LAMP5, CA1. The reference data for this cell type is CS1908210006."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014006> "EYA4"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014006> "TMEM255A"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014006> "EYA4, TMEM255A expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014006> "Inh L2-6 LAMP5 CA1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014006> "Lamp5 Lhx6"^^xsd:string)
@@ -561,6 +574,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014006> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014007> "Inh L1 SST CHRNA4 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014007> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of SEMA3C, ANKFN1, CXCL14. These cells also express CHRNA4, SST. The reference data for this cell type is CS1908210007."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014007> "ANKFN1"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014007> "CXCL14"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014007> "SEMA3C"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014007> "Inh L1 SST CHRNA4"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014007> "Neuron 007"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014007> "SEMA3C, ANKFN1, CXCL14 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
@@ -578,6 +594,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014007> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014008> "Inh L1-2 ADARB2 MC4R MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014008> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of ARHGAP36, ADAM33. These cells also express ADARB2, MC4R. The reference data for this cell type is CS1908210008."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014008> "ADAM33"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014008> "ARHGAP36"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014008> "ARHGAP36, ADAM33 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014008> "Inh L1-2 ADARB2 MC4R"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014008> "Neuron 008"^^xsd:string)
@@ -595,6 +613,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014008> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014009> "Inh L1-2 SST BAGE2 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014009> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LOC105377436, BAGE2. These cells also express SST, BAGE2. The reference data for this cell type is CS1908210009."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014009> "BAGE2"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014009> "LOC105377436"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014009> "Inh L1-2 SST BAGE2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014009> "LOC105377436, BAGE2 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014009> "Neuron 009"^^xsd:string)
@@ -612,6 +632,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014009> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014010> "Inh L1-3 VIP SYT6 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014010> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of CNR1, PLCXD3. These cells also express SYT6, VIP. The reference data for this cell type is CS1908210010."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014010> "CNR1"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014010> "PLCXD3"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014010> "CNR1, PLCXD3 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014010> "Inh L1-3 VIP SYT6"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014010> "Neuron 010"^^xsd:string)
@@ -629,6 +651,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014010> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014011> "Inh L1-2 VIP TSPAN12 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014011> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LINC01539, DCN. These cells also express TSPAN12, VIP. The reference data for this cell type is CS1908210011."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014011> "DCN"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014011> "LINC01539"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014011> "Inh L1-2 VIP TSPAN12"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014011> "LINC01539, DCN expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014011> "Neuron 011"^^xsd:string)
@@ -646,6 +670,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014011> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014012> "Inh L1-4 VIP CHRNA6 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014012> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LOC101928923, CCDC141. These cells also express VIP, CHRNA6. The reference data for this cell type is CS1908210012."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014012> "CCDC141"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014012> "LOC101928923"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014012> "Inh L1-4 VIP CHRNA6"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014012> "LOC101928923, CCDC141 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014012> "Neuron 012"^^xsd:string)
@@ -663,6 +689,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014012> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014013> "Inh L1-3 VIP ADAMTSL1 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014013> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of DACH2, PCDH18. These cells also express VIP, ADAMTSL1. The reference data for this cell type is CS1908210013."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014013> "DACH2"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014013> "PCDH18"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014013> "DACH2, PCDH18 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014013> "Inh L1-3 VIP ADAMTSL1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014013> "Neuron 013"^^xsd:string)
@@ -680,6 +708,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014013> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014014> "Inh L1-4 VIP PENK MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014014> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LOC105371331, EGFEM1P. These cells also express PENK, VIP. The reference data for this cell type is CS1908210014."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014014> "EGFEM1P"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014014> "LOC105371331"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014014> "Inh L1-4 VIP PENK"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014014> "LOC105371331, EGFEM1P expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014014> "Neuron 014"^^xsd:string)
@@ -697,6 +727,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014014> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014015> "Inh L2-6 VIP QPCT MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014015> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of IGFBP7, PCP4. These cells also express QPCT, VIP. The reference data for this cell type is CS1908210015."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014015> "IGFBP7"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014015> "PCP4"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014015> "IGFBP7, PCP4 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014015> "Inh L2-6 VIP QPCT"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014015> "Neuron 015"^^xsd:string)
@@ -714,6 +746,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014015> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014016> "Inh L3-6 VIP HS3ST3A1 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014016> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of IQGAP2, ABI3BP. These cells also express VIP, HS3ST3A1. The reference data for this cell type is CS1908210016."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014016> "ABI3BP"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014016> "IQGAP2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014016> "IQGAP2, ABI3BP expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014016> "Inh L3-6 VIP HS3ST3A1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014016> "Neuron 016"^^xsd:string)
@@ -731,6 +765,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014016> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014017> "Inh L1-2 VIP PCDH20 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014017> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of ANGPT1, VIP. These cells also express PCDH20, VIP. The reference data for this cell type is CS1908210017."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014017> "ANGPT1"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014017> "VIP"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014017> "ANGPT1, VIP expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014017> "Inh L1-2 VIP PCDH20"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014017> "Neuron 017"^^xsd:string)
@@ -748,6 +784,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014017> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014018> "Inh L2-5 VIP SERPINF1 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014018> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LINC01583, TSHZ2, TAC3. These cells also express SERPINF1, VIP. The reference data for this cell type is CS1908210018."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014018> "LINC01583"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014018> "TAC3"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014018> "TSHZ2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014018> "Inh L2-5 VIP SERPINF1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014018> "LINC01583, TSHZ2, TAC3 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014018> "Neuron 018"^^xsd:string)
@@ -765,6 +804,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014018> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014019> "Inh L2-5 VIP TYR MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014019> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of COL15A1, TAC3. These cells also express TYR, VIP. The reference data for this cell type is CS1908210019."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014019> "COL15A1"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014019> "TAC3"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014019> "COL15A1, TAC3 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014019> "Inh L2-5 VIP TYR"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014019> "Neuron 019"^^xsd:string)
@@ -782,6 +823,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014019> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014020> "Inh L1-3 VIP CHRM2 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014020> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LOC100421401, LOC101060145. These cells also express CHRM2, VIP. The reference data for this cell type is CS1908210020."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014020> "LOC100421401"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014020> "LOC101060145"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014020> "Inh L1-3 VIP CHRM2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014020> "LOC100421401, LOC101060145 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014020> "Neuron 020"^^xsd:string)
@@ -799,6 +842,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014020> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014021> "Inh L2-4 VIP CBLN1 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014021> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of HTR2C, MME. These cells also express VIP, CBLN1. The reference data for this cell type is CS1908210021."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014021> "HTR2C"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014021> "MME"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014021> "HTR2C, MME expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014021> "Inh L2-4 VIP CBLN1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014021> "Neuron 021"^^xsd:string)
@@ -816,6 +861,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014021> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014022> "Inh L1-3 VIP CCDC184 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014022> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of KCNH8, SCML4. These cells also express CCDC184, VIP. The reference data for this cell type is CS1908210022."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014022> "KCNH8"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014022> "SCML4"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014022> "Inh L1-3 VIP CCDC184"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014022> "KCNH8, SCML4 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014022> "Neuron 022"^^xsd:string)
@@ -833,6 +880,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014022> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014023> "Inh L1-3 VIP GGH MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014023> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LOC105375473, GGH. These cells also express VIP, GGH. The reference data for this cell type is CS1908210023."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014023> "GGH"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014023> "LOC105375473"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014023> "Inh L1-3 VIP GGH"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014023> "LOC105375473, GGH expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014023> "Neuron 023"^^xsd:string)
@@ -850,6 +899,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014023> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014024> "Inh L1-2 VIP LBH MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014024> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LOC105379146, C18orf42. These cells also express VIP, LBH. The reference data for this cell type is CS1908210024."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014024> "C18orf42"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014024> "LOC105379146"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014024> "Inh L1-2 VIP LBH"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014024> "LOC105379146, C18orf42 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014024> "Neuron 024"^^xsd:string)
@@ -867,6 +918,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014024> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014025> "Inh L2-3 VIP CASC6 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014025> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of CASC6, LOC105370456, LRRC63. These cells also express CASC6, VIP. The reference data for this cell type is CS1908210025."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014025> "CASC6"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014025> "LOC105370456"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014025> "LRRC63"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014025> "CASC6, LOC105370456, LRRC63 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014025> "Inh L2-3 VIP CASC6"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014025> "Neuron 025"^^xsd:string)
@@ -884,6 +938,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014025> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014026> "Inh L2-4 VIP SPAG17 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014026> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LINC00836, SLC7A11. These cells also express SPAG17, VIP. The reference data for this cell type is CS1908210026."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014026> "LINC00836"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014026> "SLC7A11"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014026> "Inh L2-4 VIP SPAG17"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014026> "LINC00836, SLC7A11 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014026> "Neuron 026"^^xsd:string)
@@ -901,6 +957,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014026> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014027> "Inh L1-4 VIP OPRM1 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014027> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LINC01583, PCP4, SLC22A3. These cells also express OPRM1, VIP. The reference data for this cell type is CS1908210027."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014027> "LINC01583"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014027> "PCP4"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014027> "SLC22A3"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014027> "Inh L1-4 VIP OPRM1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014027> "LINC01583, PCP4, SLC22A3 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014027> "Neuron 027"^^xsd:string)
@@ -918,6 +977,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014027> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014028> "Inh L3-6 SST NPY MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014028> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of NPY. These cells also express NPY, SST. The reference data for this cell type is CS1908210028."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014028> "NPY"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014028> "Inh L3-6 SST NPY"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014028> "NPY expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014028> "Neuron 028"^^xsd:string)
@@ -936,6 +996,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014028> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014029> "Inh L3-6 SST HPGD MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014029> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of MOXD1, HPGD, FAM89A. These cells also express HPGD, SST. The reference data for this cell type is CS1908210029."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014029> "FAM89A"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014029> "HPGD"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014029> "MOXD1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014029> "Inh L3-6 SST HPGD"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014029> "MOXD1, HPGD, FAM89A expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014029> "Neuron 029"^^xsd:string)
@@ -953,6 +1016,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014029> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014030> "Inh L4-6 SST B3GAT2 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014030> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of NMU, FREM1, TAC3. These cells also express B3GAT2, SST. The reference data for this cell type is CS1908210030."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014030> "FREM1"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014030> "NMU"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014030> "TAC3"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014030> "Inh L4-6 SST B3GAT2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014030> "NMU, FREM1, TAC3 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014030> "Neuron 030"^^xsd:string)
@@ -970,6 +1036,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014030> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014031> "Inh L5-6 SST KLHDC8A MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014031> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LOC100996671, LOC105377701. These cells also express KLHDC8A, SST. The reference data for this cell type is CS1908210031."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014031> "LOC100996671"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014031> "LOC105377701"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014031> "Inh L5-6 SST KLHDC8A"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014031> "LOC100996671, LOC105377701 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014031> "Neuron 031"^^xsd:string)
@@ -987,6 +1055,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014031> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014032> "Inh L5-6 SST NPM1P10 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014032> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of SPON1, FBN2. These cells also express NPM1P10, SST. The reference data for this cell type is CS1908210032."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014032> "FBN2"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014032> "SPON1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014032> "Inh L5-6 SST NPM1P10"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014032> "Neuron 032"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014032> "SPON1, FBN2 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
@@ -1004,6 +1074,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014032> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014033> "Inh L4-6 SST GXYLT2 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014033> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LOC101929667, SLC17A8, QRFPR. These cells also express SST, GXYLT2. The reference data for this cell type is CS1908210033."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014033> "LOC101929667"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014033> "QRFPR"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014033> "SLC17A8"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014033> "Inh L4-6 SST GXYLT2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014033> "LOC101929667, SLC17A8, QRFPR expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014033> "Neuron 033"^^xsd:string)
@@ -1021,6 +1094,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014033> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014034> "Inh L4-5 SST STK32A MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014034> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of STK32A, SLC9A2. These cells also express STK32A, SST. The reference data for this cell type is CS1908210034."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014034> "SLC9A2"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014034> "STK32A"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014034> "Inh L4-5 SST STK32A"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014034> "Neuron 034"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014034> "STK32A, SLC9A2 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
@@ -1038,6 +1113,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014034> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014035> "Inh L1-3 SST CALB1 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014035> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LOC101929028. These cells also express SST, CALB1. The reference data for this cell type is CS1908210035."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014035> "LOC101929028"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014035> "Inh L1-3 SST CALB1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014035> "LOC101929028 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014035> "Neuron 035"^^xsd:string)
@@ -1055,6 +1131,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014035> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014036> "Inh L3-5 SST ADGRG6 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014036> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of ADGRG6, PROM1. These cells also express ADGRG6, SST. The reference data for this cell type is CS1908210036."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014036> "ADGRG6"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014036> "PROM1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014036> "ADGRG6, PROM1 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014036> "Inh L3-5 SST ADGRG6"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014036> "Neuron 036"^^xsd:string)
@@ -1072,6 +1150,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014036> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014037> "Inh L2-4 SST FRZB MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014037> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of EYS, MYO5B, NOS1, HPSE2. These cells also express FRZB, SST. The reference data for this cell type is CS1908210037."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014037> "EYS"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014037> "HPSE2"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014037> "MYO5B"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014037> "NOS1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014037> "EYS, MYO5B, NOS1, HPSE2 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014037> "Inh L2-4 SST FRZB"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014037> "Neuron 037"^^xsd:string)
@@ -1089,6 +1171,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014037> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014038> "Inh L5-6 SST TH MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014038> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LOC102724957, TH. These cells also express SST, TH. The reference data for this cell type is CS1908210038."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014038> "LOC102724957"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014038> "TH"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014038> "Inh L5-6 SST TH"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014038> "LOC102724957, TH expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014038> "Neuron 038"^^xsd:string)
@@ -1106,6 +1190,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014038> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014039> "Inh L5-6 LHX6 GLP1R MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014039> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of SEMA3C, BCHE, CPED1. These cells also express LHX6, GLP1R. The reference data for this cell type is CS1908210039."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014039> "BCHE"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014039> "CPED1"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014039> "SEMA3C"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014039> "Inh L5-6 LHX6 GLP1R"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014039> "Neuron 039"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014039> "SEMA3C, BCHE, CPED1 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
@@ -1123,6 +1210,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014039> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014040> "Inh L5-6 PVALB LGR5 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014040> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of ANKRD34B, LOC401478, CPED1. These cells also express PVALB, LGR5. The reference data for this cell type is CS1908210040."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014040> "ANKRD34B"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014040> "CPED1"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014040> "LOC401478"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014040> "ANKRD34B, LOC401478, CPED1 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014040> "Inh L5-6 PVALB LGR5"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014040> "Neuron 040"^^xsd:string)
@@ -1140,6 +1230,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014040> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014041> "Inh L4-5 PVALB MEPE MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014041> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of HGF, MEPE, SPP1. These cells also express MEPE, PVALB. The reference data for this cell type is CS1908210041."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014041> "HGF"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014041> "MEPE"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014041> "SPP1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014041> "HGF, MEPE, SPP1 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014041> "Inh L4-5 PVALB MEPE"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014041> "Neuron 041"^^xsd:string)
@@ -1157,6 +1250,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014041> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014042> "Inh L2-4 PVALB WFDC2 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014042> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of SLC9A9, TAC1. These cells also express WFDC2, PVALB. The reference data for this cell type is CS1908210042."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014042> "SLC9A9"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014042> "TAC1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014042> "Inh L2-4 PVALB WFDC2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014042> "Neuron 042"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014042> "SLC9A9, TAC1 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
@@ -1174,6 +1269,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014042> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014043> "Inh L4-6 PVALB SULF1 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014043> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of SULF1, CPED1. These cells also express SULF1, PVALB. The reference data for this cell type is CS1908210043."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014043> "CPED1"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014043> "SULF1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014043> "Inh L4-6 PVALB SULF1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014043> "Neuron 043"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014043> "SULF1, CPED1 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
@@ -1191,6 +1288,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014043> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014044> "Inh L5-6 SST MIR548F2 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014044> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LYPD6, GPC5, PAWR. These cells also express MIR548F2, SST. The reference data for this cell type is CS1908210044."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014044> "GPC5"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014044> "LYPD6"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014044> "PAWR"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014044> "Inh L5-6 SST MIR548F2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014044> "LYPD6, GPC5, PAWR expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014044> "Neuron 044"^^xsd:string)
@@ -1208,6 +1308,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014044> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014045> "Inh L2-5 PVALB SCUBE3 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014045> "A GABAergic interneuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of COL15A1, LOC401478. These cells also express SCUBE3, PVALB. The reference data for this cell type is CS1908210045."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014045> "COL15A1"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014045> "LOC401478"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014045> "COL15A1, LOC401478 expressing GABAergic interneuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014045> "Chandelier"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014045> "Inh L2-5 PVALB SCUBE3"^^xsd:string)
@@ -1227,6 +1329,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014045> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014046> "Exc L2 LAMP5 LTK MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014046> "A glutamatergic neuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LINC01500, CBLN2. These cells also express LAMP5, LTK. The reference data for this cell type is CS1908210046."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014046> "CBLN2"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014046> "LINC01500"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014046> "Exc L2 LAMP5 LTK"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014046> "LINC01500, CBLN2 expressing glutamatergic neuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014046> "Neuron 046"^^xsd:string)
@@ -1244,6 +1348,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014046> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014047> "Exc L2-4 LINC00507 GLP2R MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014047> "A glutamatergic neuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of CALCRL, MOXD1, PENK. These cells also express LINC00507, GLP2R. The reference data for this cell type is CS1908210047."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014047> "CALCRL"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014047> "MOXD1"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014047> "PENK"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014047> "CALCRL, MOXD1, PENK expressing glutamatergic neuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014047> "Exc L2-4 LINC00507 GLP2R"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014047> "Neuron 047"^^xsd:string)
@@ -1261,6 +1368,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014047> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014048> "Exc L2-3 LINC00507 FREM3 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014048> "A glutamatergic neuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of CUX2, PALMD. These cells also express LINC00507, FREM3. The reference data for this cell type is CS1908210048."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014048> "CUX2"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014048> "PALMD"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014048> "CUX2, PALMD expressing glutamatergic neuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014048> "Exc L2-3 LINC00507 FREM3"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014048> "Neuron 048"^^xsd:string)
@@ -1278,6 +1387,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014048> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014049> "Exc L5-6 THEMIS C1QL3 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014049> "A glutamatergic neuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LINC00343, THEMIS, PXDN. These cells also express THEMIS, C1QL3. The reference data for this cell type is CS1908210049."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014049> "LINC00343"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014049> "PXDN"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014049> "THEMIS"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014049> "Exc L5-6 THEMIS C1QL3"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014049> "LINC00343, THEMIS, PXDN expressing glutamatergic neuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014049> "Neuron 049"^^xsd:string)
@@ -1295,6 +1407,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014049> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014050> "Exc L3-4 RORB CARM1P1 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014050> "A glutamatergic neuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of CARM1P1, CCDC68, PRSS12. These cells also express CARM1P1, RORB. The reference data for this cell type is CS1908210050."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014050> "CARM1P1"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014050> "CCDC68"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014050> "PRSS12"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014050> "CARM1P1, CCDC68, PRSS12 expressing glutamatergic neuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014050> "Exc L3-4 RORB CARM1P1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014050> "Neuron 050"^^xsd:string)
@@ -1312,6 +1427,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014050> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014051> "Exc L3-5 RORB ESR1 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014051> "A glutamatergic neuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LOC105371677, ANXA1. These cells also express ESR1, RORB. The reference data for this cell type is CS1908210051."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014051> "ANXA1"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014051> "LOC105371677"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014051> "Exc L3-5 RORB ESR1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014051> "LOC105371677, ANXA1 expressing glutamatergic neuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014051> "Neuron 051"^^xsd:string)
@@ -1329,6 +1446,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014051> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014052> "Exc L3-5 RORB COL22A1 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014052> "A glutamatergic neuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of RMST, MME. These cells also express COL22A1, RORB. The reference data for this cell type is CS1908210052."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014052> "MME"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014052> "RMST"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014052> "Exc L3-5 RORB COL22A1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014052> "Neuron 052"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014052> "RMST, MME expressing glutamatergic neuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
@@ -1346,6 +1465,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014052> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014053> "Exc L3-5 RORB FILIP1L MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014053> "A glutamatergic neuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LOC101928196, COL5A2, NTNG1, CUX2. These cells also express FILIP1L, RORB. The reference data for this cell type is CS1908210053."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014053> "COL5A2"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014053> "CUX2"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014053> "LOC101928196"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014053> "NTNG1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014053> "Exc L3-5 RORB FILIP1L"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014053> "LOC101928196, COL5A2, NTNG1, CUX2 expressing glutamatergic neuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014053> "Neuron 053"^^xsd:string)
@@ -1363,6 +1486,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014053> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014054> "Exc L3-5 RORB TWIST2 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014054> "A glutamatergic neuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LOC101927281, TWIST2, CCDC168. These cells also express TWIST2, RORB. The reference data for this cell type is CS1908210054."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014054> "CCDC168"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014054> "LOC101927281"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014054> "TWIST2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014054> "Exc L3-5 RORB TWIST2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014054> "LOC101927281, TWIST2, CCDC168 expressing glutamatergic neuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014054> "Neuron 054"^^xsd:string)
@@ -1380,6 +1506,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014054> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014055> "Exc L4-5 RORB FOLH1B MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014055> "A glutamatergic neuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LOC101927835, RBM20, NPY2R. These cells also express FOLH1B, RORB. The reference data for this cell type is CS1908210055."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014055> "LOC101927835"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014055> "NPY2R"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014055> "RBM20"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014055> "Exc L4-5 RORB FOLH1B"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014055> "LOC101927835, RBM20, NPY2R expressing glutamatergic neuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014055> "Neuron 055"^^xsd:string)
@@ -1397,6 +1526,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014055> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014056> "Exc L4-6 RORB SEMA3E MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014056> "A glutamatergic neuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LOC101928622, RPRM. These cells also express RORB, SEMA3E. The reference data for this cell type is CS1908210056."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014056> "LOC101928622"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014056> "RPRM"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014056> "Exc L4-6 RORB SEMA3E"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014056> "LOC101928622, RPRM expressing glutamatergic neuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014056> "Neuron 056"^^xsd:string)
@@ -1414,6 +1545,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014056> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014057> "Exc L4-5 RORB DAPK2 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014057> "A glutamatergic neuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LINC01179, LOC105374971, BARX2. These cells also express DAPK2, RORB. The reference data for this cell type is CS1908210057."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014057> "BARX2"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014057> "LINC01179"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014057> "LOC105374971"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014057> "Exc L4-5 RORB DAPK2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014057> "LINC01179, LOC105374971, BARX2 expressing glutamatergic neuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014057> "Neuron 057"^^xsd:string)
@@ -1431,6 +1565,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014057> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014058> "Exc L5-6 RORB TTC12 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014058> "A glutamatergic neuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LOC105371833, NPFFR2, TNNT2. These cells also express TTC12, RORB. The reference data for this cell type is CS1908210058."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014058> "LOC105371833"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014058> "NPFFR2"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014058> "TNNT2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014058> "Exc L5-6 RORB TTC12"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014058> "LOC105371833, NPFFR2, TNNT2 expressing glutamatergic neuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014058> "Neuron 058"^^xsd:string)
@@ -1448,6 +1585,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014058> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014059> "Exc L4-6 RORB C1R MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014059> "A glutamatergic neuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of ITGA11, MEGF10, PKD2L1. These cells also express RORB, C1R. The reference data for this cell type is CS1908210059."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014059> "ITGA11"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014059> "MEGF10"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014059> "PKD2L1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014059> "Exc L4-6 RORB C1R"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014059> "ITGA11, MEGF10, PKD2L1 expressing glutamatergic neuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014059> "Neuron 059"^^xsd:string)
@@ -1465,6 +1605,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014059> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014060> "Exc L4-5 FEZF2 SCN4B MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014060> "A glutamatergic neuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LOC105376457, LOC105378657. These cells also express FEZF2, SCN4B. These cells have projection type extratelencephalic projecting. The reference data for this cell type is CS1908210060."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014060> "LOC105376457"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014060> "LOC105378657"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014060> "Exc L4-5 FEZF2 SCN4B"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014060> "L5 ET"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014060> "L5 PT"^^xsd:string)
@@ -1486,6 +1628,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014060> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014061> "Exc L5-6 THEMIS DCSTAMP MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014061> "A glutamatergic neuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LOC101928196, LOC105378486. These cells also express THEMIS, DCSTAMP. The reference data for this cell type is CS1908210061."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014061> "LOC101928196"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014061> "LOC105378486"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014061> "Exc L5-6 THEMIS DCSTAMP"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014061> "LOC101928196, LOC105378486 expressing glutamatergic neuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014061> "Neuron 061"^^xsd:string)
@@ -1503,6 +1647,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014061> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014062> "Exc L5-6 THEMIS CRABP1 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014062> "A glutamatergic neuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of OLFML2B, SNTB1. These cells also express CRABP1, THEMIS. The reference data for this cell type is CS1908210062."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014062> "OLFML2B"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014062> "SNTB1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014062> "Exc L5-6 THEMIS CRABP1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014062> "Neuron 062"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014062> "OLFML2B, SNTB1 expressing glutamatergic neuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
@@ -1520,6 +1666,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014062> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014063> "Exc L5-6 THEMIS FGF10 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014063> "A glutamatergic neuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LOC101928964, GAS2L3. These cells also express FGF10, THEMIS. The reference data for this cell type is CS1908210063."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014063> "GAS2L3"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014063> "LOC101928964"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014063> "Exc L5-6 THEMIS FGF10"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014063> "LOC101928964, GAS2L3 expressing glutamatergic neuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014063> "Neuron 063"^^xsd:string)
@@ -1537,6 +1685,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014063> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014064> "Exc L4-6 FEZF2 IL26 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014064> "A glutamatergic neuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of IFNG-AS1, IL26. These cells also express FEZF2, IL26. These cells have projection type near projecting. The reference data for this cell type is CS1908210064."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014064> "IFNG-AS1"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014064> "IL26"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014064> "Exc L4-6 FEZF2 IL26"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014064> "IFNG-AS1, IL26 expressing glutamatergic neuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014064> "L5 NP"^^xsd:string)
@@ -1557,6 +1707,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014064> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014065> "Exc L5-6 FEZF2 ABO MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014065> "A glutamatergic neuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of SULF1, ADAMTSL1. These cells also express ABO, FEZF2. These cells have projection type corticothalamic projecting. The reference data for this cell type is CS1908210065."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014065> "ADAMTSL1"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014065> "SULF1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014065> "Exc L5-6 FEZF2 ABO"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014065> "L6 CT"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014065> "Neuron 065"^^xsd:string)
@@ -1577,6 +1729,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014065> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014066> "Exc L6 FEZF2 SCUBE1 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014066> "A glutamatergic neuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LOC105379054, PIK3C2G. These cells also express FEZF2, SCUBE1. The reference data for this cell type is CS1908210066."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014066> "LOC105379054"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014066> "PIK3C2G"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014066> "Exc L6 FEZF2 SCUBE1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014066> "LOC105379054, PIK3C2G expressing glutamatergic neuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014066> "Neuron 066"^^xsd:string)
@@ -1594,6 +1748,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014066> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014067> "Exc L5-6 FEZF2 IL15 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014067> "A glutamatergic neuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of ERG, NPNT, NR4A2. These cells also express IL15, FEZF2. The reference data for this cell type is CS1908210067."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014067> "ERG"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014067> "NPNT"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014067> "NR4A2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014067> "ERG, NPNT, NR4A2 expressing glutamatergic neuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014067> "Exc L5-6 FEZF2 IL15"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014067> "Neuron 067"^^xsd:string)
@@ -1611,6 +1768,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014067> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014068> "Exc L6 FEZF2 OR2T8 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014068> "A glutamatergic neuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of PCOLCE2, IGFBP3, SLC15A5, SLITRK6. These cells also express OR2T8, FEZF2. The reference data for this cell type is CS1908210068."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014068> "IGFBP3"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014068> "PCOLCE2"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014068> "SLC15A5"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014068> "SLITRK6"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014068> "Exc L6 FEZF2 OR2T8"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014068> "Neuron 068"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014068> "PCOLCE2, IGFBP3, SLC15A5, SLITRK6 expressing glutamatergic neuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
@@ -1628,6 +1789,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014068> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014069> "Exc L5-6 FEZF2 EFTUD1P1 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014069> "A glutamatergic neuron of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LOC105377183, NPFFR2. These cells also express FEZF2, EFTUD1P1. The reference data for this cell type is CS1908210069."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014069> "LOC105377183"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014069> "NPFFR2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014069> "Exc L5-6 FEZF2 EFTUD1P1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014069> "LOC105377183, NPFFR2 expressing glutamatergic neuron of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014069> "Neuron 069"^^xsd:string)
@@ -1645,6 +1808,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014069> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014070> "OPC L1-6 PDGFRA MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014070> "A glial cell of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of PDGFRA, PCDH15. These cells also express PDGFRA. The reference data for this cell type is CS1908210070."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014070> "PCDH15"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014070> "PDGFRA"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014070> "Non-neuron 001"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014070> "OPC"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014070> "OPC L1-6 PDGFRA"^^xsd:string)
@@ -1663,6 +1828,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014070> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014071> "Astro L1-6 FGFR3 SLC14A1 MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014071> "A glial cell of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of LOC105376917, SLC1A3. These cells also express FGFR3, SLC14A1. The reference data for this cell type is CS1908210071."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014071> "LOC105376917"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014071> "SLC1A3"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014071> "Astro L1-6 FGFR3 SLC14A1"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014071> "LOC105376917, SLC1A3 expressing glial cell of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014071> "Non-neuron 002"^^xsd:string)
@@ -1680,6 +1847,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014071> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014072> "Astro L1-2 FGFR3 GFAP MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014072> "A glial cell of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of ID3, MT1F. These cells also express FGFR3, GFAP. The reference data for this cell type is CS1908210072."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014072> "ID3"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014072> "MT1F"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014072> "Astro L1-2 FGFR3 GFAP"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014072> "ID3, MT1F expressing glial cell of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014072> "Non-neuron 003"^^xsd:string)
@@ -1697,6 +1866,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014072> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014073> "Oligo L1-6 OPALIN MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014073> "A oligodendrocyte of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of CERCAM, ENPP2. These cells also express OPALIN. The reference data for this cell type is CS1908210073."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014073> "CERCAM"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014073> "ENPP2"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014073> "CERCAM, ENPP2 expressing oligodendrocyte of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014073> "Non-neuron 004"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014073> "Oligo L1-6 OPALIN"^^xsd:string)
@@ -1716,6 +1887,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014073> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014074> "Endo L2-6 NOSTRIN MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014074> "A glial cell of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of EMCN. These cells also express NOSTRIN. The reference data for this cell type is CS1908210074."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014074> "EMCN"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014074> "EMCN expressing glial cell of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014074> "Endo L2-6 NOSTRIN"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014074> "Endothelial"^^xsd:string)
@@ -1735,6 +1907,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_0014074> ObjectHasValue(<http://p
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/PCL_0014075> "Micro L1-6 TYROBP MTG (Human)"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_0014075> "A glial cell of the Homo sapiens middle temporal gyrus. These cells can be distinguished from other cells in the middle temporal gyrus by their selective expression of CSF1R, APBB1IP. These cells also express TYROBP. The reference data for this cell type is CS1908210075."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014075> "APBB1IP"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.obolibrary.org/obo/PCL_0014075> "CSF1R"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014075> "CSF1R, APBB1IP expressing glial cell of middle temporal gyrus (Homo sapiens)"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014075> "Micro L1-6 TYROBP"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_0014075> "Microglia"^^xsd:string)

@@ -1,0 +1,21 @@
+pattern_name: brainCellClassesHomologous
+pattern_iri: http://purl.obolibrary.org/obo/odk/brainCellClassesHomologous.yaml
+description: "Class homologous_to relation template for BDS."
+
+classes:
+  "cell": "CL:0000000"
+
+relations:
+  homologous_to: "RO:HOM0000007"
+
+list_vars:
+  homologous_to: "'cell'"
+
+logical_axioms:
+   - axiom_type: subClassOf
+     multi_clause:
+       sep: " and "
+       clauses:
+         - text: "'homologous_to' some %s"
+           vars:
+             - homologous_to
