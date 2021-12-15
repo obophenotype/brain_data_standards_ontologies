@@ -1,16 +1,10 @@
 format-version: 1.2
-data-version: pcl/releases/2021-12-06/bdso-base.owl
+data-version: pcl/releases/2021-12-15/bdso-base.owl
 ontology: pcl/bdso-base
 property_value: http://purl.org/dc/elements/1.1/title "Brain Data Standards Cell Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2021-12-06" xsd:string
-
-[Term]
-id: CL:0000881
-property_value: id "CL_0000881" xsd:string
-property_value: preferred_name "perivascular macrophage" xsd:string
-property_value: prefixIRI "CL_0000881" xsd:string
+property_value: owl:versionInfo "2021-12-15" xsd:string
 
 [Term]
 id: CL_0000128
@@ -17255,16 +17249,6 @@ comment: This term has been obsoleted and replaced with updated by an updated te
 property_value: definition "OBSOLETE. Component of the temporal lobe, lateral aspect. The rostral boundary is the rostral extent of the superior temporal sulcus whereas the caudal boundary is the temporo-occipital incisure on the cortical surface. The superior temporal sulcus is the medial boundary and the inferior temporal sulcus is the lateral boundary (Christine Fennema-Notestine)." xsd:string
 is_obsolete: true
 replaced_by: UBERON:0002771
-
-[Term]
-id: http://purl.obolibrary.org/obo/CL:0000359
-property_value: id CL:0000359 xsd:string
-property_value: prefixIRI CL:0000359 xsd:string
-
-[Term]
-id: http://purl.obolibrary.org/obo/CL:2000043
-property_value: id CL:2000043 xsd:string
-property_value: prefixIRI CL:2000043 xsd:string
 
 [Term]
 id: pCL_0000001
