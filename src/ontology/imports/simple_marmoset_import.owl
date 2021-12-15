@@ -7,8 +7,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pcl/imports/simple_marmoset_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pcl/releases/2021-11-25/imports/simple_marmoset_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-11-25</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pcl/releases/2021-12-07/imports/simple_marmoset_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-07</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1754,6 +1754,15 @@
     <owl:Class rdf:about="https://identifiers.org/ncbigene/100409827">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
         <rdfs:label>CHST8</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100409938 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100409938">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>FGFR3</rdfs:label>
     </owl:Class>
     
 
