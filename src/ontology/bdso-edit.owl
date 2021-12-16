@@ -114,12 +114,38 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010061> "nuc
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/PCL_1000000> (L4 intratelencephalic projecting glutamatergic neuron of the primary motor cortex)
+# Class: obo:PCL_1000002 (L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus))
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:33184512") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_1000000> "An intratelencephalic-projecting glutamatergic neuron that is located in the boundary between L2/3 and L5 of the primary motor cortex. These cells have diverse morphologies with some pyramidal and some stellate cells.")
-AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/PCL_1000000> <http://orcid.org/0000-0001-7258-9596>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/PCL_1000000> "ILX:0770172")
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:25525751") rdfs:comment <http://purl.obolibrary.org/obo/PCL_1000000> "These cells likely corresponded to the quasi-L4 neurons described previously in the motor cortex.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_1000000> "L4 intratelencephalic projecting glutamatergic neuron of the primary motor cortex")
-EquivalentClasses(<http://purl.obolibrary.org/obo/PCL_1000000> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_4023040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0005393>)))
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:33184512"^^xsd:string) obo:IAO_0000115 obo:PCL_1000002 "A sst GABAergic cortical interneuron transcriptomically between the sst and the pvalb families with a soma found in L2/3. Some L2/3 PV-like sst cells have Martinotti morphology while some have basket cell morphology. L2/3 PV-like sst cells have lower AP width and higher firing rate than typical Sst subclass cells. L2/3 PV-like sst cells have high maximum firing rate variability, with many classified as belonging to the pvalb subclass on the basis of electrophysiology.")
+AnnotationAssertion(oboInOwl:created_by obo:PCL_1000002 <http://orcid.org/0000-0001-7258-9596>)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:PCL_1000002 "L2/3 PV-like SST Mus)")
+AnnotationAssertion(oboInOwl:inSubset obo:PCL_1000002 <http://purl.obolibrary.org/obo/cl#BDS_subset>)
+AnnotationAssertion(rdfs:label obo:PCL_1000002 "L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus)")
+SubClassOf(obo:PCL_1000002 obo:CL_0000099)
+SubClassOf(obo:PCL_1000002 ObjectSomeValuesFrom(obo:RO_0002100 obo:UBERON_0000956))
+SubClassOf(obo:PCL_1000002 ObjectSomeValuesFrom(obo:RO_0002100 obo:UBERON_8440000))
+SubClassOf(obo:PCL_1000002 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_10090))
+SubClassOf(obo:PCL_1000002 ObjectSomeValuesFrom(obo:RO_0002215 obo:GO_0061534))
+SubClassOf(obo:PCL_1000002 ObjectSomeValuesFrom(obo:RO_0002292 obo:PR_P60041))
+
+# Class: obo:PCL_1000003 (basket morphology L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus))
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:33184512"^^xsd:string) obo:IAO_0000115 obo:PCL_1000003 "A L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus) that has basket morphology.")
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/creator> obo:PCL_1000003 <http://orcid.org/0000-0001-7258-9596>)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:PCL_1000003 "basket L2/3 PV-like SST (Mus)")
+AnnotationAssertion(oboInOwl:inSubset obo:PCL_1000003 <http://purl.obolibrary.org/obo/cl#BDS_subset>)
+AnnotationAssertion(rdfs:label obo:PCL_1000003 "basket morphology L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus)")
+SubClassOf(obo:PCL_1000003 obo:PCL_1000002)
+SubClassOf(obo:PCL_1000003 ObjectSomeValuesFrom(obo:RO_0000053 obo:PATO_0070002))
+
+# Class: obo:PCL_1000004 (Martinotti morphology L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus))
+
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "PMID:33184512"^^xsd:string) obo:IAO_0000115 obo:PCL_1000004 "A L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus) that has Martinotti morphology.")
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/creator> obo:PCL_1000004 <http://orcid.org/0000-0001-7258-9596>)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:PCL_1000004 "Martinotti L2/3 PV-like SST (Mus)")
+AnnotationAssertion(oboInOwl:inSubset obo:PCL_1000004 <http://purl.obolibrary.org/obo/cl#BDS_subset>)
+AnnotationAssertion(rdfs:label obo:PCL_1000004 "Martinotti morphology L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus)")
+SubClassOf(obo:PCL_1000004 obo:PCL_1000002)
+SubClassOf(obo:PCL_1000004 ObjectSomeValuesFrom(obo:RO_0000053 obo:PATO_0070007))
+
 )
