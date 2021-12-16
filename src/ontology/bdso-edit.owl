@@ -121,7 +121,5 @@ AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/PCL_1000000> <ht
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/PCL_1000000> "ILX:0770172")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:25525751") rdfs:comment <http://purl.obolibrary.org/obo/PCL_1000000> "These cells likely corresponded to the quasi-L4 neurons described previously in the motor cortex.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_1000000> "L4 intratelencephalic projecting glutamatergic neuron of the primary motor cortex")
-SubClassOf(<http://purl.obolibrary.org/obo/PCL_1000000> <http://purl.obolibrary.org/obo/CL_4023040>)
-SubClassOf(<http://purl.obolibrary.org/obo/PCL_1000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0005393>))
-
+EquivalentClasses(<http://purl.obolibrary.org/obo/PCL_1000000> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_4023040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0005393>)))
 )
