@@ -5,7 +5,8 @@ import argparse
 import csv
 
 from dendrogram_tools import dend_json_2_nodes_n_edges
-from template_generation_utils import read_tsv, index_dendrogram
+from template_generation_utils import read_tsv, index_dendrogram, read_csv_to_dict
+from nomenclature_tools import nomenclature_2_nodes_n_edges
 from abc import ABC, abstractmethod, ABCMeta
 from os.path import isfile, join
 
@@ -15,6 +16,11 @@ MARKERS_FOLDER = join(os.path.dirname(os.path.realpath(__file__)), "../markers")
 DENDROGRAMS_FOLDER = join(os.path.dirname(os.path.realpath(__file__)), "../dendrograms")
 
 PATH_REPORT = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../../target/report.txt")
+
+TAXONOMY_MAPPING = {"CCN202002013": "nomenclature_table_CCN202002013.csv",
+                    "CCN201912131": "nomenclature_table_CCN201912131.csv",
+                    "CCN201912132": "nomenclature_table_CCN201912132.csv",
+                    "CS1908210": "CS1908210.json"}
 
 
 def is_whitelist_file(file_name):
@@ -27,7 +33,13 @@ def get_taxonomy_files():
 
 
 def get_taxonomy_file_name(marker_file_name):
-    return marker_file_name.replace("_markers.tsv", ".json") .replace("CS", "CCN")
+    path_parts = marker_file_name.split(os.path.sep)
+    taxon = path_parts[len(path_parts) - 1].split(".")[0].replace("_markers", "") .replace("CS", "CCN")
+
+    if taxon in TAXONOMY_MAPPING:
+        return TAXONOMY_MAPPING[taxon]
+    else:
+        return "nomenclature_table_" + taxon + ".csv"
 
 
 def get_marker_file_name(taxonomy_file_name):
@@ -102,8 +114,7 @@ class TableStructureChecker(StrictChecker):
         files = [f for f in os.listdir(MARKERS_FOLDER) if isfile(join(MARKERS_FOLDER, f))]
         for file in files:
             if not is_whitelist_file(file):
-                records = read_tsv(join(MARKERS_FOLDER, file))
-                header_row = records[next(iter(records))]
+                header_row, records = read_csv_to_dict(join(MARKERS_FOLDER, file), delimiter="\t")
                 if header_row != self.expected_headers:
                     message = "Invalid column names: {} in file {}. Expected columns are: {}" \
                         .format(header_row, file, self.expected_headers)
@@ -129,7 +140,10 @@ class DendrogramCrossChecker(SoftChecker):
                 dendrogram_path = join(DENDROGRAMS_FOLDER, get_taxonomy_file_name(marker_file))
                 if os.path.exists(dendrogram_path):
                     marker_records = read_tsv(join(MARKERS_FOLDER, marker_file))
-                    dend = dend_json_2_nodes_n_edges(join(DENDROGRAMS_FOLDER, dendrogram_path))
+                    if str(dendrogram_path).endswith(".json"):
+                        dend = dend_json_2_nodes_n_edges(dendrogram_path)
+                    else:
+                        dend = nomenclature_2_nodes_n_edges(dendrogram_path)
                     self.check_all_nodes_exist(dend, marker_records, marker_file)
 
     def check_all_nodes_exist(self, dend, marker_records, marker_file):
@@ -162,15 +176,17 @@ class TaxonomyNodeIdChecker(StrictChecker):
             if not is_whitelist_file(marker_file):
                 dendrogram_path = join(DENDROGRAMS_FOLDER, get_taxonomy_file_name(marker_file))
                 if os.path.exists(dendrogram_path):
-                    marker_records = read_tsv(join(MARKERS_FOLDER, marker_file))
-                    dend = dend_json_2_nodes_n_edges(join(DENDROGRAMS_FOLDER, dendrogram_path))
+                    headers, marker_records = read_csv_to_dict(join(MARKERS_FOLDER, marker_file), delimiter="\t")
+                    if str(dendrogram_path).endswith(".json"):
+                        dend = dend_json_2_nodes_n_edges(dendrogram_path)
+                    else:
+                        dend = nomenclature_2_nodes_n_edges(dendrogram_path)
                     dend_dict = index_dendrogram(dend)
                     self.check_all_node_ids_valid(dend_dict, marker_records, marker_file)
                     self.check_all_node_ids_unique(marker_file)
 
     def check_all_node_ids_valid(self, dend_dict, marker_records, marker_file):
         marker_ids = list(marker_records.keys())
-        marker_ids.pop(0)  # pop header row
         for _id in marker_ids:
             if _id not in dend_dict:
                 message = "Invalid Taxonomy_node_ID '{}' in the marker file ({}). Id not exist in the dendrogram." \
@@ -207,21 +223,32 @@ class ClusterNameChecker(SoftChecker):
         for marker_file in files:
             if not is_whitelist_file(marker_file):
                 dendrogram_path = join(DENDROGRAMS_FOLDER, get_taxonomy_file_name(marker_file))
+                print("DEND:" + dendrogram_path)
                 if os.path.exists(dendrogram_path):
-                    marker_records = read_tsv(join(MARKERS_FOLDER, marker_file))
-                    dend = dend_json_2_nodes_n_edges(join(DENDROGRAMS_FOLDER, dendrogram_path))
+                    headers, marker_records = read_csv_to_dict(join(MARKERS_FOLDER, marker_file), delimiter="\t")
+                    if str(dendrogram_path).endswith(".json"):
+                        dend = dend_json_2_nodes_n_edges(dendrogram_path)
+                    else:
+                        dend = nomenclature_2_nodes_n_edges(dendrogram_path)
                     dend_dict = index_dendrogram(dend)
                     self.check_cluster_name(dend_dict, marker_records, marker_file)
+                else:
+                    message = "Could not find taxonomy file '{}' for marker '{}'." \
+                        .format(dendrogram_path, marker_file)
+                    self.reports.append(message)
 
     def check_cluster_name(self, dend_dict, marker_records, marker_file):
         marker_ids = list(marker_records.keys())
-        marker_ids.pop(0)  # pop header row
         for _id in marker_ids:
             if _id in dend_dict:
-                if marker_records[_id][1] != dend_dict[_id]["label"] and \
-                        marker_records[_id][1] != dend_dict[_id]["label"].replace("/", "-"):
+                if "original_label" in dend_dict[_id]:
+                    dend_label = dend_dict[_id]["original_label"]
+                else:
+                    dend_label = dend_dict[_id]["label"]
+                if marker_records[_id]["clusterName"] != dend_label and \
+                        marker_records[_id]["clusterName"] != dend_label.replace("/", "-"):
                     message = "clusterName '{}' of {} in {} does not match label '{}' in the dendrogram." \
-                        .format(marker_records[_id][1], _id, marker_file, dend_dict[_id]["label"])
+                        .format(marker_records[_id]["clusterName"], _id, marker_file, dend_label)
                     self.reports.append(message)
 
     def get_header(self):
@@ -242,14 +269,13 @@ class MarkerNameChecker(StrictChecker):
             if not is_whitelist_file(marker_file):
                 dendrogram_path = join(DENDROGRAMS_FOLDER, get_taxonomy_file_name(marker_file))
                 if os.path.exists(dendrogram_path):
-                    marker_records = read_tsv(join(MARKERS_FOLDER, marker_file))
+                    headers, marker_records = read_csv_to_dict(join(MARKERS_FOLDER, marker_file), delimiter="\t")
                     self.check_marker_names(marker_records, marker_file)
 
     def check_marker_names(self, marker_records, marker_file):
         marker_ids = list(marker_records.keys())
-        marker_ids.pop(0)  # pop header row
         for _id in marker_ids:
-            markers = marker_records[_id][2]
+            markers = marker_records[_id]["Markers"]
             for marker in markers.split("|"):
                 if not re.search("^\\w+:\\w+$", marker):
                     message = "Invalid marker '{}' in file '{}' with key '{}'." \
@@ -264,7 +290,8 @@ class MarkerNameChecker(StrictChecker):
 class MarkerValidator(object):
 
     rules = [FileNameChecker(), TableStructureChecker(), DendrogramCrossChecker(), TaxonomyNodeIdChecker(),
-             ClusterNameChecker(), MarkerNameChecker()]
+             # ClusterNameChecker(),  # cluster names do not match after manual curations
+             MarkerNameChecker()]
     errors = []
     warnings = []
 
