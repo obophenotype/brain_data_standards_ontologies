@@ -78,6 +78,7 @@ def normalize_raw_markers(raw_marker):
 
     gene_db_path = GENE_DB_PATH.format(str(taxonomy_config["Reference_gene_list"][0]).strip().lower())
     headers, genes_by_name = read_csv_to_dict(gene_db_path, id_column=2, delimiter="\t", id_to_lower=True)
+    species_abbv = get_species_for_gene_db(gene_db_path).lower()
 
     unmatched_markers = set()
     normalized_markers = []
@@ -100,10 +101,10 @@ def normalize_raw_markers(raw_marker):
             marker_ids = []
             for name in marker_names:
                 if name:
-                    if name.lower() in genes_by_name:
-                        marker_ids.append(str(genes_by_name[name.lower()]["ID"]))
-                    elif name.lower().replace("_", "-") in genes_by_name:
-                        marker_ids.append(str(genes_by_name[name.lower().replace("_", "-")]["ID"]))
+                    if species_abbv + " " + name.lower() in genes_by_name:
+                        marker_ids.append(str(genes_by_name[species_abbv + " " + name.lower()]["ID"]))
+                    elif species_abbv + " " + name.lower().replace("_", "-") in genes_by_name:
+                        marker_ids.append(str(genes_by_name[species_abbv + " " + name.lower().replace("_", "-")]["ID"]))
                     else:
                         unmatched_markers.add(name)
 
@@ -142,6 +143,8 @@ def get_taxonomy_config(raw_marker_path):
     # handles Human_MTG
     if species_name != nsforest_name:
         brain_region = nsforest_name.split("_")[1].strip()
+    elif species_name == "Mouse":
+        brain_region = "MOp"
 
     taxonomy_configs = read_taxonomy_details_yaml()
 
@@ -157,8 +160,26 @@ def get_taxonomy_config(raw_marker_path):
         raise ValueError("Species abbreviation '" + species_name + "' couldn't be found in the taxonomy configurations.")
 
 
-def fix_gene_database(gene_db_path):
+def get_species_for_gene_db(gene_db_path):
+    gene_db_name = Path(gene_db_path).stem.split(".")[0]
+
+    taxonomy_configs = read_taxonomy_details_yaml()
+
+    taxonomy_config = None
+    for config in taxonomy_configs:
+        if gene_db_name.lower() in (name.lower() for name in config["Reference_gene_list"]):
+            taxonomy_config = config
+
+    if taxonomy_config:
+        return taxonomy_config["Species_abbv"][0]
+    else:
+        raise ValueError("Reference_gene_list for gene_db '" + gene_db_path +
+                         "' couldn't be found in the taxonomy configurations.")
+
+
+def fix_gene_database(gene_db_path, gene_prefix):
     headers, genes_by_name = read_csv_to_dict(gene_db_path, id_column=1, delimiter="\t")
+    species_abbv = get_species_for_gene_db(gene_db_path)
 
     with open(gene_db_path.replace(".tsv", "_2.tsv"), mode='w') as out:
         writer = csv.writer(out, delimiter="\t", quotechar='"')
@@ -167,7 +188,42 @@ def fix_gene_database(gene_db_path):
 
         print(headers)
         for gene in genes_by_name:
-            writer.writerow(["entrez:" + gene.replace("\"", ""), "SO:0000704", genes_by_name[gene]["gene_name"]])
+            writer.writerow([gene_prefix + gene.replace("\"", ""), "SO:0000704",
+                             species_abbv + " " + genes_by_name[gene]["gene_name"]])
+
+
+def fix_gene_database_species(gene_db_path):
+    headers, genes_by_id = read_csv_to_dict(gene_db_path, id_column=0, delimiter="\t")
+    species_abbv = get_species_for_gene_db(gene_db_path)
+
+    with open(gene_db_path.replace(".tsv", "_2.tsv"), mode='w') as out:
+        writer = csv.writer(out, delimiter="\t", quotechar='"')
+        writer.writerow(["ID", "TYPE", "NAME"])
+        writer.writerow(["ID", "SC %", "A rdfs:label"])
+
+        print(headers)
+        for gene in genes_by_id:
+            writer.writerow([genes_by_id[gene]["ID"], genes_by_id[gene]["TYPE"],
+                             species_abbv + " " + genes_by_id[gene]["NAME"]])
+
+
+def add_cluster_name_to_marker(marker_path):
+    path_parts = marker_path.split(os.path.sep)
+    taxonomy_id = path_parts[len(path_parts) - 1].split("_")[0].replace("CS", "CCN")
+
+    marker_data = read_csv_to_dict(marker_path, id_column_name="Taxonomy_node_ID", delimiter="\t")[1]
+    nomenclature = read_csv_to_dict(NOMENCLATURE.format(taxonomy_id), id_column_name="cell_set_accession")[1]
+
+    normalized_markers = []
+    for accession_id in marker_data:
+        normalized_data = {"Taxonomy_node_ID": accession_id,
+                           "clusterName": nomenclature[accession_id]["original_label"],
+                           "Markers": marker_data[accession_id]["Markers"]}
+
+        normalized_markers.append(normalized_data)
+
+    class_robot_template = pd.DataFrame.from_records(normalized_markers)
+    class_robot_template.to_csv(OUTPUT_MARKER.format(taxonomy_id.replace("CCN", "").replace("CS", "")), sep="\t", index=False)
 
 # def generate_marker_template(taxon, output_file):
 #     marker_db = get_marker_db_by_id(taxon)
@@ -197,7 +253,7 @@ def fix_gene_database(gene_db_path):
 # generates marker files
 # normalize_raw_markers("../markers/raw/Marmoset_NSForest_Markers.csv")
 # normalize_raw_markers("../markers/raw/Human_NSForest_Markers.csv")
-normalize_raw_markers("../markers/raw/Human_MTG_NSForest_Markers.tsv")
+# normalize_raw_markers("../markers/raw/Human_MTG_NSForest_Markers.tsv")
 # normalize_raw_markers("../markers/raw/Mouse_NSForest_Markers.csv")
 
 
@@ -205,4 +261,12 @@ normalize_raw_markers("../markers/raw/Human_MTG_NSForest_Markers.tsv")
 # generate_marker_template("201912131", "../patterns/data/bds/ensg_data.tsv")
 # generate_marker_template("201912132", "../patterns/data/bds/enscjag_data.tsv")
 
-# fix_gene_database(GENE_DB_PATH.format("simple_human"))
+# fix_gene_database(GENE_DB_PATH.format("simple_human"), "entrez:")
+fix_gene_database(GENE_DB_PATH.format("ensmusg"), "ensembl:")
+
+# fix_gene_database_species(GENE_DB_PATH.format("simple_human"))
+# fix_gene_database_species(GENE_DB_PATH.format("simple_marmoset"))
+# fix_gene_database_species(GENE_DB_PATH.format("ensmusg"))
+
+# markers provided by Brian don't have clusterName, add them
+# add_cluster_name_to_marker("../markers/CS202002013_markers.tsv")

@@ -132,6 +132,7 @@ components/Protein2GeneExpression.owl: $(PATTERNDIR)/data/default/Protein2GeneEx
 # release a legacy ontology to support older versions of the PCL
 components/pcl-legacy.owl: ../resources/pCL_4.1.0.owl components/pCL_mapping.owl
 	$(ROBOT) query --input ../resources/pCL_4.1.0.owl --update ../sparql/delete-legacy-properties.ru \
+			query --update ../sparql/delete-non-pcl-terms.ru \
 			query --update ../sparql/postprocess-module.ru \
 			remove --select ontology \
 			merge --input components/pCL_mapping.owl \
