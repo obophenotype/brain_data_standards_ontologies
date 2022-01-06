@@ -1,10 +1,19 @@
 format-version: 1.2
-data-version: pcl/releases/2021-12-17/bdso-base.owl
+data-version: pcl/releases/2022-01-06/bdso-base.owl
 ontology: pcl/bdso-base
 property_value: http://purl.org/dc/elements/1.1/title "Brain Data Standards Cell Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2021-12-17" xsd:string
+property_value: owl:versionInfo "2022-01-06" xsd:string
+
+[Term]
+id: CL:4023119
+name: basket morphology L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus)
+def: "A L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus) that has basket morphology." [PMID:33184512]
+synonym: "basket L2/3 PV-like SST (Mus)" EXACT []
+is_a: PCL:1000002 ! L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus)
+relationship: RO:0000053 PATO:0070002
+property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7258-9596
 
 [Term]
 id: CL_0000128
@@ -7003,7 +7012,7 @@ synonym: "Mouse Moxd1, Mouse Prkg2 expressing GABAergic interneuron of primary m
 synonym: "RNAseq 041" EXACT []
 synonym: "Sst Pvalb Calb2" EXACT []
 is_a: CL:0011005
-is_a: CL:4023034 {xref="PMID:34616066"}
+is_a: PCL:1000002 {xref="PMID:34616066"} ! L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus)
 relationship: RO:0002100 UBERON:0001384 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004366 {xref="PMID:34616062"} ! expresses
@@ -8845,6 +8854,7 @@ synonym: "Mouse Th, Mouse Cort expressing GABAergic interneuron of primary motor
 synonym: "n54" EXACT []
 synonym: "RNAseq 046-047" EXACT []
 is_a: CL:0011005
+is_a: CL:4023075 {xref="PMID:34616066"}
 relationship: RO:0002100 UBERON:0001384 ! has soma location
 relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
@@ -10366,6 +10376,7 @@ synonym: "Inh L1-6 SST NPY" EXACT []
 synonym: "RNAseq 040" EXACT []
 synonym: "Sst Chodl" EXACT []
 is_a: CL:0011005
+is_a: CL:4023121 {xref="PMID:34616066"}
 relationship: RO:0002100 UBERON:0001384 ! has soma location
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 https://identifiers.org/ncbigene/4852 {xref="PMID:34616066"} ! expresses
@@ -15314,6 +15325,7 @@ synonym: "RNAseq 01, 30" EXACT []
 synonym: "Sst Chodl" EXACT []
 synonym: "Sst Chodl(i)" EXACT []
 is_a: CL:0011005
+is_a: CL:4023121 {xref="PMID:34616066"}
 relationship: RO:0002100 UBERON:0001384 ! has soma location
 relationship: RO:0002162 NCBITaxon:9483
 relationship: RO:0002292 https://identifiers.org/ncbigene/100402683 ! expresses
@@ -17241,6 +17253,28 @@ relationship: BFO:0000050 UBERON:0002771
 relationship: RO:0002162 NCBITaxon:9606
 property_value: IAO:0000028 "Astrocyte MTG (Human)" xsd:string
 property_value: prefLabel "Astrocyte" xsd:string
+
+[Term]
+id: PCL:1000002
+name: L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus)
+def: "A sst GABAergic cortical interneuron transcriptomically between the sst and the pvalb families with a soma found in L2/3. Some L2/3 PV-like sst cells have Martinotti morphology while some have basket cell morphology. L2/3 PV-like sst cells have lower AP width and higher firing rate than typical Sst subclass cells. L2/3 PV-like sst cells have high maximum firing rate variability, with many classified as belonging to the pvalb subclass on the basis of electrophysiology." [PMID:33184512]
+synonym: "L2/3 PV-like SST Mus" EXACT []
+is_a: CL:0000099
+relationship: RO:0002100 UBERON:0000956 ! has soma location
+relationship: RO:0002100 UBERON:8440000 ! has soma location
+relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002215 GO:0061534 ! capable of
+relationship: RO:0002292 PR:P60041 ! expresses
+property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7258-9596
+
+[Term]
+id: PCL:1000004
+name: Martinotti morphology L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus)
+def: "A L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus) that has Martinotti morphology." [PMID:33184512]
+synonym: "Martinotti L2/3 PV-like SST (Mus)" EXACT []
+is_a: PCL:1000002 ! L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus)
+relationship: RO:0000053 PATO:0070007
+property_value: http://purl.org/dc/elements/1.1/contributor http://orcid.org/0000-0001-7258-9596
 
 [Term]
 id: UBERON_0002771
