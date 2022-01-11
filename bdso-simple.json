@@ -29,11 +29,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-12-06"
+            "val": "2022-01-06"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/pcl/releases/2021-12-06/bdso-simple.json",
+        "version": "http://purl.obolibrary.org/obo/pcl/releases/2022-01-06/bdso-simple.json",
         "xrefs": []
       },
       "nodes": [
@@ -609,6 +609,32 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.org/dc/elements/1.1/contributor",
+          "lbl": "contributor",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "uberon"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+                "val": "true"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
+                "val": "dc-contributor"
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "http://purl.org/dc/elements/1.1/contributor"
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.org/dc/elements/1.1/description",
           "lbl": "description",
           "meta": {
@@ -624,6 +650,11 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
                 "val": "dc-description"
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "http://purl.org/dc/elements/1.1/description"
               }
             ]
           },
@@ -646,6 +677,11 @@
                 "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
                 "val": "dc-title"
               }
+            ],
+            "xrefs": [
+              {
+                "val": "http://purl.org/dc/elements/1.1/title"
+              }
             ]
           },
           "type": "PROPERTY"
@@ -666,6 +702,11 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
                 "val": "dcterms-license"
+              }
+            ],
+            "xrefs": [
+              {
+                "val": "http://purl.org/dc/terms/license"
               }
             ]
           },
