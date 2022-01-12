@@ -1,0 +1,33 @@
+pattern_name: brainCellCharacterizingMarkerSets
+pattern_iri: http://purl.obolibrary.org/obo/odk/brainCellCharacterizingMarkerSets.yaml
+description: "Characterizing marker sets template for BDS."
+
+classes:
+  "sequence_feature": "SO:0000110"
+
+relations:
+  has_part: "BFO:0000051"
+
+list_vars:
+  Minimal_markers: "'sequence_feature'"
+
+data_vars:
+  Marker_set_of: "xsd:string"
+  Brain_region_abbv: "xsd:string"
+  Species_abbv: "xsd:string"
+
+name:
+   text: "NS forest marker set of %s %s (%s)."
+   vars:
+      - Marker_set_of
+      - Brain_region_abbv
+      - Species_abbv
+
+logical_axioms:
+   - axiom_type: subClassOf
+     multi_clause:
+      sep: " and "
+      clauses:
+        - text: "'has_part' some %s"
+          vars:
+            - Minimal_markers

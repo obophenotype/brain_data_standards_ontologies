@@ -7,14 +7,18 @@ ID range allocation logic is as follows
 
     - 0010000 to 0010999  custom classes and properties (manually managed)
     - 0011000 taxonomy1 individual
-    - 0011001 to 0011399 taxonomy1 classes
-    - 0011400 to 0011950 taxonomy1 individuals
-    - 0011951 to 0011999 taxonomy1 datasets
+    - 0011001 to 0011499 taxonomy1 classes (500)
+    - 0011500 to 0012450 taxonomy1 individuals (950)
+    - 0012451 to 0012500 taxonomy1 datasets (50)
+    - 0012501 to 0012999 taxonomy1 marker gene sets (500)
+    - 0013000 to 0014999 taxonomy1 spare id space (2000)
     -
-    - 0012000 taxonomy2 individual
-    - 0012001 to 0012399 taxonomy2 classes
-    - 0012400 to 0012999 taxonomy2 individuals
-    - 0012951 to 0012999 taxonomy2 datasets
+    - 0015000 taxonomy2 individual
+    - 0015001 to 0015499 taxonomy2 classes
+    - 0015500 to 0016450 taxonomy2 individuals
+    - 0016451 to 0016500 taxonomy2 datasets
+    - 0016501 to 0016999 taxonomy2 marker gene sets
+    - 0017000 to 0018999 taxonomy2 spare id space
     - ...
 
 """
@@ -28,9 +32,10 @@ TAXONOMY_DETAILS_YAML = os.path.join(os.path.dirname(os.path.realpath(__file__))
 
 # Allocate IDs starting from PCL_0011000
 ID_RANGE_BASE = 11000
-TAXONOMY_ID_RANGE = 1000
-INDV_ID_DISPLACEMENT = 400
-DATASET_ID_DISPLACEMENT = 951
+TAXONOMY_ID_RANGE = 4000
+INDV_ID_DISPLACEMENT = 500
+DATASET_ID_DISPLACEMENT = 1451
+MARKER_SET_ID_DISPLACEMENT = 1500
 
 
 def read_taxonomy_details_yaml():
@@ -63,7 +68,7 @@ def get_individual_id(accession_id):
     """
     Generates a PCL id for the given accession id. Parses taxonomy id from accession id and based on taxonomy's order
     in the 'taxonomy_details.yaml' finds the allocated id range for the taxonomy. Generates a PCL id displaced by the
-    node_id in the individual range (taxonomy range + 400).
+    node_id in the individual range (taxonomy range + 500).
     Args:
         accession_id: cell set accession id
 
@@ -100,6 +105,22 @@ def get_dataset_id(taxonomy_id, dataset_index):
     """
     taxonomy_index = get_taxonomy_index(taxonomy_id)
     pcl_id = ID_RANGE_BASE + (TAXONOMY_ID_RANGE * taxonomy_index) + DATASET_ID_DISPLACEMENT + dataset_index
+
+    return str(pcl_id).zfill(7)
+
+
+def get_marker_gene_set_id(accession_id):
+    """
+    Generates a PCL id for the given accession id. Parses taxonomy id from accession id and based on taxonomy's order
+    in the 'taxonomy_details.yaml' finds the allocated id range for the taxonomy. Generates a PCL id displaced by the
+    node_id in the marker gene set range (taxonomy range + 400).
+    Args:
+        accession_id: cell set accession id
+
+    Returns: seven digit PCL id as string
+    """
+    node_id, taxonomy_index = parse_accession_id(accession_id)
+    pcl_id = ID_RANGE_BASE + (TAXONOMY_ID_RANGE * taxonomy_index) + MARKER_SET_ID_DISPLACEMENT + node_id
 
     return str(pcl_id).zfill(7)
 
