@@ -3,10 +3,15 @@ pattern_iri: http://purl.obolibrary.org/obo/odk/brainCellCharacterizingMarkerSet
 description: "Characterizing marker sets template for BDS."
 
 classes:
+  "regional part of brain": "UBERON:0002616"
   "sequence_feature": "SO:0000110"
 
 relations:
   has_part: "BFO:0000051"
+  has_anatomical_context: "PCL:0010063"
+
+vars:
+  Brain_region: "'regional part of brain'"
 
 list_vars:
   Minimal_markers: "'sequence_feature'"
@@ -31,3 +36,7 @@ logical_axioms:
         - text: "'has_part' some %s"
           vars:
             - Minimal_markers
+   - axiom_type: subClassOf
+     text: "'has_anatomical_context' some %s"
+     vars:
+        - Brain_region
