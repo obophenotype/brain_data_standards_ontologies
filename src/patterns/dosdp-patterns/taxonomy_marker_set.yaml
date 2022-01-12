@@ -8,7 +8,7 @@ classes:
 
 relations:
   has_part: "BFO:0000051"
-  has_anatomical_context: "PCL:0010063"
+#  has_anatomical_context: "PCL:0010063"
 
 vars:
   Brain_region: "'regional part of brain'"
@@ -36,7 +36,7 @@ logical_axioms:
         - text: "'has_part' some %s"
           vars:
             - Minimal_markers
-   - axiom_type: subClassOf
-     text: "'has_anatomical_context' some %s"
-     vars:
-        - Brain_region
+#   - axiom_type: subClassOf
+#     text: "'has_anatomical_context' some %s"
+#     vars:
+#        - Brain_region
