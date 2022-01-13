@@ -182,3 +182,9 @@ $(ONT)-base-ext.json: $(RELEASEDIR)/$(ONT)-base-ext.owl
 	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		convert --check false -f json -o $@.tmp.json &&\
 	jq -S 'walk(if type == "array" then sort else . end)' $@.tmp.json > $(RELEASEDIR)/$@ && rm $@.tmp.json
+
+
+# skip schema checks for now, because odk using the wrong validator
+.PHONY: pattern_schema_checks
+pattern_schema_checks: update_patterns
+	if [ $(PAT) = "skip" ]; then $(PATTERN_TESTER) $(PATTERNDIR)/dosdp-patterns/  ; fi
