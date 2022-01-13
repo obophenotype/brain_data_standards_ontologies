@@ -13,7 +13,7 @@
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pcl/pcl.owl">
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <terms:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Provisional Cell Ontology</terms:title>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-02</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-01-13</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -111,16 +111,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CL_0000881 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL_0000881">
-        <nsf2_full_mtg:id>CL_0000881</nsf2_full_mtg:id>
-        <nsf2_full_mtg:preferred_name>perivascular macrophage</nsf2_full_mtg:preferred_name>
-        <nsf2_full_mtg:prefixIRI>CL_0000881</nsf2_full_mtg:prefixIRI>
-    </owl:Class>
     
 
 
@@ -7637,30 +7627,6 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete Grp-expressing mouse primary motor cortex glutamatergic neuron</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
         <skos:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBSOLETE. is a layer 5/6 non-pyramidal mouse primary motor cortex glutamatergic neuron that selectively expresses Grp, and Rxfp1, and Tshz2 mRNAs</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/UBERON_0001384 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001384"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CL:0000359 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL:0000359">
-        <nsf2_full_mtg:id>CL:0000359</nsf2_full_mtg:id>
-        <nsf2_full_mtg:prefixIRI>CL:0000359</nsf2_full_mtg:prefixIRI>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CL:2000043 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CL:2000043">
-        <nsf2_full_mtg:id>CL:2000043</nsf2_full_mtg:id>
-        <nsf2_full_mtg:prefixIRI>CL:2000043</nsf2_full_mtg:prefixIRI>
     </owl:Class>
     
 
