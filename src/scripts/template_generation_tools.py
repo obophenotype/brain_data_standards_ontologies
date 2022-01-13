@@ -9,7 +9,7 @@ from template_generation_utils import get_synonyms_from_taxonomy, read_taxonomy_
     read_csv, read_gene_data, read_markers, get_gross_cell_type, merge_tables, read_allen_descriptions, \
     extract_taxonomy_name_from_path
 from nomenclature_tools import nomenclature_2_nodes_n_edges
-from pcl_id_factory import get_class_id, get_individual_id, get_taxonomy_id, get_dataset_id
+from pcl_id_factory import get_class_id, get_individual_id, get_taxonomy_id, get_dataset_id, get_marker_gene_set_id
 
 
 log = logging.getLogger(__name__)
@@ -150,7 +150,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                       'Cluster_ID',
                       'part_of',
                       'has_soma_location',
-                      'aligned_alias'
+                      'aligned_alias',
+                      'marker_gene_set'
                       ]
         class_template = []
 
@@ -196,6 +197,8 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
 
                 if "cell_set_aligned_alias" in o and o["cell_set_aligned_alias"]:
                     d['aligned_alias'] = o["cell_set_aligned_alias"]
+                if o['cell_set_accession'] in minimal_markers:
+                    d['marker_gene_set'] = PCL_PREFIX + get_marker_gene_set_id(o['cell_set_accession'])
 
                 for k in class_seed:
                     if not (k in d.keys()):
@@ -460,6 +463,58 @@ def generate_datasets_template(dataset_metadata_path, output_filepath):
         dl.append(d)
     robot_template = pd.DataFrame.from_records(dl)
     robot_template.to_csv(output_filepath, sep="\t", index=False)
+
+
+def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
+    taxon = extract_taxonomy_name_from_path(taxonomy_file_path)
+    taxonomy_config = read_taxonomy_config(taxon)
+
+    if taxonomy_config:
+        if str(taxonomy_file_path).endswith(".json"):
+            dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+        else:
+            dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
+        dend_tree = generate_dendrogram_tree(dend)
+        subtrees = get_subtrees(dend_tree, taxonomy_config)
+
+        if "Reference_gene_list" in taxonomy_config:
+            gene_db_path = ENSEMBLE_PATH.format(str(taxonomy_config["Reference_gene_list"][0]).strip().lower())
+            gene_names = read_gene_data(gene_db_path)
+            minimal_markers = read_markers(MARKER_PATH.format(taxon.replace("CCN", "").replace("CS", "")), gene_names)
+
+        else:
+            minimal_markers = {}
+
+        class_seed = ['defined_class',
+                      'Marker_set_of',
+                      'Minimal_markers',
+                      'Brain_region_abbv',
+                      'Species_abbv',
+                      'Brain_region'
+                      ]
+        class_template = []
+
+        for o in dend['nodes']:
+            if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or
+                                                                    o['cell_set_additional_aliases']):
+                if o['cell_set_accession'] in minimal_markers:
+                    d = dict()
+                    d['defined_class'] = PCL_BASE + get_marker_gene_set_id(o['cell_set_accession'])
+                    d['Marker_set_of'] = o['cell_set_preferred_alias']
+                    d['Minimal_markers'] = minimal_markers[o['cell_set_accession']]
+                    if 'Brain_region_abbv' in taxonomy_config:
+                        d['Brain_region_abbv'] = taxonomy_config['Brain_region_abbv'][0]
+                    if 'Species_abbv' in taxonomy_config:
+                        d['Species_abbv'] = taxonomy_config['Species_abbv'][0]
+                    d['Brain_region'] = taxonomy_config['Brain_region'][0]
+
+                    for k in class_seed:
+                        if not (k in d.keys()):
+                            d[k] = ''
+                    class_template.append(d)
+
+        class_robot_template = pd.DataFrame.from_records(class_template)
+        class_robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
 def generate_app_specific_template(taxonomy_file_path, output_filepath):
