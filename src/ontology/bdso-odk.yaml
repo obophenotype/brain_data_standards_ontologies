@@ -26,10 +26,6 @@ import_group:
     - <http://purl.obolibrary.org/obo/NCBITaxon_Union_*>
     - <http://www.genenames.org/cgi-bin/gene_symbol_report*>
   products:
-    - id: pr
-      make_base: TRUE
-      mirror_from: https://raw.githubusercontent.com/obophenotype/pro_obo_slim/master/pr_slim.owl
-      is_large: TRUE
     - id: go
       use_base: TRUE
       base_iris:

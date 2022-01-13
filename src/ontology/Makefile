@@ -94,7 +94,7 @@ all_main: $(MAIN_FILES)
 ## By default this is the cross-product of IMPORT_MODULES x FORMATS
 
 
-IMPORTS =  pr go ro uberon pato cl ensmusg ncbitaxon
+IMPORTS =  go ro uberon pato cl ensmusg ncbitaxon
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -250,13 +250,6 @@ imports/%_import.owl: mirror/merged.owl imports/%_terms_combined.txt
 
 .PRECIOUS: imports/%_import.owl
 
-## Module for ontology: pr
-
-imports/pr_import.owl: mirror/merged.owl imports/pr_terms_combined.txt
-	if [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) extract -i $< -T imports/pr_terms_combined.txt --force true --individuals exclude --method BOT \
-		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
 .PHONY: refresh-imports
 refresh-imports:
 	make IMP=true MIR=true PAT=false IMP_LARGE=true all_imports -B
@@ -303,16 +296,6 @@ IMP=true # Global parameter to bypass import generation
 MIR=true # Global parameter to bypass mirror generation
 IMP_LARGE=true # Global parameter to bypass handling of large imports
 PAT=true # Global parameter to bypass pattern generation
-
-## ONTOLOGY: pr
-## Copy of pr is re-downloaded whenever source changes
-mirror/pr.trigger: $(SRC)
-
-mirror/pr.owl: mirror/pr.trigger
-	if [ $(MIR) = true ] && [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) convert -I https://raw.githubusercontent.com/obophenotype/pro_obo_slim/master/pr_slim.owl -o $@.tmp.owl && \
-		$(ROBOT) remove -i $@.tmp.owl --base-iri $(URIBASE)/PR --axioms external --preserve-structure false --trim false -o $@.tmp.owl && mv $@.tmp.owl $@; fi
-.PRECIOUS: mirror/pr.owl
-
 
 ## ONTOLOGY: go
 ## Copy of go is re-downloaded whenever source changes
