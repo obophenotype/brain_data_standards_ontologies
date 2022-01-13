@@ -1,0 +1,28 @@
+id: bdso
+title: Brain Data Standards Cell Ontology
+github_org: obophenotype
+repo: bdso
+use_dosdps: TRUE
+export_formats:
+  - owl
+  - obo
+  - json
+release_artefacts:
+  - base
+  - simple-non-classified
+  - full
+  - simple
+primary_release: full
+import_group:
+  products:
+    - id: ro
+    - id: uberon
+    - id: pato
+    - id: cl
+    - id: ensmusg
+    - id: ncbitaxon
+      mirror_from: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
+components:
+  products:
+    - filename: all_templates.owl
+
