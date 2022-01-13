@@ -16,41 +16,41 @@ class PCLIdFactoryTestCase(unittest.TestCase):
         self.assertEqual(get_class_id("CS202002013_1"), "0011001")
         self.assertEqual(get_class_id("CS202002013_121"), "0011121")
 
-        self.assertEqual(get_individual_id("CS202002013_1"), "0011401")
-        self.assertEqual(get_individual_id("CS202002013_121"), "0011521")
+        self.assertEqual(get_individual_id("CS202002013_1"), "0011501")
+        self.assertEqual(get_individual_id("CS202002013_121"), "0011621")
 
     def test_human_ids(self):
-        self.assertEqual(get_class_id("CS201912131_1"), "0012001")
-        self.assertEqual(get_class_id("CS201912131_121"), "0012121")
+        self.assertEqual(get_class_id("CS201912131_1"), "0015001")
+        self.assertEqual(get_class_id("CS201912131_121"), "0015121")
 
-        self.assertEqual(get_individual_id("CS201912131_1"), "0012401")
-        self.assertEqual(get_individual_id("CS201912131_121"), "0012521")
+        self.assertEqual(get_individual_id("CS201912131_1"), "0015501")
+        self.assertEqual(get_individual_id("CS201912131_121"), "0015621")
 
     def test_marmoset_ids(self):
-        self.assertEqual(get_class_id("CS201912132_1"), "0013001")
-        self.assertEqual(get_class_id("CS201912132_121"), "0013121")
+        self.assertEqual(get_class_id("CS201912132_1"), "0019001")
+        self.assertEqual(get_class_id("CS201912132_121"), "0019121")
 
-        self.assertEqual(get_individual_id("CS201912132_1"), "0013401")
-        self.assertEqual(get_individual_id("CS201912132_121"), "0013521")
+        self.assertEqual(get_individual_id("CS201912132_1"), "0019501")
+        self.assertEqual(get_individual_id("CS201912132_121"), "0019621")
 
     def test_human_mtg_ids(self):
-        self.assertEqual(get_class_id("CS1908210001"), "0014001")
-        self.assertEqual(get_class_id("CS1908210148"), "0014148")
+        self.assertEqual(get_class_id("CS1908210001"), "0023001")
+        self.assertEqual(get_class_id("CS1908210148"), "0023148")
 
-        self.assertEqual(get_individual_id("CS1908210001"), "0014401")
-        self.assertEqual(get_individual_id("CS1908210148"), "0014548")
+        self.assertEqual(get_individual_id("CS1908210001"), "0023501")
+        self.assertEqual(get_individual_id("CS1908210148"), "0023648")
 
     def test_taxonomy_id(self):
         self.assertEqual(get_taxonomy_id("CS202002013"), "0011000")
         self.assertEqual(get_taxonomy_id("CCN202002013"), "0011000")
 
-        self.assertEqual(get_taxonomy_id("CS201912131"), "0012000")
-        self.assertEqual(get_taxonomy_id("CCN201912131"), "0012000")
+        self.assertEqual(get_taxonomy_id("CS201912131"), "0015000")
+        self.assertEqual(get_taxonomy_id("CCN201912131"), "0015000")
 
-        self.assertEqual(get_taxonomy_id("CS201912132"), "0013000")
-        self.assertEqual(get_taxonomy_id("CCN201912132"), "0013000")
+        self.assertEqual(get_taxonomy_id("CS201912132"), "0019000")
+        self.assertEqual(get_taxonomy_id("CCN201912132"), "0019000")
 
-        self.assertEqual(get_taxonomy_id("CS1908210"), "0014000")
+        self.assertEqual(get_taxonomy_id("CS1908210"), "0023000")
 
     def test_reverse_id(self):
         self.assertEqual(get_reverse_id("0011001"), "CS202002013_1")
@@ -58,11 +58,11 @@ class PCLIdFactoryTestCase(unittest.TestCase):
         self.assertEqual(get_reverse_id("PCL:0011001"), "CS202002013_1")
         self.assertEqual(get_reverse_id("http://purl.obolibrary.org/obo/PCL_0011001"), "CS202002013_1")
 
-        self.assertEqual(get_reverse_id("0011521"), "CS202002013_121")
-        self.assertEqual(get_reverse_id("0012121"), "CS201912131_121")
-        self.assertEqual(get_reverse_id("0013401"), "CS201912132_1")
-        self.assertEqual(get_reverse_id("0014548"), "CS1908210148")
-        self.assertEqual(get_reverse_id("0014001"), "CS1908210001")
+        self.assertEqual(get_reverse_id("0011621"), "CS202002013_121")
+        self.assertEqual(get_reverse_id("0015121"), "CS201912131_121")
+        self.assertEqual(get_reverse_id("0019501"), "CS201912132_1")
+        self.assertEqual(get_reverse_id("0023648"), "CS1908210148")
+        self.assertEqual(get_reverse_id("0023001"), "CS1908210001")
 
     # not test
     # def test_allen_markers_migrate(self):
