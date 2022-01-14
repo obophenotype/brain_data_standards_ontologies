@@ -90,7 +90,7 @@
         },
         "Location_relation": {
           "type": "string",
-          "description": ""
+          "description": "The relation to use to link cell type to brain region. See guidance on CL repo.  Rule of thumb: For neurons use has_soma_location. For other cell types use part_of."
         }
       }
     },
