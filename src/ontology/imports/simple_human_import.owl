@@ -1,0 +1,4580 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/pcl/imports/simple_human_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/pcl/imports/simple_human_import.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pcl/imports/simple_human_import.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pcl/releases/2022-01-13/imports/simple_human_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-01-13</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000704 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000704"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1001 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CDH3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100128108 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100128108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC100128108</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100128497 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100128497">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC100128497</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100130873 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100130873">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CARM1P1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100132891 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100132891">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC100132891</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100271314 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100271314">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human RPL35AP11</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100313771 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100313771">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human MIR548F2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1004 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CDH6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100421401 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100421401">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC100421401</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100505474 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100505474">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LINC01539</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100505933 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100505933">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ADD3-AS1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100506497 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100506497">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC100506497</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100507254 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100507254">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LINC01013</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100507562 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100507562">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC100507562</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100862680 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100862680">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LINC00507</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100873948 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100873948">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human NREP-AS1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100874222 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100874222">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human RNF219-AS1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100885789 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100885789">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human IFNG-AS1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100996671 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100996671">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC100996671</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1010 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CDH12</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101060145 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101060145">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101060145</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101926942 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101926942">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101926942</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101927078 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101927078">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101927078</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101927199 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101927199">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101927199</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101927281 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101927281">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101927281</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101927286 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101927286">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101927286</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101927389 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101927389">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101927389</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101927439 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101927439">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101927439</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101927459 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101927459">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101927459</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101927668 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101927668">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101927668</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101927745 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101927745">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101927745</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101927835 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101927835">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101927835</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101927843 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101927843">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101927843</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101927870 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101927870">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101927870</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101927874 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101927874">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101927874</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101928114 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101928114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101928114</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101928151 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101928151">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LINC01179</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101928176 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101928176">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LINC01411</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101928196 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101928196">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101928196</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101928278 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101928278">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101928278</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101928622 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101928622">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101928622</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101928842 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101928842">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101928842</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101928923 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101928923">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101928923</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101928964 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101928964">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101928964</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101929028 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101929028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101929028</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101929052 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101929052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LINC00836</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101929059 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101929059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ZIM2-AS1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101929083 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101929083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CASC6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101929667 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101929667">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101929667</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101929680 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101929680">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC101929680</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/101929690 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/101929690">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LINC01583</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/10203 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/10203">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CALCRL</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/102723356 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/102723356">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ZFPM2-AS1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/102723487 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/102723487">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LINC01497</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/102723742 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/102723742">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LINC01500</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/102724957 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/102724957">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC102724957</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103689918 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103689918">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LINC01378</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/10406 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/10406">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human WFDC2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/10418 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/10418">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SPON1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/104326188 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/104326188">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LINC01202</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/10451 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/10451">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human VAV3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ADARB2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/10512 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/10512">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SEMA3C</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105369818 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105369818">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105369818</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105369890 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105369890">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105369890</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105370019 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105370019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105370019</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105370315 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105370315">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105370315</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105370456 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105370456">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105370456</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105370610 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105370610">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105370610</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105371310 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105371310">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105371310</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105371331 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105371331">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105371331</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105371663 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105371663">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105371663</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105371677 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105371677">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105371677</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105371832 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105371832">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105371832</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105371833 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105371833">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105371833</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105373454 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105373454">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105373454</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105373592 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105373592">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105373592</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105373642 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105373642">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105373642</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105373893 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105373893">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105373893</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105374392 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105374392">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105374392</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105374524 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105374524">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105374524</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105374971 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105374971">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105374971</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105374973 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105374973">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105374973</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105375473 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105375473">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105375473</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105376081 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105376081">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105376081</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105376372 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105376372">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105376372</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105376457 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105376457">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105376457</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105376917 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105376917">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105376917</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105376987 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105376987">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105376987</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105377183 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105377183">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105377183</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105377209 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105377209">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105377209</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105377436 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105377436">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105377436</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105377701 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105377701">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105377701</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105377703 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105377703">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105377703</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105377862 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105377862">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105377862</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105378031 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105378031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105378031</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105378334 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105378334">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105378334</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105378486 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105378486">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105378486</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105378657 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105378657">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105378657</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105379003 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105379003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105379003</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105379054 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105379054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105379054</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105379064 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105379064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105379064</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105379146 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105379146">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105379146</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/105379168 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/105379168">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC105379168</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/10631 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/10631">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human POSTN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/10763 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/10763">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human NES</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/10788 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/10788">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human IQGAP2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1080 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CFTR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/10837 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/10837">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human NPM1P10</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/10874 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/10874">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human NMU</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/10886 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/10886">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human NPFFR2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/11096 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/11096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ADAMTS5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/11197 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/11197">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human WIF1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/11259 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/11259">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FILIP1L</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1129 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1129">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CHRM2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/112950 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/112950">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human MED8</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1135 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1135">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CHRNA2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1137 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1137">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CHRNA4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1139 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1139">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CHRNA7</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/115207 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/115207">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human KCTD12</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/115677 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/115677">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human NOSTRIN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/117154 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/117154">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human DACH2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/117157 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/117157">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SH2D1B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/117581 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/117581">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human TWIST2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/117583 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/117583">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PARD3B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/121227 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/121227">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LRIG3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/126393 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/126393">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human HSPB6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1268 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1268">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CNR1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1278 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1278">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human COL1A2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/127833 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/127833">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SYT2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1285 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1285">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human COL4A3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/128553 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/128553">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human TSHZ2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/128674 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/128674">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PROKR2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1290 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1290">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human COL5A2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/129293 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/129293">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human TRABD2A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/130399 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/130399">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ACVR1C</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/130574 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/130574">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LYPD6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1306 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1306">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human COL15A1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1310 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1310">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human COL19A1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/131096 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/131096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human KCNH8</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/133121 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/133121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ENPP6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/135152 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/135152">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human B3GAT2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1381 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1381">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CRABP1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/138881 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/138881">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human OR1L8</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/139065 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/139065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SLITRK4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1392 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1392">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CRH</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1395 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1395">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CRHR2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/140689 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/140689">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CBLN4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/143425 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/143425">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SYT9</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1436 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1436">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CSF1R</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/143872 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/143872">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ARHGAP42</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1446 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1446">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CSN1S1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/144920 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/144920">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LINC00343</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1462 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1462">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human VCAN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/146227 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/146227">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human BEAN1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/147372 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/147372">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CCBE1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/147381 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/147381">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CBLN2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/148113 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/148113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CILP2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/148281 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/148281">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SYT6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/148418 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/148418">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SAMD13</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/148753 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/148753">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FAM163A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/150572 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/150572">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SMYD1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/151171 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/151171">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LINC01107</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/151242 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/151242">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PPP1R1C</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/151790 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/151790">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human WDR49</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/152816 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/152816">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human C4orf26</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/153579 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/153579">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human BTNL9</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/153768 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/153768">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PRELID2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/154075 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/154075">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SAMD3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/157376 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/157376">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FER1L6-AS2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/158326 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/158326">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FREM1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/158763 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/158763">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ARHGAP36</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1602 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1602">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human DACH1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/162282 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/162282">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ANKFN1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1628 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1628">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human DBP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1634 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1634">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human DCN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/166752 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/166752">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FREM3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/169044 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/169044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human COL22A1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/170691 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/170691">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ADAMTS17</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/170850 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/170850">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human KCNG3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1830 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1830">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human DSG3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1909 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1909">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human EDNRA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1910 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1910">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human EDNRB</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/1950 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/1950">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human EGF</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/196475 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/196475">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human RMST</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/200162 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/200162">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SPAG17</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/200942 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/200942">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human KLHDC8B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/202374 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/202374">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human STK32A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/2028 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/2028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ENPEP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/2042 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/2042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human EPHA3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/2069 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/2069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human EREG</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/2070 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/2070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human EYA4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/2078 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/2078">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ERG</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/2099 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/2099">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ESR1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/2191 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/2191">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FAP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/219595 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/219595">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FOLH1B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/219790 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/219790">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human RTKN2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/2201 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/2201">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FBN2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/220416 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/220416">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LRRC63</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/221833 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/221833">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SP8</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/222484 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/222484">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LNX2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/222537 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/222537">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human HS3ST5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/222663 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/222663">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SCUBE3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/223117 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/223117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SEMA3D</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/2255 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/2255">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FGF10</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/2261 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/2261">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FGFR3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/2262 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/2262">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human GPC5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/22801 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/22801">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ITGA11</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/22829 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/22829">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human NLGN4Y</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/22837 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/22837">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human COBLL1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/22854 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/22854">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human NTNG1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/22987 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/22987">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SV2C</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/23007 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/23007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PLCH1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/23026 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/23026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human MYO16</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/2308 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/2308">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FOXO1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/23086 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/23086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human EXPH5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/23194 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/23194">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FBXL7</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/23213 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/23213">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SULF1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/23316 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/23316">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CUX2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/23552 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/23552">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CDK20</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/23554 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/23554">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human TSPAN12</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/23604 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/23604">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human DAPK2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/23657 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/23657">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SLC7A11</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/24141 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/24141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LAMP5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/245911 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/245911">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human DEFB108B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/246213 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/246213">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SLC17A8</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/2487 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/2487">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FRZB</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/2492 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/2492">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FSHR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/2498 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/2498">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FTH1P3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/255743 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/255743">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human NPNT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/256380 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/256380">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SCML4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/25797 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/25797">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human QPCT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/25890 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/25890">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ABI3BP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/25903 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/25903">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human OLFML2B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/26002 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/26002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human MOXD1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/2601 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/2601">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human GAPDHP60</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/26119 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/26119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LDLRAP1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/2634 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/2634">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human GBP2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/26468 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/26468">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LHX6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/26577 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/26577">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PCOLCE2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/2670 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/2670">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human GFAP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/2740 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/2740">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human GLP1R</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/28 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/28">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ABO</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/282996 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/282996">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human RBM20</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/283208 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/283208">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human P4HA3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/283310 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/283310">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human OTOGL</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/283431 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/283431">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human GAS2L3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/284 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/284">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ANGPT1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/284825 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/284825">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC284825</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/285016 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/285016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FAM150B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/285025 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/285025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CCDC141</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/285195 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/285195">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SLC9A9</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/286464 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/286464">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CFAP47</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/28968 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/28968">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SLC6A16</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/29953 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/29953">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human TRHDE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/29969 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/29969">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human MDFIC</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/30010 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/30010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human NXPH1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/301 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/301">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ANXA1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/3062 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/3062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human HCRTR2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/30819 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/30819">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human KCNIP2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/3082 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/3082">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human HGF</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/3248 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/3248">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human HPGD</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/3358 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/3358">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human HTR2C</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/3359 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/3359">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human HTR3A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/3371 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/3371">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human TNC</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/338557 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/338557">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FFAR4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/338596 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/338596">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ST8SIA6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/339789 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/339789">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LINC00299</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/3399 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/3399">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ID3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/340120 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/340120">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ANKRD34B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/341359 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/341359">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SYT10</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/341640 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/341640">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FREM2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/343172 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/343172">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human OR2T8</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/343450 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/343450">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human KCNT2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/344148 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/344148">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human NCKAP5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/345557 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/345557">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PLCXD3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/346007 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/346007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human EYS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/347689 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/347689">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SOX2-OT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/3486 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/3486">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human IGFBP3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/3488 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/3488">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human IGFBP5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/3490 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/3490">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human IGFBP7</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/358 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/358">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human AQP1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/3600 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/3600">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human IL15</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/3669 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/3669">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ISG20</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/3672 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/3672">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ITGA1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/374860 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/374860">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ANKRD30B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/375061 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/375061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FAM89A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/375295 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/375295">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LINC01116</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/3815 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/3815">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human KIT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/3834 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/3834">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human KIF25</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/386597 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/386597">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human RNF144A-AS1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/387357 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/387357">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human THEMIS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/387856 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/387856">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CCDC184</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/388121 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/388121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human TNFAIP8L3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/389136 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/389136">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human VGLL3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/389941 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/389941">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human C1QL3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/3908 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/3908">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LAMA2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/3910 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/3910">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LAMA4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/3937 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/3937">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LCP2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/401134 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/401134">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC401134</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/401399 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/401399">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PRRT4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/401478 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/401478">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LOC401478</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/4025 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/4025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LPO</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/404744 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/404744">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human NPSR1-AS1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/4052 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/4052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LTBP1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/4058 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/4058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LTK</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/406893 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/406893">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human MIR101-1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/407738 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/407738">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FAM19A1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/4155 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/4155">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human MBP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/4160 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/4160">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human MC4R</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/4212 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/4212">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human MEIS2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/4311 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/4311">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human MME</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/433 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/433">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ASGR2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/441376 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/441376">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human AARD</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/4494 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/4494">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human MT1F</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/4604 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/4604">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human MYBPC1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/4629 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/4629">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human MYH11</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/4645 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/4645">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human MYO5B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/4734 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/4734">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human NEDD4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/4829 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/4829">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human NMBR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/4842 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/4842">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human NOS1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/4852 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/4852">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human NPY</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/4887 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/4887">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human NPY2R</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/4920 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/4920">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ROR2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/4921 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/4921">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human DDR2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/4929 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/4929">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human NR4A2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/494558 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/494558">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human C9orf135-AS1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/4988 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/4988">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human OPRM1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5003 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SLC22A18AS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/50507 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/50507">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human NOX4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/50509 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/50509">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human COL5A3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5074 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PAWR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5080 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PAX6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/50853 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/50853">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human VILL</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5090 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PBX3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/51148 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/51148">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CERCAM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/51196 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/51196">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PLCE1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5121 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PCP4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5125 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PCSK5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5129 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5129">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CDK18</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5139 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5139">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PDE3A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5156 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5156">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PDGFRA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5168 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5168">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ENPP2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/51705 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/51705">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human EMCN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5173 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5173">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PDYN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5176 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5176">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SERPINF1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5179 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5179">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PENK</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5270 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5270">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SERPINE2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5276 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5276">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SERPINI2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5288 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5288">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PIK3C2G</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5293 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5293">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PIK3CD</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5335 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5335">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PLCG1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/540 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/540">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ATP7B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/54102 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/54102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CLIC6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/54221 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/54221">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SNTG2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/54361 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/54361">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human WNT4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/54510 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/54510">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PCDH18</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/54518 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/54518">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human APBB1IP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/54757 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/54757">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FAM20A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/54836 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/54836">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human BSPRY</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/54873 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/54873">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PALMD</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/54970 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/54970">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human TTC12</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/55026 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/55026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human TMEM255A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/55079 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/55079">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FEZF2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/55220 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/55220">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human KLHDC8A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/55515 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/55515">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ASIC4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5552 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5552">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SRGN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/55553 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/55553">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SOX6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/55568 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/55568">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human GALNT10</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/55784 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/55784">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human MCTP2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/55801 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/55801">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human IL26</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/56475 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/56475">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human RPRM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5649 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5649">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human RELN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5650 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5650">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human KLK7</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/56955 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/56955">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human MEPE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/57194 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/57194">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ATP10A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/57211 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/57211">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ADGRG6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5733 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5733">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PTGER3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/57522 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/57522">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SRGAP1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/57565 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/57565">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human KLHL14</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/57626 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/57626">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human KLHL1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/57642 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/57642">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human COL20A1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/57645 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/57645">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human POGK</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/57687 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/57687">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human VAT1L</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5774 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5774">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PTPN3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5816 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5816">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PVALB</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/5819 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/5819">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PVRL2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/590 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/590">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human BCHE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/59352 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/59352">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LGR6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/594855 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/594855">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CPLX3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/60495 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/60495">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human HPSE2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/6096 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/6096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human RORB</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/627 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/627">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human BDNF</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/6285 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/6285">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human S100B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/6330 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/6330">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SCN4B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/6344 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/6344">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SCTR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/63895 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/63895">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PIEZO2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/64093 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/64093">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SMOC1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/64097 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/64097">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human EPB41L4A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/642597 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/642597">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human C18orf42</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/643677 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/643677">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CCDC168</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/643763 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/643763">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human UG0898H09</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/64579 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/64579">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human NDST4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/646080 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/646080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human RAB11FIP1P1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/64805 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/64805">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human P2RY12</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/648809 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/648809">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human EFTUD1P1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/64881 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/64881">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PCDH20</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/650 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/650">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human BMP2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/6507 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/6507">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SLC1A3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/65217 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/65217">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PCDH15</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/653583 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/653583">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PHLDB3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/6549 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/6549">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SLC9A2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/6563 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/6563">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SLC14A1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/658 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/658">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human BMPR1B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/6581 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/6581">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SLC22A3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/6588 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/6588">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SLN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/6641 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/6641">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SNTB1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/6664 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/6664">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SOX11</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/6696 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/6696">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SPP1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/6750 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/6750">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SST</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/678655 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/678655">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CD27-AS1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/6840 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/6840">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SVIL</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/6863 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/6863">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human TAC1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/6866 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/6866">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human TAC3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/7039 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/7039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human TGFA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/7048 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/7048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human TGFBR2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/7054 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/7054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human TH</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/7122 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/7122">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CLDN5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/7130 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/7130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human TNFAIP6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/7139 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/7139">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human TNNT2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/715 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/715">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human C1R</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/7222 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/7222">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human TRPC3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/7224 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/7224">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human TRPC5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/727936 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/727936">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human GXYLT2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/728226 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/728226">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human GGTLC3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/729025 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/729025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SLC15A5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/729540 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/729540">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human RGPD6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/7299 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/7299">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human TYR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/7305 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/7305">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human TYROBP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/7432 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/7432">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human VIP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/759 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/759">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CA1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/7837 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/7837">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PXDN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/793 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/793">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CALB1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/79336 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/79336">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human OR5AH1P</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/79616 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/79616">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CCNJL</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/79625 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/79625">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human NDNF</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/79929 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/79929">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human MAP6D1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/79974 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/79974">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CPED1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/8001 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/8001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human GLRA3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/80031 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/80031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SEMA6D</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/80036 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/80036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human TRPM3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/80070 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/80070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ADAMTS20</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/80274 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/80274">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SCUBE1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/80309 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/80309">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SPHKAP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/80310 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/80310">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PDGFD</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/80323 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/80323">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CCDC68</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/80332 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/80332">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ADAM33</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/80731 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/80731">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human THSD7B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/81035 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/81035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human COLEC12</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/81285 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/81285">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human OR51E2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/81501 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/81501">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human DCSTAMP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/81606 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/81606">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LBH</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/81792 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/81792">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ADAMTS12</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/84109 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/84109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human QRFPR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/84138 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/84138">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SLC7A6OS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/84189 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/84189">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SLITRK6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/84439 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/84439">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human HHIPL1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/84466 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/84466">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human MEGF10</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/84624 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/84624">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FNDC1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/8490 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/8490">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human RGS5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/84915 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/84915">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FAM222A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/8492 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/8492">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PRSS12</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/85319 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/85319">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human BAGE2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/8538 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/8538">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human BARX2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/85406 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/85406">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human DNAJC14</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/85439 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/85439">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human STON2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/8549 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/8549">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human LGR5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/869 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/869">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CBLN1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/8836 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/8836">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human GGH</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/8842 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/8842">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PROM1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/8973 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/8973">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CHRNA6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/89832 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/89832">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CHRFAM7A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/89866 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/89866">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SEC16B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/901 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/901">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CCNG2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/9033 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/9033">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PKD2L1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/9037 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/9037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SEMA5A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/9060 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/9060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human PAPSS2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/91464 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/91464">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ISX</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/92293 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/92293">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human TMEM132C</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/92949 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/92949">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ADAMTSL1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/93377 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/93377">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human OPALIN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/9340 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/9340">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human GLP2R</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/93556 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/93556">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human EGFEM1P</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/9358 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/9358">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ITGBL1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/93986 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/93986">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human FOXP2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/94233 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/94233">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human OPN4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/948 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/948">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CD36</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/9501 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/9501">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human RPH3AL</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/9543 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/9543">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human IGDCC3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/9547 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/9547">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CXCL14</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/9705 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/9705">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human ST18</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/972 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/972">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human CD74</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/9723 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/9723">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human SEMA3E</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/9951 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/9951">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human HS3ST4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/9955 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/9955">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Human HS3ST3A1</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+

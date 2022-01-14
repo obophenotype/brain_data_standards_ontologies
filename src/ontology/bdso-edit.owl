@@ -1,0 +1,157 @@
+Prefix(:=<http://purl.obolibrary.org/obo/PCL_>)
+Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/PCL.owl>
+Import(<http://purl.obolibrary.org/obo/helper.owl>)
+Import(<http://purl.obolibrary.org/obo/bdscratch/imports/simple_human_import.owl>)
+Import(<http://purl.obolibrary.org/obo/bdscratch/imports/simple_marmoset_import.owl>)
+Import(<http://purl.obolibrary.org/obo/pcl/imports/merged_import.owl>)
+Import(<http://purl.obolibrary.org/obo/bdscratch/patterns/definitions.owl>)
+Import(<http://purl.obolibrary.org/obo/components/all_templates.owl>)
+Annotation(dce:title "Brain Data Standards Cell Ontology")
+Annotation(dcterms:license <http://creativecommons.org/licenses/by/4.0/>)
+
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_0000099>))
+Declaration(Class(<http://purl.obolibrary.org/obo/CL_4023119>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0061534>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0070002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0070007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PCL_0010001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PCL_0010002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PCL_1000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PCL_1000004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PR_P60041>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000956>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002100>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002215>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002292>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010051>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010052>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010053>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010054>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010055>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010056>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010057>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010058>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010059>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010060>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010061>))
+Declaration(AnnotationProperty(dce:contributor))
+Declaration(AnnotationProperty(dce:description))
+Declaration(AnnotationProperty(dce:title))
+Declaration(AnnotationProperty(dcterms:license))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010051> (cell_type_rank)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010051> "cell_type_rank")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010052> (cell_types_count)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010052> "cell_types_count")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010053> (cell_subclasses_count)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010053> "cell_subclasses_count")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010054> (cell_classes_count)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010054> "cell_classes_count")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010055> (has_age)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010055> "has_age")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010056> (has_sex)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010056> "has_sex")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010057> (has_brain_region)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010057> "has_brain_region")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010058> (has nsforest marker)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010058> "has nsforest marker")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010059> (cluster id)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010059> "cluster id")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010060> (cell_count)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010060> "cell_count")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010061> (nuclei_count)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010061> "nuclei_count")
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002100> (has soma location)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002100> "has soma location")
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002215> (capable of)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002215> "capable of")
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002292> (expresses)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002292> "expresses")
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/CL_4023119> (basket morphology L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus))
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:33184512") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/CL_4023119> "A L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus) that has basket morphology.")
+AnnotationAssertion(dce:contributor <http://purl.obolibrary.org/obo/CL_4023119> <http://orcid.org/0000-0001-7258-9596>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/CL_4023119> "basket L2/3 PV-like SST (Mus)")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/CL_4023119> "basket morphology L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus)")
+SubClassOf(<http://purl.obolibrary.org/obo/CL_4023119> <http://purl.obolibrary.org/obo/PCL_1000002>)
+SubClassOf(<http://purl.obolibrary.org/obo/CL_4023119> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070002>))
+
+# Class: <http://purl.obolibrary.org/obo/PCL_1000002> (L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus))
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:33184512") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_1000002> "A sst GABAergic cortical interneuron transcriptomically between the sst and the pvalb families with a soma found in L2/3. Some L2/3 PV-like sst cells have Martinotti morphology while some have basket cell morphology. L2/3 PV-like sst cells have lower AP width and higher firing rate than typical Sst subclass cells. L2/3 PV-like sst cells have high maximum firing rate variability, with many classified as belonging to the pvalb subclass on the basis of electrophysiology.")
+AnnotationAssertion(dce:contributor <http://purl.obolibrary.org/obo/PCL_1000002> <http://orcid.org/0000-0001-7258-9596>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_1000002> "L2/3 PV-like SST Mus")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_1000002> "L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus)")
+SubClassOf(<http://purl.obolibrary.org/obo/PCL_1000002> <http://purl.obolibrary.org/obo/CL_0000099>)
+SubClassOf(<http://purl.obolibrary.org/obo/PCL_1000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0000956>))
+SubClassOf(<http://purl.obolibrary.org/obo/PCL_1000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_8440000>))
+SubClassOf(<http://purl.obolibrary.org/obo/PCL_1000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_10090>))
+SubClassOf(<http://purl.obolibrary.org/obo/PCL_1000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002215> <http://purl.obolibrary.org/obo/GO_0061534>))
+SubClassOf(<http://purl.obolibrary.org/obo/PCL_1000002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002292> <http://purl.obolibrary.org/obo/PR_P60041>))
+
+# Class: <http://purl.obolibrary.org/obo/PCL_1000004> (Martinotti morphology L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus))
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:33184512") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_1000004> "A L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus) that has Martinotti morphology.")
+AnnotationAssertion(dce:contributor <http://purl.obolibrary.org/obo/PCL_1000004> <http://orcid.org/0000-0001-7258-9596>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_1000004> "Martinotti L2/3 PV-like SST (Mus)")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_1000004> "Martinotti morphology L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus)")
+SubClassOf(<http://purl.obolibrary.org/obo/PCL_1000004> <http://purl.obolibrary.org/obo/PCL_1000002>)
+SubClassOf(<http://purl.obolibrary.org/obo/PCL_1000004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070007>))
+
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000028> "symbol")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015001> "has exemplar data")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015002> "exemplar data of")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015003> "subcluster of")
+)

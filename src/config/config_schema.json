@@ -7,7 +7,7 @@
     "base": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["Taxonomy_id", "Description", "Reference", "DOI", "Species", "Brain_region", "Root_nodes", "non_taxonomy_roots"],
+      "required": ["Taxonomy_id", "Description", "Reference", "PMID", "Species", "Brain_region", "Root_nodes", "non_taxonomy_roots"],
       "properties": {
         "Taxonomy_id" :  {
           "type": "string",
@@ -21,11 +21,11 @@
           "type": "string",
           "description": "Reference to Allen Taxonomy"
         },
-        "DOI": {
+        "PMID": {
           "type": "array",
           "items": {
             "type": "string",
-            "description": "DOI of reference for analysis."
+            "description": "PMID of reference for analysis."
           }
         },
         "Species": {
@@ -35,11 +35,32 @@
             "description": "Ontology ID (NCBI curie) of species used in analysis."
           }
         },
+        "Species_abbv": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "Species abbreviation."
+          }
+        },
         "Brain_region": {
           "type": "array",
           "items": {
             "type": "string",
             "description": "Ontology ID (curie) of brain region used in analysis."
+          }
+        },
+        "Brain_region_abbv": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "Brain region abbreviation."
+          }
+        },
+        "Reference_gene_list": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "Reference gene list."
           }
         },
         "Root_nodes": {

@@ -1,13 +1,24 @@
+###
+# Order of the taxonomies are important in this file. Based on the order of the taxonomy, an id range will be allocated in the generated ontology.
+# Change in the order, will cause backward incompatibility of the generated IRIs.
+##
+
 -
   Taxonomy_id: CCN202002013
   Description: Mouse MOp BICCN taxonomy using multiple RNA-Seq datasets
   Reference: (Yao et al., 2020a)
-  DOI:
-    - doi:10.1101/2020.02.29.970558
+  PMID:
+    - PMID:34616066
   Species:
     - NCBITaxon:10090
+  Species_abbv:
+    - Mouse
   Brain_region:
     - UBERON:0001384
+  Brain_region_abbv:
+    - MOp
+  Reference_gene_list:
+    - Ensmusg
   Root_nodes:
     - Node: CS202002013_123
       Cell_type: CL:0011005 
@@ -42,106 +53,270 @@
       Location_relation: RO:0002100
       #VLMC
     - Node: CS202002013_111
-      Cell_type: CL:0000359
+      Cell_type: CL:0002590
       Location_relation: part_of
-      #vascular associated SMC
+      #Brain SMC
     - Node: CS202002013_112
-      Cell_type: CL:0000669
+      Cell_type: CL:2000043
       Location_relation: part_of
-      #pericyte
+      #brain pericyte
     - Node: CS202002013_113
       Cell_type: CL:0000129
       Location_relation: part_of
       #microglial
-  non_taxonomy_roots:
-    - Node: CS202002013_232
-      Cell_type: CL:4023017
-      #sst
-    - Node: CS202002013_233
-      Cell_type: CL:4023018
-      #pvalb
-    - Node: CS202002013_235
-      Cell_type: CL:0000125
-      # non-neuronal currently mapped as glial cell
     - Node: CS202002013_237
-      Cell_type: CL:0000881
-      #perivascular macrophage
-      # Node: CS202002013_238 #other NN no such CL mapping
-    - Node: CS202002013_257
-      Cell_type: CL:4023007
-      #L2/3 bipolar vip
-    - Node: CS202002013_258
-      Cell_type: CL:4023027
-      # L5 T-martinotti 
-      # Node: CS202002013_259 #lower FS BC
-    - Node: CS202002013_260
-      Cell_type: CL:4023045
-      #MY ET
-    - Node: CS202002013_261
-      Cell_type: CL:4023044
-      #non-MY ET
+      Cell_type: CL:0000881 
+      Location_relation: part_of
+      #PVM      
+  non_taxonomy_roots: []
+  #non_taxonomy_roots:
+  #  - Node: CS202002013_235
+  #    Cell_type: CL:0000125
+  #    # non-neuronal currently mapped as glial cell
+  #  - Node: CS202002013_237
+  #    Cell_type: CL:0000881
+  #    #perivascular macrophage
+  #    # Node: CS202002013_238 #other NN no such CL mapping
+  #    # Node: CS202002013_259 #lower FS BC
+  #  - Node: CS202002013_256
+  #    Cell_type: CL:4023027
+  #    #L5 T Martinotti
 -
-  Taxonomy_id: CCN202002270
-  Description: Cross species (integrated) transcriptomics taxonomy
+  Taxonomy_id: CCN201912131
+  Description: Human M1 transcriptomics taxonomy
   Reference: (Bakken et al., 2020)
-  DOI:
-    - doi:10.1101/2020.03.31.016972
+  PMID:
+    - PMID:34616062
   Species:
-    - NCBITaxon:314146
+    - NCBITaxon:9606
+  Species_abbv:
+    - Human
   Brain_region:
     - UBERON:0001384
-  non_taxonomy_roots: []
+  Brain_region_abbv:
+    - M1
+  Reference_gene_list:
+    - simple_human
   Root_nodes:
-    - Node: CS202002270_63
-      Cell_type: CL:0011005 
+    - Node: CS201912131_149
+      Cell_type: CL:0011005
       Location_relation: has_soma_location
       #GABAergic interneuron
-    - Node: CS202002270_64
+    - Node: CS201912131_150
       Cell_type: CL:0000679
       Location_relation: has_soma_location
       #glutamatergic neuron
-    - Node: CS202002270_46
-      Cell_type: CL:4023011
-      Location_relation: has_soma_location
-      #Lamp5
-    - Node: CS202002270_47
-      Cell_type: CL:4023015
-      Location_relation: has_soma_location
-      #Sncg
-    - Node: CS202002270_48
-      Cell_type: CL:4023016
-      Location_relation: has_soma_location
-      #Vip
-    - Node: CS202002270_49
-      Cell_type: CL:4023017
-      Location_relation: has_soma_location
-      #Sst
-    - Node: CS202002270_50
-      Cell_type: CL:4023018
-      Location_relation: part_of
-      #Pvalb
-    - Node: CS202002270_43
+    - Node: CS201912131_125
       Cell_type: CL:0000115
       Location_relation: part_of
-      #Endothelial 
-    - Node: CS202002270_44
+      #Endothelial
+    - Node: CS201912131_126
       Cell_type: CL:4023051
       Location_relation: part_of
       #VLMC
-    - Node: CS202002270_45
+    - Node: CS201912131_127
       Cell_type: CL:0000129
       Location_relation: part_of
       #Microglia-PVM currently mapped as microglia
-    - Node: CS202002270_38
-      Cell_type: CL:0002453
-      Location_relation: part_of
-      #OPC
-    - Node: CS202002270_56
-      Cell_type: CL:0000128
-      Location_relation: part_of
-      #Oligodendrocyte
-    - Node: CS202002270_55
+    - Node: CS201912131_142
       Cell_type: CL:0000127
       Location_relation: part_of
       #Astrocyte
-   
+    - Node: CS201912131_147
+      Cell_type: CL:0002453
+      Location_relation: part_of
+      #OPC
+    - Node: CS201912131_151
+      Cell_type: CL:0000125
+      Location_relation: part_of
+      # non-neuronal currently mapped as glial cell
+    - Node: CS201912131_140
+      Cell_type: CL:0000128
+      Location_relation: part_of
+      #Oligodendrocyte
+  non_taxonomy_roots: []
+ # non_taxonomy_roots:
+ #   - Node: CS201912131_128
+ #     Cell_type: CL:4023011
+ #     #Lamp5
+ #   - Node: CS201912131_129
+ #     Cell_type: CL:4023015
+ #     #Sncg
+ #   - Node: CS201912131_130
+ #     Cell_type: CL:4023016
+ #     #Vip
+ #   - Node: CS201912131_131
+ #     Cell_type: CL:4023017
+ #     #Sst
+ #   - Node: CS201912131_132
+ #     Cell_type: CL:4023018
+ #     #Pvalb
+-
+  Taxonomy_id: CCN201912132
+  Description: Marmoset M1 taxonomy using 10X data
+  Reference: (Bakken et al., 2020)
+  PMID:
+    - PMID:34616062
+  Species:
+    - NCBITaxon:9483
+  Species_abbv:
+    - Marmoset
+  Brain_region:
+    - UBERON:0001384
+  Brain_region_abbv:
+    - M1
+  Reference_gene_list:
+    - simple_marmoset
+  Root_nodes:
+    - Node: CS201912132_116
+      Cell_type: CL:0011005
+      Location_relation: has_soma_location
+      #GABAergic interneuron
+    - Node: CS201912132_117
+      Cell_type: CL:0000679
+      Location_relation: has_soma_location
+      #glutamatergic neuron
+    - Node: CS201912132_107
+      Cell_type: CL:0000115
+      Location_relation: part_of
+      #Endothelial
+    - Node: CS201912132_108
+      Cell_type: CL:2000043
+      Location_relation: part_of
+      #Pericyte
+    - Node: CS201912132_109
+      Cell_type: CL:4023051
+      Location_relation: part_of
+      #VLMC
+    - Node: CS201912132_94
+      Cell_type: CL:0000129
+      Location_relation: part_of
+      #Microglia-PVM currently mapped as microglia
+    - Node: CS201912132_106
+      Cell_type: CL:0000127
+      Location_relation: part_of
+      #Astrocyte
+    - Node: CS201912132_78
+      Cell_type: CL:0002453
+      Location_relation: part_of
+      #OPC
+    - Node: CS201912132_105
+      Cell_type: CL:0000128
+      Location_relation: part_of
+      #Oligodendrocyte
+  non_taxonomy_roots: []
+  #non_taxonomy_roots:
+  #  - Node: CS201912132_95
+  #    Cell_type: CL:4023011
+  #    #Lamp5
+  #  - Node: CS201912132_96
+  #    Cell_type: CL:4023015
+  #    #Sncg
+  #  - Node: CS201912132_97
+  #    Cell_type: CL:4023016
+  #    #Vip
+  #  - Node: CS201912132_98
+  #    Cell_type: CL:4023017
+  #    #Sst
+  #  - Node: CS201912132_99
+  #    Cell_type: CL:4023018
+  #    #Pvalb
+
+-
+  Taxonomy_id: CS1908210
+  Description: Human MTG transcriptomics
+  Reference: (Hodge et al., 2019)
+  PMID:
+    - PMID:31435019
+  Species:
+    - NCBITaxon:9606
+  Species_abbv:
+    - Human
+  Brain_region:
+    - UBERON:0002771
+  Brain_region_abbv:
+    - MTG
+  Reference_gene_list:
+    - simple_human
+  Root_nodes:
+    - Node: CS1908210078
+      Cell_type: CL:0011005
+      Location_relation: has_soma_location
+      #GABAergic interneuron
+    - Node: CS1908210122
+      Cell_type: CL:0000679
+      Location_relation: has_soma_location
+      #glutamatergic neuron
+    - Node: CS1908210074
+      Cell_type: CL:0000115
+      Location_relation: part_of
+      #Endothelial
+    - Node: CS1908210075
+      Cell_type: CL:0000129
+      Location_relation: part_of
+      #Microglia
+    - Node: CS1908210149
+      Cell_type: CL:0000127
+      Location_relation: part_of
+      #Astrocyte
+    - Node: CS1908210070
+      Cell_type: CL:0002453
+      Location_relation: part_of
+      #OPC
+    - Node: CS1908210145
+      Cell_type: CL:0000125
+      Location_relation: part_of
+      # non-neuronal currently mapped as glial cell
+    - Node: CS1908210073
+      Cell_type: CL:0000128
+      Location_relation: part_of
+      #Oligodendrocyte
+  non_taxonomy_roots: []
+#-
+#  Taxonomy_id: CCN202002270
+#  Description: Cross species (integrated) transcriptomics taxonomy
+#  Reference: (Bakken et al., 2020)
+#  PMID:
+#    - PMID:34616062
+#  Species:
+#    - NCBITaxon:314146
+#  Species_abbv:
+#    - Euarchontoglires
+#  Brain_region:
+#    - UBERON:0001384
+#  Brain_region_abbv:
+#    - MOp/M1
+#  non_taxonomy_roots: []
+#  Root_nodes:
+#    - Node: CS202002270_63
+#      Cell_type: CL:0011005
+#      Location_relation: has_soma_location
+#      #GABAergic interneuron
+#    - Node: CS202002270_64
+#      Cell_type: CL:0000679
+#      Location_relation: has_soma_location
+#      #glutamatergic neuron
+#    - Node: CS202002270_43
+#      Cell_type: CL:0000115
+#      Location_relation: part_of
+#      #Endothelial
+#    - Node: CS202002270_44
+#      Cell_type: CL:4023051
+#      Location_relation: part_of
+#      #VLMC
+#    - Node: CS202002270_45
+#      Cell_type: CL:0000129
+#      Location_relation: part_of
+#      #Microglia-PVM currently mapped as microglia
+#    - Node: CS202002270_38
+#      Cell_type: CL:0002453
+#      Location_relation: part_of
+#      #OPC
+#    - Node: CS202002270_56
+#      Cell_type: CL:0000128
+#      Location_relation: part_of
+#      #Oligodendrocyte
+#    - Node: CS202002270_55
+#      Cell_type: CL:0000127
+#      Location_relation: part_of
+#      #Astrocyte

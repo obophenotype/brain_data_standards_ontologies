@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-08/patterns/definitions.owl" uri="file:/home/huseyin/workspace5/brain_data_standards_ontologies/src/patterns/definitions.owl"/>
-    <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
-        <uri name="http://www.semanticweb.org/brain_data_standards/components/all_templates.owl" uri="components/all_templates.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/bdscratch/imports/ro_import.owl" uri="imports/ro_import.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/bdscratch/imports/cl_import.obo" uri="imports/cl_import.obo"/>
-        <uri name="http://purl.obolibrary.org/obo/bdscratch/imports/cl_import.owl" uri="imports/cl_import.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/bdscratch/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/bdscratch/imports/pato_import.owl" uri="imports/pato_import.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/bdscratch/imports/ensmusg_import.owl" uri="imports/ensmusg_import.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/bdscratch/imports/ncbitaxon_import.owl" uri="imports/ncbitaxon_import.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/bdscratch/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
-        <uri name="http://www.semanticweb.org/brain_data_standards/helper.owl" uri="helper.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/bdscratch/patterns/definitions.owl" uri="../patterns/definitions.owl"/>
-    </group>
+  <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bdscratch/releases/2021-03-08/patterns/definitions.owl" uri="file:/home/huseyin/workspace5/brain_data_standards_ontologies/src/patterns/definitions.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/components/all_templates.owl" uri="components/all_templates.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/pcl/imports/pr_import.owl" uri="imports/pr_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/pcl/imports/go_import.owl" uri="imports/go_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/bdscratch/imports/ro_import.owl" uri="imports/ro_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/bdscratch/imports/cl_import.obo" uri="imports/cl_import.obo"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/bdscratch/imports/cl_import.owl" uri="imports/cl_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/bdscratch/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/bdscratch/imports/pato_import.owl" uri="imports/pato_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/bdscratch/imports/ensmusg_import.owl" uri="imports/ensmusg_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/bdscratch/imports/simple_marmoset_import.owl" uri="imports/simple_marmoset_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/bdscratch/imports/simple_human_import.owl" uri="imports/simple_human_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/bdscratch/imports/ncbitaxon_import.owl" uri="imports/ncbitaxon_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/bdscratch/imports/uberon_import.owl" uri="imports/uberon_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/pcl/imports/merged_import.owl" uri="imports/merged_import.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/helper.owl" uri="helper.owl"/>
+  <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/bdscratch/patterns/definitions.owl" uri="../patterns/definitions.owl"/>
+  <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base=""/>
 </catalog>

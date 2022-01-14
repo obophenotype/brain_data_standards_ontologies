@@ -1,0 +1,2474 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/pcl/imports/simple_marmoset_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/pcl/imports/simple_marmoset_import.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pcl/imports/simple_marmoset_import.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pcl/releases/2022-01-13/imports/simple_marmoset_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-01-13</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000704 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000704"/>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100384959 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100384959">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC100384959</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100385052 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100385052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset HACL1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100385053 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100385053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset C7</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100385404 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100385404">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SLIT3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100385471 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100385471">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset NPY</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100385663 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100385663">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset HMCN1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100386317 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100386317">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CCDC129</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100386444 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100386444">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset USH1C</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100386462 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100386462">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset TRPM3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100386530 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100386530">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PCDH11X</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100386670 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100386670">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SEMA3C</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100386721 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100386721">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PLCH1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100386839 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100386839">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset EPB41L4A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100386986 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100386986">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset VIP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100386999 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100386999">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PLXDC1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100387382 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100387382">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset ANLN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100387459 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100387459">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset EYA4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100387605 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100387605">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SLC13A3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100387876 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100387876">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset RGS6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100387951 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100387951">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset MAN1A1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100388016 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100388016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PRKG1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100388051 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100388051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CLSTN2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100388255 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100388255">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PIEZO2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100388643 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100388643">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset GPR149</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100388718 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100388718">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset TAC1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100388729 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100388729">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset KCNK13</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100388738 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100388738">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CRYM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100388823 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100388823">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset COL4A3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100388989 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100388989">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset KLHL29</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100389059 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100389059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset B3GLCT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100389466 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100389466">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SYT9</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100389848 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100389848">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset FAM19A1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100389893 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100389893">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset ARHGAP6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100389991 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100389991">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset FILIP1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100390046 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100390046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset OTOGL</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100390058 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100390058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset AMOTL1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100390091 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100390091">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CALN1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100390165 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100390165">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset VAV3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100390248 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100390248">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CDH4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100390686 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100390686">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PVALB</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100390807 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100390807">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset DGKG</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100390875 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100390875">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset FIGN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100390937 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100390937">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SULF1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100391157 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100391157">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PLPPR1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100391230 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100391230">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset THSD7B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100391273 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100391273">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PBX3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100391304 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100391304">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset ARHGAP24</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100391501 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100391501">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SLC1A2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100391703 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100391703">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CCDC141</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100392144 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100392144">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset MOBP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100392165 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100392165">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset FABP7</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100392515 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100392515">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PPA2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100392579 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100392579">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CREB5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100392593 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100392593">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset MEIS2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100392828 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100392828">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset FBLN5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100392835 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100392835">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset ANO3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100392881 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100392881">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset GPRIN3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100392984 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100392984">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC100392984</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100393107 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100393107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset FAM179A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100393458 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100393458">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset P4HA1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100393503 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100393503">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SPACA1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100393601 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100393601">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset FBN2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100393613 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100393613">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset ADAMTS3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100393633 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100393633">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset TYROBP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100393644 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100393644">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset GFAP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100393865 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100393865">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CNR1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100393945 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100393945">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset IL1R1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100393956 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100393956">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset ABI3BP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100393976 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100393976">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset NPFFR2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100394114 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100394114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PTPRK</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100394197 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100394197">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset OSBP2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100394296 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100394296">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset VAPA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100394500 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100394500">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset NRP1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100394786 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100394786">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset HMBOX1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100394816 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100394816">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset NDST3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100394853 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100394853">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset COL5A2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100395233 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100395233">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset NTNG1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100395294 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100395294">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset VEGFC</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100395510 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100395510">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset TRPC6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100395775 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100395775">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset ETNPPL</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100396102 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100396102">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset TACR1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100396139 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100396139">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CALB2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100396249 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100396249">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset KCTD16</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100396272 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100396272">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset ERG</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100396583 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100396583">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CHGA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100396597 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100396597">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset ACTA2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100396765 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100396765">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SKAP1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100396908 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100396908">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset NCKAP5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100397008 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100397008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CBLN4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100397114 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100397114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset COL12A1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100397165 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100397165">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset TMEM132C</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100397259 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100397259">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC100397259</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100397271 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100397271">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SLC38A11</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100397539 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100397539">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset UNC13C</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100397590 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100397590">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset GLRA3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100397592 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100397592">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset ARSJ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100397643 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100397643">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset KIAA2012</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100397656 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100397656">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset POU6F2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100397724 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100397724">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset BMPR1B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100397812 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100397812">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SLC9A2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100397952 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100397952">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SEPP1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100398114 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100398114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PCDH19</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100398752 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100398752">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset MPP5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100398765 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100398765">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CHST3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100398854 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100398854">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset ABCB4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100398934 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100398934">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PTPRT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100399010 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100399010">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset FREM1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100399056 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100399056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SLC47A1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100399252 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100399252">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset ALK</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100399267 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100399267">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset EPHB1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100399505 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100399505">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset FAM19A4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100399969 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100399969">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PCSK5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100400056 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100400056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset THSD7A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100400232 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100400232">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CARD11</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100400367 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100400367">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset RNF144B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100400400 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100400400">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset MOG</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100400454 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100400454">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset MYO16</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100400473 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100400473">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset WWP1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100400564 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100400564">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SPON1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100400628 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100400628">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset EYS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100400741 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100400741">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset TOX2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100400927 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100400927">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PCDH15</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100400958 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100400958">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset IQGAP2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100401180 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100401180">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset HTR2A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100401328 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100401328">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC100401328</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100401449 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100401449">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset TOX</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100401551 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100401551">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SNCG</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100401590 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100401590">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SNTB2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100401702 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100401702">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SV2C</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100401749 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100401749">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset EPSTI1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100402133 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100402133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset NXPH1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100402439 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100402439">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PLA2G4A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100402573 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100402573">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset ANKRD27</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100402664 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100402664">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset VCAN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100402683 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100402683">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CHODL</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100402689 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100402689">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset HS3ST5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100402719 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100402719">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset ADARB2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100402813 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100402813">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PCP4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100402879 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100402879">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SLC5A11</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100402880 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100402880">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CXCL12</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100403018 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100403018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LRRC6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100403177 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100403177">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset THEMIS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100403193 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100403193">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC100403193</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100403212 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100403212">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset RELN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100403214 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100403214">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset GSTK1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100403341 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100403341">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CIT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100403389 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100403389">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset KCTD8</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100403440 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100403440">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset NFIA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100403979 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100403979">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset ALCAM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100403987 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100403987">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset MECOM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100404295 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100404295">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset COBL</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100404471 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100404471">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LTBP1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100404533 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100404533">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset VWC2L</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100404865 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100404865">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset ADGRG6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100404923 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100404923">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PAX6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100404930 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100404930">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset OPALIN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100405129 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100405129">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PCSK6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100405312 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100405312">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset NTNG2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100405319 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100405319">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC100405319</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100405391 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100405391">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset DCN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100405410 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100405410">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset RORB</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100405584 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100405584">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PDE7B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100405831 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100405831">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LAMA2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100405927 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100405927">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CAV3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100405977 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100405977">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset NOSTRIN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100406302 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100406302">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SERPINI1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100406444 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100406444">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset AIM1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100406508 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100406508">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset MYO5B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100406528 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100406528">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset GRAMD1C</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100406707 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100406707">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset RCN2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100406710 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100406710">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CEMIP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100406837 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100406837">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset TMEFF2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100406856 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100406856">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC100406856</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100407007 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100407007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CSGALNACT1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100407043 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100407043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset ARHGAP10</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100407174 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100407174">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset ARHGAP18</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100407531 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100407531">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset BMP5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100407617 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100407617">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset FEZF2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100408195 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100408195">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset KIRREL3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100408230 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100408230">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SLC1A3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100408417 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100408417">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PTPRU</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100408455 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100408455">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SORCS3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100408486 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100408486">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC100408486</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100408527 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100408527">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset POSTN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100408669 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100408669">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset BTBD11</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100408865 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100408865">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset TOX3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100408892 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100408892">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset TRPC4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100408994 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100408994">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset NOTCH3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100409063 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100409063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset GLIS3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100409152 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100409152">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PATJ</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100409658 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100409658">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset NRG1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100409827 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100409827">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CHST8</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100409938 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100409938">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset FGFR3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100410040 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100410040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CRH</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100410437 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100410437">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LAMP5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100410597 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100410597">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CPM</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100410743 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100410743">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CHST9</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100410777 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100410777">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset RGS4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100410860 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100410860">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset HS3ST4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100410965 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100410965">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset THSD4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100411083 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100411083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CHRM2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100411307 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100411307">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset FOXP2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100411367 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100411367">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset FYB</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100411377 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100411377">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset RCSD1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100411439 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100411439">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SEMA3E</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100411537 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100411537">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset GAD1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100411540 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100411540">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SERPINE2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100411557 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100411557">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CYP19A1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100411615 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100411615">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset KIT</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100412026 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100412026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PDZRN4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100412158 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100412158">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset EGFR</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100412331 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100412331">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PDGFRA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100412512 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100412512">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset KNL1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100412547 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100412547">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CNTN4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100412634 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100412634">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset NELL1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100412882 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100412882">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset ANO1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100412902 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100412902">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SST</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100413043 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100413043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset GABRG1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100413159 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100413159">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SLIT2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100413173 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100413173">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset MOXD1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100413286 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100413286">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset ARL13B</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100413446 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100413446">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PLXDC2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100413817 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100413817">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CPNE8</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100414003 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100414003">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SLC7A5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100414159 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100414159">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset TMEM163</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100414317 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100414317">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LUZP2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100414890 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100414890">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LRRC38</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100414899 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100414899">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset SYT10</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100414966 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100414966">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset VAT1L</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100415065 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100415065">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset ANKRD55</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100415258 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100415258">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset TRHDE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100415377 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100415377">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset COL24A1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100415632 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100415632">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PLEKHA7</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100415735 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100415735">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset NPSR1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100894622 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100894622">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset COL25A1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100894919 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100894919">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset CMTM8</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100895459 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100895459">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset NWD1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/100895717 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/100895717">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset NOS1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103787232 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103787232">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC103787232</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103788138 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103788138">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC103788138</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103788313 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103788313">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC103788313</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103788553 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103788553">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC103788553</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103788660 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103788660">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC103788660</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103788711 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103788711">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset ANKRD61</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103788721 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103788721">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC103788721</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103789268 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103789268">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC103789268</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103789439 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103789439">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC103789439</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103789461 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103789461">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC103789461</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103790018 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103790018">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC103790018</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103790362 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103790362">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC103790362</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103791648 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103791648">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset PDZD2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103791740 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103791740">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC103791740</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103792490 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103792490">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset COL19A1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103793418 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103793418">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC103793418</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103793569 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103793569">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC103793569</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103793609 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103793609">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC103793609</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103794860 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103794860">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset C8H7orf62</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103795407 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103795407">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC103795407</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/103795617 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/103795617">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC103795617</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/108587679 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/108587679">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC108587679</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/108587895 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/108587895">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC108587895</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/108588071 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/108588071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC108588071</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/108588466 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/108588466">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC108588466</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/108588539 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/108588539">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC108588539</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/108588801 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/108588801">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC108588801</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/108588895 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/108588895">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC108588895</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/108589054 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/108589054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC108589054</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/108589153 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/108589153">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC108589153</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/108589948 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/108589948">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC108589948</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/108591196 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/108591196">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC108591196</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://identifiers.org/ncbigene/108593203 -->
+
+    <owl:Class rdf:about="https://identifiers.org/ncbigene/108593203">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Marmoset LOC108593203</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+

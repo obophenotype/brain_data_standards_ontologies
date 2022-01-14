@@ -1,19 +1,27 @@
 import unittest
 import os
-import csv
 
-from template_generation_tools import generate_curated_class_template, generate_equivalent_class_marker_template\
-    , generate_non_taxonomy_classification_template
-from template_generation_utils import read_tsv
+from template_generation_tools import generate_base_class_template, \
+    generate_ind_template, generate_homologous_to_template
+from template_generation_utils import read_tsv, migrate_manual_curations
+from pcl_id_factory import get_class_id, get_taxonomy_id, get_individual_id
 
-PATH_DENDROGRAM_JSON = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/CCN202002013.json")
-PATH_MARKER = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/CS202002013_markers.tsv")
-PATH_OUTPUT_CLASS_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/output_class.tsv")
-PATH_OUTPUT_EC_MARKER_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                                         "./test_data/output_equivalent_marker.tsv")
-PATH_OUTPUT_NOMENCLATURE_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)), "./test_data/nomenclature.tsv")
+current_dir = os.path.dirname(os.path.realpath(__file__))
+ALL_BASE_FILES = [os.path.join(current_dir, "../patterns/data/default/CCN202002013_class_base.tsv"),
+                  os.path.join(current_dir, "../patterns/data/default/CCN201912131_class_base.tsv"),
+                  os.path.join(current_dir, "../patterns/data/default/CCN201912132_class_base.tsv"),
+                  os.path.join(current_dir, "../patterns/data/default/CS1908210_class_base.tsv")]
 
-ALLEN_CLASS = "http://www.semanticweb.org/brain_data_standards/AllenDendClass_"
+PATH_MOUSE_NOMENCLATURE = os.path.join(current_dir, "../dendrograms/nomenclature_table_CCN202002013.csv")
+# PATH_NOMENCLATURE_TABLE = os.path.join(current_dir, "./test_data/nomenclature_table_CCN201912131.csv")
+PATH_NOMENCLATURE_TABLE = os.path.join(current_dir, "../dendrograms/nomenclature_table_CCN201912131.csv")
+PATH_MARKER = os.path.join(current_dir, "./test_data/CS202002013_markers.tsv")
+PATH_OUTPUT_CLASS_TSV = os.path.join(current_dir, "./test_data/output_class.tsv")
+PATH_OUTPUT_NON_TAXON_TSV = os.path.join(current_dir, "./test_data/output_non_taxon.tsv")
+PATH_OUTPUT_NOMENCLATURE_TSV = os.path.join(current_dir, "./test_data/nomenclature.tsv")
+PATH_GENERIC_OUTPUT_TSV = os.path.join(current_dir, "./test_data/output_generic.tsv")
+
+PCL_BASE = "http://purl.obolibrary.org/obo/PCL_"
 
 
 def delete_file(path_to_file):
@@ -25,123 +33,146 @@ class TemplateGenerationTest(unittest.TestCase):
 
     def setUp(self):
         delete_file(PATH_OUTPUT_CLASS_TSV)
-        delete_file(PATH_OUTPUT_EC_MARKER_TSV)
+        delete_file(PATH_OUTPUT_NON_TAXON_TSV)
         delete_file(PATH_OUTPUT_NOMENCLATURE_TSV)
+        delete_file(PATH_GENERIC_OUTPUT_TSV)
 
     def tearDown(self):
         delete_file(PATH_OUTPUT_CLASS_TSV)
-        delete_file(PATH_OUTPUT_EC_MARKER_TSV)
+        delete_file(PATH_OUTPUT_NON_TAXON_TSV)
         delete_file(PATH_OUTPUT_NOMENCLATURE_TSV)
+        delete_file(PATH_GENERIC_OUTPUT_TSV)
 
-    def test_curated_class_template_generation(self):
-        generate_curated_class_template(PATH_DENDROGRAM_JSON, PATH_OUTPUT_CLASS_TSV)
+    def test_generate_ind_template(self):
+        generate_ind_template(PATH_MOUSE_NOMENCLATURE, PATH_GENERIC_OUTPUT_TSV)
+        output = read_tsv(PATH_GENERIC_OUTPUT_TSV)
+
+        _label = 2
+        _description = 18
+        _aliases = 19
+        _rank = 20
+
+        self.assertTrue("PCL:"+get_individual_id("CS202002013_123") in output)  # child
+        test_node = output["PCL:"+get_individual_id("CS202002013_123")]
+        self.assertEqual("GABAergic", str(test_node[2]))
+        self.assertTrue(str(test_node[_description]).startswith("GABAergic is: Neurons that use GABA as a neurotransmitter"))
+        self.assertEqual("Neuronal: GABAergic|Inhibitory neurons", test_node[_aliases])
+        self.assertEqual("Class", test_node[_rank])
+
+        self.assertTrue("PCL:"+get_individual_id("CS202002013_219") in output)  # child
+        test_node = output["PCL:"+get_individual_id("CS202002013_219")]
+        self.assertEqual("Non-neural", str(test_node[2]))
+        self.assertTrue(
+            str(test_node[_description]).startswith("Non-Neural is: Cells of mesoderm"))
+        self.assertEqual("", test_node[_aliases])
+        self.assertEqual("Class", test_node[_rank])
+
+        self.assertEqual("Cell Type|Subclass", output["PCL:"+get_individual_id("CS202002013_112")][_rank])
+
+    def test_base_class_template_generation(self):
+        generate_base_class_template(PATH_MOUSE_NOMENCLATURE, PATH_OUTPUT_CLASS_TSV)
+        output = read_tsv(PATH_OUTPUT_CLASS_TSV)
+
+        self.assertTrue(PCL_BASE + get_class_id("CS202002013_150") in output)  # child
+
+        # assert only descendants of the root nodes (except root nodes itself) exist
+        self.assertFalse(PCL_BASE + get_class_id("CS202002013_117") in output)  # root
+
+        self.assertFalse(PCL_BASE + get_class_id("CS202002013_123") in output) # root
+        self.assertTrue(PCL_BASE + get_class_id("CS202002013_150") in output)  # child
+        self.assertTrue(PCL_BASE + get_class_id("CS202002013_124") in output)  # child
+        self.assertFalse(PCL_BASE + get_class_id("CS202002013_158") in output)  # grand child, empty cell_set_preferred_alias
+        self.assertTrue(PCL_BASE + get_class_id("CS202002013_3") in output)  # grand child
+        self.assertFalse(PCL_BASE + get_class_id("CS202002013_122") in output)  # parent
+        self.assertFalse(PCL_BASE + get_class_id("CS202002013_120") in output)  # grand parent
+
+        self.assertTrue(PCL_BASE + get_class_id("CS202002013_103") in output)  # root & leaf
+        self.assertFalse(PCL_BASE + get_class_id("CS202002013_220") in output)  # parent
+
+        self.assertFalse(PCL_BASE + get_class_id("CS202002013_179") in output)  # root
+        self.assertFalse(PCL_BASE + get_class_id("CS202002013_180") in output)  # child, empty cell_set_preferred_alias
+        self.assertTrue(PCL_BASE + get_class_id("CS202002013_207") in output)  # child
+        self.assertFalse(PCL_BASE + get_class_id("CS202002013_208") in output)  # grand child, empty cell_set_preferred_alias
+        self.assertTrue(PCL_BASE + get_class_id("CS202002013_83") in output)  # grand child
+
+        self.assertFalse(PCL_BASE + get_class_id("CS202002013_219") in output)  # parent
+        self.assertFalse(PCL_BASE + get_class_id("CS202002013_220") in output)  # grand parent
+
+    def test_base_class_template_generation_with_nomenclature(self):
+        generate_base_class_template(PATH_NOMENCLATURE_TABLE, PATH_OUTPUT_CLASS_TSV)
         output = read_tsv(PATH_OUTPUT_CLASS_TSV)
 
         # assert only descendants of the root nodes (except root nodes itself) exist
-        self.assertFalse(ALLEN_CLASS + "CS202002013_117" in output)  # root
+        self.assertFalse(PCL_BASE + get_class_id("CS201912131_149") in output)  # root
 
-        self.assertFalse(ALLEN_CLASS+"CS202002013_123" in output) # root
-        self.assertTrue(ALLEN_CLASS + "CS202002013_150" in output)  # child
-        self.assertTrue(ALLEN_CLASS + "CS202002013_124" in output)  # child
-        self.assertFalse(ALLEN_CLASS + "CS202002013_158" in output)  # grand child, empty cell_set_preferred_alias
-        self.assertTrue(ALLEN_CLASS + "CS202002013_3" in output)  # grand child
-        self.assertFalse(ALLEN_CLASS + "CS202002013_122" in output)  # parent
-        self.assertFalse(ALLEN_CLASS + "CS202002013_120" in output)  # grand parent
+        self.assertTrue(PCL_BASE + get_class_id("CS201912131_22") in output)  # child
+        self.assertTrue(PCL_BASE + get_class_id("CS201912131_70") in output)  # child
 
-        self.assertTrue(ALLEN_CLASS + "CS202002013_103" in output)  # root & leaf
-        self.assertFalse(ALLEN_CLASS + "CS202002013_220" in output)  # parent
+        self.assertTrue(PCL_BASE + get_class_id("CS201912131_125") in output)  # root & leaf
+        self.assertFalse(PCL_BASE + get_class_id("CS201912131_148") in output)  # parent
 
-        self.assertFalse(ALLEN_CLASS + "CS202002013_179" in output)  # root
-        self.assertFalse(ALLEN_CLASS + "CS202002013_180" in output)  # child, empty cell_set_preferred_alias
-        self.assertTrue(ALLEN_CLASS + "CS202002013_207" in output)  # child
-        self.assertFalse(ALLEN_CLASS + "CS202002013_208" in output)  # grand child, empty cell_set_preferred_alias
-        self.assertTrue(ALLEN_CLASS + "CS202002013_83" in output)  # grand child
+    def test_homologous_to_template_generation(self):
+        generate_homologous_to_template(PATH_NOMENCLATURE_TABLE, ALL_BASE_FILES, PATH_OUTPUT_CLASS_TSV)
+        output = read_tsv(PATH_OUTPUT_CLASS_TSV)
 
-        self.assertFalse(ALLEN_CLASS + "CS202002013_219" in output)  # parent
-        self.assertFalse(ALLEN_CLASS + "CS202002013_220" in output)  # grand parent
+        self.assertTrue(PCL_BASE + get_class_id("CS201912131_164") in output)
+        test_node = output[PCL_BASE + get_class_id("CS201912131_164")]
+        homologous_to = test_node[1].split("|")
+        self.assertEqual(2, len(homologous_to))
+        self.assertTrue(PCL_BASE + get_class_id("CS201912132_039") in homologous_to)
+        self.assertTrue(PCL_BASE + get_class_id("CS202002013_244") in homologous_to)
 
-    def test_equivalent_class_marker_template_generation(self):
-        generate_equivalent_class_marker_template(PATH_DENDROGRAM_JSON, PATH_MARKER, PATH_OUTPUT_EC_MARKER_TSV)
-        output = read_tsv(PATH_OUTPUT_EC_MARKER_TSV)
+        self.assertTrue(PCL_BASE + get_class_id("CS201912131_176") in output)
+        test_node = output[PCL_BASE + get_class_id("CS201912131_176")]
+        homologous_to = test_node[1].split("|")
+        self.assertEqual(2, len(homologous_to))
+        self.assertTrue(PCL_BASE + get_class_id("CS201912132_060") in homologous_to)
+        self.assertTrue(PCL_BASE + get_class_id("CS202002013_067") in homologous_to)
 
-        # assert only descendants of the root nodes (except root nodes itself) exist
-        self.assertFalse(ALLEN_CLASS + "CS202002013_117" in output)  # root
+        self.assertTrue(PCL_BASE + get_class_id("CS201912131_157") in output)
+        test_node = output[PCL_BASE + get_class_id("CS201912131_157")]
+        homologous_to = test_node[1].split("|")
+        self.assertEqual(1, len(homologous_to))
+        self.assertTrue(PCL_BASE + get_class_id("CS201912132_002") in homologous_to)
 
-        self.assertFalse(ALLEN_CLASS+"CS202002013_123" in output) # root
-        self.assertFalse(ALLEN_CLASS + "CS202002013_150" in output)  # child, no marker
-        self.assertFalse(ALLEN_CLASS + "CS202002013_124" in output)  # child, no marker
-        self.assertTrue(ALLEN_CLASS + "CS202002013_28" in output)  # grand child, with marker
-        self.assertFalse(ALLEN_CLASS + "CS202002013_158" in output)  # grand child, no marker
-        self.assertTrue(ALLEN_CLASS + "CS202002013_35" in output)  # grand child, with marker
-        self.assertTrue(ALLEN_CLASS + "CS202002013_3" in output)  # grand child, with marker
-        self.assertFalse(ALLEN_CLASS + "CS202002013_122" in output)  # parent
-        self.assertFalse(ALLEN_CLASS + "CS202002013_120" in output)  # grand parent
+        self.assertTrue(PCL_BASE + get_class_id("CS201912131_142") in output)  # human Astrocyte
+        test_node = output[PCL_BASE + get_class_id("CS201912131_142")]
+        homologous_to = test_node[1]
+        self.assertFalse(homologous_to)  # mouse and marmoset astro not exists
 
-        self.assertTrue(ALLEN_CLASS + "CS202002013_103" in output)  # root & leaf
-        self.assertFalse(ALLEN_CLASS + "CS202002013_220" in output)  # parent
+    # not test
+    # def test_curated_class_migrate(self):
+    #     migrate_columns = ["Curated_synonyms", "Classification", "Classification_comment", "Classification_pub",
+    #                        "Expresses", "Expresses_comment", "Expresses_pub", "Projection_type", "Layers",
+    #                        "Cross_species_text", "Comment"]
+    #     migrate_manual_curations("../patterns/data/default/CCN201912131_class_curation_old.tsv",
+    #                              "../patterns/data/default/CCN201912131_class_curation.tsv",
+    #                              migrate_columns,
+    #                              "../patterns/data/default/CCN201912131_class_curation_migrate.tsv")
+    #
+    #     migrate_manual_curations("../patterns/data/default/CCN201912132_class_curation_old.tsv",
+    #                              "../patterns/data/default/CCN201912132_class_curation.tsv",
+    #                              migrate_columns,
+    #                              "../patterns/data/default/CCN201912132_class_curation_migrate.tsv")
+    #
+    #     migrate_manual_curations("../patterns/data/default/CCN202002013_class_curation_old.tsv",
+    #                              "../patterns/data/default/CCN202002013_class_curation.tsv",
+    #                              migrate_columns,
+    #                              "../patterns/data/default/CCN202002013_class_curation_migrate.tsv")
+    #
+    #     migrate_manual_curations("../patterns/data/default/CS1908210_class_curation_old.tsv",
+    #                              "../patterns/data/default/CS1908210_class_curation.tsv",
+    #                              migrate_columns,
+    #                              "../patterns/data/default/CS1908210_class_curation_migrate.tsv")
 
-        self.assertFalse(ALLEN_CLASS + "CS202002013_179" in output)  # root
-        self.assertFalse(ALLEN_CLASS + "CS202002013_180" in output)  # child, no marker
-        self.assertTrue(ALLEN_CLASS + "CS202002013_207" in output)  # child, with marker
-        self.assertFalse(ALLEN_CLASS + "CS202002013_208" in output)  # grand child, no marker
-        self.assertTrue(ALLEN_CLASS + "CS202002013_83" in output)  # grand child, with marker
-
-        self.assertFalse(ALLEN_CLASS + "CS202002013_219" in output)  # parent
-        self.assertFalse(ALLEN_CLASS + "CS202002013_220" in output)  # grand parent
-
-    def test_non_taxonomy_classification_template_generation(self):
-        generate_non_taxonomy_classification_template(PATH_DENDROGRAM_JSON, PATH_OUTPUT_EC_MARKER_TSV)
-        output = read_tsv(PATH_OUTPUT_EC_MARKER_TSV)
-
-        # assert only descendants of the root nodes (except root nodes itself) exist
-        self.assertFalse(ALLEN_CLASS + "CS202002013_258" in output)  # root
-        self.assertFalse(ALLEN_CLASS + "CS202002013_237" in output)  # root
-        self.assertFalse(ALLEN_CLASS + "CS202002013_232" in output)  # root
-        self.assertFalse(ALLEN_CLASS + "CS202002013_261" in output)  # root
-
-        self.assertTrue(ALLEN_CLASS + "CS202002013_28" in output)  # child of CS202002013_232
-        self.assertEqual("CL:4023017", output[ALLEN_CLASS + "CS202002013_28"][1])
-        self.assertTrue(ALLEN_CLASS + "CS202002013_32" in output)  # child of CS202002013_232 and CS202002013_235
-        self.assertEqual("CL:4023027", output[ALLEN_CLASS + "CS202002013_32"][1])
-        self.assertTrue(ALLEN_CLASS + "CS202002013_40" in output)  # child of CS202002013_232
-        self.assertEqual("CL:4023017", output[ALLEN_CLASS + "CS202002013_40"][1])
-        self.assertTrue(ALLEN_CLASS + "CS202002013_47" in output)  # child of CS202002013_232
-        self.assertEqual("CL:4023017", output[ALLEN_CLASS + "CS202002013_47"][1])
-
-        self.assertTrue(ALLEN_CLASS + "CS202002013_114" in output)  # child of CS202002013_237
-        self.assertEqual("CL:0000881", output[ALLEN_CLASS + "CS202002013_114"][1])
-        self.assertTrue(ALLEN_CLASS + "CS202002013_115" in output)  # child of CS202002013_237
-        self.assertEqual("CL:0000881", output[ALLEN_CLASS + "CS202002013_115"][1])
-        self.assertTrue(ALLEN_CLASS + "CS202002013_116" in output)  # child of CS202002013_237
-        self.assertEqual("CL:0000881", output[ALLEN_CLASS + "CS202002013_116"][1])
-
-    # def test_migrate(self):
-    #     curated_class_migrate()
-
-
-def curated_class_migrate():
-    migrate_columns = [5, 6, 7, 8, 9, 10]
-    # curation_table_migrate_manual_edits("./test_data/source_class.tsv", "./test_data/target_class.tsv", migrate_columns)
-    curation_table_migrate_manual_edits("../templates/CCN202002013_class_old.tsv",
-                                        "../templates/CCN202002013_class.tsv", migrate_columns)
-
-
-def curation_table_migrate_manual_edits(source_path, target_path, migrate_columns):
-    source = read_tsv(source_path)
-    target = read_tsv(target_path)
-
-    new_target_path = target_path.replace(".tsv", "_migrate.tsv")
-
-    with open(new_target_path, mode='w') as out:
-        writer = csv.writer(out, delimiter="\t", quotechar='"')
-
-        for key, row in target.items():
-            if key in source:
-                # copy migrate columns
-                for migrate_column in migrate_columns:
-                    if len(source.get(key)) > migrate_column:
-                        row[migrate_column] = source.get(key)[migrate_column]
-                    else:
-                        row[migrate_column] = ""
-
-            writer.writerow(row)
+    # def test_allen_markers_migrate(self):
+    #     # in the curation table change Expresses column name to Markers
+    #     migrate_columns = ["Markers"]
+    #     migrate_manual_curations("../patterns/data/default/CS1908210_class_curation_old.tsv",
+    #                              "../markers/CS1908210_Allen_markers_old.tsv",
+    #                              migrate_columns,
+    #                              "../markers/CS1908210_Allen_markers.tsv", use_accession_ids=True)
+    #     # migrate_manual_curations("../patterns/data/default/CCN201912131_class_curation_old.tsv",
+    #     #                          "../markers/CS201912131_Allen_markers_old.tsv",
+    #     #                          migrate_columns,
+    #     #                          "../markers/CS201912131_Allen_markers.tsv", use_accession_ids=True)

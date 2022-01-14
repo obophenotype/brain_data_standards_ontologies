@@ -1,0 +1,66 @@
+Prefix(:=<http://purl.obolibrary.org/obo/components/taxonomies.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/components/taxonomies.owl>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/PCL_0010002>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0011000>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012000>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0013000>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0014000>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010052>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010053>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010054>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010055>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010056>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010057>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0011000> (CCN202002013)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010052> <http://purl.obolibrary.org/obo/PCL_0011000> "116"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010053> <http://purl.obolibrary.org/obo/PCL_0011000> "24"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010054> <http://purl.obolibrary.org/obo/PCL_0011000> "4"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010055> <http://purl.obolibrary.org/obo/PCL_0011000> "Young Adult (P56-P63)"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010056> <http://purl.obolibrary.org/obo/PCL_0011000> "Both"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010057> <http://purl.obolibrary.org/obo/PCL_0011000> "UBERON:0001384"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/PCL_0011000> "PMID:34616066"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0011000> "CCN202002013"^^xsd:string)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/PCL_0011000> "Mus musculus"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/PCL_0010002> <http://purl.obolibrary.org/obo/PCL_0011000>)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012000> (CCN201912131)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010057> <http://purl.obolibrary.org/obo/PCL_0012000> "UBERON:0001384"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/PCL_0012000> "PMID:34616062"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0012000> "CCN201912131"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/PCL_0010002> <http://purl.obolibrary.org/obo/PCL_0012000>)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0013000> (CCN201912132)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010057> <http://purl.obolibrary.org/obo/PCL_0013000> "UBERON:0001384"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/PCL_0013000> "PMID:34616062"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0013000> "CCN201912132"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/PCL_0010002> <http://purl.obolibrary.org/obo/PCL_0013000>)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0014000> (CS1908210)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010057> <http://purl.obolibrary.org/obo/PCL_0014000> "UBERON:0002771"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/PCL_0014000> "PMID:31435019"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0014000> "CS1908210"^^xsd:string)
+ClassAssertion(<http://purl.obolibrary.org/obo/PCL_0010002> <http://purl.obolibrary.org/obo/PCL_0014000>)
+
+
+)

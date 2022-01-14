@@ -1,0 +1,759 @@
+Prefix(:=<http://purl.obolibrary.org/obo/components/CCN201912131_app_specific.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/components/CCN201912131_app_specific.owl>
+
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012401>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012402>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012403>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012404>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012405>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012406>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012407>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012408>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012409>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012410>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012411>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012412>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012413>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012414>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012415>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012416>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012417>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012418>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012419>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012420>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012421>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012422>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012423>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012424>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012425>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012426>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012427>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012428>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012429>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012430>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012431>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012432>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012433>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012434>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012435>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012436>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012437>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012438>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012439>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012440>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012441>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012442>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012443>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012444>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012445>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012446>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012447>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012448>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012449>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012450>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012451>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012452>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012453>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012454>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012455>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012456>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012457>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012458>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012459>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012460>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012461>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012462>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012463>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012464>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012465>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012466>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012467>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012468>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012469>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012470>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012471>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012472>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012473>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012474>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012475>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012476>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012477>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012478>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012479>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012480>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012481>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012482>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012483>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012484>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012485>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012486>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012487>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012488>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012489>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012490>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012491>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012492>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012493>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012494>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012495>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012496>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012497>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012498>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012499>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012500>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012501>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012502>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012503>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012504>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012505>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012506>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012507>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012508>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012509>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012510>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012511>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012512>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012513>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012514>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012515>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012516>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012517>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012518>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012519>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012520>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012521>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012522>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012523>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012524>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012525>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012526>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012527>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012528>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012529>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012530>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012531>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012532>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012533>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012534>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012535>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012536>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012537>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012538>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012539>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012540>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012542>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012543>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012544>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012547>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012548>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012549>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012550>))
+Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/PCL_0012551>))
+Declaration(AnnotationProperty(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color>))
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012401> (<http://purl.obolibrary.org/obo/PCL_0012401>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012401> "#AD474F"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012402> (<http://purl.obolibrary.org/obo/PCL_0012402>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012402> "#FFA0A7"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012403> (<http://purl.obolibrary.org/obo/PCL_0012403>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012403> "#FF8AA8"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012404> (<http://purl.obolibrary.org/obo/PCL_0012404>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012404> "#E96F73"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012405> (<http://purl.obolibrary.org/obo/PCL_0012405>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012405> "#A76B6A"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012406> (<http://purl.obolibrary.org/obo/PCL_0012406>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012406> "#BF7E7D"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012407> (<http://purl.obolibrary.org/obo/PCL_0012407>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012407> "#E09A99"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012408> (<http://purl.obolibrary.org/obo/PCL_0012408>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012408> "#9E515E"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012409> (<http://purl.obolibrary.org/obo/PCL_0012409>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012409> "#891EA8"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012410> (<http://purl.obolibrary.org/obo/PCL_0012410>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012410> "#A11397"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012411> (<http://purl.obolibrary.org/obo/PCL_0012411>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012411> "#C86EFF"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012412> (<http://purl.obolibrary.org/obo/PCL_0012412>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012412> "#E354D5"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012413> (<http://purl.obolibrary.org/obo/PCL_0012413>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012413> "#8647D2"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012414> (<http://purl.obolibrary.org/obo/PCL_0012414>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012414> "#C05675"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012415> (<http://purl.obolibrary.org/obo/PCL_0012415>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012415> "#E2A9B0"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012416> (<http://purl.obolibrary.org/obo/PCL_0012416>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012416> "#B579F6"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012417> (<http://purl.obolibrary.org/obo/PCL_0012417>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012417> "#9045B9"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012418> (<http://purl.obolibrary.org/obo/PCL_0012418>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012418> "#C100C7"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012419> (<http://purl.obolibrary.org/obo/PCL_0012419>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012419> "#DCA0FF"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012420> (<http://purl.obolibrary.org/obo/PCL_0012420>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012420> "#A00097"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012421> (<http://purl.obolibrary.org/obo/PCL_0012421>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012421> "#733FB0"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012422> (<http://purl.obolibrary.org/obo/PCL_0012422>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012422> "#E7A3F4"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012423> (<http://purl.obolibrary.org/obo/PCL_0012423>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012423> "#8E27AD"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012424> (<http://purl.obolibrary.org/obo/PCL_0012424>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012424> "#EF8FE2"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012425> (<http://purl.obolibrary.org/obo/PCL_0012425>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012425> "#9237BB"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012426> (<http://purl.obolibrary.org/obo/PCL_0012426>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012426> "#774EA2"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012427> (<http://purl.obolibrary.org/obo/PCL_0012427>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012427> "#D395FF"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012428> (<http://purl.obolibrary.org/obo/PCL_0012428>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012428> "#B249CD"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012429> (<http://purl.obolibrary.org/obo/PCL_0012429>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012429> "#B462E9"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012430> (<http://purl.obolibrary.org/obo/PCL_0012430>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012430> "#B589DE"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012431> (<http://purl.obolibrary.org/obo/PCL_0012431>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012431> "#B884ED"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012432> (<http://purl.obolibrary.org/obo/PCL_0012432>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012432> "#E87DDB"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012433> (<http://purl.obolibrary.org/obo/PCL_0012433>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012433> "#E491FF"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012434> (<http://purl.obolibrary.org/obo/PCL_0012434>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012434> "#862F91"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012435> (<http://purl.obolibrary.org/obo/PCL_0012435>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012435> "#B478F5"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012436> (<http://purl.obolibrary.org/obo/PCL_0012436>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012436> "#C46DB9"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012437> (<http://purl.obolibrary.org/obo/PCL_0012437>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012437> "#9148CD"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012438> (<http://purl.obolibrary.org/obo/PCL_0012438>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012438> "#B146A6"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012439> (<http://purl.obolibrary.org/obo/PCL_0012439>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012439> "#9D73C6"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012440> (<http://purl.obolibrary.org/obo/PCL_0012440>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012440> "#FFEA00"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012441> (<http://purl.obolibrary.org/obo/PCL_0012441>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012441> "#F97E13"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012442> (<http://purl.obolibrary.org/obo/PCL_0012442>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012442> "#FAAA00"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012443> (<http://purl.obolibrary.org/obo/PCL_0012443>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012443> "#CC7B00"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012444> (<http://purl.obolibrary.org/obo/PCL_0012444>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012444> "#FF913C"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012445> (<http://purl.obolibrary.org/obo/PCL_0012445>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012445> "#E67500"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012446> (<http://purl.obolibrary.org/obo/PCL_0012446>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012446> "#F4B028"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012447> (<http://purl.obolibrary.org/obo/PCL_0012447>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012447> "#FFB82F"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012448> (<http://purl.obolibrary.org/obo/PCL_0012448>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012448> "#E07F00"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012449> (<http://purl.obolibrary.org/obo/PCL_0012449>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012449> "#F19C00"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012450> (<http://purl.obolibrary.org/obo/PCL_0012450>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012450> "#FB8D00"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012451> (<http://purl.obolibrary.org/obo/PCL_0012451>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012451> "#D46909"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012452> (<http://purl.obolibrary.org/obo/PCL_0012452>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012452> "#EAA931"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012453> (<http://purl.obolibrary.org/obo/PCL_0012453>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012453> "#C88300"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012454> (<http://purl.obolibrary.org/obo/PCL_0012454>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012454> "#DE9200"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012455> (<http://purl.obolibrary.org/obo/PCL_0012455>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012455> "#FF8D1D"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012456> (<http://purl.obolibrary.org/obo/PCL_0012456>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012456> "#F99E3B"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012457> (<http://purl.obolibrary.org/obo/PCL_0012457>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012457> "#FFA834"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012458> (<http://purl.obolibrary.org/obo/PCL_0012458>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012458> "#DF8D23"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012459> (<http://purl.obolibrary.org/obo/PCL_0012459>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012459> "#BE3B40"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012460> (<http://purl.obolibrary.org/obo/PCL_0012460>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012460> "#BE001E"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012461> (<http://purl.obolibrary.org/obo/PCL_0012461>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012461> "#B20536"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012462> (<http://purl.obolibrary.org/obo/PCL_0012462>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012462> "#F25231"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012463> (<http://purl.obolibrary.org/obo/PCL_0012463>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012463> "#B1331B"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012464> (<http://purl.obolibrary.org/obo/PCL_0012464>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012464> "#D7003C"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012465> (<http://purl.obolibrary.org/obo/PCL_0012465>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012465> "#ED6D5A"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012466> (<http://purl.obolibrary.org/obo/PCL_0012466>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012466> "#EB2222"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012467> (<http://purl.obolibrary.org/obo/PCL_0012467>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012467> "#FF5D68"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012468> (<http://purl.obolibrary.org/obo/PCL_0012468>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012468> "#F26969"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012469> (<http://purl.obolibrary.org/obo/PCL_0012469>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012469> "#FF4A3F"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012470> (<http://purl.obolibrary.org/obo/PCL_0012470>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012470> "#D5314C"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012471> (<http://purl.obolibrary.org/obo/PCL_0012471>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012471> "#FF5D53"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012472> (<http://purl.obolibrary.org/obo/PCL_0012472>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012472> "#F4358B"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012473> (<http://purl.obolibrary.org/obo/PCL_0012473>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012473> "#7AAD22"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012474> (<http://purl.obolibrary.org/obo/PCL_0012474>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012474> "#C6FF1F"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012475> (<http://purl.obolibrary.org/obo/PCL_0012475>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012475> "#CECD32"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012476> (<http://purl.obolibrary.org/obo/PCL_0012476>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012476> "#C9FF3C"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012477> (<http://purl.obolibrary.org/obo/PCL_0012477>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012477> "#A0E400"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012478> (<http://purl.obolibrary.org/obo/PCL_0012478>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012478> "#93D92B"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012479> (<http://purl.obolibrary.org/obo/PCL_0012479>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012479> "#387567"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012480> (<http://purl.obolibrary.org/obo/PCL_0012480>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012480> "#B8EB62"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012481> (<http://purl.obolibrary.org/obo/PCL_0012481>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012481> "#B7CE00"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012482> (<http://purl.obolibrary.org/obo/PCL_0012482>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012482> "#297C71"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012483> (<http://purl.obolibrary.org/obo/PCL_0012483>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012483> "#00BBC0"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012484> (<http://purl.obolibrary.org/obo/PCL_0012484>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012484> "#73EDE2"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012485> (<http://purl.obolibrary.org/obo/PCL_0012485>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012485> "#4CA8AC"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012486> (<http://purl.obolibrary.org/obo/PCL_0012486>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012486> "#91E6E9"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012487> (<http://purl.obolibrary.org/obo/PCL_0012487>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012487> "#547D7A"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012488> (<http://purl.obolibrary.org/obo/PCL_0012488>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012488> "#99D5CB"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012489> (<http://purl.obolibrary.org/obo/PCL_0012489>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012489> "#5FC5B6"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012490> (<http://purl.obolibrary.org/obo/PCL_0012490>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012490> "#01D9D5"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012491> (<http://purl.obolibrary.org/obo/PCL_0012491>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012491> "#7BAAAC"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012492> (<http://purl.obolibrary.org/obo/PCL_0012492>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012492> "#97C3C4"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012493> (<http://purl.obolibrary.org/obo/PCL_0012493>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012493> "#01ABA7"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012494> (<http://purl.obolibrary.org/obo/PCL_0012494>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012494> "#CDCE31"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012495> (<http://purl.obolibrary.org/obo/PCL_0012495>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012495> "#707B00"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012496> (<http://purl.obolibrary.org/obo/PCL_0012496>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012496> "#D0D161"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012497> (<http://purl.obolibrary.org/obo/PCL_0012497>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012497> "#5100FF"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012498> (<http://purl.obolibrary.org/obo/PCL_0012498>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012498> "#5E8099"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012499> (<http://purl.obolibrary.org/obo/PCL_0012499>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012499> "#41C5FB"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012500> (<http://purl.obolibrary.org/obo/PCL_0012500>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012500> "#1C657F"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012501> (<http://purl.obolibrary.org/obo/PCL_0012501>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012501> "#8FB5CE"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012502> (<http://purl.obolibrary.org/obo/PCL_0012502>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012502> "#2A84B9"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012503> (<http://purl.obolibrary.org/obo/PCL_0012503>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012503> "#4AA9E7"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012504> (<http://purl.obolibrary.org/obo/PCL_0012504>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012504> "#22225C"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012505> (<http://purl.obolibrary.org/obo/PCL_0012505>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012505> "#400855"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012506> (<http://purl.obolibrary.org/obo/PCL_0012506>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012506> "#3E3492"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012507> (<http://purl.obolibrary.org/obo/PCL_0012507>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012507> "#836CA7"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012508> (<http://purl.obolibrary.org/obo/PCL_0012508>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012508> "#7568CE"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012509> (<http://purl.obolibrary.org/obo/PCL_0012509>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012509> "#5D4EB0"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012510> (<http://purl.obolibrary.org/obo/PCL_0012510>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012510> "#0D5D7E"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012511> (<http://purl.obolibrary.org/obo/PCL_0012511>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012511> "#0A75B1"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012512> (<http://purl.obolibrary.org/obo/PCL_0012512>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012512> "#0B77A5"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012513> (<http://purl.obolibrary.org/obo/PCL_0012513>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012513> "#497D4B"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012514> (<http://purl.obolibrary.org/obo/PCL_0012514>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012514> "#3ABE8B"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012515> (<http://purl.obolibrary.org/obo/PCL_0012515>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012515> "#60BA66"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012516> (<http://purl.obolibrary.org/obo/PCL_0012516>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012516> "#2C815F"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012517> (<http://purl.obolibrary.org/obo/PCL_0012517>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012517> "#05996B"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012518> (<http://purl.obolibrary.org/obo/PCL_0012518>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012518> "#446E5C"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012519> (<http://purl.obolibrary.org/obo/PCL_0012519>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012519> "#1A3329"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012520> (<http://purl.obolibrary.org/obo/PCL_0012520>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012520> "#003A28"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012521> (<http://purl.obolibrary.org/obo/PCL_0012521>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012521> "#005444"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012522> (<http://purl.obolibrary.org/obo/PCL_0012522>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012522> "#4F492F"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012523> (<http://purl.obolibrary.org/obo/PCL_0012523>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012523> "#5A503F"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012524> (<http://purl.obolibrary.org/obo/PCL_0012524>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012524> "#8D7C5D"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012525> (<http://purl.obolibrary.org/obo/PCL_0012525>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012525> "#8D6C62"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012526> (<http://purl.obolibrary.org/obo/PCL_0012526>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012526> "#697255"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012527> (<http://purl.obolibrary.org/obo/PCL_0012527>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012527> "#94AF97"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012528> (<http://purl.obolibrary.org/obo/PCL_0012528>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012528> "#DA808C"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012529> (<http://purl.obolibrary.org/obo/PCL_0012529>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012529> "#D633FF"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012530> (<http://purl.obolibrary.org/obo/PCL_0012530>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012530> "#B864CC"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012531> (<http://purl.obolibrary.org/obo/PCL_0012531>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012531> "#FF9900"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012532> (<http://purl.obolibrary.org/obo/PCL_0012532>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012532> "#D93137"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012533> (<http://purl.obolibrary.org/obo/PCL_0012533>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012533> "#C4EC04"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012534> (<http://purl.obolibrary.org/obo/PCL_0012534>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012534> "#50B2AD"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012535> (<http://purl.obolibrary.org/obo/PCL_0012535>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012535> "#A19922"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012536> (<http://purl.obolibrary.org/obo/PCL_0012536>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012536> "#2D8CB8"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012537> (<http://purl.obolibrary.org/obo/PCL_0012537>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012537> "#53377D"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012538> (<http://purl.obolibrary.org/obo/PCL_0012538>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012538> "#0D5B78"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012539> (<http://purl.obolibrary.org/obo/PCL_0012539>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012539> "#3E9E64"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012540> (<http://purl.obolibrary.org/obo/PCL_0012540>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012540> "#2E3E39"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012542> (<http://purl.obolibrary.org/obo/PCL_0012542>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012542> "#665C47"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012543> (<http://purl.obolibrary.org/obo/PCL_0012543>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012543> "#C456AA"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012544> (<http://purl.obolibrary.org/obo/PCL_0012544>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012544> "#ED892E"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012547> (<http://purl.obolibrary.org/obo/PCL_0012547>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012547> "#598077"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012548> (<http://purl.obolibrary.org/obo/PCL_0012548>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012548> "#6C7557"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012549> (<http://purl.obolibrary.org/obo/PCL_0012549>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012549> "#F05A28"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012550> (<http://purl.obolibrary.org/obo/PCL_0012550>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012550> "#00ADEE"^^xsd:string)
+
+# Individual: <http://purl.obolibrary.org/obo/PCL_0012551> (<http://purl.obolibrary.org/obo/PCL_0012551>)
+
+AnnotationAssertion(<http://www.semanticweb.org/brain_data_standards/allen_helper.owl#cell_set_color> <http://purl.obolibrary.org/obo/PCL_0012551> "#808080"^^xsd:string)
+
+
+)

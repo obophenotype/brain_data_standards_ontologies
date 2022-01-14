@@ -4,52 +4,60 @@ import pandas as pd
 import logging
 import os
 
-from template_generation_utils import get_root_nodes, read_taxonomy_config, read_dendrogram_tree
+from template_generation_utils import get_root_nodes, read_taxonomy_config, generate_dendrogram_tree
+from dendrogram_tools import dend_json_2_nodes_n_edges
+from nomenclature_tools import nomenclature_2_nodes_n_edges
 
 CLUSTER = "cluster"
 EXPRESSIONS = "expressions"
 ALLEN_ID_PREFIX = "AllenDend:"
 EXPRESSION_SEPARATOR = "|"
+MARKER_PATH = '../markers/CS{}_markers.tsv'
 
 log = logging.getLogger(__name__)
 
 
-def generate_denormalised_marker_template(dend_json_path, flat_marker_path, config_path, output_marker_path):
+def generate_denormalised_marker_template(taxonomy_file_path, output_marker_path):
     """
     Enriches existing marker file based on inheritance relations extracted from dendrogram file.
     New maker table, following the same format as the input marker table, with each node associated with a
     non-redundant list of all markers associated with the term in the input + all markers associated with parent terms.
     Args:
         dend_json_path: Path of the dendrogram file
-        flat_marker_path: Path of the marker file that is compatible with the dendrogram file
-        config_path: Taxonomy details config file to get root terms
         output_marker_path: Path of the new marker file
 
     """
-    path_parts = dend_json_path.split(os.path.sep)
+    path_parts = taxonomy_file_path.split(os.path.sep)
     taxon = path_parts[len(path_parts) - 1].split(".")[0]
-    config_yaml = read_taxonomy_config(taxon)
+    if str(taxonomy_file_path).endswith(".json"):
+        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+    else:
+        dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
+        taxon = path_parts[len(path_parts) - 1].split(".")[0].replace("nomenclature_table_", "")
 
-    root_nodes = get_root_nodes(config_yaml)
+    taxonomy_config = read_taxonomy_config(taxon)
 
-    generate_denormalised_marker(dend_json_path, flat_marker_path, output_marker_path, root_nodes)
+    root_nodes = get_root_nodes(taxonomy_config)
+
+    marker_path = MARKER_PATH.format(str(taxon).replace("CCN", "").replace("CS", ""))
+    generate_denormalised_marker(dend, marker_path, output_marker_path, root_nodes)
 
 
-def generate_denormalised_marker(dend_json_path, flat_marker_path, output_marker_path, root_terms=None):
+def generate_denormalised_marker(dend_data, flat_marker_path, output_marker_path, root_terms=None):
     """Enriches existing marker file based on inheritance relations extracted from dendrogram file.
        New maker table, following the same format as the input marker table, with each node associated with a
        non-redundant list of all markers associated with the term in the input + all markers associated with
        parent terms.
 
         Args:
-            - dend_json_path: Path of the dendrogram file
+            - dend_data: Dendrogram data
             - flat_marker_path: Path of the marker file that is compatible with the dendrogram file
             - output_marker_path: Path of the new marker file
             - root_terms: 'cell_set_accession' of terms. So that algorithm could be applied to a subtree
     """
     if root_terms is None:
         root_terms = []
-    tree = read_dendrogram_tree(dend_json_path)
+    tree = generate_dendrogram_tree(dend_data)
     marker_expressions = read_marker_file(flat_marker_path)
     marker_extended_expressions = extend_expressions(tree, marker_expressions, root_terms)
     generate_marker_table(marker_extended_expressions, output_marker_path)
@@ -175,7 +183,7 @@ def generate_marker_table(marker_data, output_filepath):
         d = dict()
         d['Taxonomy_node_ID'] = o
         d['clusterName'] = marker_data[o][CLUSTER]
-        d['Markers'] = EXPRESSION_SEPARATOR.join(marker_data[o][EXPRESSIONS])
+        d['Markers'] = EXPRESSION_SEPARATOR.join(sorted(marker_data[o][EXPRESSIONS]))
         for k in robot_marker_template_seed.keys():
             if not (k in d.keys()):
                 d[k] = ''

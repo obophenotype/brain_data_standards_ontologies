@@ -1,0 +1,244 @@
+pattern_name: brainCellClasses
+pattern_iri: http://purl.obolibrary.org/obo/odk/brainCellClasses.yaml
+description: "Class template for BDS."
+
+classes:
+  "cell": "CL:0000000"
+  "thing": "owl:Thing"
+  "animal cell": "CL:0000548"
+  "native_cell": "CL:0000003"
+  "Vertebrata <vertebrates>": "NCBITaxon:7742"
+  "regional part of brain": "UBERON:0002616"
+  "sequence_feature": "SO:0000110"
+  "layer of neocortex": "UBERON:0002301"
+  "projection type": "PATO:0070033" # neuron projection quality
+
+relations:
+  expresses: "RO:0002292"
+  part_of: "BFO:0000050"
+  in_taxon: "RO:0002162"
+  has_soma_location: "RO:0002100"
+  bearer_of: "RO:0000053"
+  has_exemplar_data: "RO:0015001"
+  has_characterizing_marker_set: "PCL:0010062"
+
+annotationProperties:
+  skosPrefLabel: "skos:prefLabel"
+  hasExactSynonym: "oboInOwl:hasExactSynonym"
+  rdfsComment: "rdfs:comment"
+  hasDbXref: "oboInOwl:hasDbXref"
+  symbol: "IAO:0000028"
+  'has nsforest marker': "PCL:0010058"
+
+list_vars:
+  Expresses: "'thing'"
+  Minimal_markers: "'sequence_feature'"
+  Allen_markers: "'sequence_feature'"
+  Layers: "'layer of neocortex'"
+
+vars:
+  Classification: "'cell'"
+  Gross_cell_type: "'cell'"
+  Taxon: "'Vertebrata <vertebrates>'"
+  Brain_region: "'regional part of brain'"
+  Projection_type: "'projection type'"
+  part_of: "'thing'"
+  has_soma_location: "'thing'"
+  Individual: "'thing'"
+  marker_gene_set: "'thing'"
+
+data_list_vars:
+  Synonyms_from_taxonomy: "xsd:string"
+  Curated_synonyms: "xsd:string"
+  Classification_pub: "xsd:string"
+  Expresses_comment: "xsd:string"
+  Expresses_pub: "xsd:string"
+  Alias_citations: "xsd:string"
+
+data_vars:
+  prefLabel: "xsd:string"
+  Comment: "xsd:string"
+  Classification_comment: "xsd:string"
+  Brain_region_abbv: "xsd:string"
+  Species_abbv: "xsd:string"
+  Cluster_ID: "xsd:string"
+  Cross_species_text: "xsd:string"
+
+internal_vars:
+  - var_name: Minimal_markers_cat
+    input: Minimal_markers
+    apply:
+      join:
+        sep: ', '
+  - var_name: Allen_markers_cat
+    input: Allen_markers
+    apply:
+      join:
+        sep: ', '
+  - var_name: Cortical_layer_cat
+    input: Layers
+    apply:
+      join:
+        sep: ' or '
+
+name:
+   text: "%s %s %s (%s)"
+   vars:
+      - prefLabel
+      - Brain_region
+      - Gross_cell_type
+      - Taxon
+
+def:
+  xrefs: Alias_citations
+  multi_clause:
+    sep: " "
+    clauses:
+      - text: 'A %s of the %s %s.'
+        vars:
+          - Gross_cell_type
+          - Taxon
+          - Brain_region
+        sub_clauses:
+          - sep: ' '
+          - clauses:
+              - text: 'These cells can be distinguished from other cells in the %s by their selective expression of %s.'
+                vars:
+                  - Brain_region
+                  - Minimal_markers_cat
+              - text: 'These cells also express %s.'
+                vars:
+                  - Allen_markers_cat
+              - text: 'These cells have projection type %s.'
+                vars:
+                  - Projection_type
+              - text: 'The soma of these cells in located in: %s.'
+                vars:
+                  - Cortical_layer_cat
+              - text: 'The reference data for this cell type is %s.'
+                vars:
+                  - Cluster_ID
+
+generated_synonyms:
+   - text: "%s expressing %s of %s (%s)"
+     vars:
+        - Minimal_markers_cat
+        - Gross_cell_type
+        - Brain_region
+        - Taxon
+
+logical_axioms:
+   - axiom_type: subClassOf
+     text: "%s"
+     vars:
+        - Classification
+     annotations:
+       - annotationProperty: rdfsComment
+         text: "%s"
+         vars:
+           - Classification_comment
+       - annotationProperty: hasDbXref
+         multi_clause:
+           sep: " "
+           clauses:
+             - text: '%s'
+               vars:
+                 - Classification_pub
+   - axiom_type: subClassOf
+     multi_clause:
+      sep: " and "
+      clauses:
+        - text: "'expresses' some %s"
+          vars:
+            - Expresses
+     annotations:
+       - annotationProperty: rdfsComment
+         text: "%s"
+         vars:
+           - Expresses_comment
+       - annotationProperty: hasDbXref
+         multi_clause:
+           sep: " "
+           clauses:
+             - text: '%s'
+               vars:
+                 - Expresses_pub
+   - axiom_type: subClassOf
+     text: "'in_taxon' some %s"
+     vars:
+        - Taxon
+   - axiom_type: subClassOf
+     text: "%s"
+     vars:
+       - Gross_cell_type
+   - axiom_type: subClassOf
+     text: "'bearer_of' some %s"
+     vars:
+       - Projection_type
+   - axiom_type: subClassOf
+     multi_clause:
+      sep: " and "
+      clauses:
+        - text: "'expresses' some %s"
+          vars:
+            - Minimal_markers
+   - axiom_type: subClassOf
+     text: "'part_of' some %s"
+     vars:
+       - part_of
+   - axiom_type: subClassOf
+     text: "'has_soma_location' some %s"
+     vars:
+       - has_soma_location
+   - axiom_type: subClassOf
+     text: "'has_exemplar_data' value %s"
+     vars:
+        - Individual
+   - axiom_type: equivalentTo
+     text: "'native_cell' and 'has_exemplar_data' value %s"
+     vars:
+        - Individual
+   - axiom_type: subClassOf
+     multi_clause:
+       sep: " or "
+       clauses:
+         - text: "'has_soma_location' some %s"
+           vars:
+             - Layers
+   - axiom_type: subClassOf
+     text: "'has_characterizing_marker_set' some %s"
+     vars:
+        - marker_gene_set
+
+annotations:
+  - annotationProperty: skosPrefLabel
+    text: "%s"
+    vars:
+      - prefLabel
+  - annotationProperty: hasExactSynonym
+    multi_clause:
+      sep: " "
+      clauses:
+        - text: '%s'
+          vars:
+            - Synonyms_from_taxonomy
+  - annotationProperty: hasExactSynonym
+    multi_clause:
+      sep: " "
+      clauses:
+        - text: '%s'
+          vars:
+            - Curated_synonyms
+  - annotationProperty: symbol
+    text: "%s %s (%s)"
+    vars:
+      - prefLabel
+      - Brain_region_abbv
+      - Species_abbv
+  - annotationProperty: 'has nsforest marker'
+    multi_clause:
+      sep: " "
+      clauses:
+        - text: "%s"
+          vars:
+            - Minimal_markers

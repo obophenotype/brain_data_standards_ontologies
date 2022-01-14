@@ -1,0 +1,22 @@
+pattern_name: Protein2GeneExpression
+pattern_iri: http://purl.obolibrary.org/obo/odk/Protein2GeneExpression.yaml
+description: "Expressing a gene is equivalent to expressing the protein product of that gene"
+
+
+relations:
+  expresses: "RO:0002292"
+    
+classes:
+  gene_class: "SO:0000704"
+  protein_class: "PR:000000001"
+    
+vars:
+  protein: "'protein_class'"
+  gene: "'gene_class'"
+    
+logical_axioms:
+   - axiom_type: GCI
+     text: "'expresses' some %s SubClassOf 'expresses' some %s"
+     vars:
+       - gene
+       - protein

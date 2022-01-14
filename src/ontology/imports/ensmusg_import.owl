@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/bdscratch/imports/ensmusg_import.owl#"
-     xml:base="http://purl.obolibrary.org/obo/bdscratch/imports/ensmusg_import.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/pcl/imports/ensmusg_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/pcl/imports/ensmusg_import.owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/bdscratch/imports/ensmusg_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/bdscratch/releases/2021-04-29/imports/ensmusg_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-04-29</owl:versionInfo>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pcl/imports/ensmusg_import.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pcl/releases/2022-01-13/imports/ensmusg_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-01-13</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -28,7 +28,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000000214">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Th</rdfs:label>
+        <rdfs:label>Mouse Th</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000000753 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000000753">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Serpinf1</rdfs:label>
     </owl:Class>
     
 
@@ -37,7 +46,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000000805">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Car4</rdfs:label>
+        <rdfs:label>Mouse Car4</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000001119 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000001119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Col6a1</rdfs:label>
     </owl:Class>
     
 
@@ -46,7 +64,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000001260">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gabrg1</rdfs:label>
+        <rdfs:label>Mouse Gabrg1</rdfs:label>
     </owl:Class>
     
 
@@ -55,7 +73,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000001496">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Nkx2-1</rdfs:label>
+        <rdfs:label>Mouse Nkx2-1</rdfs:label>
     </owl:Class>
     
 
@@ -64,7 +82,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000002900">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Lamb1</rdfs:label>
+        <rdfs:label>Mouse Lamb1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000003476 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000003476">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Crhr2</rdfs:label>
     </owl:Class>
     
 
@@ -73,7 +100,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000003657">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Calb2</rdfs:label>
+        <rdfs:label>Mouse Calb2</rdfs:label>
     </owl:Class>
     
 
@@ -82,7 +109,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000003746">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Man1a</rdfs:label>
+        <rdfs:label>Mouse Man1a</rdfs:label>
     </owl:Class>
     
 
@@ -91,7 +118,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000004151">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Etv1</rdfs:label>
+        <rdfs:label>Mouse Etv1</rdfs:label>
     </owl:Class>
     
 
@@ -100,7 +127,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000004366">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Sst</rdfs:label>
+        <rdfs:label>Mouse Sst</rdfs:label>
     </owl:Class>
     
 
@@ -109,7 +136,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000004415">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Col26a1</rdfs:label>
+        <rdfs:label>Mouse Col26a1</rdfs:label>
     </owl:Class>
     
 
@@ -118,7 +145,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000005672">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Kit</rdfs:label>
+        <rdfs:label>Mouse Kit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000005716 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000005716">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Pvalb</rdfs:label>
     </owl:Class>
     
 
@@ -127,7 +163,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000006014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Prg4</rdfs:label>
+        <rdfs:label>Mouse Prg4</rdfs:label>
     </owl:Class>
     
 
@@ -136,7 +172,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000009376">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Met</rdfs:label>
+        <rdfs:label>Mouse Met</rdfs:label>
     </owl:Class>
     
 
@@ -145,7 +181,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000010066">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cacna2d2</rdfs:label>
+        <rdfs:label>Mouse Cacna2d2</rdfs:label>
     </owl:Class>
     
 
@@ -154,7 +190,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000010122">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Slc47a1</rdfs:label>
+        <rdfs:label>Mouse Slc47a1</rdfs:label>
     </owl:Class>
     
 
@@ -163,7 +199,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000010175">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Prox1</rdfs:label>
+        <rdfs:label>Mouse Prox1</rdfs:label>
     </owl:Class>
     
 
@@ -172,7 +208,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000010461">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Eya4</rdfs:label>
+        <rdfs:label>Mouse Eya4</rdfs:label>
     </owl:Class>
     
 
@@ -181,7 +217,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000010651">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Acaa1b</rdfs:label>
+        <rdfs:label>Mouse Acaa1b</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000011171 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000011171">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Vipr2</rdfs:label>
     </owl:Class>
     
 
@@ -190,7 +235,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000013523">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Bcas1</rdfs:label>
+        <rdfs:label>Mouse Bcas1</rdfs:label>
     </owl:Class>
     
 
@@ -199,7 +244,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000013766">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Ly6g6e</rdfs:label>
+        <rdfs:label>Mouse Ly6g6e</rdfs:label>
     </owl:Class>
     
 
@@ -208,7 +253,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000015202">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cnksr3</rdfs:label>
+        <rdfs:label>Mouse Cnksr3</rdfs:label>
     </owl:Class>
     
 
@@ -217,7 +262,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000015766">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Eps8</rdfs:label>
+        <rdfs:label>Mouse Eps8</rdfs:label>
     </owl:Class>
     
 
@@ -226,7 +271,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000016918">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Sulf1</rdfs:label>
+        <rdfs:label>Mouse Sulf1</rdfs:label>
     </owl:Class>
     
 
@@ -235,7 +280,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000017978">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cadps2</rdfs:label>
+        <rdfs:label>Mouse Cadps2</rdfs:label>
     </owl:Class>
     
 
@@ -244,7 +289,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000019772">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Vip</rdfs:label>
+        <rdfs:label>Mouse Vip</rdfs:label>
     </owl:Class>
     
 
@@ -253,7 +298,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000019828">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Grm1</rdfs:label>
+        <rdfs:label>Mouse Grm1</rdfs:label>
     </owl:Class>
     
 
@@ -262,7 +307,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000019889">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Ptprk</rdfs:label>
+        <rdfs:label>Mouse Ptprk</rdfs:label>
     </owl:Class>
     
 
@@ -271,7 +316,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000019935">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Slc17a8</rdfs:label>
+        <rdfs:label>Mouse Slc17a8</rdfs:label>
     </owl:Class>
     
 
@@ -280,7 +325,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000019997">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Ccn2</rdfs:label>
+        <rdfs:label>Mouse Ctgf</rdfs:label>
     </owl:Class>
     
 
@@ -289,7 +334,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000020000">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Moxd1</rdfs:label>
+        <rdfs:label>Mouse Moxd1</rdfs:label>
     </owl:Class>
     
 
@@ -298,7 +343,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000020042">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Btbd11</rdfs:label>
+        <rdfs:label>Mouse Btbd11</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000020061 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000020061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Mybpc1</rdfs:label>
     </owl:Class>
     
 
@@ -307,7 +361,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000020099">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Unc5b</rdfs:label>
+        <rdfs:label>Mouse Unc5b</rdfs:label>
     </owl:Class>
     
 
@@ -316,7 +370,25 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000020902">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Ntn1</rdfs:label>
+        <rdfs:label>Mouse Ntn1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000020914 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000020914">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Top2a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000020932 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000020932">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Gfap</rdfs:label>
     </owl:Class>
     
 
@@ -325,7 +397,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000021318">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gli3</rdfs:label>
+        <rdfs:label>Mouse Gli3</rdfs:label>
     </owl:Class>
     
 
@@ -334,7 +406,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000021508">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cxcl14</rdfs:label>
+        <rdfs:label>Mouse Cxcl14</rdfs:label>
     </owl:Class>
     
 
@@ -343,7 +415,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000021541">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Trpc7</rdfs:label>
+        <rdfs:label>Mouse Trpc7</rdfs:label>
     </owl:Class>
     
 
@@ -352,7 +424,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000021647">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cartpt</rdfs:label>
+        <rdfs:label>Mouse Cartpt</rdfs:label>
     </owl:Class>
     
 
@@ -361,7 +433,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000021665">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Hexb</rdfs:label>
+        <rdfs:label>Mouse Hexb</rdfs:label>
     </owl:Class>
     
 
@@ -370,7 +442,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000021708">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Rasgrf2</rdfs:label>
+        <rdfs:label>Mouse Rasgrf2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000021721 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000021721">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Htr1a</rdfs:label>
     </owl:Class>
     
 
@@ -379,7 +460,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000021765">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Fst</rdfs:label>
+        <rdfs:label>Mouse Fst</rdfs:label>
     </owl:Class>
     
 
@@ -388,7 +469,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000021835">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Bmp4</rdfs:label>
+        <rdfs:label>Mouse Bmp4</rdfs:label>
     </owl:Class>
     
 
@@ -397,7 +478,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000021919">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Chat</rdfs:label>
+        <rdfs:label>Mouse Chat</rdfs:label>
     </owl:Class>
     
 
@@ -406,7 +487,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000022112">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gpc5</rdfs:label>
+        <rdfs:label>Mouse Gpc5</rdfs:label>
     </owl:Class>
     
 
@@ -415,7 +496,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000022206">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Npr3</rdfs:label>
+        <rdfs:label>Mouse Npr3</rdfs:label>
     </owl:Class>
     
 
@@ -424,7 +505,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000022231">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Sema5a</rdfs:label>
+        <rdfs:label>Mouse Sema5a</rdfs:label>
     </owl:Class>
     
 
@@ -433,7 +514,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000022297">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Fzd6</rdfs:label>
+        <rdfs:label>Mouse Fzd6</rdfs:label>
     </owl:Class>
     
 
@@ -442,7 +523,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000022306">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Zfpm2</rdfs:label>
+        <rdfs:label>Mouse Zfpm2</rdfs:label>
     </owl:Class>
     
 
@@ -451,7 +532,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000022371">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Col14a1</rdfs:label>
+        <rdfs:label>Mouse Col14a1</rdfs:label>
     </owl:Class>
     
 
@@ -460,7 +541,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000022419">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Deptor</rdfs:label>
+        <rdfs:label>Mouse Deptor</rdfs:label>
     </owl:Class>
     
 
@@ -469,7 +550,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000022425">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Enpp2</rdfs:label>
+        <rdfs:label>Mouse Enpp2</rdfs:label>
     </owl:Class>
     
 
@@ -478,7 +559,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000022656">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Nectin3</rdfs:label>
+        <rdfs:label>Mouse Nectin3</rdfs:label>
     </owl:Class>
     
 
@@ -487,7 +568,25 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000022860">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Chodl</rdfs:label>
+        <rdfs:label>Mouse Chodl</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000023046 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000023046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Igfbp6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000023064 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000023064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Sncg</rdfs:label>
     </owl:Class>
     
 
@@ -496,7 +595,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000023800">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Tiam2</rdfs:label>
+        <rdfs:label>Mouse Tiam2</rdfs:label>
     </owl:Class>
     
 
@@ -505,7 +604,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000024074">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Crim1</rdfs:label>
+        <rdfs:label>Mouse Crim1</rdfs:label>
     </owl:Class>
     
 
@@ -514,7 +613,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000024211">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Grm8</rdfs:label>
+        <rdfs:label>Mouse Grm8</rdfs:label>
     </owl:Class>
     
 
@@ -523,7 +622,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000024236">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Svil</rdfs:label>
+        <rdfs:label>Mouse Svil</rdfs:label>
     </owl:Class>
     
 
@@ -532,7 +631,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000024376">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Epb41l4a</rdfs:label>
+        <rdfs:label>Mouse Epb41l4a</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000024411 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000024411">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Aqp4</rdfs:label>
     </owl:Class>
     
 
@@ -541,7 +649,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000024517">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Grp</rdfs:label>
+        <rdfs:label>Mouse Grp</rdfs:label>
     </owl:Class>
     
 
@@ -550,7 +658,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000024598">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Fbn2</rdfs:label>
+        <rdfs:label>Mouse Fbn2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000024610 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000024610">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Cd74</rdfs:label>
     </owl:Class>
     
 
@@ -559,7 +676,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000024810">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Il33</rdfs:label>
+        <rdfs:label>Mouse Il33</rdfs:label>
     </owl:Class>
     
 
@@ -568,7 +685,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000024867">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Pip5k1b</rdfs:label>
+        <rdfs:label>Mouse Pip5k1b</rdfs:label>
     </owl:Class>
     
 
@@ -577,7 +694,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000024985">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Tcf7l2</rdfs:label>
+        <rdfs:label>Mouse Tcf7l2</rdfs:label>
     </owl:Class>
     
 
@@ -586,7 +703,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000024990">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Rbp4</rdfs:label>
+        <rdfs:label>Mouse Rbp4</rdfs:label>
     </owl:Class>
     
 
@@ -595,7 +712,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000025370">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cdh9</rdfs:label>
+        <rdfs:label>Mouse Cdh9</rdfs:label>
     </owl:Class>
     
 
@@ -604,7 +721,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000025400">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Tac2</rdfs:label>
+        <rdfs:label>Mouse Tac2</rdfs:label>
     </owl:Class>
     
 
@@ -613,7 +730,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000025537">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Phkg1</rdfs:label>
+        <rdfs:label>Mouse Phkg1</rdfs:label>
     </owl:Class>
     
 
@@ -622,7 +739,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000025780">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Itih5</rdfs:label>
+        <rdfs:label>Mouse Itih5</rdfs:label>
     </owl:Class>
     
 
@@ -631,7 +748,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000025813">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Homer2</rdfs:label>
+        <rdfs:label>Mouse Homer2</rdfs:label>
     </owl:Class>
     
 
@@ -640,7 +757,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000025997">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Ikzf2</rdfs:label>
+        <rdfs:label>Mouse Ikzf2</rdfs:label>
     </owl:Class>
     
 
@@ -649,7 +766,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000026141">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Col19a1</rdfs:label>
+        <rdfs:label>Mouse Col19a1</rdfs:label>
     </owl:Class>
     
 
@@ -658,7 +775,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000026322">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Htr4</rdfs:label>
+        <rdfs:label>Mouse Htr4</rdfs:label>
     </owl:Class>
     
 
@@ -667,7 +784,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000026344">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Lypd1</rdfs:label>
+        <rdfs:label>Mouse Lypd1</rdfs:label>
     </owl:Class>
     
 
@@ -676,7 +793,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000026347">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Tmem163</rdfs:label>
+        <rdfs:label>Mouse Tmem163</rdfs:label>
     </owl:Class>
     
 
@@ -685,7 +802,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000026393">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Nek7</rdfs:label>
+        <rdfs:label>Mouse Nek7</rdfs:label>
     </owl:Class>
     
 
@@ -694,7 +811,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000026452">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Syt2</rdfs:label>
+        <rdfs:label>Mouse Syt2</rdfs:label>
     </owl:Class>
     
 
@@ -703,7 +820,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000026475">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Rgs16</rdfs:label>
+        <rdfs:label>Mouse Rgs16</rdfs:label>
     </owl:Class>
     
 
@@ -712,7 +829,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000026566">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Mpzl1</rdfs:label>
+        <rdfs:label>Mouse Mpzl1</rdfs:label>
     </owl:Class>
     
 
@@ -721,7 +838,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000026676">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Ccdc3</rdfs:label>
+        <rdfs:label>Mouse Ccdc3</rdfs:label>
     </owl:Class>
     
 
@@ -730,7 +847,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000026697">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Myoc</rdfs:label>
+        <rdfs:label>Mouse Myoc</rdfs:label>
     </owl:Class>
     
 
@@ -739,7 +856,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000026765">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Lypd6b</rdfs:label>
+        <rdfs:label>Mouse Lypd6b</rdfs:label>
     </owl:Class>
     
 
@@ -748,7 +865,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000026826">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Nr4a2</rdfs:label>
+        <rdfs:label>Mouse Nr4a2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000026890 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000026890">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Lhx6</rdfs:label>
     </owl:Class>
     
 
@@ -757,7 +883,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000026989">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Dapl1</rdfs:label>
+        <rdfs:label>Mouse Dapl1</rdfs:label>
     </owl:Class>
     
 
@@ -766,7 +892,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000027168">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Pax6</rdfs:label>
+        <rdfs:label>Mouse Pax6</rdfs:label>
     </owl:Class>
     
 
@@ -775,7 +901,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000027210">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Meis2</rdfs:label>
+        <rdfs:label>Mouse Meis2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000027270 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000027270">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Lamp5</rdfs:label>
     </owl:Class>
     
 
@@ -784,7 +919,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000027400">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Pdyn</rdfs:label>
+        <rdfs:label>Mouse Pdyn</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000027559 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000027559">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Car3</rdfs:label>
     </owl:Class>
     
 
@@ -793,7 +937,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000027849">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Syt6</rdfs:label>
+        <rdfs:label>Mouse Syt6</rdfs:label>
     </owl:Class>
     
 
@@ -802,7 +946,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000027965">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Olfm3</rdfs:label>
+        <rdfs:label>Mouse Olfm3</rdfs:label>
     </owl:Class>
     
 
@@ -811,7 +955,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000027971">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Ndst4</rdfs:label>
+        <rdfs:label>Mouse Ndst4</rdfs:label>
     </owl:Class>
     
 
@@ -820,7 +964,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000027996">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Sfrp2</rdfs:label>
+        <rdfs:label>Mouse Sfrp2</rdfs:label>
     </owl:Class>
     
 
@@ -829,7 +973,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000028004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Npy2r</rdfs:label>
+        <rdfs:label>Mouse Npy2r</rdfs:label>
     </owl:Class>
     
 
@@ -838,7 +982,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000028031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Dkk2</rdfs:label>
+        <rdfs:label>Mouse Dkk2</rdfs:label>
     </owl:Class>
     
 
@@ -847,7 +991,34 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000028222">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Calb1</rdfs:label>
+        <rdfs:label>Mouse Calb1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000028273 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000028273">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Pdlim5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000028370 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000028370">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Pappa</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000028871 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000028871">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Rspo1</rdfs:label>
     </owl:Class>
     
 
@@ -856,7 +1027,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000028909">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Ptpru</rdfs:label>
+        <rdfs:label>Mouse Ptpru</rdfs:label>
     </owl:Class>
     
 
@@ -865,7 +1036,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000028971">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cort</rdfs:label>
+        <rdfs:label>Mouse Cort</rdfs:label>
     </owl:Class>
     
 
@@ -874,7 +1045,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000029086">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Prom1</rdfs:label>
+        <rdfs:label>Mouse Prom1</rdfs:label>
     </owl:Class>
     
 
@@ -883,7 +1054,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000029101">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Rgs12</rdfs:label>
+        <rdfs:label>Mouse Rgs12</rdfs:label>
     </owl:Class>
     
 
@@ -892,7 +1063,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000029154">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cwh43</rdfs:label>
+        <rdfs:label>Mouse Cwh43</rdfs:label>
     </owl:Class>
     
 
@@ -901,7 +1072,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000029231">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Pdgfra</rdfs:label>
+        <rdfs:label>Mouse Pdgfra</rdfs:label>
     </owl:Class>
     
 
@@ -910,7 +1081,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000029334">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Prkg2</rdfs:label>
+        <rdfs:label>Mouse Prkg2</rdfs:label>
     </owl:Class>
     
 
@@ -919,7 +1090,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000029361">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Nos1</rdfs:label>
+        <rdfs:label>Mouse Nos1</rdfs:label>
     </owl:Class>
     
 
@@ -928,7 +1099,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000029563">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Foxp2</rdfs:label>
+        <rdfs:label>Mouse Foxp2</rdfs:label>
     </owl:Class>
     
 
@@ -937,7 +1108,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000029705">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cux1</rdfs:label>
+        <rdfs:label>Mouse Cux1</rdfs:label>
     </owl:Class>
     
 
@@ -946,7 +1117,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000029819">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Npy</rdfs:label>
+        <rdfs:label>Mouse Npy</rdfs:label>
     </owl:Class>
     
 
@@ -955,7 +1126,25 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000030074">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gxylt2</rdfs:label>
+        <rdfs:label>Mouse Gxylt2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000030170 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000030170">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Wnt5b</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000030187 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000030187">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Klra2</rdfs:label>
     </owl:Class>
     
 
@@ -964,7 +1153,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000030222">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Rerg</rdfs:label>
+        <rdfs:label>Mouse Rerg</rdfs:label>
     </owl:Class>
     
 
@@ -973,7 +1162,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000030235">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Slco1c1</rdfs:label>
+        <rdfs:label>Mouse Slco1c1</rdfs:label>
     </owl:Class>
     
 
@@ -982,7 +1171,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000030237">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Slco1a4</rdfs:label>
+        <rdfs:label>Mouse Slco1a4</rdfs:label>
     </owl:Class>
     
 
@@ -991,7 +1180,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000030249">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Abcc9</rdfs:label>
+        <rdfs:label>Mouse Abcc9</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000030495 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000030495">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Slc7a10</rdfs:label>
     </owl:Class>
     
 
@@ -1000,7 +1198,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000030525">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Chrna7</rdfs:label>
+        <rdfs:label>Mouse Chrna7</rdfs:label>
     </owl:Class>
     
 
@@ -1009,7 +1207,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000030616">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Sytl2</rdfs:label>
+        <rdfs:label>Mouse Sytl2</rdfs:label>
     </owl:Class>
     
 
@@ -1018,7 +1216,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000030905">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Crym</rdfs:label>
+        <rdfs:label>Mouse Crym</rdfs:label>
     </owl:Class>
     
 
@@ -1027,7 +1225,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000031216">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Stard8</rdfs:label>
+        <rdfs:label>Mouse Stard8</rdfs:label>
     </owl:Class>
     
 
@@ -1036,7 +1234,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000031273">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Col4a6</rdfs:label>
+        <rdfs:label>Mouse Col4a6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000031494 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000031494">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Cd209a</rdfs:label>
     </owl:Class>
     
 
@@ -1045,7 +1252,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000031558">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Slit2</rdfs:label>
+        <rdfs:label>Mouse Slit2</rdfs:label>
     </owl:Class>
     
 
@@ -1054,7 +1261,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000031772">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cntnap4</rdfs:label>
+        <rdfs:label>Mouse Cntnap4</rdfs:label>
     </owl:Class>
     
 
@@ -1063,7 +1270,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000031841">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cdh13</rdfs:label>
+        <rdfs:label>Mouse Cdh13</rdfs:label>
     </owl:Class>
     
 
@@ -1072,7 +1279,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000031963">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Bmper</rdfs:label>
+        <rdfs:label>Mouse Bmper</rdfs:label>
     </owl:Class>
     
 
@@ -1081,7 +1288,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000031997">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Trpc6</rdfs:label>
+        <rdfs:label>Mouse Trpc6</rdfs:label>
     </owl:Class>
     
 
@@ -1090,7 +1297,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000032017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Grik4</rdfs:label>
+        <rdfs:label>Mouse Grik4</rdfs:label>
     </owl:Class>
     
 
@@ -1099,7 +1306,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000032269">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Htr3a</rdfs:label>
+        <rdfs:label>Mouse Htr3a</rdfs:label>
     </owl:Class>
     
 
@@ -1108,7 +1315,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000032517">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Mobp</rdfs:label>
+        <rdfs:label>Mouse Mobp</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000032532 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000032532">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Cck</rdfs:label>
     </owl:Class>
     
 
@@ -1117,7 +1333,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000032564">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cpne4</rdfs:label>
+        <rdfs:label>Mouse Cpne4</rdfs:label>
     </owl:Class>
     
 
@@ -1126,7 +1342,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000032625">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Thsd7a</rdfs:label>
+        <rdfs:label>Mouse Thsd7a</rdfs:label>
     </owl:Class>
     
 
@@ -1135,7 +1351,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000032702">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Kank1</rdfs:label>
+        <rdfs:label>Mouse Kank1</rdfs:label>
     </owl:Class>
     
 
@@ -1144,7 +1360,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000032796">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Lama1</rdfs:label>
+        <rdfs:label>Mouse Lama1</rdfs:label>
     </owl:Class>
     
 
@@ -1153,7 +1369,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000032841">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Prr5l</rdfs:label>
+        <rdfs:label>Mouse Prr5l</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000033208 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000033208">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse S100b</rdfs:label>
     </owl:Class>
     
 
@@ -1162,7 +1387,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000034009">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Rxfp1</rdfs:label>
+        <rdfs:label>Mouse Rxfp1</rdfs:label>
     </owl:Class>
     
 
@@ -1171,7 +1396,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000034127">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Tspan8</rdfs:label>
+        <rdfs:label>Mouse Tspan8</rdfs:label>
     </owl:Class>
     
 
@@ -1180,7 +1405,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000034310">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Tmem132d</rdfs:label>
+        <rdfs:label>Mouse Tmem132d</rdfs:label>
     </owl:Class>
     
 
@@ -1189,7 +1414,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000034324">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Tmem132c</rdfs:label>
+        <rdfs:label>Mouse Tmem132c</rdfs:label>
     </owl:Class>
     
 
@@ -1198,7 +1423,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000034402">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Kcnh5</rdfs:label>
+        <rdfs:label>Mouse Kcnh5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000035105 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000035105">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Egln3</rdfs:label>
     </owl:Class>
     
 
@@ -1207,7 +1441,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000035131">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Brinp3</rdfs:label>
+        <rdfs:label>Mouse Brinp3</rdfs:label>
     </owl:Class>
     
 
@@ -1216,7 +1450,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000035258">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Abi3bp</rdfs:label>
+        <rdfs:label>Mouse Abi3bp</rdfs:label>
     </owl:Class>
     
 
@@ -1225,7 +1459,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000035273">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Hpse</rdfs:label>
+        <rdfs:label>Mouse Hpse</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000035305 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000035305">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Ror1</rdfs:label>
     </owl:Class>
     
 
@@ -1234,7 +1477,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000035357">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Pdzrn3</rdfs:label>
+        <rdfs:label>Mouse Pdzrn3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000035407 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000035407">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Kank4</rdfs:label>
     </owl:Class>
     
 
@@ -1243,7 +1495,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000035551">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Igfbpl1</rdfs:label>
+        <rdfs:label>Mouse Igfbpl1</rdfs:label>
     </owl:Class>
     
 
@@ -1252,7 +1504,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000035783">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Acta2</rdfs:label>
+        <rdfs:label>Mouse Acta2</rdfs:label>
     </owl:Class>
     
 
@@ -1261,7 +1513,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000036019">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Tmtc2</rdfs:label>
+        <rdfs:label>Mouse Tmtc2</rdfs:label>
     </owl:Class>
     
 
@@ -1270,7 +1522,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000036192">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Rorb</rdfs:label>
+        <rdfs:label>Mouse Rorb</rdfs:label>
     </owl:Class>
     
 
@@ -1279,7 +1531,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000036218">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Pdzrn4</rdfs:label>
+        <rdfs:label>Mouse Pdzrn4</rdfs:label>
     </owl:Class>
     
 
@@ -1288,7 +1540,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000036264">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Fstl4</rdfs:label>
+        <rdfs:label>Mouse Fstl4</rdfs:label>
     </owl:Class>
     
 
@@ -1297,7 +1549,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000036545">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Adamts2</rdfs:label>
+        <rdfs:label>Mouse Adamts2</rdfs:label>
     </owl:Class>
     
 
@@ -1306,7 +1558,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000036777">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Anln</rdfs:label>
+        <rdfs:label>Mouse Anln</rdfs:label>
     </owl:Class>
     
 
@@ -1315,7 +1567,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000036814">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Slc6a20a</rdfs:label>
+        <rdfs:label>Mouse Slc6a20a</rdfs:label>
     </owl:Class>
     
 
@@ -1324,7 +1576,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000036834">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Plch1</rdfs:label>
+        <rdfs:label>Mouse Plch1</rdfs:label>
     </owl:Class>
     
 
@@ -1333,7 +1585,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000036949">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Slc39a12</rdfs:label>
+        <rdfs:label>Mouse Slc39a12</rdfs:label>
     </owl:Class>
     
 
@@ -1342,7 +1594,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000037362">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Ccn3</rdfs:label>
+        <rdfs:label>Mouse Nov</rdfs:label>
     </owl:Class>
     
 
@@ -1351,7 +1603,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000038048">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cntnap5c</rdfs:label>
+        <rdfs:label>Mouse Cntnap5c</rdfs:label>
     </owl:Class>
     
 
@@ -1360,7 +1612,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000038156">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Spon1</rdfs:label>
+        <rdfs:label>Mouse Spon1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000038173 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000038173">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Enpp6</rdfs:label>
     </owl:Class>
     
 
@@ -1369,7 +1630,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000038331">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Satb2</rdfs:label>
+        <rdfs:label>Mouse Satb2</rdfs:label>
     </owl:Class>
     
 
@@ -1378,7 +1639,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000038718">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Pbx3</rdfs:label>
+        <rdfs:label>Mouse Pbx3</rdfs:label>
     </owl:Class>
     
 
@@ -1387,7 +1648,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000039037">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>St6galnac5</rdfs:label>
+        <rdfs:label>Mouse St6galnac5</rdfs:label>
     </owl:Class>
     
 
@@ -1396,7 +1657,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000039137">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Whrn</rdfs:label>
+        <rdfs:label>Mouse Whrn</rdfs:label>
     </owl:Class>
     
 
@@ -1405,7 +1666,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000039167">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Adgrl4</rdfs:label>
+        <rdfs:label>Mouse Adgrl4</rdfs:label>
     </owl:Class>
     
 
@@ -1414,7 +1675,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000039316">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Rftn1</rdfs:label>
+        <rdfs:label>Mouse Rftn1</rdfs:label>
     </owl:Class>
     
 
@@ -1423,7 +1684,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000039385">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cdh6</rdfs:label>
+        <rdfs:label>Mouse Cdh6</rdfs:label>
     </owl:Class>
     
 
@@ -1432,7 +1693,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000039519">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cyp7b1</rdfs:label>
+        <rdfs:label>Mouse Cyp7b1</rdfs:label>
     </owl:Class>
     
 
@@ -1441,7 +1702,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000039620">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Trmt9b</rdfs:label>
+        <rdfs:label>Mouse 6430573F11Rik</rdfs:label>
     </owl:Class>
     
 
@@ -1450,7 +1711,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000039714">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cplx3</rdfs:label>
+        <rdfs:label>Mouse Cplx3</rdfs:label>
     </owl:Class>
     
 
@@ -1459,7 +1720,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000039954">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Stk32a</rdfs:label>
+        <rdfs:label>Mouse Stk32a</rdfs:label>
     </owl:Class>
     
 
@@ -1468,7 +1729,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000040420">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cdh18</rdfs:label>
+        <rdfs:label>Mouse Cdh18</rdfs:label>
     </owl:Class>
     
 
@@ -1477,7 +1738,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000040452">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cdh12</rdfs:label>
+        <rdfs:label>Mouse Cdh12</rdfs:label>
     </owl:Class>
     
 
@@ -1486,7 +1747,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000040569">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Slc26a7</rdfs:label>
+        <rdfs:label>Mouse Slc26a7</rdfs:label>
     </owl:Class>
     
 
@@ -1495,7 +1756,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000040624">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Plekhg1</rdfs:label>
+        <rdfs:label>Mouse Plekhg1</rdfs:label>
     </owl:Class>
     
 
@@ -1504,7 +1765,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000040710">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>St8sia4</rdfs:label>
+        <rdfs:label>Mouse St8sia4</rdfs:label>
     </owl:Class>
     
 
@@ -1513,7 +1774,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000040732">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Erg</rdfs:label>
+        <rdfs:label>Mouse Erg</rdfs:label>
     </owl:Class>
     
 
@@ -1522,7 +1783,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000041460">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cacna2d4</rdfs:label>
+        <rdfs:label>Mouse Cacna2d4</rdfs:label>
     </owl:Class>
     
 
@@ -1531,7 +1792,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000041741">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Pde3a</rdfs:label>
+        <rdfs:label>Mouse Pde3a</rdfs:label>
     </owl:Class>
     
 
@@ -1540,7 +1801,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000042045">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Sln</rdfs:label>
+        <rdfs:label>Mouse Sln</rdfs:label>
     </owl:Class>
     
 
@@ -1549,7 +1810,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000042453">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Reln</rdfs:label>
+        <rdfs:label>Mouse Reln</rdfs:label>
     </owl:Class>
     
 
@@ -1558,7 +1819,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000042489">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Clspn</rdfs:label>
+        <rdfs:label>Mouse Clspn</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000042501 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000042501">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Cpa6</rdfs:label>
     </owl:Class>
     
 
@@ -1567,7 +1837,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000042581">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Thsd7b</rdfs:label>
+        <rdfs:label>Mouse Thsd7b</rdfs:label>
     </owl:Class>
     
 
@@ -1576,7 +1846,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000042589">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cux2</rdfs:label>
+        <rdfs:label>Mouse Cux2</rdfs:label>
     </owl:Class>
     
 
@@ -1585,7 +1855,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000042596">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Tfap2d</rdfs:label>
+        <rdfs:label>Mouse Tfap2d</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000043441 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000043441">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Gpr149</rdfs:label>
     </owl:Class>
     
 
@@ -1594,7 +1873,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000043556">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Fbxl7</rdfs:label>
+        <rdfs:label>Mouse Fbxl7</rdfs:label>
     </owl:Class>
     
 
@@ -1603,7 +1882,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000043659">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Npsr1</rdfs:label>
+        <rdfs:label>Mouse Npsr1</rdfs:label>
     </owl:Class>
     
 
@@ -1612,7 +1891,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000043760">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Pkhd1</rdfs:label>
+        <rdfs:label>Mouse Pkhd1</rdfs:label>
     </owl:Class>
     
 
@@ -1621,7 +1900,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000044288">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cnr1</rdfs:label>
+        <rdfs:label>Mouse Cnr1</rdfs:label>
     </owl:Class>
     
 
@@ -1630,7 +1909,25 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000044447">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Dock5</rdfs:label>
+        <rdfs:label>Mouse Dock5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000045532 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000045532">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse C1ql1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000045573 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000045573">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Penk</rdfs:label>
     </owl:Class>
     
 
@@ -1639,7 +1936,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000045613">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Chrm2</rdfs:label>
+        <rdfs:label>Mouse Chrm2</rdfs:label>
     </owl:Class>
     
 
@@ -1648,7 +1945,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000045648">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Vwc2l</rdfs:label>
+        <rdfs:label>Mouse Vwc2l</rdfs:label>
     </owl:Class>
     
 
@@ -1657,7 +1954,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000045731">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Pnoc</rdfs:label>
+        <rdfs:label>Mouse Pnoc</rdfs:label>
     </owl:Class>
     
 
@@ -1666,7 +1963,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000046178">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Nxph1</rdfs:label>
+        <rdfs:label>Mouse Nxph1</rdfs:label>
     </owl:Class>
     
 
@@ -1675,7 +1972,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000046321">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Hs3st2</rdfs:label>
+        <rdfs:label>Mouse Hs3st2</rdfs:label>
     </owl:Class>
     
 
@@ -1684,7 +1981,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000047907">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Tshz2</rdfs:label>
+        <rdfs:label>Mouse Tshz2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000048939 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000048939">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Atp13a5</rdfs:label>
     </owl:Class>
     
 
@@ -1693,7 +1999,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000048967">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Yjefn3</rdfs:label>
+        <rdfs:label>Mouse Yjefn3</rdfs:label>
     </owl:Class>
     
 
@@ -1702,7 +2008,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000049001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Ndnf</rdfs:label>
+        <rdfs:label>Mouse Ndnf</rdfs:label>
     </owl:Class>
     
 
@@ -1711,7 +2017,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000049148">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Plcxd3</rdfs:label>
+        <rdfs:label>Mouse Plcxd3</rdfs:label>
     </owl:Class>
     
 
@@ -1720,7 +2026,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000049630">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>C1ql3</rdfs:label>
+        <rdfs:label>Mouse C1ql3</rdfs:label>
     </owl:Class>
     
 
@@ -1729,7 +2035,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000049690">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Nckap5</rdfs:label>
+        <rdfs:label>Mouse Nckap5</rdfs:label>
     </owl:Class>
     
 
@@ -1738,7 +2044,34 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000049796">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Crh</rdfs:label>
+        <rdfs:label>Mouse Crh</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000050121 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000050121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Opalin</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000050473 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000050473">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Slc35d3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000050783 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000050783">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Htr1f</rdfs:label>
     </owl:Class>
     
 
@@ -1747,7 +2080,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000051611">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Olfr112</rdfs:label>
+        <rdfs:label>Mouse Olfr112</rdfs:label>
     </owl:Class>
     
 
@@ -1756,7 +2089,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000051910">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Sox6</rdfs:label>
+        <rdfs:label>Mouse Sox6</rdfs:label>
     </owl:Class>
     
 
@@ -1765,7 +2098,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000052062">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Pard3b</rdfs:label>
+        <rdfs:label>Mouse Pard3b</rdfs:label>
     </owl:Class>
     
 
@@ -1774,7 +2107,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000052353">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cemip</rdfs:label>
+        <rdfs:label>Mouse Cemip</rdfs:label>
     </owl:Class>
     
 
@@ -1783,7 +2116,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000052430">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Bmpr1b</rdfs:label>
+        <rdfs:label>Mouse Bmpr1b</rdfs:label>
     </owl:Class>
     
 
@@ -1792,7 +2125,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000052551">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Adarb2</rdfs:label>
+        <rdfs:label>Mouse Adarb2</rdfs:label>
     </owl:Class>
     
 
@@ -1801,7 +2134,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000053368">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Rxfp2</rdfs:label>
+        <rdfs:label>Mouse Rxfp2</rdfs:label>
     </owl:Class>
     
 
@@ -1810,7 +2143,25 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000053399">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Adamts18</rdfs:label>
+        <rdfs:label>Mouse Adamts18</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000053519 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000053519">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Kcnip1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000053930 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000053930">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Shisa6</rdfs:label>
     </owl:Class>
     
 
@@ -1819,7 +2170,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000055214">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Pld5</rdfs:label>
+        <rdfs:label>Mouse Pld5</rdfs:label>
     </owl:Class>
     
 
@@ -1828,7 +2179,25 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000055471">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Alk</rdfs:label>
+        <rdfs:label>Mouse Alk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000055653 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000055653">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Gpc3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000055775 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000055775">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Myh8</rdfs:label>
     </owl:Class>
     
 
@@ -1837,7 +2206,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000056427">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Slit3</rdfs:label>
+        <rdfs:label>Mouse Slit3</rdfs:label>
     </owl:Class>
     
 
@@ -1846,7 +2215,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000058897">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Col25a1</rdfs:label>
+        <rdfs:label>Mouse Col25a1</rdfs:label>
     </owl:Class>
     
 
@@ -1855,7 +2224,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000059049">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Frem1</rdfs:label>
+        <rdfs:label>Mouse Frem1</rdfs:label>
     </owl:Class>
     
 
@@ -1864,7 +2233,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000059187">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Tafa1</rdfs:label>
+        <rdfs:label>Mouse Fam19a1</rdfs:label>
     </owl:Class>
     
 
@@ -1873,7 +2242,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000059203">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Il1rapl2</rdfs:label>
+        <rdfs:label>Mouse Il1rapl2</rdfs:label>
     </owl:Class>
     
 
@@ -1882,7 +2251,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000059857">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Ntng1</rdfs:label>
+        <rdfs:label>Mouse Ntng1</rdfs:label>
     </owl:Class>
     
 
@@ -1891,7 +2260,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000060371">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Caln1</rdfs:label>
+        <rdfs:label>Mouse Caln1</rdfs:label>
     </owl:Class>
     
 
@@ -1900,7 +2269,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000061762">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Tac1</rdfs:label>
+        <rdfs:label>Mouse Tac1</rdfs:label>
     </owl:Class>
     
 
@@ -1909,7 +2278,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000062151">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Unc13c</rdfs:label>
+        <rdfs:label>Mouse Unc13c</rdfs:label>
     </owl:Class>
     
 
@@ -1918,7 +2287,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000062372">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Otof</rdfs:label>
+        <rdfs:label>Mouse Otof</rdfs:label>
     </owl:Class>
     
 
@@ -1927,7 +2296,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000063531">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Sema3e</rdfs:label>
+        <rdfs:label>Mouse Sema3e</rdfs:label>
     </owl:Class>
     
 
@@ -1936,7 +2305,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000063564">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Col23a1</rdfs:label>
+        <rdfs:label>Mouse Col23a1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000063600 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000063600">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Egfem1</rdfs:label>
     </owl:Class>
     
 
@@ -1945,7 +2323,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000063661">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Krt73</rdfs:label>
+        <rdfs:label>Mouse Krt73</rdfs:label>
     </owl:Class>
     
 
@@ -1954,7 +2332,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000064294">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Aox3</rdfs:label>
+        <rdfs:label>Mouse Aox3</rdfs:label>
     </owl:Class>
     
 
@@ -1963,7 +2341,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000066197">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gpr139</rdfs:label>
+        <rdfs:label>Mouse Gpr139</rdfs:label>
     </owl:Class>
     
 
@@ -1972,7 +2350,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000067028">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Cntnap5b</rdfs:label>
+        <rdfs:label>Mouse Cntnap5b</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000068196 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000068196">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Col8a1</rdfs:label>
     </owl:Class>
     
 
@@ -1981,7 +2368,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000068220">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Lgals1</rdfs:label>
+        <rdfs:label>Mouse Lgals1</rdfs:label>
     </owl:Class>
     
 
@@ -1990,7 +2377,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000069132">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Nxph2</rdfs:label>
+        <rdfs:label>Mouse Nxph2</rdfs:label>
     </owl:Class>
     
 
@@ -1999,7 +2386,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000069378">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Prdm6</rdfs:label>
+        <rdfs:label>Mouse Prdm6</rdfs:label>
     </owl:Class>
     
 
@@ -2008,7 +2395,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000073154">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>9330158H04Rik</rdfs:label>
+        <rdfs:label>Mouse 9330158H04Rik</rdfs:label>
     </owl:Class>
     
 
@@ -2017,7 +2404,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000073565">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Prr16</rdfs:label>
+        <rdfs:label>Mouse Prr16</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000074852 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000074852">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Hpse2</rdfs:label>
     </owl:Class>
     
 
@@ -2026,7 +2422,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000075270">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Pde11a</rdfs:label>
+        <rdfs:label>Mouse Pde11a</rdfs:label>
     </owl:Class>
     
 
@@ -2035,7 +2431,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000078591">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Hs3st4</rdfs:label>
+        <rdfs:label>Mouse Hs3st4</rdfs:label>
     </owl:Class>
     
 
@@ -2044,7 +2440,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000084890">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>A830036E02Rik</rdfs:label>
+        <rdfs:label>Mouse A830036E02Rik</rdfs:label>
     </owl:Class>
     
 
@@ -2053,7 +2449,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000087516">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Tbx3os1</rdfs:label>
+        <rdfs:label>Mouse Tbx3os1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000090125 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000090125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Pou3f1</rdfs:label>
     </owl:Class>
     
 
@@ -2062,7 +2467,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000092094">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Zfp804b</rdfs:label>
+        <rdfs:label>Mouse Zfp804b</rdfs:label>
     </owl:Class>
     
 
@@ -2071,7 +2476,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000094083">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gm1604b</rdfs:label>
+        <rdfs:label>Mouse Gm1604a</rdfs:label>
     </owl:Class>
     
 
@@ -2080,7 +2485,25 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000095105">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Edaradd</rdfs:label>
+        <rdfs:label>Mouse Edaradd</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000095139 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000095139">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Pou3f2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000096972 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000096972">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Gm26883</rdfs:label>
     </owl:Class>
     
 
@@ -2089,7 +2512,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000097462">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>9530026P05Rik</rdfs:label>
+        <rdfs:label>Mouse 9530026P05Rik</rdfs:label>
     </owl:Class>
     
 
@@ -2098,7 +2521,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000098087">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gm17750</rdfs:label>
+        <rdfs:label>Mouse Gm17750</rdfs:label>
     </owl:Class>
     
 
@@ -2107,7 +2530,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000098097">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>6530403H02Rik</rdfs:label>
+        <rdfs:label>Mouse 6530403H02Rik</rdfs:label>
     </owl:Class>
     
 
@@ -2116,7 +2539,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000098318">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Lockd</rdfs:label>
+        <rdfs:label>Mouse Lockd</rdfs:label>
     </owl:Class>
     
 
@@ -2125,7 +2548,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000098760">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gm2164</rdfs:label>
+        <rdfs:label>Mouse Gm2164</rdfs:label>
     </owl:Class>
     
 
@@ -2134,7 +2557,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000100650">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gm28807</rdfs:label>
+        <rdfs:label>Mouse Gm28807</rdfs:label>
     </owl:Class>
     
 
@@ -2143,7 +2566,16 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000100832">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gm29260</rdfs:label>
+        <rdfs:label>Mouse Gm29260</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://identifiers.org/ensembl/ENSMUSG00000101389 -->
+
+    <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000101389">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+        <rdfs:label>Mouse Ms4a4a</rdfs:label>
     </owl:Class>
     
 
@@ -2152,7 +2584,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000105068">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gm30835</rdfs:label>
+        <rdfs:label>Mouse Gm30835</rdfs:label>
     </owl:Class>
     
 
@@ -2161,7 +2593,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000107384">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gm42557</rdfs:label>
+        <rdfs:label>Mouse Gm42557</rdfs:label>
     </owl:Class>
     
 
@@ -2170,7 +2602,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000110002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gm45680</rdfs:label>
+        <rdfs:label>Mouse Gm45680</rdfs:label>
     </owl:Class>
     
 
@@ -2179,7 +2611,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000110281">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gm2516</rdfs:label>
+        <rdfs:label>Mouse Gm2516</rdfs:label>
     </owl:Class>
     
 
@@ -2188,7 +2620,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000110468">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gm39185</rdfs:label>
+        <rdfs:label>Mouse Gm39185</rdfs:label>
     </owl:Class>
     
 
@@ -2197,7 +2629,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000111061">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gm46102</rdfs:label>
+        <rdfs:label>Mouse Gm46102</rdfs:label>
     </owl:Class>
     
 
@@ -2206,7 +2638,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000111765">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gm10635</rdfs:label>
+        <rdfs:label>Mouse Gm10635</rdfs:label>
     </owl:Class>
     
 
@@ -2215,7 +2647,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000111950">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gm48893</rdfs:label>
+        <rdfs:label>Mouse Gm48893</rdfs:label>
     </owl:Class>
     
 
@@ -2224,7 +2656,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000111994">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>A330049N07Rik</rdfs:label>
+        <rdfs:label>Mouse A330049N07Rik</rdfs:label>
     </owl:Class>
     
 
@@ -2233,7 +2665,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000112276">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>5033421B08Rik</rdfs:label>
+        <rdfs:label>Mouse 5033421B08Rik</rdfs:label>
     </owl:Class>
     
 
@@ -2242,7 +2674,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000112430">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gm30624</rdfs:label>
+        <rdfs:label>Mouse Gm30624</rdfs:label>
     </owl:Class>
     
 
@@ -2251,7 +2683,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000115529">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>9630013A20Rik</rdfs:label>
+        <rdfs:label>Mouse 9630013A20Rik</rdfs:label>
     </owl:Class>
     
 
@@ -2260,7 +2692,7 @@
 
     <owl:Class rdf:about="http://identifiers.org/ensembl/ENSMUSG00000116610">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
-        <rdfs:label>Gm49678</rdfs:label>
+        <rdfs:label>Mouse AC129186.1</rdfs:label>
     </owl:Class>
     
 

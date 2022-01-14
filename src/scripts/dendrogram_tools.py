@@ -7,6 +7,7 @@ def dend_json_2_nodes_n_edges(path_to_json):
     j = json.loads(f.read())
     out = {}
     tree_recurse(j, out)
+    f.close()
     return out
 
 
