@@ -79,15 +79,15 @@ all_imports: $(IMPORT_FILES)
 
 # hard wiring for now.  Work on patsubst later
 mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) template --input $(SRC) --template $< \
+	if [ $(MIR) = true ]; then $(ROBOT) template --input $(SRC) --template $< \
       --add-prefixes template_prefixes.json \
       annotate --ontology-iri ${BDS_BASE}$@ \
       convert --format ofn --output $@; fi
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) template --input $(SRC) --template ../templates/simple_human.tsv \
+	if [ $(MIR) = true ]; then $(ROBOT) template --input $(SRC) --template ../templates/simple_human.tsv \
       --add-prefixes template_prefixes.json \
       annotate --ontology-iri ${BDS_BASE}mirror/simple_human.owl \
       convert --format ofn --output mirror/simple_human.owl; fi
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) template --input $(SRC) --template ../templates/simple_marmoset.tsv \
+	if [ $(MIR) = true ]; then $(ROBOT) template --input $(SRC) --template ../templates/simple_marmoset.tsv \
       --add-prefixes template_prefixes.json \
       annotate --ontology-iri ${BDS_BASE}mirror/simple_marmoset.owl \
       convert --format ofn --output mirror/simple_marmoset.owl; fi
