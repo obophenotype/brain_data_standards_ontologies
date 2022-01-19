@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: pcl/releases/2022-01-17/bdso-simple.owl
+data-version: pcl/releases/2022-01-19/bdso-simple.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -8,7 +8,7 @@ subsetdef: ro-eco ""
 ontology: pcl/bdso-simple
 property_value: dc-title "Brain Data Standards Cell Ontology" xsd:string
 property_value: dcterms-license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2022-01-17" xsd:string
+property_value: owl:versionInfo "2022-01-19" xsd:string
 
 [Typedef]
 id: RO:0002100

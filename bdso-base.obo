@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: pcl/releases/2022-01-17/bdso-base.owl
+data-version: pcl/releases/2022-01-19/bdso-base.owl
 ontology: pcl/bdso-base
 property_value: http://purl.org/dc/elements/1.1/title "Brain Data Standards Cell Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2022-01-17" xsd:string
+property_value: owl:versionInfo "2022-01-19" xsd:string
 
 [Term]
 id: CL:4023119
@@ -7530,15 +7530,21 @@ property_value: prefLabel "L4/5 IT_2" xsd:string
 [Term]
 id: PCL:0011063
 name: L5 IT_1 primary motor cortex glutamatergic neuron (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_63." [PMID:34616066]
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Mouse Deptor, Mouse Il1rapl2. These cells have projection type intratelencephalic projecting. The soma of these cells in located in: cortical layer V. The reference data for this cell type is CS202002013_63." [PMID:34616066]
 synonym: "L5 IT_1" EXACT []
+synonym: "Mouse Deptor, Mouse Il1rapl2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 063" EXACT []
 is_a: CL:0000679
+relationship: PCL:0010062 PCL:0012563 ! NS forest marker set of L5 IT_1 MOp (Mouse).
 relationship: RO:0000053 PATO:0070034
 relationship: RO:0002100 UBERON:0001384 ! has soma location
 relationship: RO:0002100 UBERON:0005394 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022419 ! expresses
+relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses
 property_value: IAO:0000028 "L5 IT_1 MOp (Mouse)" xsd:string
+property_value: PCL:0010058 "Mouse Deptor" xsd:string
+property_value: PCL:0010058 "Mouse Il1rapl2" xsd:string
 property_value: prefLabel "L5 IT_1" xsd:string
 
 [Term]
@@ -9591,23 +9597,17 @@ property_value: prefLabel "L5 IT_C1" xsd:string
 [Term]
 id: PCL:0011250
 name: L6 IT_C2 primary motor cortex glutamatergic neuron (Mus musculus)
-def: "A glutamatergic neuron of the Mus musculus primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of Mouse Deptor, Mouse Il1rapl2. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_250." [PMID:34616062]
+def: "A glutamatergic neuron of the Mus musculus primary motor cortex. The soma of these cells in located in: cortical layer VI. The reference data for this cell type is CS202002013_250." [PMID:34616062]
 synonym: "L6 IT_2" EXACT []
 synonym: "L6 IT_C2" EXACT []
-synonym: "Mouse Deptor, Mouse Il1rapl2 expressing glutamatergic neuron of primary motor cortex (Mus musculus)" EXACT []
 synonym: "RNAseq 066, 068" EXACT []
 is_a: CL:0000679
-relationship: PCL:0010062 PCL:0012750 ! NS forest marker set of L6 IT_C2 MOp (Mouse).
 relationship: RO:0002100 UBERON:0001384 ! has soma location
 relationship: RO:0002100 UBERON:0005395 ! has soma location
 relationship: RO:0002162 NCBITaxon:10090
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022419 ! expresses
-relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059203 ! expresses
 relationship: RO:HOM0000007 PCL:0015174 ! (Mouse L6 IT)-like_C2 primary motor cortex glutamatergic neuron (Homo sapiens)
 relationship: RO:HOM0000007 PCL:0019059 ! Exc THEMIS KCTD16 primary motor cortex glutamatergic neuron (Callithrix jacchus)
 property_value: IAO:0000028 "L6 IT_C2 MOp (Mouse)" xsd:string
-property_value: PCL:0010058 "Mouse Deptor" xsd:string
-property_value: PCL:0010058 "Mouse Il1rapl2" xsd:string
 property_value: prefLabel "L6 IT_C2" xsd:string
 
 [Term]
@@ -10110,6 +10110,12 @@ id: PCL:0012562
 name: NS forest marker set of L4/5 IT_2 MOp (Mouse).
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000004415
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000032564
+relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000059203
+
+[Term]
+id: PCL:0012563
+name: NS forest marker set of L5 IT_1 MOp (Mouse).
+relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000022419
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000059203
 
 [Term]
@@ -10660,12 +10666,6 @@ id: PCL:0012733
 name: NS forest marker set of Pvalb-like MOp (Mouse).
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000005716
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000031772
-
-[Term]
-id: PCL:0012750
-name: NS forest marker set of L6 IT_C2 MOp (Mouse).
-relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000022419
-relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000059203
 
 [Term]
 id: PCL:0015001
