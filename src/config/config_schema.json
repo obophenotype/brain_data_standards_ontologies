@@ -42,6 +42,13 @@
             "description": "Species abbreviation."
           }
         },
+        "Gene_abbv": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "Gene abbreviation."
+          }
+        },
         "Brain_region": {
           "type": "array",
           "items": {
