@@ -171,7 +171,7 @@ def get_species_for_gene_db(gene_db_path):
             taxonomy_config = config
 
     if taxonomy_config:
-        return taxonomy_config["Species_abbv"][0]
+        return taxonomy_config["Gene_abbv"][0]
     else:
         raise ValueError("Reference_gene_list for gene_db '" + gene_db_path +
                          "' couldn't be found in the taxonomy configurations.")
@@ -189,7 +189,7 @@ def fix_gene_database(gene_db_path, gene_prefix):
         print(headers)
         for gene in genes_by_name:
             writer.writerow([gene_prefix + gene.replace("\"", ""), "SO:0000704",
-                             species_abbv + " " + genes_by_name[gene]["gene_name"]])
+                             genes_by_name[gene]["gene_name"] + " " + species_abbv])
 
 
 def fix_gene_database_species(gene_db_path):
@@ -204,7 +204,7 @@ def fix_gene_database_species(gene_db_path):
         print(headers)
         for gene in genes_by_id:
             writer.writerow([genes_by_id[gene]["ID"], genes_by_id[gene]["TYPE"],
-                             species_abbv + " " + genes_by_id[gene]["NAME"]])
+                             genes_by_id[gene]["NAME"] + " " + species_abbv])
 
 
 def add_cluster_name_to_marker(marker_path):
@@ -262,9 +262,9 @@ def add_cluster_name_to_marker(marker_path):
 # generate_marker_template("201912132", "../patterns/data/bds/enscjag_data.tsv")
 
 # fix_gene_database(GENE_DB_PATH.format("simple_human"), "entrez:")
-fix_gene_database(GENE_DB_PATH.format("ensmusg"), "ensembl:")
+# fix_gene_database(GENE_DB_PATH.format("ensmusg"), "ensembl:")
 
-# fix_gene_database_species(GENE_DB_PATH.format("simple_human"))
+fix_gene_database_species(GENE_DB_PATH.format("simple_human"))
 # fix_gene_database_species(GENE_DB_PATH.format("simple_marmoset"))
 # fix_gene_database_species(GENE_DB_PATH.format("ensmusg"))
 
