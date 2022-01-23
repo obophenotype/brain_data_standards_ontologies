@@ -189,7 +189,7 @@ def fix_gene_database(gene_db_path, gene_prefix):
         print(headers)
         for gene in genes_by_name:
             writer.writerow([gene_prefix + gene.replace("\"", ""), "SO:0000704",
-                             genes_by_name[gene]["gene_name"] + " " + species_abbv])
+                             genes_by_name[gene]["gene_name"] + " (" + species_abbv + ")"])
 
 
 def fix_gene_database_species(gene_db_path):
@@ -204,7 +204,7 @@ def fix_gene_database_species(gene_db_path):
         print(headers)
         for gene in genes_by_id:
             writer.writerow([genes_by_id[gene]["ID"], genes_by_id[gene]["TYPE"],
-                             genes_by_id[gene]["NAME"] + " " + species_abbv])
+                             genes_by_id[gene]["NAME"] + " (" + species_abbv + ")"])
 
 
 def add_cluster_name_to_marker(marker_path):
