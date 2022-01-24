@@ -19,23 +19,22 @@ class TemplateUtilsTest(unittest.TestCase):
         tree = dend_json_2_nodes_n_edges(PATH_DENDROGRAM_JSON)
         nodes = tree['nodes']
 
-        node3_synonyms = get_synonyms_from_taxonomy(nodes[3]).split(OR_SEPARATOR)
-        self.assertEqual("CS202002013_120", nodes[3]["cell_set_accession"])
-        self.assertEqual(2, len(node3_synonyms))
-        self.assertTrue("n4" in node3_synonyms)
-        self.assertTrue("RNAseq 001-091" in node3_synonyms)
+        node8_synonyms = get_synonyms_from_taxonomy(nodes[8]).split(OR_SEPARATOR)
+        node8_synonyms = list(filter(None, node8_synonyms))
+        self.assertEqual("CS202002013_125", nodes[8]["cell_set_accession"])
+        self.assertEqual(1, len(node8_synonyms))
+        self.assertTrue("Lamp5" in node8_synonyms)
 
         node20_synonyms = get_synonyms_from_taxonomy(nodes[20]).split(OR_SEPARATOR)
+        node20_synonyms = list(filter(None, node20_synonyms))
         self.assertEqual("CS202002013_6", nodes[20]["cell_set_accession"])
-        self.assertEqual(2, len(node20_synonyms))
-        self.assertTrue("RNAseq 006" in node20_synonyms)
+        self.assertEqual(1, len(node20_synonyms))
         self.assertTrue("Lamp5 Pdlim5_2" in node20_synonyms)
 
         node50_synonyms = get_synonyms_from_taxonomy(nodes[50]).split(OR_SEPARATOR)
+        node50_synonyms = list(filter(None, node50_synonyms))
         self.assertEqual("CS202002013_146", nodes[50]["cell_set_accession"])
-        self.assertEqual(2, len(node50_synonyms))
-        self.assertTrue("n30" in node50_synonyms)
-        self.assertTrue("RNAseq 022-025" in node50_synonyms)
+        self.assertEqual(0, len(node50_synonyms))
 
     def test_get_synonym_pairs(self):
         tree = dend_json_2_nodes_n_edges(PATH_DENDROGRAM_JSON)

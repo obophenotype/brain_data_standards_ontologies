@@ -40,6 +40,21 @@ dosdp_patterns_default: $(SRC) all_imports .FORCE
 $(PATTERNDIR)/data/default/%.txt: $(PATTERNDIR)/dosdp-patterns/%.yaml $(PATTERNDIR)/data/default/%.tsv .FORCE
 	if [ $(PAT) = true ]; then $(DOSDPT) terms --prefixes=template_prefixes.yaml --infile=$(word 2, $^) --template=$< --obo-prefixes=true --outfile=$@; fi
 
+# adding more imports (simple_human simple_marmoset) to process
+#IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
+#IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
+#IMPORT_FILES = $(IMPORT_OWL_FILES)
+
+#ALL_TERMS_COMBINED = $(patsubst %, imports/%_terms_combined.txt, $(IMPORTS))
+#imports/merged_terms_combined.txt: $(ALL_TERMS_COMBINED)
+#	if [ $(IMP) = true ]; then cat $^ | grep -v ^# | sort | uniq >  $@; fi
+
+ALL_MIRRORS = $(patsubst %, mirror/%.owl, $(IMPORTS))
+mirror/merged.owl: $(ALL_MIRRORS)
+	if [ $(IMP) = true ] && [ $(MERGE_MIRRORS) = true ]; then $(ROBOT) merge $(patsubst %, -i %, $^) -o $@; fi
+.PRECIOUS: mirror/merged.owl
+
+
 # adding an extra query step to inject version info to imported entities and remove exclude_iri_patterns
 imports/%_import.owl: mirror/merged.owl imports/%_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/inject-version-info.ru --update ../sparql/preprocess-module.ru \
@@ -48,12 +63,16 @@ imports/%_import.owl: mirror/merged.owl imports/%_terms_combined.txt
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
+.PRECIOUS: imports/%_import.owl
+
 # remove exclude_iri_patterns
 imports/pr_import.owl: mirror/merged.owl imports/pr_terms_combined.txt
 	if [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) extract -i $< -T imports/pr_terms_combined.txt --force true --individuals exclude --method BOT \
 		remove  --select "<http://www.informatics.jax.org/marker/MGI:*>" remove  --select "<http://purl.obolibrary.org/obo/OBA_*>" remove  --select "<http://purl.obolibrary.org/obo/ENVO_*>" remove  --select "<http://purl.obolibrary.org/obo/OBI_*>" remove  --select "<http://purl.obolibrary.org/obo/GOCHE_*>" remove  --select "<http://purl.obolibrary.org/obo/CARO_*>" remove  --select "<http://purl.obolibrary.org/obo/NCBITaxon_Union_*>" remove  --select "<http://www.genenames.org/cgi-bin/gene_symbol_report*>"  \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: imports/pr_import.owl
 
 # disable automatic pattern management. Manually managed below
 dosdp_patterns_default: $(SRC) all_imports .FORCE

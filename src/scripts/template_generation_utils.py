@@ -26,8 +26,7 @@ def get_synonyms_from_taxonomy(node):
     Returns: name synonyms string concatenated by "|"
 
     """
-    synonym_properties = ['cell_set_preferred_alias', 'original_label', 'cell_set_label', 'cell_set_aligned_alias',
-                          'cell_set_additional_aliases']
+    synonym_properties = ['cell_set_preferred_alias', 'cell_set_aligned_alias', 'cell_set_additional_aliases']
     synonyms = {node[prop] for prop in synonym_properties if prop in node.keys() and node[prop]}
 
     return OR_SEPARATOR.join(sorted(synonyms))
