@@ -12,6 +12,8 @@ Declaration(Class(:PCL_0010001))
 AnnotationAssertion(rdfs:label :PCL_0010001 "Cluster")
 Declaration(Class(:PCL_0010002))
 AnnotationAssertion(rdfs:label :PCL_0010002 "Taxonomy")
+Declaration(Class(:PCL_0010003))
+AnnotationAssertion(rdfs:label :PCL_0010003 "Gene Set")
 
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002215>))
 

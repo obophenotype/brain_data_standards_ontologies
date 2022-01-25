@@ -490,7 +490,8 @@ def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
                       'Minimal_markers',
                       'Brain_region_abbv',
                       'Species_abbv',
-                      'Brain_region'
+                      'Brain_region',
+                      'Parent'
                       ]
         class_template = []
 
@@ -507,6 +508,7 @@ def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
                     if 'Species_abbv' in taxonomy_config:
                         d['Species_abbv'] = taxonomy_config['Species_abbv'][0]
                     d['Brain_region'] = taxonomy_config['Brain_region'][0]
+                    d['Parent'] = PCL_PREFIX + "0010003"
 
                     for k in class_seed:
                         if not (k in d.keys()):
