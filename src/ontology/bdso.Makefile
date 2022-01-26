@@ -102,7 +102,7 @@ $(PATTERNDIR)/data/default/Protein2GeneExpression.txt: $(PATTERNDIR)/data/defaul
 $(PATTERNDIR)/data/default/%_class.tsv: $(PATTERNDIR)/data/default/%_class_base.tsv $(PATTERNDIR)/data/default/%_class_curation.tsv
 	python ../scripts/template_runner.py modifier --merge -i=$< -i2=$(word 2, $^) -o=$@
 
-all_imports: $(IMPORT_FILES)
+all_imports: $(IMPORT_FILES) imports/merged_import.owl
 
 # hard wiring for now.  Work on patsubst later
 mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
