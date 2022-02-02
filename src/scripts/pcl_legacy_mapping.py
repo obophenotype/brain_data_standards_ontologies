@@ -2,7 +2,7 @@ import os
 import pandas as pd
 from rdflib import Graph
 
-BDSO_ONT = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../../pcl-full.owl")
+BDSO_ONT = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../../bdso-full.owl")
 PCL_ONT = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../resources/pCL_4.1.0.owl")
 PCL_MAPPING_OUTPUT = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../templates/pCL_mapping.tsv")
 
