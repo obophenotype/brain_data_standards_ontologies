@@ -209,13 +209,14 @@ $(ONT)-allen.owl: $(ONT)-full.owl allen_helper.owl
 		 	 --output $(RELEASEDIR)/$@
 
 # Artifact that extends base with gene ontologies (used by PCL)
-$(ONT)-base-ext.owl:  $(ONT)-base.owl $(GENE_FILES)
+$(ONT)-pcl-comp.owl:  $(ONT)-base.owl $(GENE_FILES)
 	$(ROBOT) merge -i $< $(patsubst %, -i %, $(GENE_FILES)) \
+	query --update ../sparql/remove_preflabels.ru
 			 annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
-		 	 --output $(RELEASEDIR)/$@
-$(ONT)-base-ext.obo: $(RELEASEDIR)/$(ONT)-base-ext.owl
+		 	 --output $(RELEASEDIR)/$@ 
+$(ONT)-pcl-comp.obo: $(RELEASEDIR)/$(ONT)-pcl-comp.owl
 	$(ROBOT) convert --input $< --check false -f obo $(OBO_FORMAT_OPTIONS) -o $@.tmp.obo && grep -v ^owl-axioms $@.tmp.obo > $(RELEASEDIR)/$@ && rm $@.tmp.obo
-$(ONT)-base-ext.json: $(RELEASEDIR)/$(ONT)-base-ext.owl
+$(ONT)-pcl-comp.json: $(RELEASEDIR)/$(ONT)-pcl-comp.owl
 	$(ROBOT) annotate --input $< --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		convert --check false -f json -o $@.tmp.json &&\
 	jq -S 'walk(if type == "array" then sort else . end)' $@.tmp.json > $(RELEASEDIR)/$@ && rm $@.tmp.json
