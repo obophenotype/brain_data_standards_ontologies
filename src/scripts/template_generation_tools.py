@@ -508,7 +508,7 @@ def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
                     if 'Species_abbv' in taxonomy_config:
                         d['Species_abbv'] = taxonomy_config['Species_abbv'][0]
                     d['Brain_region'] = taxonomy_config['Brain_region'][0]
-                    d['Parent'] = PCL_PREFIX + "0010003"
+                    d['Parent'] = "SO:0001260"  # sequence collection
 
                     for k in class_seed:
                         if not (k in d.keys()):
