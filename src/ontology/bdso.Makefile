@@ -211,7 +211,7 @@ $(ONT)-allen.owl: $(ONT)-full.owl allen_helper.owl
 # Artifact that extends base with gene ontologies (used by PCL)
 $(ONT)-pcl-comp.owl:  $(ONT)-base.owl $(GENE_FILES)
 	$(ROBOT) merge -i $< $(patsubst %, -i %, $(GENE_FILES)) \
-	query --update ../sparql/remove_preflabels.ru
+	query --update ../sparql/remove_preflabels.ru \
 			 annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		 	 --output $(RELEASEDIR)/$@ 
 $(ONT)-pcl-comp.obo: $(RELEASEDIR)/$(ONT)-pcl-comp.owl
