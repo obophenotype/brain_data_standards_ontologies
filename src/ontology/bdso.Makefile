@@ -198,7 +198,7 @@ components/%_dataset.owl: ../templates/%_dataset.tsv $(SRC)
 
 
 # Release additional artifacts
-$(ONT).owl: $(ONT)-full.owl $(ONT)-allen.owl $(ONT)-base-ext.owl $(ONT)-base-ext.obo $(ONT)-base-ext.json
+$(ONT).owl: $(ONT)-full.owl $(ONT)-allen.owl $(ONT)-pcl-comp.owl $(ONT)-pcl-comp.obo $(ONT)-pcl-comp.json
 	$(ROBOT) annotate --input $< --ontology-iri $(URIBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		convert -o $@.tmp.owl && mv $@.tmp.owl $@
 

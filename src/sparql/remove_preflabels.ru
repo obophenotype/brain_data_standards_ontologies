@@ -13,9 +13,9 @@ WHERE
 { 
   {
     VALUES ?p {
-      skos:preflabel
+      skos:prefLabel
     }
-  ?s a owl:ObjectProperty ;
+  ?s a owl:Class ;
   ?p ?o
     FILTER (isIRI(?s) && STRSTARTS(str(?s), "http://purl.obolibrary.org/obo/pcl_"))
   }
