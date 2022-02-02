@@ -17,6 +17,6 @@ WHERE
     }
   ?s a owl:Class ;
   ?p ?o
-    FILTER (isIRI(?s) && STRSTARTS(str(?s), "http://purl.obolibrary.org/obo/pcl_"))
+    FILTER (isIRI(?s) && STRSTARTS(str(?s), "http://purl.obolibrary.org/obo/PCL_"))
   }
 }
