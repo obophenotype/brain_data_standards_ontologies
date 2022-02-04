@@ -110,6 +110,10 @@
       Cell_type: CL:0000679
       Location_relation: has_soma_location
       #glutamatergic neuron
+    - Node: CS201912131_151
+      Cell_type: CL:0000125
+      Location_relation: part_of
+      # non-neuronal currently mapped as glial cell
     - Node: CS201912131_125
       Cell_type: CL:0000115
       Location_relation: part_of
@@ -130,10 +134,6 @@
       Cell_type: CL:0002453
       Location_relation: part_of
       #OPC
-    - Node: CS201912131_151
-      Cell_type: CL:0000125
-      Location_relation: part_of
-      # non-neuronal currently mapped as glial cell
     - Node: CS201912131_140
       Cell_type: CL:0000128
       Location_relation: part_of
