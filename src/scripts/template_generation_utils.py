@@ -3,6 +3,7 @@ import os
 import csv
 import networkx as nx
 import json
+import sys
 import pcl_id_factory
 
 from dendrogram_tools import tree_recurse
@@ -365,9 +366,12 @@ def read_markers(marker_path, gene_names):
 
 def get_gross_cell_type(_id, subtrees, taxonomy_config):
     gross_cell_type = ''
+    matched_subtree_size = sys.maxsize
     for index, subtree in enumerate(subtrees):
-        if _id in subtree:
+        # in case _id exists in multiple subtrees, pick the smallest one (the most specific)
+        if _id in subtree and len(subtree) < matched_subtree_size:
             gross_cell_type = taxonomy_config['Root_nodes'][index]['Cell_type']
+            matched_subtree_size = len(subtree)
     return gross_cell_type
 
 
