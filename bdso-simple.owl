@@ -16,10 +16,10 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:nsf2_full_mtg="http://www.jcvi.org/framework/nsf2_full_mtg#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pcl/bdso-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pcl/releases/2022-02-04/bdso-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pcl/releases/2022-02-09/bdso-simple.owl"/>
         <dc:title>Brain Data Standards Cell Ontology</dc:title>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-04</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-02-09</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -610,14 +610,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PCL_0010062 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/PCL_0010062">
-        <rdfs:label>has_characterizing_marker_set</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000053">
@@ -765,6 +757,22 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000117>Shawn Tan</obo:IAO_0000117>
         <obo:IAO_0000232>This is used specifically for sets whose members are specified by some set-forming operator (method of grouping) such as clustering analyses in single cell transcriptomics.</obo:IAO_0000232>
         <rdfs:label>subcluster of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0015004 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0015004">
+        <obo:IAO_0000112>&apos;Lamp5-like Egln3_1 primary motor cortex GABAergic interneuron (Mus musculus)&apos; subClass_of: has_characterizing_marker_set some &apos;NS forest marker set of Lamp5-like Egln3_1 MOp (Mouse).&apos;; NS forest marker set of Lamp5-like Egln3_1 SubClass_of: (&apos;has part&apos; some &apos;Mouse Fbn2&apos;) and (&apos;has part&apos; some &apos;Mouse Chrna7&apos;) and (&apos;has part&apos; some &apos;Mouse Fam19a1&apos;).</obo:IAO_0000112>
+        <obo:IAO_0000112>transcriptomically defined cell type X subClass_of: (has_characterizing_marker_set some S1); S1 has_part some gene 1, S1 has_part some gene 2, S1 has_part some gene 3.</obo:IAO_0000112>
+        <obo:IAO_0000115>A relation that applies between a cell type and a set of markers that can be used to uniquely identify that cell type.</obo:IAO_0000115>
+        <obo:IAO_0000116>C has_characterizing_marker_set y iff: C is a cell type and y is a collection of genes or proteins whose expression is sufficient to distinguish cell type C from most or all other cell types.</obo:IAO_0000116>
+        <obo:IAO_0000232>This relation is not meant for cases where set of genes/proteins are only useful as markers in some specific context - e.g. in some specific location. In these cases it is recommended to make a more specific cell class restricted to the relevant context.</obo:IAO_0000232>
+        <dc:contributor rdf:resource="https://orcid.org/0000-0001-7258-9596"/>
+        <oboInOwl:hasExactSynonym>has marker gene combination</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>has marker signature set</oboInOwl:hasExactSynonym>
+        <rdfs:label>has characterizing marker set</rdfs:label>
     </owl:ObjectProperty>
     
 

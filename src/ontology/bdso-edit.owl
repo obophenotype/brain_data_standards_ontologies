@@ -33,6 +33,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/SO_0001260>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002100>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002215>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002292>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0015004>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010051>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010052>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010053>))
@@ -112,6 +113,10 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002215> "capa
 # Object Property: <http://purl.obolibrary.org/obo/RO_0002292> (expresses)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002292> "expresses")
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0015004> (has characterizing marker set)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015004> "has characterizing marker set")
 
 
 
