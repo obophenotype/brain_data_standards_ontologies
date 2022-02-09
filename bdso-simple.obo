@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: pcl/releases/2022-02-04/bdso-simple.owl
+data-version: pcl/releases/2022-02-09/bdso-simple.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -8,11 +8,7 @@ subsetdef: ro-eco ""
 ontology: pcl/bdso-simple
 property_value: dc-title "Brain Data Standards Cell Ontology" xsd:string
 property_value: dcterms-license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2022-02-04" xsd:string
-
-[Typedef]
-id: PCL:0010062
-name: has_characterizing_marker_set
+property_value: owl:versionInfo "2022-02-09" xsd:string
 
 [Typedef]
 id: RO:0002100
@@ -56,6 +52,18 @@ property_value: IAO:0000117 "Shawn Tan" xsd:string
 property_value: IAO:0000232 "This is used specifically for sets whose members are specified by some set-forming operator (method of grouping) such as clustering analyses in single cell transcriptomics." xsd:string
 is_transitive: true
 is_a: part_of ! part_of
+
+[Typedef]
+id: RO:0015004
+name: has characterizing marker set
+def: "A relation that applies between a cell type and a set of markers that can be used to uniquely identify that cell type." []
+synonym: "has marker gene combination" EXACT []
+synonym: "has marker signature set" EXACT []
+property_value: dc-contributor https://orcid.org/0000-0001-7258-9596
+property_value: IAO:0000112 "'Lamp5-like Egln3_1 primary motor cortex GABAergic interneuron (Mus musculus)' subClass_of: has_characterizing_marker_set some 'NS forest marker set of Lamp5-like Egln3_1 MOp (Mouse).'; NS forest marker set of Lamp5-like Egln3_1 SubClass_of: ('has part' some 'Mouse Fbn2') and ('has part' some 'Mouse Chrna7') and ('has part' some 'Mouse Fam19a1')." xsd:string
+property_value: IAO:0000112 "transcriptomically defined cell type X subClass_of: (has_characterizing_marker_set some S1); S1 has_part some gene 1, S1 has_part some gene 2, S1 has_part some gene 3." xsd:string
+property_value: IAO:0000116 "C has_characterizing_marker_set y iff: C is a cell type and y is a collection of genes or proteins whose expression is sufficient to distinguish cell type C from most or all other cell types." xsd:string
+property_value: IAO:0000232 "This relation is not meant for cases where set of genes/proteins are only useful as markers in some specific context - e.g. in some specific location. In these cases it is recommended to make a more specific cell class restricted to the relevant context." xsd:string
 
 [Typedef]
 id: RO:HOM0000007

@@ -34,11 +34,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-02-04"
+            "val": "2022-02-09"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/pcl/releases/2022-02-04/bdso-simple.json",
+        "version": "http://purl.obolibrary.org/obo/pcl/releases/2022-02-09/bdso-simple.json",
         "xrefs": []
       },
       "nodes": [
@@ -526,6 +526,51 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/RO_0015004",
+          "lbl": "has characterizing marker set",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "'Lamp5-like Egln3_1 primary motor cortex GABAergic interneuron (Mus musculus)' subClass_of: has_characterizing_marker_set some 'NS forest marker set of Lamp5-like Egln3_1 MOp (Mouse).'; NS forest marker set of Lamp5-like Egln3_1 SubClass_of: ('has part' some 'Mouse Fbn2') and ('has part' some 'Mouse Chrna7') and ('has part' some 'Mouse Fam19a1')."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "transcriptomically defined cell type X subClass_of: (has_characterizing_marker_set some S1); S1 has_part some gene 1, S1 has_part some gene 2, S1 has_part some gene 3."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
+                "val": "C has_characterizing_marker_set y iff: C is a cell type and y is a collection of genes or proteins whose expression is sufficient to distinguish cell type C from most or all other cell types."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "This relation is not meant for cases where set of genes/proteins are only useful as markers in some specific context - e.g. in some specific location. In these cases it is recommended to make a more specific cell class restricted to the relevant context."
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "https://orcid.org/0000-0001-7258-9596"
+              }
+            ],
+            "definition": {
+              "val": "A relation that applies between a cell type and a set of markers that can be used to uniquely identify that cell type.",
+              "xrefs": []
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "has marker gene combination",
+                "xrefs": []
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "has marker signature set",
+                "xrefs": []
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/RO_HOM0000007",
           "lbl": "in historical homology relationship with",
           "meta": {
@@ -786,11 +831,6 @@
         {
           "id": "http://purl.obolibrary.org/obo/PCL_0010061",
           "lbl": "nuclei_count",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/PCL_0010062",
-          "lbl": "has_characterizing_marker_set",
           "type": "PROPERTY"
         },
         {
