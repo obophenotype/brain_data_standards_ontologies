@@ -1,5 +1,10 @@
 JOBS = CCN202002013 CCN201912131 CCN201912132 CS1908210 # CCN202002270 CCN201908210 CCN201810310 CCN201908211
 
+# GIT related configurations
+GIT_REPO=					https://github.com/AllenInstitute/MOp_taxonomies_ontology.git
+REPO_NAME=					MOp_taxonomies_ontology
+CENTRALIZED_DIR=			centralized_data
+
 TEMPLATE_FILES = $(patsubst %, ../templates/%.tsv, $(JOBS))
 MARKER_DENORMALIZED_FILES = $(patsubst %, ../markers/%_markers_denormalized.tsv, $(JOBS))
 TEMPLATE_CLASS_BASE_FILES = $(patsubst %, ../patterns/data/default/%_class_base.tsv, $(JOBS))
@@ -10,13 +15,11 @@ DATASET_TEMPLATE_FILES = $(patsubst %, ../templates/%_dataset.tsv, $(JOBS))
 MARKER_SET_TEMPLATE_FILES = $(patsubst %, ../patterns/data/default/%_marker_set.tsv, $(JOBS))
 TAXONOMY_TEMPLATE_FILE = ../templates/Taxonomies.tsv
 
-
-
-all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FILES) $(MARKER_DENORMALIZED_FILES) $(TAXONOMY_TEMPLATE_FILE) $(APP_SPECIFIC_TEMPLATE_FILES) $(TEMPLATE_CLASS_HOMOLOGOUS_FILES) $(DATASET_TEMPLATE_FILES) $(MARKER_SET_TEMPLATE_FILES)
+all: update_centralized_repo $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FILES) $(MARKER_DENORMALIZED_FILES) $(TAXONOMY_TEMPLATE_FILE) $(APP_SPECIFIC_TEMPLATE_FILES) $(TEMPLATE_CLASS_HOMOLOGOUS_FILES) $(DATASET_TEMPLATE_FILES) $(MARKER_SET_TEMPLATE_FILES)
 
 ../templates/%.tsv: %.json nomenclature_table_%.csv
-	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -i $< -o $@ ;\
-	else python ../scripts/template_runner.py generator -i $(word 2, $^) -o $@ ; fi
+	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -i $< -i2 $(CENTRALIZED_DIR)/$(REPO_NAME) -o $@ ;\
+	else python ../scripts/template_runner.py generator -i $(word 2, $^) -i2 $(CENTRALIZED_DIR)/$(REPO_NAME) -o $@ ; fi
 
 ../markers/%_markers_denormalized.tsv: %.json nomenclature_table_%.csv
 	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -md -i $< -o $@ ;\
@@ -38,13 +41,20 @@ all: $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FI
 	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -a -i $< -o $@ ;\
 	else python ../scripts/template_runner.py generator -a -i $(word 2, $^) -o $@ ; fi
 
-../templates/%_dataset.tsv: MOp_taxonomies_ontology/%_landingpage_dataset_info.csv
-	python ../scripts/template_runner.py generator -ds -i $< -o $@
-
 ../patterns/data/default/%_marker_set.tsv: %.json nomenclature_table_%.csv
 	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -ms -i $< -o $@ ;\
 	else python ../scripts/template_runner.py generator -ms -i $(word 2, $^) -o $@ ; fi
 
-../templates/Taxonomies.tsv: MOp_taxonomies_ontology/Taxonomy_Info_Panel.csv
+../templates/%_dataset.tsv: $(CENTRALIZED_DIR)/$(REPO_NAME)
+	python ../scripts/template_runner.py generator -ds -i $< -o $@
+
+../templates/Taxonomies.tsv: $(CENTRALIZED_DIR)/$(REPO_NAME)
 	python ../scripts/template_runner.py generator -tx -i $< -o $@
 
+
+# Git centralized repo retrieval
+update_centralized_repo: clean_centralized_data_folder
+	cd $(CENTRALIZED_DIR) && git clone --quiet ${GIT_REPO} && rm -rf $(REPO_NAME)/.git
+
+clean_centralized_data_folder:
+	rm -rf $(CENTRALIZED_DIR)/$(REPO_NAME)

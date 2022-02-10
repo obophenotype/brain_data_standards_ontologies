@@ -15,6 +15,7 @@ parser_generator = subparsers.add_parser('generator', description='Process some 
                                                                   ' files. Without optional args, generates an ind '
                                                                   'template.')
 parser_generator.add_argument('-i', '--input', help="Path to input JSON file")
+parser_generator.add_argument('-i2', '--input2', help="Path to second input file")
 parser_generator.add_argument('-o', '--output', help="Path to output TSV file")
 parser_generator.add_argument('-b', '--base', help="List of all class base TSV files")
 parser_generator.add_argument('-cb', action='store_true', help="Generate a class base template.")
@@ -59,4 +60,4 @@ else:
     elif args.ms:
         generate_marker_gene_set_template(args.input, args.output)
     else:
-        generate_ind_template(args.input, args.output)
+        generate_ind_template(args.input, args.input2, args.output)

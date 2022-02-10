@@ -11,7 +11,6 @@ from template_generation_utils import get_synonyms_from_taxonomy, read_taxonomy_
 from nomenclature_tools import nomenclature_2_nodes_n_edges
 from pcl_id_factory import get_class_id, get_individual_id, get_taxonomy_id, get_dataset_id, get_marker_gene_set_id
 
-
 log = logging.getLogger(__name__)
 
 PCL_BASE = 'http://purl.obolibrary.org/obo/PCL_'
@@ -24,13 +23,16 @@ NOMENCLATURE_TABLE_PATH = '../dendrograms/nomenclature_table_{}.csv'
 ENSEMBLE_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../templates/{}.tsv")
 CROSS_SPECIES_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                                   "../dendrograms/nomenclature_table_CCN202002270.csv")
-ALLEN_DESCRIPTIONS_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                                       '../dendrograms/MOp_taxonomies_ontology/All Descriptions_{}.json')
+
+# centralized data files
+ALLEN_DESCRIPTIONS_PATH = "{}/{}/All Descriptions_{}.json"
+DATASET_INFO_CSV = "{}/{}/{}_landingpage_dataset_info.csv"
+TAXONOMY_INFO_CSV = "{}/{}/{}_Taxonomy_Info_Panel.csv"
 
 EXPRESSION_SEPARATOR = "|"
 
 
-def generate_ind_template(taxonomy_file_path, output_filepath):
+def generate_ind_template(taxonomy_file_path, centralized_data_folder, output_filepath):
     path_parts = taxonomy_file_path.split(os.path.sep)
     taxon = path_parts[len(path_parts) - 1].split(".")[0]
 
@@ -42,7 +44,11 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
 
     dend_tree = generate_dendrogram_tree(dend)
     taxonomy_config = read_taxonomy_config(taxon)
-    allen_descriptions = read_allen_descriptions(ALLEN_DESCRIPTIONS_PATH, taxonomy_config['Species_abbv'][0])
+
+    taxonomy_folder_name = get_centralized_taxonomy_folder(taxonomy_config)
+    allen_desc_file = ALLEN_DESCRIPTIONS_PATH.format(centralized_data_folder, taxonomy_folder_name,
+                                                     taxonomy_config['Species_abbv'][0])
+    allen_descriptions = read_allen_descriptions(allen_desc_file)
 
     subtrees = get_subtrees(dend_tree, taxonomy_config)
 
@@ -108,7 +114,6 @@ def generate_ind_template(taxonomy_file_path, output_filepath):
             if allen_data["aliases"][0]:
                 d['Aliases'] = '|'.join([alias.strip() for alias in str(allen_data["aliases"][0]).split("|")])
 
-        # There should only be one!
         dl.append(d)
     robot_template = pd.DataFrame.from_records(dl)
     robot_template.to_csv(output_filepath, sep="\t", index=False)
@@ -382,9 +387,8 @@ def generate_cross_species_template(taxonomy_file_path, output_filepath):
         class_robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
-def generate_taxonomies_template(taxonomy_metadata_path, output_filepath):
+def generate_taxonomies_template(centralized_data_folder, output_filepath):
     taxon_configs = read_taxonomy_details_yaml()
-    headers, taxonomies_metadata = read_csv_to_dict(taxonomy_metadata_path)
 
     robot_template_seed = {'ID': 'ID',
                            'TYPE': 'TYPE',
@@ -397,7 +401,12 @@ def generate_taxonomies_template(taxonomy_metadata_path, output_filepath):
                            'Species Label': "A skos:prefLabel",
                            'Age': "A 'has_age'",
                            'Sex': "A 'has_sex'",
-                           'Primary Citation': "A oboInOwl:hasDbXref"
+                           'Primary Citation': "A oboInOwl:hasDbXref",
+                           'Title': "A dcterms:title",
+                           'Description': "A rdfs:comment",
+                           'Attribution': "A rdfs:provenance",
+                           'SubDescription': "A rdfs:description",
+                           'Anatomy': "A rdfs:subject"
                            }
     dl = [robot_template_seed]
 
@@ -409,60 +418,89 @@ def generate_taxonomies_template(taxonomy_metadata_path, output_filepath):
         d['Label'] = taxon_config["Taxonomy_id"]
         d['Anatomic Region'] = taxon_config['Brain_region'][0]
         d['Primary Citation'] = taxon_config['PMID'][0]
-        if taxon_config["Taxonomy_id"] in taxonomies_metadata:
-            taxonomy_metadata = taxonomies_metadata[taxon_config["Taxonomy_id"]]
-            d['Number of Cell Types'] = taxonomy_metadata["Cell Types"]
-            d['Number of Cell Subclasses'] = taxonomy_metadata["Cell Subclasses"]
-            d['Number of Cell Classes'] = taxonomy_metadata["Cell Classes"]
-            d['Species Label'] = taxonomy_metadata["Species"]
-            d['Age'] = taxonomy_metadata["Age"]
-            d['Sex'] = taxonomy_metadata["Sex"]
+
+        add_taxonomy_info_panel_properties(centralized_data_folder, d, taxon_config)
 
         dl.append(d)
     robot_template = pd.DataFrame.from_records(dl)
     robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
-def generate_datasets_template(dataset_metadata_path, output_filepath):
-    path_parts = dataset_metadata_path.split(os.path.sep)
-    taxonomy_id = path_parts[len(path_parts) - 1].split("_")[0]
+def add_taxonomy_info_panel_properties(centralized_data_folder, d, taxon_config):
+    expected_folder_name = get_centralized_taxonomy_folder(taxon_config)
+    taxonomy_metadata_path = TAXONOMY_INFO_CSV.format(centralized_data_folder, expected_folder_name,
+                                                      taxon_config["Taxonomy_id"])
+    if os.path.isfile(taxonomy_metadata_path):
+        headers, taxonomies_metadata = read_csv_to_dict(taxonomy_metadata_path)
+        taxonomy_metadata = taxonomies_metadata[taxon_config["Taxonomy_id"]]
+        d['Number of Cell Types'] = taxonomy_metadata["Cell Types"]
+        d['Number of Cell Subclasses'] = taxonomy_metadata["Cell Subclasses"]
+        d['Number of Cell Classes'] = taxonomy_metadata["Cell Classes"]
+        d['Species Label'] = taxonomy_metadata["Species"]
+        d['Age'] = taxonomy_metadata["Age"]
+        d['Sex'] = taxonomy_metadata["Sex"]
+        d['Title'] = taxonomy_metadata["header"]
+        d['Description'] = taxonomy_metadata["mainDescription"]
+        d['Attribution'] = taxonomy_metadata["attribution"]
+        d['SubDescription'] = taxonomy_metadata["subDescription"]
+        d['Anatomy'] = taxonomy_metadata["Anatomy"]
+    else:
+        raise ValueError("Couldn't find taxonomy '{}' landingpage dataset info file at: '{}'"
+                         .format(taxon_config["Taxonomy_id"], taxonomy_metadata_path))
 
-    headers, dataset_metadata = read_csv_to_dict(dataset_metadata_path, generated_ids=True)
 
-    robot_template_seed = {'ID': 'ID',
-                           'TYPE': 'TYPE',
-                           'Entity Type': 'TI %',
-                           'Label': 'LABEL',
-                           'Taxonomy': 'AI schema:includedInDataCatalog',
-                           'Cell Count': "AT 'cell_count'^^xsd:integer",
-                           'Nuclei Count': "AT 'nuclei_count'^^xsd:integer",
-                           'Description': "A rdfs:comment",
-                           'Download Link': "A schema:archivedAt",
-                           'Explore Link': "A schema:discussionUrl"
-                           }
-    dl = [robot_template_seed]
+def generate_datasets_template(centralized_data_folder, output_filepath):
+    path_parts = output_filepath.split(os.path.sep)
+    taxonomy_id = str(path_parts[len(path_parts) - 1]).split("_")[0]
+    taxonomy_config = read_taxonomy_config(taxonomy_id)
 
-    dataset_index = 0
-    for dataset in dataset_metadata:
-        d = dict()
-        d['ID'] = 'PCL:' + get_dataset_id(taxonomy_id, dataset_index)
-        d['TYPE'] = 'owl:NamedIndividual'
-        d['Entity Type'] = 'schema:Dataset'  # Taxonomy
-        d['Label'] = dataset_metadata[dataset]['Dataset']
-        d['Taxonomy'] = 'PCL:' + get_taxonomy_id(taxonomy_id)
-        cells_nuclei = dataset_metadata[dataset]['cells/nuclei']
-        if 'nuclei' in cells_nuclei:
-            d['Nuclei Count'] = int(''.join(c for c in cells_nuclei if c.isdigit()))
-        elif 'cells' in cells_nuclei:
-            d['Cell Count'] = int(''.join(c for c in cells_nuclei if c.isdigit()))
-        d['Description'] = dataset_metadata[dataset]['text']
-        d['Download Link'] = dataset_metadata[dataset]['download_link']
-        d['Explore Link'] = dataset_metadata[dataset]['explore_link']
+    expected_file_name = DATASET_INFO_CSV.format(centralized_data_folder,
+                                                 get_centralized_taxonomy_folder(taxonomy_config), taxonomy_id)
 
-        dataset_index += 1
-        dl.append(d)
-    robot_template = pd.DataFrame.from_records(dl)
-    robot_template.to_csv(output_filepath, sep="\t", index=False)
+    if os.path.isfile(expected_file_name):
+        headers, dataset_metadata = read_csv_to_dict(expected_file_name, generated_ids=True)
+
+        robot_template_seed = {'ID': 'ID',
+                               'TYPE': 'TYPE',
+                               'Entity Type': 'TI %',
+                               'Label': 'LABEL',
+                               'PrefLabel': 'A skos:prefLabel',
+                               'Symbol': 'A IAO:0000028',
+                               'Taxonomy': 'AI schema:includedInDataCatalog',
+                               'Cell Count': "AT 'cell_count'^^xsd:integer",
+                               'Nuclei Count': "AT 'nuclei_count'^^xsd:integer",
+                               'Description': "A rdfs:comment",
+                               'Download Link': "A schema:archivedAt",
+                               'Explore Link': "A schema:discussionUrl"
+                               }
+        dl = [robot_template_seed]
+
+        dataset_index = 0
+        for dataset in dataset_metadata:
+            d = dict()
+            d['ID'] = 'PCL:' + get_dataset_id(taxonomy_id, dataset_index)
+            d['TYPE'] = 'owl:NamedIndividual'
+            d['Entity Type'] = 'schema:Dataset'  # Taxonomy
+            d['Label'] = dataset_metadata[dataset]['Ontology Name']
+            d['PrefLabel'] = dataset_metadata[dataset]['Dataset']
+            d['Symbol'] = dataset_metadata[dataset]['Ontology Symbol']
+            d['Taxonomy'] = 'PCL:' + get_taxonomy_id(taxonomy_id)
+            cells_nuclei = dataset_metadata[dataset]['cells/nuclei']
+            if 'nuclei' in cells_nuclei:
+                d['Nuclei Count'] = int(''.join(c for c in cells_nuclei if c.isdigit()))
+            elif 'cells' in cells_nuclei:
+                d['Cell Count'] = int(''.join(c for c in cells_nuclei if c.isdigit()))
+            d['Description'] = dataset_metadata[dataset]['text']
+            d['Download Link'] = dataset_metadata[dataset]['download_link']
+            d['Explore Link'] = dataset_metadata[dataset]['explore_link']
+
+            dataset_index += 1
+            dl.append(d)
+        robot_template = pd.DataFrame.from_records(dl)
+        robot_template.to_csv(output_filepath, sep="\t", index=False)
+    else:
+        raise ValueError("Couldn't find taxonomy '{}' landingpage dataset info file at: '{}'"
+                         .format(taxonomy_id, expected_file_name))
 
 
 def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
@@ -563,3 +601,15 @@ def merge_class_templates(base_tsv, curation_tsv, output_filepath):
         output_filepath: Output file path
     """
     merge_tables(base_tsv, curation_tsv, output_filepath)
+
+
+def get_centralized_taxonomy_folder(taxonomy_config):
+    """
+    Expected folder name is: lower(Species_abbv) + Brain_region_abbv + "_" + Taxonomy_id
+    Args:
+        taxonomy_config: taxonomy configuration
+
+    Returns: expected centralized data location for the given taxonomy
+    """
+    return str(taxonomy_config['Species_abbv'][0]).lower() + taxonomy_config['Brain_region_abbv'][0] \
+           + "_" + taxonomy_config["Taxonomy_id"]

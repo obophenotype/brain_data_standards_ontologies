@@ -448,20 +448,18 @@ def migrate_manual_curations(source_tsv, target_tsv, migrate_columns, output_fil
             writer.writerow(row)
 
 
-def read_allen_descriptions(path, species):
+def read_allen_descriptions(path):
     """
     Reads Allen descriptions file from the given location for the given species.
     Args:
         path: Path to the 'All Descriptions' json file
-        species: species to read file for
     Returns: parsed Allen descriptions json data
     """
-    allen_descriptions_path = path.format(species)
-    if os.path.isfile(allen_descriptions_path):
-        with open(allen_descriptions_path, 'r') as f:
+    if os.path.isfile(path):
+        with open(path, 'r') as f:
             allen_descriptions = json.loads(f.read())
     else:
-        allen_descriptions = {}
+        ValueError("Couldn't find allen descriptions file at: '{}'".format(path))
     return allen_descriptions
 
 
