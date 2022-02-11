@@ -404,9 +404,10 @@ def generate_taxonomies_template(centralized_data_folder, output_filepath):
                            'Primary Citation': "A oboInOwl:hasDbXref",
                            'Title': "A dcterms:title",
                            'Description': "A rdfs:comment",
-                           'Attribution': "A rdfs:provenance",
-                           'SubDescription': "A rdfs:description",
-                           'Anatomy': "A rdfs:subject"
+                           'Attribution': "A dcterms:provenance",
+                           'SubDescription': "A dcterms:description",
+                           'Anatomy': "A dcterms:subject",
+                           'Anatomy_image': "A dcterms:relation"
                            }
     dl = [robot_template_seed]
 
@@ -430,6 +431,7 @@ def add_taxonomy_info_panel_properties(centralized_data_folder, d, taxon_config)
     expected_folder_name = get_centralized_taxonomy_folder(taxon_config)
     taxonomy_metadata_path = TAXONOMY_INFO_CSV.format(centralized_data_folder, expected_folder_name,
                                                       taxon_config["Taxonomy_id"])
+    print(taxonomy_metadata_path)
     if os.path.isfile(taxonomy_metadata_path):
         headers, taxonomies_metadata = read_csv_to_dict(taxonomy_metadata_path)
         taxonomy_metadata = taxonomies_metadata[taxon_config["Taxonomy_id"]]
@@ -444,6 +446,7 @@ def add_taxonomy_info_panel_properties(centralized_data_folder, d, taxon_config)
         d['Attribution'] = taxonomy_metadata["attribution"]
         d['SubDescription'] = taxonomy_metadata["subDescription"]
         d['Anatomy'] = taxonomy_metadata["Anatomy"]
+        d['Anatomy_image'] = taxonomy_metadata["Anatomy_image"]
     else:
         raise ValueError("Couldn't find taxonomy '{}' landingpage dataset info file at: '{}'"
                          .format(taxon_config["Taxonomy_id"], taxonomy_metadata_path))
