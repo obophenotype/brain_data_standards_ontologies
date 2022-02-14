@@ -52,9 +52,14 @@ all: update_centralized_repo $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TE
 	python ../scripts/template_runner.py generator -tx -i $< -o $@
 
 
-# Git centralized repo retrieval
 update_centralized_repo: clean_centralized_data_folder
 	cd $(CENTRALIZED_DIR) && git clone --quiet ${GIT_REPO} && rm -rf $(REPO_NAME)/.git
+	cd .. && \
+	rm nomenclature_table_CCN201912131.csv && cp $(CENTRALIZED_DIR)/$(REPO_NAME)/humanM1_CCN201912131/nomenclature_table_CCN201912131.csv ./  && \
+	rm nomenclature_table_CCN202002013.csv && cp $(CENTRALIZED_DIR)/$(REPO_NAME)/mouseMOp_CCN202002013/nomenclature_table_CCN202002013.csv ./  && \
+	rm nomenclature_table_CCN201912132.csv && cp $(CENTRALIZED_DIR)/$(REPO_NAME)/marmosetM1_CCN201912132/nomenclature_table_CCN201912132.csv ./
 
 clean_centralized_data_folder:
 	rm -rf $(CENTRALIZED_DIR)/$(REPO_NAME)
+
+
