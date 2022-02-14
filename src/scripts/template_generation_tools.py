@@ -472,6 +472,9 @@ def generate_datasets_template(centralized_data_folder, output_filepath):
                                'Taxonomy': 'AI schema:includedInDataCatalog',
                                'Cell Count': "AT 'cell_count'^^xsd:integer",
                                'Nuclei Count': "AT 'nuclei_count'^^xsd:integer",
+                               'Dataset': "A schema:headline",
+                               'Species': "A schema:assesses",
+                               'Region': "A schema:position",
                                'Description': "A rdfs:comment",
                                'Download Link': "A schema:archivedAt",
                                'Explore Link': "A schema:discussionUrl"
@@ -493,6 +496,9 @@ def generate_datasets_template(centralized_data_folder, output_filepath):
                 d['Nuclei Count'] = int(''.join(c for c in cells_nuclei if c.isdigit()))
             elif 'cells' in cells_nuclei:
                 d['Cell Count'] = int(''.join(c for c in cells_nuclei if c.isdigit()))
+            d['Dataset'] = dataset_metadata[dataset]['dataset_number']
+            d['Species'] = dataset_metadata[dataset]['species']
+            d['Region'] = dataset_metadata[dataset]['region']
             d['Description'] = dataset_metadata[dataset]['text']
             d['Download Link'] = dataset_metadata[dataset]['download_link']
             d['Explore Link'] = dataset_metadata[dataset]['explore_link']
