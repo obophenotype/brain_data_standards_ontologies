@@ -403,7 +403,8 @@ def generate_taxonomies_template(centralized_data_folder, output_filepath):
                            'Sex': "A 'has_sex'",
                            'Primary Citation': "A oboInOwl:hasDbXref",
                            'Title': "A dcterms:title",
-                           'Description': "A rdfs:comment",
+                           'Description': "A obo:IAO_0000115",
+                           'Reference': ">A oboInOwl:hasDbXref",
                            'Attribution': "A dcterms:provenance",
                            'SubDescription': "A dcterms:description",
                            'Anatomy': "A dcterms:subject",
@@ -443,10 +444,12 @@ def add_taxonomy_info_panel_properties(centralized_data_folder, d, taxon_config)
         d['Sex'] = taxonomy_metadata["Sex"]
         d['Title'] = taxonomy_metadata["header"]
         d['Description'] = taxonomy_metadata["mainDescription"]
+        d['Reference'] = taxon_config['PMID'][0]
         d['Attribution'] = taxonomy_metadata["attribution"]
         d['SubDescription'] = taxonomy_metadata["subDescription"]
         d['Anatomy'] = taxonomy_metadata["Anatomy"]
-        d['Anatomy_image'] = taxonomy_metadata["Anatomy_image"]
+        if "Anatomy_image" in taxonomy_metadata:
+            d['Anatomy_image'] = taxonomy_metadata["Anatomy_image"]
     else:
         raise ValueError("Couldn't find taxonomy '{}' landingpage dataset info file at: '{}'"
                          .format(taxon_config["Taxonomy_id"], taxonomy_metadata_path))
