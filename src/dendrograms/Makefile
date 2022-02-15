@@ -53,7 +53,7 @@ all: update_centralized_repo $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TE
 
 
 update_centralized_repo: clean_centralized_data_folder
-	cd $(CENTRALIZED_DIR) && git clone --quiet ${GIT_REPO} && rm -rf $(REPO_NAME)/.git
+	cd $(CENTRALIZED_DIR) && git clone --quiet ${GIT_REPO} && rm -rf $(REPO_NAME)/.git  && \
 	cd .. && \
 	rm nomenclature_table_CCN201912131.csv && cp $(CENTRALIZED_DIR)/$(REPO_NAME)/humanM1_CCN201912131/nomenclature_table_CCN201912131.csv ./  && \
 	rm nomenclature_table_CCN202002013.csv && cp $(CENTRALIZED_DIR)/$(REPO_NAME)/mouseMOp_CCN202002013/nomenclature_table_CCN202002013.csv ./  && \
