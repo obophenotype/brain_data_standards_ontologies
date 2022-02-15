@@ -446,7 +446,8 @@ def add_taxonomy_info_panel_properties(centralized_data_folder, d, taxon_config)
         d['Attribution'] = taxonomy_metadata["attribution"]
         d['SubDescription'] = taxonomy_metadata["subDescription"]
         d['Anatomy'] = taxonomy_metadata["Anatomy"]
-        d['Anatomy_image'] = taxonomy_metadata["Anatomy_image"]
+        if "Anatomy_image" in taxonomy_metadata:
+            d['Anatomy_image'] = taxonomy_metadata["Anatomy_image"]
     else:
         raise ValueError("Couldn't find taxonomy '{}' landingpage dataset info file at: '{}'"
                          .format(taxon_config["Taxonomy_id"], taxonomy_metadata_path))
