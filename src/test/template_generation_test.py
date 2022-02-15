@@ -20,6 +20,7 @@ PATH_OUTPUT_CLASS_TSV = os.path.join(current_dir, "./test_data/output_class.tsv"
 PATH_OUTPUT_NON_TAXON_TSV = os.path.join(current_dir, "./test_data/output_non_taxon.tsv")
 PATH_OUTPUT_NOMENCLATURE_TSV = os.path.join(current_dir, "./test_data/nomenclature.tsv")
 PATH_GENERIC_OUTPUT_TSV = os.path.join(current_dir, "./test_data/output_generic.tsv")
+PATH_CENTRALIZED_DATA = os.path.join(current_dir, "./test_data/centralized_data/MOp_taxonomies_ontology/")
 
 PCL_BASE = "http://purl.obolibrary.org/obo/PCL_"
 
@@ -44,7 +45,7 @@ class TemplateGenerationTest(unittest.TestCase):
         delete_file(PATH_GENERIC_OUTPUT_TSV)
 
     def test_generate_ind_template(self):
-        generate_ind_template(PATH_MOUSE_NOMENCLATURE, PATH_GENERIC_OUTPUT_TSV)
+        generate_ind_template(PATH_MOUSE_NOMENCLATURE, PATH_CENTRALIZED_DATA, PATH_GENERIC_OUTPUT_TSV)
         output = read_tsv(PATH_GENERIC_OUTPUT_TSV)
 
         _label = 2

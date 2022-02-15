@@ -1,2 +1,2 @@
-ID	TYPE	Entity Type	Label	Taxonomy	Cell Count	Nuclei Count	Description	Download Link	Explore Link
-ID	TYPE	TI %	LABEL	AI schema:includedInDataCatalog	AT 'cell_count'^^xsd:integer	AT 'nuclei_count'^^xsd:integer	A rdfs:comment	A schema:archivedAt	A schema:discussionUrl
+ID	TYPE	Entity Type	Label	PrefLabel	Symbol	Taxonomy	Cell Count	Nuclei Count	Dataset	Species	Region	Description	Download Link	Explore Link
+ID	TYPE	TI %	LABEL	A skos:prefLabel	A IAO:0000028	AI schema:includedInDataCatalog	AT 'cell_count'^^xsd:integer	AT 'nuclei_count'^^xsd:integer	A schema:headline	A schema:assesses	A schema:position	A rdfs:comment	A schema:archivedAt	A schema:discussionUrl
