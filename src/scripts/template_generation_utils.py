@@ -3,6 +3,7 @@ import os
 import csv
 import networkx as nx
 import json
+import sys
 import pcl_id_factory
 
 from dendrogram_tools import tree_recurse
@@ -26,8 +27,7 @@ def get_synonyms_from_taxonomy(node):
     Returns: name synonyms string concatenated by "|"
 
     """
-    synonym_properties = ['cell_set_preferred_alias', 'original_label', 'cell_set_label', 'cell_set_aligned_alias',
-                          'cell_set_additional_aliases']
+    synonym_properties = ['cell_set_preferred_alias', 'cell_set_aligned_alias', 'cell_set_additional_aliases']
     synonyms = {node[prop] for prop in synonym_properties if prop in node.keys() and node[prop]}
 
     return OR_SEPARATOR.join(sorted(synonyms))
@@ -366,9 +366,12 @@ def read_markers(marker_path, gene_names):
 
 def get_gross_cell_type(_id, subtrees, taxonomy_config):
     gross_cell_type = ''
+    matched_subtree_size = sys.maxsize
     for index, subtree in enumerate(subtrees):
-        if _id in subtree:
+        # in case _id exists in multiple subtrees, pick the smallest one (the most specific)
+        if _id in subtree and len(subtree) < matched_subtree_size:
             gross_cell_type = taxonomy_config['Root_nodes'][index]['Cell_type']
+            matched_subtree_size = len(subtree)
     return gross_cell_type
 
 
@@ -445,20 +448,18 @@ def migrate_manual_curations(source_tsv, target_tsv, migrate_columns, output_fil
             writer.writerow(row)
 
 
-def read_allen_descriptions(path, species):
+def read_allen_descriptions(path):
     """
     Reads Allen descriptions file from the given location for the given species.
     Args:
         path: Path to the 'All Descriptions' json file
-        species: species to read file for
     Returns: parsed Allen descriptions json data
     """
-    allen_descriptions_path = path.format(species)
-    if os.path.isfile(allen_descriptions_path):
-        with open(allen_descriptions_path, 'r') as f:
+    if os.path.isfile(path):
+        with open(path, 'r') as f:
             allen_descriptions = json.loads(f.read())
     else:
-        allen_descriptions = {}
+        ValueError("Couldn't find allen descriptions file at: '{}'".format(path))
     return allen_descriptions
 
 

@@ -1,0 +1,54 @@
+id: bdso
+title: Brain Data Standards Cell Ontology
+github_org: obophenotype
+repo: bdso
+use_dosdps: TRUE
+export_formats:
+  - owl
+  - obo
+  - json
+release_artefacts:
+  - base
+  - simple-non-classified
+  - full
+  - simple
+primary_release: full
+import_group:
+  use_base_merging: TRUE
+  slme_individuals: exclude
+  exclude_iri_patterns:
+    - <http://www.informatics.jax.org/marker/MGI:*>
+    - <http://purl.obolibrary.org/obo/OBA_*>
+    - <http://purl.obolibrary.org/obo/ENVO_*>
+    - <http://purl.obolibrary.org/obo/OBI_*>
+    - <http://purl.obolibrary.org/obo/GOCHE_*>
+    - <http://purl.obolibrary.org/obo/CARO_*>
+    - <http://purl.obolibrary.org/obo/NCBITaxon_Union_*>
+    - <http://www.genenames.org/cgi-bin/gene_symbol_report*>
+  products:
+    - id: pr
+      make_base: TRUE
+      mirror_from: https://raw.githubusercontent.com/obophenotype/pro_obo_slim/master/pr_slim.owl
+      is_large: TRUE
+    - id: go
+      use_base: TRUE
+      base_iris:
+        - http://purl.obolibrary.org/obo/GO_
+        - http://purl.obolibrary.org/obo/GOREL_
+        - http://purl.obolibrary.org/obo/GOCHE_
+    - id: ro
+      use_base: TRUE
+    - id: uberon 
+      use_base: TRUE
+    - id: pato
+      use_base: TRUE
+    - id: cl
+      use_base: TRUE
+    - id: ensmusg
+      make_base: TRUE
+    - id: ncbitaxon
+      mirror_from: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
+components:
+  products:
+    - filename: all_templates.owl
+

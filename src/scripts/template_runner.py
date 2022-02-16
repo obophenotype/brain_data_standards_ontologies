@@ -1,7 +1,7 @@
 from template_generation_tools import generate_base_class_template, generate_curated_class_template, \
     generate_ind_template, merge_class_templates, \
     generate_cross_species_template, generate_taxonomies_template, generate_app_specific_template, \
-    generate_homologous_to_template, generate_datasets_template
+    generate_homologous_to_template, generate_datasets_template, generate_marker_gene_set_template
 from marker_tools import generate_denormalised_marker_template
 import argparse
 import pathlib
@@ -15,6 +15,7 @@ parser_generator = subparsers.add_parser('generator', description='Process some 
                                                                   ' files. Without optional args, generates an ind '
                                                                   'template.')
 parser_generator.add_argument('-i', '--input', help="Path to input JSON file")
+parser_generator.add_argument('-i2', '--input2', help="Path to second input file")
 parser_generator.add_argument('-o', '--output', help="Path to output TSV file")
 parser_generator.add_argument('-b', '--base', help="List of all class base TSV files")
 parser_generator.add_argument('-cb', action='store_true', help="Generate a class base template.")
@@ -25,6 +26,7 @@ parser_generator.add_argument('-cs', action='store_true', help="Generate a cross
 parser_generator.add_argument('-a', action='store_true', help="Generate a app specific data template.")
 parser_generator.add_argument('-ds', action='store_true', help="Generate a datasets template.")
 parser_generator.add_argument('-tx', action='store_true', help="Generate a taxonomies template.")
+parser_generator.add_argument('-ms', action='store_true', help="Generate a marker gene set template.")
 
 parser_modifier = subparsers.add_parser('modifier', description='Template modification interface')
 parser_modifier.add_argument('-i', '--input', action='store', type=pathlib.Path, help="Path to first input file")
@@ -55,5 +57,7 @@ else:
         generate_datasets_template(args.input, args.output)
     elif args.tx:
         generate_taxonomies_template(args.input, args.output)
+    elif args.ms:
+        generate_marker_gene_set_template(args.input, args.output)
     else:
-        generate_ind_template(args.input, args.output)
+        generate_ind_template(args.input, args.input2, args.output)

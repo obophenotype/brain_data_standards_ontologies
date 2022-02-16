@@ -9,6 +9,11 @@
           "sub": "http://purl.obolibrary.org/obo/RO_0015003"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "pred": "inverseOf",
+          "sub": "http://purl.obolibrary.org/obo/BFO_0000050"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/RO_0015002",
           "pred": "inverseOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0015001"
@@ -29,11 +34,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-01-06"
+            "val": "2022-02-15"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/pcl/releases/2022-01-06/bdso-simple.json",
+        "version": "http://purl.obolibrary.org/obo/pcl/releases/2022-02-15/bdso-simple.json",
         "xrefs": []
       },
       "nodes": [
@@ -47,28 +52,12 @@
                 "val": "is part of"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "is part of"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "my brain is part of my body (continuant parthood, two material entities)"
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
                 "val": "my brain is part of my body (continuant parthood, two material entities)"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
                 "val": "my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "this day is part of this year (occurrent parthood)"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
@@ -80,31 +69,11 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
                 "val": "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
                 "val": "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
-                "val": "part_of"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
@@ -145,10 +114,6 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
                 "val": "external"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-                "val": "protein"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -194,30 +159,75 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/IAO_0000115",
-          "lbl": "definition",
+          "id": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "lbl": "has_part",
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000122"
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "has part"
               },
               {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
-                "val": "http://purl.obolibrary.org/obo/iao.owl"
-              }
-            ]
-          },
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/IAO_0100001",
-          "lbl": "term replaced by",
-          "meta": {
-            "basicPropertyValues": [
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "my body has part my brain (continuant parthood, two material entities)"
+              },
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
-                "val": "http://purl.obolibrary.org/obo/IAO_0000125"
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "this year has part this day (occurrent parthood)"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
+                "val": "Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
+                "val": "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
+                "val": "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "has_part"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/RO_0001900",
+                "val": "http://purl.obolibrary.org/obo/RO_0001901"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "external"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "quality"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+                "val": "uberon"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
+                "val": "has_part"
+              }
+            ],
+            "definition": {
+              "val": "a core relation that holds between a whole and its part",
+              "xrefs": []
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
+              "http://purl.obolibrary.org/obo/valid_for_go_ontology",
+              "http://purl.obolibrary.org/obo/valid_for_gocam"
+            ],
+            "xrefs": [
+              {
+                "val": "BFO:0000051"
               }
             ]
           },
@@ -405,15 +415,7 @@
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-                "val": "protein"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
                 "val": "uberon"
-              },
-              {
-                "pred": "http://www.geneontology.org/formats/oboInOwl#is_transitive",
-                "val": "false"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#shorthand",
@@ -425,7 +427,6 @@
               "xrefs": []
             },
             "subsets": [
-              "http://purl.obolibrary.org/obo/cl#ro-eco",
               "http://purl.obolibrary.org/obo/ro/subsets#ro-eco"
             ],
             "xrefs": [
@@ -521,6 +522,51 @@
               "val": "A relation between a group and another group it is part of but does not fully constitute.",
               "xrefs": []
             }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0015004",
+          "lbl": "has characterizing marker set",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "'Lamp5-like Egln3_1 primary motor cortex GABAergic interneuron (Mus musculus)' subClass_of: has_characterizing_marker_set some 'NS forest marker set of Lamp5-like Egln3_1 MOp (Mouse).'; NS forest marker set of Lamp5-like Egln3_1 SubClass_of: ('has part' some 'Mouse Fbn2') and ('has part' some 'Mouse Chrna7') and ('has part' some 'Mouse Fam19a1')."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "transcriptomically defined cell type X subClass_of: (has_characterizing_marker_set some S1); S1 has_part some gene 1, S1 has_part some gene 2, S1 has_part some gene 3."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
+                "val": "C has_characterizing_marker_set y iff: C is a cell type and y is a collection of genes or proteins whose expression is sufficient to distinguish cell type C from most or all other cell types."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "This relation is not meant for cases where set of genes/proteins are only useful as markers in some specific context - e.g. in some specific location. In these cases it is recommended to make a more specific cell class restricted to the relevant context."
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "https://orcid.org/0000-0001-7258-9596"
+              }
+            ],
+            "definition": {
+              "val": "A relation that applies between a cell type and a set of markers that can be used to uniquely identify that cell type.",
+              "xrefs": []
+            },
+            "synonyms": [
+              {
+                "pred": "hasExactSynonym",
+                "val": "has marker gene combination",
+                "xrefs": []
+              },
+              {
+                "pred": "hasExactSynonym",
+                "val": "has marker signature set",
+                "xrefs": []
+              }
+            ]
           },
           "type": "PROPERTY"
         },
@@ -718,6 +764,16 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000115",
+          "lbl": "definition",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0100001",
+          "lbl": "term replaced by",
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/PCL_0000100",
           "lbl": "synonym",
           "type": "PROPERTY"
@@ -804,6 +860,13 @@
         {
           "chainPredicateIds": [
             "http://purl.obolibrary.org/obo/BFO_0000050",
+            "http://purl.obolibrary.org/obo/RO_0002162"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0002162"
+        },
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000051",
             "http://purl.obolibrary.org/obo/RO_0002162"
           ],
           "predicateId": "http://purl.obolibrary.org/obo/RO_0002162"

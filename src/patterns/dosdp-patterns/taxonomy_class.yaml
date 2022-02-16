@@ -20,6 +20,7 @@ relations:
   has_soma_location: "RO:0002100"
   bearer_of: "RO:0000053"
   has_exemplar_data: "RO:0015001"
+  has_characterizing_marker_set: "RO:0015004"
 
 annotationProperties:
   skosPrefLabel: "skos:prefLabel"
@@ -44,6 +45,7 @@ vars:
   part_of: "'thing'"
   has_soma_location: "'thing'"
   Individual: "'thing'"
+  marker_gene_set: "'thing'"
 
 data_list_vars:
   Synonyms_from_taxonomy: "xsd:string"
@@ -69,7 +71,7 @@ internal_vars:
       join:
         sep: ', '
   - var_name: Allen_markers_cat
-    input: Allen_markers
+    input: Expresses
     apply:
       join:
         sep: ', '
@@ -203,6 +205,10 @@ logical_axioms:
          - text: "'has_soma_location' some %s"
            vars:
              - Layers
+   - axiom_type: subClassOf
+     text: "'has_characterizing_marker_set' some %s"
+     vars:
+        - marker_gene_set
 
 annotations:
   - annotationProperty: skosPrefLabel

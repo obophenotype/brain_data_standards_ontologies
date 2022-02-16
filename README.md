@@ -5,6 +5,9 @@ A repository for building ontologies for the Brain Data Standards Project.
 
 Status: Draft
 
+### Cite:
+[BioRxiv Preprint](https://www.biorxiv.org/content/10.1101/2021.10.10.463703)
+
 ### Overview:
 
 The main purpose of this repo is to automate data driven cell-type ontology development for the Brain Data Standards initiative.  The main inputs are:
@@ -100,6 +103,9 @@ Markers are referenced by enembl ID using an [identifiers.org URL scheme](https:
 
 ensembl gene file templates are used to generate mirror files, which act as source files for import generation, so that only referenced markers end up in the release files.
 
+### Reference Gene Files
+
+GTF files used as reference for BDSO can be found in this [google drive folder](https://drive.google.com/drive/folders/1rOYwiIxGgEolWsO3a-7g6rxUefsXIcKB)
 
 
 

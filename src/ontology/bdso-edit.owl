@@ -10,14 +10,9 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 Ontology(<http://purl.obolibrary.org/obo/PCL.owl>
 Import(<http://purl.obolibrary.org/obo/helper.owl>)
-Import(<http://purl.obolibrary.org/obo/bdscratch/imports/cl_import.owl>)
-Import(<http://purl.obolibrary.org/obo/bdscratch/imports/ensmusg_import.owl>)
-Import(<http://purl.obolibrary.org/obo/bdscratch/imports/ncbitaxon_import.owl>)
-Import(<http://purl.obolibrary.org/obo/bdscratch/imports/pato_import.owl>)
-Import(<http://purl.obolibrary.org/obo/bdscratch/imports/ro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/bdscratch/imports/simple_human_import.owl>)
 Import(<http://purl.obolibrary.org/obo/bdscratch/imports/simple_marmoset_import.owl>)
-Import(<http://purl.obolibrary.org/obo/bdscratch/imports/uberon_import.owl>)
+Import(<http://purl.obolibrary.org/obo/pcl/imports/merged_import.owl>)
 Import(<http://purl.obolibrary.org/obo/bdscratch/patterns/definitions.owl>)
 Import(<http://purl.obolibrary.org/obo/components/all_templates.owl>)
 Annotation(dce:title "Brain Data Standards Cell Ontology")
@@ -36,9 +31,11 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PCL_1000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PCL_1000004>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PR_P60041>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000956>))
+Declaration(Class(<http://purl.obolibrary.org/obo/SO_0001260>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002100>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002215>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002292>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0015004>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010051>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010052>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010053>))
@@ -55,6 +52,12 @@ Declaration(AnnotationProperty(dce:creator))
 Declaration(AnnotationProperty(dce:description))
 Declaration(AnnotationProperty(dce:title))
 Declaration(AnnotationProperty(dcterms:license))
+Declaration(AnnotationProperty(dcterms:title))
+Declaration(AnnotationProperty(dcterms:provenance))
+Declaration(AnnotationProperty(dcterms:description))
+Declaration(AnnotationProperty(dcterms:subject))
+Declaration(AnnotationProperty(dcterms:relation))
+
 
 ############################
 #   Object Properties
@@ -77,6 +80,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015002> "exem
 
 # Object Property: <http://purl.obolibrary.org/obo/RO_0015003> (subcluster of)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015003> "subcluster of")
+
 
 ############################
 #   Annotation Properties
@@ -143,6 +147,10 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002215> "capa
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002292> "expresses")
 
+# Object Property: <http://purl.obolibrary.org/obo/RO_0015004> (has characterizing marker set)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015004> "has characterizing marker set")
+
 
 
 ############################
@@ -188,6 +196,8 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_1000004> "Martinotti morphology L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus)")
 SubClassOf(<http://purl.obolibrary.org/obo/PCL_1000004> <http://purl.obolibrary.org/obo/PCL_1000002>)
 SubClassOf(<http://purl.obolibrary.org/obo/PCL_1000004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070007>))
+
+# Class: <http://purl.obolibrary.org/obo/SO_0001260> 
 
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000028> "symbol")
