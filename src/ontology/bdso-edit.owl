@@ -12,9 +12,9 @@ Ontology(<http://purl.obolibrary.org/obo/PCL.owl>
 Import(<http://purl.obolibrary.org/obo/helper.owl>)
 Import(<http://purl.obolibrary.org/obo/bdscratch/imports/simple_human_import.owl>)
 Import(<http://purl.obolibrary.org/obo/bdscratch/imports/simple_marmoset_import.owl>)
-Import(<http://purl.obolibrary.org/obo/pcl/imports/merged_import.owl>)
 Import(<http://purl.obolibrary.org/obo/bdscratch/patterns/definitions.owl>)
 Import(<http://purl.obolibrary.org/obo/components/all_templates.owl>)
+Import(<http://purl.obolibrary.org/obo/pcl/imports/merged_import.owl>)
 Annotation(dce:title "Brain Data Standards Cell Ontology")
 Annotation(dcterms:license <http://creativecommons.org/licenses/by/4.0/>)
 
@@ -30,8 +30,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PCL_1000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PCL_1000003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PCL_1000004>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PR_P60041>))
-Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000956>))
 Declaration(Class(<http://purl.obolibrary.org/obo/SO_0001260>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000956>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002100>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002215>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002292>))
@@ -51,37 +51,12 @@ Declaration(AnnotationProperty(dce:contributor))
 Declaration(AnnotationProperty(dce:creator))
 Declaration(AnnotationProperty(dce:description))
 Declaration(AnnotationProperty(dce:title))
-Declaration(AnnotationProperty(dcterms:license))
-Declaration(AnnotationProperty(dcterms:title))
-Declaration(AnnotationProperty(dcterms:provenance))
 Declaration(AnnotationProperty(dcterms:description))
-Declaration(AnnotationProperty(dcterms:subject))
+Declaration(AnnotationProperty(dcterms:license))
+Declaration(AnnotationProperty(dcterms:provenance))
 Declaration(AnnotationProperty(dcterms:relation))
-
-
-############################
-#   Object Properties
-############################
-
-# Object Property: <http://purl.obolibrary.org/obo/RO_0002100> (has soma location)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002100> "has soma location")
-
-# Object Property: <http://purl.obolibrary.org/obo/RO_0002215> (capable of)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002215> "capable of")
-
-# Object Property: <http://purl.obolibrary.org/obo/RO_0002292> (expresses)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002292> "expresses")
-
-# Object Property: <http://purl.obolibrary.org/obo/RO_0015001> (has exemplar data)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015001> "has exemplar data")
-
-# Object Property: <http://purl.obolibrary.org/obo/RO_0015002> (exemplar data of)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015002> "exemplar data of")
-
-# Object Property: <http://purl.obolibrary.org/obo/RO_0015003> (subcluster of)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015003> "subcluster of")
-
-
+Declaration(AnnotationProperty(dcterms:subject))
+Declaration(AnnotationProperty(dcterms:title))
 ############################
 #   Annotation Properties
 ############################
@@ -159,16 +134,16 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0015004> "has 
 
 # Class: <http://purl.obolibrary.org/obo/PCL_1000000> (L4 intratelencephalic projecting glutamatergic neuron of the primary motor cortex)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:33184512") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_1000000> "An intratelencephalic-projecting glutamatergic neuron that is located in the boundary between L2/3 and L5 of the primary motor cortex. These cells have diverse morphologies with some pyramidal and some stellate cells.")
-AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/PCL_1000000> <http://orcid.org/0000-0001-7258-9596>)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:33184512"^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_1000000> "An intratelencephalic-projecting glutamatergic neuron that is located in the boundary between L2/3 and L5 of the primary motor cortex. These cells have diverse morphologies with some pyramidal and some stellate cells.")
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/PCL_1000000> <http://orcid.org/0000-0001-7258-9596>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/PCL_1000000> "ILX:0770172")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:25525751") rdfs:comment <http://purl.obolibrary.org/obo/PCL_1000000> "These cells likely corresponded to the quasi-L4 neurons described previously in the motor cortex.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_1000000> "L4 intratelencephalic projecting glutamatergic neuron of the primary motor cortex")
-EquivalentClasses(<http://purl.obolibrary.org/obo/PCL_1000000> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_4023040> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0005393>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/PCL_1000000> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_4023008> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0001384>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002100> <http://purl.obolibrary.org/obo/UBERON_0005393>)))
 
 # Class: <http://purl.obolibrary.org/obo/PCL_1000002> (L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus))
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:33184512") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_1000002> "A sst GABAergic cortical interneuron transcriptomically between the sst and the pvalb families with a soma found in L2/3. Some L2/3 PV-like sst cells have Martinotti morphology while some have basket cell morphology. L2/3 PV-like sst cells have lower AP width and higher firing rate than typical Sst subclass cells. L2/3 PV-like sst cells have high maximum firing rate variability, with many classified as belonging to the pvalb subclass on the basis of electrophysiology.")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:33184512"^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_1000002> "A sst GABAergic cortical interneuron transcriptomically between the sst and the pvalb families with a soma found in L2/3. Some L2/3 PV-like sst cells have Martinotti morphology while some have basket cell morphology. L2/3 PV-like sst cells have lower AP width and higher firing rate than typical Sst subclass cells. L2/3 PV-like sst cells have high maximum firing rate variability, with many classified as belonging to the pvalb subclass on the basis of electrophysiology.")
 AnnotationAssertion(dce:contributor <http://purl.obolibrary.org/obo/PCL_1000002> <http://orcid.org/0000-0001-7258-9596>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_1000002> "L2/3 PV-like SST Mus")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_1000002> "L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus)")
@@ -190,14 +165,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/PCL_1000003> ObjectSomeValuesFrom(<ht
 
 # Class: <http://purl.obolibrary.org/obo/PCL_1000004> (Martinotti morphology L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus))
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:33184512") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_1000004> "A L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus) that has Martinotti morphology.")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:33184512"^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCL_1000004> "A L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus) that has Martinotti morphology.")
 AnnotationAssertion(dce:contributor <http://purl.obolibrary.org/obo/PCL_1000004> <http://orcid.org/0000-0001-7258-9596>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/PCL_1000004> "Martinotti L2/3 PV-like SST (Mus)")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_1000004> "Martinotti morphology L2/3 pvalb-like sst GABAergic cortical interneuron (Mus musculus)")
 SubClassOf(<http://purl.obolibrary.org/obo/PCL_1000004> <http://purl.obolibrary.org/obo/PCL_1000002>)
 SubClassOf(<http://purl.obolibrary.org/obo/PCL_1000004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/PATO_0070007>))
-
-# Class: <http://purl.obolibrary.org/obo/SO_0001260> 
 
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000028> "symbol")
