@@ -4,7 +4,7 @@ import pandas as pd
 import logging
 import os
 
-from template_generation_utils import get_root_nodes, read_taxonomy_config, generate_dendrogram_tree
+from template_generation_utils import get_root_nodes, read_taxonomy_config, generate_dendrogram_tree, index_dendrogram, read_csv_to_dict
 from dendrogram_tools import dend_json_2_nodes_n_edges
 from nomenclature_tools import nomenclature_2_nodes_n_edges
 
@@ -190,3 +190,56 @@ def generate_marker_table(marker_data, output_filepath):
         template.append(d)
     class_robot_template = pd.DataFrame.from_records(template)
     class_robot_template.to_csv(output_filepath.replace("CCN", "CS"), sep="\t", index=False)
+
+
+def get_nsforest_confidences(taxon, dend, ns_forest_marker_file):
+    """
+    Each NS forest marker files has a non-standard tabular structure. This function aligns cluster names mentioned in
+    the marker file with the dendrogram nodes and prepares a dict of accession_id - confidence_score.
+    Args:
+        taxon: taxonomy id
+        dend: dendrogram file
+        ns_forest_marker_file: path of the marker file
+    """
+    nomenclature_indexes = [
+                            index_dendrogram(dend, id_field_name="cell_set_preferred_alias", id_to_lower=True),
+                            index_dendrogram(dend, id_field_name="cell_set_accession", id_to_lower=True),
+                            index_dendrogram(dend, id_field_name="original_label", id_to_lower=True),
+                            index_dendrogram(dend, id_field_name="cell_set_additional_aliases", id_to_lower=True)
+                            ]
+
+    if taxon != "CS1908210":
+        nomenclature_indexes.append(index_dendrogram(dend, id_field_name="cell_set_aligned_alias", id_to_lower=True))
+
+    confidence_map = dict()
+
+    if os.path.isfile(ns_forest_marker_file):
+        headers, raw_marker_data = read_csv_to_dict(ns_forest_marker_file, id_column_name="clusterName")
+    else:
+        # human mtg file extension is outlier
+        headers, raw_marker_data = read_csv_to_dict(str(ns_forest_marker_file).replace(".csv", ".tsv"),
+                                                    id_column_name="clusterName", delimiter="\t")
+
+    for cluster_name in raw_marker_data:
+        cluster_name_variants = [cluster_name.lower(), cluster_name.lower().replace("-", "/"),
+                                 cluster_name.replace("Micro", "Microglia").lower(),
+                                 ("(Mouse " + cluster_name + ")-like").lower(),
+                                 ("(Mouse " + cluster_name.replace("-", "/") + ")-like").lower()]
+
+        nomenclature_node = search_terms_in_index(cluster_name_variants, nomenclature_indexes)
+        if nomenclature_node:
+            node_id = nomenclature_node["cell_set_accession"]
+            confidence_map[node_id] = raw_marker_data[cluster_name]["f-measure"]
+        else:
+            raise ValueError("Node with cluster name '{}' couldn't be found in the nomenclature of {}."
+                             .format(cluster_name, taxon))
+
+    return confidence_map
+
+
+def search_terms_in_index(term_variants, indexes):
+    for term in term_variants:
+        for index in indexes:
+            if term in index:
+                return index[term]
+    return None

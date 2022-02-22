@@ -22,6 +22,10 @@ data_vars:
   Marker_set_of: "xsd:string"
   Brain_region_abbv: "xsd:string"
   Species_abbv: "xsd:string"
+  FBeta_confidence_score: "xsd:double"
+
+annotationProperties:
+  fbetaConfidenceScore: "PCL:0010062"
 
 name:
    text: "NS forest marker set of %s %s (%s)."
@@ -46,3 +50,9 @@ logical_axioms:
 #     text: "'has_anatomical_context' some %s"
 #     vars:
 #        - Brain_region
+
+annotations:
+  - annotationProperty: fbetaConfidenceScore
+    text: "%s"
+    vars:
+      - FBeta_confidence_score

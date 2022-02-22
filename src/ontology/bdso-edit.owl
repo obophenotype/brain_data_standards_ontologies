@@ -45,6 +45,7 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010058>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010059>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010060>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010061>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010062>))
 Declaration(AnnotationProperty(dce:contributor))
 Declaration(AnnotationProperty(dce:description))
 Declaration(AnnotationProperty(dce:title))
@@ -101,6 +102,10 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010060> "cel
 # Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010061> (nuclei_count)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010061> "nuclei_count")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010062> (fbeta_confidence_score)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010062> "fbeta_confidence_score")
 
 
 ############################

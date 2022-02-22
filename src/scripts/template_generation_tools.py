@@ -10,6 +10,7 @@ from template_generation_utils import get_synonyms_from_taxonomy, read_taxonomy_
     extract_taxonomy_name_from_path
 from nomenclature_tools import nomenclature_2_nodes_n_edges
 from pcl_id_factory import get_class_id, get_individual_id, get_taxonomy_id, get_dataset_id, get_marker_gene_set_id
+from marker_tools import get_nsforest_confidences
 
 log = logging.getLogger(__name__)
 
@@ -28,6 +29,7 @@ CROSS_SPECIES_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)),
 ALLEN_DESCRIPTIONS_PATH = "{}/{}/All Descriptions_{}.json"
 DATASET_INFO_CSV = "{}/{}/{}_landingpage_dataset_info.csv"
 TAXONOMY_INFO_CSV = "{}/{}/{}_Taxonomy_Info_Panel.csv"
+NSFOREST_MARKER_CSV = "{}/NSForestMarkers/{}_{}_NSForest_Markers.csv"
 
 EXPRESSION_SEPARATOR = "|"
 
@@ -513,7 +515,7 @@ def generate_datasets_template(centralized_data_folder, output_filepath):
                          .format(taxonomy_id, expected_file_name))
 
 
-def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
+def generate_marker_gene_set_template(taxonomy_file_path, centralized_data_folder, output_filepath):
     taxon = extract_taxonomy_name_from_path(taxonomy_file_path)
     taxonomy_config = read_taxonomy_config(taxon)
 
@@ -529,9 +531,13 @@ def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
             gene_db_path = ENSEMBLE_PATH.format(str(taxonomy_config["Reference_gene_list"][0]).strip().lower())
             gene_names = read_gene_data(gene_db_path)
             minimal_markers = read_markers(MARKER_PATH.format(taxon.replace("CCN", "").replace("CS", "")), gene_names)
-
         else:
             minimal_markers = {}
+
+        ns_forest_marker_file = NSFOREST_MARKER_CSV.format(centralized_data_folder,
+                                                           taxonomy_config['Species_abbv'][0],
+                                                           taxonomy_config['Brain_region_abbv'][0])
+        confidences = get_nsforest_confidences(taxon, dend, ns_forest_marker_file)
 
         class_seed = ['defined_class',
                       'Marker_set_of',
@@ -539,7 +545,8 @@ def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
                       'Brain_region_abbv',
                       'Species_abbv',
                       'Brain_region',
-                      'Parent'
+                      'Parent',
+                      'FBeta_confidence_score'
                       ]
         class_template = []
 
@@ -557,6 +564,8 @@ def generate_marker_gene_set_template(taxonomy_file_path, output_filepath):
                         d['Species_abbv'] = taxonomy_config['Species_abbv'][0]
                     d['Brain_region'] = taxonomy_config['Brain_region'][0]
                     d['Parent'] = "SO:0001260"  # sequence collection
+                    if o['cell_set_accession'] in confidences:
+                        d['FBeta_confidence_score'] = confidences[o['cell_set_accession']]
 
                     for k in class_seed:
                         if not (k in d.keys()):
