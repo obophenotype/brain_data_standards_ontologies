@@ -58,6 +58,6 @@ else:
     elif args.tx:
         generate_taxonomies_template(args.input, args.output)
     elif args.ms:
-        generate_marker_gene_set_template(args.input, args.output)
+        generate_marker_gene_set_template(args.input, args.input2, args.output)
     else:
         generate_ind_template(args.input, args.input2, args.output)

@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: pcl/releases/2022-02-15/bdso-base.owl
+data-version: pcl/releases/2022-02-23/bdso-base.owl
 ontology: pcl/bdso-base
 property_value: http://purl.org/dc/elements/1.1/title "Brain Data Standards Cell Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2022-02-15" xsd:string
+property_value: owl:versionInfo "2022-02-23" xsd:string
 
 [Term]
 id: CL:4023119
@@ -9509,6 +9509,7 @@ name: NS forest marker set of Lamp5-like Pax6 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000024867
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000027168
+property_value: PCL:0010062 "0.674157303" xsd:string
 
 [Term]
 id: PCL:0012502
@@ -9517,6 +9518,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000024598
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000030525
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000059187
+property_value: PCL:0010062 "0.690789474" xsd:string
 
 [Term]
 id: PCL:0012503
@@ -9524,6 +9526,7 @@ name: NS forest marker set of Lamp5 Egln3_2 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000024074
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000092094
+property_value: PCL:0010062 "0.607476636" xsd:string
 
 [Term]
 id: PCL:0012504
@@ -9532,6 +9535,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000020902
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000021508
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000042453
+property_value: PCL:0010062 "0.483558994" xsd:string
 
 [Term]
 id: PCL:0012505
@@ -9540,6 +9544,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000027971
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000044447
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000049001
+property_value: PCL:0010062 "0.514705882" xsd:string
 
 [Term]
 id: PCL:0012506
@@ -9547,6 +9552,7 @@ name: NS forest marker set of Lamp5 Pdlim5_2 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000049001
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000075270
+property_value: PCL:0010062 "0.689575646" xsd:string
 
 [Term]
 id: PCL:0012507
@@ -9554,6 +9560,7 @@ name: NS forest marker set of Lamp5 Slc35d3 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000022231
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000055471
+property_value: PCL:0010062 "0.769438445" xsd:string
 
 [Term]
 id: PCL:0012508
@@ -9561,6 +9568,7 @@ name: NS forest marker set of Lamp5 Lhx6 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000029361
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000110002
+property_value: PCL:0010062 "0.694444444" xsd:string
 
 [Term]
 id: PCL:0012509
@@ -9569,6 +9577,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000015766
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000039385
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000058897
+property_value: PCL:0010062 "0.535714286" xsd:string
 
 [Term]
 id: PCL:0012510
@@ -9576,6 +9585,7 @@ name: NS forest marker set of Sncg Slc17a8 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000019935
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000048967
+property_value: PCL:0010062 "0.841750842" xsd:string
 
 [Term]
 id: PCL:0012511
@@ -9584,6 +9594,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000027849
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000042045
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000063661
+property_value: PCL:0010062 "0.577777778" xsd:string
 
 [Term]
 id: PCL:0012512
@@ -9592,6 +9603,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000024376
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000027849
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000028222
+property_value: PCL:0010062 "0.674157303" xsd:string
 
 [Term]
 id: PCL:0012513
@@ -9599,6 +9611,7 @@ name: NS forest marker set of Sncg Npy2r MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000028004
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000029101
+property_value: PCL:0010062 "0.721868365" xsd:string
 
 [Term]
 id: PCL:0012514
@@ -9607,6 +9620,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000020099
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000022656
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000049796
+property_value: PCL:0010062 "0.578034682" xsd:string
 
 [Term]
 id: PCL:0012515
@@ -9614,6 +9628,7 @@ name: NS forest marker set of Vip Serpinf1_1 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000026475
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000027996
+property_value: PCL:0010062 "0.535714286" xsd:string
 
 [Term]
 id: PCL:0012516
@@ -9622,6 +9637,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000022371
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000037362
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000038718
+property_value: PCL:0010062 "0.592334495" xsd:string
 
 [Term]
 id: PCL:0012517
@@ -9631,6 +9647,7 @@ relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000022425
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000025813
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000037362
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000040624
+property_value: PCL:0010062 "0.474452555" xsd:string
 
 [Term]
 id: PCL:0012518
@@ -9639,6 +9656,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000019772
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000037362
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000045648
+property_value: PCL:0010062 "0.675082327" xsd:string
 
 [Term]
 id: PCL:0012519
@@ -9647,6 +9665,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000019772
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000038718
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000041741
+property_value: PCL:0010062 "0.750315259" xsd:string
 
 [Term]
 id: PCL:0012520
@@ -9656,6 +9675,7 @@ relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000019772
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000020042
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000031963
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000049796
+property_value: PCL:0010062 "0.556358382" xsd:string
 
 [Term]
 id: PCL:0012521
@@ -9663,6 +9683,7 @@ name: NS forest marker set of Vip Mybpc1_2 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000032269
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000112276
+property_value: PCL:0010062 "0.748546512" xsd:string
 
 [Term]
 id: PCL:0012522
@@ -9670,6 +9691,7 @@ name: NS forest marker set of Vip Mybpc1_1 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000003657
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000110281
+property_value: PCL:0010062 "0.436241611" xsd:string
 
 [Term]
 id: PCL:0012523
@@ -9677,6 +9699,7 @@ name: NS forest marker set of Vip Chat_1 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000021919
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000028004
+property_value: PCL:0010062 "0.675078864" xsd:string
 
 [Term]
 id: PCL:0012524
@@ -9684,6 +9707,7 @@ name: NS forest marker set of Vip Mybpc1_3 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000024211
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000060371
+property_value: PCL:0010062 "0.571095571" xsd:string
 
 [Term]
 id: PCL:0012525
@@ -9691,6 +9715,7 @@ name: NS forest marker set of Vip Chat_2 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000026322
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000032017
+property_value: PCL:0010062 "0.420054201" xsd:string
 
 [Term]
 id: PCL:0012526
@@ -9698,6 +9723,7 @@ name: NS forest marker set of Vip-like Igfbp6_1 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000032625
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000110468
+property_value: PCL:0010062 "0.552922591" xsd:string
 
 [Term]
 id: PCL:0012527
@@ -9705,12 +9731,14 @@ name: NS forest marker set of Vip Igfbp6_2 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000042581
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000049796
+property_value: PCL:0010062 "0.712809917" xsd:string
 
 [Term]
 id: PCL:0012528
 name: NS forest marker set of Sst Chodl MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000029361
+property_value: PCL:0010062 "0.966748768" xsd:string
 
 [Term]
 id: PCL:0012529
@@ -9719,6 +9747,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000021647
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000059203
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000097462
+property_value: PCL:0010062 "0.654008439" xsd:string
 
 [Term]
 id: PCL:0012530
@@ -9726,6 +9755,7 @@ name: NS forest marker set of Sst Myh8_1 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000042453
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000059203
+property_value: PCL:0010062 "0.810546875" xsd:string
 
 [Term]
 id: PCL:0012531
@@ -9734,6 +9764,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000031841
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000051910
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000055214
+property_value: PCL:0010062 "0.596153846" xsd:string
 
 [Term]
 id: PCL:0012532
@@ -9741,6 +9772,7 @@ name: NS forest marker set of Sst Myh8_3 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000019828
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000025370
+property_value: PCL:0010062 "0.454545455" xsd:string
 
 [Term]
 id: PCL:0012533
@@ -9748,6 +9780,7 @@ name: NS forest marker set of Sst Htr1a MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000027400
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000105068
+property_value: PCL:0010062 "0.639534884" xsd:string
 
 [Term]
 id: PCL:0012534
@@ -9756,6 +9789,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000024598
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000026141
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000031997
+property_value: PCL:0010062 "0.466666667" xsd:string
 
 [Term]
 id: PCL:0012535
@@ -9764,6 +9798,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000038156
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000039137
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000095105
+property_value: PCL:0010062 "0.628415301" xsd:string
 
 [Term]
 id: PCL:0012536
@@ -9772,6 +9807,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000010461
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000026393
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000031997
+property_value: PCL:0010062 "0.581761006" xsd:string
 
 [Term]
 id: PCL:0012537
@@ -9779,6 +9815,7 @@ name: NS forest marker set of Sst Crhr2_2 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000026765
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000031997
+property_value: PCL:0010062 "0.479094077" xsd:string
 
 [Term]
 id: PCL:0012538
@@ -9786,6 +9823,7 @@ name: NS forest marker set of Sst Hpse MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000030222
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000035273
+property_value: PCL:0010062 "0.710382514" xsd:string
 
 [Term]
 id: PCL:0012539
@@ -9793,6 +9831,7 @@ name: NS forest marker set of Sst Calb2 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000004366
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000027965
+property_value: PCL:0010062 "0.782142857" xsd:string
 
 [Term]
 id: PCL:0012540
@@ -9800,6 +9839,7 @@ name: NS forest marker set of Sst Pappa MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000031997
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000116610
+property_value: PCL:0010062 "0.694444444" xsd:string
 
 [Term]
 id: PCL:0012541
@@ -9807,6 +9847,7 @@ name: NS forest marker set of Sst Pvalb Calb2 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000020000
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000029334
+property_value: PCL:0010062 "0.613048369" xsd:string
 
 [Term]
 id: PCL:0012542
@@ -9814,6 +9855,7 @@ name: NS forest marker set of Sst C1ql3_1 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000052062
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000111950
+property_value: PCL:0010062 "0.503597122" xsd:string
 
 [Term]
 id: PCL:0012543
@@ -9822,6 +9864,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000030074
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000035131
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000049001
+property_value: PCL:0010062 "0.684357542" xsd:string
 
 [Term]
 id: PCL:0012544
@@ -9830,6 +9873,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000025400
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000031841
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000036019
+property_value: PCL:0010062 "0.659722222" xsd:string
 
 [Term]
 id: PCL:0012545
@@ -9838,6 +9882,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000022306
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000039037
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000040710
+property_value: PCL:0010062 "0.512820513" xsd:string
 
 [Term]
 id: PCL:0012546
@@ -9846,6 +9891,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000004366
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000045731
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000052062
+property_value: PCL:0010062 "0.789473684" xsd:string
 
 [Term]
 id: PCL:0012547
@@ -9853,6 +9899,7 @@ name: NS forest marker set of Sst Th_3 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000000214
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000028971
+property_value: PCL:0010062 "0.608695652" xsd:string
 
 [Term]
 id: PCL:0012548
@@ -9860,6 +9907,7 @@ name: NS forest marker set of Pvalb Gabrg1 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000000214
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000001260
+property_value: PCL:0010062 "0.688131313" xsd:string
 
 [Term]
 id: PCL:0012549
@@ -9868,6 +9916,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000036834
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000061762
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000073154
+property_value: PCL:0010062 "0.450281426" xsd:string
 
 [Term]
 id: PCL:0012550
@@ -9876,6 +9925,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000022297
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000026452
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000031558
+property_value: PCL:0010062 "0.74580759" xsd:string
 
 [Term]
 id: PCL:0012551
@@ -9885,6 +9935,7 @@ relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000010066
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000026452
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000034310
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000063531
+property_value: PCL:0010062 "0.614035088" xsd:string
 
 [Term]
 id: PCL:0012552
@@ -9893,6 +9944,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000028971
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000069132
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000100650
+property_value: PCL:0010062 "0.344827586" xsd:string
 
 [Term]
 id: PCL:0012553
@@ -9901,6 +9953,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000034324
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000038048
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000061762
+property_value: PCL:0010062 "0.427644139" xsd:string
 
 [Term]
 id: PCL:0012554
@@ -9908,6 +9961,7 @@ name: NS forest marker set of Pvalb Reln MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000031772
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000111061
+property_value: PCL:0010062 "0.570432043" xsd:string
 
 [Term]
 id: PCL:0012555
@@ -9915,6 +9969,7 @@ name: NS forest marker set of Pvalb Il1rapl2 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000010461
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000059203
+property_value: PCL:0010062 "0.781878401" xsd:string
 
 [Term]
 id: PCL:0012556
@@ -9922,6 +9977,7 @@ name: NS forest marker set of Pvalb Vipr2_1 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000001496
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000002900
+property_value: PCL:0010062 "0.606060606" xsd:string
 
 [Term]
 id: PCL:0012557
@@ -9929,6 +9985,7 @@ name: NS forest marker set of Pvalb Vipr2_2 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000020099
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000067028
+property_value: PCL:0010062 "0.831702544" xsd:string
 
 [Term]
 id: PCL:0012558
@@ -9937,6 +9994,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000009376
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000036545
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000098097
+property_value: PCL:0010062 "0.542729152" xsd:string
 
 [Term]
 id: PCL:0012559
@@ -9946,6 +10004,7 @@ relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000026676
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000027210
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000029705
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000062372
+property_value: PCL:0010062 "0.520489095" xsd:string
 
 [Term]
 id: PCL:0012560
@@ -9954,6 +10013,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000031216
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000042589
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000056427
+property_value: PCL:0010062 "0.763433413" xsd:string
 
 [Term]
 id: PCL:0012561
@@ -9962,6 +10022,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000017978
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000036192
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000073565
+property_value: PCL:0010062 "0.733776479" xsd:string
 
 [Term]
 id: PCL:0012562
@@ -9970,6 +10031,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000004415
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000032564
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000059203
+property_value: PCL:0010062 "0.706892034" xsd:string
 
 [Term]
 id: PCL:0012563
@@ -9986,6 +10048,7 @@ relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000003746
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000022419
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000053399
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000116610
+property_value: PCL:0010062 "0.40942928" xsd:string
 
 [Term]
 id: PCL:0012565
@@ -9995,6 +10058,7 @@ relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000017978
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000019889
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000022425
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000055214
+property_value: PCL:0010062 "0.497550521" xsd:string
 
 [Term]
 id: PCL:0012566
@@ -10003,6 +10067,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000029154
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000045613
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000055214
+property_value: PCL:0010062 "0.523516643" xsd:string
 
 [Term]
 id: PCL:0012567
@@ -10011,6 +10076,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000021765
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000052430
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000059857
+property_value: PCL:0010062 "0.614483173" xsd:string
 
 [Term]
 id: PCL:0012568
@@ -10019,6 +10085,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000028909
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000049630
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000052430
+property_value: PCL:0010062 "0.579234973" xsd:string
 
 [Term]
 id: PCL:0012569
@@ -10026,6 +10093,7 @@ name: NS forest marker set of L6 IT Car3 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000026826
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000042596
+property_value: PCL:0010062 "0.689655172" xsd:string
 
 [Term]
 id: PCL:0012570
@@ -10034,6 +10102,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000022206
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000030905
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000098760
+property_value: PCL:0010062 "0.835525821" xsd:string
 
 [Term]
 id: PCL:0012571
@@ -10042,6 +10111,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000021541
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000022112
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000040732
+property_value: PCL:0010062 "0.693311582" xsd:string
 
 [Term]
 id: PCL:0012572
@@ -10051,6 +10121,7 @@ relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000021541
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000022112
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000039620
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000042453
+property_value: PCL:0010062 "0.506547209" xsd:string
 
 [Term]
 id: PCL:0012573
@@ -10058,6 +10129,7 @@ name: NS forest marker set of L5 ET_4 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000043659
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000098760
+property_value: PCL:0010062 "0.713302752" xsd:string
 
 [Term]
 id: PCL:0012574
@@ -10066,6 +10138,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000024517
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000034009
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000047907
+property_value: PCL:0010062 "0.3784219" xsd:string
 
 [Term]
 id: PCL:0012575
@@ -10074,6 +10147,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000010651
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000063564
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000066197
+property_value: PCL:0010062 "0.572033898" xsd:string
 
 [Term]
 id: PCL:0012576
@@ -10082,6 +10156,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000022306
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000029563
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000078591
+property_value: PCL:0010062 "0.823050986" xsd:string
 
 [Term]
 id: PCL:0012577
@@ -10091,6 +10166,7 @@ relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000024517
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000027210
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000036218
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000049148
+property_value: PCL:0010062 "0.434618292" xsd:string
 
 [Term]
 id: PCL:0012578
@@ -10099,6 +10175,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000038331
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000040420
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000111765
+property_value: PCL:0010062 "0.721017908" xsd:string
 
 [Term]
 id: PCL:0012579
@@ -10106,6 +10183,7 @@ name: NS forest marker set of L6 CT Kit_1 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000025997
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000111765
+property_value: PCL:0010062 "0.759368836" xsd:string
 
 [Term]
 id: PCL:0012580
@@ -10115,6 +10193,7 @@ relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000026826
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000034009
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000047907
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000096972
+property_value: PCL:0010062 "0.684931507" xsd:string
 
 [Term]
 id: PCL:0012581
@@ -10123,6 +10202,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000019997
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000046321
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000052430
+property_value: PCL:0010062 "0.496671787" xsd:string
 
 [Term]
 id: PCL:0012582
@@ -10131,6 +10211,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000013766
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000024236
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000039714
+property_value: PCL:0010062 "0.428870293" xsd:string
 
 [Term]
 id: PCL:0012583
@@ -10138,6 +10219,7 @@ name: NS forest marker set of L6b Shisa6_2 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000020000
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000026826
+property_value: PCL:0010062 "0.731638418" xsd:string
 
 [Term]
 id: PCL:0012584
@@ -10146,6 +10228,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000019997
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000039714
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000043556
+property_value: PCL:0010062 "0.748502994" xsd:string
 
 [Term]
 id: PCL:0012585
@@ -10154,6 +10237,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000051611
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000053368
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000107384
+property_value: PCL:0010062 "0.532544379" xsd:string
 
 [Term]
 id: PCL:0012586
@@ -10162,6 +10246,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000028031
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000039519
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000045648
+property_value: PCL:0010062 "0.61192137" xsd:string
 
 [Term]
 id: PCL:0012587
@@ -10169,6 +10254,7 @@ name: NS forest marker set of L5/6 NP_2 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000019935
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000035258
+property_value: PCL:0010062 "0.602284528" xsd:string
 
 [Term]
 id: PCL:0012588
@@ -10176,6 +10262,7 @@ name: NS forest marker set of L5/6 NP_3 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000026344
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000047907
+property_value: PCL:0010062 "0.817046688" xsd:string
 
 [Term]
 id: PCL:0012589
@@ -10183,6 +10270,7 @@ name: NS forest marker set of Meis2 (cluster) MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000023800
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000027210
+property_value: PCL:0010062 "0.722891566" xsd:string
 
 [Term]
 id: PCL:0012590
@@ -10191,6 +10279,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000035551
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000098087
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000100832
+property_value: PCL:0010062 "0.481481481" xsd:string
 
 [Term]
 id: PCL:0012591
@@ -10198,6 +10287,7 @@ name: NS forest marker set of OPC Pdgfra MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000029231
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000039954
+property_value: PCL:0010062 "0.935195763" xsd:string
 
 [Term]
 id: PCL:0012592
@@ -10205,12 +10295,14 @@ name: NS forest marker set of Astro_Top2a MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000042489
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000098318
+property_value: PCL:0010062 "0.43062201" xsd:string
 
 [Term]
 id: PCL:0012593
 name: NS forest marker set of Astro Aqp4_Gfap MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000026697
+property_value: PCL:0010062 "0.97951423" xsd:string
 
 [Term]
 id: PCL:0012594
@@ -10218,6 +10310,7 @@ name: NS forest marker set of Astro Aqp4_Slc7a10 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000025537
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000030235
+property_value: PCL:0010062 "0.956435458" xsd:string
 
 [Term]
 id: PCL:0012595
@@ -10225,6 +10318,7 @@ name: NS forest marker set of Oligo Enpp6_1 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000013523
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000024985
+property_value: PCL:0010062 "0.628626692" xsd:string
 
 [Term]
 id: PCL:0012596
@@ -10232,6 +10326,7 @@ name: NS forest marker set of Oligo Enpp6_2 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000021835
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000115529
+property_value: PCL:0010062 "0.760784314" xsd:string
 
 [Term]
 id: PCL:0012597
@@ -10241,6 +10336,7 @@ relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000015202
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000026347
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000026566
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000049690
+property_value: PCL:0010062 "0.604166667" xsd:string
 
 [Term]
 id: PCL:0012598
@@ -10248,6 +10344,7 @@ name: NS forest marker set of Oligo Enpp6_4 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000015202
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000115529
+property_value: PCL:0010062 "0.815939279" xsd:string
 
 [Term]
 id: PCL:0012599
@@ -10256,6 +10353,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000036777
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000039316
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000111994
+property_value: PCL:0010062 "0.673463628" xsd:string
 
 [Term]
 id: PCL:0012600
@@ -10263,6 +10361,7 @@ name: NS forest marker set of Oligo Opalin_2 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000024810
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000032841
+property_value: PCL:0010062 "0.873136368" xsd:string
 
 [Term]
 id: PCL:0012601
@@ -10271,6 +10370,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000032517
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000041460
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000049690
+property_value: PCL:0010062 "0.401804018" xsd:string
 
 [Term]
 id: PCL:0012602
@@ -10279,6 +10379,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000029086
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000030616
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000032702
+property_value: PCL:0010062 "0.714814815" xsd:string
 
 [Term]
 id: PCL:0012603
@@ -10286,6 +10387,7 @@ name: NS forest marker set of Endo MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000030237
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000039167
+property_value: PCL:0010062 "0.985102671" xsd:string
 
 [Term]
 id: PCL:0012604
@@ -10294,6 +10396,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000025780
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000031273
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000112430
+property_value: PCL:0010062 "0.702247191" xsd:string
 
 [Term]
 id: PCL:0012605
@@ -10301,12 +10404,14 @@ name: NS forest marker set of VLMC_2 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000032796
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000064294
+property_value: PCL:0010062 "0.812619503" xsd:string
 
 [Term]
 id: PCL:0012606
 name: NS forest marker set of VLMC_3 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000043760
+property_value: PCL:0010062 "0.702416918" xsd:string
 
 [Term]
 id: PCL:0012607
@@ -10314,12 +10419,14 @@ name: NS forest marker set of VLMC_4 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000036814
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000069378
+property_value: PCL:0010062 "0.442307692" xsd:string
 
 [Term]
 id: PCL:0012608
 name: NS forest marker set of VLMC_5 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000010122
+property_value: PCL:0010062 "0.849027478" xsd:string
 
 [Term]
 id: PCL:0012609
@@ -10328,6 +10435,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000006014
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000026989
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000040569
+property_value: PCL:0010062 "0.746812386" xsd:string
 
 [Term]
 id: PCL:0012610
@@ -10335,12 +10443,14 @@ name: NS forest marker set of VLMC_7 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000026989
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000034127
+property_value: PCL:0010062 "0.795053004" xsd:string
 
 [Term]
 id: PCL:0012611
 name: NS forest marker set of SMC MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000035783
+property_value: PCL:0010062 "0.879120879" xsd:string
 
 [Term]
 id: PCL:0012612
@@ -10348,18 +10458,21 @@ name: NS forest marker set of Peri MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000030249
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000048939
+property_value: PCL:0010062 "0.964252117" xsd:string
 
 [Term]
 id: PCL:0012613
 name: NS forest marker set of Micro MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000021665
+property_value: PCL:0010062 "0.980182605" xsd:string
 
 [Term]
 id: PCL:0012614
 name: NS forest marker set of PVM_1 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000101389
+property_value: PCL:0010062 "0.940492476" xsd:string
 
 [Term]
 id: PCL:0012615
@@ -10367,12 +10480,14 @@ name: NS forest marker set of PVM_2 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000024610
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000030187
+property_value: PCL:0010062 "0.79787234" xsd:string
 
 [Term]
 id: PCL:0012616
 name: NS forest marker set of PVM_3 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000031494
+property_value: PCL:0010062 "0.844155844" xsd:string
 
 [Term]
 id: PCL:0012624
@@ -10380,6 +10495,7 @@ name: NS forest marker set of CGE/PoA MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000010175
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000052551
+property_value: PCL:0010062 "0.900145611790142" xsd:string
 
 [Term]
 id: PCL:0012625
@@ -10387,6 +10503,7 @@ name: NS forest marker set of Lamp5-like MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000029819
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000075270
+property_value: PCL:0010062 "0.792566275" xsd:string
 
 [Term]
 id: PCL:0012628
@@ -10394,6 +10511,7 @@ name: NS forest marker set of Lamp5-like_C5 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000021508
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000049001
+property_value: PCL:0010062 "0.583900226757369" xsd:string
 
 [Term]
 id: PCL:0012633
@@ -10401,6 +10519,7 @@ name: NS forest marker set of Sncg-like MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000044288
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000058897
+property_value: PCL:0010062 "0.819339896" xsd:string
 
 [Term]
 id: PCL:0012634
@@ -10408,12 +10527,14 @@ name: NS forest marker set of Sncg-like_C2 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000048967
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000059049
+property_value: PCL:0010062 "0.72" xsd:string
 
 [Term]
 id: PCL:0012638
 name: NS forest marker set of Vip-like MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000019772
+property_value: PCL:0010062 "0.894014775" xsd:string
 
 [Term]
 id: PCL:0012639
@@ -10422,6 +10543,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000022371
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000022425
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000038718
+property_value: PCL:0010062 "0.686619718309859" xsd:string
 
 [Term]
 id: PCL:0012643
@@ -10430,6 +10552,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000000805
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000019772
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000049796
+property_value: PCL:0010062 "0.720377019748653" xsd:string
 
 [Term]
 id: PCL:0012645
@@ -10437,6 +10560,7 @@ name: NS forest marker set of L2/3 Bipolar VIP cell MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000019772
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000030170
+property_value: PCL:0010062 "0.77594295364984" xsd:string
 
 [Term]
 id: PCL:0012649
@@ -10444,6 +10568,7 @@ name: NS forest marker set of Vip-like_C4 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000042581
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000110468
+property_value: PCL:0010062 "0.74223245109321" xsd:string
 
 [Term]
 id: PCL:0012650
@@ -10451,6 +10576,7 @@ name: NS forest marker set of MGE MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000046178
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000094083
+property_value: PCL:0010062 "0.926157987561496" xsd:string
 
 [Term]
 id: PCL:0012656
@@ -10458,6 +10584,7 @@ name: NS forest marker set of Sst-like_C1 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000027400
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000062151
+property_value: PCL:0010062 "0.543956043956044" xsd:string
 
 [Term]
 id: PCL:0012661
@@ -10466,6 +10593,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000024990
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000031997
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000068220
+property_value: PCL:0010062 "0.561145510835913" xsd:string
 
 [Term]
 id: PCL:0012664
@@ -10473,6 +10601,7 @@ name: NS forest marker set of L2/3/5 fan Martinotti cell MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000004366
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000027965
+property_value: PCL:0010062 "0.78125" xsd:string
 
 [Term]
 id: PCL:0012665
@@ -10481,6 +10610,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000031841
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000036019
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000049796
+property_value: PCL:0010062 "0.681818181818181" xsd:string
 
 [Term]
 id: PCL:0012670
@@ -10488,6 +10618,7 @@ name: NS forest marker set of L6 Th+ SST/PV cell MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000000214
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000028971
+property_value: PCL:0010062 "0.557768924302788" xsd:string
 
 [Term]
 id: PCL:0012677
@@ -10495,6 +10626,7 @@ name: NS forest marker set of Upper FS Basket cell MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000010461
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000052353
+property_value: PCL:0010062 "0.785057573864143" xsd:string
 
 [Term]
 id: PCL:0012678
@@ -10502,6 +10634,7 @@ name: NS forest marker set of Chandelier MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000020099
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000067028
+property_value: PCL:0010062 "0.817307692307692" xsd:string
 
 [Term]
 id: PCL:0012682
@@ -10509,6 +10642,7 @@ name: NS forest marker set of IT projecting MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000036264
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000038331
+property_value: PCL:0010062 "0.938579668560051" xsd:string
 
 [Term]
 id: PCL:0012683
@@ -10517,6 +10651,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000021708
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000028222
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000059187
+property_value: PCL:0010062 "0.842101815" xsd:string
 
 [Term]
 id: PCL:0012688
@@ -10525,6 +10660,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000034402
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000036192
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000084890
+property_value: PCL:0010062 "0.783614852295557" xsd:string
 
 [Term]
 id: PCL:0012689
@@ -10533,6 +10669,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000035357
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000039037
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000040452
+property_value: PCL:0010062 "0.799873775" xsd:string
 
 [Term]
 id: PCL:0012690
@@ -10540,6 +10677,7 @@ name: NS forest marker set of L5 IT_C2 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000022419
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000059203
+property_value: PCL:0010062 "0.817650001924335" xsd:string
 
 [Term]
 id: PCL:0012692
@@ -10548,6 +10686,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000016918
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000052430
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000059203
+property_value: PCL:0010062 "0.759441708" xsd:string
 
 [Term]
 id: PCL:0012693
@@ -10555,6 +10694,7 @@ name: NS forest marker set of L5 ET MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000022206
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000098760
+property_value: PCL:0010062 "0.887669963" xsd:string
 
 [Term]
 id: PCL:0012694
@@ -10563,6 +10703,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000021541
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000068196
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000090125
+property_value: PCL:0010062 "0.79093534770051" xsd:string
 
 [Term]
 id: PCL:0012697
@@ -10570,6 +10711,7 @@ name: NS forest marker set of L6 CT MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000029563
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000078591
+property_value: PCL:0010062 "0.913592473" xsd:string
 
 [Term]
 id: PCL:0012703
@@ -10577,6 +10719,7 @@ name: NS forest marker set of L6b MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000019997
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000039714
+property_value: PCL:0010062 "0.822975852" xsd:string
 
 [Term]
 id: PCL:0012707
@@ -10584,6 +10727,7 @@ name: NS forest marker set of L5/6 NP MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000004151
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000047907
+property_value: PCL:0010062 "0.857866413" xsd:string
 
 [Term]
 id: PCL:0012709
@@ -10591,6 +10735,7 @@ name: NS forest marker set of Meis2 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000023800
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000035551
+property_value: PCL:0010062 "0.782828283" xsd:string
 
 [Term]
 id: PCL:0012711
@@ -10598,6 +10743,7 @@ name: NS forest marker set of Astro_C1 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000021318
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000036949
+property_value: PCL:0010062 "0.964334321220061" xsd:string
 
 [Term]
 id: PCL:0012732
@@ -10605,6 +10751,7 @@ name: NS forest marker set of Sst-like MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000004366
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000042453
+property_value: PCL:0010062 "0.88986014" xsd:string
 
 [Term]
 id: PCL:0012733
@@ -10612,6 +10759,7 @@ name: NS forest marker set of Pvalb-like MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000005716
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000031772
+property_value: PCL:0010062 "0.866939774" xsd:string
 
 [Term]
 id: PCL:0015001
@@ -14063,6 +14211,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/140689
 relationship: BFO:0000051 https://identifiers.org/ncbigene/222537
 relationship: BFO:0000051 https://identifiers.org/ncbigene/5649
 relationship: BFO:0000051 https://identifiers.org/ncbigene/7222
+property_value: PCL:0010062 "0.467914439" xsd:string
 
 [Term]
 id: PCL:0016502
@@ -14071,6 +14220,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/158326
 relationship: BFO:0000051 https://identifiers.org/ncbigene/4629
 relationship: BFO:0000051 https://identifiers.org/ncbigene/80070
+property_value: PCL:0010062 "0.496957404" xsd:string
 
 [Term]
 id: PCL:0016503
@@ -14080,6 +14230,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/153768
 relationship: BFO:0000051 https://identifiers.org/ncbigene/158326
 relationship: BFO:0000051 https://identifiers.org/ncbigene/23194
 relationship: BFO:0000051 https://identifiers.org/ncbigene/3815
+property_value: PCL:0010062 "0.752308984" xsd:string
 
 [Term]
 id: PCL:0016504
@@ -14090,6 +14241,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/2070
 relationship: BFO:0000051 https://identifiers.org/ncbigene/22854
 relationship: BFO:0000051 https://identifiers.org/ncbigene/3815
 relationship: BFO:0000051 https://identifiers.org/ncbigene/4920
+property_value: PCL:0010062 "0.299793246" xsd:string
 
 [Term]
 id: PCL:0016505
@@ -14097,6 +14249,7 @@ name: NS forest marker set of Inh L1-6 LAMP5 CA1 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/4842
 relationship: BFO:0000051 https://identifiers.org/ncbigene/9951
+property_value: PCL:0010062 "0.741595254" xsd:string
 
 [Term]
 id: PCL:0016506
@@ -14104,6 +14257,7 @@ name: NS forest marker set of Inh L5-6 LAMP5 CRABP1 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105379168
 relationship: BFO:0000051 https://identifiers.org/ncbigene/80310
+property_value: PCL:0010062 "0.792236717" xsd:string
 
 [Term]
 id: PCL:0016507
@@ -14111,6 +14265,7 @@ name: NS forest marker set of Inh L3-6 PAX6 LINC01497 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/54873
 relationship: BFO:0000051 https://identifiers.org/ncbigene/5649
+property_value: PCL:0010062 "0.833333333" xsd:string
 
 [Term]
 id: PCL:0016508
@@ -14118,6 +14273,7 @@ name: NS forest marker set of Inh L1 PAX6 MIR101-1 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/5649
 relationship: BFO:0000051 https://identifiers.org/ncbigene/7048
+property_value: PCL:0010062 "0.812619503" xsd:string
 
 [Term]
 id: PCL:0016509
@@ -14126,6 +14282,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100505474
 relationship: BFO:0000051 https://identifiers.org/ncbigene/1139
 relationship: BFO:0000051 https://identifiers.org/ncbigene/1268
+property_value: PCL:0010062 "0.518234165" xsd:string
 
 [Term]
 id: PCL:0016510
@@ -14133,6 +14290,7 @@ name: NS forest marker set of Inh L1-6 VIP SLC7A6OS M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/1268
 relationship: BFO:0000051 https://identifiers.org/ncbigene/5090
+property_value: PCL:0010062 "0.683229814" xsd:string
 
 [Term]
 id: PCL:0016511
@@ -14140,6 +14298,7 @@ name: NS forest marker set of Inh L2 PAX6 FREM2 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/148113
 relationship: BFO:0000051 https://identifiers.org/ncbigene/3490
+property_value: PCL:0010062 "0.788690476" xsd:string
 
 [Term]
 id: PCL:0016512
@@ -14147,6 +14306,7 @@ name: NS forest marker set of Inh L1-2 VIP HTR3A M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105373642
 relationship: BFO:0000051 https://identifiers.org/ncbigene/3359
+property_value: PCL:0010062 "0.745614035" xsd:string
 
 [Term]
 id: PCL:0016513
@@ -14154,6 +14314,7 @@ name: NS forest marker set of Inh L1-2 VIP WNT4 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105379064
 relationship: BFO:0000051 https://identifiers.org/ncbigene/143425
+property_value: PCL:0010062 "0.452898551" xsd:string
 
 [Term]
 id: PCL:0016514
@@ -14161,6 +14322,7 @@ name: NS forest marker set of Inh L1 LAMP5 BMP2 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/1290
 relationship: BFO:0000051 https://identifiers.org/ncbigene/158326
+property_value: PCL:0010062 "0.748207885" xsd:string
 
 [Term]
 id: PCL:0016515
@@ -14168,6 +14330,7 @@ name: NS forest marker set of Inh L1 LAMP5 NMBR M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/54510
 relationship: BFO:0000051 https://identifiers.org/ncbigene/5649
+property_value: PCL:0010062 "0.639360639" xsd:string
 
 [Term]
 id: PCL:0016516
@@ -14176,6 +14339,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/153768
 relationship: BFO:0000051 https://identifiers.org/ncbigene/344148
 relationship: BFO:0000051 https://identifiers.org/ncbigene/80332
+property_value: PCL:0010062 "0.759385666" xsd:string
 
 [Term]
 id: PCL:0016517
@@ -14184,6 +14348,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/143872
 relationship: BFO:0000051 https://identifiers.org/ncbigene/2308
 relationship: BFO:0000051 https://identifiers.org/ncbigene/338596
+property_value: PCL:0010062 "0.478723404" xsd:string
 
 [Term]
 id: PCL:0016518
@@ -14191,6 +14356,7 @@ name: NS forest marker set of Inh L1 SST DEFB108B M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/341359
 relationship: BFO:0000051 https://identifiers.org/ncbigene/64579
+property_value: PCL:0010062 "0.519187359" xsd:string
 
 [Term]
 id: PCL:0016519
@@ -14199,6 +14365,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/284825
 relationship: BFO:0000051 https://identifiers.org/ncbigene/3358
 relationship: BFO:0000051 https://identifiers.org/ncbigene/6866
+property_value: PCL:0010062 "0.6625" xsd:string
 
 [Term]
 id: PCL:0016520
@@ -14206,6 +14373,7 @@ name: NS forest marker set of Inh L1-2 VIP EXPH5 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/6344
 relationship: BFO:0000051 https://identifiers.org/ncbigene/9705
+property_value: PCL:0010062 "0.621716287" xsd:string
 
 [Term]
 id: PCL:0016521
@@ -14213,6 +14381,7 @@ name: NS forest marker set of Inh L1-3 VIP HSPB6 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/3488
 relationship: BFO:0000051 https://identifiers.org/ncbigene/901
+property_value: PCL:0010062 "0.327060932" xsd:string
 
 [Term]
 id: PCL:0016522
@@ -14221,6 +14390,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/117583
 relationship: BFO:0000051 https://identifiers.org/ncbigene/131096
 relationship: BFO:0000051 https://identifiers.org/ncbigene/341359
+property_value: PCL:0010062 "0.5" xsd:string
 
 [Term]
 id: PCL:0016523
@@ -14229,6 +14399,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100506497
 relationship: BFO:0000051 https://identifiers.org/ncbigene/131096
 relationship: BFO:0000051 https://identifiers.org/ncbigene/25890
+property_value: PCL:0010062 "0.6" xsd:string
 
 [Term]
 id: PCL:0016524
@@ -14237,6 +14408,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101927286
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101928842
 relationship: BFO:0000051 https://identifiers.org/ncbigene/131096
+property_value: PCL:0010062 "0.457227139" xsd:string
 
 [Term]
 id: PCL:0016525
@@ -14245,6 +14417,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105373642
 relationship: BFO:0000051 https://identifiers.org/ncbigene/151242
 relationship: BFO:0000051 https://identifiers.org/ncbigene/2070
+property_value: PCL:0010062 "0.666969147" xsd:string
 
 [Term]
 id: PCL:0016526
@@ -14252,6 +14425,7 @@ name: NS forest marker set of Inh L2 VIP SLC6A16 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105370456
 relationship: BFO:0000051 https://identifiers.org/ncbigene/343450
+property_value: PCL:0010062 "0.578125" xsd:string
 
 [Term]
 id: PCL:0016527
@@ -14259,6 +14433,7 @@ name: NS forest marker set of Inh L1 VIP KLHDC8B M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/139065
 relationship: BFO:0000051 https://identifiers.org/ncbigene/9358
+property_value: PCL:0010062 "0.645756458" xsd:string
 
 [Term]
 id: PCL:0016528
@@ -14266,6 +14441,7 @@ name: NS forest marker set of Inh L3-5 VIP IGDCC3 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/2069
 relationship: BFO:0000051 https://identifiers.org/ncbigene/50507
+property_value: PCL:0010062 "0.595533499" xsd:string
 
 [Term]
 id: PCL:0016529
@@ -14274,6 +14450,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/284
 relationship: BFO:0000051 https://identifiers.org/ncbigene/64093
 relationship: BFO:0000051 https://identifiers.org/ncbigene/7432
+property_value: PCL:0010062 "0.568965517" xsd:string
 
 [Term]
 id: PCL:0016530
@@ -14282,6 +14459,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/10788
 relationship: BFO:0000051 https://identifiers.org/ncbigene/25890
 relationship: BFO:0000051 https://identifiers.org/ncbigene/6581
+property_value: PCL:0010062 "0.624151967" xsd:string
 
 [Term]
 id: PCL:0016531
@@ -14290,6 +14468,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/115207
 relationship: BFO:0000051 https://identifiers.org/ncbigene/117583
 relationship: BFO:0000051 https://identifiers.org/ncbigene/25890
+property_value: PCL:0010062 "0.552995392" xsd:string
 
 [Term]
 id: PCL:0016532
@@ -14298,6 +14477,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/10788
 relationship: BFO:0000051 https://identifiers.org/ncbigene/162282
 relationship: BFO:0000051 https://identifiers.org/ncbigene/93556
+property_value: PCL:0010062 "0.552763819" xsd:string
 
 [Term]
 id: PCL:0016533
@@ -14306,6 +14486,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101927078
 relationship: BFO:0000051 https://identifiers.org/ncbigene/5139
 relationship: BFO:0000051 https://identifiers.org/ncbigene/9705
+property_value: PCL:0010062 "0.480427046" xsd:string
 
 [Term]
 id: PCL:0016534
@@ -14314,6 +14495,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/3358
 relationship: BFO:0000051 https://identifiers.org/ncbigene/80731
 relationship: BFO:0000051 https://identifiers.org/ncbigene/92949
+property_value: PCL:0010062 "0.708333333" xsd:string
 
 [Term]
 id: PCL:0016535
@@ -14321,6 +14503,7 @@ name: NS forest marker set of Inh L3-6 VIP ZIM2-AS1 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/5179
 relationship: BFO:0000051 https://identifiers.org/ncbigene/9547
+property_value: PCL:0010062 "0.827137546" xsd:string
 
 [Term]
 id: PCL:0016536
@@ -14328,6 +14511,7 @@ name: NS forest marker set of Inh L1-5 VIP PHLDB3 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/1950
 relationship: BFO:0000051 https://identifiers.org/ncbigene/80731
+property_value: PCL:0010062 "0.503731343" xsd:string
 
 [Term]
 id: PCL:0016537
@@ -14336,6 +14520,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/117154
 relationship: BFO:0000051 https://identifiers.org/ncbigene/57522
 relationship: BFO:0000051 https://identifiers.org/ncbigene/80731
+property_value: PCL:0010062 "0.640326975" xsd:string
 
 [Term]
 id: PCL:0016538
@@ -14344,6 +14529,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101928176
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105373454
 relationship: BFO:0000051 https://identifiers.org/ncbigene/55568
+property_value: PCL:0010062 "0.507462687" xsd:string
 
 [Term]
 id: PCL:0016539
@@ -14352,12 +14538,14 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/128553
 relationship: BFO:0000051 https://identifiers.org/ncbigene/1310
 relationship: BFO:0000051 https://identifiers.org/ncbigene/347689
+property_value: PCL:0010062 "0.580204778" xsd:string
 
 [Term]
 id: PCL:0016540
 name: NS forest marker set of Inh L1-6 SST NPY M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/4852
+property_value: PCL:0010062 "0.951661631" xsd:string
 
 [Term]
 id: PCL:0016541
@@ -14366,6 +14554,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/158326
 relationship: BFO:0000051 https://identifiers.org/ncbigene/255743
 relationship: BFO:0000051 https://identifiers.org/ncbigene/84109
+property_value: PCL:0010062 "0.477707006" xsd:string
 
 [Term]
 id: PCL:0016542
@@ -14374,6 +14563,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/158326
 relationship: BFO:0000051 https://identifiers.org/ncbigene/1909
 relationship: BFO:0000051 https://identifiers.org/ncbigene/29953
+property_value: PCL:0010062 "0.578386606" xsd:string
 
 [Term]
 id: PCL:0016543
@@ -14381,6 +14571,7 @@ name: NS forest marker set of Inh L5-6 SST ISX M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/1310
 relationship: BFO:0000051 https://identifiers.org/ncbigene/80036
+property_value: PCL:0010062 "0.563165906" xsd:string
 
 [Term]
 id: PCL:0016544
@@ -14389,6 +14580,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/10418
 relationship: BFO:0000051 https://identifiers.org/ncbigene/3248
 relationship: BFO:0000051 https://identifiers.org/ncbigene/8490
+property_value: PCL:0010062 "0.670241287" xsd:string
 
 [Term]
 id: PCL:0016545
@@ -14397,6 +14589,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/11096
 relationship: BFO:0000051 https://identifiers.org/ncbigene/23194
 relationship: BFO:0000051 https://identifiers.org/ncbigene/6750
+property_value: PCL:0010062 "0.384615385" xsd:string
 
 [Term]
 id: PCL:0016546
@@ -14404,6 +14597,7 @@ name: NS forest marker set of Inh L3-5 SST GGTLC3 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/346007
 relationship: BFO:0000051 https://identifiers.org/ncbigene/5649
+property_value: PCL:0010062 "0.609300747" xsd:string
 
 [Term]
 id: PCL:0016547
@@ -14412,6 +14606,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/4842
 relationship: BFO:0000051 https://identifiers.org/ncbigene/60495
 relationship: BFO:0000051 https://identifiers.org/ncbigene/63895
+property_value: PCL:0010062 "0.520547945" xsd:string
 
 [Term]
 id: PCL:0016548
@@ -14420,6 +14615,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/29953
 relationship: BFO:0000051 https://identifiers.org/ncbigene/64097
 relationship: BFO:0000051 https://identifiers.org/ncbigene/64579
+property_value: PCL:0010062 "0.442386831" xsd:string
 
 [Term]
 id: PCL:0016549
@@ -14427,6 +14623,7 @@ name: NS forest marker set of Inh L5-6 SST PIK3CD M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100996671
 relationship: BFO:0000051 https://identifiers.org/ncbigene/57565
+property_value: PCL:0010062 "0.475247525" xsd:string
 
 [Term]
 id: PCL:0016550
@@ -14435,6 +14632,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/793
 relationship: BFO:0000051 https://identifiers.org/ncbigene/80309
 relationship: BFO:0000051 https://identifiers.org/ncbigene/92293
+property_value: PCL:0010062 "0.530660377" xsd:string
 
 [Term]
 id: PCL:0016551
@@ -14442,6 +14640,7 @@ name: NS forest marker set of Inh L1-3 SST FAM20A M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/5125
 relationship: BFO:0000051 https://identifiers.org/ncbigene/6863
+property_value: PCL:0010062 "0.527268028" xsd:string
 
 [Term]
 id: PCL:0016552
@@ -14449,6 +14648,7 @@ name: NS forest marker set of Inh L1-2 SST PRRT4 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101927843
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101929028
+property_value: PCL:0010062 "0.697674419" xsd:string
 
 [Term]
 id: PCL:0016553
@@ -14458,6 +14658,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/29953
 relationship: BFO:0000051 https://identifiers.org/ncbigene/80731
 relationship: BFO:0000051 https://identifiers.org/ncbigene/9037
 relationship: BFO:0000051 https://identifiers.org/ncbigene/92949
+property_value: PCL:0010062 "0.617088608" xsd:string
 
 [Term]
 id: PCL:0016554
@@ -14466,6 +14667,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/3082
 relationship: BFO:0000051 https://identifiers.org/ncbigene/3672
 relationship: BFO:0000051 https://identifiers.org/ncbigene/85439
+property_value: PCL:0010062 "0.492957746" xsd:string
 
 [Term]
 id: PCL:0016555
@@ -14474,6 +14676,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/10418
 relationship: BFO:0000051 https://identifiers.org/ncbigene/5179
 relationship: BFO:0000051 https://identifiers.org/ncbigene/80070
+property_value: PCL:0010062 "0.622775801" xsd:string
 
 [Term]
 id: PCL:0016556
@@ -14481,6 +14684,7 @@ name: NS forest marker set of Inh L5-6 SST FBN2 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/3062
 relationship: BFO:0000051 https://identifiers.org/ncbigene/57626
+property_value: PCL:0010062 "0.395833333" xsd:string
 
 [Term]
 id: PCL:0016557
@@ -14489,6 +14693,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/246213
 relationship: BFO:0000051 https://identifiers.org/ncbigene/57565
 relationship: BFO:0000051 https://identifiers.org/ncbigene/64579
+property_value: PCL:0010062 "0.620300752" xsd:string
 
 [Term]
 id: PCL:0016558
@@ -14496,6 +14701,7 @@ name: NS forest marker set of Inh L6 SST TH M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100128108
 relationship: BFO:0000051 https://identifiers.org/ncbigene/7054
+property_value: PCL:0010062 "0.714285714" xsd:string
 
 [Term]
 id: PCL:0016559
@@ -14504,6 +14710,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/10451
 relationship: BFO:0000051 https://identifiers.org/ncbigene/10886
 relationship: BFO:0000051 https://identifiers.org/ncbigene/2262
+property_value: PCL:0010062 "0.66091954" xsd:string
 
 [Term]
 id: PCL:0016560
@@ -14512,6 +14719,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/102723356
 relationship: BFO:0000051 https://identifiers.org/ncbigene/65217
 relationship: BFO:0000051 https://identifiers.org/ncbigene/80031
+property_value: PCL:0010062 "0.705244123" xsd:string
 
 [Term]
 id: PCL:0016561
@@ -14520,6 +14728,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101926942
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105377862
 relationship: BFO:0000051 https://identifiers.org/ncbigene/22987
+property_value: PCL:0010062 "0.559299191" xsd:string
 
 [Term]
 id: PCL:0016562
@@ -14528,6 +14737,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/1004
 relationship: BFO:0000051 https://identifiers.org/ncbigene/2262
 relationship: BFO:0000051 https://identifiers.org/ncbigene/51196
+property_value: PCL:0010062 "0.705394191" xsd:string
 
 [Term]
 id: PCL:0016563
@@ -14536,6 +14746,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/170691
 relationship: BFO:0000051 https://identifiers.org/ncbigene/29969
 relationship: BFO:0000051 https://identifiers.org/ncbigene/80070
+property_value: PCL:0010062 "0.488683128" xsd:string
 
 [Term]
 id: PCL:0016564
@@ -14545,6 +14756,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/10631
 relationship: BFO:0000051 https://identifiers.org/ncbigene/11197
 relationship: BFO:0000051 https://identifiers.org/ncbigene/143872
 relationship: BFO:0000051 https://identifiers.org/ncbigene/4645
+property_value: PCL:0010062 "0.669112984" xsd:string
 
 [Term]
 id: PCL:0016565
@@ -14552,6 +14764,7 @@ name: NS forest marker set of Inh L3 PVALB SAMD13 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101928964
 relationship: BFO:0000051 https://identifiers.org/ncbigene/23213
+property_value: PCL:0010062 "0.746232377" xsd:string
 
 [Term]
 id: PCL:0016566
@@ -14560,6 +14773,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/341359
 relationship: BFO:0000051 https://identifiers.org/ncbigene/81792
 relationship: BFO:0000051 https://identifiers.org/ncbigene/92293
+property_value: PCL:0010062 "0.462046205" xsd:string
 
 [Term]
 id: PCL:0016567
@@ -14568,6 +14782,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/140689
 relationship: BFO:0000051 https://identifiers.org/ncbigene/285195
 relationship: BFO:0000051 https://identifiers.org/ncbigene/8490
+property_value: PCL:0010062 "0.462555066" xsd:string
 
 [Term]
 id: PCL:0016568
@@ -14576,6 +14791,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/143872
 relationship: BFO:0000051 https://identifiers.org/ncbigene/4734
 relationship: BFO:0000051 https://identifiers.org/ncbigene/6863
+property_value: PCL:0010062 "0.543071161" xsd:string
 
 [Term]
 id: PCL:0016569
@@ -14584,6 +14800,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/10512
 relationship: BFO:0000051 https://identifiers.org/ncbigene/2262
 relationship: BFO:0000051 https://identifiers.org/ncbigene/4604
+property_value: PCL:0010062 "0.689189189" xsd:string
 
 [Term]
 id: PCL:0016570
@@ -14592,6 +14809,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/285016
 relationship: BFO:0000051 https://identifiers.org/ncbigene/3371
 relationship: BFO:0000051 https://identifiers.org/ncbigene/4604
+property_value: PCL:0010062 "0.58419244" xsd:string
 
 [Term]
 id: PCL:0016571
@@ -14600,6 +14818,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/4604
 relationship: BFO:0000051 https://identifiers.org/ncbigene/56955
 relationship: BFO:0000051 https://identifiers.org/ncbigene/6840
+property_value: PCL:0010062 "0.59490085" xsd:string
 
 [Term]
 id: PCL:0016572
@@ -14607,6 +14826,7 @@ name: NS forest marker set of Inh L1-6 PVALB COL15A1 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/1306
 relationship: BFO:0000051 https://identifiers.org/ncbigene/255743
+property_value: PCL:0010062 "0.853413655" xsd:string
 
 [Term]
 id: PCL:0016573
@@ -14615,6 +14835,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101927668
 relationship: BFO:0000051 https://identifiers.org/ncbigene/148753
 relationship: BFO:0000051 https://identifiers.org/ncbigene/154075
+property_value: PCL:0010062 "0.412573674" xsd:string
 
 [Term]
 id: PCL:0016574
@@ -14622,6 +14843,7 @@ name: NS forest marker set of Exc L2 LINC00507 ATP7B M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105377209
 relationship: BFO:0000051 https://identifiers.org/ncbigene/130399
+property_value: PCL:0010062 "0.44" xsd:string
 
 [Term]
 id: PCL:0016575
@@ -14630,6 +14852,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101928278
 relationship: BFO:0000051 https://identifiers.org/ncbigene/103689918
 relationship: BFO:0000051 https://identifiers.org/ncbigene/5270
+property_value: PCL:0010062 "0.77315952" xsd:string
 
 [Term]
 id: PCL:0016576
@@ -14639,6 +14862,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/101927745
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105376987
 relationship: BFO:0000051 https://identifiers.org/ncbigene/196475
 relationship: BFO:0000051 https://identifiers.org/ncbigene/23007
+property_value: PCL:0010062 "0.521909512" xsd:string
 
 [Term]
 id: PCL:0016577
@@ -14647,6 +14871,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105379003
 relationship: BFO:0000051 https://identifiers.org/ncbigene/627
 relationship: BFO:0000051 https://identifiers.org/ncbigene/658
+property_value: PCL:0010062 "0.536947514" xsd:string
 
 [Term]
 id: PCL:0016578
@@ -14655,6 +14880,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/127833
 relationship: BFO:0000051 https://identifiers.org/ncbigene/22987
 relationship: BFO:0000051 https://identifiers.org/ncbigene/64097
+property_value: PCL:0010062 "0.737033343" xsd:string
 
 [Term]
 id: PCL:0016579
@@ -14664,6 +14890,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/103689918
 relationship: BFO:0000051 https://identifiers.org/ncbigene/4155
 relationship: BFO:0000051 https://identifiers.org/ncbigene/5168
 relationship: BFO:0000051 https://identifiers.org/ncbigene/9705
+property_value: PCL:0010062 "0.539007092" xsd:string
 
 [Term]
 id: PCL:0016580
@@ -14672,6 +14899,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/1290
 relationship: BFO:0000051 https://identifiers.org/ncbigene/22837
 relationship: BFO:0000051 https://identifiers.org/ncbigene/8492
+property_value: PCL:0010062 "0.786792959" xsd:string
 
 [Term]
 id: PCL:0016581
@@ -14681,6 +14909,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/105370610
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105378334
 relationship: BFO:0000051 https://identifiers.org/ncbigene/1290
 relationship: BFO:0000051 https://identifiers.org/ncbigene/6096
+property_value: PCL:0010062 "0.395338208" xsd:string
 
 [Term]
 id: PCL:0016582
@@ -14690,6 +14919,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/101928964
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105376081
 relationship: BFO:0000051 https://identifiers.org/ncbigene/2191
 relationship: BFO:0000051 https://identifiers.org/ncbigene/3908
+property_value: PCL:0010062 "0.433660299" xsd:string
 
 [Term]
 id: PCL:0016583
@@ -14698,6 +14928,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100507562
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105376081
 relationship: BFO:0000051 https://identifiers.org/ncbigene/2492
+property_value: PCL:0010062 "0.443247722" xsd:string
 
 [Term]
 id: PCL:0016584
@@ -14708,6 +14939,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/101927281
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105376081
 relationship: BFO:0000051 https://identifiers.org/ncbigene/131096
 relationship: BFO:0000051 https://identifiers.org/ncbigene/7222
+property_value: PCL:0010062 "0.489690722" xsd:string
 
 [Term]
 id: PCL:0016585
@@ -14716,6 +14948,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101927389
 relationship: BFO:0000051 https://identifiers.org/ncbigene/1602
 relationship: BFO:0000051 https://identifiers.org/ncbigene/3371
+property_value: PCL:0010062 "0.670289855" xsd:string
 
 [Term]
 id: PCL:0016586
@@ -14723,6 +14956,7 @@ name: NS forest marker set of Exc L3 RORB OTOGL M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/169044
 relationship: BFO:0000051 https://identifiers.org/ncbigene/196475
+property_value: PCL:0010062 "0.703101013" xsd:string
 
 [Term]
 id: PCL:0016587
@@ -14732,6 +14966,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/101927874
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105374971
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105376081
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105377703
+property_value: PCL:0010062 "0.625" xsd:string
 
 [Term]
 id: PCL:0016588
@@ -14741,6 +14976,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/147372
 relationship: BFO:0000051 https://identifiers.org/ncbigene/153579
 relationship: BFO:0000051 https://identifiers.org/ncbigene/23657
 relationship: BFO:0000051 https://identifiers.org/ncbigene/401134
+property_value: PCL:0010062 "0.773195876" xsd:string
 
 [Term]
 id: PCL:0016589
@@ -14750,6 +14986,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/105373893
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105378031
 relationship: BFO:0000051 https://identifiers.org/ncbigene/128553
 relationship: BFO:0000051 https://identifiers.org/ncbigene/4052
+property_value: PCL:0010062 "0.454866008" xsd:string
 
 [Term]
 id: PCL:0016590
@@ -14758,6 +14995,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105374971
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105377703
 relationship: BFO:0000051 https://identifiers.org/ncbigene/129293
+property_value: PCL:0010062 "0.697930555" xsd:string
 
 [Term]
 id: PCL:0016591
@@ -14766,6 +15004,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105374971
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105374973
 relationship: BFO:0000051 https://identifiers.org/ncbigene/56475
+property_value: PCL:0010062 "0.585186785" xsd:string
 
 [Term]
 id: PCL:0016592
@@ -14774,6 +15013,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/10886
 relationship: BFO:0000051 https://identifiers.org/ncbigene/169044
 relationship: BFO:0000051 https://identifiers.org/ncbigene/401134
+property_value: PCL:0010062 "0.589692765" xsd:string
 
 [Term]
 id: PCL:0016593
@@ -14782,6 +15022,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/10886
 relationship: BFO:0000051 https://identifiers.org/ncbigene/1392
 relationship: BFO:0000051 https://identifiers.org/ncbigene/627
+property_value: PCL:0010062 "0.452488688" xsd:string
 
 [Term]
 id: PCL:0016594
@@ -14790,6 +15031,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/144920
 relationship: BFO:0000051 https://identifiers.org/ncbigene/339789
 relationship: BFO:0000051 https://identifiers.org/ncbigene/374860
+property_value: PCL:0010062 "0.564328843" xsd:string
 
 [Term]
 id: PCL:0016595
@@ -14798,6 +15040,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105371832
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105374524
 relationship: BFO:0000051 https://identifiers.org/ncbigene/148753
+property_value: PCL:0010062 "0.425145349" xsd:string
 
 [Term]
 id: PCL:0016596
@@ -14805,6 +15048,7 @@ name: NS forest marker set of Exc L6 THEMIS SNTG2 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101927389
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105371310
+property_value: PCL:0010062 "0.634398496" xsd:string
 
 [Term]
 id: PCL:0016597
@@ -14812,6 +15056,7 @@ name: NS forest marker set of Exc L5-6 THEMIS SMYD1 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/57194
 relationship: BFO:0000051 https://identifiers.org/ncbigene/7224
+property_value: PCL:0010062 "0.809674027" xsd:string
 
 [Term]
 id: PCL:0016598
@@ -14821,6 +15066,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/101927439
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105374392
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105377183
 relationship: BFO:0000051 https://identifiers.org/ncbigene/59352
+property_value: PCL:0010062 "0.71942446" xsd:string
 
 [Term]
 id: PCL:0016599
@@ -14828,6 +15074,7 @@ name: NS forest marker set of Exc L5 THEMIS LINC01116 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105369890
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105371663
+property_value: PCL:0010062 "0.613577023" xsd:string
 
 [Term]
 id: PCL:0016600
@@ -14836,6 +15083,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105371663
 relationship: BFO:0000051 https://identifiers.org/ncbigene/387357
 relationship: BFO:0000051 https://identifiers.org/ncbigene/4921
+property_value: PCL:0010062 "0.521367521" xsd:string
 
 [Term]
 id: PCL:0016601
@@ -14844,6 +15092,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/9037
 relationship: BFO:0000051 https://identifiers.org/ncbigene/93556
 relationship: BFO:0000051 https://identifiers.org/ncbigene/93986
+property_value: PCL:0010062 "0.751859724" xsd:string
 
 [Term]
 id: PCL:0016602
@@ -14853,6 +15102,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/100128497
 relationship: BFO:0000051 https://identifiers.org/ncbigene/23213
 relationship: BFO:0000051 https://identifiers.org/ncbigene/55784
 relationship: BFO:0000051 https://identifiers.org/ncbigene/89866
+property_value: PCL:0010062 "0.398773006" xsd:string
 
 [Term]
 id: PCL:0016603
@@ -14862,6 +15112,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/22829
 relationship: BFO:0000051 https://identifiers.org/ncbigene/4212
 relationship: BFO:0000051 https://identifiers.org/ncbigene/9060
 relationship: BFO:0000051 https://identifiers.org/ncbigene/92949
+property_value: PCL:0010062 "0.478873239" xsd:string
 
 [Term]
 id: PCL:0016604
@@ -14869,6 +15120,7 @@ name: NS forest marker set of Exc L6 FEZF2 PDYN M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/2634
 relationship: BFO:0000051 https://identifiers.org/ncbigene/5173
+property_value: PCL:0010062 "0.652173913" xsd:string
 
 [Term]
 id: PCL:0016605
@@ -14876,6 +15128,7 @@ name: NS forest marker set of Exc L6 FEZF2 FFAR4 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105378486
 relationship: BFO:0000051 https://identifiers.org/ncbigene/157376
+property_value: PCL:0010062 "0.589430894" xsd:string
 
 [Term]
 id: PCL:0016606
@@ -14883,6 +15136,7 @@ name: NS forest marker set of Exc L6 FEZF2 PROKR2 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105371310
 relationship: BFO:0000051 https://identifiers.org/ncbigene/84189
+property_value: PCL:0010062 "0.595238095" xsd:string
 
 [Term]
 id: PCL:0016607
@@ -14891,6 +15145,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105374392
 relationship: BFO:0000051 https://identifiers.org/ncbigene/223117
 relationship: BFO:0000051 https://identifiers.org/ncbigene/4929
+property_value: PCL:0010062 "0.463709677" xsd:string
 
 [Term]
 id: PCL:0016608
@@ -14898,6 +15153,7 @@ name: NS forest marker set of Exc L6 FEZF2 KLK7 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101927439
 relationship: BFO:0000051 https://identifiers.org/ncbigene/29969
+property_value: PCL:0010062 "0.841019228" xsd:string
 
 [Term]
 id: PCL:0016609
@@ -14906,6 +15162,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100132891
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100505933
 relationship: BFO:0000051 https://identifiers.org/ncbigene/26577
+property_value: PCL:0010062 "0.496613995" xsd:string
 
 [Term]
 id: PCL:0016610
@@ -14914,6 +15171,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105373592
 relationship: BFO:0000051 https://identifiers.org/ncbigene/57687
 relationship: BFO:0000051 https://identifiers.org/ncbigene/94233
+property_value: PCL:0010062 "0.731225296" xsd:string
 
 [Term]
 id: PCL:0016611
@@ -14921,6 +15179,7 @@ name: NS forest marker set of Exc L3-5 FEZF2 ASGR2 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105376457
 relationship: BFO:0000051 https://identifiers.org/ncbigene/81285
+property_value: PCL:0010062 "0.799528302" xsd:string
 
 [Term]
 id: PCL:0016612
@@ -14928,6 +15187,7 @@ name: NS forest marker set of Exc L3-5 FEZF2 LINC01107 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/153579
 relationship: BFO:0000051 https://identifiers.org/ncbigene/1910
+property_value: PCL:0010062 "0.8" xsd:string
 
 [Term]
 id: PCL:0016613
@@ -14935,6 +15195,7 @@ name: NS forest marker set of Exc L5 FEZF2 PKD2L1 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/389136
 relationship: BFO:0000051 https://identifiers.org/ncbigene/404744
+property_value: PCL:0010062 "0.80199115" xsd:string
 
 [Term]
 id: PCL:0016614
@@ -14943,6 +15204,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105370315
 relationship: BFO:0000051 https://identifiers.org/ncbigene/81792
 relationship: BFO:0000051 https://identifiers.org/ncbigene/948
+property_value: PCL:0010062 "0.68296796" xsd:string
 
 [Term]
 id: PCL:0016615
@@ -14951,6 +15213,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105369818
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105370019
 relationship: BFO:0000051 https://identifiers.org/ncbigene/948
+property_value: PCL:0010062 "0.479651163" xsd:string
 
 [Term]
 id: PCL:0016616
@@ -14958,6 +15221,7 @@ name: NS forest marker set of Exc L5-6 FEZF2 IFNG-AS1 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105369818
 relationship: BFO:0000051 https://identifiers.org/ncbigene/404744
+property_value: PCL:0010062 "0.696267696" xsd:string
 
 [Term]
 id: PCL:0016617
@@ -14965,6 +15229,7 @@ name: NS forest marker set of Exc L5-6 FEZF2 LPO M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101928114
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105376372
+property_value: PCL:0010062 "0.760517799" xsd:string
 
 [Term]
 id: PCL:0016618
@@ -14972,6 +15237,7 @@ name: NS forest marker set of OPC L1-6 PDGFRA COL20A1 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/1462
 relationship: BFO:0000051 https://identifiers.org/ncbigene/202374
+property_value: PCL:0010062 "0.896358543" xsd:string
 
 [Term]
 id: PCL:0016619
@@ -14982,6 +15248,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/220416
 relationship: BFO:0000051 https://identifiers.org/ncbigene/5129
 relationship: BFO:0000051 https://identifiers.org/ncbigene/6285
 relationship: BFO:0000051 https://identifiers.org/ncbigene/9705
+property_value: PCL:0010062 "0.637963545" xsd:string
 
 [Term]
 id: PCL:0016620
@@ -14989,6 +15256,7 @@ name: NS forest marker set of Oligo L2-6 OPALIN FTH1P3 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101927459
 relationship: BFO:0000051 https://identifiers.org/ncbigene/5168
+property_value: PCL:0010062 "0.888034509" xsd:string
 
 [Term]
 id: PCL:0016621
@@ -14997,12 +15265,14 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/3834
 relationship: BFO:0000051 https://identifiers.org/ncbigene/7039
 relationship: BFO:0000051 https://identifiers.org/ncbigene/84915
+property_value: PCL:0010062 "0.714285714" xsd:string
 
 [Term]
 id: PCL:0016622
 name: NS forest marker set of Astro L1-6 FGFR3 AQP1 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/3371
+property_value: PCL:0010062 "0.825049702" xsd:string
 
 [Term]
 id: PCL:0016623
@@ -15010,6 +15280,7 @@ name: NS forest marker set of Astro L1 FGFR3 SERPINI2 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/151790
 relationship: BFO:0000051 https://identifiers.org/ncbigene/286464
+property_value: PCL:0010062 "0.478723404" xsd:string
 
 [Term]
 id: PCL:0016624
@@ -15017,12 +15288,14 @@ name: NS forest marker set of Astro L1-6 FGFR3 PLCG1 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105376917
 relationship: BFO:0000051 https://identifiers.org/ncbigene/50509
+property_value: PCL:0010062 "0.77376566" xsd:string
 
 [Term]
 id: PCL:0016625
 name: NS forest marker set of Endo L2-5 NOSTRIN SRGN M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/7122
+property_value: PCL:0010062 "0.923913043" xsd:string
 
 [Term]
 id: PCL:0016626
@@ -15030,6 +15303,7 @@ name: NS forest marker set of VLMC L1-5 PDGFRA COLEC12 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/1278
 relationship: BFO:0000051 https://identifiers.org/ncbigene/81035
+property_value: PCL:0010062 "0.929487179" xsd:string
 
 [Term]
 id: PCL:0016627
@@ -15037,6 +15311,7 @@ name: NS forest marker set of Micro L1-6 TYROBP CD74 M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/54518
 relationship: BFO:0000051 https://identifiers.org/ncbigene/64805
+property_value: PCL:0010062 "0.889423077" xsd:string
 
 [Term]
 id: PCL:0016628
@@ -15044,6 +15319,7 @@ name: NS forest marker set of (Mouse Lamp5)-like M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/2070
 relationship: BFO:0000051 https://identifiers.org/ncbigene/23026
+property_value: PCL:0010062 "0.911380261" xsd:string
 
 [Term]
 id: PCL:0016629
@@ -15052,12 +15328,14 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105
 relationship: BFO:0000051 https://identifiers.org/ncbigene/1268
 relationship: BFO:0000051 https://identifiers.org/ncbigene/9547
+property_value: PCL:0010062 "0.653061224" xsd:string
 
 [Term]
 id: PCL:0016630
 name: NS forest marker set of (Mouse Vip)-like M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/7432
+property_value: PCL:0010062 "0.88590604" xsd:string
 
 [Term]
 id: PCL:0016631
@@ -15066,6 +15344,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/30010
 relationship: BFO:0000051 https://identifiers.org/ncbigene/55553
 relationship: BFO:0000051 https://identifiers.org/ncbigene/6750
+property_value: PCL:0010062 "0.888260371" xsd:string
 
 [Term]
 id: PCL:0016632
@@ -15073,6 +15352,7 @@ name: NS forest marker set of (Mouse Pvalb)-like M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101929680
 relationship: BFO:0000051 https://identifiers.org/ncbigene/170691
+property_value: PCL:0010062 "0.880051683" xsd:string
 
 [Term]
 id: PCL:0016634
@@ -15080,6 +15360,7 @@ name: NS forest marker set of (Mouse L5 IT)-like M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105374971
 relationship: BFO:0000051 https://identifiers.org/ncbigene/6096
+property_value: PCL:0010062 "0.825020189" xsd:string
 
 [Term]
 id: PCL:0016635
@@ -15088,6 +15369,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101928278
 relationship: BFO:0000051 https://identifiers.org/ncbigene/144920
 relationship: BFO:0000051 https://identifiers.org/ncbigene/387357
+property_value: PCL:0010062 "0.684065302" xsd:string
 
 [Term]
 id: PCL:0016636
@@ -15096,6 +15378,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/9037
 relationship: BFO:0000051 https://identifiers.org/ncbigene/93556
 relationship: BFO:0000051 https://identifiers.org/ncbigene/9951
+property_value: PCL:0010062 "0.909253689" xsd:string
 
 [Term]
 id: PCL:0016637
@@ -15103,6 +15386,7 @@ name: NS forest marker set of (Mouse L6b)-like M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/223117
 relationship: BFO:0000051 https://identifiers.org/ncbigene/29969
+property_value: PCL:0010062 "0.883896569" xsd:string
 
 [Term]
 id: PCL:0016638
@@ -15110,24 +15394,28 @@ name: NS forest marker set of (Mouse L5 ET)-like M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105376457
 relationship: BFO:0000051 https://identifiers.org/ncbigene/81285
+property_value: PCL:0010062 "0.9" xsd:string
 
 [Term]
 id: PCL:0016639
 name: NS forest marker set of (Mouse L5/6 NP)-like M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/404744
+property_value: PCL:0010062 "0.927147766" xsd:string
 
 [Term]
 id: PCL:0016640
 name: NS forest marker set of Oligo M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/9705
+property_value: PCL:0010062 "0.964617513" xsd:string
 
 [Term]
 id: PCL:0016642
 name: NS forest marker set of Astro M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100874222
+property_value: PCL:0010062 "0.864946889" xsd:string
 
 [Term]
 id: PCL:0016671
@@ -15135,6 +15423,7 @@ name: NS forest marker set of (Mouse IT projecting)-like(i) M1 (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/23316
 relationship: BFO:0000051 https://identifiers.org/ncbigene/407738
+property_value: PCL:0010062 "0.94565095" xsd:string
 
 [Term]
 id: PCL:0019001
@@ -17618,6 +17907,7 @@ id: PCL:0020501
 name: NS forest marker set of Inh SST NPY M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100385471
+property_value: PCL:0010062 "0.818181818" xsd:string
 
 [Term]
 id: PCL:0020502
@@ -17625,6 +17915,7 @@ name: NS forest marker set of Inh LAMP5 COL5A2 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100408865
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100409063
+property_value: PCL:0010062 "0.698602794" xsd:string
 
 [Term]
 id: PCL:0020503
@@ -17633,6 +17924,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100399252
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100400741
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100403212
+property_value: PCL:0010062 "0.6" xsd:string
 
 [Term]
 id: PCL:0020504
@@ -17640,6 +17932,7 @@ name: NS forest marker set of Inh LAMP5 TRPC6 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100395510
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100396102
+property_value: PCL:0010062 "0.780456853" xsd:string
 
 [Term]
 id: PCL:0020505
@@ -17647,6 +17940,7 @@ name: NS forest marker set of Inh LAMP5 WWP1 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100395233
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100411615
+property_value: PCL:0010062 "0.550947867" xsd:string
 
 [Term]
 id: PCL:0020506
@@ -17654,6 +17948,7 @@ name: NS forest marker set of Inh LAMP5 LOC108591196 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100411615
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100894622
+property_value: PCL:0010062 "0.675276753" xsd:string
 
 [Term]
 id: PCL:0020507
@@ -17661,6 +17956,7 @@ name: NS forest marker set of Inh PAX6 HMBOX1 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100403212
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100408455
+property_value: PCL:0010062 "0.80141844" xsd:string
 
 [Term]
 id: PCL:0020508
@@ -17668,6 +17964,7 @@ name: NS forest marker set of Inh SNCG PLPPR1 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100386462
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100393865
+property_value: PCL:0010062 "0.747800587" xsd:string
 
 [Term]
 id: PCL:0020509
@@ -17676,6 +17973,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100392881
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100393503
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100393601
+property_value: PCL:0010062 "0.381679389" xsd:string
 
 [Term]
 id: PCL:0020510
@@ -17683,6 +17981,7 @@ name: NS forest marker set of Inh VIP CYP19A1 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100396765
 relationship: BFO:0000051 https://identifiers.org/ncbigene/103795617
+property_value: PCL:0010062 "0.537190083" xsd:string
 
 [Term]
 id: PCL:0020511
@@ -17691,6 +17990,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100395294
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100400927
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100407174
+property_value: PCL:0010062 "0.744680851" xsd:string
 
 [Term]
 id: PCL:0020512
@@ -17699,6 +17999,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100389893
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100390248
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100391230
+property_value: PCL:0010062 "0.700636943" xsd:string
 
 [Term]
 id: PCL:0020513
@@ -17706,6 +18007,7 @@ name: NS forest marker set of Inh GAD1 PCP4 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100391230
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100409152
+property_value: PCL:0010062 "0.523731588" xsd:string
 
 [Term]
 id: PCL:0020514
@@ -17713,6 +18015,7 @@ name: NS forest marker set of Inh GAD1 LOC108589948 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100391230
 relationship: BFO:0000051 https://identifiers.org/ncbigene/108589948
+property_value: PCL:0010062 "0.555555556" xsd:string
 
 [Term]
 id: PCL:0020515
@@ -17720,6 +18023,7 @@ name: NS forest marker set of Inh VIP THSD7B M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100391230
 relationship: BFO:0000051 https://identifiers.org/ncbigene/103788553
+property_value: PCL:0010062 "0.564263323" xsd:string
 
 [Term]
 id: PCL:0020516
@@ -17727,6 +18031,7 @@ name: NS forest marker set of Inh VIP LOC100397259 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100400454
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100410040
+property_value: PCL:0010062 "0.547752809" xsd:string
 
 [Term]
 id: PCL:0020517
@@ -17734,6 +18039,7 @@ name: NS forest marker set of Inh GAD1 NPSR1 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100403193
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100403979
+property_value: PCL:0010062 "0.603448276" xsd:string
 
 [Term]
 id: PCL:0020518
@@ -17742,6 +18048,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100386670
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100402719
 relationship: BFO:0000051 https://identifiers.org/ncbigene/103793609
+property_value: PCL:0010062 "0.619047619" xsd:string
 
 [Term]
 id: PCL:0020519
@@ -17750,6 +18057,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100388729
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100400056
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100412882
+property_value: PCL:0010062 "0.520607375" xsd:string
 
 [Term]
 id: PCL:0020520
@@ -17758,6 +18066,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100396139
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100397539
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100405129
+property_value: PCL:0010062 "0.608856089" xsd:string
 
 [Term]
 id: PCL:0020521
@@ -17765,6 +18074,7 @@ name: NS forest marker set of Inh VIP GPR149 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100392579
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100410040
+property_value: PCL:0010062 "0.580246914" xsd:string
 
 [Term]
 id: PCL:0020522
@@ -17772,6 +18082,7 @@ name: NS forest marker set of Inh VIP LOC108588071 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100410965
 relationship: BFO:0000051 https://identifiers.org/ncbigene/103791740
+property_value: PCL:0010062 "0.544019934" xsd:string
 
 [Term]
 id: PCL:0020523
@@ -17780,6 +18091,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100386986
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100408892
 relationship: BFO:0000051 https://identifiers.org/ncbigene/103795407
+property_value: PCL:0010062 "0.369261477" xsd:string
 
 [Term]
 id: PCL:0020524
@@ -17788,6 +18100,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100399010
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100407174
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100412158
+property_value: PCL:0010062 "0.639705882" xsd:string
 
 [Term]
 id: PCL:0020525
@@ -17795,12 +18108,14 @@ name: NS forest marker set of Inh VIP LOC108588539 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/103787232
 relationship: BFO:0000051 https://identifiers.org/ncbigene/108588539
+property_value: PCL:0010062 "0.602189781" xsd:string
 
 [Term]
 id: PCL:0020526
 name: NS forest marker set of Inh PAX6 MEIS2 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100391273
+property_value: PCL:0010062 "0.723684211" xsd:string
 
 [Term]
 id: PCL:0020527
@@ -17808,6 +18123,7 @@ name: NS forest marker set of Inh SST LOC108589054 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100390937
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100391230
+property_value: PCL:0010062 "0.755148741" xsd:string
 
 [Term]
 id: PCL:0020528
@@ -17816,6 +18132,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100386530
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100894622
 relationship: BFO:0000051 https://identifiers.org/ncbigene/108588801
+property_value: PCL:0010062 "0.735930736" xsd:string
 
 [Term]
 id: PCL:0020529
@@ -17824,6 +18141,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100397590
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100399252
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100415258
+property_value: PCL:0010062 "0.576923077" xsd:string
 
 [Term]
 id: PCL:0020530
@@ -17832,6 +18150,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100388718
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100389466
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100391304
+property_value: PCL:0010062 "0.46875" xsd:string
 
 [Term]
 id: PCL:0020531
@@ -17840,6 +18159,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100398934
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100406302
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100894622
+property_value: PCL:0010062 "0.498753117" xsd:string
 
 [Term]
 id: PCL:0020532
@@ -17848,6 +18168,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100402133
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100415377
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100894622
+property_value: PCL:0010062 "0.46230441" xsd:string
 
 [Term]
 id: PCL:0020533
@@ -17855,6 +18176,7 @@ name: NS forest marker set of Inh SST CBLN4 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100397008
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100415377
+property_value: PCL:0010062 "0.561613959" xsd:string
 
 [Term]
 id: PCL:0020534
@@ -17862,6 +18184,7 @@ name: NS forest marker set of Inh SST ABI3BP M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100393956
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100401328
+property_value: PCL:0010062 "0.335051546" xsd:string
 
 [Term]
 id: PCL:0020535
@@ -17870,6 +18193,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100384959
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100387951
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100415065
+property_value: PCL:0010062 "0.26984127" xsd:string
 
 [Term]
 id: PCL:0020536
@@ -17878,6 +18202,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100393956
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100403389
 relationship: BFO:0000051 https://identifiers.org/ncbigene/103792490
+property_value: PCL:0010062 "0.501930502" xsd:string
 
 [Term]
 id: PCL:0020537
@@ -17885,6 +18210,7 @@ name: NS forest marker set of Inh SST LTBP1 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100397114
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100415258
+property_value: PCL:0010062 "0.627400768" xsd:string
 
 [Term]
 id: PCL:0020538
@@ -17892,6 +18218,7 @@ name: NS forest marker set of Inh SST AIM1 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100412634
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100415258
+property_value: PCL:0010062 "0.387722132" xsd:string
 
 [Term]
 id: PCL:0020539
@@ -17899,6 +18226,7 @@ name: NS forest marker set of Inh SST VAPA M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100400628
 relationship: BFO:0000051 https://identifiers.org/ncbigene/103793609
+property_value: PCL:0010062 "0.523690773" xsd:string
 
 [Term]
 id: PCL:0020540
@@ -17907,6 +18235,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100396908
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100397539
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100403212
+property_value: PCL:0010062 "0.620155039" xsd:string
 
 [Term]
 id: PCL:0020541
@@ -17915,6 +18244,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100391703
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100408527
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100411083
+property_value: PCL:0010062 "0.702702703" xsd:string
 
 [Term]
 id: PCL:0020542
@@ -17923,6 +18253,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100388016
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100389991
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100894622
+property_value: PCL:0010062 "0.616236162" xsd:string
 
 [Term]
 id: PCL:0020543
@@ -17931,6 +18262,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100389059
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100406508
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100408669
+property_value: PCL:0010062 "0.255068672" xsd:string
 
 [Term]
 id: PCL:0020544
@@ -17940,6 +18272,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/100389991
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100390091
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100390937
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100393107
+property_value: PCL:0010062 "0.403726708" xsd:string
 
 [Term]
 id: PCL:0020545
@@ -17949,6 +18282,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/100390937
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100400628
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100406508
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100408527
+property_value: PCL:0010062 "0.331564987" xsd:string
 
 [Term]
 id: PCL:0020546
@@ -17957,6 +18291,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100390937
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100410743
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100414890
+property_value: PCL:0010062 "0.53593947" xsd:string
 
 [Term]
 id: PCL:0020547
@@ -17966,6 +18301,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/100400628
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100400741
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100894622
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100895717
+property_value: PCL:0010062 "0.415162455" xsd:string
 
 [Term]
 id: PCL:0020548
@@ -17974,6 +18310,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100388729
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100397165
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100414899
+property_value: PCL:0010062 "0.588455772" xsd:string
 
 [Term]
 id: PCL:0020549
@@ -17982,6 +18319,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100400628
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100408527
 relationship: BFO:0000051 https://identifiers.org/ncbigene/103788721
+property_value: PCL:0010062 "0.544692737" xsd:string
 
 [Term]
 id: PCL:0020550
@@ -17990,6 +18328,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100408527
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100413817
 relationship: BFO:0000051 https://identifiers.org/ncbigene/103788721
+property_value: PCL:0010062 "0.52238806" xsd:string
 
 [Term]
 id: PCL:0020551
@@ -17998,6 +18337,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100398854
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100400367
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100413159
+property_value: PCL:0010062 "0.566037736" xsd:string
 
 [Term]
 id: PCL:0020552
@@ -18005,6 +18345,7 @@ name: NS forest marker set of Inh PVALB FAM19A4 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100389848
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100408527
+property_value: PCL:0010062 "0.752704327" xsd:string
 
 [Term]
 id: PCL:0020553
@@ -18014,6 +18355,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/100385404
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100393976
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100397271
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100410743
+property_value: PCL:0010062 "0.529059161" xsd:string
 
 [Term]
 id: PCL:0020554
@@ -18023,6 +18365,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/100387876
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100407043
 relationship: BFO:0000051 https://identifiers.org/ncbigene/103791648
 relationship: BFO:0000051 https://identifiers.org/ncbigene/108588466
+property_value: PCL:0010062 "0.48223814" xsd:string
 
 [Term]
 id: PCL:0020555
@@ -18031,6 +18374,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100401590
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100402439
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100409827
+property_value: PCL:0010062 "0.321620012" xsd:string
 
 [Term]
 id: PCL:0020556
@@ -18039,18 +18383,21 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100390807
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100397643
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100410743
+property_value: PCL:0010062 "0.491789614" xsd:string
 
 [Term]
 id: PCL:0020557
 name: NS forest marker set of Exc RORB KNL1 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100390165
+property_value: PCL:0010062 "0.11440678" xsd:string
 
 [Term]
 id: PCL:0020558
 name: NS forest marker set of Exc RORB CAV3 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100408486
+property_value: PCL:0010062 "0.34148398" xsd:string
 
 [Term]
 id: PCL:0020559
@@ -18060,6 +18407,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/100394114
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100403177
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100407007
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100413446
+property_value: PCL:0010062 "0.567090395" xsd:string
 
 [Term]
 id: PCL:0020560
@@ -18069,6 +18417,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/100393865
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100400958
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100403440
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100413043
+property_value: PCL:0010062 "0.529085873" xsd:string
 
 [Term]
 id: PCL:0020561
@@ -18076,6 +18425,7 @@ name: NS forest marker set of Exc RORB LOC108593203 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100404533
 relationship: BFO:0000051 https://identifiers.org/ncbigene/108593203
+property_value: PCL:0010062 "0.62913299" xsd:string
 
 [Term]
 id: PCL:0020562
@@ -18084,6 +18434,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100386721
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100397656
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100406528
+property_value: PCL:0010062 "0.636296021" xsd:string
 
 [Term]
 id: PCL:0020563
@@ -18092,6 +18443,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100404533
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100405410
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100411307
+property_value: PCL:0010062 "0.59532925" xsd:string
 
 [Term]
 id: PCL:0020564
@@ -18100,6 +18452,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100386444
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100400564
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100414159
+property_value: PCL:0010062 "0.587506521" xsd:string
 
 [Term]
 id: PCL:0020565
@@ -18108,6 +18461,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100397271
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100401449
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100411307
+property_value: PCL:0010062 "0.586744639" xsd:string
 
 [Term]
 id: PCL:0020566
@@ -18116,6 +18470,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100387459
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100410860
 relationship: BFO:0000051 https://identifiers.org/ncbigene/108588895
+property_value: PCL:0010062 "0.664050709" xsd:string
 
 [Term]
 id: PCL:0020567
@@ -18125,6 +18480,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/100401449
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100405410
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100410860
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100411377
+property_value: PCL:0010062 "0.504934433" xsd:string
 
 [Term]
 id: PCL:0020568
@@ -18134,6 +18490,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/100389848
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100390058
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100409658
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100894919
+property_value: PCL:0010062 "0.682843032" xsd:string
 
 [Term]
 id: PCL:0020569
@@ -18141,6 +18498,7 @@ name: NS forest marker set of Oligo SLC1A3 LOC103793418 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100405831
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100406710
+property_value: PCL:0010062 "0.180586907" xsd:string
 
 [Term]
 id: PCL:0020570
@@ -18149,6 +18507,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100386839
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100401702
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100403177
+property_value: PCL:0010062 "0.57050592" xsd:string
 
 [Term]
 id: PCL:0020571
@@ -18156,6 +18515,7 @@ name: NS forest marker set of Exc FEZF2 PIEZO2 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100393601
 relationship: BFO:0000051 https://identifiers.org/ncbigene/103793569
+property_value: PCL:0010062 "0.689265537" xsd:string
 
 [Term]
 id: PCL:0020572
@@ -18163,6 +18523,7 @@ name: NS forest marker set of Exc FEZF2 PDZRN4 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100396272
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100412026
+property_value: PCL:0010062 "0.529100529" xsd:string
 
 [Term]
 id: PCL:0020573
@@ -18170,6 +18531,7 @@ name: NS forest marker set of Exc FEZF2 RGS4 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100407531
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100410860
+property_value: PCL:0010062 "0.555153052" xsd:string
 
 [Term]
 id: PCL:0020574
@@ -18177,6 +18539,7 @@ name: NS forest marker set of Exc FEZF2 NRP1 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100394500
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100410860
+property_value: PCL:0010062 "0.589325426" xsd:string
 
 [Term]
 id: PCL:0020575
@@ -18184,6 +18547,7 @@ name: NS forest marker set of Exc FEZF2 ARSJ M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100410860
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100410965
+property_value: PCL:0010062 "0.838160753" xsd:string
 
 [Term]
 id: PCL:0020576
@@ -18191,6 +18555,7 @@ name: NS forest marker set of Exc THEMIS NTNG2 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100405312
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100408417
+property_value: PCL:0010062 "0.813899254" xsd:string
 
 [Term]
 id: PCL:0020577
@@ -18198,6 +18563,7 @@ name: NS forest marker set of Exc FEZF2 CRYM M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100385663
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100411083
+property_value: PCL:0010062 "0.709812109" xsd:string
 
 [Term]
 id: PCL:0020578
@@ -18205,6 +18571,7 @@ name: NS forest marker set of OPC PDGFRA VCAN M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100402664
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100412331
+property_value: PCL:0010062 "0.934487292" xsd:string
 
 [Term]
 id: PCL:0020579
@@ -18213,6 +18580,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100395775
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100413173
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100415632
+property_value: PCL:0010062 "0.428954424" xsd:string
 
 [Term]
 id: PCL:0020580
@@ -18223,6 +18591,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/100391501
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100406856
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100895459
 relationship: BFO:0000051 https://identifiers.org/ncbigene/108587679
+property_value: PCL:0010062 "0.617709319" xsd:string
 
 [Term]
 id: PCL:0020581
@@ -18232,12 +18601,14 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/100386317
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100392165
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100397724
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100413173
+property_value: PCL:0010062 "0.519019987" xsd:string
 
 [Term]
 id: PCL:0020582
 name: NS forest marker set of Astro FGFR3 GFAP M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100393644
+property_value: PCL:0010062 "0.851403061" xsd:string
 
 [Term]
 id: PCL:0020583
@@ -18245,6 +18616,7 @@ name: NS forest marker set of Oligo OPALIN LOC103790018 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100400400
 relationship: BFO:0000051 https://identifiers.org/ncbigene/103789268
+property_value: PCL:0010062 "0.798040162" xsd:string
 
 [Term]
 id: PCL:0020584
@@ -18254,6 +18626,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/100387382
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100392144
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100397952
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100402879
+property_value: PCL:0010062 "0.603849736" xsd:string
 
 [Term]
 id: PCL:0020585
@@ -18261,6 +18634,7 @@ name: NS forest marker set of Endo NOSTRIN IL1R1 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100393945
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100404865
+property_value: PCL:0010062 "0.690298507" xsd:string
 
 [Term]
 id: PCL:0020586
@@ -18268,12 +18642,14 @@ name: NS forest marker set of Endo NOSTRIN CXCL12 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100403987
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100414003
+property_value: PCL:0010062 "0.822898032" xsd:string
 
 [Term]
 id: PCL:0020587
 name: NS forest marker set of Glia SLC1A3-like FBLN5 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100392828
+property_value: PCL:0010062 "0.833333333" xsd:string
 
 [Term]
 id: PCL:0020588
@@ -18282,6 +18658,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100405319
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100408994
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100410597
+property_value: PCL:0010062 "0.503875969" xsd:string
 
 [Term]
 id: PCL:0020589
@@ -18289,6 +18666,7 @@ name: NS forest marker set of Peri SLC1A3-like EPSTI1 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100386999
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100388823
+property_value: PCL:0010062 "0.533405172" xsd:string
 
 [Term]
 id: PCL:0020590
@@ -18296,6 +18674,7 @@ name: NS forest marker set of VLMC PDGFRA C7 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100385053
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100405391
+property_value: PCL:0010062 "0.848484848" xsd:string
 
 [Term]
 id: PCL:0020591
@@ -18303,6 +18682,7 @@ name: NS forest marker set of VLMC SLC1A3 CEMIP M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100397812
 relationship: BFO:0000051 https://identifiers.org/ncbigene/103789461
+property_value: PCL:0010062 "0.643939394" xsd:string
 
 [Term]
 id: PCL:0020592
@@ -18310,12 +18690,14 @@ name: NS forest marker set of VLMC SLC1A3 SLC13A3 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100387605
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100400232
+property_value: PCL:0010062 "0.803571429" xsd:string
 
 [Term]
 id: PCL:0020593
 name: NS forest marker set of VLMC SLC1A3-like SLC47A1 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100399056
+property_value: PCL:0010062 "0.889261745" xsd:string
 
 [Term]
 id: PCL:0020594
@@ -18323,12 +18705,14 @@ name: NS forest marker set of Micro TYROBP LOC103788313 M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100411367
 relationship: BFO:0000051 https://identifiers.org/ncbigene/103788313
+property_value: PCL:0010062 "0.923999095" xsd:string
 
 [Term]
 id: PCL:0020595
 name: NS forest marker set of (Mouse Lamp5)-like M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100411615
+property_value: PCL:0010062 "0.725806452" xsd:string
 
 [Term]
 id: PCL:0020596
@@ -18337,6 +18721,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100393865
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100402719
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100414317
+property_value: PCL:0010062 "0.654803041" xsd:string
 
 [Term]
 id: PCL:0020597
@@ -18344,6 +18729,7 @@ name: NS forest marker set of (Mouse Vip)-like M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/103791740
 relationship: BFO:0000051 https://identifiers.org/ncbigene/108588071
+property_value: PCL:0010062 "0.746118844" xsd:string
 
 [Term]
 id: PCL:0020598
@@ -18351,6 +18737,7 @@ name: NS forest marker set of (Mouse Sst)-like M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100393956
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100402133
+property_value: PCL:0010062 "0.778415614" xsd:string
 
 [Term]
 id: PCL:0020599
@@ -18358,6 +18745,7 @@ name: NS forest marker set of (Mouse Pvalb)-like M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100392984
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100408669
+property_value: PCL:0010062 "0.77908869" xsd:string
 
 [Term]
 id: PCL:0020600
@@ -18365,6 +18753,7 @@ name: NS forest marker set of (Mouse L2/3 IT)-like M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100389848
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100410743
+property_value: PCL:0010062 "0.838184604" xsd:string
 
 [Term]
 id: PCL:0020601
@@ -18373,6 +18762,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100397656
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100401180
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100405410
+property_value: PCL:0010062 "0.788594705" xsd:string
 
 [Term]
 id: PCL:0020602
@@ -18382,6 +18772,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/100385404
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100388051
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100402689
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100405584
+property_value: PCL:0010062 "0.583469413" xsd:string
 
 [Term]
 id: PCL:0020603
@@ -18389,6 +18780,7 @@ name: NS forest marker set of (Mouse L5 ET)-like M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100388255
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100393601
+property_value: PCL:0010062 "0.634881423" xsd:string
 
 [Term]
 id: PCL:0020604
@@ -18396,6 +18788,7 @@ name: NS forest marker set of (Mouse L6 CT)-like M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100410860
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100411439
+property_value: PCL:0010062 "0.759294697" xsd:string
 
 [Term]
 id: PCL:0020619
@@ -18403,6 +18796,7 @@ name: NS forest marker set of Sst Chodl(i) M1 (Marmoset).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100402683
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100895717
+property_value: PCL:0010062 "0.847457627" xsd:string
 
 [Term]
 id: PCL:0023001
@@ -20062,6 +20456,7 @@ name: NS forest marker set of Inh L1-2 PAX6 CDH12 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101927870
 relationship: BFO:0000051 https://identifiers.org/ncbigene/7048
+property_value: PCL:0010062 "0.80" xsd:string
 
 [Term]
 id: PCL:0024502
@@ -20069,6 +20464,7 @@ name: NS forest marker set of Inh L1-2 PAX6 TNFAIP8L3 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/102723487
 relationship: BFO:0000051 https://identifiers.org/ncbigene/221833
+property_value: PCL:0010062 "0.83" xsd:string
 
 [Term]
 id: PCL:0024503
@@ -20076,6 +20472,7 @@ name: NS forest marker set of Inh L1 LAMP5 NMBR MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/22987
 relationship: BFO:0000051 https://identifiers.org/ncbigene/79625
+property_value: PCL:0010062 "0.90" xsd:string
 
 [Term]
 id: PCL:0024504
@@ -20083,6 +20480,7 @@ name: NS forest marker set of Inh L1-4 LAMP5 LCP2 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/3815
 relationship: BFO:0000051 https://identifiers.org/ncbigene/594855
+property_value: PCL:0010062 "0.82" xsd:string
 
 [Term]
 id: PCL:0024505
@@ -20090,6 +20488,7 @@ name: NS forest marker set of Inh L1-2 LAMP5 DBP MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/140689
 relationship: BFO:0000051 https://identifiers.org/ncbigene/594855
+property_value: PCL:0010062 "0.34" xsd:string
 
 [Term]
 id: PCL:0024506
@@ -20097,6 +20496,7 @@ name: NS forest marker set of Inh L2-6 LAMP5 CA1 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/2070
 relationship: BFO:0000051 https://identifiers.org/ncbigene/55026
+property_value: PCL:0010062 "0.84" xsd:string
 
 [Term]
 id: PCL:0024507
@@ -20105,6 +20505,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/10512
 relationship: BFO:0000051 https://identifiers.org/ncbigene/162282
 relationship: BFO:0000051 https://identifiers.org/ncbigene/9547
+property_value: PCL:0010062 "0.67" xsd:string
 
 [Term]
 id: PCL:0024508
@@ -20112,6 +20513,7 @@ name: NS forest marker set of Inh L1-2 ADARB2 MC4R MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/158763
 relationship: BFO:0000051 https://identifiers.org/ncbigene/80332
+property_value: PCL:0010062 "0.62" xsd:string
 
 [Term]
 id: PCL:0024509
@@ -20119,6 +20521,7 @@ name: NS forest marker set of Inh L1-2 SST BAGE2 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105377436
 relationship: BFO:0000051 https://identifiers.org/ncbigene/85319
+property_value: PCL:0010062 "0.53" xsd:string
 
 [Term]
 id: PCL:0024510
@@ -20126,6 +20529,7 @@ name: NS forest marker set of Inh L1-3 VIP SYT6 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/1268
 relationship: BFO:0000051 https://identifiers.org/ncbigene/345557
+property_value: PCL:0010062 "0.82" xsd:string
 
 [Term]
 id: PCL:0024511
@@ -20133,6 +20537,7 @@ name: NS forest marker set of Inh L1-2 VIP TSPAN12 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100505474
 relationship: BFO:0000051 https://identifiers.org/ncbigene/1634
+property_value: PCL:0010062 "0.55" xsd:string
 
 [Term]
 id: PCL:0024512
@@ -20140,6 +20545,7 @@ name: NS forest marker set of Inh L1-4 VIP CHRNA6 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101928923
 relationship: BFO:0000051 https://identifiers.org/ncbigene/285025
+property_value: PCL:0010062 "0.56" xsd:string
 
 [Term]
 id: PCL:0024513
@@ -20147,6 +20553,7 @@ name: NS forest marker set of Inh L1-3 VIP ADAMTSL1 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/117154
 relationship: BFO:0000051 https://identifiers.org/ncbigene/54510
+property_value: PCL:0010062 "0.73" xsd:string
 
 [Term]
 id: PCL:0024514
@@ -20154,6 +20561,7 @@ name: NS forest marker set of Inh L1-4 VIP PENK MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105371331
 relationship: BFO:0000051 https://identifiers.org/ncbigene/93556
+property_value: PCL:0010062 "0.61" xsd:string
 
 [Term]
 id: PCL:0024515
@@ -20161,6 +20569,7 @@ name: NS forest marker set of Inh L2-6 VIP QPCT MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/3490
 relationship: BFO:0000051 https://identifiers.org/ncbigene/5121
+property_value: PCL:0010062 "0.75" xsd:string
 
 [Term]
 id: PCL:0024516
@@ -20168,6 +20577,7 @@ name: NS forest marker set of Inh L3-6 VIP HS3ST3A1 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/10788
 relationship: BFO:0000051 https://identifiers.org/ncbigene/25890
+property_value: PCL:0010062 "0.57" xsd:string
 
 [Term]
 id: PCL:0024517
@@ -20175,6 +20585,7 @@ name: NS forest marker set of Inh L1-2 VIP PCDH20 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/284
 relationship: BFO:0000051 https://identifiers.org/ncbigene/7432
+property_value: PCL:0010062 "0.62" xsd:string
 
 [Term]
 id: PCL:0024518
@@ -20183,6 +20594,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101929690
 relationship: BFO:0000051 https://identifiers.org/ncbigene/128553
 relationship: BFO:0000051 https://identifiers.org/ncbigene/6866
+property_value: PCL:0010062 "0.62" xsd:string
 
 [Term]
 id: PCL:0024519
@@ -20190,6 +20602,7 @@ name: NS forest marker set of Inh L2-5 VIP TYR MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/1306
 relationship: BFO:0000051 https://identifiers.org/ncbigene/6866
+property_value: PCL:0010062 "0.57" xsd:string
 
 [Term]
 id: PCL:0024520
@@ -20197,6 +20610,7 @@ name: NS forest marker set of Inh L1-3 VIP CHRM2 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100421401
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101060145
+property_value: PCL:0010062 "0.56" xsd:string
 
 [Term]
 id: PCL:0024521
@@ -20204,6 +20618,7 @@ name: NS forest marker set of Inh L2-4 VIP CBLN1 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/3358
 relationship: BFO:0000051 https://identifiers.org/ncbigene/4311
+property_value: PCL:0010062 "0.68" xsd:string
 
 [Term]
 id: PCL:0024522
@@ -20211,6 +20626,7 @@ name: NS forest marker set of Inh L1-3 VIP CCDC184 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/131096
 relationship: BFO:0000051 https://identifiers.org/ncbigene/256380
+property_value: PCL:0010062 "0.48" xsd:string
 
 [Term]
 id: PCL:0024523
@@ -20218,6 +20634,7 @@ name: NS forest marker set of Inh L1-3 VIP GGH MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105375473
 relationship: BFO:0000051 https://identifiers.org/ncbigene/8836
+property_value: PCL:0010062 "0.53" xsd:string
 
 [Term]
 id: PCL:0024524
@@ -20225,6 +20642,7 @@ name: NS forest marker set of Inh L1-2 VIP LBH MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105379146
 relationship: BFO:0000051 https://identifiers.org/ncbigene/642597
+property_value: PCL:0010062 "0.49" xsd:string
 
 [Term]
 id: PCL:0024525
@@ -20233,6 +20651,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101929083
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105370456
 relationship: BFO:0000051 https://identifiers.org/ncbigene/220416
+property_value: PCL:0010062 "0.56" xsd:string
 
 [Term]
 id: PCL:0024526
@@ -20240,6 +20659,7 @@ name: NS forest marker set of Inh L2-4 VIP SPAG17 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101929052
 relationship: BFO:0000051 https://identifiers.org/ncbigene/23657
+property_value: PCL:0010062 "0.53" xsd:string
 
 [Term]
 id: PCL:0024527
@@ -20248,12 +20668,14 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101929690
 relationship: BFO:0000051 https://identifiers.org/ncbigene/5121
 relationship: BFO:0000051 https://identifiers.org/ncbigene/6581
+property_value: PCL:0010062 "0.58" xsd:string
 
 [Term]
 id: PCL:0024528
 name: NS forest marker set of Inh L3-6 SST NPY MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/4852
+property_value: PCL:0010062 "0.99" xsd:string
 
 [Term]
 id: PCL:0024529
@@ -20262,6 +20684,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/26002
 relationship: BFO:0000051 https://identifiers.org/ncbigene/3248
 relationship: BFO:0000051 https://identifiers.org/ncbigene/375061
+property_value: PCL:0010062 "0.66" xsd:string
 
 [Term]
 id: PCL:0024530
@@ -20270,6 +20693,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/10874
 relationship: BFO:0000051 https://identifiers.org/ncbigene/158326
 relationship: BFO:0000051 https://identifiers.org/ncbigene/6866
+property_value: PCL:0010062 "0.61" xsd:string
 
 [Term]
 id: PCL:0024531
@@ -20277,6 +20701,7 @@ name: NS forest marker set of Inh L5-6 SST KLHDC8A MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100996671
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105377701
+property_value: PCL:0010062 "0.61" xsd:string
 
 [Term]
 id: PCL:0024532
@@ -20284,6 +20709,7 @@ name: NS forest marker set of Inh L5-6 SST NPM1P10 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/10418
 relationship: BFO:0000051 https://identifiers.org/ncbigene/2201
+property_value: PCL:0010062 "0.78" xsd:string
 
 [Term]
 id: PCL:0024533
@@ -20292,6 +20718,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101929667
 relationship: BFO:0000051 https://identifiers.org/ncbigene/246213
 relationship: BFO:0000051 https://identifiers.org/ncbigene/84109
+property_value: PCL:0010062 "0.62" xsd:string
 
 [Term]
 id: PCL:0024534
@@ -20299,12 +20726,14 @@ name: NS forest marker set of Inh L4-5 SST STK32A MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/202374
 relationship: BFO:0000051 https://identifiers.org/ncbigene/6549
+property_value: PCL:0010062 "0.55" xsd:string
 
 [Term]
 id: PCL:0024535
 name: NS forest marker set of Inh L1-3 SST CALB1 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101929028
+property_value: PCL:0010062 "0.64" xsd:string
 
 [Term]
 id: PCL:0024536
@@ -20312,6 +20741,7 @@ name: NS forest marker set of Inh L3-5 SST ADGRG6 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/57211
 relationship: BFO:0000051 https://identifiers.org/ncbigene/8842
+property_value: PCL:0010062 "0.66" xsd:string
 
 [Term]
 id: PCL:0024537
@@ -20321,6 +20751,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/346007
 relationship: BFO:0000051 https://identifiers.org/ncbigene/4645
 relationship: BFO:0000051 https://identifiers.org/ncbigene/4842
 relationship: BFO:0000051 https://identifiers.org/ncbigene/60495
+property_value: PCL:0010062 "0.52" xsd:string
 
 [Term]
 id: PCL:0024538
@@ -20328,6 +20759,7 @@ name: NS forest marker set of Inh L5-6 SST TH MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/102724957
 relationship: BFO:0000051 https://identifiers.org/ncbigene/7054
+property_value: PCL:0010062 "0.71" xsd:string
 
 [Term]
 id: PCL:0024539
@@ -20336,6 +20768,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/10512
 relationship: BFO:0000051 https://identifiers.org/ncbigene/590
 relationship: BFO:0000051 https://identifiers.org/ncbigene/79974
+property_value: PCL:0010062 "0.75" xsd:string
 
 [Term]
 id: PCL:0024540
@@ -20344,6 +20777,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/340120
 relationship: BFO:0000051 https://identifiers.org/ncbigene/401478
 relationship: BFO:0000051 https://identifiers.org/ncbigene/79974
+property_value: PCL:0010062 "0.56" xsd:string
 
 [Term]
 id: PCL:0024541
@@ -20352,6 +20786,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/3082
 relationship: BFO:0000051 https://identifiers.org/ncbigene/56955
 relationship: BFO:0000051 https://identifiers.org/ncbigene/6696
+property_value: PCL:0010062 "0.67" xsd:string
 
 [Term]
 id: PCL:0024542
@@ -20359,6 +20794,7 @@ name: NS forest marker set of Inh L2-4 PVALB WFDC2 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/285195
 relationship: BFO:0000051 https://identifiers.org/ncbigene/6863
+property_value: PCL:0010062 "0.79" xsd:string
 
 [Term]
 id: PCL:0024543
@@ -20366,6 +20802,7 @@ name: NS forest marker set of Inh L4-6 PVALB SULF1 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/23213
 relationship: BFO:0000051 https://identifiers.org/ncbigene/79974
+property_value: PCL:0010062 "0.55" xsd:string
 
 [Term]
 id: PCL:0024544
@@ -20374,6 +20811,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/130574
 relationship: BFO:0000051 https://identifiers.org/ncbigene/2262
 relationship: BFO:0000051 https://identifiers.org/ncbigene/5074
+property_value: PCL:0010062 "0.63" xsd:string
 
 [Term]
 id: PCL:0024545
@@ -20381,6 +20819,7 @@ name: NS forest marker set of Inh L2-5 PVALB SCUBE3 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/1306
 relationship: BFO:0000051 https://identifiers.org/ncbigene/401478
+property_value: PCL:0010062 "0.82" xsd:string
 
 [Term]
 id: PCL:0024546
@@ -20388,6 +20827,7 @@ name: NS forest marker set of Exc L2 LAMP5 LTK MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/102723742
 relationship: BFO:0000051 https://identifiers.org/ncbigene/147381
+property_value: PCL:0010062 "0.67" xsd:string
 
 [Term]
 id: PCL:0024547
@@ -20396,6 +20836,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/10203
 relationship: BFO:0000051 https://identifiers.org/ncbigene/26002
 relationship: BFO:0000051 https://identifiers.org/ncbigene/5179
+property_value: PCL:0010062 "0.66" xsd:string
 
 [Term]
 id: PCL:0024548
@@ -20403,6 +20844,7 @@ name: NS forest marker set of Exc L2-3 LINC00507 FREM3 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/23316
 relationship: BFO:0000051 https://identifiers.org/ncbigene/54873
+property_value: PCL:0010062 "0.77" xsd:string
 
 [Term]
 id: PCL:0024549
@@ -20411,6 +20853,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/144920
 relationship: BFO:0000051 https://identifiers.org/ncbigene/387357
 relationship: BFO:0000051 https://identifiers.org/ncbigene/7837
+property_value: PCL:0010062 "0.79" xsd:string
 
 [Term]
 id: PCL:0024550
@@ -20419,6 +20862,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100130873
 relationship: BFO:0000051 https://identifiers.org/ncbigene/80323
 relationship: BFO:0000051 https://identifiers.org/ncbigene/8492
+property_value: PCL:0010062 "0.68" xsd:string
 
 [Term]
 id: PCL:0024551
@@ -20426,6 +20870,7 @@ name: NS forest marker set of Exc L3-5 RORB ESR1 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105371677
 relationship: BFO:0000051 https://identifiers.org/ncbigene/301
+property_value: PCL:0010062 "0.88" xsd:string
 
 [Term]
 id: PCL:0024552
@@ -20433,6 +20878,7 @@ name: NS forest marker set of Exc L3-5 RORB COL22A1 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/196475
 relationship: BFO:0000051 https://identifiers.org/ncbigene/4311
+property_value: PCL:0010062 "0.78" xsd:string
 
 [Term]
 id: PCL:0024553
@@ -20442,6 +20888,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/101928196
 relationship: BFO:0000051 https://identifiers.org/ncbigene/1290
 relationship: BFO:0000051 https://identifiers.org/ncbigene/22854
 relationship: BFO:0000051 https://identifiers.org/ncbigene/23316
+property_value: PCL:0010062 "0.65" xsd:string
 
 [Term]
 id: PCL:0024554
@@ -20450,6 +20897,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101927281
 relationship: BFO:0000051 https://identifiers.org/ncbigene/117581
 relationship: BFO:0000051 https://identifiers.org/ncbigene/643677
+property_value: PCL:0010062 "0.27" xsd:string
 
 [Term]
 id: PCL:0024555
@@ -20458,6 +20906,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101927835
 relationship: BFO:0000051 https://identifiers.org/ncbigene/282996
 relationship: BFO:0000051 https://identifiers.org/ncbigene/4887
+property_value: PCL:0010062 "0.75" xsd:string
 
 [Term]
 id: PCL:0024556
@@ -20465,6 +20914,7 @@ name: NS forest marker set of Exc L4-6 RORB SEMA3E MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101928622
 relationship: BFO:0000051 https://identifiers.org/ncbigene/56475
+property_value: PCL:0010062 "0.76" xsd:string
 
 [Term]
 id: PCL:0024557
@@ -20473,6 +20923,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101928151
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105374971
 relationship: BFO:0000051 https://identifiers.org/ncbigene/8538
+property_value: PCL:0010062 "0.58" xsd:string
 
 [Term]
 id: PCL:0024558
@@ -20481,6 +20932,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105371833
 relationship: BFO:0000051 https://identifiers.org/ncbigene/10886
 relationship: BFO:0000051 https://identifiers.org/ncbigene/7139
+property_value: PCL:0010062 "0.80" xsd:string
 
 [Term]
 id: PCL:0024559
@@ -20489,6 +20941,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/22801
 relationship: BFO:0000051 https://identifiers.org/ncbigene/84466
 relationship: BFO:0000051 https://identifiers.org/ncbigene/9033
+property_value: PCL:0010062 "0.58" xsd:string
 
 [Term]
 id: PCL:0024560
@@ -20496,6 +20949,7 @@ name: NS forest marker set of Exc L4-5 FEZF2 SCN4B MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105376457
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105378657
+property_value: PCL:0010062 "0.86" xsd:string
 
 [Term]
 id: PCL:0024561
@@ -20503,6 +20957,7 @@ name: NS forest marker set of Exc L5-6 THEMIS DCSTAMP MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101928196
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105378486
+property_value: PCL:0010062 "0.78" xsd:string
 
 [Term]
 id: PCL:0024562
@@ -20510,6 +20965,7 @@ name: NS forest marker set of Exc L5-6 THEMIS CRABP1 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/25903
 relationship: BFO:0000051 https://identifiers.org/ncbigene/6641
+property_value: PCL:0010062 "0.84" xsd:string
 
 [Term]
 id: PCL:0024563
@@ -20517,6 +20973,7 @@ name: NS forest marker set of Exc L5-6 THEMIS FGF10 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/101928964
 relationship: BFO:0000051 https://identifiers.org/ncbigene/283431
+property_value: PCL:0010062 "0.57" xsd:string
 
 [Term]
 id: PCL:0024564
@@ -20524,6 +20981,7 @@ name: NS forest marker set of Exc L4-6 FEZF2 IL26 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/100885789
 relationship: BFO:0000051 https://identifiers.org/ncbigene/55801
+property_value: PCL:0010062 "0.85" xsd:string
 
 [Term]
 id: PCL:0024565
@@ -20531,6 +20989,7 @@ name: NS forest marker set of Exc L5-6 FEZF2 ABO MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/23213
 relationship: BFO:0000051 https://identifiers.org/ncbigene/92949
+property_value: PCL:0010062 "0.86" xsd:string
 
 [Term]
 id: PCL:0024566
@@ -20538,6 +20997,7 @@ name: NS forest marker set of Exc L6 FEZF2 SCUBE1 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105379054
 relationship: BFO:0000051 https://identifiers.org/ncbigene/5288
+property_value: PCL:0010062 "0.74" xsd:string
 
 [Term]
 id: PCL:0024567
@@ -20546,6 +21006,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/2078
 relationship: BFO:0000051 https://identifiers.org/ncbigene/255743
 relationship: BFO:0000051 https://identifiers.org/ncbigene/4929
+property_value: PCL:0010062 "0.77" xsd:string
 
 [Term]
 id: PCL:0024568
@@ -20555,6 +21016,7 @@ relationship: BFO:0000051 https://identifiers.org/ncbigene/26577
 relationship: BFO:0000051 https://identifiers.org/ncbigene/3486
 relationship: BFO:0000051 https://identifiers.org/ncbigene/729025
 relationship: BFO:0000051 https://identifiers.org/ncbigene/84189
+property_value: PCL:0010062 "0.73" xsd:string
 
 [Term]
 id: PCL:0024569
@@ -20562,6 +21024,7 @@ name: NS forest marker set of Exc L5-6 FEZF2 EFTUD1P1 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105377183
 relationship: BFO:0000051 https://identifiers.org/ncbigene/10886
+property_value: PCL:0010062 "0.81" xsd:string
 
 [Term]
 id: PCL:0024570
@@ -20569,6 +21032,7 @@ name: NS forest marker set of OPC L1-6 PDGFRA MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/5156
 relationship: BFO:0000051 https://identifiers.org/ncbigene/65217
+property_value: PCL:0010062 "0.88" xsd:string
 
 [Term]
 id: PCL:0024571
@@ -20576,6 +21040,7 @@ name: NS forest marker set of Astro L1-6 FGFR3 SLC14A1 MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/105376917
 relationship: BFO:0000051 https://identifiers.org/ncbigene/6507
+property_value: PCL:0010062 "0.87" xsd:string
 
 [Term]
 id: PCL:0024572
@@ -20583,6 +21048,7 @@ name: NS forest marker set of Astro L1-2 FGFR3 GFAP MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/3399
 relationship: BFO:0000051 https://identifiers.org/ncbigene/4494
+property_value: PCL:0010062 "0.76" xsd:string
 
 [Term]
 id: PCL:0024573
@@ -20590,12 +21056,14 @@ name: NS forest marker set of Oligo L1-6 OPALIN MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/51148
 relationship: BFO:0000051 https://identifiers.org/ncbigene/5168
+property_value: PCL:0010062 "0.93" xsd:string
 
 [Term]
 id: PCL:0024574
 name: NS forest marker set of Endo L2-6 NOSTRIN MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/51705
+property_value: PCL:0010062 "0.86" xsd:string
 
 [Term]
 id: PCL:0024575
@@ -20603,6 +21071,7 @@ name: NS forest marker set of Micro L1-6 TYROBP MTG (Human).
 is_a: SO:0001260
 relationship: BFO:0000051 https://identifiers.org/ncbigene/1436
 relationship: BFO:0000051 https://identifiers.org/ncbigene/54518
+property_value: PCL:0010062 "0.91" xsd:string
 
 [Term]
 id: PCL:1000002
