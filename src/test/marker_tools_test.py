@@ -47,7 +47,7 @@ class MarkerToolsTest(unittest.TestCase):
 
     def test_get_nsforest_confidences_human_mtg(self):
         dend = dend_json_2_nodes_n_edges(PATH_HUMAN_MTG_NOMENCLATURE)
-        marker_path = os.path.join(PATH_CENTRALIZED_DATA, "NSForestMarkers/Human_MTG_NSForest_Markers.tsv")
+        marker_path = os.path.join(PATH_CENTRALIZED_DATA, "NSForestMarkers/Human_MTG_NSForest_Markers.csv")
         confidences = get_nsforest_confidences("CS1908210", dend, marker_path)
 
         self.assertEqual("0.55", confidences["CS1908210011"])  # Inh L1-2 VIP TSPAN12

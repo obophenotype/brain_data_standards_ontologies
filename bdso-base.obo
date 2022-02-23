@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: pcl/releases/2022-02-22/bdso-base.owl
+data-version: pcl/releases/2022-02-23/bdso-base.owl
 ontology: pcl/bdso-base
 property_value: http://purl.org/dc/elements/1.1/title "Brain Data Standards Cell Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2022-02-22" xsd:string
+property_value: owl:versionInfo "2022-02-23" xsd:string
 
 [Term]
 id: CL:4023119
@@ -10458,7 +10458,7 @@ name: NS forest marker set of Peri MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000030249
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000048939
-property_value: PCL:0010062 "0.948790189" xsd:string
+property_value: PCL:0010062 "0.964252117" xsd:string
 
 [Term]
 id: PCL:0012613
@@ -10495,7 +10495,7 @@ name: NS forest marker set of CGE/PoA MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000010175
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000052551
-property_value: PCL:0010062 "0.900145612" xsd:string
+property_value: PCL:0010062 "0.900145611790142" xsd:string
 
 [Term]
 id: PCL:0012625
@@ -10511,7 +10511,7 @@ name: NS forest marker set of Lamp5-like_C5 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000021508
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000049001
-property_value: PCL:0010062 "0.583900227" xsd:string
+property_value: PCL:0010062 "0.583900226757369" xsd:string
 
 [Term]
 id: PCL:0012633
@@ -10519,7 +10519,7 @@ name: NS forest marker set of Sncg-like MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000044288
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000058897
-property_value: PCL:0010062 "0.742086144" xsd:string
+property_value: PCL:0010062 "0.819339896" xsd:string
 
 [Term]
 id: PCL:0012634
@@ -10543,7 +10543,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000022371
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000022425
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000038718
-property_value: PCL:0010062 "0.686619718" xsd:string
+property_value: PCL:0010062 "0.686619718309859" xsd:string
 
 [Term]
 id: PCL:0012643
@@ -10552,7 +10552,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000000805
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000019772
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000049796
-property_value: PCL:0010062 "0.72037702" xsd:string
+property_value: PCL:0010062 "0.720377019748653" xsd:string
 
 [Term]
 id: PCL:0012645
@@ -10560,7 +10560,7 @@ name: NS forest marker set of L2/3 Bipolar VIP cell MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000019772
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000030170
-property_value: PCL:0010062 "0.775942954" xsd:string
+property_value: PCL:0010062 "0.77594295364984" xsd:string
 
 [Term]
 id: PCL:0012649
@@ -10568,7 +10568,7 @@ name: NS forest marker set of Vip-like_C4 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000042581
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000110468
-property_value: PCL:0010062 "0.742232451" xsd:string
+property_value: PCL:0010062 "0.74223245109321" xsd:string
 
 [Term]
 id: PCL:0012650
@@ -10576,7 +10576,7 @@ name: NS forest marker set of MGE MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000046178
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000094083
-property_value: PCL:0010062 "0.926157988" xsd:string
+property_value: PCL:0010062 "0.926157987561496" xsd:string
 
 [Term]
 id: PCL:0012656
@@ -10584,7 +10584,7 @@ name: NS forest marker set of Sst-like_C1 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000027400
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000062151
-property_value: PCL:0010062 "0.543956044" xsd:string
+property_value: PCL:0010062 "0.543956043956044" xsd:string
 
 [Term]
 id: PCL:0012661
@@ -10593,7 +10593,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000024990
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000031997
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000068220
-property_value: PCL:0010062 "0.561145511" xsd:string
+property_value: PCL:0010062 "0.561145510835913" xsd:string
 
 [Term]
 id: PCL:0012664
@@ -10610,7 +10610,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000031841
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000036019
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000049796
-property_value: PCL:0010062 "0.681818182" xsd:string
+property_value: PCL:0010062 "0.681818181818181" xsd:string
 
 [Term]
 id: PCL:0012670
@@ -10618,7 +10618,7 @@ name: NS forest marker set of L6 Th+ SST/PV cell MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000000214
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000028971
-property_value: PCL:0010062 "0.557768924" xsd:string
+property_value: PCL:0010062 "0.557768924302788" xsd:string
 
 [Term]
 id: PCL:0012677
@@ -10626,7 +10626,7 @@ name: NS forest marker set of Upper FS Basket cell MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000010461
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000052353
-property_value: PCL:0010062 "0.785057574" xsd:string
+property_value: PCL:0010062 "0.785057573864143" xsd:string
 
 [Term]
 id: PCL:0012678
@@ -10634,7 +10634,7 @@ name: NS forest marker set of Chandelier MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000020099
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000067028
-property_value: PCL:0010062 "0.817307692" xsd:string
+property_value: PCL:0010062 "0.817307692307692" xsd:string
 
 [Term]
 id: PCL:0012682
@@ -10642,7 +10642,7 @@ name: NS forest marker set of IT projecting MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000036264
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000038331
-property_value: PCL:0010062 "0.938579669" xsd:string
+property_value: PCL:0010062 "0.938579668560051" xsd:string
 
 [Term]
 id: PCL:0012683
@@ -10651,7 +10651,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000021708
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000028222
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000059187
-property_value: PCL:0010062 "0.841568088" xsd:string
+property_value: PCL:0010062 "0.842101815" xsd:string
 
 [Term]
 id: PCL:0012688
@@ -10660,7 +10660,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000034402
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000036192
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000084890
-property_value: PCL:0010062 "0.783614852" xsd:string
+property_value: PCL:0010062 "0.783614852295557" xsd:string
 
 [Term]
 id: PCL:0012689
@@ -10669,7 +10669,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000035357
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000039037
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000040452
-property_value: PCL:0010062 "0.717957788" xsd:string
+property_value: PCL:0010062 "0.799873775" xsd:string
 
 [Term]
 id: PCL:0012690
@@ -10677,7 +10677,7 @@ name: NS forest marker set of L5 IT_C2 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000022419
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000059203
-property_value: PCL:0010062 "0.817650002" xsd:string
+property_value: PCL:0010062 "0.817650001924335" xsd:string
 
 [Term]
 id: PCL:0012692
@@ -10686,7 +10686,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000016918
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000052430
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000059203
-property_value: PCL:0010062 "0.679147667" xsd:string
+property_value: PCL:0010062 "0.759441708" xsd:string
 
 [Term]
 id: PCL:0012693
@@ -10703,7 +10703,7 @@ is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000021541
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000068196
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000090125
-property_value: PCL:0010062 "0.790935348" xsd:string
+property_value: PCL:0010062 "0.79093534770051" xsd:string
 
 [Term]
 id: PCL:0012697
@@ -10711,7 +10711,7 @@ name: NS forest marker set of L6 CT MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000029563
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000078591
-property_value: PCL:0010062 "0.917409405" xsd:string
+property_value: PCL:0010062 "0.913592473" xsd:string
 
 [Term]
 id: PCL:0012703
@@ -10727,7 +10727,7 @@ name: NS forest marker set of L5/6 NP MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000004151
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000047907
-property_value: PCL:0010062 "0.839841867" xsd:string
+property_value: PCL:0010062 "0.857866413" xsd:string
 
 [Term]
 id: PCL:0012709
@@ -10735,7 +10735,7 @@ name: NS forest marker set of Meis2 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000023800
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000035551
-property_value: PCL:0010062 "0.686936937" xsd:string
+property_value: PCL:0010062 "0.782828283" xsd:string
 
 [Term]
 id: PCL:0012711
@@ -10743,7 +10743,7 @@ name: NS forest marker set of Astro_C1 MOp (Mouse).
 is_a: SO:0001260
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000021318
 relationship: BFO:0000051 http://identifiers.org/ensembl/ENSMUSG00000036949
-property_value: PCL:0010062 "0.964334321" xsd:string
+property_value: PCL:0010062 "0.964334321220061" xsd:string
 
 [Term]
 id: PCL:0012732
