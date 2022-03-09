@@ -226,8 +226,3 @@ $(ONT)-pcl-comp.json: $(RELEASEDIR)/$(ONT)-pcl-comp.owl
 ##.PHONY: pattern_schema_checks
 ##pattern_schema_checks: update_patterns
 ##	if [ $(PAT) = "skip" ]; then $(PATTERN_TESTER) $(PATTERNDIR)/dosdp-patterns/  ; fi
-
-#tmp fix
-.PHONY: update_patterns
-update_patterns: download_patterns
-	cp -f -r $(TMPDIR)/dosdp/*.yaml $(PATTERNDIR)/dosdp-patterns
