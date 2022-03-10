@@ -30,7 +30,7 @@ PCL_LEGACY_FILE = components/pcl-legacy.owl
 #TEMPLATE_CLASS_FILES = $(patsubst %, ../templates/_%class.tsv, $(JOBS))
 
 # overriding to add prefixes
-$(PATTERNDIR)/pattern.owl: update_patterns
+$(PATTERNDIR)/pattern.owl: 
 	if [ $(PAT) = true ]; then $(DOSDPT) prototype --prefixes=template_prefixes.yaml --obo-prefixes true --template=$(PATTERNDIR)/dosdp-patterns --outfile=$@; fi
 
 individual_patterns_names_default := $(strip $(patsubst %.tsv,%, $(notdir $(wildcard $(PATTERNDIR)/data/default/*.tsv))))
