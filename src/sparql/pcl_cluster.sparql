@@ -1,0 +1,9 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX pcl: <http://purl.obolibrary.org/obo/PCL_>
+
+SELECT (COUNT (DISTINCT ?ind) as ?indcount)
+WHERE {
+    ?ind a owl:NamedIndividual ;
+    pcl:0010059 ?cluster.
+  FILTER(isIRI(?ind) && (STRSTARTS(str(?ind), "http://purl.obolibrary.org/obo/PCL_")))
+}
