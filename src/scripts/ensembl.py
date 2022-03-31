@@ -1,6 +1,7 @@
 import os
 import logging
 import csv
+import requests
 from pathlib import Path
 import pandas as pd
 from template_generation_utils import read_csv, read_csv_to_dict, read_taxonomy_details_yaml, index_dendrogram
@@ -18,6 +19,9 @@ OUTPUT_MARKER = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../ma
 MARKER_COLUMNS = ["Marker1", "Marker2", "Marker3", "Marker4"]
 
 MARKER_COLUMNS_OPTIONAL = ["Marker5"]
+
+MYGENE_ENDPOINT = "https://mygene.info/v3/gene/{geneid}?fields=alias%2Cother_names&dotfield=false"
+MYGENE_BATCH_ENDPOINT = "https://mygene.info/v3/gene?fields=alias%2Cother_names"
 
 log = logging.getLogger(__name__)
 
@@ -225,6 +229,83 @@ def add_cluster_name_to_marker(marker_path):
     class_robot_template = pd.DataFrame.from_records(normalized_markers)
     class_robot_template.to_csv(OUTPUT_MARKER.format(taxonomy_id.replace("CCN", "").replace("CS", "")), sep="\t", index=False)
 
+
+def add_mygene_synonyms(gene_db_path):
+    """
+    Reads an existing gene database and queries mygene api to get synonyms.
+    """
+    headers, genes_by_id = read_csv_to_dict(gene_db_path, id_column=0, delimiter="\t")
+    gene_ids = [gene for gene in genes_by_id if ":" in gene]
+
+    synonyms = mygene_get_synonyms_in_batches(gene_ids, 1000)
+
+    with open(gene_db_path.replace(".tsv", "_mygene.tsv"), mode='w') as out:
+        writer = csv.writer(out, delimiter="\t", quotechar='"')
+        writer.writerow(["ID", "TYPE", "NAME", "SYNONYMS"])
+        writer.writerow(["ID", "SC %", "A rdfs:label", "A oboInOwl:hasExactSynonym SPLIT=|"])
+
+        for gene in genes_by_id:
+            if ":" in gene:
+                writer.writerow([genes_by_id[gene]["ID"], genes_by_id[gene]["TYPE"],
+                                 genes_by_id[gene]["NAME"], "|".join(synonyms[gene.split(":")[1]])])
+
+    log.info("MyGene crawling completed.")
+
+
+def mygene_get_synonyms_in_batches(gene_ids, batch_size):
+    synonyms = dict()
+    chunks = get_chunks(gene_ids, batch_size)
+    i = 0
+    for chunk in chunks:
+        i += 1
+        print("Processing chunk :" + str(i) + " of " + str(len(gene_ids) / batch_size))
+        synonyms.update(mygene_get_synonyms(chunk))
+    return synonyms
+
+
+def get_chunks(lst, n):
+    """Yield successive n-sized chunks from lst."""
+    for i in range(0, len(lst), n):
+        yield lst[i:i + n]
+
+
+def mygene_get_synonyms(genes):
+    """
+    Queries alias and other_names for the given gene.
+
+    Return: list of synonyms
+    """
+    headers = {'accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencoded'}
+    r = requests.post(MYGENE_BATCH_ENDPOINT, data=(encode_gene_list(genes)), headers=headers)
+
+    gene_synonyms = dict()
+    if r.status_code == 200:
+        response = r.json()
+        for query in response:
+            synonyms = set()
+            gene_id = query["query"]
+            if "alias" in query:
+                if isinstance(query["alias"], list):
+                    synonyms.update(query["alias"])
+                else:
+                    synonyms.add(query["alias"])
+            if "other_names" in query:
+                if isinstance(query["other_names"], list):
+                    synonyms.update(query["other_names"])
+                else:
+                    synonyms.add(query["other_names"])
+            gene_synonyms[gene_id] = synonyms
+    else:
+        log.error("!! Error occurred while querying mygene: " + "\n" + r.text)
+
+    return gene_synonyms
+
+
+def encode_gene_list(genes):
+    gene_ids = [gene.split(":")[1] for gene in genes]
+    return "ids=" + ",".join(gene_ids)
+
+
 # def generate_marker_template(taxon, output_file):
 #     marker_db = get_marker_db_by_id(taxon)
 #
@@ -264,9 +345,14 @@ def add_cluster_name_to_marker(marker_path):
 # fix_gene_database(GENE_DB_PATH.format("simple_human"), "entrez:")
 # fix_gene_database(GENE_DB_PATH.format("ensmusg"), "ensembl:")
 
-fix_gene_database_species(GENE_DB_PATH.format("simple_human"))
+# fix_gene_database_species(GENE_DB_PATH.format("simple_human"))
 # fix_gene_database_species(GENE_DB_PATH.format("simple_marmoset"))
 # fix_gene_database_species(GENE_DB_PATH.format("ensmusg"))
 
 # markers provided by Brian don't have clusterName, add them
 # add_cluster_name_to_marker("../markers/CS202002013_markers.tsv")
+
+# add_mygene_synonyms(GENE_DB_PATH.format("simple_human"))
+# add_mygene_synonyms(GENE_DB_PATH.format("simple_marmoset"))
+# add_mygene_synonyms(GENE_DB_PATH.format("ensmusg"))
+
