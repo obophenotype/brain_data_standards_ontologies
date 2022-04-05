@@ -3,6 +3,8 @@ import csv
 import re
 from template_generation_utils import read_csv_to_dict
 
+NEW_COLUMN_INDEX = 25
+
 HUBMAP_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)),
                           "../markers/raw/ASCT+B_Tables_Published_v1.0_v1.1 - Brain_v1.1.tsv")
 PCL_CCN201912131_TSV = os.path.join(os.path.dirname(os.path.realpath(__file__)),
@@ -22,31 +24,38 @@ def map_to_pcl():
     with open(HUBMAP_OUTPUT, mode='w') as out:
         writer = csv.writer(out, delimiter="\t", quotechar='"')
         new_headers = hubmap_headers.copy()
-        new_headers.insert(22, "PCL_ID")
+        new_headers.insert(NEW_COLUMN_INDEX, "PCL/ID")
+        new_headers.insert(NEW_COLUMN_INDEX + 1, "PCL/LABEL")
         writer.writerow(new_headers)
 
         print(headers)
         for row_index in hubmap_data:
             row_data = hubmap_data[row_index]
             pcl_id = ""
+            pcl_label = ""
             name_without_parentheses = re.sub(r'\([^)]*\)', '', row_data["CT/1"]).strip()
             pvalb_name = row_data["CT/1"].replace("PVALB", "PVALB-like")
             opalin_name = row_data["CT/1"].replace("OPALIN", "OPALIN-like")
             if row_data["CT/1"]:
                 if row_data["CT/1"] in pcl_by_pref_label:
                     pcl_id = pcl_by_pref_label[row_data["CT/1"]]["defined_class"]
+                    pcl_label = pcl_by_pref_label[row_data["CT/1"]]["prefLabel"]
                 elif name_without_parentheses in pcl_by_pref_label:
                     pcl_id = pcl_by_pref_label[name_without_parentheses]["defined_class"]
+                    pcl_label = pcl_by_pref_label[name_without_parentheses]["prefLabel"]
                 elif pvalb_name in pcl_by_pref_label:
                     pcl_id = pcl_by_pref_label[pvalb_name]["defined_class"]
+                    pcl_label = pcl_by_pref_label[pvalb_name]["prefLabel"]
                 elif opalin_name in pcl_by_pref_label:
                     pcl_id = pcl_by_pref_label[opalin_name]["defined_class"]
+                    pcl_label = pcl_by_pref_label[opalin_name]["prefLabel"]
                 elif row_data["CT/1"]:
                     print("Not Found:" + str(row_data["CT/1"]))
             new_row = []
             for header in hubmap_headers:
                 new_row.append(row_data[header])
-            new_row.insert(22, pcl_id)
+            new_row.insert(NEW_COLUMN_INDEX, pcl_id)
+            new_row.insert(NEW_COLUMN_INDEX + 1, pcl_label)
 
             writer.writerow(new_row)
 
