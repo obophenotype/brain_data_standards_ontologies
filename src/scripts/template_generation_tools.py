@@ -148,6 +148,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                       'Synonyms_from_taxonomy',
                       'Gross_cell_type',
                       'Taxon',
+                      'Taxon_abbv',
                       'Brain_region',
                       'Minimal_markers',
                       'Allen_markers',
@@ -174,6 +175,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                 d['Synonyms_from_taxonomy'] = get_synonyms_from_taxonomy(o)
                 d['Gross_cell_type'] = get_gross_cell_type(o['cell_set_accession'], subtrees, taxonomy_config)
                 d['Taxon'] = taxonomy_config['Species'][0]
+                d['Taxon_abbv'] = taxonomy_config['Gene_abbv'][0]
                 d['Brain_region'] = taxonomy_config['Brain_region'][0]
                 d['Cluster_ID'] = o['cell_set_accession']
                 if 'cell_set_alias_citation' in o and o['cell_set_alias_citation']:

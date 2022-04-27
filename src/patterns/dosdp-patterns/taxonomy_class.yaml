@@ -63,6 +63,7 @@ data_vars:
   Species_abbv: "xsd:string"
   Cluster_ID: "xsd:string"
   Cross_species_text: "xsd:string"
+  Taxon_abbv: "xsd:string"
 
 internal_vars:
   - var_name: Minimal_markers_cat
@@ -87,7 +88,7 @@ name:
       - prefLabel
       - Brain_region
       - Gross_cell_type
-      - Taxon
+      - Taxon_abbv
 
 def:
   xrefs: Alias_citations
