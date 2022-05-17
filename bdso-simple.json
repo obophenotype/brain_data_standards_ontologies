@@ -34,11 +34,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-04-27"
+            "val": "2022-05-17"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/pcl/releases/2022-04-27/bdso-simple.json",
+        "version": "http://purl.obolibrary.org/obo/pcl/releases/2022-05-17/bdso-simple.json",
         "xrefs": []
       },
       "nodes": [
@@ -810,6 +810,11 @@
         {
           "id": "http://purl.obolibrary.org/obo/PCL_0010062",
           "lbl": "fbeta_confidence_score",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/PCL_0010063",
+          "lbl": "transcriptomic_similarity_score",
           "type": "PROPERTY"
         },
         {

@@ -46,6 +46,7 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010059>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010060>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010061>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010062>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/PCL_0010063>))
 Declaration(AnnotationProperty(dce:contributor))
 Declaration(AnnotationProperty(dce:description))
 Declaration(AnnotationProperty(dce:title))
@@ -106,6 +107,10 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010061> "nuc
 # Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010062> (fbeta_confidence_score)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010062> "fbeta_confidence_score")
+
+# Annotation Property: <http://purl.obolibrary.org/obo/PCL_0010063> (transcriptomic_similarity_score)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCL_0010063> "transcriptomic_similarity_score")
 
 
 ############################

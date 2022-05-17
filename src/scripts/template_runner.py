@@ -46,7 +46,7 @@ else:
         generate_curated_class_template(args.input, args.output)
     elif args.ch:
         all_base_files = [x.strip() for x in args.base.split(' ') if x.strip()]
-        generate_homologous_to_template(args.input, all_base_files, args.output)
+        generate_homologous_to_template(args.input, all_base_files, args.input2, args.output)
     elif args.md:
         generate_denormalised_marker_template(args.input, args.output)
     elif args.cs:

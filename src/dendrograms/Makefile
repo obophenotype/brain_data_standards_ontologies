@@ -34,8 +34,8 @@ all: update_centralized_repo $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TE
 	else python ../scripts/template_runner.py generator -cc -i $(word 2, $^) -o $@ ; fi
 
 ../patterns/data/default/%_class_homologous.tsv: %.json nomenclature_table_%.csv $(TEMPLATE_CLASS_BASE_FILES)
-	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -ch -i $< -b "$(TEMPLATE_CLASS_BASE_FILES)" -o $@ ;\
-	else python ../scripts/template_runner.py generator -ch -i $(word 2, $^) -b "$(TEMPLATE_CLASS_BASE_FILES)" -o $@ ; fi
+	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -ch -i $< -b "$(TEMPLATE_CLASS_BASE_FILES)" -i2 $(CENTRALIZED_DIR)/$(REPO_NAME) -o $@ ;\
+	else python ../scripts/template_runner.py generator -ch -i $(word 2, $^) -b "$(TEMPLATE_CLASS_BASE_FILES)" -i2 $(CENTRALIZED_DIR)/$(REPO_NAME) -o $@ ; fi
 
 ../templates/%_app_specific.tsv: %.json nomenclature_table_%.csv
 	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -a -i $< -o $@ ;\
