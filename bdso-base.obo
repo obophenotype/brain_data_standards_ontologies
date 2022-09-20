@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: pcl/releases/2022-04-27/bdso-base.owl
+data-version: pcl/releases/2022-05-17/bdso-base.owl
 ontology: pcl/bdso-base
 property_value: http://purl.org/dc/elements/1.1/title "Brain Data Standards Cell Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2022-04-27" xsd:string
+property_value: owl:versionInfo "2022-05-17" xsd:string
 
 [Term]
 id: CL:4023119
@@ -6196,7 +6196,7 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027168 {xref
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027168 ! expresses
 relationship: RO:0015004 PCL:0012501 ! has characterizing marker set NS forest marker set of Lamp5-like Pax6 MOp (Mouse).
 relationship: RO:HOM0000007 PCL:0015154 ! (Mouse Lamp5)-like_C4 primary motor cortex GABAergic interneuron (Hsap)
-relationship: RO:HOM0000007 PCL:0019007 ! Inh PAX6 HMBOX1 primary motor cortex GABAergic interneuron (Cjac)
+relationship: RO:HOM0000007 PCL:0019007 {http://purl.obolibrary.org/obo/PCL_0010063="0.944989198971897"} ! Inh PAX6 HMBOX1 primary motor cortex GABAergic interneuron (Cjac)
 property_value: IAO:0000028 "Lamp5-like Pax6 MOp (Mouse)" xsd:string
 property_value: PCL:0010058 "Pax6 (Mmus)" xsd:string
 property_value: PCL:0010058 "Pip5k1b (Mmus)" xsd:string
@@ -6285,8 +6285,8 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028273 {xref
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000044447 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000049001 ! expresses
 relationship: RO:0015004 PCL:0012505 ! has characterizing marker set NS forest marker set of Lamp5 Pdlim5_1 MOp (Mouse).
-relationship: RO:HOM0000007 PCL:0015001 ! Inh L1 LAMP5 PVRL2 primary motor cortex GABAergic interneuron (Hsap)
-relationship: RO:HOM0000007 PCL:0019003 ! Inh LAMP5 TOX2 primary motor cortex GABAergic interneuron (Cjac)
+relationship: RO:HOM0000007 PCL:0015001 {http://purl.obolibrary.org/obo/PCL_0010063="0.816363903167762"} ! Inh L1 LAMP5 PVRL2 primary motor cortex GABAergic interneuron (Hsap)
+relationship: RO:HOM0000007 PCL:0019003 {http://purl.obolibrary.org/obo/PCL_0010063="0.857502338554785"} ! Inh LAMP5 TOX2 primary motor cortex GABAergic interneuron (Cjac)
 property_value: IAO:0000028 "Lamp5 Pdlim5_1 MOp (Mouse)" xsd:string
 property_value: PCL:0010058 "Dock5 (Mmus)" xsd:string
 property_value: PCL:0010058 "Ndnf (Mmus)" xsd:string
@@ -6349,7 +6349,7 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029361 ! exp
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000110002 ! expresses
 relationship: RO:0015004 PCL:0012508 ! has characterizing marker set NS forest marker set of Lamp5 Lhx6 MOp (Mouse).
 relationship: RO:HOM0000007 PCL:0015153 ! (Mouse Lamp5)-like_C3 primary motor cortex GABAergic interneuron (Hsap)
-relationship: RO:HOM0000007 PCL:0019004 ! Inh LAMP5 TRPC6 primary motor cortex GABAergic interneuron (Cjac)
+relationship: RO:HOM0000007 PCL:0019004 {http://purl.obolibrary.org/obo/PCL_0010063="0.936276846040658"} ! Inh LAMP5 TRPC6 primary motor cortex GABAergic interneuron (Cjac)
 property_value: IAO:0000028 "Lamp5 Lhx6 MOp (Mouse)" xsd:string
 property_value: PCL:0010058 "Gm45680 (Mmus)" xsd:string
 property_value: PCL:0010058 "Nos1 (Mmus)" xsd:string
@@ -6753,7 +6753,7 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004366 {xref
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022860 {xref="PMID:34616062"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029361 ! expresses
 relationship: RO:0015004 PCL:0012528 ! has characterizing marker set NS forest marker set of Sst Chodl MOp (Mouse).
-relationship: RO:HOM0000007 PCL:0015040 ! Inh L1-6 SST NPY primary motor cortex GABAergic interneuron (Hsap)
+relationship: RO:HOM0000007 PCL:0015040 {http://purl.obolibrary.org/obo/PCL_0010063="0.923797571548787"} ! Inh L1-6 SST NPY primary motor cortex GABAergic interneuron (Hsap)
 relationship: RO:HOM0000007 PCL:0019119 ! Sst Chodl(i) primary motor cortex GABAergic interneuron (Cjac)
 property_value: IAO:0000028 "Sst Chodl MOp (Mouse)" xsd:string
 property_value: PCL:0010058 "Nos1 (Mmus)" xsd:string
@@ -6937,7 +6937,7 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026765 ! exp
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000031997 ! expresses
 relationship: RO:0015004 PCL:0012537 ! has characterizing marker set NS forest marker set of Sst Crhr2_2 MOp (Mouse).
 relationship: RO:HOM0000007 PCL:0015166 ! (Mouse Sst)-like_C4 primary motor cortex GABAergic interneuron (Hsap)
-relationship: RO:HOM0000007 PCL:0019037 ! Inh SST LTBP1 primary motor cortex GABAergic interneuron (Cjac)
+relationship: RO:HOM0000007 PCL:0019037 {http://purl.obolibrary.org/obo/PCL_0010063="0.914733875054629"} ! Inh SST LTBP1 primary motor cortex GABAergic interneuron (Cjac)
 property_value: IAO:0000028 "Sst Crhr2_2 MOp (Mouse)" xsd:string
 property_value: PCL:0010058 "Lypd6b (Mmus)" xsd:string
 property_value: PCL:0010058 "Trpc6 (Mmus)" xsd:string
@@ -7039,7 +7039,7 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052062 ! exp
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111950 ! expresses
 relationship: RO:0015004 PCL:0012542 ! has characterizing marker set NS forest marker set of Sst C1ql3_1 MOp (Mouse).
 relationship: RO:HOM0000007 PCL:0015167 ! (Mouse Sst)-like_C5 primary motor cortex GABAergic interneuron (Hsap)
-relationship: RO:HOM0000007 PCL:0019027 ! Inh SST LOC108589054 primary motor cortex GABAergic interneuron (Cjac)
+relationship: RO:HOM0000007 PCL:0019027 {http://purl.obolibrary.org/obo/PCL_0010063="0.862793118002006"} ! Inh SST LOC108589054 primary motor cortex GABAergic interneuron (Cjac)
 property_value: IAO:0000028 "Sst C1ql3_1 MOp (Mouse)" xsd:string
 property_value: PCL:0010058 "Gm48893 (Mmus)" xsd:string
 property_value: PCL:0010058 "Pard3b (Mmus)" xsd:string
@@ -7144,8 +7144,8 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000000214 {xref
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000004366 {xref="PMID:34616062"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000028971 ! expresses
 relationship: RO:0015004 PCL:0012547 ! has characterizing marker set NS forest marker set of Sst Th_3 MOp (Mouse).
-relationship: RO:HOM0000007 PCL:0015058 ! Inh L6 SST TH primary motor cortex GABAergic interneuron (Hsap)
-relationship: RO:HOM0000007 PCL:0019029 ! Inh SST LOC103788138 primary motor cortex GABAergic interneuron (Cjac)
+relationship: RO:HOM0000007 PCL:0015058 {http://purl.obolibrary.org/obo/PCL_0010063="0.774094572355668"} ! Inh L6 SST TH primary motor cortex GABAergic interneuron (Hsap)
+relationship: RO:HOM0000007 PCL:0019029 {http://purl.obolibrary.org/obo/PCL_0010063="0.83030204160224"} ! Inh SST LOC103788138 primary motor cortex GABAergic interneuron (Cjac)
 property_value: IAO:0000028 "Sst Th_3 MOp (Mouse)" xsd:string
 property_value: PCL:0010058 "Cort (Mmus)" xsd:string
 property_value: PCL:0010058 "Th (Mmus)" xsd:string
@@ -7566,7 +7566,7 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000052430 ! exp
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000059857 ! expresses
 relationship: RO:0015004 PCL:0012567 ! has characterizing marker set NS forest marker set of L6 IT_1 MOp (Mouse).
 relationship: RO:HOM0000007 PCL:0015176 ! (Mouse L6 IT)-like_C1 primary motor cortex glutamatergic neuron (Hsap)
-relationship: RO:HOM0000007 PCL:0019060 ! Exc THEMIS COBL primary motor cortex glutamatergic neuron (Cjac)
+relationship: RO:HOM0000007 PCL:0019060 {http://purl.obolibrary.org/obo/PCL_0010063="0.950055515439351"} ! Exc THEMIS COBL primary motor cortex glutamatergic neuron (Cjac)
 property_value: IAO:0000028 "L6 IT_1 MOp (Mouse)" xsd:string
 property_value: PCL:0010058 "Bmpr1b (Mmus)" xsd:string
 property_value: PCL:0010058 "Fst (Mmus)" xsd:string
@@ -7611,8 +7611,8 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000026826 ! exp
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000027559 {xref="PMID:34616062"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042596 ! expresses
 relationship: RO:0015004 PCL:0012569 ! has characterizing marker set NS forest marker set of L6 IT Car3 MOp (Mouse).
-relationship: RO:HOM0000007 PCL:0015097 ! Exc L5-6 THEMIS SMYD1 primary motor cortex glutamatergic neuron (Hsap)
-relationship: RO:HOM0000007 PCL:0019076 ! Exc THEMIS NTNG2 primary motor cortex glutamatergic neuron (Cjac)
+relationship: RO:HOM0000007 PCL:0015097 {http://purl.obolibrary.org/obo/PCL_0010063="0.964839446323363"} ! Exc L5-6 THEMIS SMYD1 primary motor cortex glutamatergic neuron (Hsap)
+relationship: RO:HOM0000007 PCL:0019076 {http://purl.obolibrary.org/obo/PCL_0010063="0.941737867192486"} ! Exc THEMIS NTNG2 primary motor cortex glutamatergic neuron (Cjac)
 property_value: IAO:0000028 "L6 IT Car3 MOp (Mouse)" xsd:string
 property_value: PCL:0010058 "Nr4a2 (Mmus)" xsd:string
 property_value: PCL:0010058 "Tfap2d (Mmus)" xsd:string
@@ -7659,8 +7659,8 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000021541 ! exp
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000022112 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000040732 ! expresses
 relationship: RO:0015004 PCL:0012571 ! has characterizing marker set NS forest marker set of L5 ET_2 MOp (Mouse).
-relationship: RO:HOM0000007 PCL:0015112 ! Exc L3-5 FEZF2 LINC01107 primary motor cortex glutamatergic neuron (Hsap)
-relationship: RO:HOM0000007 PCL:0019072 ! Exc FEZF2 PDZRN4 primary motor cortex glutamatergic neuron (Cjac)
+relationship: RO:HOM0000007 PCL:0015112 {http://purl.obolibrary.org/obo/PCL_0010063="0.729180425603682"} ! Exc L3-5 FEZF2 LINC01107 primary motor cortex glutamatergic neuron (Hsap)
+relationship: RO:HOM0000007 PCL:0019072 {http://purl.obolibrary.org/obo/PCL_0010063="0.800121867521432"} ! Exc FEZF2 PDZRN4 primary motor cortex glutamatergic neuron (Cjac)
 property_value: IAO:0000028 "L5 ET_2 MOp (Mouse)" xsd:string
 property_value: PCL:0010058 "Erg (Mmus)" xsd:string
 property_value: PCL:0010058 "Gpc5 (Mmus)" xsd:string
@@ -7728,7 +7728,7 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000034009 ! exp
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000047907 ! expresses
 relationship: RO:0015004 PCL:0012574 ! has characterizing marker set NS forest marker set of L5/6 NP CT MOp (Mouse).
 relationship: RO:HOM0000007 PCL:0015175 ! (Mouse L5 IT)-like_C3 primary motor cortex glutamatergic neuron (Hsap)
-relationship: RO:HOM0000007 PCL:0019065 ! Exc RORB SLC38A11 primary motor cortex glutamatergic neuron (Cjac)
+relationship: RO:HOM0000007 PCL:0019065 {http://purl.obolibrary.org/obo/PCL_0010063="0.681534806964435"} ! Exc RORB SLC38A11 primary motor cortex glutamatergic neuron (Cjac)
 property_value: IAO:0000028 "L5/6 NP CT MOp (Mouse)" xsd:string
 property_value: PCL:0010058 "Grp (Mmus)" xsd:string
 property_value: PCL:0010058 "Rxfp1 (Mmus)" xsd:string
@@ -7774,8 +7774,8 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029563 ! exp
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000042501 {xref="PMID:34616062"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000078591 ! expresses
 relationship: RO:0015004 PCL:0012576 ! has characterizing marker set NS forest marker set of L6 CT Cpa6 MOp (Mouse).
-relationship: RO:HOM0000007 PCL:0015101 ! Exc L5-6 FEZF2 C9orf135-AS1 primary motor cortex glutamatergic neuron (Hsap)
-relationship: RO:HOM0000007 PCL:0019074 ! Exc FEZF2 NRP1 primary motor cortex glutamatergic neuron (Cjac)
+relationship: RO:HOM0000007 PCL:0015101 {http://purl.obolibrary.org/obo/PCL_0010063="0.926901684172029"} ! Exc L5-6 FEZF2 C9orf135-AS1 primary motor cortex glutamatergic neuron (Hsap)
+relationship: RO:HOM0000007 PCL:0019074 {http://purl.obolibrary.org/obo/PCL_0010063="0.912180073014957"} ! Exc FEZF2 NRP1 primary motor cortex glutamatergic neuron (Cjac)
 property_value: IAO:0000028 "L6 CT Cpa6 MOp (Mouse)" xsd:string
 property_value: PCL:0010058 "Foxp2 (Mmus)" xsd:string
 property_value: PCL:0010058 "Hs3st4 (Mmus)" xsd:string
@@ -8087,8 +8087,8 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029231 ! exp
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000029231 {xref="PMID:34616062"} ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039954 ! expresses
 relationship: RO:0015004 PCL:0012591 ! has characterizing marker set NS forest marker set of OPC Pdgfra MOp (Mouse).
-relationship: RO:HOM0000007 PCL:0015118 ! OPC L1-6 PDGFRA COL20A1 primary motor cortex oligodendrocyte precursor cell (Hsap)
-relationship: RO:HOM0000007 PCL:0019078 ! OPC PDGFRA VCAN primary motor cortex oligodendrocyte precursor cell (Cjac)
+relationship: RO:HOM0000007 PCL:0015118 {http://purl.obolibrary.org/obo/PCL_0010063="0.933595004184517"} ! OPC L1-6 PDGFRA COL20A1 primary motor cortex oligodendrocyte precursor cell (Hsap)
+relationship: RO:HOM0000007 PCL:0019078 {http://purl.obolibrary.org/obo/PCL_0010063="0.936905138665799"} ! OPC PDGFRA VCAN primary motor cortex oligodendrocyte precursor cell (Cjac)
 property_value: IAO:0000028 "OPC Pdgfra MOp (Mouse)" xsd:string
 property_value: PCL:0010058 "Pdgfra (Mmus)" xsd:string
 property_value: PCL:0010058 "Stk32a (Mmus)" xsd:string
@@ -8239,8 +8239,8 @@ relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039316 ! exp
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000050121 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000111994 ! expresses
 relationship: RO:0015004 PCL:0012599 ! has characterizing marker set NS forest marker set of Oligo Opalin_1 MOp (Mouse).
-relationship: RO:HOM0000007 PCL:0015119 ! Oligo L3-6 OPALIN-like ENPP6 primary motor cortex oligodendrocyte precursor cell (Hsap)
-relationship: RO:HOM0000007 PCL:0019084 ! Oligo OPALIN MOBP primary motor cortex oligodendrocyte (Cjac)
+relationship: RO:HOM0000007 PCL:0015119 {http://purl.obolibrary.org/obo/PCL_0010063="0.983858134793439"} ! Oligo L3-6 OPALIN-like ENPP6 primary motor cortex oligodendrocyte precursor cell (Hsap)
+relationship: RO:HOM0000007 PCL:0019084 {http://purl.obolibrary.org/obo/PCL_0010063="0.945028493085369"} ! Oligo OPALIN MOBP primary motor cortex oligodendrocyte (Cjac)
 property_value: IAO:0000028 "Oligo Opalin_1 MOp (Mouse)" xsd:string
 property_value: PCL:0010058 "A330049N07Rik (Mmus)" xsd:string
 property_value: PCL:0010058 "Anln (Mmus)" xsd:string
@@ -8319,7 +8319,7 @@ relationship: RO:0002162 NCBITaxon:10090
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000030237 ! expresses
 relationship: RO:0002292 http://identifiers.org/ensembl/ENSMUSG00000039167 ! expresses
 relationship: RO:0015004 PCL:0012603 ! has characterizing marker set NS forest marker set of Endo MOp (Mouse).
-relationship: RO:HOM0000007 PCL:0015125 ! Endo L2-5 NOSTRIN SRGN primary motor cortex endothelial cell (Hsap)
+relationship: RO:HOM0000007 PCL:0015125 {http://purl.obolibrary.org/obo/PCL_0010063="0.959957303958795"} ! Endo L2-5 NOSTRIN SRGN primary motor cortex endothelial cell (Hsap)
 property_value: IAO:0000028 "Endo MOp (Mouse)" xsd:string
 property_value: PCL:0010058 "Adgrl4 (Mmus)" xsd:string
 property_value: PCL:0010058 "Slco1a4 (Mmus)" xsd:string
@@ -10779,8 +10779,8 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/5649 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/5819 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/7222 ! expresses
 relationship: RO:0015004 PCL:0016501 ! has characterizing marker set NS forest marker set of Inh L1 LAMP5 PVRL2 M1 (Human).
-relationship: RO:HOM0000007 PCL:0011005 ! Lamp5 Pdlim5_1 primary motor cortex GABAergic interneuron (Mmus)
-relationship: RO:HOM0000007 PCL:0019003 ! Inh LAMP5 TOX2 primary motor cortex GABAergic interneuron (Cjac)
+relationship: RO:HOM0000007 PCL:0011005 {http://purl.obolibrary.org/obo/PCL_0010063="0.817730726962028"} ! Lamp5 Pdlim5_1 primary motor cortex GABAergic interneuron (Mmus)
+relationship: RO:HOM0000007 PCL:0019003 {http://purl.obolibrary.org/obo/PCL_0010063="0.97975408192453"} ! Inh LAMP5 TOX2 primary motor cortex GABAergic interneuron (Cjac)
 property_value: IAO:0000028 "Inh L1 LAMP5 PVRL2 M1 (Human)" xsd:string
 property_value: PCL:0010058 "CBLN4 (Hsap)" xsd:string
 property_value: PCL:0010058 "HS3ST5 (Hsap)" xsd:string
@@ -10993,7 +10993,7 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/3490 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/5080 {xref="PMID:34616066"} ! expresses
 relationship: RO:0015004 PCL:0016511 ! has characterizing marker set NS forest marker set of Inh L2 PAX6 FREM2 M1 (Human).
 relationship: RO:HOM0000007 PCL:0011134 ! Sncg-like_C2 primary motor cortex GABAergic interneuron (Mmus)
-relationship: RO:HOM0000007 PCL:0019008 ! Inh SNCG PLPPR1 primary motor cortex GABAergic interneuron (Cjac)
+relationship: RO:HOM0000007 PCL:0019008 {http://purl.obolibrary.org/obo/PCL_0010063="0.786437097791116"} ! Inh SNCG PLPPR1 primary motor cortex GABAergic interneuron (Cjac)
 property_value: IAO:0000028 "Inh L2 PAX6 FREM2 M1 (Human)" xsd:string
 property_value: PCL:0010058 "CILP2 (Hsap)" xsd:string
 property_value: PCL:0010058 "IGFBP7 (Hsap)" xsd:string
@@ -11585,7 +11585,7 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/4852 {xref="PMID:34616
 relationship: RO:0002292 https://identifiers.org/ncbigene/4852 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/6750 {xref="PMID:34616066"} ! expresses
 relationship: RO:0015004 PCL:0016540 ! has characterizing marker set NS forest marker set of Inh L1-6 SST NPY M1 (Human).
-relationship: RO:HOM0000007 PCL:0011028 ! Sst Chodl primary motor cortex GABAergic interneuron (Mmus)
+relationship: RO:HOM0000007 PCL:0011028 {http://purl.obolibrary.org/obo/PCL_0010063="0.924364754658125"} ! Sst Chodl primary motor cortex GABAergic interneuron (Mmus)
 relationship: RO:HOM0000007 PCL:0019119 ! Sst Chodl(i) primary motor cortex GABAergic interneuron (Cjac)
 property_value: IAO:0000028 "Inh L1-6 SST NPY M1 (Human)" xsd:string
 property_value: PCL:0010058 "NPY (Hsap)" xsd:string
@@ -11956,8 +11956,8 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/6750 {xref="PMID:34616
 relationship: RO:0002292 https://identifiers.org/ncbigene/7054 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/7054 {xref="PMID:34616066"} ! expresses
 relationship: RO:0015004 PCL:0016558 ! has characterizing marker set NS forest marker set of Inh L6 SST TH M1 (Human).
-relationship: RO:HOM0000007 PCL:0011047 ! Sst Th_3 primary motor cortex GABAergic interneuron (Mmus)
-relationship: RO:HOM0000007 PCL:0019029 ! Inh SST LOC103788138 primary motor cortex GABAergic interneuron (Cjac)
+relationship: RO:HOM0000007 PCL:0011047 {http://purl.obolibrary.org/obo/PCL_0010063="0.7757760114577"} ! Sst Th_3 primary motor cortex GABAergic interneuron (Mmus)
+relationship: RO:HOM0000007 PCL:0019029 {http://purl.obolibrary.org/obo/PCL_0010063="0.896494622393799"} ! Inh SST LOC103788138 primary motor cortex GABAergic interneuron (Cjac)
 property_value: IAO:0000028 "Inh L6 SST TH M1 (Human)" xsd:string
 property_value: PCL:0010058 "LOC100128108 (Hsap)" xsd:string
 property_value: PCL:0010058 "TH (Hsap)" xsd:string
@@ -12256,7 +12256,7 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/255743 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/5816 {xref="PMID:34616066"} ! expresses
 relationship: RO:0015004 PCL:0016572 ! has characterizing marker set NS forest marker set of Inh L1-6 PVALB COL15A1 M1 (Human).
 relationship: RO:HOM0000007 PCL:0011178 ! Chandelier primary motor cortex GABAergic interneuron (Mmus)
-relationship: RO:HOM0000007 PCL:0019052 ! Inh PVALB FAM19A4 primary motor cortex GABAergic interneuron (Cjac)
+relationship: RO:HOM0000007 PCL:0019052 {http://purl.obolibrary.org/obo/PCL_0010063="0.967924405834006"} ! Inh PVALB FAM19A4 primary motor cortex GABAergic interneuron (Cjac)
 property_value: IAO:0000028 "Inh L1-6 PVALB COL15A1 M1 (Human)" xsd:string
 property_value: PCL:0010058 "COL15A1 (Hsap)" xsd:string
 property_value: PCL:0010058 "NPNT (Hsap)" xsd:string
@@ -12807,8 +12807,8 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/387357 {xref="PMID:346
 relationship: RO:0002292 https://identifiers.org/ncbigene/57194 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/7224 ! expresses
 relationship: RO:0015004 PCL:0016597 ! has characterizing marker set NS forest marker set of Exc L5-6 THEMIS SMYD1 M1 (Human).
-relationship: RO:HOM0000007 PCL:0011069 ! L6 IT Car3 primary motor cortex glutamatergic neuron (Mmus)
-relationship: RO:HOM0000007 PCL:0019076 ! Exc THEMIS NTNG2 primary motor cortex glutamatergic neuron (Cjac)
+relationship: RO:HOM0000007 PCL:0011069 {http://purl.obolibrary.org/obo/PCL_0010063="0.935254794768959"} ! L6 IT Car3 primary motor cortex glutamatergic neuron (Mmus)
+relationship: RO:HOM0000007 PCL:0019076 {http://purl.obolibrary.org/obo/PCL_0010063="0.879788237732626"} ! Exc THEMIS NTNG2 primary motor cortex glutamatergic neuron (Cjac)
 property_value: IAO:0000028 "Exc L5-6 THEMIS SMYD1 M1 (Human)" xsd:string
 property_value: PCL:0010058 "ATP10A (Hsap)" xsd:string
 property_value: PCL:0010058 "TRPC5 (Hsap)" xsd:string
@@ -12895,8 +12895,8 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/9037 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/93556 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/93986 ! expresses
 relationship: RO:0015004 PCL:0016601 ! has characterizing marker set NS forest marker set of Exc L5-6 FEZF2 C9orf135-AS1 M1 (Human).
-relationship: RO:HOM0000007 PCL:0011076 ! L6 CT Cpa6 primary motor cortex glutamatergic neuron (Mmus)
-relationship: RO:HOM0000007 PCL:0019074 ! Exc FEZF2 NRP1 primary motor cortex glutamatergic neuron (Cjac)
+relationship: RO:HOM0000007 PCL:0011076 {http://purl.obolibrary.org/obo/PCL_0010063="0.898480309552744"} ! L6 CT Cpa6 primary motor cortex glutamatergic neuron (Mmus)
+relationship: RO:HOM0000007 PCL:0019074 {http://purl.obolibrary.org/obo/PCL_0010063="0.979729586392342"} ! Exc FEZF2 NRP1 primary motor cortex glutamatergic neuron (Cjac)
 property_value: IAO:0000028 "Exc L5-6 FEZF2 C9orf135-AS1 M1 (Human)" xsd:string
 property_value: PCL:0010058 "EGFEM1P (Hsap)" xsd:string
 property_value: PCL:0010058 "FOXP2 (Hsap)" xsd:string
@@ -13127,8 +13127,8 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/153579 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/1910 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/55079 {xref="PMID:34616066"} ! expresses
 relationship: RO:0015004 PCL:0016612 ! has characterizing marker set NS forest marker set of Exc L3-5 FEZF2 LINC01107 M1 (Human).
-relationship: RO:HOM0000007 PCL:0011071 ! L5 ET_2 primary motor cortex glutamatergic neuron (Mmus)
-relationship: RO:HOM0000007 PCL:0019072 ! Exc FEZF2 PDZRN4 primary motor cortex glutamatergic neuron (Cjac)
+relationship: RO:HOM0000007 PCL:0011071 {http://purl.obolibrary.org/obo/PCL_0010063="0.706821732772474"} ! L5 ET_2 primary motor cortex glutamatergic neuron (Mmus)
+relationship: RO:HOM0000007 PCL:0019072 {http://purl.obolibrary.org/obo/PCL_0010063="0.622685129313549"} ! Exc FEZF2 PDZRN4 primary motor cortex glutamatergic neuron (Cjac)
 property_value: IAO:0000028 "Exc L3-5 FEZF2 LINC01107 M1 (Human)" xsd:string
 property_value: PCL:0010058 "BTNL9 (Hsap)" xsd:string
 property_value: PCL:0010058 "EDNRB (Hsap)" xsd:string
@@ -13251,8 +13251,8 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/202374 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/5156 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/57642 {xref="PMID:34616066"} ! expresses
 relationship: RO:0015004 PCL:0016618 ! has characterizing marker set NS forest marker set of OPC L1-6 PDGFRA COL20A1 M1 (Human).
-relationship: RO:HOM0000007 PCL:0011091 ! OPC Pdgfra primary motor cortex oligodendrocyte precursor cell (Mmus)
-relationship: RO:HOM0000007 PCL:0019078 ! OPC PDGFRA VCAN primary motor cortex oligodendrocyte precursor cell (Cjac)
+relationship: RO:HOM0000007 PCL:0011091 {http://purl.obolibrary.org/obo/PCL_0010063="0.933595004184517"} ! OPC Pdgfra primary motor cortex oligodendrocyte precursor cell (Mmus)
+relationship: RO:HOM0000007 PCL:0019078 {http://purl.obolibrary.org/obo/PCL_0010063="0.993517429726538"} ! OPC PDGFRA VCAN primary motor cortex oligodendrocyte precursor cell (Cjac)
 property_value: IAO:0000028 "OPC L1-6 PDGFRA COL20A1 M1 (Human)" xsd:string
 property_value: PCL:0010058 "STK32A (Hsap)" xsd:string
 property_value: PCL:0010058 "VCAN (Hsap)" xsd:string
@@ -13275,8 +13275,8 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/5129 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/6285 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/9705 ! expresses
 relationship: RO:0015004 PCL:0016619 ! has characterizing marker set NS forest marker set of Oligo L3-6 OPALIN-like ENPP6 M1 (Human).
-relationship: RO:HOM0000007 PCL:0011099 ! Oligo Opalin_1 primary motor cortex oligodendrocyte (Mmus)
-relationship: RO:HOM0000007 PCL:0019084 ! Oligo OPALIN MOBP primary motor cortex oligodendrocyte (Cjac)
+relationship: RO:HOM0000007 PCL:0011099 {http://purl.obolibrary.org/obo/PCL_0010063="0.983858134793439"} ! Oligo Opalin_1 primary motor cortex oligodendrocyte (Mmus)
+relationship: RO:HOM0000007 PCL:0019084 {http://purl.obolibrary.org/obo/PCL_0010063="0.989025842508872"} ! Oligo OPALIN MOBP primary motor cortex oligodendrocyte (Cjac)
 property_value: IAO:0000028 "Oligo L3-6 OPALIN-like ENPP6 M1 (Human)" xsd:string
 property_value: PCL:0010058 "CDK18 (Hsap)" xsd:string
 property_value: PCL:0010058 "LOC101927199 (Hsap)" xsd:string
@@ -13439,7 +13439,7 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/64805 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/7305 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/972 {xref="PMID:34616066"} ! expresses
 relationship: RO:0015004 PCL:0016627 ! has characterizing marker set NS forest marker set of Micro L1-6 TYROBP CD74 M1 (Human).
-relationship: RO:HOM0000007 PCL:0019094 ! Micro TYROBP LOC103788313 primary motor cortex microglial cell (Cjac)
+relationship: RO:HOM0000007 PCL:0019094 {http://purl.obolibrary.org/obo/PCL_0010063="0.962136387618694"} ! Micro TYROBP LOC103788313 primary motor cortex microglial cell (Cjac)
 property_value: IAO:0000028 "Micro L1-6 TYROBP CD74 M1 (Human)" xsd:string
 property_value: PCL:0010058 "APBB1IP (Hsap)" xsd:string
 property_value: PCL:0010058 "P2RY12 (Hsap)" xsd:string
@@ -15451,8 +15451,8 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/100385471 {xref="PMID:
 relationship: RO:0002292 https://identifiers.org/ncbigene/100385471 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/100412902 {xref="PMID:34616066"} ! expresses
 relationship: RO:0015004 PCL:0020501 ! has characterizing marker set NS forest marker set of Inh SST NPY M1 (Marmoset).
-relationship: RO:HOM0000007 PCL:0011028 ! Sst Chodl primary motor cortex GABAergic interneuron (Mmus)
-relationship: RO:HOM0000007 PCL:0015040 ! Inh L1-6 SST NPY primary motor cortex GABAergic interneuron (Hsap)
+relationship: RO:HOM0000007 PCL:0011028 {http://purl.obolibrary.org/obo/PCL_0010063="0.936143691112208"} ! Sst Chodl primary motor cortex GABAergic interneuron (Mmus)
+relationship: RO:HOM0000007 PCL:0015040 {http://purl.obolibrary.org/obo/PCL_0010063="0.92886750459538"} ! Inh L1-6 SST NPY primary motor cortex GABAergic interneuron (Hsap)
 property_value: IAO:0000028 "Inh SST NPY M1 (Marmoset)" xsd:string
 property_value: PCL:0010058 "NPY (Cjac)" xsd:string
 property_value: prefLabel "Inh SST NPY" xsd:string
@@ -15494,8 +15494,8 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/100400741 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/100403212 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/100410437 {xref="PMID:34616066"} ! expresses
 relationship: RO:0015004 PCL:0020503 ! has characterizing marker set NS forest marker set of Inh LAMP5 TOX2 M1 (Marmoset).
-relationship: RO:HOM0000007 PCL:0011005 ! Lamp5 Pdlim5_1 primary motor cortex GABAergic interneuron (Mmus)
-relationship: RO:HOM0000007 PCL:0015001 ! Inh L1 LAMP5 PVRL2 primary motor cortex GABAergic interneuron (Hsap)
+relationship: RO:HOM0000007 PCL:0011005 {http://purl.obolibrary.org/obo/PCL_0010063="0.867737633917582"} ! Lamp5 Pdlim5_1 primary motor cortex GABAergic interneuron (Mmus)
+relationship: RO:HOM0000007 PCL:0015001 {http://purl.obolibrary.org/obo/PCL_0010063="0.990223808970747"} ! Inh L1 LAMP5 PVRL2 primary motor cortex GABAergic interneuron (Hsap)
 property_value: IAO:0000028 "Inh LAMP5 TOX2 M1 (Marmoset)" xsd:string
 property_value: PCL:0010058 "ALK (Cjac)" xsd:string
 property_value: PCL:0010058 "RELN (Cjac)" xsd:string
@@ -15518,7 +15518,7 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/100395510 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/100396102 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/100410437 {xref="PMID:34616066"} ! expresses
 relationship: RO:0015004 PCL:0020504 ! has characterizing marker set NS forest marker set of Inh LAMP5 TRPC6 M1 (Marmoset).
-relationship: RO:HOM0000007 PCL:0011008 ! Lamp5 Lhx6 primary motor cortex GABAergic interneuron (Mmus)
+relationship: RO:HOM0000007 PCL:0011008 {http://purl.obolibrary.org/obo/PCL_0010063="0.946761338897252"} ! Lamp5 Lhx6 primary motor cortex GABAergic interneuron (Mmus)
 relationship: RO:HOM0000007 PCL:0015153 ! (Mouse Lamp5)-like_C3 primary motor cortex GABAergic interneuron (Hsap)
 property_value: IAO:0000028 "Inh LAMP5 TRPC6 M1 (Marmoset)" xsd:string
 property_value: PCL:0010058 "TACR1 (Cjac)" xsd:string
@@ -15578,7 +15578,7 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/100403212 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/100404923 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/100408455 ! expresses
 relationship: RO:0015004 PCL:0020507 ! has characterizing marker set NS forest marker set of Inh PAX6 HMBOX1 M1 (Marmoset).
-relationship: RO:HOM0000007 PCL:0011001 ! Lamp5-like Pax6 primary motor cortex GABAergic interneuron (Mmus)
+relationship: RO:HOM0000007 PCL:0011001 {http://purl.obolibrary.org/obo/PCL_0010063="0.95550125273093"} ! Lamp5-like Pax6 primary motor cortex GABAergic interneuron (Mmus)
 relationship: RO:HOM0000007 PCL:0015154 ! (Mouse Lamp5)-like_C4 primary motor cortex GABAergic interneuron (Hsap)
 property_value: IAO:0000028 "Inh PAX6 HMBOX1 M1 (Marmoset)" xsd:string
 property_value: PCL:0010058 "RELN (Cjac)" xsd:string
@@ -15601,7 +15601,7 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/100393865 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/100401551 {xref="PMID:34616066"} ! expresses
 relationship: RO:0015004 PCL:0020508 ! has characterizing marker set NS forest marker set of Inh SNCG PLPPR1 M1 (Marmoset).
 relationship: RO:HOM0000007 PCL:0011134 ! Sncg-like_C2 primary motor cortex GABAergic interneuron (Mmus)
-relationship: RO:HOM0000007 PCL:0015011 ! Inh L2 PAX6 FREM2 primary motor cortex GABAergic interneuron (Hsap)
+relationship: RO:HOM0000007 PCL:0015011 {http://purl.obolibrary.org/obo/PCL_0010063="0.794841024760952"} ! Inh L2 PAX6 FREM2 primary motor cortex GABAergic interneuron (Hsap)
 property_value: IAO:0000028 "Inh SNCG PLPPR1 M1 (Marmoset)" xsd:string
 property_value: PCL:0010058 "CNR1 (Cjac)" xsd:string
 property_value: PCL:0010058 "TRPM3 (Cjac)" xsd:string
@@ -15981,7 +15981,7 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/100391230 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/100412902 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/108589054 {xref="PMID:34616066"} ! expresses
 relationship: RO:0015004 PCL:0020527 ! has characterizing marker set NS forest marker set of Inh SST LOC108589054 M1 (Marmoset).
-relationship: RO:HOM0000007 PCL:0011042 ! Sst C1ql3_1 primary motor cortex GABAergic interneuron (Mmus)
+relationship: RO:HOM0000007 PCL:0011042 {http://purl.obolibrary.org/obo/PCL_0010063="0.873045150365395"} ! Sst C1ql3_1 primary motor cortex GABAergic interneuron (Mmus)
 relationship: RO:HOM0000007 PCL:0015167 ! (Mouse Sst)-like_C5 primary motor cortex GABAergic interneuron (Hsap)
 property_value: IAO:0000028 "Inh SST LOC108589054 M1 (Marmoset)" xsd:string
 property_value: PCL:0010058 "SULF1 (Cjac)" xsd:string
@@ -16028,8 +16028,8 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/100412902 {xref="PMID:
 relationship: RO:0002292 https://identifiers.org/ncbigene/100415258 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/103788138 {xref="PMID:34616066"} ! expresses
 relationship: RO:0015004 PCL:0020529 ! has characterizing marker set NS forest marker set of Inh SST LOC103788138 M1 (Marmoset).
-relationship: RO:HOM0000007 PCL:0011047 ! Sst Th_3 primary motor cortex GABAergic interneuron (Mmus)
-relationship: RO:HOM0000007 PCL:0015058 ! Inh L6 SST TH primary motor cortex GABAergic interneuron (Hsap)
+relationship: RO:HOM0000007 PCL:0011047 {http://purl.obolibrary.org/obo/PCL_0010063="0.840451290780206"} ! Sst Th_3 primary motor cortex GABAergic interneuron (Mmus)
+relationship: RO:HOM0000007 PCL:0015058 {http://purl.obolibrary.org/obo/PCL_0010063="0.906074632488197"} ! Inh L6 SST TH primary motor cortex GABAergic interneuron (Hsap)
 property_value: IAO:0000028 "Inh SST LOC103788138 M1 (Marmoset)" xsd:string
 property_value: PCL:0010058 "ALK (Cjac)" xsd:string
 property_value: PCL:0010058 "GLRA3 (Cjac)" xsd:string
@@ -16194,7 +16194,7 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/100404471 {xref="PMID:
 relationship: RO:0002292 https://identifiers.org/ncbigene/100412902 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/100415258 ! expresses
 relationship: RO:0015004 PCL:0020537 ! has characterizing marker set NS forest marker set of Inh SST LTBP1 M1 (Marmoset).
-relationship: RO:HOM0000007 PCL:0011037 ! Sst Crhr2_2 primary motor cortex GABAergic interneuron (Mmus)
+relationship: RO:HOM0000007 PCL:0011037 {http://purl.obolibrary.org/obo/PCL_0010063="0.925150218270558"} ! Sst Crhr2_2 primary motor cortex GABAergic interneuron (Mmus)
 relationship: RO:HOM0000007 PCL:0015166 ! (Mouse Sst)-like_C4 primary motor cortex GABAergic interneuron (Hsap)
 property_value: IAO:0000028 "Inh SST LTBP1 M1 (Marmoset)" xsd:string
 property_value: PCL:0010058 "COL12A1 (Cjac)" xsd:string
@@ -16526,7 +16526,7 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/100399505 {xref="PMID:
 relationship: RO:0002292 https://identifiers.org/ncbigene/100408527 ! expresses
 relationship: RO:0015004 PCL:0020552 ! has characterizing marker set NS forest marker set of Inh PVALB FAM19A4 M1 (Marmoset).
 relationship: RO:HOM0000007 PCL:0011178 ! Chandelier primary motor cortex GABAergic interneuron (Mmus)
-relationship: RO:HOM0000007 PCL:0015072 ! Inh L1-6 PVALB COL15A1 primary motor cortex GABAergic interneuron (Hsap)
+relationship: RO:HOM0000007 PCL:0015072 {http://purl.obolibrary.org/obo/PCL_0010063="0.978267720056844"} ! Inh L1-6 PVALB COL15A1 primary motor cortex GABAergic interneuron (Hsap)
 property_value: IAO:0000028 "Inh PVALB FAM19A4 M1 (Marmoset)" xsd:string
 property_value: PCL:0010058 "FAM19A1 (Cjac)" xsd:string
 property_value: PCL:0010058 "POSTN (Cjac)" xsd:string
@@ -16697,7 +16697,7 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/100403440 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/100404295 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/100413043 ! expresses
 relationship: RO:0015004 PCL:0020560 ! has characterizing marker set NS forest marker set of Exc THEMIS COBL M1 (Marmoset).
-relationship: RO:HOM0000007 PCL:0011067 ! L6 IT_1 primary motor cortex glutamatergic neuron (Mmus)
+relationship: RO:HOM0000007 PCL:0011067 {http://purl.obolibrary.org/obo/PCL_0010063="0.918675690651135"} ! L6 IT_1 primary motor cortex glutamatergic neuron (Mmus)
 relationship: RO:HOM0000007 PCL:0015176 ! (Mouse L6 IT)-like_C1 primary motor cortex glutamatergic neuron (Hsap)
 property_value: IAO:0000028 "Exc THEMIS COBL M1 (Marmoset)" xsd:string
 property_value: PCL:0010058 "CNR1 (Cjac)" xsd:string
@@ -16804,7 +16804,7 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/100401449 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/100405410 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/100411307 ! expresses
 relationship: RO:0015004 PCL:0020565 ! has characterizing marker set NS forest marker set of Exc RORB SLC38A11 M1 (Marmoset).
-relationship: RO:HOM0000007 PCL:0011074 ! L5/6 NP CT primary motor cortex glutamatergic neuron (Mmus)
+relationship: RO:HOM0000007 PCL:0011074 {http://purl.obolibrary.org/obo/PCL_0010063="0.65098741046647"} ! L5/6 NP CT primary motor cortex glutamatergic neuron (Mmus)
 relationship: RO:HOM0000007 PCL:0015175 ! (Mouse L5 IT)-like_C3 primary motor cortex glutamatergic neuron (Hsap)
 property_value: IAO:0000028 "Exc RORB SLC38A11 M1 (Marmoset)" xsd:string
 property_value: PCL:0010058 "FOXP2 (Cjac)" xsd:string
@@ -16953,8 +16953,8 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/100407617 {xref="PMID:
 relationship: RO:0002292 https://identifiers.org/ncbigene/100412026 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/100412026 ! expresses
 relationship: RO:0015004 PCL:0020572 ! has characterizing marker set NS forest marker set of Exc FEZF2 PDZRN4 M1 (Marmoset).
-relationship: RO:HOM0000007 PCL:0011071 ! L5 ET_2 primary motor cortex glutamatergic neuron (Mmus)
-relationship: RO:HOM0000007 PCL:0015112 ! Exc L3-5 FEZF2 LINC01107 primary motor cortex glutamatergic neuron (Hsap)
+relationship: RO:HOM0000007 PCL:0011071 {http://purl.obolibrary.org/obo/PCL_0010063="0.769206844911403"} ! L5 ET_2 primary motor cortex glutamatergic neuron (Mmus)
+relationship: RO:HOM0000007 PCL:0015112 {http://purl.obolibrary.org/obo/PCL_0010063="0.611956330825868"} ! Exc L3-5 FEZF2 LINC01107 primary motor cortex glutamatergic neuron (Hsap)
 property_value: IAO:0000028 "Exc FEZF2 PDZRN4 M1 (Marmoset)" xsd:string
 property_value: PCL:0010058 "ERG (Cjac)" xsd:string
 property_value: PCL:0010058 "PDZRN4 (Cjac)" xsd:string
@@ -16997,8 +16997,8 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/100394500 {xref="PMID:
 relationship: RO:0002292 https://identifiers.org/ncbigene/100407617 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/100410860 ! expresses
 relationship: RO:0015004 PCL:0020574 ! has characterizing marker set NS forest marker set of Exc FEZF2 NRP1 M1 (Marmoset).
-relationship: RO:HOM0000007 PCL:0011076 ! L6 CT Cpa6 primary motor cortex glutamatergic neuron (Mmus)
-relationship: RO:HOM0000007 PCL:0015101 ! Exc L5-6 FEZF2 C9orf135-AS1 primary motor cortex glutamatergic neuron (Hsap)
+relationship: RO:HOM0000007 PCL:0011076 {http://purl.obolibrary.org/obo/PCL_0010063="0.880917664086244"} ! L6 CT Cpa6 primary motor cortex glutamatergic neuron (Mmus)
+relationship: RO:HOM0000007 PCL:0015101 {http://purl.obolibrary.org/obo/PCL_0010063="0.979153205232323"} ! Exc L5-6 FEZF2 C9orf135-AS1 primary motor cortex glutamatergic neuron (Hsap)
 property_value: IAO:0000028 "Exc FEZF2 NRP1 M1 (Marmoset)" xsd:string
 property_value: PCL:0010058 "HS3ST4 (Cjac)" xsd:string
 property_value: PCL:0010058 "NRP1 (Cjac)" xsd:string
@@ -17042,8 +17042,8 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/100405312 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/100405312 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/100408417 ! expresses
 relationship: RO:0015004 PCL:0020576 ! has characterizing marker set NS forest marker set of Exc THEMIS NTNG2 M1 (Marmoset).
-relationship: RO:HOM0000007 PCL:0011069 ! L6 IT Car3 primary motor cortex glutamatergic neuron (Mmus)
-relationship: RO:HOM0000007 PCL:0015097 ! Exc L5-6 THEMIS SMYD1 primary motor cortex glutamatergic neuron (Hsap)
+relationship: RO:HOM0000007 PCL:0011069 {http://purl.obolibrary.org/obo/PCL_0010063="0.910383827550408"} ! L6 IT Car3 primary motor cortex glutamatergic neuron (Mmus)
+relationship: RO:HOM0000007 PCL:0015097 {http://purl.obolibrary.org/obo/PCL_0010063="0.876370064017741"} ! Exc L5-6 THEMIS SMYD1 primary motor cortex glutamatergic neuron (Hsap)
 property_value: IAO:0000028 "Exc THEMIS NTNG2 M1 (Marmoset)" xsd:string
 property_value: PCL:0010058 "NTNG2 (Cjac)" xsd:string
 property_value: PCL:0010058 "PTPRU (Cjac)" xsd:string
@@ -17084,8 +17084,8 @@ relationship: RO:0002162 NCBITaxon:9483
 relationship: RO:0002292 https://identifiers.org/ncbigene/100402664 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/100412331 {xref="PMID:34616066"} ! expresses
 relationship: RO:0015004 PCL:0020578 ! has characterizing marker set NS forest marker set of OPC PDGFRA VCAN M1 (Marmoset).
-relationship: RO:HOM0000007 PCL:0011091 ! OPC Pdgfra primary motor cortex oligodendrocyte precursor cell (Mmus)
-relationship: RO:HOM0000007 PCL:0015118 ! OPC L1-6 PDGFRA COL20A1 primary motor cortex oligodendrocyte precursor cell (Hsap)
+relationship: RO:HOM0000007 PCL:0011091 {http://purl.obolibrary.org/obo/PCL_0010063="0.942609172918396"} ! OPC Pdgfra primary motor cortex oligodendrocyte precursor cell (Mmus)
+relationship: RO:HOM0000007 PCL:0015118 {http://purl.obolibrary.org/obo/PCL_0010063="1"} ! OPC L1-6 PDGFRA COL20A1 primary motor cortex oligodendrocyte precursor cell (Hsap)
 property_value: IAO:0000028 "OPC PDGFRA VCAN M1 (Marmoset)" xsd:string
 property_value: PCL:0010058 "PDGFRA (Cjac)" xsd:string
 property_value: PCL:0010058 "VCAN (Cjac)" xsd:string
@@ -17219,8 +17219,8 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/100397952 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/100402879 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/100404930 {xref="PMID:34616066"} ! expresses
 relationship: RO:0015004 PCL:0020584 ! has characterizing marker set NS forest marker set of Oligo OPALIN MOBP M1 (Marmoset).
-relationship: RO:HOM0000007 PCL:0011099 ! Oligo Opalin_1 primary motor cortex oligodendrocyte (Mmus)
-relationship: RO:HOM0000007 PCL:0015119 ! Oligo L3-6 OPALIN-like ENPP6 primary motor cortex oligodendrocyte precursor cell (Hsap)
+relationship: RO:HOM0000007 PCL:0011099 {http://purl.obolibrary.org/obo/PCL_0010063="0.950844240252377"} ! Oligo Opalin_1 primary motor cortex oligodendrocyte (Mmus)
+relationship: RO:HOM0000007 PCL:0015119 {http://purl.obolibrary.org/obo/PCL_0010063="0.995446644173887"} ! Oligo L3-6 OPALIN-like ENPP6 primary motor cortex oligodendrocyte precursor cell (Hsap)
 property_value: IAO:0000028 "Oligo OPALIN MOBP M1 (Marmoset)" xsd:string
 property_value: PCL:0010058 "ANLN (Cjac)" xsd:string
 property_value: PCL:0010058 "MOBP (Cjac)" xsd:string
@@ -17406,7 +17406,7 @@ relationship: RO:0002292 https://identifiers.org/ncbigene/100411367 ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/103788313 {xref="PMID:34616066"} ! expresses
 relationship: RO:0002292 https://identifiers.org/ncbigene/103788313 ! expresses
 relationship: RO:0015004 PCL:0020594 ! has characterizing marker set NS forest marker set of Micro TYROBP LOC103788313 M1 (Marmoset).
-relationship: RO:HOM0000007 PCL:0015127 ! Micro L1-6 TYROBP CD74 primary motor cortex microglial cell (Hsap)
+relationship: RO:HOM0000007 PCL:0015127 {http://purl.obolibrary.org/obo/PCL_0010063="0.968187403697908"} ! Micro L1-6 TYROBP CD74 primary motor cortex microglial cell (Hsap)
 property_value: IAO:0000028 "Micro TYROBP LOC103788313 M1 (Marmoset)" xsd:string
 property_value: PCL:0010058 "FYB (Cjac)" xsd:string
 property_value: PCL:0010058 "LOC103788313 (Cjac)" xsd:string

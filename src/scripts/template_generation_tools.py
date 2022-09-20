@@ -30,6 +30,7 @@ ALLEN_DESCRIPTIONS_PATH = "{}/{}/All Descriptions_{}.json"
 DATASET_INFO_CSV = "{}/{}/{}_landingpage_dataset_info.csv"
 TAXONOMY_INFO_CSV = "{}/{}/{}_Taxonomy_Info_Panel.csv"
 NSFOREST_MARKER_CSV = "{}/NSForestMarkers/{}_{}_NSForest_Markers.csv"
+HOMOLOGY_SIMILARITY_PATH = "{}/{}/{}_CrossSpecies_Similarity.csv"
 
 EXPRESSION_SEPARATOR = "|"
 
@@ -264,7 +265,7 @@ def generate_curated_class_template(taxonomy_file_path, output_filepath):
         class_robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
-def generate_homologous_to_template(taxonomy_file_path, all_base_files, output_filepath):
+def generate_homologous_to_template(taxonomy_file_path, all_base_files, centralized_data_folder, output_filepath):
     """
     Homologous_to relations require a separate template. If this operation is driven by the nomenclature tables,
     some dangling classes may be generated due to root classes that don't have a class and should not be aligned.
@@ -273,12 +274,14 @@ def generate_homologous_to_template(taxonomy_file_path, all_base_files, output_f
     Args:
         taxonomy_file_path: path of the taxonomy file
         all_base_files: paths of the all class template base files
+        centralized_data_folder: path of the git retrieved shared data
         output_filepath: template output file path
     """
     taxon = extract_taxonomy_name_from_path(taxonomy_file_path)
     taxonomy_config = read_taxonomy_config(taxon)
 
     other_taxonomy_aliases = index_base_files([t for t in all_base_files if taxon not in t])
+    similarities = read_similarities_file(centralized_data_folder, taxonomy_config)
 
     if taxonomy_config:
         if str(taxonomy_file_path).endswith(".json"):
@@ -293,20 +296,40 @@ def generate_homologous_to_template(taxonomy_file_path, all_base_files, output_f
         for o in dend['nodes']:
             if o['cell_set_accession'] in set.union(*subtrees) and (o['cell_set_preferred_alias'] or
                                                                     o['cell_set_additional_aliases']):
-                d = dict()
-                d['defined_class'] = PCL_BASE + get_class_id(o['cell_set_accession'])
                 homologous_to = list()
                 for other_aliases in other_taxonomy_aliases:
                     if "cell_set_aligned_alias" in o and o["cell_set_aligned_alias"] \
                             and str(o["cell_set_aligned_alias"]).lower() in other_aliases:
-                        homologous_to.append(other_aliases[str(o["cell_set_aligned_alias"])
-                                             .lower()]["defined_class"])
-                d['homologous_to'] = "|".join(homologous_to)
-
-                data_template.append(d)
+                        d = dict()
+                        d['defined_class'] = PCL_BASE + get_class_id(o['cell_set_accession'])
+                        d['homologous_to'] = other_aliases[str(o["cell_set_aligned_alias"]).lower()]["defined_class"]
+                        if o['cell_set_accession'] in similarities and other_aliases[str(o["cell_set_aligned_alias"]).
+                                lower()]["Cluster_ID"] in similarities[o['cell_set_accession']]:
+                            d["homology_similarity_score"] = similarities[o['cell_set_accession']][other_aliases[str(o["cell_set_aligned_alias"]).lower()]["Cluster_ID"]]
+                        data_template.append(d)
 
         robot_template = pd.DataFrame.from_records(data_template)
         robot_template.to_csv(output_filepath, sep="\t", index=False)
+
+
+def read_similarities_file(centralized_data_folder, taxonomy_config):
+    taxonomy_folder_name = get_centralized_taxonomy_folder(taxonomy_config)
+    similarity_file = HOMOLOGY_SIMILARITY_PATH.format(centralized_data_folder,
+                                                      taxonomy_folder_name, taxonomy_config['Species_abbv'][0])
+    print(similarity_file)
+    similarities = dict()
+    if os.path.exists(similarity_file):
+        headers, similarity_table = read_csv_to_dict(similarity_file, generated_ids=True)
+        print(headers)
+        for row_num in similarity_table:
+            row = similarity_table[row_num]
+            if row["cluster_1_accession"] not in similarities:
+                all_relations = dict()
+            else:
+                all_relations = similarities[row["cluster_1_accession"]]
+            all_relations[row["cluster_2_accession"]] = row["similarity"]
+            similarities[row["cluster_1_accession"]] = all_relations
+    return similarities
 
 
 def generate_non_taxonomy_classification_template(taxonomy_file_path, output_filepath):

@@ -8,6 +8,12 @@ classes:
 relations:
   homologous_to: "RO:HOM0000007"
 
+annotationProperties:
+  transcriptomic_similarity_score: "PCL:0010063"
+
+data_vars:
+  homology_similarity_score: "xsd:double"
+
 list_vars:
   homologous_to: "'cell'"
 
@@ -19,3 +25,8 @@ logical_axioms:
          - text: "'homologous_to' some %s"
            vars:
              - homologous_to
+     annotations:
+       - annotationProperty: transcriptomic_similarity_score
+         text: "%s"
+         vars:
+           - homology_similarity_score

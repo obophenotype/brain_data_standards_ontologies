@@ -3,7 +3,7 @@ import os
 
 from template_generation_tools import generate_base_class_template, \
     generate_ind_template, generate_homologous_to_template
-from template_generation_utils import read_tsv, migrate_manual_curations
+from template_generation_utils import read_tsv, read_csv_to_dict, migrate_manual_curations
 from pcl_id_factory import get_class_id, get_taxonomy_id, get_individual_id
 
 current_dir = os.path.dirname(os.path.realpath(__file__))
@@ -113,33 +113,45 @@ class TemplateGenerationTest(unittest.TestCase):
         self.assertFalse(PCL_BASE + get_class_id("CS201912131_148") in output)  # parent
 
     def test_homologous_to_template_generation(self):
-        generate_homologous_to_template(PATH_NOMENCLATURE_TABLE, ALL_BASE_FILES, PATH_OUTPUT_CLASS_TSV)
-        output = read_tsv(PATH_OUTPUT_CLASS_TSV)
+        generate_homologous_to_template(PATH_NOMENCLATURE_TABLE, ALL_BASE_FILES,
+                                        PATH_CENTRALIZED_DATA, PATH_OUTPUT_CLASS_TSV)
+        headers, output_raw = read_csv_to_dict(PATH_OUTPUT_CLASS_TSV, delimiter="\t", generated_ids=True)
+        output = dict()
+        for row_num in output_raw:
+            row = output_raw[row_num]
+            if row["defined_class"] not in output:
+                all_relations = list()
+            else:
+                all_relations = output[row["defined_class"]]
+            all_relations.append({"homologous_to": row["homologous_to"],
+                                  "homology_similarity_score": row["homology_similarity_score"]})
+            output[row["defined_class"]] = all_relations
 
         self.assertTrue(PCL_BASE + get_class_id("CS201912131_164") in output)
-        test_node = output[PCL_BASE + get_class_id("CS201912131_164")]
-        homologous_to = test_node[1].split("|")
+        homologous_to = output[PCL_BASE + get_class_id("CS201912131_164")]
         self.assertEqual(2, len(homologous_to))
-        self.assertTrue(PCL_BASE + get_class_id("CS201912132_039") in homologous_to)
-        self.assertTrue(PCL_BASE + get_class_id("CS202002013_244") in homologous_to)
+        self.assertTrue({"homologous_to": PCL_BASE + get_class_id("CS201912132_039"), "homology_similarity_score": ""} in homologous_to)
+        self.assertTrue({"homologous_to": PCL_BASE + get_class_id("CS202002013_244"), "homology_similarity_score": ""} in homologous_to)
 
         self.assertTrue(PCL_BASE + get_class_id("CS201912131_176") in output)
-        test_node = output[PCL_BASE + get_class_id("CS201912131_176")]
-        homologous_to = test_node[1].split("|")
+        homologous_to = output[PCL_BASE + get_class_id("CS201912131_176")]
         self.assertEqual(2, len(homologous_to))
-        self.assertTrue(PCL_BASE + get_class_id("CS201912132_060") in homologous_to)
-        self.assertTrue(PCL_BASE + get_class_id("CS202002013_067") in homologous_to)
+        self.assertTrue({"homologous_to": PCL_BASE + get_class_id("CS201912132_060"), "homology_similarity_score": ""} in homologous_to)
+        self.assertTrue({"homologous_to": PCL_BASE + get_class_id("CS202002013_067"), "homology_similarity_score": ""} in homologous_to)
 
         self.assertTrue(PCL_BASE + get_class_id("CS201912131_157") in output)
-        test_node = output[PCL_BASE + get_class_id("CS201912131_157")]
-        homologous_to = test_node[1].split("|")
+        homologous_to = output[PCL_BASE + get_class_id("CS201912131_157")]
         self.assertEqual(1, len(homologous_to))
-        self.assertTrue(PCL_BASE + get_class_id("CS201912132_002") in homologous_to)
+        self.assertTrue({"homologous_to": PCL_BASE + get_class_id("CS201912132_002"), "homology_similarity_score": ""} in homologous_to)
 
-        self.assertTrue(PCL_BASE + get_class_id("CS201912131_142") in output)  # human Astrocyte
-        test_node = output[PCL_BASE + get_class_id("CS201912131_142")]
-        homologous_to = test_node[1]
-        self.assertFalse(homologous_to)  # mouse and marmoset astro not exists
+        self.assertTrue(PCL_BASE + get_class_id("CS201912131_11") in output)
+        homologous_to = output[PCL_BASE + get_class_id("CS201912131_11")]
+        self.assertEqual(2, len(homologous_to))
+        self.assertTrue({"homologous_to": PCL_BASE + get_class_id("CS201912132_8"), "homology_similarity_score": "0.786437097791116"} in homologous_to)
+        self.assertTrue({"homologous_to": PCL_BASE + get_class_id("CS202002013_134"), "homology_similarity_score": ""} in homologous_to)
+
+        # mouse and marmoset astro not exists
+        self.assertFalse(PCL_BASE + get_class_id("CS201912131_142") in output)  # human Astrocyte
 
     # not test
     # def test_curated_class_migrate(self):
