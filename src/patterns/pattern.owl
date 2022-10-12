@@ -52,7 +52,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/odk/brainCellChar
 SubClassOf(<http://purl.obolibrary.org/obo/odk/brainCellCharacterizingMarkerSets.yaml> owl:Thing)
 SubClassOf(<http://purl.obolibrary.org/obo/odk/brainCellCharacterizingMarkerSets.yaml> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/SO_0000110>))
 
-# Class: <http://purl.obolibrary.org/obo/odk/brainCellClasses.yaml> (xsd:string 'regional part of brain' 'cell' ('Vertebrata <vertebrates>'))
+# Class: <http://purl.obolibrary.org/obo/odk/brainCellClasses.yaml> (xsd:string 'regional part of brain' 'cell' (xsd:string))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000028> <http://purl.obolibrary.org/obo/odk/brainCellClasses.yaml> "xsd:string xsd:string (xsd:string)"^^xsd:string)
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "xsd:string"^^xsd:string) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/odk/brainCellClasses.yaml> "A 'cell' of the 'Vertebrata <vertebrates>' 'regional part of brain'. These cells can be distinguished from other cells in the 'regional part of brain' by their selective expression of 'sequence_feature'. These cells also express 'thing'. These cells have projection type 'projection type'. The soma of these cells in located in: 'layer of neocortex'. The reference data for this cell type is xsd:string."^^xsd:string)
@@ -60,7 +60,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/PCL_0010058> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/title> <http://purl.obolibrary.org/obo/odk/brainCellClasses.yaml> "brainCellClasses"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/odk/brainCellClasses.yaml> "'sequence_feature' expressing 'cell' of 'regional part of brain' ('Vertebrata <vertebrates>')"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/odk/brainCellClasses.yaml> "xsd:string"^^xsd:string)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/odk/brainCellClasses.yaml> "xsd:string 'regional part of brain' 'cell' ('Vertebrata <vertebrates>')"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/odk/brainCellClasses.yaml> "xsd:string 'regional part of brain' 'cell' (xsd:string)"^^xsd:string)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <http://purl.obolibrary.org/obo/odk/brainCellClasses.yaml> "xsd:string"^^xsd:string)
 EquivalentClasses(<http://purl.obolibrary.org/obo/odk/brainCellClasses.yaml> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/CL_0000003> ObjectHasValue(<http://purl.obolibrary.org/obo/RO_0015001> owl:Thing)))
 SubClassOf(<http://purl.obolibrary.org/obo/odk/brainCellClasses.yaml> <http://purl.obolibrary.org/obo/CL_0000000>)

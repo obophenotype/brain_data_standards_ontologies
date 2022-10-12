@@ -16,10 +16,10 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:nsf2_full_mtg="http://www.jcvi.org/framework/nsf2_full_mtg#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/pcl/bdso-simple.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pcl/releases/2022-04-27/bdso-simple.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pcl/releases/2022-10-12/bdso-simple.owl"/>
         <dc:title>Brain Data Standards Cell Ontology</dc:title>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-27</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-10-12</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -428,6 +428,12 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
@@ -655,7 +661,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:RO_0001900 rdf:resource="http://purl.obolibrary.org/obo/RO_0001901"/>
         <oboInOwl:hasDbXref>RO:0000053</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace>external</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:id>bearer_of</oboInOwl:id>
         <oboInOwl:shorthand>bearer_of</oboInOwl:shorthand>
         <rdfs:label>bearer of</rdfs:label>
