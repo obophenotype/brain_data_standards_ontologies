@@ -16,29 +16,29 @@ class PCLIdFactoryTestCase(unittest.TestCase):
         self.assertEqual(get_class_id("CS202002013_1"), "0011001")
         self.assertEqual(get_class_id("CS202002013_121"), "0011121")
 
-        self.assertEqual(get_individual_id("CS202002013_1"), "0011501")
-        self.assertEqual(get_individual_id("CS202002013_121"), "0011621")
+        self.assertEqual(get_individual_id("CS202002013_1"), "CS202002013_1")
+        self.assertEqual(get_individual_id("CS202002013_121"), "CS202002013_121")
 
     def test_human_ids(self):
         self.assertEqual(get_class_id("CS201912131_1"), "0015001")
         self.assertEqual(get_class_id("CS201912131_121"), "0015121")
 
-        self.assertEqual(get_individual_id("CS201912131_1"), "0015501")
-        self.assertEqual(get_individual_id("CS201912131_121"), "0015621")
+        self.assertEqual(get_individual_id("CS201912131_1"), "CS201912131_1")
+        self.assertEqual(get_individual_id("CS201912131_121"), "CS201912131_121")
 
     def test_marmoset_ids(self):
         self.assertEqual(get_class_id("CS201912132_1"), "0019001")
         self.assertEqual(get_class_id("CS201912132_121"), "0019121")
 
-        self.assertEqual(get_individual_id("CS201912132_1"), "0019501")
-        self.assertEqual(get_individual_id("CS201912132_121"), "0019621")
+        self.assertEqual(get_individual_id("CS201912132_1"), "CS201912132_1")
+        self.assertEqual(get_individual_id("CS201912132_121"), "CS201912132_121")
 
     def test_human_mtg_ids(self):
         self.assertEqual(get_class_id("CS1908210001"), "0023001")
         self.assertEqual(get_class_id("CS1908210148"), "0023148")
 
-        self.assertEqual(get_individual_id("CS1908210001"), "0023501")
-        self.assertEqual(get_individual_id("CS1908210148"), "0023648")
+        self.assertEqual(get_individual_id("CS1908210001"), "CS1908210001")
+        self.assertEqual(get_individual_id("CS1908210148"), "CS1908210148")
 
     def test_taxonomy_id(self):
         self.assertEqual(get_taxonomy_id("CS202002013"), "0011000")

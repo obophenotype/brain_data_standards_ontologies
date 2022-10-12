@@ -53,22 +53,22 @@ class TemplateGenerationTest(unittest.TestCase):
         _aliases = 19
         _rank = 20
 
-        self.assertTrue("PCL:"+get_individual_id("CS202002013_123") in output)  # child
-        test_node = output["PCL:"+get_individual_id("CS202002013_123")]
+        self.assertTrue("PCL_INDV:"+get_individual_id("CS202002013_123") in output)  # child
+        test_node = output["PCL_INDV:"+get_individual_id("CS202002013_123")]
         self.assertEqual("GABAergic", str(test_node[2]))
         self.assertTrue(str(test_node[_description]).startswith("GABAergic is: Neurons that use GABA as a neurotransmitter"))
         self.assertEqual("Neuronal: GABAergic|Inhibitory neurons", test_node[_aliases])
         self.assertEqual("Class", test_node[_rank])
 
-        self.assertTrue("PCL:"+get_individual_id("CS202002013_219") in output)  # child
-        test_node = output["PCL:"+get_individual_id("CS202002013_219")]
+        self.assertTrue("PCL_INDV:"+get_individual_id("CS202002013_219") in output)  # child
+        test_node = output["PCL_INDV:"+get_individual_id("CS202002013_219")]
         self.assertEqual("Non-neural", str(test_node[2]))
         self.assertTrue(
             str(test_node[_description]).startswith("Non-Neural is: Cells of mesoderm"))
         self.assertEqual("", test_node[_aliases])
         self.assertEqual("Class", test_node[_rank])
 
-        self.assertEqual("Cell Type|Subclass", output["PCL:"+get_individual_id("CS202002013_112")][_rank])
+        self.assertEqual("Cell Type|Subclass", output["PCL_INDV:"+get_individual_id("CS202002013_112")][_rank])
 
     def test_base_class_template_generation(self):
         generate_base_class_template(PATH_MOUSE_NOMENCLATURE, PATH_OUTPUT_CLASS_TSV)
