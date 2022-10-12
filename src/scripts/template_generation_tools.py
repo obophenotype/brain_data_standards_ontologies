@@ -14,7 +14,9 @@ from marker_tools import get_nsforest_confidences
 
 log = logging.getLogger(__name__)
 
+
 PCL_BASE = 'http://purl.obolibrary.org/obo/PCL_'
+PCL_INDV_BASE = 'http://purl.obolibrary.org/obo/pcl/'
 
 PCL_PREFIX = 'PCL:'
 
@@ -83,7 +85,7 @@ def generate_ind_template(taxonomy_file_path, centralized_data_folder, output_fi
 
     for o in dend['nodes']:
         d = dict()
-        d['ID'] = 'PCL:' + get_individual_id(o['cell_set_accession'])
+        d['ID'] = 'PCL_INDV:' + o['cell_set_accession']
         d['TYPE'] = 'owl:NamedIndividual'
         d['Label'] = o['cell_set_label'] + ' - ' + o['cell_set_accession']
         if 'cell_set_preferred_alias' in o and o['cell_set_preferred_alias']:
@@ -94,7 +96,7 @@ def generate_ind_template(taxonomy_file_path, centralized_data_folder, output_fi
         d['Metadata'] = json.dumps(o)
         d['Synonyms'] = '|'.join([o[prop] for prop in synonym_properties if prop in o.keys() and o[prop]])
         d['Property Assertions'] = '|'.join(
-            sorted(['PCL:' + get_individual_id(e[1]) for e in dend['edges'] if e[0] == o['cell_set_accession']]))
+            sorted(['PCL_INDV:' + e[1] for e in dend['edges'] if e[0] == o['cell_set_accession']]))
         meta_properties = ['cell_set_preferred_alias', 'original_label', 'cell_set_label', 'cell_set_aligned_alias',
                            'cell_set_additional_aliases', 'cell_set_alias_assignee', 'cell_set_alias_citation']
         for prop in meta_properties:
@@ -192,7 +194,7 @@ def generate_base_class_template(taxonomy_file_path, output_filepath):
                     d['Brain_region_abbv'] = taxonomy_config['Brain_region_abbv'][0]
                 if 'Species_abbv' in taxonomy_config:
                     d['Species_abbv'] = taxonomy_config['Species_abbv'][0]
-                d['Individual'] = PCL_BASE + get_individual_id(o['cell_set_accession'])
+                d['Individual'] = PCL_INDV_BASE + o['cell_set_accession']
 
                 for index, subtree in enumerate(subtrees):
                     if o['cell_set_accession'] in subtree:
@@ -417,7 +419,7 @@ def generate_taxonomies_template(centralized_data_folder, output_filepath):
 
     for taxon_config in taxon_configs:
         d = dict()
-        d['ID'] = 'PCL:' + get_taxonomy_id(taxon_config["Taxonomy_id"])
+        d['ID'] = 'PCL_INDV:' + taxon_config["Taxonomy_id"]
         d['TYPE'] = 'owl:NamedIndividual'
         d['Entity Type'] = 'PCL:0010002'  # Taxonomy
         d['Label'] = taxon_config["Taxonomy_id"]
@@ -495,7 +497,7 @@ def generate_datasets_template(centralized_data_folder, output_filepath):
             d['Label'] = dataset_metadata[dataset]['Ontology Name']
             d['PrefLabel'] = dataset_metadata[dataset]['Dataset']
             d['Symbol'] = dataset_metadata[dataset]['Ontology Symbol']
-            d['Taxonomy'] = 'PCL:' + get_taxonomy_id(taxonomy_id)
+            d['Taxonomy'] = 'PCL_INDV:' + taxonomy_id
             cells_nuclei = dataset_metadata[dataset]['cells/nuclei']
             if 'nuclei' in cells_nuclei:
                 d['Nuclei Count'] = int(''.join(c for c in cells_nuclei if c.isdigit()))
@@ -593,7 +595,7 @@ def generate_app_specific_template(taxonomy_file_path, output_filepath):
     for o in dend['nodes']:
         if "cell_set_color" in o and o["cell_set_color"]:
             d = dict()
-            d['ID'] = 'PCL:' + get_individual_id(o['cell_set_accession'])
+            d['ID'] = 'PCL_INDV:' + o['cell_set_accession']
             d['TYPE'] = 'owl:NamedIndividual'
             d['cell_set_color'] = str(o["cell_set_color"]).strip()
             dl.append(d)
