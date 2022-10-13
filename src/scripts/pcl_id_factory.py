@@ -76,13 +76,10 @@ def get_individual_id(accession_id):
 
     Returns: seven digit PCL id as string
     """
-    # node_id, taxonomy_index = parse_accession_id(accession_id)
-    # pcl_id = ID_RANGE_BASE + (TAXONOMY_ID_RANGE * taxonomy_index) + INDV_ID_DISPLACEMENT + node_id
-    #
-    # return str(pcl_id).zfill(7)
+    node_id, taxonomy_index = parse_accession_id(accession_id)
+    pcl_id = ID_RANGE_BASE + (TAXONOMY_ID_RANGE * taxonomy_index) + INDV_ID_DISPLACEMENT + node_id
 
-    # now individuals use accession_id
-    return accession_id
+    return str(pcl_id).zfill(7)
 
 
 def get_taxonomy_id(taxonomy_id):

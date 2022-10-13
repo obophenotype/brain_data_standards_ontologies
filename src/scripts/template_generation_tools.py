@@ -604,6 +604,151 @@ def generate_app_specific_template(taxonomy_file_path, output_filepath):
     robot_template.to_csv(output_filepath, sep="\t", index=False)
 
 
+def generate_obsolete_ind_template(taxonomy_file_path, centralized_data_folder, output_filepath):
+    """
+    Individuals with PCL IDs are obsoleted (now using accession ID)
+    Args:
+        taxonomy_file_path:
+        centralized_data_folder:
+        output_filepath:
+
+    Returns:
+    """
+    path_parts = taxonomy_file_path.split(os.path.sep)
+    taxon = path_parts[len(path_parts) - 1].split(".")[0]
+
+    if str(taxonomy_file_path).endswith(".json"):
+        dend = dend_json_2_nodes_n_edges(taxonomy_file_path)
+    else:
+        dend = nomenclature_2_nodes_n_edges(taxonomy_file_path)
+        taxon = path_parts[len(path_parts) - 1].split(".")[0].replace("nomenclature_table_", "")
+
+    dend_tree = generate_dendrogram_tree(dend)
+    taxonomy_config = read_taxonomy_config(taxon)
+
+    taxonomy_folder_name = get_centralized_taxonomy_folder(taxonomy_config)
+    allen_desc_file = ALLEN_DESCRIPTIONS_PATH.format(centralized_data_folder, taxonomy_folder_name,
+                                                     taxonomy_config['Species_abbv'][0])
+    allen_descriptions = read_allen_descriptions(allen_desc_file)
+
+    subtrees = get_subtrees(dend_tree, taxonomy_config)
+
+    robot_template_seed = {'ID': 'ID',
+                           'Label': 'LABEL',
+                           'PrefLabel': 'A skos:prefLabel',
+                           'Obsoleted By': 'AI obo:IAO_0100001',
+                           'Obsolete': 'AT owl:deprecated^^xsd:boolean',
+                           'Entity Type': 'TI %',
+                           'TYPE': 'TYPE',
+                           'Synonyms': 'A oboInOwl:hasExactSynonym SPLIT=|',
+                           'Cluster_ID': "A 'cluster id'",
+                           'cell_set_preferred_alias': "A n2o:cell_set_preferred_alias",
+                           'original_label': "A n2o:original_label",
+                           'cell_set_label': "A n2o:cell_set_label",
+                           'cell_set_aligned_alias': "A n2o:cell_set_aligned_alias",
+                           'cell_set_additional_aliases': "A n2o:cell_set_additional_aliases SPLIT=|",
+                           'cell_set_alias_assignee': "A n2o:cell_set_alias_assignee SPLIT=|",
+                           'cell_set_alias_citation': "A n2o:cell_set_alias_citation SPLIT=|",
+                           'Metadata': "A n2o:node_metadata",
+                           'Comment': "A rdfs:comment",
+                           'Aliases': "A oboInOwl:hasRelatedSynonym SPLIT=|",
+                           'Rank': "A 'cell_type_rank' SPLIT=|"
+                           }
+    dl = [robot_template_seed]
+
+    synonym_properties = ['cell_set_aligned_alias',
+                          'cell_set_additional_aliases']
+
+    for o in dend['nodes']:
+        d = dict()
+        d['ID'] = 'PCL:' + get_individual_id(o['cell_set_accession'])
+        d['TYPE'] = 'owl:NamedIndividual'
+        d['Comment'] = 'This term has been obsoleted and replaced with updated by an updated term from the ' \
+                       'Brain Data Standards ontology, please see \'term replaced by\' axiom to for the new term.'
+        d['Obsoleted By'] = 'PCL_INDV:' + o['cell_set_accession']
+        d['Obsolete'] = 'true'
+        d['Label'] = 'obsolete ' + o['cell_set_label'] + ' - ' + o['cell_set_accession']
+        if 'cell_set_preferred_alias' in o and o['cell_set_preferred_alias']:
+            d['PrefLabel'] = 'obsolete ' + o['cell_set_preferred_alias']
+        else:
+            d['PrefLabel'] = 'obsolete ' + o['cell_set_accession']
+        d['Entity Type'] = 'PCL:0010001'  # Cluster
+        d['Metadata'] = json.dumps(o)
+        d['Synonyms'] = '|'.join([o[prop] for prop in synonym_properties if prop in o.keys() and o[prop]])
+        meta_properties = ['cell_set_preferred_alias', 'original_label', 'cell_set_label', 'cell_set_aligned_alias',
+                           'cell_set_additional_aliases', 'cell_set_alias_assignee', 'cell_set_alias_citation']
+        for prop in meta_properties:
+            if prop in o.keys():
+                d[prop] = '|'.join([prop_val.strip() for prop_val in str(o[prop]).split("|") if prop_val])
+            else:
+                d[prop] = ''
+        d['Cluster_ID'] = o['cell_set_accession']
+
+        if "cell_type_card" in o:
+            d['Rank'] = '|'.join([cell_type.strip().replace("No", "None")
+                                  for cell_type in str(o["cell_type_card"]).split(",")])
+
+        if o['cell_set_accession'] in allen_descriptions:
+            allen_data = allen_descriptions[o['cell_set_accession']]
+            if allen_data["aliases"][0]:
+                d['Aliases'] = '|'.join([alias.strip() for alias in str(allen_data["aliases"][0]).split("|")])
+
+        dl.append(d)
+
+    robot_template = pd.DataFrame.from_records(dl)
+    robot_template.to_csv(output_filepath, sep="\t", index=False)
+
+
+def generate_obsolete_taxonomies_template(centralized_data_folder, output_filepath):
+    """
+    Taxonomy nodes with PCL IDs are obsoleted (now using accession ID)
+    """
+    taxon_configs = read_taxonomy_details_yaml()
+
+    robot_template_seed = {'ID': 'ID',
+                           'TYPE': 'TYPE',
+                           'Entity Type': 'TI %',
+                           'Label': 'LABEL',
+                           'Obsoleted By': 'AI obo:IAO_0100001',
+                           'Obsolete': 'AT owl:deprecated^^xsd:boolean',
+                           'Comment': "A rdfs:comment",
+                           'Number of Cell Types': "A 'cell_types_count'",
+                           'Number of Cell Subclasses': "A 'cell_subclasses_count'",
+                           'Number of Cell Classes': "A 'cell_classes_count'",
+                           'Anatomic Region': "A 'has_brain_region'",
+                           'Species Label': "A skos:prefLabel",
+                           'Age': "A 'has_age'",
+                           'Sex': "A 'has_sex'",
+                           'Primary Citation': "A oboInOwl:hasDbXref",
+                           'Title': "A dcterms:title",
+                           'Description': "A rdfs:comment",
+                           'Attribution': "A dcterms:provenance",
+                           'SubDescription': "A dcterms:description",
+                           'Anatomy': "A dcterms:subject",
+                           'Anatomy_image': "A dcterms:relation"
+                           }
+    dl = [robot_template_seed]
+
+    for taxon_config in taxon_configs:
+        d = dict()
+        d['ID'] = 'PCL:' + get_taxonomy_id(taxon_config["Taxonomy_id"])
+        d['TYPE'] = 'owl:NamedIndividual'
+        d['Entity Type'] = 'PCL:0010002'  # Taxonomy
+        d['Label'] = taxon_config["Taxonomy_id"]
+        d['Comment'] = 'This term has been obsoleted and replaced with updated by an updated term from the ' \
+                       'Brain Data Standards ontology, please see \'term replaced by\' axiom to for the new term.'
+        d['Obsoleted By'] = 'PCL_INDV:' + taxon_config["Taxonomy_id"]
+        d['Obsolete'] = 'true'
+        d['Anatomic Region'] = taxon_config['Brain_region'][0]
+        d['Primary Citation'] = taxon_config['PMID'][0]
+
+        add_taxonomy_info_panel_properties(centralized_data_folder, d, taxon_config)
+
+        dl.append(d)
+    robot_template = pd.DataFrame.from_records(dl)
+    robot_template.to_csv(output_filepath, sep="\t", index=False)
+
+
 def index_base_files(base_files):
     index = list()
     for base_file in base_files:

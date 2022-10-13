@@ -11,9 +11,11 @@ TEMPLATE_CLASS_BASE_FILES = $(patsubst %, ../patterns/data/default/%_class_base.
 TEMPLATE_CLASS_CURATION_FILES = $(patsubst %, ../patterns/data/default/%_class_curation.tsv, $(JOBS))
 TEMPLATE_CLASS_HOMOLOGOUS_FILES = $(patsubst %, ../patterns/data/default/%_class_homologous.tsv, $(JOBS))
 APP_SPECIFIC_TEMPLATE_FILES = $(patsubst %, ../templates/%_app_specific.tsv, $(JOBS))
+OBSOLETE_TERMS_TEMPLATE_FILES = $(patsubst %, ../templates/%_obsolete_terms.tsv, $(JOBS))
 DATASET_TEMPLATE_FILES = $(patsubst %, ../templates/%_dataset.tsv, $(JOBS))
 MARKER_SET_TEMPLATE_FILES = $(patsubst %, ../patterns/data/default/%_marker_set.tsv, $(JOBS))
 TAXONOMY_TEMPLATE_FILE = ../templates/Taxonomies.tsv
+OBSOLETE_TAXONOMY_TEMPLATE_FILE = ../templates/Taxonomies_obsolete.tsv
 
 all: update_centralized_repo $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FILES) $(MARKER_DENORMALIZED_FILES) $(TAXONOMY_TEMPLATE_FILE) $(APP_SPECIFIC_TEMPLATE_FILES) $(TEMPLATE_CLASS_HOMOLOGOUS_FILES) $(DATASET_TEMPLATE_FILES) $(MARKER_SET_TEMPLATE_FILES)
 
@@ -41,6 +43,10 @@ all: update_centralized_repo $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TE
 	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -a -i $< -o $@ ;\
 	else python ../scripts/template_runner.py generator -a -i $(word 2, $^) -o $@ ; fi
 
+../templates/%_obsolete_indvs.tsv: %.json nomenclature_table_%.csv
+	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -oi -i $< -i2 $(CENTRALIZED_DIR)/$(REPO_NAME) -o $@ ;\
+	else python ../scripts/template_runner.py generator -oi -i $(word 2, $^) -i2 $(CENTRALIZED_DIR)/$(REPO_NAME) -o $@ ; fi
+
 ../patterns/data/default/%_marker_set.tsv: %.json nomenclature_table_%.csv
 	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -ms -i $< -i2 $(CENTRALIZED_DIR)/$(REPO_NAME) -o $@ ;\
 	else python ../scripts/template_runner.py generator -ms -i $(word 2, $^) -i2 $(CENTRALIZED_DIR)/$(REPO_NAME) -o $@ ; fi
@@ -50,6 +56,9 @@ all: update_centralized_repo $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TE
 
 ../templates/Taxonomies.tsv: $(CENTRALIZED_DIR)/$(REPO_NAME)
 	python ../scripts/template_runner.py generator -tx -i $< -o $@
+
+../templates/Taxonomies_obsolete.tsv: $(CENTRALIZED_DIR)/$(REPO_NAME)
+	python ../scripts/template_runner.py generator -to -i $< -o $@
 
 
 update_centralized_repo: clean_centralized_data_folder
