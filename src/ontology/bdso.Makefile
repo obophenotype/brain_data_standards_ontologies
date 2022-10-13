@@ -25,6 +25,9 @@ OWL_TAXONOMY_FILE = components/taxonomies.owl
 OWL_PROTEIN2GENE_FILE = components/Protein2GeneExpression.owl
 PCL_LEGACY_FILE = components/pcl-legacy.owl
 
+OWL_OBSOLETE_INDVS = $(patsubst %, components/%_obsolete_indvs.owl, $(JOBS))
+OWL_OBSOLETE_TAXONOMY_FILE = components/taxonomies_obsolete.owl
+
 #DEND_FILES = $(patsubst %, ../dendrograms/%.json, $(JOBS))
 #TEMPLATE_FILES = $(patsubst %, ../templates/%.tsv, $(JOBS))
 #TEMPLATE_CLASS_FILES = $(patsubst %, ../templates/_%class.tsv, $(JOBS))
@@ -125,7 +128,7 @@ mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
 .PRECIOUS: imports/simple_marmoset_import.owl
 
 # merge all templates except application specific ones
-components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MIN_MARKER_FILES) $(OWL_TAXONOMY_FILE) $(OWL_PROTEIN2GENE_FILE) $(OWL_APP_SPECIFIC_FILES) $(PCL_LEGACY_FILE) $(OWL_CLASS_HOMOLOGOUS_FILES) $(OWL_DATASET_FILES) $(OWL_MARKER_SET_FILES)
+components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MIN_MARKER_FILES) $(OWL_TAXONOMY_FILE) $(OWL_PROTEIN2GENE_FILE) $(OWL_APP_SPECIFIC_FILES) $(PCL_LEGACY_FILE) $(OWL_CLASS_HOMOLOGOUS_FILES) $(OWL_DATASET_FILES) $(OWL_MARKER_SET_FILES) $(OWL_OBSOLETE_TAXONOMY_FILE) $(OWL_OBSOLETE_INDVS)
 	$(ROBOT) merge $(patsubst %, -i %, $(filter-out $(OWL_APP_SPECIFIC_FILES), $^)) \
 	 --collapse-import-closure false \
 	 annotate --ontology-iri ${BDS_BASE}$@  \
@@ -160,6 +163,18 @@ components/taxonomies.owl: ../templates/Taxonomies.tsv $(SRC)
     		--add-prefixes template_prefixes.json \
     		annotate --ontology-iri ${BDS_BASE}$@ \
     		convert --format ofn --output $@
+
+components/taxonomies_obsolete.owl: ../templates/Taxonomies_obsolete.tsv $(SRC)
+	$(ROBOT) template --input $(SRC) --template $< \
+    		--add-prefixes template_prefixes.json \
+    		annotate --ontology-iri ${BDS_BASE}$@ \
+    		convert --format ofn --output $@
+
+components/%_obsolete_indvs.owl: ../templates/%_obsolete_indvs.tsv $(SRC)
+	$(ROBOT) template --input $(SRC) --template $< \
+    		--add-prefixes template_prefixes.json \
+    		annotate --ontology-iri ${BDS_BASE}$@ \
+    		convert --format ofn --output $@ \
 
 components/Protein2GeneExpression.owl: $(PATTERNDIR)/data/default/Protein2GeneExpression.tsv $(PATTERNDIR)/dosdp-patterns/Protein2GeneExpression.yaml $(SRC) all_imports .FORCE
 	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \

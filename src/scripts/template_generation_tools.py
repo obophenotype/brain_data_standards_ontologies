@@ -710,20 +710,8 @@ def generate_obsolete_taxonomies_template(centralized_data_folder, output_filepa
                            'Obsoleted By': 'AI obo:IAO_0100001',
                            'Obsolete': 'AT owl:deprecated^^xsd:boolean',
                            'Comment': "A rdfs:comment",
-                           'Number of Cell Types': "A 'cell_types_count'",
-                           'Number of Cell Subclasses': "A 'cell_subclasses_count'",
-                           'Number of Cell Classes': "A 'cell_classes_count'",
                            'Anatomic Region': "A 'has_brain_region'",
-                           'Species Label': "A skos:prefLabel",
-                           'Age': "A 'has_age'",
-                           'Sex': "A 'has_sex'",
-                           'Primary Citation': "A oboInOwl:hasDbXref",
-                           'Title': "A dcterms:title",
-                           'Description': "A rdfs:comment",
-                           'Attribution': "A dcterms:provenance",
-                           'SubDescription': "A dcterms:description",
-                           'Anatomy': "A dcterms:subject",
-                           'Anatomy_image': "A dcterms:relation"
+                           'Primary Citation': "A oboInOwl:hasDbXref"
                            }
     dl = [robot_template_seed]
 
@@ -739,9 +727,6 @@ def generate_obsolete_taxonomies_template(centralized_data_folder, output_filepa
         d['Obsolete'] = 'true'
         d['Anatomic Region'] = taxon_config['Brain_region'][0]
         d['Primary Citation'] = taxon_config['PMID'][0]
-
-        add_taxonomy_info_panel_properties(centralized_data_folder, d, taxon_config)
-
         dl.append(d)
     robot_template = pd.DataFrame.from_records(dl)
     robot_template.to_csv(output_filepath, sep="\t", index=False)
