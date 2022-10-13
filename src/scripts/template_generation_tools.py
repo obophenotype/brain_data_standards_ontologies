@@ -631,8 +631,6 @@ def generate_obsolete_ind_template(taxonomy_file_path, centralized_data_folder, 
                                                      taxonomy_config['Species_abbv'][0])
     allen_descriptions = read_allen_descriptions(allen_desc_file)
 
-    subtrees = get_subtrees(dend_tree, taxonomy_config)
-
     robot_template_seed = {'ID': 'ID',
                            'Label': 'LABEL',
                            'PrefLabel': 'A skos:prefLabel',
@@ -734,7 +732,7 @@ def generate_obsolete_taxonomies_template(centralized_data_folder, output_filepa
         d['ID'] = 'PCL:' + get_taxonomy_id(taxon_config["Taxonomy_id"])
         d['TYPE'] = 'owl:NamedIndividual'
         d['Entity Type'] = 'PCL:0010002'  # Taxonomy
-        d['Label'] = taxon_config["Taxonomy_id"]
+        d['Label'] = 'obsolete ' + taxon_config["Taxonomy_id"]
         d['Comment'] = 'This term has been obsoleted and replaced with updated by an updated term from the ' \
                        'Brain Data Standards ontology, please see \'term replaced by\' axiom to for the new term.'
         d['Obsoleted By'] = 'PCL_INDV:' + taxon_config["Taxonomy_id"]
