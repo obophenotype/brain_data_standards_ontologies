@@ -14,8 +14,10 @@ APP_SPECIFIC_TEMPLATE_FILES = $(patsubst %, ../templates/%_app_specific.tsv, $(J
 DATASET_TEMPLATE_FILES = $(patsubst %, ../templates/%_dataset.tsv, $(JOBS))
 MARKER_SET_TEMPLATE_FILES = $(patsubst %, ../patterns/data/default/%_marker_set.tsv, $(JOBS))
 TAXONOMY_TEMPLATE_FILE = ../templates/Taxonomies.tsv
+OBSOLETE_INDV_TEMPLATE_FILES = $(patsubst %, ../templates/%_obsolete_indvs.tsv, $(JOBS))
+OBSOLETE_TAXONOMY_TEMPLATE_FILE = ../templates/Taxonomies_obsolete.tsv
 
-all: update_centralized_repo $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FILES) $(MARKER_DENORMALIZED_FILES) $(TAXONOMY_TEMPLATE_FILE) $(APP_SPECIFIC_TEMPLATE_FILES) $(TEMPLATE_CLASS_HOMOLOGOUS_FILES) $(DATASET_TEMPLATE_FILES) $(MARKER_SET_TEMPLATE_FILES)
+all: update_centralized_repo $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TEMPLATE_CLASS_CURATION_FILES) $(MARKER_DENORMALIZED_FILES) $(TAXONOMY_TEMPLATE_FILE) $(APP_SPECIFIC_TEMPLATE_FILES) $(TEMPLATE_CLASS_HOMOLOGOUS_FILES) $(DATASET_TEMPLATE_FILES) $(MARKER_SET_TEMPLATE_FILES) $(OBSOLETE_INDV_TEMPLATE_FILES) $(OBSOLETE_TAXONOMY_TEMPLATE_FILE)
 
 ../templates/%.tsv: %.json nomenclature_table_%.csv
 	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -i $< -i2 $(CENTRALIZED_DIR)/$(REPO_NAME) -o $@ ;\
@@ -51,6 +53,12 @@ all: update_centralized_repo $(TEMPLATE_FILES) $(TEMPLATE_CLASS_BASE_FILES) $(TE
 ../templates/Taxonomies.tsv: $(CENTRALIZED_DIR)/$(REPO_NAME)
 	python ../scripts/template_runner.py generator -tx -i $< -o $@
 
+../templates/%_obsolete_indvs.tsv: %.json nomenclature_table_%.csv
+	if [ $< = CS1908210.json ]; then python ../scripts/template_runner.py generator -oi -i $< -i2 $(CENTRALIZED_DIR)/$(REPO_NAME) -o $@ ;\
+	else python ../scripts/template_runner.py generator -oi -i $(word 2, $^) -i2 $(CENTRALIZED_DIR)/$(REPO_NAME) -o $@ ; fi
+
+../templates/Taxonomies_obsolete.tsv: $(CENTRALIZED_DIR)/$(REPO_NAME)
+	python ../scripts/template_runner.py generator -ot -i $< -o $@
 
 update_centralized_repo: clean_centralized_data_folder
 	cd $(CENTRALIZED_DIR) && git clone --quiet ${GIT_REPO} && rm -rf $(REPO_NAME)/.git  && \

@@ -6,16 +6,16 @@ taxonomies order in the 'taxonomy_details.yaml' configuration file. Automatic ID
 ID range allocation logic is as follows
 
     - 0010000 to 0010999  custom classes and properties (manually managed)
-    - 0011000 taxonomy1 individual
+    - 0011000 taxonomy1 individual # idle: now individuals use accession_id
     - 0011001 to 0011499 taxonomy1 classes (500)
-    - 0011500 to 0012450 taxonomy1 individuals (950)
+    - 0011500 to 0012450 taxonomy1 individuals (950) # idle: now individuals use accession_id
     - 0012451 to 0012500 taxonomy1 datasets (50)
     - 0012501 to 0012999 taxonomy1 marker gene sets (500)
     - 0013000 to 0014999 taxonomy1 spare id space (2000)
     -
-    - 0015000 taxonomy2 individual
+    - 0015000 taxonomy2 individual # idle: now individuals use accession_id
     - 0015001 to 0015499 taxonomy2 classes
-    - 0015500 to 0016450 taxonomy2 individuals
+    - 0015500 to 0016450 taxonomy2 individuals # idle: now individuals use accession_id
     - 0016451 to 0016500 taxonomy2 datasets
     - 0016501 to 0016999 taxonomy2 marker gene sets
     - 0017000 to 0018999 taxonomy2 spare id space
@@ -66,6 +66,8 @@ def get_class_id(accession_id):
 
 def get_individual_id(accession_id):
     """
+    DEPRECATED: now individuals use accession_id
+
     Generates a PCL id for the given accession id. Parses taxonomy id from accession id and based on taxonomy's order
     in the 'taxonomy_details.yaml' finds the allocated id range for the taxonomy. Generates a PCL id displaced by the
     node_id in the individual range (taxonomy range + 500).
@@ -82,6 +84,8 @@ def get_individual_id(accession_id):
 
 def get_taxonomy_id(taxonomy_id):
     """
+    DEPRECATED: now individuals use accession_id
+
     Generates a PCL id for the given taxonomy. it is the first id of the taxonomy allocated id range (such as 0012000)
     Args:
         taxonomy_id: taxonomy id
@@ -164,6 +168,10 @@ def get_reverse_id(pcl_id_str):
         pcl_id_str: PCL id
     Returns: cell cet accession id
     """
+    if str(pcl_id_str).startswith("http://purl.obolibrary.org/obo/pcl/") or str(pcl_id_str).startswith("PCL_INDV:"):
+        pcl_id_str = str(pcl_id_str).replace("http://purl.obolibrary.org/obo/pcl/", "")
+        pcl_id_str = str(pcl_id_str).replace("PCL_INDV:", "")
+        return pcl_id_str
 
     pcl_id_str = str(pcl_id_str).replace("http://purl.obolibrary.org/obo/PCL_", "")
     pcl_id_str = str(pcl_id_str).replace("PCL:", "")
@@ -194,4 +202,6 @@ def is_pcl_id(id_str):
     Returns: 'True' if given id is PCL id, 'False' otherwise
     """
     return str(id_str).startswith("http://purl.obolibrary.org/obo/PCL_") \
-        or str(id_str).startswith("PCL:") or str(id_str).startswith("PCL_")
+        or str(id_str).startswith("PCL:") or str(id_str).startswith("PCL_") \
+        or str(id_str).startswith("http://purl.obolibrary.org/obo/pcl/") \
+        or str(id_str).startswith("PCL_INDV:")
