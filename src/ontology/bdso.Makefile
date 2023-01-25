@@ -19,6 +19,7 @@ OWL_CLASS_FILES = $(patsubst %, components/%_class.owl, $(JOBS))
 OWL_CLASS_HOMOLOGOUS_FILES = $(patsubst %, components/%_class_homologous.owl, $(JOBS))
 OWL_MARKER_SET_FILES = $(patsubst %, components/%_marker_set.owl, $(JOBS))
 GENE_FILES = $(patsubst %, mirror/%.owl, $(GENE_LIST))
+GENE_IMPORT_FILES = $(patsubst %, imports/%_import.owl, $(GENE_LIST))
 OWL_APP_SPECIFIC_FILES = $(patsubst %, components/%_app_specific.owl, $(JOBS))
 OWL_DATASET_FILES = $(patsubst %, components/%_dataset.owl, $(JOBS))
 OWL_TAXONOMY_FILE = components/taxonomies.owl
@@ -67,6 +68,26 @@ imports/%_import.owl: mirror/merged.owl imports/%_terms_combined.txt
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 .PRECIOUS: imports/%_import.owl
+
+# further filter gene imports
+imports/ensmusg_import.owl: mirror/ensmusg.owl imports/ensmusg_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/inject-version-info.ru --update ../sparql/preprocess-module.ru \
+		extract -T imports/ensmusg_terms_combined.txt --force true --copy-ontology-annotations true --individuals exclude --method BOT \
+		remove  --select "<http://www.informatics.jax.org/marker/MGI:*>" remove  --select "<http://purl.obolibrary.org/obo/OBA_*>" remove  --select "<http://purl.obolibrary.org/obo/ENVO_*>" remove  --select "<http://purl.obolibrary.org/obo/OBI_*>" remove  --select "<http://purl.obolibrary.org/obo/GOCHE_*>" remove  --select "<http://purl.obolibrary.org/obo/CARO_*>" remove  --select "<http://purl.obolibrary.org/obo/NCBITaxon_Union_*>" remove  --select "<http://www.genenames.org/cgi-bin/gene_symbol_report*>"  \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+imports/simple_human_import.owl: mirror/simple_human.owl imports/simple_human_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/inject-version-info.ru --update ../sparql/preprocess-module.ru \
+		extract -T imports/simple_human_terms_combined.txt --force true --copy-ontology-annotations true --individuals exclude --method BOT \
+		remove  --select "<http://www.informatics.jax.org/marker/MGI:*>" remove  --select "<http://purl.obolibrary.org/obo/OBA_*>" remove  --select "<http://purl.obolibrary.org/obo/ENVO_*>" remove  --select "<http://purl.obolibrary.org/obo/OBI_*>" remove  --select "<http://purl.obolibrary.org/obo/GOCHE_*>" remove  --select "<http://purl.obolibrary.org/obo/CARO_*>" remove  --select "<http://purl.obolibrary.org/obo/NCBITaxon_Union_*>" remove  --select "<http://www.genenames.org/cgi-bin/gene_symbol_report*>"  \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+imports/simple_marmoset_import.owl: mirror/simple_marmoset.owl imports/simple_marmoset_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/inject-version-info.ru --update ../sparql/preprocess-module.ru \
+		extract -T imports/simple_marmoset_terms_combined.txt --force true --copy-ontology-annotations true --individuals exclude --method BOT \
+		remove  --select "<http://www.informatics.jax.org/marker/MGI:*>" remove  --select "<http://purl.obolibrary.org/obo/OBA_*>" remove  --select "<http://purl.obolibrary.org/obo/ENVO_*>" remove  --select "<http://purl.obolibrary.org/obo/OBI_*>" remove  --select "<http://purl.obolibrary.org/obo/GOCHE_*>" remove  --select "<http://purl.obolibrary.org/obo/CARO_*>" remove  --select "<http://purl.obolibrary.org/obo/NCBITaxon_Union_*>" remove  --select "<http://www.genenames.org/cgi-bin/gene_symbol_report*>"  \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 # remove exclude_iri_patterns
 imports/pr_import.owl: mirror/merged.owl imports/pr_terms_combined.txt
@@ -224,8 +245,8 @@ $(ONT)-allen.owl: $(ONT)-full.owl allen_helper.owl
 		 	 --output $(RELEASEDIR)/$@
 
 # Artifact that extends base with gene ontologies (used by PCL)
-$(ONT)-pcl-comp.owl:  $(ONT)-base.owl $(GENE_FILES)
-	$(ROBOT) merge -i $< $(patsubst %, -i %, $(GENE_FILES)) \
+$(ONT)-pcl-comp.owl:  $(ONT)-base.owl $(GENE_IMPORT_FILES)
+	$(ROBOT) merge -i $< $(patsubst %, -i %, $(GENE_IMPORT_FILES)) \
 	query --update ../sparql/remove_preflabels.ru \
 			 annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		 	 --output $(RELEASEDIR)/$@ 
