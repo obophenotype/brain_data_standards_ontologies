@@ -6,6 +6,8 @@ BDSO_ONT = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../../bdso
 PCL_ONT = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../resources/pCL_4.1.0.owl")
 PCL_MAPPING_OUTPUT = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../templates/pCL_mapping.tsv")
 
+LEGACY_PCL_NS = "http://purl.obolibrary.org/obo/PCL_"
+
 
 def map_pcl_2_bdso():
     bdso_preflabels = get_bdso_pref_labels()
@@ -17,7 +19,8 @@ def map_pcl_2_bdso():
                            'Obselete': 'AT owl:deprecated^^xsd:boolean',
                            'Comment': "A rdfs:comment",
                            'Label': "A rdfs:label",
-                           'Definition': 'A skos:definition'
+                           'Definition': 'A skos:definition',
+                           'Exact Synonym': 'A oboInOwl:hasExactSynonym SPLIT=|'
                            }
     dl = [robot_template_seed]
 
@@ -56,6 +59,10 @@ def map_pcl_2_bdso():
             d["Definition"] = "OBSOLETE. " + row.definition
         else:
             d["Definition"] = "OBSOLETE"
+
+        if LEGACY_PCL_NS in d["ID"]:
+            id_int = int(d["ID"].replace(LEGACY_PCL_NS, ""))
+            d["Exact Synonym"] = "pCL" + str(id_int)
 
         dl.append(d)
 
@@ -109,4 +116,5 @@ def get_bdso_pref_labels():
 
 
 if __name__ == '__main__':
+    # Be careful, there are manual curations
     map_pcl_2_bdso()
