@@ -116,4 +116,5 @@ def get_bdso_pref_labels():
 
 
 if __name__ == '__main__':
+    # Be careful, there are manual curations
     map_pcl_2_bdso()
