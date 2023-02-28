@@ -33,7 +33,7 @@ OWL_OBSOLETE_TAXONOMY_FILE = components/taxonomies_obsolete.owl
 #TEMPLATE_CLASS_FILES = $(patsubst %, ../templates/_%class.tsv, $(JOBS))
 
 # overriding to add prefixes
-$(PATTERNDIR)/pattern.owl: pattern_schema_checks update_patterns
+$(PATTERNDIR)/pattern.owl: 
 	if [ $(PAT) = true ]; then $(DOSDPT) prototype --prefixes=template_prefixes.yaml --obo-prefixes true --template=$(PATTERNDIR)/dosdp-patterns --outfile=$@; fi
 
 individual_patterns_names_default := $(strip $(patsubst %.tsv,%, $(notdir $(wildcard $(PATTERNDIR)/data/default/*.tsv))))
@@ -236,8 +236,8 @@ $(ONT)-pcl-comp.json: $(RELEASEDIR)/$(ONT)-pcl-comp.owl
 		convert --check false -f json -o $@.tmp.json &&\
 	jq -S 'walk(if type == "array" then sort else . end)' $@.tmp.json > $(RELEASEDIR)/$@ && rm $@.tmp.json
 
-
-# skip schema checks for now, because odk using the wrong validator
-.PHONY: pattern_schema_checks
-pattern_schema_checks: update_patterns
-	if [ $(PAT) = "skip" ]; then $(PATTERN_TESTER) $(PATTERNDIR)/dosdp-patterns/  ; fi
+# New ODK should remove the need for this 
+## skip schema checks for now, because odk using the wrong validator
+##.PHONY: pattern_schema_checks
+##pattern_schema_checks: update_patterns
+##	if [ $(PAT) = "skip" ]; then $(PATTERN_TESTER) $(PATTERNDIR)/dosdp-patterns/  ; fi
