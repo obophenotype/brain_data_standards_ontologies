@@ -3,14 +3,12 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
-IMPORTS += simple_human simple_marmoset
-
-JOBS = CCN202002013 CCN201912131 CCN201912132 CS1908210 #CCN202002270 CCN202002013 CCN201810310 CCN201908211 CCN201908210
+JOBS = CCN202002013 CCN201912131 CCN201912132 CS1908210
 GENE_LIST = ensmusg simple_human simple_marmoset
 BDS_BASE = http://purl.obolibrary.org/obo/
 ONTBASE=                    $(URIBASE)/pcl
 
-TSV_CLASS_FILES = $(patsubst %, ../patterns/data/default/%_class.tsv, $(JOBS))
+TSV_CLASS_FILES = $(patsubst %, $(TMPDIR)/%_class.tsv, $(JOBS))
 TSV_CLASS_HOMOLOGOUS_FILES = $(patsubst %, ../patterns/data/default/%_class_homologous.tsv, $(JOBS))
 TSV_MARKER_SET_FILES = $(patsubst %, ../patterns/data/default/%_marker_set.tsv, $(JOBS))
 
@@ -18,7 +16,7 @@ OWL_FILES = $(patsubst %, components/%.owl, $(JOBS))
 OWL_CLASS_FILES = $(patsubst %, components/%_class.owl, $(JOBS))
 OWL_CLASS_HOMOLOGOUS_FILES = $(patsubst %, components/%_class_homologous.owl, $(JOBS))
 OWL_MARKER_SET_FILES = $(patsubst %, components/%_marker_set.owl, $(JOBS))
-GENE_FILES = $(patsubst %, mirror/%.owl, $(GENE_LIST))
+GENE_FILES = $(patsubst %, $(MIRRORDIR)/%.owl, $(GENE_LIST))
 OWL_APP_SPECIFIC_FILES = $(patsubst %, components/%_app_specific.owl, $(JOBS))
 OWL_DATASET_FILES = $(patsubst %, components/%_dataset.owl, $(JOBS))
 OWL_TAXONOMY_FILE = components/taxonomies.owl
@@ -28,58 +26,33 @@ PCL_LEGACY_FILE = components/pcl-legacy.owl
 OWL_OBSOLETE_INDVS = $(patsubst %, components/%_obsolete_indvs.owl, $(JOBS))
 OWL_OBSOLETE_TAXONOMY_FILE = components/taxonomies_obsolete.owl
 
-#DEND_FILES = $(patsubst %, ../dendrograms/%.json, $(JOBS))
-#TEMPLATE_FILES = $(patsubst %, ../templates/%.tsv, $(JOBS))
-#TEMPLATE_CLASS_FILES = $(patsubst %, ../templates/_%class.tsv, $(JOBS))
-
 # overriding to add prefixes
-$(PATTERNDIR)/pattern.owl: pattern_schema_checks update_patterns
+$(PATTERNDIR)/pattern.owl: $(ALL_PATTERN_FILES)
 	if [ $(PAT) = true ]; then $(DOSDPT) prototype --prefixes=template_prefixes.yaml --obo-prefixes true --template=$(PATTERNDIR)/dosdp-patterns --outfile=$@; fi
-
-individual_patterns_names_default := $(strip $(patsubst %.tsv,%, $(notdir $(wildcard $(PATTERNDIR)/data/default/*.tsv))))
-dosdp_patterns_default: $(SRC) all_imports .FORCE
-	if [ $(PAT) = true ] && [ "${individual_patterns_names_default}" ]; then $(DOSDPT) generate --prefixes=template_prefixes.yaml --catalog=catalog-v001.xml --infile=$(PATTERNDIR)/data/default/ --template=$(PATTERNDIR)/dosdp-patterns --batch-patterns="$(individual_patterns_names_default)" --ontology=$< --obo-prefixes=true --outfile=$(PATTERNDIR)/data/default; fi
 
 $(PATTERNDIR)/data/default/%.txt: $(PATTERNDIR)/dosdp-patterns/%.yaml $(PATTERNDIR)/data/default/%.tsv .FORCE
 	if [ $(PAT) = true ]; then $(DOSDPT) terms --prefixes=template_prefixes.yaml --infile=$(word 2, $^) --template=$< --obo-prefixes=true --outfile=$@; fi
 
-# adding more imports (simple_human simple_marmoset) to process
-#IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
-#IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
-#IMPORT_FILES = $(IMPORT_OWL_FILES)
-
-#ALL_TERMS_COMBINED = $(patsubst %, imports/%_terms_combined.txt, $(IMPORTS))
-#imports/merged_terms_combined.txt: $(ALL_TERMS_COMBINED)
-#	if [ $(IMP) = true ]; then cat $^ | grep -v ^# | sort | uniq >  $@; fi
+ALL_TERMS_COMBINED = $(patsubst %, $(IMPORTDIR)/%_terms_combined.txt, $(IMPORTS))
+$(IMPORTDIR)/merged_terms_combined.txt: $(ALL_TERMS_COMBINED)
+	if [ $(IMP) = true ]; then cat $^ | grep -v ^# | sort | uniq >  $@; fi
 
 ALL_MIRRORS = $(patsubst %, mirror/%.owl, $(IMPORTS))
 mirror/merged.owl: $(ALL_MIRRORS)
 	if [ $(IMP) = true ] && [ $(MERGE_MIRRORS) = true ]; then $(ROBOT) merge $(patsubst %, -i %, $^) -o $@; fi
 .PRECIOUS: mirror/merged.owl
 
-
-# adding an extra query step to inject version info to imported entities and remove exclude_iri_patterns
-imports/%_import.owl: mirror/merged.owl imports/%_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/inject-version-info.ru --update ../sparql/preprocess-module.ru \
-		extract -T imports/$*_terms_combined.txt --force true --copy-ontology-annotations true --individuals exclude --method BOT \
-		remove  --select "<http://www.informatics.jax.org/marker/MGI:*>" remove  --select "<http://purl.obolibrary.org/obo/OBA_*>" remove  --select "<http://purl.obolibrary.org/obo/ENVO_*>" remove  --select "<http://purl.obolibrary.org/obo/OBI_*>" remove  --select "<http://purl.obolibrary.org/obo/GOCHE_*>" remove  --select "<http://purl.obolibrary.org/obo/CARO_*>" remove  --select "<http://purl.obolibrary.org/obo/NCBITaxon_Union_*>" remove  --select "<http://www.genenames.org/cgi-bin/gene_symbol_report*>"  \
-		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
-.PRECIOUS: imports/%_import.owl
-
-# remove exclude_iri_patterns
-imports/pr_import.owl: mirror/merged.owl imports/pr_terms_combined.txt
-	if [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) extract -i $< -T imports/pr_terms_combined.txt --force true --individuals exclude --method BOT \
-		remove  --select "<http://www.informatics.jax.org/marker/MGI:*>" remove  --select "<http://purl.obolibrary.org/obo/OBA_*>" remove  --select "<http://purl.obolibrary.org/obo/ENVO_*>" remove  --select "<http://purl.obolibrary.org/obo/OBI_*>" remove  --select "<http://purl.obolibrary.org/obo/GOCHE_*>" remove  --select "<http://purl.obolibrary.org/obo/CARO_*>" remove  --select "<http://purl.obolibrary.org/obo/NCBITaxon_Union_*>" remove  --select "<http://www.genenames.org/cgi-bin/gene_symbol_report*>"  \
-		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
-.PRECIOUS: imports/pr_import.owl
-
-# disable automatic pattern management. Manually managed below
-dosdp_patterns_default: $(SRC) all_imports .FORCE
-	if [ $(PAT) = "skip" ] && [ "${individual_patterns_names_default}" ]; then $(DOSDPT) generate --catalog=catalog-v001.xml --infile=$(PATTERNDIR)/data/default/ --template=$(PATTERNDIR)/dosdp-patterns --batch-patterns="$(individual_patterns_names_default)" --ontology=$< --obo-prefixes=true --outfile=$(PATTERNDIR)/data/default; fi
+# DISABLE automatic pattern management. Manually managed below
+$(PATTERNDIR)/definitions.owl: $(TSV_CLASS_FILES)
+	if [ $(PAT) = "skip" ] && [ "${DOSDP_PATTERN_NAMES_DEFAULT}" ]   && [ $(PAT) = true ]; then $(ROBOT) merge $(addprefix -i , $^) \
+		annotate --ontology-iri $(ONTBASE)/patterns/definitions.owl  --version-iri $(ONTBASE)/releases/$(TODAY)/patterns/definitions.owl \
+      --annotation owl:versionInfo $(VERSION) -o definitions.ofn && mv definitions.ofn $@; fi
+$(DOSDP_OWL_FILES_DEFAULT):
+	if [ $(PAT) = "skip" ] && [ "${DOSDP_PATTERN_NAMES_DEFAULT}" ]; then $(DOSDPT) generate --catalog=catalog-v001.xml \
+    --infile=$(PATTERNDIR)/data/default/ --template=$(PATTERNDIR)/dosdp-patterns --batch-patterns="$(DOSDP_PATTERN_NAMES_DEFAULT)" \
+    --ontology=$< --obo-prefixes=true --outfile=$(PATTERNDIR)/data/default; fi
+update_patterns:
+	if [ $(PAT) = "skip" ]; then cp -r $(TMPDIR)/dosdp/*.yaml $(PATTERNDIR)/dosdp-patterns; fi
 
 # disable automatic term management and manually manage below
 $(PATTERNDIR)/data/default/%.txt: $(PATTERNDIR)/dosdp-patterns/%.yaml $(PATTERNDIR)/data/default/%.tsv .FORCE
@@ -102,30 +75,30 @@ $(PATTERNDIR)/data/default/Protein2GeneExpression.txt: $(PATTERNDIR)/data/defaul
 
 
 # merge class template data
-$(PATTERNDIR)/data/default/%_class.tsv: $(PATTERNDIR)/data/default/%_class_base.tsv $(PATTERNDIR)/data/default/%_class_curation.tsv
+$(TMPDIR)/%_class.tsv: $(PATTERNDIR)/data/default/%_class_base.tsv $(PATTERNDIR)/data/default/%_class_curation.tsv
 	python ../scripts/template_runner.py modifier --merge -i=$< -i2=$(word 2, $^) -o=$@
 
 all_imports: $(IMPORT_FILES) imports/merged_import.owl
 
 # hard wiring for now.  Work on patsubst later
-mirror/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
+$(MIRRORDIR)/ensmusg.owl: ../templates/ensmusg.tsv .FORCE
 	if [ $(MIR) = true ]; then $(ROBOT) template --input $(SRC) --template $< \
       --add-prefixes template_prefixes.json \
       annotate --ontology-iri ${BDS_BASE}$@ \
       convert --format ofn --output $@; fi
+$(MIRRORDIR)/simple_human.owl: ../templates/simple_human.tsv .FORCE
 	if [ $(MIR) = true ]; then $(ROBOT) template --input $(SRC) --template ../templates/simple_human.tsv \
       --add-prefixes template_prefixes.json \
       annotate --ontology-iri ${BDS_BASE}mirror/simple_human.owl \
-      convert --format ofn --output mirror/simple_human.owl; fi
+      convert --format ofn --output $(MIRRORDIR)/simple_human.owl; fi
+$(MIRRORDIR)/simple_marmoset.owl: ../templates/simple_marmoset.tsv .FORCE
 	if [ $(MIR) = true ]; then $(ROBOT) template --input $(SRC) --template ../templates/simple_marmoset.tsv \
       --add-prefixes template_prefixes.json \
       annotate --ontology-iri ${BDS_BASE}mirror/simple_marmoset.owl \
-      convert --format ofn --output mirror/simple_marmoset.owl; fi
+      convert --format ofn --output $(MIRRORDIR)/simple_marmoset.owl; fi
 
-.PRECIOUS: mirror/simple_human.owl
-.PRECIOUS: imports/simple_human_import.owl
-.PRECIOUS: mirror/simple_marmoset.owl
-.PRECIOUS: imports/simple_marmoset_import.owl
+.PRECIOUS: $(MIRRORDIR)/simple_human.owl
+.PRECIOUS: $(MIRRORDIR)/simple_marmoset.owl
 
 # merge all templates except application specific ones
 components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MIN_MARKER_FILES) $(OWL_TAXONOMY_FILE) $(OWL_PROTEIN2GENE_FILE) $(OWL_APP_SPECIFIC_FILES) $(PCL_LEGACY_FILE) $(OWL_CLASS_HOMOLOGOUS_FILES) $(OWL_DATASET_FILES) $(OWL_MARKER_SET_FILES) $(OWL_OBSOLETE_TAXONOMY_FILE) $(OWL_OBSOLETE_INDVS)
@@ -133,6 +106,8 @@ components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MIN_MARKER_F
 	 --collapse-import-closure false \
 	 annotate --ontology-iri ${BDS_BASE}$@  \
 	 convert -f ofn	 -o $@
+
+.PRECIOUS: $(COMPONENTSDIR)/all_templates.owl
 
 #(SRC): $(OWL_FILES)
 #	$(ROBOT) merge -i pcl-template.owl $(patsubst %, -i %, $^) --collapse-import-closure false -o $@
@@ -143,7 +118,7 @@ components/%.owl: ../templates/%.tsv $(SRC)
     		annotate --ontology-iri ${BDS_BASE}$@ \
     		convert --format ofn --output $@ \
 
-components/%_class.owl: $(PATTERNDIR)/data/default/%_class.tsv $(SRC) $(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml $(SRC) all_imports .FORCE
+components/%_class.owl: $(TMPDIR)/%_class.tsv $(SRC) $(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml $(SRC) all_imports .FORCE
 	$(DOSDPT) generate --catalog=catalog-v001.xml --prefixes=template_prefixes.yaml \
         --infile=$< --template=$(PATTERNDIR)/dosdp-patterns/taxonomy_class.yaml \
         --ontology=$(SRC) --obo-prefixes=true --outfile=$@
@@ -236,8 +211,3 @@ $(ONT)-pcl-comp.json: $(RELEASEDIR)/$(ONT)-pcl-comp.owl
 		convert --check false -f json -o $@.tmp.json &&\
 	jq -S 'walk(if type == "array" then sort else . end)' $@.tmp.json > $(RELEASEDIR)/$@ && rm $@.tmp.json
 
-
-# skip schema checks for now, because odk using the wrong validator
-.PHONY: pattern_schema_checks
-pattern_schema_checks: update_patterns
-	if [ $(PAT) = "skip" ]; then $(PATTERN_TESTER) $(PATTERNDIR)/dosdp-patterns/  ; fi
