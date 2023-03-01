@@ -46,6 +46,10 @@ import_group:
       use_base: TRUE
     - id: ensmusg
       make_base: TRUE
+    - id: simple_human
+      make_base: TRUE
+    - id: simple_marmoset
+      make_base: TRUE
     - id: ncbitaxon
       mirror_from: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
 components:
