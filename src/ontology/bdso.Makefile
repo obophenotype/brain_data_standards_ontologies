@@ -3,9 +3,7 @@
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
 
-#IMPORTS += simple_human simple_marmoset
-
-JOBS = CCN202002013 CCN201912131 CCN201912132 CS1908210 #CCN202002270 CCN202002013 CCN201810310 CCN201908211 CCN201908210
+JOBS = CCN202002013 CCN201912131 CCN201912132 CS1908210
 GENE_LIST = ensmusg simple_human simple_marmoset
 BDS_BASE = http://purl.obolibrary.org/obo/
 ONTBASE=                    $(URIBASE)/pcl
@@ -28,25 +26,12 @@ PCL_LEGACY_FILE = components/pcl-legacy.owl
 OWL_OBSOLETE_INDVS = $(patsubst %, components/%_obsolete_indvs.owl, $(JOBS))
 OWL_OBSOLETE_TAXONOMY_FILE = components/taxonomies_obsolete.owl
 
-#DEND_FILES = $(patsubst %, ../dendrograms/%.json, $(JOBS))
-#TEMPLATE_FILES = $(patsubst %, ../templates/%.tsv, $(JOBS))
-#TEMPLATE_CLASS_FILES = $(patsubst %, ../templates/_%class.tsv, $(JOBS))
-
 # overriding to add prefixes
 $(PATTERNDIR)/pattern.owl: $(ALL_PATTERN_FILES)
 	if [ $(PAT) = true ]; then $(DOSDPT) prototype --prefixes=template_prefixes.yaml --obo-prefixes true --template=$(PATTERNDIR)/dosdp-patterns --outfile=$@; fi
 
-#individual_patterns_names_default := $(strip $(patsubst %.tsv,%, $(notdir $(wildcard $(PATTERNDIR)/data/default/*.tsv))))
-#dosdp_patterns_default: $(SRC) all_imports .FORCE
-#	if [ $(PAT) = true ] && [ "${individual_patterns_names_default}" ]; then $(DOSDPT) generate --prefixes=template_prefixes.yaml --catalog=catalog-v001.xml --infile=$(PATTERNDIR)/data/default/ --template=$(PATTERNDIR)/dosdp-patterns --batch-patterns="$(individual_patterns_names_default)" --ontology=$< --obo-prefixes=true --outfile=$(PATTERNDIR)/data/default; fi
-
 $(PATTERNDIR)/data/default/%.txt: $(PATTERNDIR)/dosdp-patterns/%.yaml $(PATTERNDIR)/data/default/%.tsv .FORCE
 	if [ $(PAT) = true ]; then $(DOSDPT) terms --prefixes=template_prefixes.yaml --infile=$(word 2, $^) --template=$< --obo-prefixes=true --outfile=$@; fi
-
-# adding more imports (simple_human simple_marmoset) to process
-#IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
-#IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
-#IMPORT_FILES = $(IMPORT_OWL_FILES)
 
 ALL_TERMS_COMBINED = $(patsubst %, $(IMPORTDIR)/%_terms_combined.txt, $(IMPORTS))
 $(IMPORTDIR)/merged_terms_combined.txt: $(ALL_TERMS_COMBINED)
@@ -56,26 +41,6 @@ ALL_MIRRORS = $(patsubst %, mirror/%.owl, $(IMPORTS))
 mirror/merged.owl: $(ALL_MIRRORS)
 	if [ $(IMP) = true ] && [ $(MERGE_MIRRORS) = true ]; then $(ROBOT) merge $(patsubst %, -i %, $^) -o $@; fi
 .PRECIOUS: mirror/merged.owl
-
-
-# adding an extra query step to inject version info to imported entities and remove exclude_iri_patterns
-#$(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/merged.owl $(IMPORTDIR)/%_terms_combined.txt
-#	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/inject-version-info.ru --update ../sparql/preprocess-module.ru \
-#		extract -T $(IMPORTDIR)/$*_terms_combined.txt --force true --copy-ontology-annotations true --individuals exclude --method BOT \
-#		remove  --select "<http://www.informatics.jax.org/marker/MGI:*>" remove  --select "<http://purl.obolibrary.org/obo/OBA_*>" remove  --select "<http://purl.obolibrary.org/obo/ENVO_*>" remove  --select "<http://purl.obolibrary.org/obo/OBI_*>" remove  --select "<http://purl.obolibrary.org/obo/GOCHE_*>" remove  --select "<http://purl.obolibrary.org/obo/CARO_*>" remove  --select "<http://purl.obolibrary.org/obo/NCBITaxon_Union_*>" remove  --select "<http://www.genenames.org/cgi-bin/gene_symbol_report*>"  \
-#		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
-#		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-#
-#.PRECIOUS: $(IMPORTDIR)/%_import.owl
-
-# remove exclude_iri_patterns
-#$(IMPORTDIR)/pr_import.owl: $(MIRRORDIR)/merged.owl $(IMPORTDIR)/pr_terms_combined.txt
-#	if [ $(IMP) = true ] && [ $(IMP_LARGE) = true ]; then $(ROBOT) extract -i $< -T $(IMPORTDIR)/pr_terms_combined.txt --force true --individuals exclude --method BOT \
-#		remove  --select "<http://www.informatics.jax.org/marker/MGI:*>" remove  --select "<http://purl.obolibrary.org/obo/OBA_*>" remove  --select "<http://purl.obolibrary.org/obo/ENVO_*>" remove  --select "<http://purl.obolibrary.org/obo/OBI_*>" remove  --select "<http://purl.obolibrary.org/obo/GOCHE_*>" remove  --select "<http://purl.obolibrary.org/obo/CARO_*>" remove  --select "<http://purl.obolibrary.org/obo/NCBITaxon_Union_*>" remove  --select "<http://www.genenames.org/cgi-bin/gene_symbol_report*>"  \
-#		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
-#		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-#
-#.PRECIOUS: $(IMPORTDIR)/pr_import.owl
 
 # DISABLE automatic pattern management. Manually managed below
 $(PATTERNDIR)/definitions.owl: $(TSV_CLASS_FILES)
@@ -133,9 +98,7 @@ $(MIRRORDIR)/simple_marmoset.owl: ../templates/simple_marmoset.tsv .FORCE
       convert --format ofn --output $(MIRRORDIR)/simple_marmoset.owl; fi
 
 .PRECIOUS: $(MIRRORDIR)/simple_human.owl
-#.PRECIOUS: $(IMPORTDIR)/simple_human_import.owl
 .PRECIOUS: $(MIRRORDIR)/simple_marmoset.owl
-#.PRECIOUS: $(IMPORTDIR)/simple_marmoset_import.owl
 
 # merge all templates except application specific ones
 components/all_templates.owl: $(OWL_FILES) $(OWL_CLASS_FILES) $(OWL_MIN_MARKER_FILES) $(OWL_TAXONOMY_FILE) $(OWL_PROTEIN2GENE_FILE) $(OWL_APP_SPECIFIC_FILES) $(PCL_LEGACY_FILE) $(OWL_CLASS_HOMOLOGOUS_FILES) $(OWL_DATASET_FILES) $(OWL_MARKER_SET_FILES) $(OWL_OBSOLETE_TAXONOMY_FILE) $(OWL_OBSOLETE_INDVS)
@@ -248,13 +211,3 @@ $(ONT)-pcl-comp.json: $(RELEASEDIR)/$(ONT)-pcl-comp.owl
 		convert --check false -f json -o $@.tmp.json &&\
 	jq -S 'walk(if type == "array" then sort else . end)' $@.tmp.json > $(RELEASEDIR)/$@ && rm $@.tmp.json
 
-
-# skip schema checks for now, because odk using the wrong validator
-#.PHONY: pattern_schema_checks
-#pattern_schema_checks: update_patterns
-#	if [ $(PAT) = "skip" ]; then $(PATTERN_TESTER) $(PATTERNDIR)/dosdp-patterns/  ; fi
-
-#TODO delete these experiments
-#.PHONY: reason_test
-#reason_test: $(EDIT_PREPROCESSED)
-#	echo "Skip"
