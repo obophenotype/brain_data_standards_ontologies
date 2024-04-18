@@ -5,6 +5,6 @@ PREFIX CL: <http://purl.obolibrary.org/obo/CL_>
 SELECT (COUNT (DISTINCT ?term) as ?pclcells)
 WHERE {
   	?term a owl:Class . 
-  	?term rdfs:subClassOf* CL:0000003
+  	?term rdfs:subClassOf* CL:0000000
   FILTER(isIRI(?term) && (STRSTARTS(str(?term), "http://purl.obolibrary.org/obo/PCL_")))
 }

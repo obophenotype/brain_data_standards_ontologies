@@ -6,7 +6,7 @@ classes:
   "cell": "CL:0000000"
   "thing": "owl:Thing"
   "animal cell": "CL:0000548"
-  "native_cell": "CL:0000003"
+#  "native_cell": "CL:0000003"
   "Vertebrata <vertebrates>": "NCBITaxon:7742"
   "regional part of brain": "UBERON:0002616"
   "sequence_feature": "SO:0000110"
@@ -196,7 +196,7 @@ logical_axioms:
      vars:
         - Individual
    - axiom_type: equivalentTo
-     text: "'native_cell' and 'has_exemplar_data' value %s"
+     text: "'cell' and 'has_exemplar_data' value %s"
      vars:
         - Individual
    - axiom_type: subClassOf
