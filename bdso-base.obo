@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: pcl/releases/2024-04-18/bdso-base.owl
+data-version: pcl/releases/2024-04-27/bdso-base.owl
 ontology: pcl/bdso-base
 property_value: http://purl.org/dc/elements/1.1/title "Brain Data Standards Cell Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2024-04-18" xsd:string
+property_value: owl:versionInfo "2024-04-27" xsd:string
 
 [Term]
 id: CL:4023119
@@ -12398,7 +12398,7 @@ name: Oligo L2-6 OPALIN MAP6D1 primary motor cortex oligodendrocyte precursor ce
 def: "A oligodendrocyte precursor cell of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of LINC01378 (Hsap), MBP (Hsap), ENPP2 (Hsap), ST18 (Hsap). These cells also express OPALIN (Hsap), MAP6D1 (Hsap). The reference data for this cell type is CS201912131_79." [PMID:34616062]
 synonym: "LINC01378 (Hsap), MBP (Hsap), ENPP2 (Hsap), ST18 (Hsap) expressing oligodendrocyte precursor cell of primary motor cortex (Homo sapiens)" EXACT []
 synonym: "Oligo L2-6 OPALIN MAP6D1" EXACT []
-is_a: CL:0002453
+is_a: CL:0000128
 relationship: BFO:0000050 UBERON:0001384
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 https://identifiers.org/ncbigene/103689918 ! expresses
@@ -13265,7 +13265,7 @@ def: "A oligodendrocyte precursor cell of the Homo sapiens primary motor cortex.
 synonym: "LOC101927199 (Hsap), ST18 (Hsap), LRRC63 (Hsap), S100B (Hsap), CDK18 (Hsap) expressing oligodendrocyte precursor cell of primary motor cortex (Homo sapiens)" EXACT []
 synonym: "Oligo L3-6 OPALIN-like ENPP6" EXACT []
 synonym: "Oligo_1" EXACT []
-is_a: CL:0002453
+is_a: CL:0000128
 relationship: BFO:0000050 UBERON:0001384
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 https://identifiers.org/ncbigene/101927199 ! expresses
@@ -13291,7 +13291,7 @@ name: Oligo L2-6 OPALIN FTH1P3 primary motor cortex oligodendrocyte precursor ce
 def: "A oligodendrocyte precursor cell of the Homo sapiens primary motor cortex. These cells can be distinguished from other cells in the primary motor cortex by their selective expression of LOC101927459 (Hsap), ENPP2 (Hsap). These cells also express OPALIN (Hsap), FTH1P3 (Hsap). The reference data for this cell type is CS201912131_120." [PMID:34616062]
 synonym: "LOC101927459 (Hsap), ENPP2 (Hsap) expressing oligodendrocyte precursor cell of primary motor cortex (Homo sapiens)" EXACT []
 synonym: "Oligo L2-6 OPALIN FTH1P3" EXACT []
-is_a: CL:0002453
+is_a: CL:0000128
 relationship: BFO:0000050 UBERON:0001384
 relationship: RO:0002162 NCBITaxon:9606
 relationship: RO:0002292 https://identifiers.org/ncbigene/101927459 ! expresses
