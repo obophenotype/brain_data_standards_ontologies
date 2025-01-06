@@ -10,14 +10,15 @@
         "val" : "http://creativecommons.org/licenses/by/4.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-07-11"
+        "val" : "2025-01-06"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/pcl/releases/2024-07-11/bdso-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/pcl/releases/2025-01-06/bdso-simple.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000050",
-      "lbl" : "part_of",
+      "lbl" : "part of",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "a core relation that holds between a part and its whole"
@@ -78,9 +79,6 @@
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "external"
         }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "quality"
-        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
           "val" : "part_of"
         }, {
@@ -99,8 +97,9 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000051",
-      "lbl" : "has_part",
+      "lbl" : "has part",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "a core relation that holds between a whole and its part"
@@ -140,81 +139,15 @@
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "external"
         }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "quality"
-        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
           "val" : "has_part"
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0000028",
-      "lbl" : "symbol",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
-      "lbl" : "definition",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0100001",
-      "lbl" : "term replaced by",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/PCL_0000100",
-      "lbl" : "synonym",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/PCL_0010051",
-      "lbl" : "cell_type_rank",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/PCL_0010052",
-      "lbl" : "cell_types_count",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/PCL_0010053",
-      "lbl" : "cell_subclasses_count",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/PCL_0010054",
-      "lbl" : "cell_classes_count",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/PCL_0010055",
-      "lbl" : "has_age",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/PCL_0010056",
-      "lbl" : "has_sex",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/PCL_0010057",
-      "lbl" : "has_brain_region",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/PCL_0010058",
-      "lbl" : "has nsforest marker",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/PCL_0010059",
-      "lbl" : "cluster id",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/PCL_0010060",
-      "lbl" : "cell_count",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/PCL_0010061",
-      "lbl" : "nuclei_count",
-      "type" : "PROPERTY"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/PCL_0010062",
-      "lbl" : "fbeta_confidence_score",
-      "type" : "PROPERTY"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0000053",
       "lbl" : "has characteristic",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "Inverse of characteristic_of"
@@ -255,6 +188,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0002100",
       "lbl" : "has soma location",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "Relation between a neuron and a material anatomical entity that its soma is part of."
@@ -277,6 +211,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0002162",
       "lbl" : "in taxon",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "x is in taxon y if an only if y is an organism, and the relationship between x and y is one of: part of (reflexive), developmentally preceded by, derives from, secreted by, expressed."
@@ -307,6 +242,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0002215",
       "lbl" : "capable of",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. "
@@ -348,6 +284,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0002292",
       "lbl" : "expresses",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "y expresses x if and only if there is a gene expression process (GO:0010467) that occurs in y, and one of the following holds: (i) x is a gene, and x is transcribed into a transcript as part of the gene expression process (ii) x is a transcript, and x was transcribed from a gene as part of the gene expression process (iii) x is a mature gene product (protein or RNA), and x was translated or otherwise processed from a transcript that was transcribed as part of the gene expression process."
@@ -364,6 +301,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0015001",
       "lbl" : "has exemplar data",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "A relation between a material entity and some data in which the data is taken as exemplifying the material entity."
@@ -386,6 +324,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0015002",
       "lbl" : "exemplar data of",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -396,6 +335,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0015003",
       "lbl" : "subcluster of",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "A relation between a group and another group it is part of but does not fully constitute."
@@ -415,6 +355,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_0015004",
       "lbl" : "has characterizing marker set",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "A relation that applies between a cell type and a set of markers that can be used to uniquely identify that cell type."
@@ -447,6 +388,7 @@
       "id" : "http://purl.obolibrary.org/obo/RO_HOM0000007",
       "lbl" : "in historical homology relationship with",
       "type" : "PROPERTY",
+      "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
           "val" : "Homology that is defined by common descent.",
@@ -498,17 +440,344 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/pr#has_gene_template",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://n2o.neo/custom/cell_set_additional_aliases",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://n2o.neo/custom/cell_set_alias_assignee",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://n2o.neo/custom/cell_set_alias_citation",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://n2o.neo/custom/cell_set_aligned_alias",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://n2o.neo/custom/cell_set_label",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://n2o.neo/custom/cell_set_preferred_alias",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://n2o.neo/custom/node_metadata",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://n2o.neo/custom/original_label",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000028",
+      "lbl" : "symbol",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000111",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000112",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000114",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
+      "lbl" : "definition",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000116",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000117",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000118",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000119",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000232",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000424",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0100001",
+      "lbl" : "term replaced by",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0000100",
+      "lbl" : "synonym",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010051",
+      "lbl" : "cell_type_rank",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010052",
+      "lbl" : "cell_types_count",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010053",
+      "lbl" : "cell_subclasses_count",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010054",
+      "lbl" : "cell_classes_count",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010055",
+      "lbl" : "has_age",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010056",
+      "lbl" : "has_sex",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010057",
+      "lbl" : "has_brain_region",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010058",
+      "lbl" : "has nsforest marker",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010059",
+      "lbl" : "cluster id",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010060",
+      "lbl" : "cell_count",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010061",
+      "lbl" : "nuclei_count",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/PCL_0010062",
+      "lbl" : "fbeta_confidence_score",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0001900",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0040042",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/valid_for_go_gp2term",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/valid_for_go_ontology",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/valid_for_gocam",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/ro/subsets#ro-eco",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/contributor",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/description",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/elements/1.1/title",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/contributor",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/creator",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/description",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/license",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/provenance",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/relation",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/source",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/subject",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/title",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://schema.org/archivedAt",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://schema.org/assesses",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://schema.org/discussionUrl",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://schema.org/headline",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://schema.org/includedInDataCatalog",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://schema.org/position",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#SubsetProperty",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
       "lbl" : "database_cross_reference",
-      "type" : "PROPERTY"
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
       "lbl" : "has_exact_synonym",
-      "type" : "PROPERTY"
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym",
       "lbl" : "has_related_synonym",
-      "type" : "PROPERTY"
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#id",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#inSubset",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.jcvi.org/framework/nsf2_full_mtg#has_soma_location_in",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.jcvi.org/framework/nsf2_full_mtg#id",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.jcvi.org/framework/nsf2_full_mtg#neuron_type",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.jcvi.org/framework/nsf2_full_mtg#part_of",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.jcvi.org/framework/nsf2_full_mtg#preferred_name",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.jcvi.org/framework/nsf2_full_mtg#prefixIRI",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.jcvi.org/framework/nsf2_full_mtg#species_id",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.jcvi.org/framework/nsf2_full_mtg#species_source",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.jcvi.org/framework/nsf2_full_mtg#tdc_id",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.w3.org/2004/02/skos/core#definition",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
     } ],
     "edges" : [ {
       "sub" : "http://purl.obolibrary.org/obo/RO_0015003",
