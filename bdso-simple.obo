@@ -1,14 +1,21 @@
 format-version: 1.2
-data-version: pcl/releases/2024-07-11/bdso-simple.owl
+data-version: pcl/releases/2025-01-06/bdso-simple.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
 subsetdef: ro-eco ""
+idspace: custom http://n2o.neo/custom/ 
+idspace: dc http://purl.org/dc/elements/1.1/ 
+idspace: nsf2_full_mtg http://www.jcvi.org/framework/nsf2_full_mtg# 
+idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
+idspace: schema http://schema.org/ 
+idspace: skos http://www.w3.org/2004/02/skos/core# 
+idspace: terms http://purl.org/dc/terms/ 
 ontology: pcl/bdso-simple
-property_value: http://purl.org/dc/elements/1.1/title "Brain Data Standards Cell Ontology" xsd:string
-property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/4.0/
-property_value: owl:versionInfo "2024-07-11" xsd:string
+property_value: dc:title "Brain Data Standards Cell Ontology" xsd:string
+property_value: owl:versionInfo "2025-01-06" xsd:string
+property_value: terms:license http://creativecommons.org/licenses/by/4.0/
 
 [Typedef]
 id: RO:0002100
@@ -17,7 +24,7 @@ def: "Relation between a neuron and a material anatomical entity that its soma i
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 https://orcid.org/0000-0002-7073-9172
 property_value: RO:0001900 RO:0001901
-transitive_over: part_of ! part_of
+transitive_over: part_of ! part of
 expand_expression_to: "BFO_0000051 some (\n   GO_0043025 and   BFO_0000050 some ?Y)" []
 
 [Typedef]
@@ -67,7 +74,7 @@ property_value: IAO:0000116 "X subcluster_of Y iff: X and Y are clusters/groups;
 property_value: IAO:0000117 https://orcid.org/0000-0001-7258-9596
 property_value: IAO:0000232 "This is used specifically for sets whose members are specified by some set-forming operator (method of grouping) such as clustering analyses in single cell transcriptomics." xsd:string
 is_transitive: true
-is_a: part_of ! part_of
+is_a: part_of ! part of
 
 [Typedef]
 id: RO:0015004
@@ -75,11 +82,11 @@ name: has characterizing marker set
 def: "A relation that applies between a cell type and a set of markers that can be used to uniquely identify that cell type." []
 synonym: "has marker gene combination" EXACT []
 synonym: "has marker signature set" EXACT []
-property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0001-7258-9596
 property_value: IAO:0000112 "'Lamp5-like Egln3_1 primary motor cortex GABAergic interneuron (Mus musculus)' subClass_of: has_characterizing_marker_set some 'NS forest marker set of Lamp5-like Egln3_1 MOp (Mouse).'; NS forest marker set of Lamp5-like Egln3_1 SubClass_of: ('has part' some 'Mouse Fbn2') and ('has part' some 'Mouse Chrna7') and ('has part' some 'Mouse Fam19a1')." xsd:string
 property_value: IAO:0000112 "transcriptomically defined cell type X subClass_of: (has_characterizing_marker_set some S1); S1 has_part some gene 1, S1 has_part some gene 2, S1 has_part some gene 3." xsd:string
 property_value: IAO:0000116 "C has_characterizing_marker_set y iff: C is a cell type and y is a collection of genes or proteins whose expression is sufficient to distinguish cell type C from most or all other cell types." xsd:string
 property_value: IAO:0000232 "This relation is not meant for cases where set of genes/proteins are only useful as markers in some specific context - e.g. in some specific location. In these cases it is recommended to make a more specific cell class restricted to the relevant context." xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-7258-9596
 
 [Typedef]
 id: RO:HOM0000007
@@ -98,9 +105,9 @@ xref: SO:0000853
 xref: SO:0000857
 xref: SO:homologous_to
 xref: TAO:homologous_to
-property_value: http://purl.org/dc/terms/creator http://bgee.unil.ch
-property_value: http://purl.org/dc/terms/source http://www.ncbi.nlm.nih.gov/pubmed/20116127
 property_value: seeAlso HOM:0000007
+property_value: terms:creator http://bgee.unil.ch
+property_value: terms:source http://www.ncbi.nlm.nih.gov/pubmed/20116127
 is_symmetric: true
 
 [Typedef]
@@ -137,9 +144,7 @@ property_value: IAO:0000232 "For compatibility with BFO, this relation has a sho
 [Typedef]
 id: has_part
 name: has part
-name: has_part
 namespace: external
-namespace: quality
 def: "a core relation that holds between a whole and its part" []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
@@ -159,9 +164,7 @@ is_transitive: true
 [Typedef]
 id: part_of
 name: part of
-name: part_of
 namespace: external
-namespace: quality
 def: "a core relation that holds between a part and its whole" []
 subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
