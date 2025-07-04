@@ -10,9 +10,9 @@
         "val" : "http://creativecommons.org/licenses/by/4.0/"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-01-06"
+        "val" : "2025-07-04"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/pcl/releases/2025-01-06/bdso-simple.json"
+      "version" : "http://purl.obolibrary.org/obo/pcl/releases/2025-07-04/bdso-simple.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000050",
@@ -24,9 +24,6 @@
           "val" : "a core relation that holds between a part and its whole"
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension", "http://purl.obolibrary.org/obo/valid_for_go_gp2term", "http://purl.obolibrary.org/obo/valid_for_go_ontology", "http://purl.obolibrary.org/obo/valid_for_gocam" ],
-        "xrefs" : [ {
-          "val" : "BFO:0000050"
-        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
           "val" : "is part of"
@@ -76,12 +73,6 @@
           "pred" : "http://purl.obolibrary.org/obo/RO_0040042",
           "val" : "http://purl.obolibrary.org/obo/BFO_0000031"
         }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "external"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "part_of"
-        }, {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
           "val" : "http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections"
         }, {
@@ -105,9 +96,6 @@
           "val" : "a core relation that holds between a whole and its part"
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension", "http://purl.obolibrary.org/obo/valid_for_go_ontology", "http://purl.obolibrary.org/obo/valid_for_gocam" ],
-        "xrefs" : [ {
-          "val" : "BFO:0000051"
-        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
           "val" : "has part"
@@ -135,12 +123,6 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/RO_0001900",
           "val" : "http://purl.obolibrary.org/obo/RO_0001901"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "external"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "has_part"
         } ]
       }
     }, {
@@ -152,9 +134,6 @@
         "definition" : {
           "val" : "Inverse of characteristic_of"
         },
-        "xrefs" : [ {
-          "val" : "RO:0000053"
-        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
           "val" : "bearer of"
@@ -176,12 +155,6 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/RO_0001900",
           "val" : "http://purl.obolibrary.org/obo/RO_0001901"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "external"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "bearer_of"
         } ]
       }
     }, {
@@ -218,6 +191,10 @@
         },
         "comments" : [ "Connects a biological entity to its taxon of origin." ],
         "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
+        "synonyms" : [ {
+          "pred" : "hasNarrowSynonym",
+          "val" : "life cycle stage of"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
           "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
@@ -248,9 +225,6 @@
           "val" : "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. "
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
-        "xrefs" : [ {
-          "val" : "RO:0002215"
-        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "mechanosensory neuron capable of detection of mechanical stimulus involved in sensory perception (GO:0050974)"
@@ -272,12 +246,6 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
           "val" : "For compatibility with BFO, this relation has a shortcut definition in which the expression \"capable of some P\" expands to \"bearer_of (some realized_by only P)\"."
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "external"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "val" : "capable_of"
         } ]
       }
     }, {
@@ -430,7 +398,7 @@
         } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/terms/creator",
-          "val" : "http://bgee.unil.ch"
+          "val" : "https://www.wikidata.org/wiki/Q54985720"
         }, {
           "pred" : "http://purl.org/dc/terms/source",
           "val" : "http://www.ncbi.nlm.nih.gov/pubmed/20116127"
@@ -494,7 +462,6 @@
       "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
-      "lbl" : "definition",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
@@ -523,7 +490,6 @@
       "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0100001",
-      "lbl" : "term replaced by",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
@@ -714,7 +680,7 @@
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
-      "id" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
@@ -723,15 +689,7 @@
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
-      "id" : "http://www.geneontology.org/formats/oboInOwl#id",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
-    }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#inSubset",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
-    }, {
-      "id" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
@@ -793,12 +751,6 @@
       "obj" : "http://purl.obolibrary.org/obo/RO_0015002"
     } ],
     "propertyChainAxioms" : [ {
-      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002162",
-      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/BFO_0000050", "http://purl.obolibrary.org/obo/RO_0002162" ]
-    }, {
-      "predicateId" : "http://purl.obolibrary.org/obo/RO_0002162",
-      "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/BFO_0000051", "http://purl.obolibrary.org/obo/RO_0002162" ]
-    }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0002100",
       "chainPredicateIds" : [ "http://purl.obolibrary.org/obo/RO_0002100", "http://purl.obolibrary.org/obo/BFO_0000050" ]
     }, {
