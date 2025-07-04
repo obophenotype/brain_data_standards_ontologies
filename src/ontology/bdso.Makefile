@@ -199,9 +199,16 @@ $(ONT)-allen.owl: $(ONT)-full.owl allen_helper.owl
 			 annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		 	 --output $(RELEASEDIR)/$@
 
+$(TMPDIR)/used_genes.txt: $(ONT)-base.owl
+	$(ROBOT) query --input $< --query ../sparql/pcl-used-genes.sparql $@
+
+$(TMPDIR)/all_genes.owl: $(GENE_FILES) $(TMPDIR)/used_genes.txt
+	$(ROBOT) merge $(patsubst %, -i %, $(GENE_FILES)) \
+	extract -T $(TMPDIR)/used_genes.txt --force true --copy-ontology-annotations false --individuals exclude --method BOT -o $@
+
 # Artifact that extends base with gene ontologies (used by PCL)
-$(ONT)-pcl-comp.owl:  $(ONT)-base.owl $(GENE_FILES)
-	$(ROBOT) merge -i $< $(patsubst %, -i %, $(GENE_FILES)) \
+$(ONT)-pcl-comp.owl:  $(ONT)-base.owl $(TMPDIR)/all_genes.owl
+	$(ROBOT) merge -i $< -i $(TMPDIR)/all_genes.owl \
 	query --update ../sparql/remove_preflabels.ru \
 			 annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) \
 		 	 --output $(RELEASEDIR)/$@ 
