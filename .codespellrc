@@ -1,0 +1,15 @@
+[codespell]
+# Ref: https://github.com/codespell-project/codespell#using-a-config-file
+# Skip generated/built/imported ontology artifacts and data files. The bulk of
+# bdso*.{owl,obo,json}, imports/, mirror/, marker tables, dendrogram tables,
+# and notebook outputs contain biological/anatomical/genetic terminology
+# (e.g. Inh, cyclin, mater) inherited from upstream ontologies and gene
+# databases — they are not authored prose and should not be modified here.
+skip = .git,.git-meta,.gitignore,.gitattributes,*.pdf,.codespellrc,*.ipynb,*.tsv,*.csv,*.obo,*.owl,*.json,imports,scratch,src/ontology/mirror,src/ontology/imports,src/ontology/components,src/ontology/tmp,src/templates,src/markers,src/dendrograms,src/metadata,src/test/test_data,src/test/marker_tools_test.py
+check-hidden = true
+# 'inh' is the standard abbreviation for "Inhibitory" neurons used across
+#   neuroscience datasets and cell-type ontologies (e.g. "Inh L1-2 VIP TSPAN12").
+# 'ot' is a CLI flag (--ot, args.ot) for "obsolete taxonomies" in
+#   src/scripts/template_runner.py.
+ignore-words-list = inh,ot
+ignore-regex = ^\s*"image/\S+": ".*
