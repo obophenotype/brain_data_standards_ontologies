@@ -554,7 +554,7 @@ PATTERN_CLEAN_FILES=../patterns/all_pattern_terms.txt \
 	
 
 # Note to future generations: prepending ./ is a safety measure to ensure that 
-# the environment does not malicously set `PATTERN_CLEAN_FILES` to `\`.
+# the environment does not maliciously set `PATTERN_CLEAN_FILES` to `\`.
 .PHONY: pattern_clean
 pattern_clean:
 	rm -f $(PATTERN_CLEAN_FILES)
@@ -693,7 +693,7 @@ ROBOT_RELEASE_IMPORT_MODE=$(ROBOT) merge --input $<
 # ROBOT pipeline that removes imports, then merges components. This is for release artefacts that start from "base"
 ROBOT_RELEASE_IMPORT_MODE_BASE=$(ROBOT) remove --input $< --select imports --trim false merge $(patsubst %, -i %, $(OTHER_SRC)) 
 
-# base: All the axioms as they are editted by the editors, excluding reasoning
+# base: All the axioms as they are edited by the editors, excluding reasoning
 $(ONT)-base.owl: $(EDIT_PREPROCESSED) $(OTHER_SRC)
 	$(ROBOT_RELEASE_IMPORT_MODE_BASE) \
 	$(SHARED_ROBOT_COMMANDS) \
@@ -784,7 +784,7 @@ update_repo:
 
 
 # Note to future generations: prepending ./ is a safety measure to ensure that 
-# the environment does not malicously set `CLEANFILES` to `\`.
+# the environment does not maliciously set `CLEANFILES` to `\`.
 .PHONY: clean
 clean:
 	$(MAKE) pattern_clean

@@ -73,19 +73,19 @@ cd src/dendrograms
 sh ./run.sh make
 # Build specific template
 sh ./run.sh make <template_filename>
-# Build a specific set of tempaltes
+# Build a specific set of templates
 sh ./run.sh make JOBS=<dendrogram_id>
 ```
 
-Tempaltes are build from dendrograms using python scripts in [src/scripts](https://github.com/obophenotype/brain_data_standards_ontologies/tree/master/src/scripts)
+Templates are build from dendrograms using python scripts in [src/scripts](https://github.com/obophenotype/brain_data_standards_ontologies/tree/master/src/scripts)
 
 Extended information about groupings of taxonomy nodes that are candidates for curation are stored in additional tsv files (accession.tsv)
-Support for incorporating this informtion into templates is TBA.
+Support for incorporating this information into templates is TBA.
 
 
 ### Robot templates
 
-Robot templates live in  [/src/tempaltes/](https://github.com/obophenotype/brain_data_standards_ontologies/blob/master/src/templates/). 
+Robot templates live in  [/src/templates/](https://github.com/obophenotype/brain_data_standards_ontologies/blob/master/src/templates/). 
 
 
 filename | e.g. | Description
