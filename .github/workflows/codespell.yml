@@ -4,9 +4,9 @@ name: Codespell
 
 on:
   push:
-    branches: [bf-gitignore]
+    branches: [master]
   pull_request:
-    branches: [bf-gitignore]
+    branches: [master]
 
 permissions:
   contents: read
